@@ -1,5 +1,5 @@
+#summary Introduction to this free software release
 #labels Phase-Requirements
-#Introduction to this free software release
 
 =GrafX2 - Free Software=
 
@@ -28,4 +28,3 @@ We won't be able to take the time to translate all the code and its comments in 
 Hoping that, under this new lighting, GrafX2 will find a way to be useful to you, we wish you good luck and courage.
 
 Robinson & X-Man 
-
