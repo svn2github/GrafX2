@@ -1,15 +1,16 @@
+#summary Handling keyboard and mouse inputs
 #labels Phase-Implementation
-GrafX2 - Input interface
+=GrafX2 - Input interface=
 
-Get_input() (in DIVERS.ASM):
-Keys:
+==`Get_input()` (in DIVERS.ASM)==
+===Keys===
 Updates the global variable "Touche" (="key"), a 16-bit word containing in its lower part the scan-code (value linked to the location of the key) of the key pressed, and in its higher part a code defined by the control keys pressed during the call.
 (Touche & 0x0100) => Shift
 (Touche & 0x0200) => Control
 (Touche & 0x0400) => Alt
 Put in the global variable "Touche_ASCII" the ASCII code (value linked to the character represented by the key) of the key pressed.
 If the global variable "Autoriser_changement_de_couleur_pendant_operation" (="allow color change during operation") is set to 0, and if there's at least one value in the operation stack, the function filters the keys. This means that one can't interrupt an operation in progress, except for changing the color of the paintbrush if the operation permits it (useful for changing the color of the paintbrush with the keyboard while drawing).
-Mouse:
+===Mouse===
 Updates the position (Mouse_X,Mouse_Y) of the mouse according to its position in a virtual screen. This screen is voluntarily bigger than the actual resolution of the video mode because several mouse drivers don't provide the position of the mouse precisely (pixel by pixel)...
 Updates the state of the buttons of the mouse (Mouse_K). This variable is set to 0 if no button is pressed, 1 if the left button is pressed, and 2 if the right button is pressed. 
 #summary Handling Keyboard and mouse input
@@ -23,6 +24,6 @@ The function calls `Calculer_coordonnees_pinceau()` (="compute paintbrush coordi
 
 Important: In most cases, you won't have to call this function because the engine (main loop, window manager, file selector, ...) has already done what is necessary. You can therefore consider the concerned variables as already updated. If you called `Get_input()` yourself at an inappropriate moment, some commands of the user, taken into account by the engine, might be ignored.
 
-`Attendre_fin_de_click()` (="Wait end of click") (in DIVERS.ASM):
+==`Attendre_fin_de_click()` (="Wait end of click") (in DIVERS.ASM)==
 
 If you need to ensure that no mouse button is pressed by the user at a certain moment, this function waits until the user releases the button. Then, Mouse_K equals 0, but if the mouse has moved during the waiting, its position (Mouse_X,Mouse_Y) is not yet up to date. However, this shouldn't be bothering (at worst, a simple call to Get_input() will update these values).
