@@ -1,0 +1,7 @@
+#summary How is the project going?
+#labels Status
+
+= Status =
+
+the project is compiling and running, but not useable yet. Many functions are still empty and doing nothing, we need to add all the code to handle SDL video modes and handle keyboard and mouse events.
+ 
