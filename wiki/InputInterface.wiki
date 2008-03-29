@@ -5,9 +5,9 @@
 ==`Get_input()` (in DIVERS.ASM)==
 ===Keys===
 Updates the global variable "Touche" (="key"), a 16-bit word containing in its lower part the scan-code (value linked to the location of the key) of the key pressed, and in its higher part a code defined by the control keys pressed during the call.
-* (Touche & 0x0100) => Shift
-* (Touche & 0x0200) => Control
-* (Touche & 0x0400) => Alt
+  * (Touche & 0x0100) => Shift
+  * (Touche & 0x0200) => Control
+  * (Touche & 0x0400) => Alt
 Put in the global variable "Touche_ASCII" the ASCII code (value linked to the character represented by the key) of the key pressed.
 If the global variable "Autoriser_changement_de_couleur_pendant_operation" (="allow color change during operation") is set to 0, and if there's at least one value in the operation stack, the function filters the keys. This means that one can't interrupt an operation in progress, except for changing the color of the paintbrush if the operation permits it (useful for changing the color of the paintbrush with the keyboard while drawing).
 ===Mouse===
