@@ -13,7 +13,6 @@ If the global variable "Autoriser_changement_de_couleur_pendant_operation" (="al
 ===Mouse===
 Updates the position (Mouse_X,Mouse_Y) of the mouse according to its position in a virtual screen. This screen is voluntarily bigger than the actual resolution of the video mode because several mouse drivers don't provide the position of the mouse precisely (pixel by pixel)...
 Updates the state of the buttons of the mouse (Mouse_K). This variable is set to 0 if no button is pressed, 1 if the left button is pressed, and 2 if the right button is pressed. 
-#summary Handling Keyboard and mouse input
 
 If more than one button are pressed, Get_input() considers that no button is pressed (Mouse_K = 0).
 
