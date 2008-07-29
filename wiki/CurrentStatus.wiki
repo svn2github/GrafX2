@@ -3,5 +3,5 @@
 
 = Status =
 
-the project is compiling and running, but not useable yet. Many functions are still empty and doing nothing.
-The main display primitives are working but are quite slow. We need to optimize some of them (refreshing the screen each time a pixel changes isn't the way to go). Basic mouse input is working. We need to implement keyboard handling, then we will have to rewrite some graphics routines wich are in x86 assembly language.
+The project is quite useable, you can do basic drawing (lines, freehand, circles, rectangles). But there are many incomplete functions, for example the filling tool does not work, and all the special drawing modes (smear, shade, ...) are not implemented.
+We have released a preview of the program so you can try it out and tell us if you find some bugs. Feel free to submit bug reports, or even better, some patches to the code.
