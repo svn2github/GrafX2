@@ -1,5 +1,5 @@
 #summary Handling keyboard and mouse inputs
-#labels Phase-Implementation
+#labels Phase-Implementation,Developpers
 =GrafX2 - Input interface=
 
 ==`Get_input()` (in DIVERS.ASM)==
