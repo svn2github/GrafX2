@@ -1,5 +1,5 @@
 #summary GrafX2 - The operations engine
-#labels Phase-Implementation
+#labels Phase-Implementation,Developpers
 =Principle=
 
 What is an operation? It's mainly the use of a drawing tool (for example: the freehand drawing tool). More precisely, it's the management of the actions of the mouse while it is above the pixels of the edited image. Hence, the pipette management is also handled through operations.
@@ -87,8 +87,6 @@ In `Initialisation_des_operations()`, for each atomic function of the operation,
 
 Example:
 `Initialiser_operation(OPERATION_DUMMY, 1, 0, Dummy_1_0, 1);`
-
-
 
 
 
