@@ -1,0 +1,31 @@
+#summary Some notes about the build system.
+#labels Developpers
+
+= Introduction =
+
+If you want to try GrafX2 and help us improve it, you will have to compile it. This page will help you to set up the development environment.
+We use two different toolchains for building this project : gnu/gcc under Linux, and Open Watcom under Windows. Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree.
+
+
+= Building under Linux with gcc =
+
+You will need the SDL development files, gcc itself, and make.
+Just cd to the directory where you have the sourcecode, and type `make`. The project should build a debug release, wich should run fine, and can be debugged with gdb (for example) if you find a way to crash it. If you want a release executable, type `make release`.
+
+= Building under Windows with Open Watcom =
+
+This is a bit more complex, you will have to compile SDL from source, install it, and then you'll be able to build Grafx2.
+
+== Building SDL ==
+  * Download the SDL sourcecode at [www.libsdl.org]
+  * Extract it, and extract the file *Watcom-Win32.zip* wich you will finde inside the archive.
+  * cd to the *watcom* directory, open a command prompt there, and run `wmake tgt=dll`. This will create various files inside the *Release_DLL* directory.
+  * Copy *sdl.dll* to your system32 directory.
+  * Copy all the *SDL.lib* and *SDLmain.lib* files to *C:\WATCOM\lib386\nt\*
+  * Copy all the *.h* files from the *include* directory to *C:\WATCOM\h\SDL*
+SDL is now ready to be used for development. You can verify by going to the *watcom* directory inside SDL sourcetree and typing *wmake tests tgt=dll*. This should build the test programs from SDL.
+
+== Building Grafx2 ==
+  * You can now open the *grafx2.wpj* from the *windows-watcom* directory with Watcom's IDE, and then press F4 to build.
+  * The executable will be put inside the *windows-watcom* directory, but *must* be moved to the root of the sourcetree before running. This is because it will use the files gfx2.cfg and gfx2.dat and look for them in the current directory.
+  * If you prefer using wmake from a command line, you can go to the *windows-watcom* directory and type `wmake -f grafx2.mk`.
