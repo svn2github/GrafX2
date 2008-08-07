@@ -18,6 +18,7 @@ This is a bit more complex, you will have to compile SDL from source, install it
 
 == Building SDL ==
   * Download and run the latest DirectX SDK installer. It's only needed for compiling SDL, once you are finished with that you can safely remove the SDK.
+  * The installer create an environment variable called "DXSDK_DIR" pointing to the SDK. However, the SDL makefile wil look for a var called DXDIR. Rename the variable or create a new one pointing to the directory.
   * Download the SDL sourcecode at [www.libsdl.org]
   * Extract it, and extract the file *Watcom-Win32.zip* wich you will finde inside the archive.
   * cd to the *watcom* directory, open a command prompt there, and run `wmake tgt=dll`. This will create various files inside the *Release_DLL* directory.
