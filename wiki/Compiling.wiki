@@ -17,6 +17,7 @@ Just cd to the directory where you have the sourcecode, and type `make`. The pro
 This is a bit more complex, you will have to compile SDL from source, install it, and then you'll be able to build Grafx2.
 
 == Building SDL ==
+  * Download and run the latest DirectX SDK installer. It's only needed for compiling SDL, once you are finished with that you can safely remove the SDK.
   * Download the SDL sourcecode at [www.libsdl.org]
   * Extract it, and extract the file *Watcom-Win32.zip* wich you will finde inside the archive.
   * cd to the *watcom* directory, open a command prompt there, and run `wmake tgt=dll`. This will create various files inside the *Release_DLL* directory.
