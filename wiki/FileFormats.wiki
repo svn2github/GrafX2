@@ -9,7 +9,7 @@ Here is a table showing the status of each format.
 
 || *Extension* || *Save* || *Load* || *Sample* || *Misc* ||
 || [PKMSpec PKM] || No || No || Yes || Grafx2 own format  ||
-|| LBM || No || No || No || Electronic arts ||
+|| LBM || No || No || Yes || Electronic arts ||
 || GIF || No || No || Yes || Compuserve ||
 || BMP || No || No || No || Microsoft Paint ||
 || PCX || No || No || No || Z-Soft ||
