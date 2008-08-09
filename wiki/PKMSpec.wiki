@@ -106,7 +106,7 @@ the same color consecutively.
   I think that it would be better to give you the algorithm instead of swim-
 ming in incomprehensible explanations.
 
-
+{{{
   BEGIN
     /*
       functions:
@@ -181,7 +181,7 @@ ming in incomprehensible explanations.
       }
     }
   END
-
+}}}
 
   For example, the following sequence:
     (we suppose that Pack_byte=01 and Pack_word=02)
