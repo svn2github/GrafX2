@@ -1,0 +1,24 @@
+#summary List of file formats that grafx2 should handle
+
+= Introduction =
+
+Grafx2 under dos has support for various file formats from other drawing tools. However, in the code we have, this support is broken by structure alignment and padding problems, and is not endianess-aware. Each format's saving and loading routines should be rewritten to support the format correctly.
+Here is a table showing the status of each format.
+
+= Supported formats table =
+
+|| *Extension* || *Save* || *Load* || *Sample* || *Misc* ||
+|| PKM || No || No || No || Grafx2 own format  ||
+|| LBM || No || No || No || Electronic arts ||
+|| GIF || No || No || Yes || Compuserve ||
+|| BMP || No || No || No || Microsoft Paint ||
+|| PCX || No || No || No || Z-Soft ||
+|| IMG || No || No || No || Bivas (W. Wiedmann) ||
+|| SC? || No || No || No || Colorix ||
+|| PI1 || No || No || No || Degas Elite ||
+|| PC1 || No || No || No || Degas Elite ||
+|| CEL || No || No || No || K.O.S. (KISekae Set System) ||
+|| KCF || No || No || No || K.O.S. (KISekae Set System) ||
+|| PAL || No || No || No || ||
+
+If you can provide sample files for one of these formats, please contact us ! We'll add it in the svn so developpers can test the new code.
