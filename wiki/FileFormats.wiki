@@ -12,10 +12,10 @@ Here is a table showing the status of each format.
 || LBM || No || No || Yes || Electronic arts ||
 || GIF || No || No || Yes || Compuserve ||
 || BMP || No || No || Yes || Microsoft Paint ||
-|| PCX || No || No || Yes || Z-Soft ||
+|| PCX || No || No || Yes || Z-Soft - Paletized PCX working, but true color is not. ||
 || IMG || No || No || No || Bivas (W. Wiedmann) ||
 || SC? || No || No || No || Colorix ||
-|| PI1 || No || No || Yes || Degas Elite ||
+|| PI1 || No || Yes || Yes || Degas Elite ||
 || PC1 || No || No || Yes || Degas Elite ||
 || CEL || No || No || No || K.O.S. (KISekae Set System) ||
 || KCF || No || No || No || K.O.S. (KISekae Set System) ||
