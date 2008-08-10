@@ -22,3 +22,14 @@ Here is a table showing the status of each format.
 || PAL || No || No || No || ||
 
 If you can provide sample files for one of these formats, please contact us ! We'll add it in the svn so developpers can test the new code.
+
+= Other file formats =
+
+These formats aren't yet supported at all, but we are planning to add them in the future
+  * OCP Art studio SCR (Amstrad CPC)
+  * OCP Art Studio PAL (Amstrad CPC)
+  * GraphOS
+  * Multiface 2 picture
+  * PNG
+
+If you can provide some informations about these formats, please tell us !
