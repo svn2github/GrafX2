@@ -16,7 +16,7 @@ Here is a table showing the status of each format.
 || IMG || No || No || No || Bivas (W. Wiedmann) ||
 || SC? || No || No || No || Colorix ||
 || PI1 || No || Yes || Yes || Degas Elite ||
-|| PC1 || No || No || Yes || Degas Elite ||
+|| PC1 || No || Yes || Yes || Degas Elite ||
 || CEL || No || No || No || K.O.S. (KISekae Set System) ||
 || KCF || No || No || No || K.O.S. (KISekae Set System) ||
 || PAL || No || No || No || ||
