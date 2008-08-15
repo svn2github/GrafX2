@@ -3,5 +3,6 @@
 
 = Status =
 
-The project is quite useable, you can do basic drawing (lines, freehand, circles, rectangles). But there are many incomplete functions, for example the filling tool does not work, and all the special drawing modes (smear, shade, ...) are not implemented.
-We have released a preview of the program so you can try it out and tell us if you find some bugs. Feel free to submit bug reports, or even better, some patches to the code.
+You can now use most functionalities of the program without any problems. There are still some bugs to fix up, like loading an ILBM file, and most of the palette operations (color reduction for example).
+Please test the program and post bug reports if you run into some problem that is not already in our bugtracker !
+Once we get all the bugs reported there fixed, we'll package an official release.
