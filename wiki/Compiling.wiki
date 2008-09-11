@@ -7,10 +7,12 @@ If you want to try GrafX2 and help us improve it, you will have to compile it. T
 We use two different toolchains for building this project : gnu/gcc under Linux, and Open Watcom under Windows. Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree.
 
 
-= Building under Linux with gcc =
+= Building under Linux with gcc, or Windows with Mingw32 =
 
 You will need the SDL development files, gcc itself, and make.
 Just cd to the directory where you have the sourcecode, and type `make`. The project should build a debug release, wich should run fine, and can be debugged with gdb (for example) if you find a way to crash it. If you want a release executable, type `make release`.
+
+Note that you can automatically rebuild the dependencies (file Makefile.dep) with `make depend`.
 
 = Building under Windows with Open Watcom =
 
