@@ -11,8 +11,9 @@ We use two different toolchains for building this project : gnu/gcc under Linux,
 
 You will need the SDL development files, gcc itself, and make.
 Just cd to the directory where you have the sourcecode, and type `make`. The project should build a debug release, wich should run fine, and can be debugged with gdb (for example) if you find a way to crash it. If you want a release executable, type `make release`.
-
 Note that you can automatically rebuild the dependencies (file Makefile.dep) with `make depend`.
+
+The new configuration utility can be compiled in directory cfg_new. It requires the SDL_Image library.
 
 = Building under Windows with Open Watcom =
 
