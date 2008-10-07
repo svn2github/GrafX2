@@ -1,0 +1,33 @@
+#summary Differences with the original DOS version
+= Operating system and Endianness =
+The program works on Windows or Linux, and on little-endian or big-endian cpus.
+
+The developers are testing on:
+  * (pm) An iBook PowerPC (big-endian), Linux
+  * (yr) A desktop PC (little-endian) Windows 98
+  * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
+= File system =
+Long file names are accepted. The Save/Load screens have been adapted to show up to 28 characters for the current file name, but the area can scroll right and left as needed to allow editing of longer filenames.
+Character encoding is the one known as Latin-1, or Windows-1252, or Western European.
+On linux, there's no equivalent to the DOS/Windows drives, so the program shows two drives icons: One for the filesystem root, one for the user's HOME directory.
+On all platforms, the "quicksearch" feature is case-insensitive.
+= Library =
+The program uses SDL instead of direct hardware calls and VGA / VESA. This affects the following:
+== Mouse ==
+The mouse cursor should use exactly the settings of your OS. Grafx2 no longer needs its own mouse settings.
+== Keyboard ==
+You can type filenames normally, the right characters will appear (within the limits of Latin-1 character set).
+
+The keys for keyboard shortcuts, unfortunately, may not behave as expected on all platforms. On Windows, SDL reports keys as if they were on a US QWERTY 105-key keyboard. This means the key names as shown on the configuration utility will not match the key labels. On the other hand, a benefit is that the default keyboard settings will suit well for all windows users who have a 102 / 105-key keyboard, whatever its localization.
+
+In any case, the key combination you type in the configuration utility will work identically in the program.
+Now any key can be bound, as long as the OS / Window manager don't trap it.
+Ex: Debian's Gnome catches PrintScreen and displays a screen capture window, GrafX2 doesn't get this key.
+== Video modes ==
+The default resolution is now a windowed mode. The window can be resized as needed.
+The other modes are fullscreen, using whatever technology provides fullscreen modes on the OS (DirectX on Windows, X11? on linux)
+The program has a preset list of (low-resolution) modes, and checks with SDL if each of them is supported. It also queries SDL for more resolutions, and adds them to the list. The resolution screen only shows video modes that SDL claims it can display. If a video mode is buggy or bad-looking on your system anyway, you can use the left-column buttons to disable it completely (black button).
+all graphic modes are still 256 colors. SDL handles the conversion if your hardware or driver only support truecolor/hicolor modes.
+= Power saving =
+The original GrafX2 is a single-tasking DOS program, it uses all available CPU cycles. This version attempts to reduce the cpu usage to what's actually needed, to make it usable on laptops.
+(still needs work)
