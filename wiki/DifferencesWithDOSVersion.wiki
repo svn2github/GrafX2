@@ -1,12 +1,17 @@
 #summary Differences with the original DOS version
+If you have been using the DOS version of Grafx2 (or still using it through DOSbox), the following information will tell you how Grafx2 adapts to the new platform(s).
+Even if you've been using the Win32 port by Eclipse-game, some of this information may interest you.
 = Operating system and Endianness =
-The program works on Windows or Linux, and on little-endian or big-endian cpus.
+The program works on Windows or Linux, and on little-endian or big-endian CPUs.
+It also compiles and runs fine on 64bit systems.
 
 The developers are testing on:
   * (pm) An iBook PowerPC (big-endian), Linux
   * (pm) A Dell laptop with 64bit cpu, Linux
   * (yr) A desktop PC (little-endian) Windows 98
   * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
+
+GrafX2 doesn't run on iPod yet.
 = File system =
 Long file names are accepted. The Save/Load screens have been adapted to show up to 28 characters for the current file name, but the area can scroll right and left as needed to allow editing of longer filenames.
 Character encoding is the one known as Latin-1, or Windows-1252, or Western European.
@@ -25,10 +30,13 @@ In any case, the key combination you type in the configuration utility will work
 Now any key can be bound, as long as the OS / Window manager don't trap it.
 Ex: Debian's Gnome catches PrintScreen and displays a screen capture window, GrafX2 doesn't get this key.
 == Video modes ==
-The default resolution is now a windowed mode. The window can be resized as needed.
+The program's default mode (and 'safety resolution', the one you can call with Shift+Enter) is now a scalable window, since this is guaranteed to work on all platforms and screens. You can resize or maximize the window using your normal window manager, dragging the window edge etc.
 The other modes are fullscreen, using whatever technology provides fullscreen modes on the OS (DirectX on Windows, X11? on linux)
-The program has a preset list of (low-resolution) modes, and checks with SDL if each of them is supported. It also queries SDL for more resolutions, and adds them to the list. The resolution screen only shows video modes that SDL claims it can display. If a video mode is buggy or bad-looking on your system anyway, you can use the left-column buttons to disable it completely (black button).
-all graphic modes are still 256 colors. SDL handles the conversion if your hardware or driver only support truecolor/hicolor modes.
+The program has a preset list of (low-resolution) modes, and checks with SDL if each of them is supported. It also queries SDL for more resolutions, and all modes auto-detected by SDL are added to the list. The resolution screen only shows video modes that SDL claims it can display. If your graphics cards reports a mode that outmatches your monitor's capacities, you can tag it "Unsupported" by clicking the left-column button until it displays a black block. This way, GrafX2 will not use this mode on your system.
+
+About color depth: All graphic modes are still 256 colors. SDL handles the conversion if your hardware or driver only support truecolor/hicolor modes.
 = Power saving =
 The original GrafX2 is a single-tasking DOS program, it uses all available CPU cycles. This version attempts to reduce the cpu usage to what's actually needed, to make it usable on laptops.
 (still needs work)
+= Ascending compatibility =
+Grafx2 can load configuration files (grafx2.ini and grafx2.cfg) from the DOS version. It will recover as much of your keyboard shortcuts, options, stencil tables, shades, etc. as possible.
