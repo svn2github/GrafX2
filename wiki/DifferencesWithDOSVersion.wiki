@@ -4,6 +4,7 @@ The program works on Windows or Linux, and on little-endian or big-endian cpus.
 
 The developers are testing on:
   * (pm) An iBook PowerPC (big-endian), Linux
+  * (pm) A Dell laptop with 64bit cpu, Linux
   * (yr) A desktop PC (little-endian) Windows 98
   * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
 = File system =
