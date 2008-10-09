@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Grafx2 under dos has support for various file formats from other drawing tools. However, in the code we have, this support is broken by structure alignment and padding problems, and is not endianess-aware. Each format's saving and loading routines should be rewritten to support the format correctly.
+Grafx2 under DOS has support for various file formats from other drawing tools. Each format's saving and loading routines have been rewritten to support the format on all platforms, with big-endian or little-endian CPU, and with no problems of byte alignment.
 Here is a table showing the status of each format.
 
 = Supported formats table =
@@ -11,13 +11,13 @@ Here is a table showing the status of each format.
 || [PKMSpec PKM] || Yes || Yes || Grafx2 own format  ||
 || LBM || Yes || Yes || Electronic arts ||
 || GIF || Yes || Yes || Compuserve ||
-|| BMP || Yes || Yes || Microsoft Paint ||
+|| BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. ||
 || PCX || Yes || Yes || Z-Soft ||
-|| IMG || Yes || No || Bivas (W. Wiedmann) (crashes the program when loading) ||
+|| IMG || Yes || Yes || Bivas (W. Wiedmann) ||
 || SC? || Yes || Yes || Colorix ||
 || PI1 || Yes || Yes || Degas Elite ||
 || PC1 || Yes || Yes || Degas Elite ||
-|| CEL || Yes || No || K.O.S. (KISekae Set System) (red flash when loading) ||
+|| CEL || Yes || Yes || K.O.S. (KISekae Set System) ||
 || KCF || Yes || Yes || K.O.S. (KISekae Set System) ||
 || PAL || Yes || Yes || ||
 
