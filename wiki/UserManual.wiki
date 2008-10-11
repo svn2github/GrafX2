@@ -1,0 +1,24 @@
+#summary Grafx2 user's manual
+#labels UserManual
+
+= Introduction =
+
+So, you want to learn all about the hidden features of this wonderful program ? No worries, it's quite easy to use and straight-forward... well, most of the time :).
+People used to other pixelart programs may not want to read the first chapters, wich talks only about the basic stuff, but may find some useful tricks in the more advanced sections.
+
+= Basic usage =
+
+  * [Interface Running the program and discovering the interface]
+  * [MenuBar The menu bar and the tools]
+  * [Drawing The drawing area]
+  * [Palette The palette]
+
+= Advanced features =
+  
+  * [AdvancedDrawing Brushes and effects]
+  * [KeyboardShortcuts Keyboard shortcuts]
+  * [CommandLine Command line parameters]
+
+= Tips and tricks =
+
+We have not found any so far, please send yours :)
