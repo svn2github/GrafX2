@@ -1,0 +1,22 @@
+#summary Starting point of the wiki, to avoid putting the user in front of a random list of pages...
+
+= Introduction =
+
+Want to know more about this wonderful program ? This page will help you to find your way out of our messy documentation. Select a page in the list below and... happy reading !
+
+= General Pages =
+
+ * The [CurrentStatus current status]page says all and everything about what's done, what's left to do, and what we are doing in the project.
+
+
+= User documentation =
+
+ * The [UserManual user's manual] to learn how to use the program, from basic drawing to advanced tips and tricks.
+ * The [FileFormats file formats matrix] shows you the picture formats Grafx2 can load and save, and also features a list of formats we plan to add in the next releases.
+ * If you are used to the old DOS versions of Grafx2, then you should read [DifferencesWithDosVersion this page] to see what changed since then.
+
+= Developper documentation =
+
+ * If you want to joint the project, you can start over by reading the [Compiling compiling notes]
+ * Grafx2 uses a custom picture format called [PKMSpec PKM]. Here are some informations about it.
+ * The internals of the program are divided in many parts, however we have documentation only for the [InputInterface input interface], and the [OperationsEngine operations engine]. This should be enough if you want to add more tools to the program.
