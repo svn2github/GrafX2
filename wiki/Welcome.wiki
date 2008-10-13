@@ -13,7 +13,7 @@ Want to know more about this wonderful program ? This page will help you to find
 
  * The [UserManual user's manual] to learn how to use the program, from basic drawing to advanced tips and tricks.
  * The [FileFormats file formats matrix] shows you the picture formats Grafx2 can load and save, and also features a list of formats we plan to add in the next releases.
- * If you are used to the old DOS versions of Grafx2, then you should read [DifferencesWithDosVersion this page] to see what changed since then.
+ * If you are used to the old DOS versions of Grafx2, then you should read [DifferencesWithDOSVersion this page] to see what changed since then.
 
 = Developper documentation =
 
