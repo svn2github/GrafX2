@@ -1,0 +1,14 @@
+#summary You can launch Grafx2 with some command line arguments.
+
+= Introduction =
+
+There are not many options, but they are quite useful
+
+= List =
+
+ * /? displays help (with a list of the availables videomodes)
+ * /mode 320x200 starts grafx2 in 320x200 video mode.
+ * picture loads a picture.
+
+For example :
+ grafx2 /mode 320x200 My_drawing.pkm
