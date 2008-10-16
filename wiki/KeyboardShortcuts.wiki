@@ -142,3 +142,8 @@ Drawing in Grafx2 can be done with only a mouse. However, you will be much faste
 ||Previous user-defined backcolor||<Shift> + '-'||Set the background color to the previous in the user-defined color series. ||
 ||Shrink paintbrush||','||Decrease the width of the paintbrush if it is special circle or square. ||
 ||Enlarge paintbrush||'.'||Increase the width of the paintbrush if it is special circle or square. ||
+
+ 
+= Mac OS X specific =
+
+||Right mouse button simulation||<Shift> + mouse button||Access to the alternate functions of the different icons.||
