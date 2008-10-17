@@ -3,19 +3,66 @@
 
 = Introduction =
 
-If you want to try GrafX2 and help us improve it, you will have to compile it. This page will help you to set up the development environment.
-We use two different toolchains for building this project : gnu/gcc under Linux, and Open Watcom under Windows. Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree.
+If you're a linux user who needs to compile the program on his machine to run it, here are the instructions. If you want to contribute to the development of GrafX2, here are more instructions to setup the development/packaging environment.
 
+In either case, the building process uses *make* and the *gcc* C compiler, available under all linux variants and also on Windows (we're using MSYS and Mingw). Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM packages for the different distributions.
 
-= Building under Linux with gcc, or Windows with Mingw32 =
+= Building under Linux or Windows =
+Linux requirements:
+  * gcc C compiler
+  * SDL library
+  * SDL_image library
+Windows requirements:
+  * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
+  * the MinGW C compiler
+  * SDL library
+  * SDL_image library
 
-You will need the SDL development files, gcc itself, and make.
-Just cd to the directory where you have the sourcecode, and type `make`. The project should build a debug release, wich should run fine, and can be debugged with gdb (for example) if you find a way to crash it. If you want a release executable, type `make release`.
-Note that you can automatically rebuild the dependencies (file Makefile.dep) with `make depend`.
+Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
+If all goes well, it should build grafx2 (the main program) and gfxcfg (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
 
-The new configuration utility can be compiled in directory cfg_new. It requires the SDL_Image library.
+== Problems
+===If Make complains about a missing `Makefile.dep`===
+We forgot the file in some source archive. Fortunately, it's a file you can re-generate:
+  # Edit the Makefile. Find a line that reads _include Makefile.dep_, and put a # before it to comment it.
+  # Run make with the "depend" argument: `make depend`
+  # Edit the Makefile again, and remove the # sign.
+  # Run `make`
+
+= Developers: Source code management =
+The source repository is a SVN at googlecode.com
+To access it, you need a Subversion client.
+Then check the instructions on http://code.google.com/p/grafx2/source/checkout to download a copy of the sources.
+If you have the command-line version of svn, the typical commands are:
+  * svn status : Check the differences between your version and the latest
+  * svn update : Import/merge the latest changes into your copy
+  * svn revert _<file>_ : Reload the server's version of _<file>_
+  * svn commit : Send your changes to the server, as a new revision. (requires write access)
+Be careful that googlecode's SVN does not allow anyone to delete something, changes can only go forward.
+
+= Developers: Packaging a version =
+There are facilities to package the source and win32 versions, using the Makefile.
+This requires the extra tools:
+  * tar
+  * gzip
+  * zip (If your distribution doesn't have it, find it at http://www.info-zip.org/)
+You should start from a clean state regarding svn, ie: When you type `svn status`, no file should appear modified/added/deleted from the revision you're packaging.
+Type `make ziprelease`
+After a few seconds, you should obtain in the current directory:
+*grafx2-svn000-src.tgz* : Data, docs, sources
+*grafx2-svn000-win32.zip* : Data, docs, sources (in an embedded `src-svn000.tgz` file)
+000 will be replaced by the SVN revision number, such as:
+456 : revision number 456, clean.
+821M: revision number 821, but with more changes on your part that the server doesn't have.
+In the second case, it's probably a bad idea to release this package...
+
+= Developers: Uploading a version =
+The project page can host downloads:
+http://code.google.com/p/grafx2/downloads/list
+It's extremely important to think twice before uploading, because googlecode is write-only: even the project owner cannot rename or delete a file. The most he can do is remove it from the front page, but it's still in the public archives.
 
 = Building under Windows with Open Watcom =
+These instructions are only kept for historical purpose, the program isn't actually supported for Watcom C anymore.
 
 This is a bit more complex, you will have to compile SDL from source, install it, and then you'll be able to build Grafx2.
 
