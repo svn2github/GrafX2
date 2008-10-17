@@ -1,13 +1,12 @@
 #summary Some notes about the build system.
-#labels Developpers
 
 = Introduction =
 
-If you're a linux user who needs to compile the program on his machine to run it, here are the instructions. If you want to contribute to the development of GrafX2, here are more instructions to setup the development/packaging environment.
+If you're a linux user who needs to compile the program on his machine to run it, here are the instructions to do it. If you want to contribute to the development of GrafX2, here are more instructions to setup the development/packaging environment.
 
 In either case, the building process uses *make* and the *gcc* C compiler, available under all linux variants and also on Windows (we're using MSYS and Mingw). Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM packages for the different distributions.
 
-= Building under Linux or Windows =
+= Building GrafX2 under Linux or Windows =
 Linux requirements:
   * gcc C compiler
   * SDL library
@@ -19,24 +18,36 @@ Windows requirements:
   * SDL_image library
 
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
-If all goes well, it should build grafx2 (the main program) and gfxcfg (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
+If all goes well, it should build *grafx2* (the main program) and *gfxcfg* (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
 
-== Problems
+There is no installation step, you run the programs in the directory where you just built them.
+
+== Problems ==
 ===If Make complains about a missing `Makefile.dep`===
 We forgot the file in some source archive. Fortunately, it's a file you can re-generate:
   # Edit the Makefile. Find a line that reads _include Makefile.dep_, and put a # before it to comment it.
   # Run make with the "depend" argument: `make depend`
   # Edit the Makefile again, and remove the # sign.
   # Run `make`
+= Developers: Building variations =
+You can use `make clean` to remove the intermediate generated files (.o) and binary.
+
+You can use `make depend` to rebuild the dependency file Makefile.dep : Don't hesistate to rebuild it whenever you add some #includes "something.h", it will help the Makefile determine very accurately which files need to be recompiled when something.h is modified. And svn is smart enough to see if the file is actually changed or not before increasing the version.
+
+The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants, and -ggdb to generate debug information for the GNU debugger.
+You can use `make release` to strip the debugging information.
+
+You can use `make version` to check the state of the current directory and store the result in a constant string in version.c. This file is used during normal compilation, it's how the program can display a SVN revision number in the About/Stats screen.
+This command requires the Subversion product. It's mostly useful for packagers (see the relevant section), but you can use in your own builds as well.
 
 = Developers: Source code management =
-The source repository is a SVN at googlecode.com
-To access it, you need a Subversion client.
+googlecode.com hosts our Subversion (svn) repository
+To access it, you need to have a Subversion client installed.
 Then check the instructions on http://code.google.com/p/grafx2/source/checkout to download a copy of the sources.
 If you have the command-line version of svn, the typical commands are:
   * svn status : Check the differences between your version and the latest
   * svn update : Import/merge the latest changes into your copy
-  * svn revert _<file>_ : Reload the server's version of _<file>_
+  * svn revert _file_ : Reload the server's version of _file_
   * svn commit : Send your changes to the server, as a new revision. (requires write access)
 Be careful that googlecode's SVN does not allow anyone to delete something, changes can only go forward.
 
@@ -46,15 +57,24 @@ This requires the extra tools:
   * tar
   * gzip
   * zip (If your distribution doesn't have it, find it at http://www.info-zip.org/)
-You should start from a clean state regarding svn, ie: When you type `svn status`, no file should appear modified/added/deleted from the revision you're packaging.
+
+The packages are numbered according to the svn revision of their contents, so you should start from a clean state regarding svn, ie: When you type `svn status`, no file should appear modified/added/deleted from the revision you're packaging.
+
 Type `make ziprelease`
 After a few seconds, you should obtain in the current directory:
-*grafx2-svn000-src.tgz* : Data, docs, sources
-*grafx2-svn000-win32.zip* : Data, docs, sources (in an embedded `src-svn000.tgz` file)
-000 will be replaced by the SVN revision number, such as:
+  * *grafx2-svn000-src.tgz* : Data, docs, sources
+  * *grafx2-svn000-win32.zip* : Data, docs, sources (in an embedded `src-svn000.tgz` file)
+000 will be replaced by the svn revision number, such as:
 456 : revision number 456, clean.
 821M: revision number 821, but with more changes on your part that the server doesn't have.
 In the second case, it's probably a bad idea to release this package...
+
+The `ziprelease` target ensures that the same revision number will appear:
+  # In the filename of the sources zip
+  # In the filename of the win32 binary zip
+  # In the filename of the source-only archive (inside the binary one)
+  # When you run the executable from the binary zip
+  # When you re-compile from either source archive, and run the executable.
 
 = Developers: Uploading a version =
 The project page can host downloads:
@@ -62,22 +82,4 @@ http://code.google.com/p/grafx2/downloads/list
 It's extremely important to think twice before uploading, because googlecode is write-only: even the project owner cannot rename or delete a file. The most he can do is remove it from the front page, but it's still in the public archives.
 
 = Building under Windows with Open Watcom =
-These instructions are only kept for historical purpose, the program isn't actually supported for Watcom C anymore.
-
-This is a bit more complex, you will have to compile SDL from source, install it, and then you'll be able to build Grafx2.
-
-== Building SDL ==
-  * Download and run the latest DirectX SDK installer. It's only needed for compiling SDL, once you are finished with that you can safely remove the SDK.
-  * The installer create an environment variable called "DXSDK_DIR" pointing to the SDK. However, the SDL makefile wil look for a var called DXDIR. Rename the variable or create a new one pointing to the directory.
-  * Download the SDL sourcecode at [www.libsdl.org]
-  * Extract it, and extract the file *Watcom-Win32.zip* wich you will finde inside the archive.
-  * cd to the *watcom* directory, open a command prompt there, and run `wmake tgt=dll`. This will create various files inside the *Release_DLL* directory.
-  * Copy *sdl.dll* to your system32 directory.
-  * Copy all the *SDL.lib* and *SDLmain.lib* files to *C:\WATCOM\lib386\nt\*
-  * Copy all the *.h* files from the *include* directory to *C:\WATCOM\h\SDL*
-SDL is now ready to be used for development. You can verify by going to the *watcom* directory inside SDL sourcetree and typing *wmake tests tgt=dll*. This should build the test programs from SDL.
-
-== Building Grafx2 ==
-  * You can now open the *grafx2.wpj* from the *windows-watcom* directory with Watcom's IDE, and then press F4 to build.
-  * The executable will be put inside the *windows-watcom* directory, but *must* be moved to the root of the sourcetree before running. This is because it will use the files gfx2.cfg and gfx2.dat and look for them in the current directory.
-  * If you prefer using wmake from a command line, you can go to the *windows-watcom* directory and type `wmake -f grafx2.mk`.
+No longer supported. Please read an older revision of this Wiki page if you desperately need the info.
