@@ -1,0 +1,13 @@
+#summary List of the buttons in the menu and description of what you cad do with them.
+#labels UserManual
+
+= Introduction =
+
+(add a screenshot of the menubar there)
+
+
+= Details =
+
+(add some picture of each icon in front of the link)
+
+ * [Lines]
