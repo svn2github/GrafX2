@@ -11,14 +11,19 @@ Linux requirements:
   * gcc C compiler
   * SDL library
   * SDL_image library
+  * FreeType library (optional)
+  * SDL_ttf library (optional)
 Windows requirements:
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
   * the MinGW C compiler
   * SDL library
   * SDL_image library
+  * FreeType library (optional)
+  * SDL_ttf library (optional)
 
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* (the main program) and *gfxcfg* (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
+If you don't have FreeType and SDL_ttf, type `make NOTTF=1` instead. It will build a version without TrueType support : the Text tool will be limited to bitmap fonts, proportional fonts wiht .ttf extension won't be available.
 
 There is no installation step, you run the programs in the directory where you just built them.
 
@@ -75,6 +80,8 @@ The `ziprelease` target ensures that the same revision number will appear:
   # In the filename of the source-only archive (inside the binary one)
   # When you run the executable from the binary zip
   # When you re-compile from either source archive, and run the executable.
+
+If you add the NOTTF=1 argument, the archives have the additional suffix -nottf.
 
 = Developers: Uploading a version =
 The project page can host downloads:
