@@ -1,0 +1,65 @@
+#labels Developpers,Phase-Implementation
+#Platform detection and platform-dependant code
+
+= Introduction =
+How to code in GrafX2 for one platform without breaking the others.
+
+= List of platforms =
+  * Win9x refers to versions of Windows : 98, NT, 2000, XP, Vista.
+  * Linux
+  * MacOSX
+  * Amiga OS4
+  * BeOS
+  * Haiku
+
+= Symbols table for detection =
+
+|| #ifdef || Linux || Win9x (MinGW) || Win9x (Watcom) || MacOSX || Amiga OS4 || Beos || Haiku ||
+|| `__linux__` || X ||   ||   ||  ||  ||  || ||
+|| `__WIN32__` ||  || X || X ||  ||  ||  || ||
+|| `__MINGW32__` ||  || X ||   ||  ||  ||  || ||
+|| `__WATCOMC__` ||  ||   || X ||  ||  ||  ||  ||
+|| `__MACOSX__` ||  ||   ||   || X ||  ||  ||  ||
+|| `__amigaos4__` ||  ||   ||   ||  || X ||  ||  ||
+|| `__BEOS__` ||  ||   ||   ||  ||  || X ||  ||
+|| `__HAIKU__` ||  ||   ||   ||  ||  ||  || X ||
+
+Generally, you should assume a globally "unix" platform, and only put code in #ifdef block when you need to do something different for one platform.
+
+If you need to code a complicated kind of "switch", the cleanest way to write it would be:
+{{{
+#if defined(__BEOS__)||defined(__HAIKU__)
+  // put BeOS/Haiku-specific code here
+#elif defined(__amigaos4__)
+  // put OS4-specific code
+#else
+  // put default alternative code here
+#endif
+}}}
+
+= System-specific =
+== Windows ==
+Environment variable: *COMSPEC*. This holds the path to the command interpreter (ex: C:\CMD.COM) The Makefile uses this variable to detect Windows build. Hopefully nobody sets it in an other system.
+
+Environment variable: *WINDIR*. This holds the path to the windows drive and directory (ex: C:\WINDOWS). Used to find fonts.
+Directory separator: Windows filesystems traditionally use the character \ as a separator between directories, however / is also supported in *almost* all file i/o functions, and must be expected too.
+
+Drives: An absolute file name begins with a drive name, from "A:" to "Z:". It is followed by a path separator, ex: "C:\GrafX2\gfx2.ini"
+
+== AmigaOS4 ==
+Drives: AmigaOS4 filesystem has volume/drive name. It can be a "technical" name like "df0:" for Disk Floppy drive 0, or a user-set name like "games:". The volume or drive is *not* followed by a path separator, ex: "mp3:Switchblade Symphony/Clown.mp3". This means that a directory name can be "something:", with no trailing slash.
+
+= Endianness =
+SDL already provides reliable macros to determine the host system's endianness (Big-Endian like PowerPC, or Little-Endian like Intel)
+The syntax is
+{{{
+#if SDL_BYTEORDER == SDL_LIL_ENDIAN
+
+#if SDL_BYTEORDER == SDL_BIG_ENDIAN
+}}}
+Endian-neutral functions (conditional swapping, reading and writing files) are already implemented in io.c
+
+= Struct packing =
+It's not really a matter of platform, but a topic of interest for someone trying to make GrafX2 run on a new platform:
+Structs in C are not guaranteed to be contiguous in memory, the compiler can insert dummy bytes between struct members in order to align the members on 4-byte or 8-byte addresses, it can make the program faster.
+Many file loading/saving functions can break if structure size are not as intended. All structures that need to be packed should be marked with the GCC extension attribute: `__attribute__((__packed__))`.
