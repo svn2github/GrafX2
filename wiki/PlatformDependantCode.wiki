@@ -18,8 +18,8 @@ How to code in GrafX2 for one platform without breaking the others.
 || `__WIN32__` ||  || X || X ||  ||  ||  || ||
 || `__MINGW32__` ||  || X ||   ||  ||  ||  || ||
 || `__WATCOMC__` ||  ||   || X ||  ||  ||  ||  ||
-|| `__linux__` || X ||   ||   ||  ||  ||  || ||
-|| `__macosx__` || X ||   ||   || X ||  ||  ||  ||
+|| `__linux__` || X ||   ||   || X ||  ||  || ||
+|| `__macosx__` ||   ||   ||   || X ||  ||  ||  ||
 || `__amigaos4__` ||  ||   ||   ||  || X ||  ||  ||
 || `__BEOS__` ||  ||   ||   ||  ||  || X ||  ||
 || `__HAIKU__` ||  ||   ||   ||  ||  ||  || X ||
