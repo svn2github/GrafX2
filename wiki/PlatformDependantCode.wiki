@@ -1,5 +1,5 @@
+#summary Platform detection and platform-dependant code
 #labels Developpers,Phase-Implementation
-#Platform detection and platform-dependant code
 
 = Introduction =
 How to code in GrafX2 for one platform without breaking the others.
@@ -15,16 +15,18 @@ How to code in GrafX2 for one platform without breaking the others.
 = Symbols table for detection =
 
 || #ifdef || Linux || Win9x (MinGW) || Win9x (Watcom) || MacOSX || Amiga OS4 || Beos || Haiku ||
-|| `__linux__` || X ||   ||   ||  ||  ||  || ||
 || `__WIN32__` ||  || X || X ||  ||  ||  || ||
 || `__MINGW32__` ||  || X ||   ||  ||  ||  || ||
 || `__WATCOMC__` ||  ||   || X ||  ||  ||  ||  ||
-|| `__MACOSX__` ||  ||   ||   || X ||  ||  ||  ||
+|| `__linux__` || X ||   ||   ||  ||  ||  || ||
+|| `__macosx__` || X ||   ||   || X ||  ||  ||  ||
 || `__amigaos4__` ||  ||   ||   ||  || X ||  ||  ||
 || `__BEOS__` ||  ||   ||   ||  ||  || X ||  ||
 || `__HAIKU__` ||  ||   ||   ||  ||  ||  || X ||
 
 Generally, you should assume a globally "unix" platform, and only put code in #ifdef block when you need to do something different for one platform.
+
+Be careful that __linux__ applies to MacOSX as well.
 
 If you need to code a complicated kind of "switch", the cleanest way to write it would be:
 {{{
