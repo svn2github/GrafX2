@@ -3,7 +3,7 @@
 
 = Status =
 
-We have reached nearl ythe same status as the DOS version of Grafx2, there are almost no bugs left and the program is useable for real work. Two tools are still missing (text drawing and gradient rectangles).
+We have reached nearl ythe same status as the DOS version of Grafx2, there are almost no bugs left and the program is useable for real work. There are some bugs left, mostly the screen will not be refreshed in some places. But the program should not crash too badly.
 We are now working to add more features to the program, check the issue tracker for some of the ideas we are planning.
 The program still needs some testing, and we're looking for binary packages for other operating systems like Solaris, BeOS, or wathever you may imagine that runs SDL. If you can compile Grafx2 for us on some of these, please send us a package !
 Also, please report any issue we would have missed on the bugtracker. We'll fix it in the next release.
