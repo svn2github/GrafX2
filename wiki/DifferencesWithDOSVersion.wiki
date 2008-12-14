@@ -6,12 +6,14 @@ The program works on Windows or Linux, and on little-endian or big-endian CPUs.
 It also compiles and runs fine on 64bit systems.
 
 The developers are testing on:
-  * (pm) An iBook PowerPC (big-endian), Linux
-  * (pm) A Dell laptop with 64bit cpu, Linux
-  * (yr) A desktop PC (little-endian) Windows 98
+  * (pm) An iBook PowerPC (big-endian), Linux.
+  * (pm) A Dell laptop with 64bit cpu, Linux.
+  * (yr) A desktop PC (little-endian) Windows 98.
   * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
+  * (hh) An Intel macintosh.
 
-GrafX2 doesn't run on iPod yet.
+GrafX2 doesn't run on iPod, Nintendo DS, nor your toaster yet. Sorry :). Feel free to offer your help for a port.
+
 = File system =
 Long file names are accepted. The Save/Load screens have been adapted to show up to 28 characters for the current file name, but the area can scroll right and left as needed to allow editing of longer filenames.
 Character encoding is the one known as Latin-1, or Windows-1252, or Western European.
@@ -22,21 +24,34 @@ The program uses SDL instead of direct hardware calls and VGA / VESA. This affec
 == Mouse ==
 The mouse cursor should use exactly the settings of your OS. Grafx2 no longer needs its own mouse settings.
 == Keyboard ==
-You can type filenames normally, the right characters will appear (within the limits of Latin-1 character set).
+You can type filenames normally, the right characters will appear (within the limits of Latin-1 character set). Pressing control C in text input boxes no longer crashes the program.
 
 The keys for keyboard shortcuts, unfortunately, may not behave as expected on all platforms. On Windows, SDL reports keys as if they were on a US QWERTY 105-key keyboard. This means the key names as shown on the configuration utility will not match the key labels. On the other hand, a benefit is that the default keyboard settings will suit well for all windows users who have a 102 / 105-key keyboard, whatever its localization.
 
-In any case, the key combination you type in the configuration utility will work identically in the program.
-Now any key can be bound, as long as the OS / Window manager don't trap it.
+In any case, the key combination you type in the configuration utility will work identically in the program. Only the key name display may be wrong.
+Now any key can be bound, as long as the OS / Window manager doesn't trap it.
 Ex: Debian's Gnome catches PrintScreen and displays a screen capture window, GrafX2 doesn't get this key.
 == Video modes ==
 The program's default mode (and 'safety resolution', the one you can call with Shift+Enter) is now a scalable window, since this is guaranteed to work on all platforms and screens. You can resize or maximize the window using your normal window manager, dragging the window edge etc.
 The other modes are fullscreen, using whatever technology provides fullscreen modes on the OS (DirectX on Windows, X11? on linux)
 The program has a preset list of (low-resolution) modes, and checks with SDL if each of them is supported. It also queries SDL for more resolutions, and all modes auto-detected by SDL are added to the list. The resolution screen only shows video modes that SDL claims it can display. If your graphics cards reports a mode that outmatches your monitor's capacities, you can tag it "Unsupported" by clicking the left-column button until it displays a black block. This way, GrafX2 will not use this mode on your system.
 
-About color depth: All graphic modes are still 256 colors. SDL handles the conversion if your hardware or driver only support truecolor/hicolor modes.
+There is some experimental support for rectangle pixels in software, as modes like 640x200 or 320x400 will not work on recent LCD screens. The same will be done in software.
+
+About color depth: All graphic modes are still 256 colors. SDL handles the conversion if your hardware or driver only support truecolor/hicolor modes. You are no longer limited to the VGA 4096 colors, you now have 8 bit precision for red, green, and blue. And as a bonus, you can also use the HSL colorspace if you prefer so.
+
 = Power saving =
 The original GrafX2 is a single-tasking DOS program, it uses all available CPU cycles. This version attempts to reduce the cpu usage to what's actually needed, to make it usable on laptops.
-(still needs work)
+
 = Ascending compatibility =
-Grafx2 can load configuration files (grafx2.ini and grafx2.cfg) from the DOS version. It will recover as much of your keyboard shortcuts, options, stencil tables, shades, etc. as possible.
+Grafx2 can load configuration files (grafx2.ini and grafx2.cfg) from the DOS version. It will recover as much of your keyboard shortcuts, options, stencil tables, shades, etc. as possible. It is also possible to load old PKM files. Beware, the PKM files can't save the palette with the full color range, so your gfx will be downscaled to the vga palette. Use some other format like GIF, for example.
+
+= New features =
+The two missing tools in the DOS version were added, so you can now draw gradiation rectangles and text. The brush distortion is still missing.
+
+= Online help =
+If you forgot some shortcut or can't get a tool to work like you want, just remember that you can press the F1 key at any time. That will open a window with some text about the active tool, opened window, or the button you are hovering with the cursor in the menu.
+The window will remember you how to use the tools, and will display the shortcut you've selected in the config tool.
+
+= Bugs =
+Unfortunately, we've introduced some bugs in the program while modifying it to run in the new platforms and remove the hardware-dependant parts. If you ever find one of them, plese report it in the issue tracker...
