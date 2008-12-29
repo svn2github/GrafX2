@@ -1,0 +1,17 @@
+#summary Some screenshots of the program and pictures contributed by users.
+
+= Pictures =
+
+None yet. Please send some :)
+
+
+= Screenshots =
+
+http://grafx2.googlecode.com/files/gfx2_beos.png
+_Grafx2 running under the [http://haiku-os.org Haiku OS]_
+
+http://farm4.static.flickr.com/3204/3141523118_561a47d979_o.png
+_Grafx2 running under Zeta OS_
+
+http://farm4.static.flickr.com/3250/3147303617_48bef7ace2_o.png
+_Grafx2 running under SkyOS_
