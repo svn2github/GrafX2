@@ -4,28 +4,33 @@
 
 If you're a linux user who needs to compile the program on his machine to run it, here are the instructions to do it. If you want to contribute to the development of GrafX2, here are more instructions to setup the development/packaging environment.
 
-In either case, the building process uses *make* and the *gcc* C compiler, available under all linux variants and also on Windows (we're using MSYS and Mingw). Other OS or compilers may or may not work, with more or less modifications to the sourcecode. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM packages for the different distributions.
+In either case, the building process uses *make* and the *gcc* C compiler, available under all linux variants and also on Windows (we're using MSYS and Mingw). Other OS or compilers may or may not work, with more or less modifications to the sourcecode. The makefile is able to compile the code on the following platforms :
+  * Amiga OS 4
+  * AROS
+  * BeOS and Haiku OS
+  * Linux
+  * SkyOS
+  * Windows
+The subversion also includes an XCode project for building under Mac OS X. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM/Deb/... packages for the different linux distributions.
 
-= Building GrafX2 under Linux or Windows =
-Linux requirements:
+= Building GrafX2 =
+== Requirements ==
+=== All platforms ===
   * gcc C compiler
   * SDL library
   * SDL_image library
   * FreeType library (optional)
   * SDL_ttf library (optional)
-Windows requirements:
+=== Windows only ===
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
-  * the MinGW C compiler
-  * SDL library
-  * SDL_image library
-  * FreeType library (optional)
-  * SDL_ttf library (optional)
+  * the MinGW C compiler (this replaces gcc)
 
+== Instructions ==
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* (the main program) and *gfxcfg* (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
 If you don't have FreeType and SDL_ttf, type `make NOTTF=1` instead. It will build a version without TrueType support : the Text tool will be limited to bitmap fonts, proportional fonts wiht .ttf extension won't be available.
 
-There is no installation step, you run the programs in the directory where you just built them.
+Under linux, you can then run `make install` to get the files installed in your system, in the /usr/local/ and /usr/share directories (the usual UNIX way). This may or may not work, the installation needs some more testing.
 
 == Problems ==
 ===If Make complains about a missing `Makefile.dep`===
@@ -34,12 +39,13 @@ We forgot the file in some source archive. Fortunately, it's a file you can re-g
   # Run make with the "depend" argument: `make depend`
   # Edit the Makefile again, and remove the # sign.
   # Run `make`
+
 = Developers: Building variations =
 You can use `make clean` to remove the intermediate generated files (.o) and binary.
 
 You can use `make depend` to rebuild the dependency file Makefile.dep : Don't hesistate to rebuild it whenever you add some #includes "something.h", it will help the Makefile determine very accurately which files need to be recompiled when something.h is modified. And svn is smart enough to see if the file is actually changed or not before increasing the version.
 
-The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants, and -ggdb to generate debug information for the GNU debugger.
+The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants (not for debug builds as it makes gdb get lost), and -ggdb to generate debug information for the GNU debugger.
 You can use `make release` to strip the debugging information.
 
 You can use `make version` to check the state of the current directory and store the result in a constant string in version.c. This file is used during normal compilation, it's how the program can display a SVN revision number in the About/Stats screen.
@@ -54,29 +60,31 @@ If you have the command-line version of svn, the typical commands are:
   * svn update : Import/merge the latest changes into your copy
   * svn revert _file_ : Reload the server's version of _file_
   * svn commit : Send your changes to the server, as a new revision. (requires write access)
-Be careful that googlecode's SVN does not allow anyone to delete something, changes can only go forward.
+Be careful that googlecode's SVN does not allow anyone to undo something, changes can only go forward. So, check everything twice before commiting something.
+The repository is readonly for unregistered users, if you want to contribute, contact us and we'll be happy to add your login to the project members.
 
 = Developers: Packaging a version =
-There are facilities to package the source and win32 versions, using the Makefile.
-This requires the extra tools:
+There are facilities to package the source and binary versions, using the Makefile. They'll work for all platforms, but you need some extra tools:
   * tar
   * gzip
   * zip (If your distribution doesn't have it, find it at http://www.info-zip.org/)
+  * svnversion (installed with subversion)
 
-The packages are numbered according to the svn revision of their contents, so you should start from a clean state regarding svn, ie: When you type `svn status`, no file should appear modified/added/deleted from the revision you're packaging.
+The packages are numbered according to the svn revision of their contents, so you should start from a clean state regarding svn, ie: When you type `svn status`, no file should appear modified/added/deleted from the revision you're packaging. Try to do an `svn commit` then `svn up` to ensure everything is ok.
 
 Type `make ziprelease`
 After a few seconds, you should obtain in the current directory:
   * *grafx2-svn000-src.tgz* : Data, docs, sources
-  * *grafx2-svn000-win32.zip* : Data, docs, sources (in an embedded `src-svn000.tgz` file)
+  * *grafx2-svn000-platform.zip* : Data, docs, sources (in an embedded `src-svn000.tgz` file)
+platform will be replaced by the name of your platform, such as reported by the `uname` command if it does exist, or as you specified it in the makefile.
 000 will be replaced by the svn revision number, such as:
 456 : revision number 456, clean.
 821M: revision number 821, but with more changes on your part that the server doesn't have.
-In the second case, it's probably a bad idea to release this package...
+In the second case, it's probably a bad idea to release the package... Commit your changes before to avoid letting us with hundred of slightly different versions floating around.
 
 The `ziprelease` target ensures that the same revision number will appear:
   # In the filename of the sources zip
-  # In the filename of the win32 binary zip
+  # In the filename of the binary zip
   # In the filename of the source-only archive (inside the binary one)
   # When you run the executable from the binary zip
   # When you re-compile from either source archive, and run the executable.
@@ -89,4 +97,4 @@ http://code.google.com/p/grafx2/downloads/list
 It's extremely important to think twice before uploading, because googlecode is write-only: even the project owner cannot rename or delete a file. The most he can do is remove it from the front page, but it's still in the public archives.
 
 = Building under Windows with Open Watcom =
-No longer supported. Please read an older revision of this Wiki page if you desperately need the info.
+This is no longer supported. Please read an older revision of this Wiki page if you desperately need the info. It may not work with the most current versions of the sourcecode, anyways. The project file is still in the subversion, but it is outdated (missing some new files). You'll probably find that Open Watcom's C compiler will throw errors in some places where gcc doesn't. Good luck with that.
