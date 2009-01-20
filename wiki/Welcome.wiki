@@ -1,4 +1,5 @@
 #summary Starting point of the wiki, to avoid putting the user in front of a random list of pages...
+#labels Featured
 
 = Introduction =
 
