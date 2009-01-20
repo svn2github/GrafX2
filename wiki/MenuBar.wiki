@@ -3,11 +3,17 @@
 
 = Introduction =
 
-(add a screenshot of the menubar there)
+*TODO : (add a screenshot of the menubar there)*
+
+The menu bar is split into three parts :
+  * The status line at the bottom displays some information about where the mouse cursor is (coordinates, name of button,...)
+  * The icons at the left allows you to select a tool. Some icons have two functions, one for right and one for left mouse click.
+  * The right part of the menu is the palette, allowing you to select a color for drawing.
 
 
 = Details =
 
-(add some picture of each icon in front of the link)
+Here is a list of the available buttons. Click on the name of a button for detailled informations about it :
+*TODO (add some picture of each icon in front of the link)*
 
  * [Lines]
