@@ -3,7 +3,7 @@
 
 = Introduction =
 
-*TODO : (add a screenshot of the menubar there)*
+http://grafx2.googlecode.com/svn/wiki/pictures/menubar.png
 
 The menu bar is split into three parts :
   * The status line at the bottom displays some information about where the mouse cursor is (coordinates, name of button,...)
@@ -14,6 +14,16 @@ The menu bar is split into three parts :
 = Details =
 
 Here is a list of the available buttons. Click on the name of a button for detailled informations about it :
-*TODO (add some picture of each icon in front of the link)*
 
- * [Lines]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/.png [PaintbrushChoice]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FreeHand.png [FreeHandDraw]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Lines.png [Lines]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Fill.png [Floodfill]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Rectangles.png [Rectangles]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/GradRect_GradMenu.png [Gradation]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Adjust_Effects.png [PictureEffects]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Curves.png [Splines]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Spray.png [Spray]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Polyforms.png [Polylines]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Circles.png [Circles]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/GradCircle.png [GradationSpheres]
