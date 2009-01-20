@@ -15,11 +15,11 @@ The menu bar is split into three parts :
 
 Here is a list of the available buttons. Click on the name of a button for detailled informations about it :
 
- * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/.png [PaintbrushChoice]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/SelectBrush.png [PaintbrushChoice]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FreeHand.png [FreeHandDraw]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Lines.png [Lines]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Fill.png [Floodfill]
- * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Rectangles.png [Rectangles]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Rectangle.png [Rectangles]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/GradRect_GradMenu.png [Gradation]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Adjust_Effects.png [PictureEffects]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Curves.png [Splines]
