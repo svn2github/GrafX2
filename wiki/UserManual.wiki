@@ -5,6 +5,12 @@
 
 So, you want to learn all about the hidden features of this wonderful program ? No worries, it's quite easy to use and straight-forward... well, most of the time :).
 People used to other pixelart programs may not want to read the first chapters, wich talks only about the basic stuff, but may find some useful tricks in the more advanced sections.
+If you already know how to use the DOS version of Grafx2, you don't need to read this whole manual, as not that many things have changed. You should read the DifferencesWithDOSVersion page to see what changed.
+As Grafx2 is still work in progress, you may also want to check the CurrentStatus from time to time.
+
+= Contacting us =
+
+If you have some comments about the program, just post a comment here in the wiki or fill in an issue report in the bugtracker. If you just want to chat with us, send pictures you made for us to add in the [gallery], just send out an email to pulkomandy(at)gmail(dot)com.
 
 = Basic usage =
 
