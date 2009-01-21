@@ -1,0 +1,8 @@
+#summary Hiding the menu to draw fullscreen
+#labels UserManual
+
+=Hide menu=
+
+==Any click==
+
+Allows you to hide the menu. If you do this, take care to watch before the key to press to show the menu back (the default key is <F10>).
