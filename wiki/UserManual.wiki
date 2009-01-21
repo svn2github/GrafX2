@@ -66,3 +66,4 @@ Note: We highly recommand not to modify the keys related to the mouse emulation 
   * [KeyboardShortcuts Keyboard shortcuts]
   * [CommandLine Command line parameters]
   * [TipsTricks Tips and tricks]
+  * [FAQ Frequently asked questions]
