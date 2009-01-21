@@ -7,19 +7,19 @@ Here is a table showing the status of each format.
 
 = Supported formats table =
 
-|| *Extension* || *Save* || *Load* || *Misc* ||
-|| [PKMSpec PKM] || Yes || Yes || Grafx2 own format  ||
-|| LBM || Yes || Yes || Electronic arts ||
-|| GIF || Yes || Yes || Compuserve ||
-|| BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. ||
-|| PCX || Yes || Yes || Z-Soft ||
-|| IMG || Yes || Yes || Bivas (W. Wiedmann) ||
-|| SC? || Yes || Yes || Colorix ||
-|| PI1 || Yes || Yes || Degas Elite ||
-|| PC1 || Yes || Yes || Degas Elite ||
-|| CEL || Yes || Yes || K.O.S. (KISekae Set System) ||
-|| KCF || Yes || Yes || K.O.S. (KISekae Set System) ||
-|| PAL || Yes || Yes || ||
+|| *Extension* || *Save* || *Load* || *Misc* ||
+|| [PKMSpec PKM] || Yes || Yes || Grafx2 own format  ||
+|| LBM || Yes || Yes || Electronic arts ||
+|| GIF || Partial || Partial || Compuserve GIF 87a. GrafX2 skips the extended data that records which color is *transparent*, *animation frames*, and tricks to assemble an image from several layers. If you re-save an image that had this kind of information, GrafX2 *removes it*. Saving is always in 8-bit palette (256 colors), and 1-bit files (2 color) cannot be read.||
+|| BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. ||
+|| PCX || Yes || Yes || Z-Soft ||
+|| IMG || Yes || Yes || Bivas (W. Wiedmann) ||
+|| SC? || Yes || Yes || Colorix ||
+|| PI1 || Yes || Yes || Degas Elite ||
+|| PC1 || Yes || Yes || Degas Elite ||
+|| CEL || Yes || Yes || K.O.S. (KISekae Set System) ||
+|| KCF || Yes || Yes || K.O.S. (KISekae Set System) ||
+|| PAL || Yes || Yes || ||
 
 If you find a file that grafx2 can't load, please send it to us so we can fix the broken code.
 = Other file formats =
