@@ -1,0 +1,23 @@
+#summary Screen modes
+#labels UserManual
+
+=Screen size / Safety resolution=
+
+==Left click==
+
+Displays a menu where you can define the size of your picture by clicking in the boxes named "Width" and "Height"; and the resolution in which you want to draw (in the list).
+
+Clicking on a resolution button with the right mouse button will not only set the resolution of the screen, but also set the picture dimensions to the screen ones.
+
+The small buttons on the left-hand side of the lines in the list of modes have been designed to allow you to disable some modes that are not supported by your card or monitor. So, the modes that you will disable won't be used when loading pictures with "Auto-set resolution" ON.
+
+When you click on one of these buttons, its color changes to one of the 4 following. The signification for each color of these buttons is:
+
+ * Light gray: The video mode is OK. It can be used by the auto-set resolution option when you load picture, and you can select it in the menu of resolutions.
+ * White: It works exactly the same as above. Moreover, it allows you to tag your favourite modes. Indeed, the huge number of video modes makes it more difficult to find the mode your want in the list; so you can tag your favoutite ones in white, so that it will be easier to locate them. (Note: you cannot disable the standard windowed mode)
+ * Dark gray: It allows you to indicate which modes are not really perfect (flickering, not centered, etc...) but which can be used even so. The difference with the light grey button is that these modes won't be used by the auto-set resolution option.
+ * Black: Use it for totally unsupported modes. Thus, these modes won't be selected the "auto-set res." and the program will prevent you from selecting them from the menu of resolutions.
+
+==Right click==
+
+Automaticaly switches to the windowed mode.
