@@ -52,3 +52,5 @@ Here is a list of the available buttons. Click on the name of a button for detai
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Quit.png [Quit]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Palette.png [Palette]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/ScrollPalette.png [ScrollPalette]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/HideMenu.png [HideMenu]
+ * [MenuPalette]
