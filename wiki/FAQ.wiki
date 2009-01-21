@@ -20,7 +20,7 @@ Q: Where can I get the latest version of GrafX2?
 A: The only place where you will find the latest version for sure is our web site: http://code.google.com/p/grafx2 . Nevertheless, it isn't impossible that GrafX2 may also be found on FTP or web sites dedicated to the "demo-scene" (e.g. ftp://ftp.scene.org).
 
 Q: How can I make the brush become monochrome, and how can I get it back to its normal state?
-A: You can do it (assuming that you haven't modified the default keys) with the keys <Shift>+<F4> to make the brush become monochrome, and <Shift>+<B> to get the multi-coloured brush back.
+A: You can do it (assuming that you haven't modified the default keys) with the keys <Shift>+<F4> to make the brush become monochrome, and <Shift>+B to get the multi-coloured brush back.
 
 Q: Why is the tool bar at the bottom of the screen instead of at the right side like in Deluxe Paint (copyright Electronic Arts)?
 A: Well... GrafX2 IS NOT Deluxe Paint! We know that you are used to Deluxe Paint but you'll have to get used to GrafX2! ;) If you really can't stand using GrafX2 like this, then you'll have to wait for GrafX3 but we probably won't release it before year 2020! Actually, the main reason why we put the tool bar with such a basical aspect is that it was easier (therefore faster) to redraw the whole screen just by telling the routine where to stop (where starts the tool bar). Moreover, one of the best Amiga paint programs (Brilliance) has got the tool bar at the bottom of the screen too.
