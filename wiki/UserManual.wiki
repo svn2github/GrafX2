@@ -8,15 +8,57 @@ People used to other pixelart programs may not want to read the first chapters, 
 If you already know how to use the DOS version of Grafx2, you don't need to read this whole manual, as not that many things have changed. You should read the DifferencesWithDOSVersion page to see what changed.
 As Grafx2 is still work in progress, you may also want to check the CurrentStatus from time to time.
 
+= Presentation =
+
+This program is designed for drawing 256-color pictures in a huge range of resolutions (actually, there are 60 with some coming from the Amiga world). No one can contest that most of the beautiful GFX of the Scene were drawn on Amiga. But these GFX are in video resolutions that aren't the common PC modes. So we wanted to make the first paint program on PC that could visualize those pictures, and that could allow you, of course, to draw yours in the video mode that you want.
+
+This program was first shown at the Wired'96 where it met a big success (bigger than all our expects) so we hope you'll like it too.
+
+It's made up of many drawing tools, effects and menus. All the effects will work with any drawing tool.
+
+This software has been created for YOU, PC users who envy Amiga owner for their fantastic paint programs. This software doesn't pretend to replace the best programs on Amiga, but it modestly tries to fill the gap between PC and Amiga in the field of bitmap drawing.
+
+If you dream about a very useful option we haven't thought of yet, do not hesitate to tell us. If we also think it can be useful, and above all if it is possible to include it in the program :), then we'll implement it as soon as possible.
+
 = Contacting us =
 
 If you have some comments about the program, just post a comment here in the wiki or fill in an issue report in the bugtracker. If you just want to chat with us, send pictures you made for us to add in the [gallery], just send out an email to pulkomandy(at)gmail(dot)com.
 
+= Configuration files =
+
+GrafX2 needs two files to store its configuration: 'GFX2.INI' and 'GFX2.CFG'.
+
+== GFX2.INI ==
+
+This file contains the parameters defined in the settings menu and some others. You may edit this file with any standard ASCII editor. When you click on Reload in the settings menu, all the data contained in this file are restored. When you click on Save or when you quit the program with the Auto-save option on, all the current parameters are written into (updated in) this file.
+
+If you corrupted this file and don't manage to fix the problem, then delete it and run GFXCFG.EXE. It will automatically create a default initialization file when it is absent.
+
+
+== GFX2.CFG ==
+
+This file contains the keyboard configuration plus the state of the following variables in the program:
+      * video modes
+      * shade tables
+      * stencil
+      * mask
+      * gradients
+
+All these variables are saved when clicking on the Save button in the settings menu or when exiting the program with the Auto-save option on. However, when you click on Reload in the settings menu, only the state of each video mode is restored.
+
+Note: the GFX2_FRA.CFG file is a default configuration file for AZERTY keyboards. If you have got an AZERTY keyboard, you may replace the GFX2.CFG file by GFX2_FRA.CFG.
+
+Important: from version 2.00 ß95.5% to 96.5%, .CFG files will have ascending compatibility. This means that you'll be able to retrieve most of their contents from a release to another by copying your old .CFG file into your new GrafX2 directory and running GFXCFG.EXE. Indeed, this program will convert your old file for it is usable by the new version of GrafX2. But copying a .CFG file from an earlier version than version 95.5% won't work. Moreover, (I don't see why you would do that, but...) copying a recent .CFG file to an older version shouldn't work neither.
+
+From version 97.0%, the compatibility is handled directly in the main program and you don't have to run GFXCFG to get your files converted. However, this was tested only with files coming from the 96.5% version. If you have a configuration file from an older version, it is recommended that you open it with 96.5% GFXCFG.EXE, before using it with newer versions.
+
+Note: We highly recommand not to modify the keys related to the mouse emulation in the GFXCFG program because the values you could use may interfere with the keyboard shortcuts used in the menus.
+
 = Basic usage =
 
   * [Interface Running the program and discovering the interface]
-  * [MenuBar The menu bar and the tools]
   * [Drawing The drawing area]
+  * [MenuBar The menu bar and the tools]
   * [Palette The palette]
 
 = Advanced features =
