@@ -1,0 +1,37 @@
+#summary Here are some questions. Please don't send them again by mail, we're busy working on the program and have no time for answering.
+#labels UserManual
+
+=Sound card problems=
+
+Q: No sound comes out from my Ultra-maxi-sound-blaster-galaxy-64-3D-pnp, so what can I do?
+A: Well... You must understand that this program is not a soundtracker nor a music-player :) ... So if you want some music, you'll have either to play modules with a good player, or to switch your Hi-Fi on.
+Try visiting http://radio.cpcscene.com for some good music.
+
+=Miscellaneous=
+If you corrupted the GFX2.CFG file and that GrafX2 uses it as is, with an incorrect behavior, don't hesitate to erase GFX2.CFG and to re-run GFXCFG to create a new correct one. Indeed, the only tests of validity we do on the configuration file are checking its size and its version number.
+
+
+=Frequently asked questions=
+
+Q: How can I set the dimensions of the picture?
+A: We thought it was obvious that you had to click in the areas where the dimensions are written in the resolution menu (Width & Height) but many people asked this question (?!). So, to sum up, everywhere you'll see a value or text written in black in a sort of encrusted area, this means that if you click on it, you'll be able to modify its value. Moreover, if you want the picture dimensions to be the same as the ones of the screen, you just have to right-click on the resolution in the list.
+
+Q: Where can I get the latest version of GrafX2?
+A: The only place where you will find the latest version for sure is our web site: http://code.google.com/p/grafx2 . Nevertheless, it isn't impossible that GrafX2 may also be found on FTP or web sites dedicated to the "demo-scene" (e.g. ftp://ftp.scene.org).
+
+Q: How can I make the brush become monochrome, and how can I get it back to its normal state?
+A: You can do it (assuming that you haven't modified the default keys) with the keys <Shift>+<F4> to make the brush become monochrome, and <Shift>+<B> to get the multi-coloured brush back.
+
+Q: Why is the tool bar at the bottom of the screen instead of at the right side like in Deluxe Paint (copyright Electronic Arts)?
+A: Well... GrafX2 IS NOT Deluxe Paint! We know that you are used to Deluxe Paint but you'll have to get used to GrafX2! ;) If you really can't stand using GrafX2 like this, then you'll have to wait for GrafX3 but we probably won't release it before year 2020! Actually, the main reason why we put the tool bar with such a basical aspect is that it was easier (therefore faster) to redraw the whole screen just by telling the routine where to stop (where starts the tool bar). Moreover, one of the best Amiga paint programs (Brilliance) has got the tool bar at the bottom of the screen too.
+
+Q: Why aren't the hidden parts of the picture filled when I use the "Flood fill" tool?
+A: For the simple and "quite" good reason that it is preferable that the user controls perfectly what he is drawing. Thus, he won't see too late that he has fucked up a part of his picture. The other tools work the same way. And for the less good reason that is was more convenient for us. ;)
+
+Q: Is it possible to launch the program in fullscreen mode ?
+A: Yes, you just have to type GFX2 <mode_name> at the DOS prompt. Type grafx2 /? to get the list of all the video modes.
+
+Q: Is it normal that some buttons don't work ?
+A: Yes, this is because we haven't had the time to make them (I remind you that GrafX2 is still at a Beta version state). However, here is the list of the buttons that don't respond in GrafX2:
+        - Effects on the picture
+        - and the following button in the "Brush effects" menu: Distort
