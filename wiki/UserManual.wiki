@@ -57,7 +57,6 @@ Note: We highly recommand not to modify the keys related to the mouse emulation 
 = Basic usage =
 
   * [Interface Running the program and discovering the interface]
-  * [Drawing The drawing area]
   * [MenuBar The menu bar and the tools]
   * [Palette The palette]
 
@@ -66,7 +65,4 @@ Note: We highly recommand not to modify the keys related to the mouse emulation 
   * [AdvancedDrawing Brushes and effects]
   * [KeyboardShortcuts Keyboard shortcuts]
   * [CommandLine Command line parameters]
-
-= Tips and tricks =
-
-We have not found any so far, please send yours :)
+  * [TipsTricks Tips and tricks]
