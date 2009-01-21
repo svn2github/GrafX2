@@ -1,4 +1,4 @@
-#summary List of the buttons in the menu and description of what you cad do with them.
+#summary List of the buttons in the menu and description of what you can do with them.
 #labels UserManual
 
 = Introduction =
@@ -15,6 +15,8 @@ The menu bar is split into three parts :
 
 Here is a list of the available buttons. Click on the name of a button for detailled informations about it :
 
+== Drawing tools ==
+
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/SelectBrush.png [PaintbrushChoice]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FreeHand.png [FreeHandDraw]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Lines.png [Lines]
@@ -27,3 +29,26 @@ Here is a list of the available buttons. Click on the name of a button for detai
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Polyforms.png [Polylines]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Circles.png [Circles]
  * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/GradCircle.png [GradationSpheres]
+
+== Drawing effects ==
+
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/BrushCapture.png [BrushGrab]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/DrawFX.png [DrawingModes]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Magnify.png [Magnify]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/BrushFX.png [BrushEffects]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Text.png [Text]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/ColorPicker.png [Pipette]
+
+== Settings ==
+
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Screenmode.png [ScreenSize]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/SaveLoad.png [FileManagement]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Clear.png [Clear]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Pages.png [Pages]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Settings.png [Settings]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Help.png [Help]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Oops.png [Undo]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Kill.png [Kill]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Quit.png [Quit]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Palette.png [Palette]
+ * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/ScrollPalette.png [ScrollPalette]
