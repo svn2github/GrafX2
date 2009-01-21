@@ -1,0 +1,17 @@
+#summary Effect that apply to the whole picture
+#labels UserManual
+
+= Adjust picture / Effects on the picture =
+
+== Left click ==
+
+Allows you to scroll the picture to re-center your graph for example.
+
+Any part of the picture that goes out of the image by a side comes back by the opposite one.
+
+It is assimilated to the drawing tools family.
+
+
+== Right click ==
+
+*Not implemented yet*
