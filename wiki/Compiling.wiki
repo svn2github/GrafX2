@@ -34,11 +34,23 @@ Under linux, you can then run `make install` to get the files installed in your 
 
 == Problems ==
 ===If Make complains about a missing `Makefile.dep`===
-We forgot the file in some source archive. Fortunately, it's a file you can re-generate:
+We forgot the file in some source archive of the early betas (2008). Fortunately, it's a file you can re-generate:
   # Edit the Makefile. Find a line that reads _include Makefile.dep_, and put a # before it to comment it.
   # Run make with the "depend" argument: `make depend`
   # Edit the Makefile again, and remove the # sign.
   # Run `make`
+===(Windows) SDL.h: No such file or directory===
+Apparently the automatic installation of SDL headers does not work very well under windows if you put them in MSYS's own root.
+
+In a MSYS shell, run `which sdl-config`
+
+It will tell you where the sdl-config script is located, for example:
+/usr/bin/sdl-config
+
+Edit this file in vi or any text editor to see where SDL believe it's installed.
+
+If one line says `prefix=/` you have installed SDL in MSYS's directories (headers in `<msys root>/include/SDL` and library in `<msys root>/libs`) and it doesn't work under Windows, you need to change the config line so it says `prefix=/usr` or `prefix=` and it will work correctly.
+Headers and libs for SDL_image and SDL_ttf should be stored in the same directories as SDL.
 
 = Developers: Building variations =
 You can use `make clean` to remove the intermediate generated files (.o) and binary.
