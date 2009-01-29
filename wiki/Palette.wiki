@@ -3,6 +3,8 @@
 
 =Palette menu=
 
+http://grafx2.googlecode.com/svn/wiki/pictures/palette.png
+
 ==Left click==
 
 Displays a menu where the following options are available:
