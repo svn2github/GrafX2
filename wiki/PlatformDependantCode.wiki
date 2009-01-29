@@ -5,24 +5,29 @@
 How to code in GrafX2 for one platform without breaking the others.
 
 = List of platforms =
-  * Win9x refers to versions of Windows : 98, NT, 2000, XP, Vista.
+  * Amiga OS3 and 4, AROS, MorphOS
+  * BeOS and Haiku
+  * gp2x
   * Linux
   * MacOSX
-  * Amiga OS4
-  * BeOS
-  * Haiku
+  * Win9x refers to versions of Windows : 98, NT, 2000, XP, Vista.
 
 = Symbols table for detection =
 
-|| #ifdef || Linux || Win9x (MinGW) || Win9x (Watcom) || MacOSX || Amiga OS4 || Beos || Haiku ||
-|| `__WIN32__` ||  || X || X ||  ||  ||  || ||
-|| `__MINGW32__` ||  || X ||   ||  ||  ||  || ||
-|| `__WATCOMC__` ||  ||   || X ||  ||  ||  ||  ||
-|| `__linux__` || X ||   ||   || X ||  ||  || ||
-|| `__macosx__` ||   ||   ||   || X ||  ||  ||  ||
-|| `__amigaos4__` ||  ||   ||   ||  || X ||  ||  ||
-|| `__BEOS__` ||  ||   ||   ||  ||  || X ||  ||
-|| `__HAIKU__` ||  ||   ||   ||  ||  ||  || X ||
+||#ifdef||Linux||Win9x (MinGW)||Win9x (Watcom)||MacOSX||Amiga OS4||Beos||Haiku||AROS||MorphOS||FreeBSD||GP2X||AmigaOS 3||
+||`__WIN32__`   || ||X|| X ||  ||  ||  ||  || ||  || ||   || ||
+||`__MINGW32__` || ||X||   ||  ||  ||  ||  || ||  || ||   || ||
+||`__WATCOMC__` || || || X ||  ||  ||  ||  || ||  || ||   || ||
+||`__linux__`   ||X|| ||   || X||  ||  ||  || ||  || || X || ||
+||`__macosx__`  || || ||   || X||  ||  ||  || ||  || ||   || ||
+||`__amigaos4__`|| || ||   ||  || X||  ||  || ||  || ||   || ||
+||`__BEOS__`    || || ||   ||  ||  || X||  || ||  || ||   || ||
+||`__HAIKU__`   || || ||   ||  ||  ||  || X|| ||  || ||   || ||
+||`__aros__`    || || ||   ||  ||  ||  ||  ||X||  || ||   || ||
+||`__morphos__` || || ||   ||  ||  ||  ||  || ||X || ||   || ||
+||`__FreeBSD__` || || ||   ||  ||  ||  ||  || ||  ||X||   || ||
+||`__gp2x__`    || || ||   ||  ||  ||  ||  || ||  || || X || ||
+||`__amigaos__` || || ||   ||  ||  ||  ||  || ||  || ||   ||X||
 
 Generally, you should assume a globally "unix" platform, and only put code in #ifdef block when you need to do something different for one platform.
 
@@ -48,8 +53,8 @@ Directory separator: Windows filesystems traditionally use the character \ as a 
 
 Drives: An absolute file name begins with a drive name, from "A:" to "Z:". It is followed by a path separator, ex: "C:\GrafX2\gfx2.ini"
 
-== AmigaOS4 ==
-Drives: AmigaOS4 filesystem has volume/drive name. It can be a "technical" name like "df0:" for Disk Floppy drive 0, or a user-set name like "games:". The volume or drive is *not* followed by a path separator, ex: "mp3:Switchblade Symphony/Clown.mp3". This means that a directory name can be "something:", with no trailing slash.
+== Amiga-like systems (AmigaOS 3 and 4, AROS, MorphOS ==
+Drives: AmigaOS filesystem has volume/drive name. It can be a "technical" name like "df0:" for Disk Floppy drive 0, or a user-set name like "games:". The volume or drive is *not* followed by a path separator, ex: "mp3:Switchblade Symphony/Clown.mp3". This means that a directory name can be "something:", with no trailing slash. The parent directory is /, not .. like on other systems.
 
 = Endianness =
 SDL already provides reliable macros to determine the host system's endianness (Big-Endian like PowerPC, or Little-Endian like Intel)
