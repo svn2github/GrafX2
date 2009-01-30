@@ -11,7 +11,7 @@ Here is a table showing the status of each format.
 || [PKMSpec PKM] || Yes || Yes || Grafx2 own format  ||
 || LBM || Yes || Yes || Electronic arts ||
 || GIF || Partial || Partial || Compuserve GIF 87a. GrafX2 skips the extended data that records which color is *transparent*, *animation frames*, and tricks to assemble an image from several layers. If you re-save an image that had this kind of information, GrafX2 *removes it*. Saving is always in 8-bit palette (256 colors), and 1-bit files (2 color) cannot be read.||
-|| PNG || Yes || Yes except RGB|| Portable Network Graphics. Reads all forms of paletted images (from 2 to 256 colors), greyscale (any depth, converted to a 256-level greyscale palette from black to white). Additional PNG information, like Alpha channel and Transparency are not preserved. The image description is read and saved as the 'Title' text, limited to 32 characters.||
+|| PNG || Yes || Yes except RGB|| Portable Network Graphics. Reads all forms of paletted images (from 2 to 256 colors), greyscale (any depth, converted to a 256-level greyscale palette from black to white). Additional PNG information, like Alpha channel and Transparency are not preserved. The image description is read and saved as the 'Title' text, limited to 32 characters. Saving is always with 256-color palette.||
 || BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. ||
 || PCX || Yes || Yes || Z-Soft ||
 || IMG || Yes || Yes || Bivas (W. Wiedmann) ||
