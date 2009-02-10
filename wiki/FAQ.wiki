@@ -23,6 +23,9 @@ A: We thought it was obvious that you had to click in the areas where the dimens
 
 A: The only place where you will find the latest version for sure is our web site: http://code.google.com/p/grafx2 . Nevertheless, it isn't impossible that GrafX2 may also be found on FTP or web sites dedicated to the "demo-scene" (e.g. ftp://ftp.scene.org).
 
+==Q: Help there's no menu!==
+When the menu is hidden, hit F10 to show it again (default shortcut)
+
 ==Q: How can I make the brush become monochrome, and how can I get it back to its normal state?==
 
 A: You can do it (assuming that you haven't modified the default keys) with the keys <Shift>+<F4> to make the brush become monochrome, and <Shift>+B to get the multi-coloured brush back.
@@ -37,7 +40,7 @@ A: For the simple and "quite" good reason that it is preferable that the user co
 
 ==Q: Is it possible to launch the program in fullscreen mode ?==
 
-A: Yes, you just have to type GFX2 <mode_name> in a command line prompt. Type grafx2 /? to get the list of all the video modes.
+A: Yes, you just have to type `grafx2 /mode <mode_name>` in a command line prompt. Type `grafx2 /?` to get the list of all the video modes.
 
 ==Q: Is it normal that some buttons don't work ?==
 
@@ -47,7 +50,11 @@ A: Yes, this is because we haven't had the time to make them (I remind you that 
 
 ==Q: The program is very slow and the mouse cursor has a lag of several seconds!==
 
-A: This is because you have a high-precision mouse which sends many events to the program. Try editing the Merge_movement setting in the gfx2.ini file. 0 means "don't merge events", a higher setting will run the program faster, but your cursor may jump several pixels at a time. Values under 10 should be enough for most people.
+A: This is because you've bought a gamer mouse from Logitech or Razor, or you've foolishly "overclocked" your USB mouse port from its normal 125Hz to 500Hz or 1000Hz, even though your mouse will reports 2 or 4 times the same position...
+This can also happen with a PS2 mouse, if you set the PS2 rate to 200Hz instead of classic 80Hz and 100Hz, and your PC is 10 years old and can't keep up.
+GrafX2 is designed to record all mouse events in a queue, and try to take each of them into account, even if a delay is needed, in order to faithfully reproduce your mouse movements in all its details.
+An unreasonable mouse rate ( > 100Hz) defeats this purpose, because it causes up to 1000 screen updates per second, and your computer just can't keep up.
+Try editing the Merge_movement setting in the gfx2.ini file. 0 means "don't merge events", a higher setting will make grafx2 skip one mouse position (or more) if there is another, more recent one in the input queue. We recommend you increase this value one by one until you don't see any lag when moving. If you increase it too much, it will be all right, except that when you use cpu-intensive functions, the cursor will seem to go in straight lines from one position to another, instead of replaying the curve where you actually moved. In practice, values of 5 and 10 should fix the problem for people who use a mouse that runs 500Hz and 1000Hz respectively.
 
 ==Q: The mouse cursor is imprecise and jumps several pixels at a time!==
 
