@@ -59,3 +59,7 @@ Try editing the Merge_movement setting in the gfx2.ini file. 0 means "don't merg
 ==Q: The mouse cursor is imprecise and jumps several pixels at a time!==
 
 A: This is because your computer is too slow to process all mouse events one after another and merges them to go faster. Note this can happen on fast computers if you have a high precision mouse. The solution is to decrease the Merge_movement setting in the gfx2.ini config file. 0 means "more precision", bigger values means the program will run faster, but with more cursor jumps. Values under 10 should work well enough for everyone. Do some testing to find the perfect settings.
+
+==Q: The mouse cursor sometimes randomly becomes mad and jumps some pixels away, then comes back!==
+
+A: This is because Grafx2 allows you to move the cursor with a joystick instead of the mouse. Some joysticks tend to report buggy values even when you don't touch them, causing the cursor to move. Unplug your joystick and it will work better.
