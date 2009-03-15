@@ -67,14 +67,19 @@ window.onload = initDynSections;
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8h.html#7b185138d8b8ada872b817017aa1c410">Conversion_ANSI</a> (SDL_keysym Sym)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an ANSI/ASCII character.  <a href="#7b185138d8b8ada872b817017aa1c410"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8h.html#eb5d48f372846b872b3346fc865e9103">Conversion_Touche</a> (SDL_keysym Sym)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an internal keycode number.  <a href="#eb5d48f372846b872b3346fc865e9103"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8h.html#f8205c931fd5746f6b7ffe575c747711">Touche_pour_scancode</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> scancode)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Helper function to convert between SDL system and old coding for keycodes.  <a href="#f8205c931fd5746f6b7ffe575c747711"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8h.html#c16979d17fa2139cf7d43197d9f978cb">Nom_touche</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns key name in a string.  <a href="#c16979d17fa2139cf7d43197d9f978cb"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8h.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche</a> (SDLMod Mod)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the modifiers in our format from the SDL_Mod information.  <a href="#1d20390ad7963a219ad5c69ff346ad2a"></a><br></td></tr>
 </table>
 <hr><h2>Function Documentation</h2>
 <a class="anchor" name="7b185138d8b8ada872b817017aa1c410"></a><!-- doxytag: member="clavier.h::Conversion_ANSI" ref="7b185138d8b8ada872b817017aa1c410" args="(SDL_keysym Sym)" -->
@@ -94,6 +99,13 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Convert an SDL keysym to an ANSI/ASCII character. 
+<p>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Sym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
+  </table>
+</dl>
 
 <p>Referenced by <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>.</p>
 
@@ -116,6 +128,13 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Convert an SDL keysym to an internal keycode number. 
+<p>
+This is needed because SDL tends to split the information across the unicode sym, the regular sym, and the raw keycode. We also need to differenciate 1 (keypad) and 1 (regular keyboard), and some other things. <dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Sym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="clavier_8c.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche()</a>.</p>
 
@@ -140,6 +159,13 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Helper function to convert between SDL system and old coding for keycodes. 
+<p>
+This is needed because some SDL keycode are actually unicode and won't fit in 8 bits. <dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>scancode</em>&nbsp;</td><td>Scancode to convert </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="clavier_8c.html#728daee9de653dc64120d047ef5ed7bd">Scancode_to_Sym</a>.</p>
 
@@ -164,6 +190,13 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns key name in a string. 
+<p>
+Used to display them in the helpscreens and in the keymapper window. <dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Touche</em>&nbsp;</td><td>keycode of the key to translate, including modifiers </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="clavier_8c.html#c16979d17fa2139cf7d43197d9f978cb">Nom_touche()</a>, <a class="el" href="gfxcfg_8c.html#a693203d472b8bc0d5e898aa57a6ee61">TOUCHE_BUTTON</a>, <a class="el" href="gfxcfg_8c.html#c8b40f44dee740a267918957c61a1930">TOUCHE_MOUSEMIDDLE</a>, <a class="el" href="gfxcfg_8c.html#78fe4672fc80295d06db5721315472c9">TOUCHE_MOUSEWHEELDOWN</a>, and <a class="el" href="gfxcfg_8c.html#fcb8d54c86bd18900b2b7479e90e25f1">TOUCHE_MOUSEWHEELUP</a>.</p>
 
@@ -188,6 +221,13 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Gets the modifiers in our format from the SDL_Mod information. 
+<p>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Mod</em>&nbsp;</td><td>SDL modifiers state </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, and <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>.</p>
 
@@ -196,7 +236,7 @@ window.onload = initDynSections;
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 14 21:06:45 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>
