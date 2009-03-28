@@ -3,7 +3,8 @@
 
 = Developper documentation =
 
- * If you want to joint the project, you can start over by reading the [Compiling compiling notes]
+ * You can start over by reading the [Compiling compiling notes]
+ * The source code is documented using Doxygen. The online reference is [http://grafx2.googlecode.com/svn/doxydoc/html/index.html here]. It will help you understand how things work, and if you want to join the project, it will help keep the naming conventions consistent.
  * There's some documentation on how to code according to the different [PlatformDependantCode platforms]
  * Grafx2 uses a custom picture format called [PKMSpec PKM]. Here are some informations about it.
  * The internals of the program are divided in many parts, however we have documentation only for the [InputInterface input interface], and the [OperationsEngine operations engine]. This should be enough if you want to add more tools to the program.
