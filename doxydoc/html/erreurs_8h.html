@@ -73,10 +73,10 @@ window.onload = initDynSections;
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="erreurs_8h.html#6b815d5f2cc8f2ec8711524e426f7580">UNTESTED</a>&nbsp;&nbsp;&nbsp;printf(&quot;%s %d %s à tester !\n&quot;,__FILE__,__LINE__,__func__);</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="erreurs_8h.html#1eaaeb3005eecdd9344d33213b87c24d">Erreur</a>(n)&nbsp;&nbsp;&nbsp;Erreur_fonction(n, __FILE__,__LINE__,__func__)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>(n)&nbsp;&nbsp;&nbsp;Error_function(n, __FILE__,__LINE__,__func__)</td></tr>
 
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="erreurs_8h.html#08ebf7f8dfd2bd9fa14b5d9d02150b85">Erreur_fonction</a> (int, const char *, int, const char *)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="erreurs_8h.html#b4764c3395c4da052b3a54fa02aab153">Error_function</a> (int error_code, const char *filename, int line_number, const char *function_name)</td></tr>
 
 </table>
 <hr><h2>Define Documentation</h2>
@@ -101,7 +101,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8c.html#421a5389cbdf1c0481683c558e6e7b1c">Definir_mode_video()</a>, <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="moteur_8c.html#a6a877ab9639509cb9f29c4665e35ba3">Sauve_fond()</a>, and <a class="el" href="sdlscreen_8h.html#184110026e7cc1ae020b7461dd4d28cd">Set_Mode_SDL()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="moteur_8c.html#277097c62c50e3869b36418cb2dcb567">Save_background()</a>, <a class="el" href="sdlscreen_8h.html#4683b0e65b7992516d19665a7c1831ce">Set_mode_SDL()</a>, and <a class="el" href="init_8c.html#05d192ba58c39730e20a24055c2912e6">Set_video_mode()</a>.</p>
 
 </div>
 </div><p>
@@ -158,17 +158,17 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="1eaaeb3005eecdd9344d33213b87c24d"></a><!-- doxytag: member="erreurs.h::Erreur" ref="1eaaeb3005eecdd9344d33213b87c24d" args="(n)" -->
+<a class="anchor" name="e07d69c37041d0c62f4f53427d1bddeb"></a><!-- doxytag: member="erreurs.h::Error" ref="e07d69c37041d0c62f4f53427d1bddeb" args="(n)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="gfxcfg_8c.html#9b1c48053c6772bf6f39c9d6423f7853">Erreur</a>          </td>
+          <td class="memname">#define Error          </td>
           <td>(</td>
           <td class="paramtype">n&nbsp;</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;Erreur_fonction(n, __FILE__,__LINE__,__func__)</td>
+          <td>&nbsp;&nbsp;&nbsp;Error_function(n, __FILE__,__LINE__,__func__)</td>
         </tr>
       </table>
 </div>
@@ -176,38 +176,38 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="main_8c.html#4f6c2378e49fa3c0022357520e17e099">Analyse_de_la_ligne_de_commande()</a>, <a class="el" href="boutons_8h.html#b7f5f6282e228ee1b945432258dde235">Bouton_Autosave()</a>, <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8h.html#d4f9a069c7697cb953e1797bb30d80d3">Bouton_Resol()</a>, <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>, <a class="el" href="brush_8h.html#23b5af038073c2a9178d4933da80dad0">Capturer_brosse()</a>, <a class="el" href="brush_8h.html#7699e2e1612bf2dba73927cac49bcd7d">Capturer_brosse_au_lasso()</a>, <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>, <a class="el" href="loadsave_8h.html#bb9cae74040c8a47257acf90db125a30">Charger_image()</a>, <a class="el" href="init_8c.html#304b0196f0bb9394658cdcbe58652fdb">Chercher_bas()</a>, <a class="el" href="init_8c.html#9076115526d187ecf6e4e5e9ad98b85e">Chercher_droite()</a>, <a class="el" href="pages_8h.html#4bef0010047a4bd5d89012dcd6e25836">Creer_nouvelle_page()</a>, <a class="el" href="gfxcfg_8c.html#b386c1bd4845868dcd5b4eaddabedb3f">Ecrire()</a>, <a class="el" href="brush_8h.html#43bf908927a264f5877392e1213ea6c7">Etirer_brosse()</a>, <a class="el" href="aide_8c.html#84e7f69a55aa8465b98366edda193a42">Fenetre_controle()</a>, <a class="el" href="main_8c.html#c073e499767ba1999d9b4ca4bbb4a91a">Fermeture_du_programme()</a>, <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, <a class="el" href="init_8c.html#b3f13ff0ac5efcf6d8c5096d80ab1ef1">Lire_bloc()</a>, <a class="el" href="brush_8h.html#da7da0d19089d2cb1ac24cf414f8c622">Nibble_brush()</a>, <a class="el" href="brush_8h.html#13dd63f43e714f91f06e1bcaf69ac42c">Outline_brush()</a>, <a class="el" href="moteur_8h.html#f28758e05c5bf643ad8a005b72d24765">Recuperer_couleur_derriere_fenetre()</a>, <a class="el" href="brush_8h.html#3ce481ddd3fa06ca1b9f0e24bd299e7c">Rotate_90_deg()</a>, <a class="el" href="loadsave_8h.html#c2046bf4201e1f5ea32a52b09a67f210">Sauver_image()</a>, <a class="el" href="boutons_8h.html#de8eabbafe1b3dbe00a3fc652e1fdeb9">Save_picture()</a>, <a class="el" href="boutons_8c.html#fba678c476bf96df89125120d4dce9b7">Settings_Charger_config()</a>, <a class="el" href="boutons_8c.html#289ab91a43a41811c53ef8326316c0fe">Settings_Sauver_config()</a>, <a class="el" href="gfxcfg_8c.html#01687362e5df115013c9c7eff7d74d1f">Test_duplic()</a>, <a class="el" href="brush_8h.html#eac0b3519d88b6c8b55bf10ac94fc5d4">Tourner_brosse()</a>, and <a class="el" href="gfxcfg_8c.html#aac015bda450fd88525c0c341381e81a">Validation()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, <a class="el" href="boutons_8h.html#c4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="boutons_8h.html#c9b41c19a3b00619fc4f7533681d33cc">Button_Resolution()</a>, <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>, <a class="el" href="brush_8h.html#be69e0d7740be98de18e082ec1a4fe9c">Capture_brush()</a>, <a class="el" href="brush_8h.html#4ac19d0a870f5d5dd3f77f5faba21376">Capture_brush_with_lasso()</a>, <a class="el" href="pages_8h.html#8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, <a class="el" href="moteur_8h.html#a22e122622e93cfc55c6ce79d739c3c9">Get_color_behind_window()</a>, <a class="el" href="init_8c.html#b1881da96d24c43de0f76aaad7720195">GUI_seek_down()</a>, <a class="el" href="init_8c.html#e6f0ce04a87cd819e18fb99621dc52d5">GUI_seek_right()</a>, <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>, <a class="el" href="loadsave_8h.html#e0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="brush_8h.html#da7da0d19089d2cb1ac24cf414f8c622">Nibble_brush()</a>, <a class="el" href="brush_8h.html#13dd63f43e714f91f06e1bcaf69ac42c">Outline_brush()</a>, <a class="el" href="main_8c.html#c900417a3c976f222d105a4f157b1fa0">Program_shutdown()</a>, <a class="el" href="init_8c.html#2402d61c14d1297fbbda273831fc49cb">Read_GUI_block()</a>, <a class="el" href="brush_8h.html#3ce481ddd3fa06ca1b9f0e24bd299e7c">Rotate_90_deg()</a>, <a class="el" href="brush_8h.html#54aa72ffb79aaf2169579e793a66ac31">Rotate_brush()</a>, <a class="el" href="loadsave_8h.html#523e417a7f5323a0d373439eb50e3b6d">Save_image()</a>, <a class="el" href="boutons_8h.html#1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>, <a class="el" href="boutons_8c.html#c37dbf29dd70d9363452d03b8aebfccd">Settings_load_config()</a>, <a class="el" href="boutons_8c.html#f264cf99f3edef3733316c512bb3fd85">Settings_save_config()</a>, <a class="el" href="brush_8h.html#f37ebf2df955e4eb7e30ebd2d146c214">Stretch_brush()</a>, and <a class="el" href="aide_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="08ebf7f8dfd2bd9fa14b5d9d02150b85"></a><!-- doxytag: member="erreurs.h::Erreur_fonction" ref="08ebf7f8dfd2bd9fa14b5d9d02150b85" args="(int, const char *, int, const char *)" -->
+<a class="anchor" name="b4764c3395c4da052b3a54fa02aab153"></a><!-- doxytag: member="erreurs.h::Error_function" ref="b4764c3395c4da052b3a54fa02aab153" args="(int error_code, const char *filename, int line_number, const char *function_name)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Erreur_fonction           </td>
+          <td class="memname">void Error_function           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"> <em>error_code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"> <em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"> <em>line_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"></td><td>&nbsp;</td>
+          <td class="paramname"> <em>function_name</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -220,12 +220,12 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="main_8c.html#8c5eeb15e6f5f5e878eee6dc3bf97747">Afficher_syntaxe()</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479bebe698d0dcfc99c5d108ab28d0a5917ef">ERREUR_CFG_ABSENT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be7343c14d6a72f3d4daee2d31efb9a17a">ERREUR_CFG_ANCIEN</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be259be6b9ac002c3b830a0737095374ff">ERREUR_CFG_CORROMPU</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be5a2adccd1db4424e7a2d5cfe4e046dbb">ERREUR_DRIVER_SOURIS</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be22456fb9106fbdf6bad6050cc948fbfa">ERREUR_GUI_ABSENT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be561a062de7e076bd44376c4b8e873f31">ERREUR_GUI_CORROMPU</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be3eb5a13ebb96d161a847def7abc0085a">ERREUR_INI_ABSENT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479befbae0beac9dd64806a8e4821eb434218">ERREUR_INI_CORROMPU</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479bec9e07ff5b7f51525fbf868e854e0a709">ERREUR_LIGNE_COMMANDE</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be6998c75302ad373b61f274e9dc38f8cd">ERREUR_MEMOIRE</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be330a6a48f075c5e63531250b293d7181">ERREUR_MODE_INTERDIT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479becf55b488ee3cbabc574dbcf7f3d43184">ERREUR_REPERTOIRE_DISPARU</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479becf10d3bdd7704cac2b24419a3d9e0f7b">ERREUR_SAUVEGARDE_CFG</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be829a9571deeea4139c34b73e57b82065">ERREUR_SAUVEGARDE_INI</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be25a3fcd5c82dee647d806abc6eff714b">ERREUR_SORRY_SORRY_SORRY</a>, <a class="el" href="global_8h.html#93d1e7ef6c9c23bcb72545d5023a48b7">Ligne_INI</a>, <a class="el" href="global_8h.html#5f1a588fbaff890b98047add4138c451">Principal_Palette</a>, and <a class="el" href="divers_8c.html#9d902fe9687285300da908c6d1d2527a">Set_palette()</a>.</p>
+<p>References <a class="el" href="main_8c.html#11b4b1663b21edcca9fa005e15fac1d7">Display_syntax()</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25e76bd5a99f058f03603cdb6ce9ca918a">ERROR_CFG_CORRUPTED</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25ae49117a2c52a0eba6db1e355580fd8a">ERROR_CFG_MISSING</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25a52e91d06a7a633fc9bb4d9c94029839">ERROR_CFG_OLD</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25bec0e8d5f6d06d842f07b80f91f6c119">ERROR_COMMAND_LINE</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25735a1f6a46b61a138da7722efd4e6b63">ERROR_FORBIDDEN_MODE</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2579d728f2a7da66885ba503d750cd3138">ERROR_GUI_CORRUPTED</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f250af75619064496fe5eb0549353df510c">ERROR_GUI_MISSING</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25f6210c667727cfb8953fd49dd94210d6">ERROR_INI_CORRUPTED</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2517b23f5b77e610286f8cba8141f32431">ERROR_INI_MISSING</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25632a15615c9d0f691788ab4f0a66e41d">ERROR_MEMORY</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f251baa762e35c28bde09224b64eebf54eb">ERROR_MISSING_DIRECTORY</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25b2519688642324c66e2c03607a84db80">ERROR_MOUSE_DRIVER</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f250f7bcdb9feb4314dae620cfef98a1f1b">ERROR_SAVING_CFG</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25978bbc8fa4541e6e84a83fdc0920b977">ERROR_SAVING_INI</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f255fc1662941766f2fbf63f8a0efac2529">ERROR_SORRY_SORRY_SORRY</a>, <a class="el" href="global_8h.html#7abf7bdaf5a5909b821b4d3e86ddd042">Line_number_in_INI_file</a>, <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, and <a class="el" href="divers_8c.html#7f8562564c597185de8b961ac337144e">Set_palette()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

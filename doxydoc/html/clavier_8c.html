@@ -68,34 +68,34 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#f8205c931fd5746f6b7ffe575c747711">Touche_pour_scancode</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> scancode)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#03459332e6f78e484ecc25b08ef623b2">Key_for_scancode</a> (word scancode)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Helper function to convert between SDL system and old coding for keycodes.  <a href="#f8205c931fd5746f6b7ffe575c747711"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche</a> (SDLMod Mod)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Helper function to convert between SDL system and old coding for keycodes.  <a href="#03459332e6f78e484ecc25b08ef623b2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#c39b48ab31f617e5689999f391776064">Key_modifiers</a> (SDLMod mod)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the modifiers in our format from the SDL_Mod information.  <a href="#1d20390ad7963a219ad5c69ff346ad2a"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#eb5d48f372846b872b3346fc865e9103">Conversion_Touche</a> (SDL_keysym Sym)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the modifiers in our format from the SDL_Mod information.  <a href="#c39b48ab31f617e5689999f391776064"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#73d0086f13b960535b84faa3e8ee21c9">Keysym_to_keycode</a> (SDL_keysym keysym)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an internal keycode number.  <a href="#eb5d48f372846b872b3346fc865e9103"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#c16979d17fa2139cf7d43197d9f978cb">Nom_touche</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an internal keycode number.  <a href="#73d0086f13b960535b84faa3e8ee21c9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#8613914784ed7f5bbd3c1958fd0085cb">Key_name</a> (word <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns key name in a string.  <a href="#c16979d17fa2139cf7d43197d9f978cb"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#7b185138d8b8ada872b817017aa1c410">Conversion_ANSI</a> (SDL_keysym Sym)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns key name in a string.  <a href="#8613914784ed7f5bbd3c1958fd0085cb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#50e0882341c9d98861b9b3480c086785">Keysym_to_ANSI</a> (SDL_keysym keysym)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an ANSI/ASCII character.  <a href="#7b185138d8b8ada872b817017aa1c410"></a><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert an SDL keysym to an ANSI/ASCII character.  <a href="#50e0882341c9d98861b9b3480c086785"></a><br></td></tr>
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">const <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#728daee9de653dc64120d047ef5ed7bd">Scancode_to_Sym</a> [256][4]</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clavier_8c.html#cfc6d037685e4fb23357a40a24a863f0">Scancode_to_sym</a> [256][4]</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="f8205c931fd5746f6b7ffe575c747711"></a><!-- doxytag: member="clavier.c::Touche_pour_scancode" ref="f8205c931fd5746f6b7ffe575c747711" args="(word scancode)" -->
+<a class="anchor" name="03459332e6f78e484ecc25b08ef623b2"></a><!-- doxytag: member="clavier.c::Key_for_scancode" ref="03459332e6f78e484ecc25b08ef623b2" args="(word scancode)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Touche_pour_scancode           </td>
+          <td class="memname">word Key_for_scancode           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
           <td class="paramname"> <em>scancode</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -113,21 +113,21 @@ This is needed because some SDL keycode are actually unicode and won't fit in 8 
   </table>
 </dl>
 
-<p>References <a class="el" href="clavier_8c.html#728daee9de653dc64120d047ef5ed7bd">Scancode_to_Sym</a>.</p>
+<p>References <a class="el" href="clavier_8c.html#cfc6d037685e4fb23357a40a24a863f0">Scancode_to_sym</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="1d20390ad7963a219ad5c69ff346ad2a"></a><!-- doxytag: member="clavier.c::Modificateurs_Touche" ref="1d20390ad7963a219ad5c69ff346ad2a" args="(SDLMod Mod)" -->
+<a class="anchor" name="c39b48ab31f617e5689999f391776064"></a><!-- doxytag: member="clavier.c::Key_modifiers" ref="c39b48ab31f617e5689999f391776064" args="(SDLMod mod)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Modificateurs_Touche           </td>
+          <td class="memname">word Key_modifiers           </td>
           <td>(</td>
           <td class="paramtype">SDLMod&nbsp;</td>
-          <td class="paramname"> <em>Mod</em>          </td>
+          <td class="paramname"> <em>mod</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -140,25 +140,25 @@ Gets the modifiers in our format from the SDL_Mod information.
 <p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>Mod</em>&nbsp;</td><td>SDL modifiers state </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mod</em>&nbsp;</td><td>SDL modifiers state </td></tr>
   </table>
 </dl>
 
-<p>References <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, and <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>.</p>
+<p>References <a class="el" href="global_8h.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="global_8h.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="global_8h.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, and <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
-<p>Referenced by <a class="el" href="clavier_8h.html#eb5d48f372846b872b3346fc865e9103">Conversion_Touche()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#eaa7965ed657408b1572984b7369d346">Handle_Mouse_Click()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#b157112ad58fc4fcdafa94aa35f9c2ac">Handle_mouse_click()</a>, and <a class="el" href="clavier_8h.html#73d0086f13b960535b84faa3e8ee21c9">Keysym_to_keycode()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="eb5d48f372846b872b3346fc865e9103"></a><!-- doxytag: member="clavier.c::Conversion_Touche" ref="eb5d48f372846b872b3346fc865e9103" args="(SDL_keysym Sym)" -->
+<a class="anchor" name="73d0086f13b960535b84faa3e8ee21c9"></a><!-- doxytag: member="clavier.c::Keysym_to_keycode" ref="73d0086f13b960535b84faa3e8ee21c9" args="(SDL_keysym keysym)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Conversion_Touche           </td>
+          <td class="memname">word Keysym_to_keycode           </td>
           <td>(</td>
           <td class="paramtype">SDL_keysym&nbsp;</td>
-          <td class="paramname"> <em>Sym</em>          </td>
+          <td class="paramname"> <em>keysym</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -171,25 +171,25 @@ Convert an SDL keysym to an internal keycode number.
 <p>
 This is needed because SDL tends to split the information across the unicode sym, the regular sym, and the raw keycode. We also need to differenciate 1 (keypad) and 1 (regular keyboard), and some other things. <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>Sym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>keysym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
   </table>
 </dl>
 
-<p>References <a class="el" href="clavier_8c.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche()</a>.</p>
+<p>References <a class="el" href="clavier_8c.html#c39b48ab31f617e5689999f391776064">Key_modifiers()</a>, and <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
-<p>Referenced by <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, <a class="el" href="input_8c.html#f53e664fe2cebe690fefbd04630fa928">Handle_Key_Release()</a>, and <a class="el" href="gfxcfg_8c.html#fd92cca7929e07dcea7a6468fa187dde">Lire_Touche()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, and <a class="el" href="input_8c.html#ce5166cecd1b4e569b998d2037a45527">Handle_key_release()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="c16979d17fa2139cf7d43197d9f978cb"></a><!-- doxytag: member="clavier.c::Nom_touche" ref="c16979d17fa2139cf7d43197d9f978cb" args="(word Touche)" -->
+<a class="anchor" name="8613914784ed7f5bbd3c1958fd0085cb"></a><!-- doxytag: member="clavier.c::Key_name" ref="8613914784ed7f5bbd3c1958fd0085cb" args="(word Key)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Nom_touche           </td>
+          <td class="memname">const char* Key_name           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Touche</em>          </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>Key</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -202,25 +202,25 @@ Returns key name in a string.
 <p>
 Used to display them in the helpscreens and in the keymapper window. <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>Touche</em>&nbsp;</td><td>keycode of the key to translate, including modifiers </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Key</em>&nbsp;</td><td>keycode of the key to translate, including modifiers </td></tr>
   </table>
 </dl>
 
-<p>References <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="clavier_8c.html#c16979d17fa2139cf7d43197d9f978cb">Nom_touche()</a>, <a class="el" href="gfxcfg_8c.html#a693203d472b8bc0d5e898aa57a6ee61">TOUCHE_BUTTON</a>, <a class="el" href="gfxcfg_8c.html#c8b40f44dee740a267918957c61a1930">TOUCHE_MOUSEMIDDLE</a>, <a class="el" href="gfxcfg_8c.html#78fe4672fc80295d06db5721315472c9">TOUCHE_MOUSEWHEELDOWN</a>, and <a class="el" href="gfxcfg_8c.html#fcb8d54c86bd18900b2b7479e90e25f1">TOUCHE_MOUSEWHEELUP</a>.</p>
+<p>References <a class="el" href="global_8h.html#d5f55e0da301996da705cfb4829cd2c3">KEY_JOYBUTTON</a>, <a class="el" href="global_8h.html#c22e7764c46533d35a1b4ca6c89cc58b">KEY_MOUSEMIDDLE</a>, <a class="el" href="global_8h.html#0ecb0aa6acd04b7e9feb53ae5f9f15da">KEY_MOUSEWHEELDOWN</a>, <a class="el" href="global_8h.html#feee0bc2d0fe0399d111ebedf3fd4c47">KEY_MOUSEWHEELUP</a>, <a class="el" href="clavier_8c.html#8613914784ed7f5bbd3c1958fd0085cb">Key_name()</a>, <a class="el" href="global_8h.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="global_8h.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="global_8h.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, and <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
-<p>Referenced by <a class="el" href="gfxcfg_8c.html#b386c1bd4845868dcd5b4eaddabedb3f">Ecrire()</a>, <a class="el" href="aide_8c.html#84e7f69a55aa8465b98366edda193a42">Fenetre_controle()</a>, <a class="el" href="clavier_8h.html#c16979d17fa2139cf7d43197d9f978cb">Nom_touche()</a>, and <a class="el" href="aide_8c.html#03864778d3fbc5bb70876101c3c5bca5">Valeur_Raccourci_Clavier()</a>.</p>
+<p>Referenced by <a class="el" href="clavier_8h.html#8613914784ed7f5bbd3c1958fd0085cb">Key_name()</a>, <a class="el" href="aide_8c.html#e73834a1c7203b32080fd5f77ab3da93">Keyboard_shortcut_value()</a>, and <a class="el" href="aide_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="7b185138d8b8ada872b817017aa1c410"></a><!-- doxytag: member="clavier.c::Conversion_ANSI" ref="7b185138d8b8ada872b817017aa1c410" args="(SDL_keysym Sym)" -->
+<a class="anchor" name="50e0882341c9d98861b9b3480c086785"></a><!-- doxytag: member="clavier.c::Keysym_to_ANSI" ref="50e0882341c9d98861b9b3480c086785" args="(SDL_keysym keysym)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Conversion_ANSI           </td>
+          <td class="memname">word Keysym_to_ANSI           </td>
           <td>(</td>
           <td class="paramtype">SDL_keysym&nbsp;</td>
-          <td class="paramname"> <em>Sym</em>          </td>
+          <td class="paramname"> <em>keysym</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -233,21 +233,21 @@ Convert an SDL keysym to an ANSI/ASCII character.
 <p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>Sym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>keysym</em>&nbsp;</td><td>SDL symbol to convert </td></tr>
   </table>
 </dl>
 
-<p>Referenced by <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="728daee9de653dc64120d047ef5ed7bd"></a><!-- doxytag: member="clavier.c::Scancode_to_Sym" ref="728daee9de653dc64120d047ef5ed7bd" args="[256][4]" -->
+<a class="anchor" name="cfc6d037685e4fb23357a40a24a863f0"></a><!-- doxytag: member="clavier.c::Scancode_to_sym" ref="cfc6d037685e4fb23357a40a24a863f0" args="[256][4]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="clavier_8c.html#728daee9de653dc64120d047ef5ed7bd">Scancode_to_Sym</a>[256][4]          </td>
+          <td class="memname">const word <a class="el" href="clavier_8c.html#cfc6d037685e4fb23357a40a24a863f0">Scancode_to_sym</a>[256][4]          </td>
         </tr>
       </table>
 </div>
@@ -255,12 +255,12 @@ Convert an SDL keysym to an ANSI/ASCII character.
 
 <p>
 
-<p>Referenced by <a class="el" href="clavier_8h.html#f8205c931fd5746f6b7ffe575c747711">Touche_pour_scancode()</a>.</p>
+<p>Referenced by <a class="el" href="clavier_8h.html#03459332e6f78e484ecc25b08ef623b2">Key_for_scancode()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:11 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

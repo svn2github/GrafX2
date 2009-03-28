@@ -82,70 +82,70 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#767ab0ee74e19ae945be4bff80409f0b">Set_Palette_RGB_Scale</a> (int Grad)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#b5e7d9ac8c6f2c1655c0c4b79c71d455">Set_palette_RGB_scale</a> (int scale)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#8feef489aa04e84eeb21cac037f07253">Palette_Scale_Component</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Comp)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#ec78e3987c86258681581f68cb5d3c7f">Round_palette_component</a> (byte comp)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#9384ffb7a099fa51c4f2508ba6fc0e3d">Unite_Composantes</a> (int Count)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#d92d3cb56f5d82915153dd729f590047">Componant_unit</a> (int count)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#f8638610647d4bd770db3709758d7e8e">Modifier_HSL</a> (<a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette_depart, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette_arrivee, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur, short Difference_H, short Difference_S, short Difference_L)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#61ddbb8c8500415f6b684b84b02f353c">Set_HSL</a> (<a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> start_palette, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> end_palette, byte color, short diff_h, short diff_s, short diff_l)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#26d6e3edbc3d6bb85a1d70c73c0e0e1d">Modifier_Rouge</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur, short Nouvelle_teinte, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#f208a39bdec0cff5dfd890cb90b50702">Set_red</a> (byte color, short new_color, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#673428ea7a50975e993a8b889075f1ba">Modifier_Vert</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur, short Nouvelle_teinte, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#8e56efd6e9033dfef382bfca05ad1484">Set_green</a> (byte color, short new_color, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#afec736b3dbd907d494a00e6a3dbad55">Modifier_Bleu</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur, short Nouvelle_teinte, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#340781219fa9a0233f07df536767cb04">Set_blue</a> (byte color, short new_color, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#f08ed2cacc2493a4577b445ce79c47b6">Formate_composante</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Valeur, char *Chaine)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#91ec0ec7e88ef02dfa0c2a830a9fc1b1">Format_componant</a> (byte value, char *str)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#cd379047e8ee0b2fdf26baf57bd32591">Degrader_palette</a> (short Debut, short Fin, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#b026ba34caee8bf940874346a67a0c14">Spread_colors</a> (short start, short end, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#4daa00ab08f178b5d02212adffb25829">Compter_nb_couleurs_utilisees</a> (short *Nb_couleurs_utilisees, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Utilisation_couleur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#62ea7be165ac1bc414ad91d37fccdb9f">Update_color_count</a> (short *used_colors, dword *color_usage)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#15e516fa7bc231744f927a740c9be49e">Remap_zone_HIGH</a> (short X1, short Y1, short X2, short Y2, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *Table_de_conversion)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#ba00ffe61f905d6cfcf8ba0419bc1b03">Remap_zone_highlevel</a> (short x1, short y1, short x2, short y2, byte *conversion_table)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *Table_de_conversion)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel</a> (byte *conversion_table)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#6c2248dd3caf9967e488a1e2900ab975">Swap</a> (int X_Swap, short Debut_Bloc_1, short Debut_Bloc_2, short Taille_du_bloc, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Utilisation_couleur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#2793ebab37863dd05e1d880543cb47ba">Swap</a> (int with_remap, short block_1_start, short block_2_start, short block_size, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette, dword *color_usage)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#f7d804e70ef9ca2c9b3ff9da7a9b83bf">Remettre_proprement_les_couleurs_du_menu</a> (<a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Utilisation_couleur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#f80fcedd54485413d4f60148d7e5c862">Set_nice_menu_colors</a> (dword *color_usage)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#44c5facc1f0ef33259b8de7b54cb588b">Reduce_palette</a> (short *Nb_couleurs_utilisees, int Nb_couleurs_demandees, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Utilisation_couleur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#b0be6b008a4ef67410cfe3f6db89b731">Reduce_palette</a> (short *used_colors, int nb_colors_asked, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette, dword *color_usage)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#036291f55ed7129dc6707f7d5d92c260">Palette_Modifier_jauge</a> (<a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Nb_elements, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Position, char *Valeur, short Pos_X)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#3c5aba4e148932b85ee586a5ccaca4ea">Set_palette_slider</a> (<a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *slider, word nb_elements, word position, char *value, short x_pos)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges</a> (<a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_rouge, <a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_verte, <a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_bleue, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Bloc_selectionne, Composantes *Palette)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders</a> (<a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *red_slider, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *green_slider, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *blue_slider, byte block_is_selected, <a class="el" href="structT__Components.html">T_Components</a> *palette)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#b6f4bf25023db6e86a534cb2a423e91f">Palette_Reafficher_jauges</a> (<a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_rouge, <a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_verte, <a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *Jauge_bleue, <a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a> Palette, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Debut, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Fin)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#9c151bd5485e00f847bbe36cfdfbc8f1">Draw_all_palette_sliders</a> (<a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *red_slider, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *green_slider, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *blue_slider, <a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a> palette, byte start, byte end)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette</a> (void)</td></tr>
 
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#8932f4f00d987697be351d40060cb9de">Palette_mode_RGB</a> = 1</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#0b5d61c6b39eda2288a960db74c16153">Palette_view_is_RGB</a> = 1</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#0b0db882f4d189b7f9bb0f8ba16ae8f7">Libelle_reduction_palette</a> [7]</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#69f64d8aafcf8e59b25eda8ce875a1c6">Palette_reduce_label</a> [7]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a> = 256</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a> = 256</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#ff3ca5c55c1377eaddb08c22ba9acb2d">Color_Count</a> = 256</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#11e069238f649bb0211782f421b41170">Color_count</a> = 256</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a> = 255</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a> = 255</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#54f9fc0363c1c4c3087dd64983f03600">Color_DemiPas</a> = 0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8c.html#4a12879968be1d738204926bf4e52c38">Color_halfstep</a> = 0</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="767ab0ee74e19ae945be4bff80409f0b"></a><!-- doxytag: member="palette.c::Set_Palette_RGB_Scale" ref="767ab0ee74e19ae945be4bff80409f0b" args="(int Grad)" -->
+<a class="anchor" name="b5e7d9ac8c6f2c1655c0c4b79c71d455"></a><!-- doxytag: member="palette.c::Set_palette_RGB_scale" ref="b5e7d9ac8c6f2c1655c0c4b79c71d455" args="(int scale)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Set_Palette_RGB_Scale           </td>
+          <td class="memname">void Set_palette_RGB_scale           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Grad</em>          </td>
+          <td class="paramname"> <em>scale</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -155,21 +155,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a>.</p>
+<p>References <a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#4f6c2378e49fa3c0022357520e17e099">Analyse_de_la_ligne_de_commande()</a>, and <a class="el" href="palette_8h.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, and <a class="el" href="palette_8h.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="8feef489aa04e84eeb21cac037f07253"></a><!-- doxytag: member="palette.c::Palette_Scale_Component" ref="8feef489aa04e84eeb21cac037f07253" args="(byte Comp)" -->
+<a class="anchor" name="ec78e3987c86258681581f68cb5d3c7f"></a><!-- doxytag: member="palette.c::Round_palette_component" ref="ec78e3987c86258681581f68cb5d3c7f" args="(byte comp)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Palette_Scale_Component           </td>
+          <td class="memname">byte Round_palette_component           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Comp</em>          </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>comp</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -179,21 +179,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a>.</p>
+<p>References <a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#afec736b3dbd907d494a00e6a3dbad55">Modifier_Bleu()</a>, <a class="el" href="palette_8c.html#26d6e3edbc3d6bb85a1d70c73c0e0e1d">Modifier_Rouge()</a>, <a class="el" href="palette_8c.html#673428ea7a50975e993a8b889075f1ba">Modifier_Vert()</a>, and <a class="el" href="divers_8h.html#9d902fe9687285300da908c6d1d2527a">Set_palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8c.html#340781219fa9a0233f07df536767cb04">Set_blue()</a>, <a class="el" href="palette_8c.html#8e56efd6e9033dfef382bfca05ad1484">Set_green()</a>, <a class="el" href="divers_8h.html#7f8562564c597185de8b961ac337144e">Set_palette()</a>, and <a class="el" href="palette_8c.html#f208a39bdec0cff5dfd890cb90b50702">Set_red()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="9384ffb7a099fa51c4f2508ba6fc0e3d"></a><!-- doxytag: member="palette.c::Unite_Composantes" ref="9384ffb7a099fa51c4f2508ba6fc0e3d" args="(int Count)" -->
+<a class="anchor" name="d92d3cb56f5d82915153dd729f590047"></a><!-- doxytag: member="palette.c::Componant_unit" ref="d92d3cb56f5d82915153dd729f590047" args="(int count)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Unite_Composantes           </td>
+          <td class="memname">void Componant_unit           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Count</em>          </td>
+          <td class="paramname"> <em>count</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -203,51 +203,51 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#ff3ca5c55c1377eaddb08c22ba9acb2d">Color_Count</a>, <a class="el" href="palette_8c.html#54f9fc0363c1c4c3087dd64983f03600">Color_DemiPas</a>, and <a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a>.</p>
+<p>References <a class="el" href="palette_8c.html#11e069238f649bb0211782f421b41170">Color_count</a>, <a class="el" href="palette_8c.html#4a12879968be1d738204926bf4e52c38">Color_halfstep</a>, and <a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f8638610647d4bd770db3709758d7e8e"></a><!-- doxytag: member="palette.c::Modifier_HSL" ref="f8638610647d4bd770db3709758d7e8e" args="(T_Palette Palette_depart, T_Palette Palette_arrivee, byte Couleur, short Difference_H, short Difference_S, short Difference_L)" -->
+<a class="anchor" name="61ddbb8c8500415f6b684b84b02f353c"></a><!-- doxytag: member="palette.c::Set_HSL" ref="61ddbb8c8500415f6b684b84b02f353c" args="(T_Palette start_palette, T_Palette end_palette, byte color, short diff_h, short diff_s, short diff_l)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Modifier_HSL           </td>
+          <td class="memname">void Set_HSL           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette_depart</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>start_palette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette_arrivee</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>end_palette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Difference_H</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Difference_S</em>, </td>
+          <td class="paramname"> <em>diff_h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Difference_L</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>diff_s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>diff_l</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -260,33 +260,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="op__c_8c.html#e9723b440da4203d646ad9807a27b19f">HSLtoRGB()</a>, and <a class="el" href="op__c_8c.html#6654d4e9f86ef5667510e89db9a58e1a">RGBtoHSL()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="op__c_8c.html#10e6fc172ca5a519968390e82fa23200">HSL_to_RGB()</a>, and <a class="el" href="op__c_8c.html#18cdbac4d408c44aa36f17f6f3cdebb0">RGB_to_HSL()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="26d6e3edbc3d6bb85a1d70c73c0e0e1d"></a><!-- doxytag: member="palette.c::Modifier_Rouge" ref="26d6e3edbc3d6bb85a1d70c73c0e0e1d" args="(byte Couleur, short Nouvelle_teinte, T_Palette Palette)" -->
+<a class="anchor" name="f208a39bdec0cff5dfd890cb90b50702"></a><!-- doxytag: member="palette.c::Set_red" ref="f208a39bdec0cff5dfd890cb90b50702" args="(byte color, short new_color, T_Palette palette)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Modifier_Rouge           </td>
+          <td class="memname">void Set_red           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Nouvelle_teinte</em>, </td>
+          <td class="paramname"> <em>new_color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -299,33 +299,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#8feef489aa04e84eeb21cac037f07253">Palette_Scale_Component()</a>, and <a class="el" href="divers_8c.html#4a3400c638803d9c7d7b597d5193109f">Set_color()</a>.</p>
+<p>References <a class="el" href="palette_8c.html#ec78e3987c86258681581f68cb5d3c7f">Round_palette_component()</a>, and <a class="el" href="divers_8c.html#5b134e3e99433b372e6ea2d45ec955fc">Set_color()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#cd379047e8ee0b2fdf26baf57bd32591">Degrader_palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, and <a class="el" href="palette_8c.html#b026ba34caee8bf940874346a67a0c14">Spread_colors()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="673428ea7a50975e993a8b889075f1ba"></a><!-- doxytag: member="palette.c::Modifier_Vert" ref="673428ea7a50975e993a8b889075f1ba" args="(byte Couleur, short Nouvelle_teinte, T_Palette Palette)" -->
+<a class="anchor" name="8e56efd6e9033dfef382bfca05ad1484"></a><!-- doxytag: member="palette.c::Set_green" ref="8e56efd6e9033dfef382bfca05ad1484" args="(byte color, short new_color, T_Palette palette)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Modifier_Vert           </td>
+          <td class="memname">void Set_green           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Nouvelle_teinte</em>, </td>
+          <td class="paramname"> <em>new_color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -338,33 +338,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#8feef489aa04e84eeb21cac037f07253">Palette_Scale_Component()</a>, and <a class="el" href="divers_8c.html#4a3400c638803d9c7d7b597d5193109f">Set_color()</a>.</p>
+<p>References <a class="el" href="palette_8c.html#ec78e3987c86258681581f68cb5d3c7f">Round_palette_component()</a>, and <a class="el" href="divers_8c.html#5b134e3e99433b372e6ea2d45ec955fc">Set_color()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#cd379047e8ee0b2fdf26baf57bd32591">Degrader_palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, and <a class="el" href="palette_8c.html#b026ba34caee8bf940874346a67a0c14">Spread_colors()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="afec736b3dbd907d494a00e6a3dbad55"></a><!-- doxytag: member="palette.c::Modifier_Bleu" ref="afec736b3dbd907d494a00e6a3dbad55" args="(byte Couleur, short Nouvelle_teinte, T_Palette Palette)" -->
+<a class="anchor" name="340781219fa9a0233f07df536767cb04"></a><!-- doxytag: member="palette.c::Set_blue" ref="340781219fa9a0233f07df536767cb04" args="(byte color, short new_color, T_Palette palette)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Modifier_Bleu           </td>
+          <td class="memname">void Set_blue           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Nouvelle_teinte</em>, </td>
+          <td class="paramname"> <em>new_color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -377,27 +377,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#8feef489aa04e84eeb21cac037f07253">Palette_Scale_Component()</a>, and <a class="el" href="divers_8c.html#4a3400c638803d9c7d7b597d5193109f">Set_color()</a>.</p>
+<p>References <a class="el" href="palette_8c.html#ec78e3987c86258681581f68cb5d3c7f">Round_palette_component()</a>, and <a class="el" href="divers_8c.html#5b134e3e99433b372e6ea2d45ec955fc">Set_color()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#cd379047e8ee0b2fdf26baf57bd32591">Degrader_palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, and <a class="el" href="palette_8c.html#b026ba34caee8bf940874346a67a0c14">Spread_colors()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f08ed2cacc2493a4577b445ce79c47b6"></a><!-- doxytag: member="palette.c::Formate_composante" ref="f08ed2cacc2493a4577b445ce79c47b6" args="(byte Valeur, char *Chaine)" -->
+<a class="anchor" name="91ec0ec7e88ef02dfa0c2a830a9fc1b1"></a><!-- doxytag: member="palette.c::Format_componant" ref="91ec0ec7e88ef02dfa0c2a830a9fc1b1" args="(byte value, char *str)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Formate_composante           </td>
+          <td class="memname">void Format_componant           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Valeur</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Chaine</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>str</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -410,33 +410,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="divers_8c.html#b4b24af2e38abe4d41b8703b28f067a4">Num2str()</a>.</p>
+<p>References <a class="el" href="divers_8c.html#62a4e071628c8a881694c247113387ca">Num2str()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#b6f4bf25023db6e86a534cb2a423e91f">Palette_Reafficher_jauges()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>, and <a class="el" href="palette_8c.html#9c151bd5485e00f847bbe36cfdfbc8f1">Draw_all_palette_sliders()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="cd379047e8ee0b2fdf26baf57bd32591"></a><!-- doxytag: member="palette.c::Degrader_palette" ref="cd379047e8ee0b2fdf26baf57bd32591" args="(short Debut, short Fin, T_Palette Palette)" -->
+<a class="anchor" name="b026ba34caee8bf940874346a67a0c14"></a><!-- doxytag: member="palette.c::Spread_colors" ref="b026ba34caee8bf940874346a67a0c14" args="(short start, short end, T_Palette palette)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Degrader_palette           </td>
+          <td class="memname">void Spread_colors           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Debut</em>, </td>
+          <td class="paramname"> <em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Fin</em>, </td>
+          <td class="paramname"> <em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,27 +449,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#afec736b3dbd907d494a00e6a3dbad55">Modifier_Bleu()</a>, <a class="el" href="palette_8c.html#26d6e3edbc3d6bb85a1d70c73c0e0e1d">Modifier_Rouge()</a>, and <a class="el" href="palette_8c.html#673428ea7a50975e993a8b889075f1ba">Modifier_Vert()</a>.</p>
+<p>References <a class="el" href="palette_8c.html#340781219fa9a0233f07df536767cb04">Set_blue()</a>, <a class="el" href="palette_8c.html#8e56efd6e9033dfef382bfca05ad1484">Set_green()</a>, and <a class="el" href="palette_8c.html#f208a39bdec0cff5dfd890cb90b50702">Set_red()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="4daa00ab08f178b5d02212adffb25829"></a><!-- doxytag: member="palette.c::Compter_nb_couleurs_utilisees" ref="4daa00ab08f178b5d02212adffb25829" args="(short *Nb_couleurs_utilisees, dword *Utilisation_couleur)" -->
+<a class="anchor" name="62ea7be165ac1bc414ad91d37fccdb9f"></a><!-- doxytag: member="palette.c::Update_color_count" ref="62ea7be165ac1bc414ad91d37fccdb9f" args="(short *used_colors, dword *color_usage)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Compter_nb_couleurs_utilisees           </td>
+          <td class="memname">void Update_color_count           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Nb_couleurs_utilisees</em>, </td>
+          <td class="paramname"> <em>used_colors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Utilisation_couleur</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>color_usage</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -482,45 +482,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="moteur_8c.html#96ef3a32ca18dfca5c5ad6dc24f0cc29">Fenetre_Dessiner_bouton_normal()</a>, <a class="el" href="global_8h.html#0625d5e49ae754d9fd4757f05395c508">Forme_curseur</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffccec5c853f904868573fc1bb35e0cf6147e">FORME_CURSEUR_FLECHE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce6cef0ff269d04ef95fc5d29735c4d2b7">FORME_CURSEUR_SABLIER</a>, <a class="el" href="divers_8c.html#b4b24af2e38abe4d41b8703b28f067a4">Num2str()</a>, and <a class="el" href="divers_8c.html#5f2926ca40b06bae49ccb233ff1208cd">Palette_Compter_nb_couleurs_utilisees()</a>.</p>
+<p>References <a class="el" href="divers_8c.html#0b061f059f73d526f824a61e2b71a178">Count_used_colors()</a>, <a class="el" href="global_8h.html#5689602469211db841a515f777907f3e">Cursor_shape</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251abcc273effaf4adced7d74d4d3e9bd0e78">CURSOR_SHAPE_ARROW</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab0943e38fb4fbc8f27496f246798f25f6">CURSOR_SHAPE_HOURGLASS</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="divers_8c.html#62a4e071628c8a881694c247113387ca">Num2str()</a>, and <a class="el" href="moteur_8c.html#1b14becc229544bad51886fcedc32824">Window_draw_normal_bouton()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#44c5facc1f0ef33259b8de7b54cb588b">Reduce_palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, and <a class="el" href="palette_8c.html#b0be6b008a4ef67410cfe3f6db89b731">Reduce_palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="15e516fa7bc231744f927a740c9be49e"></a><!-- doxytag: member="palette.c::Remap_zone_HIGH" ref="15e516fa7bc231744f927a740c9be49e" args="(short X1, short Y1, short X2, short Y2, byte *Table_de_conversion)" -->
+<a class="anchor" name="ba00ffe61f905d6cfcf8ba0419bc1b03"></a><!-- doxytag: member="palette.c::Remap_zone_highlevel" ref="ba00ffe61f905d6cfcf8ba0419bc1b03" args="(short x1, short y1, short x2, short y2, byte *conversion_table)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Remap_zone_HIGH           </td>
+          <td class="memname">void Remap_zone_highlevel           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>X1</em>, </td>
+          <td class="paramname"> <em>x1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Y1</em>, </td>
+          <td class="paramname"> <em>y1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>X2</em>, </td>
+          <td class="paramname"> <em>x2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Y2</em>, </td>
+          <td class="paramname"> <em>y2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td>
-          <td class="paramname"> <em>Table_de_conversion</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte *&nbsp;</td>
+          <td class="paramname"> <em>conversion_table</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -533,21 +533,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#287f31b45fbe50d6ad7de35d139ed504">Fenetre_Hauteur</a>, <a class="el" href="global_8h.html#997f085bf9a3144d18508847dd437ce8">Fenetre_Largeur</a>, <a class="el" href="global_8h.html#f7514cf38dd0c41f29c21dc4feb39ab0">Fenetre_Pos_X</a>, <a class="el" href="global_8h.html#97b5ab8c3d6a44ff27e0e3a79818c521">Fenetre_Pos_Y</a>, <a class="el" href="global_8h.html#845353bdc633819397a1d258c071e2b0">Lit_pixel</a>, <a class="el" href="global_8h.html#9165b289f849afbe536c42b2583bb636">Menu_Facteur_X</a>, <a class="el" href="global_8h.html#547d90ab81e9c2bdaa524fbe62085fe1">Menu_Facteur_Y</a>, and <a class="el" href="global_8h.html#636daa920efcc404a203c3abab2ce35c">Pixel</a>.</p>
+<p>References <a class="el" href="global_8h.html#757fd1fd1ef295440020024927fe2ed4">Menu_factor_X</a>, <a class="el" href="global_8h.html#d65a143da22eeffea91b02e9d826fea1">Menu_factor_Y</a>, <a class="el" href="global_8h.html#6de0580f7e043479e48c0092fb786c31">Pixel</a>, <a class="el" href="global_8h.html#5c4b8c43509be4c0d460840693ec16d6">Read_pixel</a>, <a class="el" href="global_8h.html#d0e6bca6817a6e0bdd09a6616371d5b2">Window_height</a>, <a class="el" href="global_8h.html#5e636fdcb1bac88ea7af84b0749b26c7">Window_pos_X</a>, <a class="el" href="global_8h.html#2648c309928202bf8ab639336a3a4da3">Window_pos_Y</a>, and <a class="el" href="global_8h.html#31a5271252a6a523df0d42c08939ca2c">Window_width</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="94f783f1ff88b90c4459c6403aa4671e"></a><!-- doxytag: member="palette.c::Remap_image_HIGH" ref="94f783f1ff88b90c4459c6403aa4671e" args="(byte *Table_de_conversion)" -->
+<a class="anchor" name="4fb628bf9de156357eac6ab02192ab54"></a><!-- doxytag: member="palette.c::Remap_image_highlevel" ref="4fb628bf9de156357eac6ab02192ab54" args="(byte *conversion_table)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Remap_image_HIGH           </td>
+          <td class="memname">void Remap_image_highlevel           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td>
-          <td class="paramname"> <em>Table_de_conversion</em>          </td>
+          <td class="paramtype">byte *&nbsp;</td>
+          <td class="paramname"> <em>conversion_table</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -557,13 +557,13 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#1f707888206f523d985e95c9979c5160">LARGEUR_BARRE_SPLIT</a>, <a class="el" href="global_8h.html#71463060a85d2c31eea4d9a16c535e4c">Largeur_ecran</a>, <a class="el" href="global_8h.html#d5944d3555e9ddbd0f35e0cc51d72914">Loupe_Facteur</a>, <a class="el" href="global_8h.html#4f5e6ab2338af71ae4064d2ab9c5a985">Loupe_Mode</a>, <a class="el" href="global_8h.html#9165b289f849afbe536c42b2583bb636">Menu_Facteur_X</a>, <a class="el" href="global_8h.html#3556e5ddc0f72d500ae21ca8a9ce3351">Menu_Ordonnee_avant_fenetre</a>, <a class="el" href="global_8h.html#8addd439152afd516eee6404384e9136">Principal_Ecran</a>, <a class="el" href="global_8h.html#48dd1a1f2a5b757ae37f31afe991f20c">Principal_Hauteur_image</a>, <a class="el" href="global_8h.html#c575dff8dfa9dca914fa23c29a008040">Principal_Largeur_image</a>, <a class="el" href="global_8h.html#a10b04149a8f9950079cb17c904f0b5c">Principal_Split</a>, <a class="el" href="global_8h.html#4edb76b48e7b0615bde91bfa0e21f8a4">Principal_X_Zoom</a>, <a class="el" href="divers_8c.html#e206272fba07d0ec48fd8a64662e3a42">Remap_general_LOWLEVEL()</a>, <a class="el" href="palette_8c.html#15e516fa7bc231744f927a740c9be49e">Remap_zone_HIGH()</a>, and <a class="el" href="moteur_8c.html#9e86d7f8951e5b2266c0b30176cc3ad1">Remappe_fond_fenetres()</a>.</p>
+<p>References <a class="el" href="global_8h.html#3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#a54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#0ac98f60637f9c38e92f263474f2d436">Main_magnifier_factor</a>, <a class="el" href="global_8h.html#f5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="global_8h.html#5b0b3eb2d659e5548f885979a04064fd">Main_separator_position</a>, <a class="el" href="global_8h.html#8dda2d1401996922c89b47f372f3621f">Main_X_zoom</a>, <a class="el" href="global_8h.html#757fd1fd1ef295440020024927fe2ed4">Menu_factor_X</a>, <a class="el" href="global_8h.html#539018a0fc48fbcb317333c4a502312c">Menu_Y_before_window</a>, <a class="el" href="divers_8c.html#5e926cd3722a582fe18a24734055c0fa">Remap_general_lowlevel()</a>, <a class="el" href="moteur_8c.html#89ff6ce9b02aa53a1ba52decbf979fde">Remap_window_backgrounds()</a>, <a class="el" href="palette_8c.html#ba00ffe61f905d6cfcf8ba0419bc1b03">Remap_zone_highlevel()</a>, <a class="el" href="global_8h.html#57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>, and <a class="el" href="const_8h.html#56650daa2f87d09c7b55ce51d7c83290">SEPARATOR_WIDTH</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="palette_8c.html#44c5facc1f0ef33259b8de7b54cb588b">Reduce_palette()</a>, <a class="el" href="palette_8c.html#f7d804e70ef9ca2c9b3ff9da7a9b83bf">Remettre_proprement_les_couleurs_du_menu()</a>, and <a class="el" href="palette_8c.html#6c2248dd3caf9967e488a1e2900ab975">Swap()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8c.html#b0be6b008a4ef67410cfe3f6db89b731">Reduce_palette()</a>, <a class="el" href="palette_8c.html#f80fcedd54485413d4f60148d7e5c862">Set_nice_menu_colors()</a>, and <a class="el" href="palette_8c.html#2793ebab37863dd05e1d880543cb47ba">Swap()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="6c2248dd3caf9967e488a1e2900ab975"></a><!-- doxytag: member="palette.c::Swap" ref="6c2248dd3caf9967e488a1e2900ab975" args="(int X_Swap, short Debut_Bloc_1, short Debut_Bloc_2, short Taille_du_bloc, T_Palette Palette, dword *Utilisation_couleur)" -->
+<a class="anchor" name="2793ebab37863dd05e1d880543cb47ba"></a><!-- doxytag: member="palette.c::Swap" ref="2793ebab37863dd05e1d880543cb47ba" args="(int with_remap, short block_1_start, short block_2_start, short block_size, T_Palette palette, dword *color_usage)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -571,37 +571,37 @@ window.onload = initDynSections;
           <td class="memname">void Swap           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>X_Swap</em>, </td>
+          <td class="paramname"> <em>with_remap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Debut_Bloc_1</em>, </td>
+          <td class="paramname"> <em>block_1_start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Debut_Bloc_2</em>, </td>
+          <td class="paramname"> <em>block_2_start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Taille_du_bloc</em>, </td>
+          <td class="paramname"> <em>block_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Utilisation_couleur</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>color_usage</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -614,21 +614,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH()</a>.</p>
+<p>References <a class="el" href="structT__Components.html#f07e860d4622dd1a04ad48bb5fcfb130">T_Components::B</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="structT__Components.html#80285133f5e6b8a07698ae883204856b">T_Components::G</a>, <a class="el" href="structT__Components.html#e681f54e6b250380216d172d7e8700c3">T_Components::R</a>, and <a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f7d804e70ef9ca2c9b3ff9da7a9b83bf"></a><!-- doxytag: member="palette.c::Remettre_proprement_les_couleurs_du_menu" ref="f7d804e70ef9ca2c9b3ff9da7a9b83bf" args="(dword *Utilisation_couleur)" -->
+<a class="anchor" name="f80fcedd54485413d4f60148d7e5c862"></a><!-- doxytag: member="palette.c::Set_nice_menu_colors" ref="f80fcedd54485413d4f60148d7e5c862" args="(dword *color_usage)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Remettre_proprement_les_couleurs_du_menu           </td>
+          <td class="memname">void Set_nice_menu_colors           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Utilisation_couleur</em>          </td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>color_usage</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -638,13 +638,13 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="global_8h.html#3715edf2de2f287cdd1a5d6906eb58dd">Coul_menu_pref</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="windows_8c.html#e50dd9d47b4cf7aeed9a47f8319e8a9a">Meilleure_couleur_sans_exclusion()</a>, <a class="el" href="global_8h.html#5f1a588fbaff890b98047add4138c451">Principal_Palette</a>, and <a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH()</a>.</p>
+<p>References <a class="el" href="structT__Components.html#f07e860d4622dd1a04ad48bb5fcfb130">T_Components::B</a>, <a class="el" href="windows_8c.html#c77cc12c0e89de57d2f264f654629079">Best_color_nonexcluded()</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="global_8h.html#0f2e7bd31c0b00bbcff9a6c66713b0b0">Fav_menu_colors</a>, <a class="el" href="structT__Components.html#80285133f5e6b8a07698ae883204856b">T_Components::G</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="structT__Components.html#e681f54e6b250380216d172d7e8700c3">T_Components::R</a>, and <a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="44c5facc1f0ef33259b8de7b54cb588b"></a><!-- doxytag: member="palette.c::Reduce_palette" ref="44c5facc1f0ef33259b8de7b54cb588b" args="(short *Nb_couleurs_utilisees, int Nb_couleurs_demandees, T_Palette Palette, dword *Utilisation_couleur)" -->
+<a class="anchor" name="b0be6b008a4ef67410cfe3f6db89b731"></a><!-- doxytag: member="palette.c::Reduce_palette" ref="b0be6b008a4ef67410cfe3f6db89b731" args="(short *used_colors, int nb_colors_asked, T_Palette palette, dword *color_usage)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -652,25 +652,25 @@ window.onload = initDynSections;
           <td class="memname">void Reduce_palette           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Nb_couleurs_utilisees</em>, </td>
+          <td class="paramname"> <em>used_colors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Nb_couleurs_demandees</em>, </td>
+          <td class="paramname"> <em>nb_colors_asked</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Utilisation_couleur</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>color_usage</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -683,45 +683,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="palette_8c.html#4daa00ab08f178b5d02212adffb25829">Compter_nb_couleurs_utilisees()</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="divers_8c.html#b4b24af2e38abe4d41b8703b28f067a4">Num2str()</a>, <a class="el" href="windows_8c.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, <a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH()</a>, and <a class="el" href="divers_8c.html#c9c4ce4fed279d878acf9f635c96d1d0">Round_div()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="divers_8c.html#62a4e071628c8a881694c247113387ca">Num2str()</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel()</a>, <a class="el" href="divers_8c.html#636ce6ab471361819e5fa6c8623bebf4">Round_div()</a>, and <a class="el" href="palette_8c.html#62ea7be165ac1bc414ad91d37fccdb9f">Update_color_count()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="036291f55ed7129dc6707f7d5d92c260"></a><!-- doxytag: member="palette.c::Palette_Modifier_jauge" ref="036291f55ed7129dc6707f7d5d92c260" args="(T_Bouton_scroller *Jauge, word Nb_elements, word Position, char *Valeur, short Pos_X)" -->
+<a class="anchor" name="3c5aba4e148932b85ee586a5ccaca4ea"></a><!-- doxytag: member="palette.c::Set_palette_slider" ref="3c5aba4e148932b85ee586a5ccaca4ea" args="(T_Scroller_button *slider, word nb_elements, word position, char *value, short x_pos)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Palette_Modifier_jauge           </td>
+          <td class="memname">void Set_palette_slider           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Nb_elements</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>nb_elements</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Position</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Valeur</em>, </td>
+          <td class="paramname"> <em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Pos_X</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>x_pos</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -734,45 +734,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="moteur_8c.html#91bd598fa89df0c234232fc323615439">Calculer_hauteur_curseur_jauge()</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="moteur_8c.html#0507f1566d980c2fa37357fa922bf3f5">Fenetre_Dessiner_jauge()</a>, <a class="el" href="structT__Bouton__scroller.html#3f603e33a0ba59d96d272bc417d50e4a">T_Bouton_scroller::Nb_elements</a>, <a class="el" href="structT__Bouton__scroller.html#f1a7acdc5751ca14906c720caf9a290e">T_Bouton_scroller::Position</a>, and <a class="el" href="windows_8c.html#aa269593fd5cfeac370a1dd1c6fd9474">Print_compteur()</a>.</p>
+<p>References <a class="el" href="moteur_8c.html#9a5e099a9ad06b6626c9ac54fdbc0ef8">Compute_slider_cursor_height()</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="structT__Scroller__button.html#5ac3712cd58394c52301c4c5a7eafffc">T_Scroller_button::Nb_elements</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="windows_8c.html#ddeb396d54ca20aed9869c9a645a851f">Print_counter()</a>, and <a class="el" href="moteur_8c.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0263920669649205c2fa6a488b697de5"></a><!-- doxytag: member="palette.c::Afficher_les_jauges" ref="0263920669649205c2fa6a488b697de5" args="(T_Bouton_scroller *Jauge_rouge, T_Bouton_scroller *Jauge_verte, T_Bouton_scroller *Jauge_bleue, byte Bloc_selectionne, Composantes *Palette)" -->
+<a class="anchor" name="7689a40bd0f022dcbb82b0e970bf7a86"></a><!-- doxytag: member="palette.c::Display_sliders" ref="7689a40bd0f022dcbb82b0e970bf7a86" args="(T_Scroller_button *red_slider, T_Scroller_button *green_slider, T_Scroller_button *blue_slider, byte block_is_selected, T_Components *palette)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Afficher_les_jauges           </td>
+          <td class="memname">void Display_sliders           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_rouge</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>red_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_verte</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>green_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_bleue</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>blue_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Bloc_selectionne</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>block_is_selected</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Composantes *&nbsp;</td>
-          <td class="paramname"> <em>Palette</em></td><td>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="structT__Components.html">T_Components</a> *&nbsp;</td>
+          <td class="paramname"> <em>palette</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -785,51 +785,51 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="palette_8c.html#ff3ca5c55c1377eaddb08c22ba9acb2d">Color_Count</a>, <a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a>, <a class="el" href="global_8h.html#b790189aeb3d252f013fe7049107a974">Fore_color</a>, <a class="el" href="palette_8c.html#f08ed2cacc2493a4577b445ce79c47b6">Formate_composante()</a>, <a class="el" href="palette_8c.html#8932f4f00d987697be351d40060cb9de">Palette_mode_RGB</a>, <a class="el" href="palette_8c.html#036291f55ed7129dc6707f7d5d92c260">Palette_Modifier_jauge()</a>, and <a class="el" href="op__c_8c.html#6654d4e9f86ef5667510e89db9a58e1a">RGBtoHSL()</a>.</p>
+<p>References <a class="el" href="structT__Components.html#f07e860d4622dd1a04ad48bb5fcfb130">T_Components::B</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="palette_8c.html#11e069238f649bb0211782f421b41170">Color_count</a>, <a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a>, <a class="el" href="global_8h.html#b790189aeb3d252f013fe7049107a974">Fore_color</a>, <a class="el" href="palette_8c.html#91ec0ec7e88ef02dfa0c2a830a9fc1b1">Format_componant()</a>, <a class="el" href="structT__Components.html#80285133f5e6b8a07698ae883204856b">T_Components::G</a>, <a class="el" href="palette_8c.html#0b5d61c6b39eda2288a960db74c16153">Palette_view_is_RGB</a>, <a class="el" href="structT__Components.html#e681f54e6b250380216d172d7e8700c3">T_Components::R</a>, <a class="el" href="op__c_8c.html#18cdbac4d408c44aa36f17f6f3cdebb0">RGB_to_HSL()</a>, and <a class="el" href="palette_8c.html#3c5aba4e148932b85ee586a5ccaca4ea">Set_palette_slider()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="b6f4bf25023db6e86a534cb2a423e91f"></a><!-- doxytag: member="palette.c::Palette_Reafficher_jauges" ref="b6f4bf25023db6e86a534cb2a423e91f" args="(T_Bouton_scroller *Jauge_rouge, T_Bouton_scroller *Jauge_verte, T_Bouton_scroller *Jauge_bleue, T_Palette Palette, byte Debut, byte Fin)" -->
+<a class="anchor" name="9c151bd5485e00f847bbe36cfdfbc8f1"></a><!-- doxytag: member="palette.c::Draw_all_palette_sliders" ref="9c151bd5485e00f847bbe36cfdfbc8f1" args="(T_Scroller_button *red_slider, T_Scroller_button *green_slider, T_Scroller_button *blue_slider, T_Palette palette, byte start, byte end)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Palette_Reafficher_jauges           </td>
+          <td class="memname">void Draw_all_palette_sliders           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_rouge</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>red_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_verte</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>green_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__scroller.html">T_Bouton_scroller</a> *&nbsp;</td>
-          <td class="paramname"> <em>Jauge_bleue</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>blue_slider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#af7c4c90b11fcb9ecc1605027152cbfe">T_Palette</a>&nbsp;</td>
-          <td class="paramname"> <em>Palette</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#5492dd33658aba7378de9064287091cb">T_Palette</a>&nbsp;</td>
+          <td class="paramname"> <em>palette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Debut</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Fin</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>end</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -842,18 +842,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="moteur_8c.html#0507f1566d980c2fa37357fa922bf3f5">Fenetre_Dessiner_jauge()</a>, <a class="el" href="palette_8c.html#f08ed2cacc2493a4577b445ce79c47b6">Formate_composante()</a>, <a class="el" href="palette_8c.html#8932f4f00d987697be351d40060cb9de">Palette_mode_RGB</a>, <a class="el" href="structT__Bouton__scroller.html#f1a7acdc5751ca14906c720caf9a290e">T_Bouton_scroller::Position</a>, <a class="el" href="windows_8c.html#aa269593fd5cfeac370a1dd1c6fd9474">Print_compteur()</a>, and <a class="el" href="op__c_8c.html#6654d4e9f86ef5667510e89db9a58e1a">RGBtoHSL()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="palette_8c.html#91ec0ec7e88ef02dfa0c2a830a9fc1b1">Format_componant()</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="palette_8c.html#0b5d61c6b39eda2288a960db74c16153">Palette_view_is_RGB</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="windows_8c.html#ddeb396d54ca20aed9869c9a645a851f">Print_counter()</a>, <a class="el" href="op__c_8c.html#18cdbac4d408c44aa36f17f6f3cdebb0">RGB_to_HSL()</a>, and <a class="el" href="moteur_8c.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>.</p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="113dfd1ae0d38c66d6acb93949efe0eb"></a><!-- doxytag: member="palette.c::Bouton_Palette" ref="113dfd1ae0d38c66d6acb93949efe0eb" args="(void)" -->
+<a class="anchor" name="389f3779da010fc3bea2cd134dc50fb4"></a><!-- doxytag: member="palette.c::Button_Palette" ref="389f3779da010fc3bea2cd134dc50fb4" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Bouton_Palette           </td>
+          <td class="memname">void Button_Palette           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -866,18 +866,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#1ce2f86093d2eb85ef181cb89d30d063">A_DROITE</a>, <a class="el" href="const_8h.html#51417c1d879ac9953f38d3b621497a35">A_GAUCHE</a>, <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>, <a class="el" href="windows_8c.html#229189a6f515fa2c828f151d192f2a55">Afficher_menu()</a>, <a class="el" href="moteur_8c.html#271223a0aa91f89715e4b3215c040d49">Attendre_click_dans_palette()</a>, <a class="el" href="divers_8c.html#5bc9ce57e8bd1e013f7fe02c30903d1c">Attendre_fin_de_click()</a>, <a class="el" href="structS__Config.html#f9d226baba6b3189bf05d2dc762c5871">S_Config::Auto_nb_used</a>, <a class="el" href="global_8h.html#373c9a261481c707f2fd5e098570358e">Back_color</a>, <a class="el" href="pages_8c.html#c3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="windows_8c.html#299be380576eb779236b4853edb7d375">Bloc_degrade_dans_fenetre()</a>, <a class="el" href="global_8h.html#201f32339eeb2ebc243d1de04a856924">Block</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a863f01ddf6c6208bd0df6b15ee6cc363b">BOUTON_AIDE</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a819f5b01ec0673a836e61ee9f98d2ec40">BOUTON_PALETTE</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8000f945ceacbafc956931410d2f77bc5">BOUTON_UNDO</a>, <a class="el" href="windows_8c.html#1d424537cae5e435d0d0a4ac67401a84">Calculer_couleurs_menu_optimales()</a>, <a class="el" href="global_8h.html#d8b59d9ecd6ef59a2c327149b09b1d78">CM_Blanc</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="palette_8c.html#ff3ca5c55c1377eaddb08c22ba9acb2d">Color_Count</a>, <a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a>, <a class="el" href="palette_8c.html#4daa00ab08f178b5d02212adffb25829">Compter_nb_couleurs_utilisees()</a>, <a class="el" href="global_8h.html#dab1d2d11471879efd925f4fd178d94c">Config</a>, <a class="el" href="palette_8c.html#cd379047e8ee0b2fdf26baf57bd32591">Degrader_palette()</a>, <a class="el" href="moteur_8c.html#ac267eee48246beae2e56d2ef9a8f6d7">Desenclencher_bouton()</a>, <a class="el" href="windows_8c.html#a2a1ec98823975f055d59438a91b356f">Dessiner_zigouigoui()</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="moteur_8c.html#24ef487162c458dd942a0f1d984ebc7d">Enclencher_bouton()</a>, <a class="el" href="input_8c.html#14cb7326b36f1e0b3c2418d0ef4c1acc">Est_Raccourci()</a>, <a class="el" href="windows_8c.html#74c4035c95663c7edf5caf6bd50a1dc8">Fenetre_Afficher_cadre()</a>, <a class="el" href="windows_8c.html#65af6a054f1c5284864bdb55c9ada57d">Fenetre_Afficher_cadre_creux()</a>, <a class="el" href="aide_8c.html#728968cff0fc35d4206c08377a5fd094">Fenetre_aide()</a>, <a class="el" href="global_8h.html#b180912f9f939ed66c27ee6e39db1647">Fenetre_Attribut2</a>, <a class="el" href="moteur_8c.html#047d5c4431ce0351abe4b8c098a3bbcb">Fenetre_Bouton_clicke()</a>, <a class="el" href="moteur_8c.html#d873202a223b849b3636916d9e679ba2">Fenetre_Contenu_bouton_saisie()</a>, <a class="el" href="moteur_8c.html#257edeac2f555b53cbc9f33b25d037b7">Fenetre_Definir_bouton_normal()</a>, <a class="el" href="moteur_8c.html#7640972617381f87d30a416c2155230a">Fenetre_Definir_bouton_palette()</a>, <a class="el" href="moteur_8c.html#5c1053551555ab1246a366c352dde44c">Fenetre_Definir_bouton_repetable()</a>, <a class="el" href="moteur_8c.html#6b488b87304fb91164b304a4dc3d64a0">Fenetre_Definir_bouton_saisie()</a>, <a class="el" href="moteur_8c.html#8ee0666f89408ea2e653c231fe2974a0">Fenetre_Definir_bouton_scroller()</a>, <a class="el" href="moteur_8c.html#458295f8736b0d741c68a4c6a7f1ba95">Fenetre_Dessiner_bouton_palette()</a>, <a class="el" href="moteur_8c.html#0507f1566d980c2fa37357fa922bf3f5">Fenetre_Dessiner_jauge()</a>, <a class="el" href="global_8h.html#287f31b45fbe50d6ad7de35d139ed504">Fenetre_Hauteur</a>, <a class="el" href="global_8h.html#0deb786202a239a15d9be3aa09cb7510">Fenetre_Liste_boutons_palette</a>, <a class="el" href="global_8h.html#ea45c0713630c3c3135756248cf2cbea">Fenetre_Liste_boutons_special</a>, <a class="el" href="global_8h.html#f7514cf38dd0c41f29c21dc4feb39ab0">Fenetre_Pos_X</a>, <a class="el" href="global_8h.html#97b5ab8c3d6a44ff27e0e3a79818c521">Fenetre_Pos_Y</a>, <a class="el" href="moteur_8c.html#c4ec635adfb454496e5069a64abbc761">Fermer_fenetre()</a>, <a class="el" href="global_8h.html#b790189aeb3d252f013fe7049107a974">Fore_color</a>, <a class="el" href="palette_8c.html#f08ed2cacc2493a4577b445ce79c47b6">Formate_composante()</a>, <a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a>, <a class="el" href="op__c_8c.html#e9723b440da4203d646ad9807a27b19f">HSLtoRGB()</a>, <a class="el" href="global_8h.html#71463060a85d2c31eea4d9a16c535e4c">Largeur_ecran</a>, <a class="el" href="palette_8c.html#0b0db882f4d189b7f9bb0f8ba16ae8f7">Libelle_reduction_palette</a>, <a class="el" href="global_8h.html#845353bdc633819397a1d258c071e2b0">Lit_pixel</a>, <a class="el" href="global_8h.html#9165b289f849afbe536c42b2583bb636">Menu_Facteur_X</a>, <a class="el" href="global_8h.html#547d90ab81e9c2bdaa524fbe62085fe1">Menu_Facteur_Y</a>, <a class="el" href="global_8h.html#3556e5ddc0f72d500ae21ca8a9ce3351">Menu_Ordonnee_avant_fenetre</a>, <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="palette_8c.html#afec736b3dbd907d494a00e6a3dbad55">Modifier_Bleu()</a>, <a class="el" href="palette_8c.html#f8638610647d4bd770db3709758d7e8e">Modifier_HSL()</a>, <a class="el" href="palette_8c.html#26d6e3edbc3d6bb85a1d70c73c0e0e1d">Modifier_Rouge()</a>, <a class="el" href="palette_8c.html#673428ea7a50975e993a8b889075f1ba">Modifier_Vert()</a>, <a class="el" href="global_8h.html#2e4ccded4ffa45d9e834ca98bf366e01">Mouse_K</a>, <a class="el" href="global_8h.html#a80d3e3defad25a00ed3ee66cc69d46e">Mouse_X</a>, <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>, <a class="el" href="divers_8c.html#b4b24af2e38abe4d41b8703b28f067a4">Num2str()</a>, <a class="el" href="moteur_8c.html#c7e9fa465c0448fd846baeffd3cf52ba">Ouvrir_fenetre()</a>, <a class="el" href="global_8h.html#a46c4ecdd41adf8bc3d8d580a80dd100">Palette_defaut</a>, <a class="el" href="palette_8c.html#8932f4f00d987697be351d40060cb9de">Palette_mode_RGB</a>, <a class="el" href="palette_8c.html#b6f4bf25023db6e86a534cb2a423e91f">Palette_Reafficher_jauges()</a>, <a class="el" href="structT__Bouton__scroller.html#f1a7acdc5751ca14906c720caf9a290e">T_Bouton_scroller::Position</a>, <a class="el" href="global_8h.html#5f1a588fbaff890b98047add4138c451">Principal_Palette</a>, <a class="el" href="windows_8c.html#aa269593fd5cfeac370a1dd1c6fd9474">Print_compteur()</a>, <a class="el" href="windows_8c.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, <a class="el" href="readline_8c.html#972a22692513d2dd6ba160b276aac09a">Readline()</a>, <a class="el" href="windows_8c.html#6638650edbb8d7bf887f60e4ae5523d7">Recadrer_palette()</a>, <a class="el" href="moteur_8c.html#f28758e05c5bf643ad8a005b72d24765">Recuperer_couleur_derriere_fenetre()</a>, <a class="el" href="palette_8c.html#44c5facc1f0ef33259b8de7b54cb588b">Reduce_palette()</a>, <a class="el" href="palette_8c.html#94f783f1ff88b90c4459c6403aa4671e">Remap_image_HIGH()</a>, <a class="el" href="windows_8c.html#7f822b7f0b61cd79200fe130f976a864">Remapper_ecran_apres_changement_couleurs_menu()</a>, <a class="el" href="palette_8c.html#f7d804e70ef9ca2c9b3ff9da7a9b83bf">Remettre_proprement_les_couleurs_du_menu()</a>, <a class="el" href="op__c_8c.html#6654d4e9f86ef5667510e89db9a58e1a">RGBtoHSL()</a>, <a class="el" href="structS__Config.html#0c49d7614aa5e1b66b6341bd38792609">S_Config::Safety_colors</a>, <a class="el" href="divers_8c.html#9d902fe9687285300da908c6d1d2527a">Set_palette()</a>, <a class="el" href="palette_8c.html#6c2248dd3caf9967e488a1e2900ab975">Swap()</a>, <a class="el" href="moteur_8c.html#4e69604c31823c436bc54258c9558920">Tagger_intervalle_palette()</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, <a class="el" href="global_8h.html#0287404438304c24ab78b2c199a00c3b">TOUCHE_AUCUNE</a>, <a class="el" href="gfxcfg_8c.html#7c1e28643ee8caa6677980fa6bc04fb6">TOUCHE_ESC</a>, <a class="el" href="palette_8c.html#9384ffb7a099fa51c4f2508ba6fc0e3d">Unite_Composantes()</a>, and <a class="el" href="sdlscreen_8c.html#d97edc15bf248e23cd935974310e1930">UpdateRect()</a>.</p>
+<p>References <a class="el" href="structT__Config.html#885dec21c9b2a687960f7b531aa9a941">T_Config::Auto_nb_used</a>, <a class="el" href="structT__Components.html#f07e860d4622dd1a04ad48bb5fcfb130">T_Components::B</a>, <a class="el" href="global_8h.html#373c9a261481c707f2fd5e098570358e">Back_color</a>, <a class="el" href="pages_8c.html#c3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="global_8h.html#13b8124d285860b249f4f9e5a7dcdd30">Block</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd613b66021233a47cc1558f29742aceaeb">BUTTON_HELP</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd62b7a2386935fd6293079b4526a18d75c">BUTTON_PALETTE</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd63de8f2170f1f59b50449e7a2f3eadcc7">BUTTON_UNDO</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="moteur_8c.html#4bf44f0520bdfca14e0b196a851d1032">Close_window()</a>, <a class="el" href="palette_8c.html#11e069238f649bb0211782f421b41170">Color_count</a>, <a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a>, <a class="el" href="palette_8c.html#d92d3cb56f5d82915153dd729f590047">Componant_unit()</a>, <a class="el" href="windows_8c.html#2e45affdc94d657e6d44d75dba5bfaea">Compute_optimal_menu_colors()</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="global_8h.html#a833a11fb87069204e6efec4e447fe3e">Default_palette</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="windows_8c.html#65b91268e28a7da294bb12c565a721ff">Display_grad_block_in_window()</a>, <a class="el" href="windows_8c.html#26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>, <a class="el" href="palette_8c.html#9c151bd5485e00f847bbe36cfdfbc8f1">Draw_all_palette_sliders()</a>, <a class="el" href="windows_8c.html#bed58e90e899ff0c01eb2d5d0a88c13d">Draw_thingumajig()</a>, <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="global_8h.html#b790189aeb3d252f013fe7049107a974">Fore_color</a>, <a class="el" href="palette_8c.html#91ec0ec7e88ef02dfa0c2a830a9fc1b1">Format_componant()</a>, <a class="el" href="structT__Components.html#80285133f5e6b8a07698ae883204856b">T_Components::G</a>, <a class="el" href="moteur_8c.html#a22e122622e93cfc55c6ce79d739c3c9">Get_color_behind_window()</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="op__c_8c.html#10e6fc172ca5a519968390e82fa23200">HSL_to_RGB()</a>, <a class="el" href="input_8c.html#4933fb93bafd7ab1ecc787d3456d1f86">Is_shortcut()</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#86b2b2d4eda22067d85d2287c118e2d8">KEY_ESC</a>, <a class="el" href="global_8h.html#02531bf28bf1c98caf3da055f22a08bd">KEY_NONE</a>, <a class="el" href="const_8h.html#fcef3187c40bbab100f6605e2e92c421">LEFT_SIDE</a>, <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="global_8h.html#fbd82dcee5167f44b13793225060361b">MC_White</a>, <a class="el" href="global_8h.html#757fd1fd1ef295440020024927fe2ed4">Menu_factor_X</a>, <a class="el" href="global_8h.html#d65a143da22eeffea91b02e9d826fea1">Menu_factor_Y</a>, <a class="el" href="global_8h.html#539018a0fc48fbcb317333c4a502312c">Menu_Y_before_window</a>, <a class="el" href="global_8h.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="global_8h.html#2e4ccded4ffa45d9e834ca98bf366e01">Mouse_K</a>, <a class="el" href="global_8h.html#a80d3e3defad25a00ed3ee66cc69d46e">Mouse_X</a>, <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>, <a class="el" href="divers_8c.html#62a4e071628c8a881694c247113387ca">Num2str()</a>, <a class="el" href="moteur_8c.html#147205a2a2681484d2113b66398dc515">Open_window()</a>, <a class="el" href="palette_8c.html#69f64d8aafcf8e59b25eda8ce875a1c6">Palette_reduce_label</a>, <a class="el" href="palette_8c.html#0b5d61c6b39eda2288a960db74c16153">Palette_view_is_RGB</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="windows_8c.html#ddeb396d54ca20aed9869c9a645a851f">Print_counter()</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="structT__Components.html#e681f54e6b250380216d172d7e8700c3">T_Components::R</a>, <a class="el" href="global_8h.html#5c4b8c43509be4c0d460840693ec16d6">Read_pixel</a>, <a class="el" href="readline_8c.html#6a5ba77aad7cb2958e513297f0f58cc7">Readline()</a>, <a class="el" href="palette_8c.html#b0be6b008a4ef67410cfe3f6db89b731">Reduce_palette()</a>, <a class="el" href="palette_8c.html#4fb628bf9de156357eac6ab02192ab54">Remap_image_highlevel()</a>, <a class="el" href="windows_8c.html#29429dcca349a39867d8a86024c60e6b">Remap_screen_after_menu_colors_change()</a>, <a class="el" href="windows_8c.html#3eb6774cfeedfab7d40c6dd2bca3c16f">Reposition_palette()</a>, <a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a>, <a class="el" href="op__c_8c.html#18cdbac4d408c44aa36f17f6f3cdebb0">RGB_to_HSL()</a>, <a class="el" href="const_8h.html#d3956168f0f547d8e524c4654e8648c8">RIGHT_SIDE</a>, <a class="el" href="structT__Config.html#700c5e9e5a160a4f02fff214338658a2">T_Config::Safety_colors</a>, <a class="el" href="global_8h.html#57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>, <a class="el" href="palette_8c.html#340781219fa9a0233f07df536767cb04">Set_blue()</a>, <a class="el" href="palette_8c.html#8e56efd6e9033dfef382bfca05ad1484">Set_green()</a>, <a class="el" href="palette_8c.html#61ddbb8c8500415f6b684b84b02f353c">Set_HSL()</a>, <a class="el" href="palette_8c.html#f80fcedd54485413d4f60148d7e5c862">Set_nice_menu_colors()</a>, <a class="el" href="divers_8c.html#7f8562564c597185de8b961ac337144e">Set_palette()</a>, <a class="el" href="palette_8c.html#f208a39bdec0cff5dfd890cb90b50702">Set_red()</a>, <a class="el" href="palette_8c.html#b026ba34caee8bf940874346a67a0c14">Spread_colors()</a>, <a class="el" href="palette_8c.html#2793ebab37863dd05e1d880543cb47ba">Swap()</a>, <a class="el" href="moteur_8c.html#58e463233f11eb9050580ff098f208fe">Tag_color_range()</a>, <a class="el" href="moteur_8c.html#bf9c791da50bc2ed593e4700a3f98666">Unselect_bouton()</a>, <a class="el" href="moteur_8c.html#a017d2115cd51cb3bc6623837005c36c">Unselect_button()</a>, <a class="el" href="palette_8c.html#62ea7be165ac1bc414ad91d37fccdb9f">Update_color_count()</a>, <a class="el" href="sdlscreen_8c.html#fbd71868d3dbb416813145748148121e">Update_rect()</a>, <a class="el" href="moteur_8c.html#15e3f726b82975c6c1a35430155089de">Wait_click_in_palette()</a>, <a class="el" href="divers_8c.html#9148d5b17ed7303cf67b3184c80d625e">Wait_end_of_click()</a>, <a class="el" href="global_8h.html#0530526d29aeb87e058ffc9e0f7090c6">Window_attribute2</a>, <a class="el" href="moteur_8c.html#eebd46ea06ee04d2a007ed6636fc3f25">Window_clicked_button()</a>, <a class="el" href="windows_8c.html#4ff834708e4a46dd31442fce9d2e3eb5">Window_display_frame()</a>, <a class="el" href="windows_8c.html#07d71a1346e87ffb3f1677753f5a33d6">Window_display_frame_in()</a>, <a class="el" href="moteur_8c.html#38619f65d327a4bee9d6d15fe2115f93">Window_draw_palette_bouton()</a>, <a class="el" href="moteur_8c.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>, <a class="el" href="global_8h.html#d0e6bca6817a6e0bdd09a6616371d5b2">Window_height</a>, <a class="el" href="aide_8c.html#b1985f9adb9c432856a7f008be5a0411">Window_help()</a>, <a class="el" href="moteur_8c.html#488d29dd0fced59cceffa7d5d7d5d616">Window_input_content()</a>, <a class="el" href="global_8h.html#a321686772f351d80dd18bb31fe55132">Window_palette_button_list</a>, <a class="el" href="global_8h.html#5e636fdcb1bac88ea7af84b0749b26c7">Window_pos_X</a>, <a class="el" href="global_8h.html#2648c309928202bf8ab639336a3a4da3">Window_pos_Y</a>, <a class="el" href="moteur_8c.html#7282d622d0a80f244b0b7d5fdf24487b">Window_set_input_button()</a>, <a class="el" href="moteur_8c.html#bf4935110db5281f3cc6165604560fd6">Window_set_normal_button()</a>, <a class="el" href="moteur_8c.html#77975b01693dd99bc699f1375c2fea04">Window_set_palette_button()</a>, <a class="el" href="moteur_8c.html#d0489baa49b8c7e6c962c8937676ae75">Window_set_repeatable_button()</a>, <a class="el" href="moteur_8c.html#01e3006f670dd7cdddecb36d2f85dfa0">Window_set_scroller_button()</a>, <a class="el" href="global_8h.html#041f7ed90338583fe1cf9d4a59c2e728">Window_special_button_list</a>, and <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#8e2cb4e76fcbd7539c90c920665f7c40">Initialisation_des_boutons()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#377fdc29b1293a7db9de2377e9022f28">Init_buttons()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="493f7b4bcddbe23d367cf341af3d95bf"></a><!-- doxytag: member="palette.c::Bouton_Palette_secondaire" ref="493f7b4bcddbe23d367cf341af3d95bf" args="(void)" -->
+<a class="anchor" name="ec9495474d1f999ff10971f415cd224e"></a><!-- doxytag: member="palette.c::Button_Pecondary_palette" ref="ec9495474d1f999ff10971f415cd224e" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Bouton_Palette_secondaire           </td>
+          <td class="memname">void Button_Pecondary_palette           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -890,19 +890,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="windows_8c.html#229189a6f515fa2c828f151d192f2a55">Afficher_menu()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a863f01ddf6c6208bd0df6b15ee6cc363b">BOUTON_AIDE</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a819f5b01ec0673a836e61ee9f98d2ec40">BOUTON_PALETTE</a>, <a class="el" href="windows_8c.html#3b024a35820866fa459313b3e9b55072">Changer_cellules_palette()</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="global_8h.html#dab1d2d11471879efd925f4fd178d94c">Config</a>, <a class="el" href="moteur_8c.html#ac267eee48246beae2e56d2ef9a8f6d7">Desenclencher_bouton()</a>, <a class="el" href="input_8c.html#14cb7326b36f1e0b3c2418d0ef4c1acc">Est_Raccourci()</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="windows_8c.html#74c4035c95663c7edf5caf6bd50a1dc8">Fenetre_Afficher_cadre()</a>, <a class="el" href="aide_8c.html#728968cff0fc35d4206c08377a5fd094">Fenetre_aide()</a>, <a class="el" href="global_8h.html#b180912f9f939ed66c27ee6e39db1647">Fenetre_Attribut2</a>, <a class="el" href="moteur_8c.html#047d5c4431ce0351abe4b8c098a3bbcb">Fenetre_Bouton_clicke()</a>, <a class="el" href="moteur_8c.html#257edeac2f555b53cbc9f33b25d037b7">Fenetre_Definir_bouton_normal()</a>, <a class="el" href="moteur_8c.html#8ee0666f89408ea2e653c231fe2974a0">Fenetre_Definir_bouton_scroller()</a>, <a class="el" href="global_8h.html#f7514cf38dd0c41f29c21dc4feb39ab0">Fenetre_Pos_X</a>, <a class="el" href="global_8h.html#97b5ab8c3d6a44ff27e0e3a79818c521">Fenetre_Pos_Y</a>, <a class="el" href="moteur_8c.html#c4ec635adfb454496e5069a64abbc761">Fermer_fenetre()</a>, <a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a>, <a class="el" href="global_8h.html#9165b289f849afbe536c42b2583bb636">Menu_Facteur_X</a>, <a class="el" href="global_8h.html#547d90ab81e9c2bdaa524fbe62085fe1">Menu_Facteur_Y</a>, <a class="el" href="boutons_8c.html#cc46fd9487924929e54061bc5c3a21f0">Menu_Tag_couleurs()</a>, <a class="el" href="divers_8c.html#b4b24af2e38abe4d41b8703b28f067a4">Num2str()</a>, <a class="el" href="moteur_8c.html#c7e9fa465c0448fd846baeffd3cf52ba">Ouvrir_fenetre()</a>, <a class="el" href="structS__Config.html#763b9f0772d300059a47a47a094285c2">S_Config::Palette_Cells_X</a>, <a class="el" href="structS__Config.html#2ce8658bc3a1b4c006c49b158f39defc">S_Config::Palette_Cells_Y</a>, <a class="el" href="structT__Bouton__scroller.html#f1a7acdc5751ca14906c720caf9a290e">T_Bouton_scroller::Position</a>, <a class="el" href="global_8h.html#5f1a588fbaff890b98047add4138c451">Principal_Palette</a>, <a class="el" href="windows_8c.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, <a class="el" href="divers_8c.html#9d902fe9687285300da908c6d1d2527a">Set_palette()</a>, <a class="el" href="palette_8c.html#767ab0ee74e19ae945be4bff80409f0b">Set_Palette_RGB_Scale()</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, <a class="el" href="gfxcfg_8c.html#7c1e28643ee8caa6677980fa6bc04fb6">TOUCHE_ESC</a>, and <a class="el" href="sdlscreen_8c.html#d97edc15bf248e23cd935974310e1930">UpdateRect()</a>.</p>
+<p>References <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd613b66021233a47cc1558f29742aceaeb">BUTTON_HELP</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd62b7a2386935fd6293079b4526a18d75c">BUTTON_PALETTE</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#c570f0a005330b7a1ca27844b7775b9e">Change_palette_cells()</a>, <a class="el" href="moteur_8c.html#4bf44f0520bdfca14e0b196a851d1032">Close_window()</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="windows_8c.html#26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="input_8c.html#4933fb93bafd7ab1ecc787d3456d1f86">Is_shortcut()</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#86b2b2d4eda22067d85d2287c118e2d8">KEY_ESC</a>, <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="global_8h.html#757fd1fd1ef295440020024927fe2ed4">Menu_factor_X</a>, <a class="el" href="global_8h.html#d65a143da22eeffea91b02e9d826fea1">Menu_factor_Y</a>, <a class="el" href="boutons_8c.html#d6b5c783d5e695c7eee72f165e6d8dcb">Menu_tag_colors()</a>, <a class="el" href="divers_8c.html#62a4e071628c8a881694c247113387ca">Num2str()</a>, <a class="el" href="moteur_8c.html#147205a2a2681484d2113b66398dc515">Open_window()</a>, <a class="el" href="structT__Config.html#402d6725e382e363030615a8c8e49540">T_Config::Palette_cells_X</a>, <a class="el" href="structT__Config.html#2f6b23e7a5d7a88402f80cbe7150628a">T_Config::Palette_cells_Y</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a>, <a class="el" href="divers_8c.html#7f8562564c597185de8b961ac337144e">Set_palette()</a>, <a class="el" href="palette_8c.html#b5e7d9ac8c6f2c1655c0c4b79c71d455">Set_palette_RGB_scale()</a>, <a class="el" href="moteur_8c.html#bf9c791da50bc2ed593e4700a3f98666">Unselect_bouton()</a>, <a class="el" href="sdlscreen_8c.html#fbd71868d3dbb416813145748148121e">Update_rect()</a>, <a class="el" href="global_8h.html#0530526d29aeb87e058ffc9e0f7090c6">Window_attribute2</a>, <a class="el" href="moteur_8c.html#eebd46ea06ee04d2a007ed6636fc3f25">Window_clicked_button()</a>, <a class="el" href="windows_8c.html#4ff834708e4a46dd31442fce9d2e3eb5">Window_display_frame()</a>, <a class="el" href="aide_8c.html#b1985f9adb9c432856a7f008be5a0411">Window_help()</a>, <a class="el" href="global_8h.html#5e636fdcb1bac88ea7af84b0749b26c7">Window_pos_X</a>, <a class="el" href="global_8h.html#2648c309928202bf8ab639336a3a4da3">Window_pos_Y</a>, <a class="el" href="moteur_8c.html#bf4935110db5281f3cc6165604560fd6">Window_set_normal_button()</a>, and <a class="el" href="moteur_8c.html#01e3006f670dd7cdddecb36d2f85dfa0">Window_set_scroller_button()</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#8e2cb4e76fcbd7539c90c920665f7c40">Initialisation_des_boutons()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#377fdc29b1293a7db9de2377e9022f28">Init_buttons()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="8932f4f00d987697be351d40060cb9de"></a><!-- doxytag: member="palette.c::Palette_mode_RGB" ref="8932f4f00d987697be351d40060cb9de" args="" -->
+<a class="anchor" name="0b5d61c6b39eda2288a960db74c16153"></a><!-- doxytag: member="palette.c::Palette_view_is_RGB" ref="0b5d61c6b39eda2288a960db74c16153" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="palette_8c.html#8932f4f00d987697be351d40060cb9de">Palette_mode_RGB</a> = 1          </td>
+          <td class="memname">byte <a class="el" href="palette_8c.html#0b5d61c6b39eda2288a960db74c16153">Palette_view_is_RGB</a> = 1          </td>
         </tr>
       </table>
 </div>
@@ -910,16 +910,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#b6f4bf25023db6e86a534cb2a423e91f">Palette_Reafficher_jauges()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>, and <a class="el" href="palette_8c.html#9c151bd5485e00f847bbe36cfdfbc8f1">Draw_all_palette_sliders()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0b0db882f4d189b7f9bb0f8ba16ae8f7"></a><!-- doxytag: member="palette.c::Libelle_reduction_palette" ref="0b0db882f4d189b7f9bb0f8ba16ae8f7" args="[7]" -->
+<a class="anchor" name="69f64d8aafcf8e59b25eda8ce875a1c6"></a><!-- doxytag: member="palette.c::Palette_reduce_label" ref="69f64d8aafcf8e59b25eda8ce875a1c6" args="[7]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* <a class="el" href="palette_8c.html#0b0db882f4d189b7f9bb0f8ba16ae8f7">Libelle_reduction_palette</a>[7]          </td>
+          <td class="memname">char* <a class="el" href="palette_8c.html#69f64d8aafcf8e59b25eda8ce875a1c6">Palette_reduce_label</a>[7]          </td>
         </tr>
       </table>
 </div>
@@ -931,16 +931,16 @@ window.onload = initDynSections;
   <span class="stringliteral">"128"</span>,<span class="stringliteral">" 64"</span>,<span class="stringliteral">" 32"</span>,<span class="stringliteral">" 16"</span>,<span class="stringliteral">"  8"</span>,<span class="stringliteral">"  4"</span>,<span class="stringliteral">"  2"</span>
 }
 </pre></div>
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2707ab3410267533fce669ffa6dcdc15"></a><!-- doxytag: member="palette.c::Graduations_RGB" ref="2707ab3410267533fce669ffa6dcdc15" args="" -->
+<a class="anchor" name="62f819ea39d0cc2bf77d5c3e8ee4f92b"></a><!-- doxytag: member="palette.c::RGB_scale" ref="62f819ea39d0cc2bf77d5c3e8ee4f92b" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="palette_8c.html#2707ab3410267533fce669ffa6dcdc15">Graduations_RGB</a> = 256          </td>
+          <td class="memname">int <a class="el" href="palette_8c.html#62f819ea39d0cc2bf77d5c3e8ee4f92b">RGB_scale</a> = 256          </td>
         </tr>
       </table>
 </div>
@@ -948,16 +948,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="palette_8h.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire()</a>, <a class="el" href="palette_8h.html#8feef489aa04e84eeb21cac037f07253">Palette_Scale_Component()</a>, and <a class="el" href="palette_8h.html#bae9d66c124acd9b1d55b3dbf4f42a74">Set_Palette_RGB_Scale()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8h.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette()</a>, <a class="el" href="palette_8h.html#ec78e3987c86258681581f68cb5d3c7f">Round_palette_component()</a>, and <a class="el" href="palette_8h.html#b417755f5e7843647e186f281c021cec">Set_palette_RGB_scale()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="ff3ca5c55c1377eaddb08c22ba9acb2d"></a><!-- doxytag: member="palette.c::Color_Count" ref="ff3ca5c55c1377eaddb08c22ba9acb2d" args="" -->
+<a class="anchor" name="11e069238f649bb0211782f421b41170"></a><!-- doxytag: member="palette.c::Color_count" ref="11e069238f649bb0211782f421b41170" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="palette_8c.html#ff3ca5c55c1377eaddb08c22ba9acb2d">Color_Count</a> = 256          </td>
+          <td class="memname">int <a class="el" href="palette_8c.html#11e069238f649bb0211782f421b41170">Color_count</a> = 256          </td>
         </tr>
       </table>
 </div>
@@ -965,16 +965,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, and <a class="el" href="palette_8c.html#9384ffb7a099fa51c4f2508ba6fc0e3d">Unite_Composantes()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8c.html#d92d3cb56f5d82915153dd729f590047">Componant_unit()</a>, and <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="9aa776f0bab33009964138a339861edc"></a><!-- doxytag: member="palette.c::Color_Max" ref="9aa776f0bab33009964138a339861edc" args="" -->
+<a class="anchor" name="c66418d8cb397e57a22d78843639b591"></a><!-- doxytag: member="palette.c::Color_max" ref="c66418d8cb397e57a22d78843639b591" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="palette_8c.html#9aa776f0bab33009964138a339861edc">Color_Max</a> = 255          </td>
+          <td class="memname">int <a class="el" href="palette_8c.html#c66418d8cb397e57a22d78843639b591">Color_max</a> = 255          </td>
         </tr>
       </table>
 </div>
@@ -982,16 +982,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#0263920669649205c2fa6a488b697de5">Afficher_les_jauges()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="palette_8c.html#b6f4bf25023db6e86a534cb2a423e91f">Palette_Reafficher_jauges()</a>, and <a class="el" href="palette_8c.html#9384ffb7a099fa51c4f2508ba6fc0e3d">Unite_Composantes()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8c.html#d92d3cb56f5d82915153dd729f590047">Componant_unit()</a>, <a class="el" href="palette_8c.html#7689a40bd0f022dcbb82b0e970bf7a86">Display_sliders()</a>, and <a class="el" href="palette_8c.html#9c151bd5485e00f847bbe36cfdfbc8f1">Draw_all_palette_sliders()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="54f9fc0363c1c4c3087dd64983f03600"></a><!-- doxytag: member="palette.c::Color_DemiPas" ref="54f9fc0363c1c4c3087dd64983f03600" args="" -->
+<a class="anchor" name="4a12879968be1d738204926bf4e52c38"></a><!-- doxytag: member="palette.c::Color_halfstep" ref="4a12879968be1d738204926bf4e52c38" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="palette_8c.html#54f9fc0363c1c4c3087dd64983f03600">Color_DemiPas</a> = 0          </td>
+          <td class="memname">int <a class="el" href="palette_8c.html#4a12879968be1d738204926bf4e52c38">Color_halfstep</a> = 0          </td>
         </tr>
       </table>
 </div>
@@ -999,12 +999,12 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="palette_8c.html#9384ffb7a099fa51c4f2508ba6fc0e3d">Unite_Composantes()</a>.</p>
+<p>Referenced by <a class="el" href="palette_8c.html#d92d3cb56f5d82915153dd729f590047">Componant_unit()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:09 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

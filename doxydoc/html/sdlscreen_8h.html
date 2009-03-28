@@ -67,31 +67,31 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#184110026e7cc1ae020b7461dd4d28cd">Set_Mode_SDL</a> (int *, int *, int)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#4683b0e65b7992516d19665a7c1831ce">Set_mode_SDL</a> (int *, int *, int)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#d97edc15bf248e23cd935974310e1930">UpdateRect</a> (short X, short Y, unsigned short <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, unsigned short <a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#fbd71868d3dbb416813145748148121e">Update_rect</a> (short x, short y, unsigned short width, unsigned short height)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#93853989aee9a7a6d6b9398fa36b6c70">Flush_update</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#f1914992f2edfc8c97f7952b33bf2eab">Surface_en_bytefield</a> (SDL_Surface *Source, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *Destination)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#92a7d7b3081966126c9ce5ec3a83b70c">Surface_to_bytefield</a> (SDL_Surface *source, byte *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">SDL_Color&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#0de748e33b6fea654106dc638879424d">Conversion_couleur_SDL</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SDL_Color&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#1100c258f43dc387d9052b96e74f456c">Color_to_SDL_color</a> (byte)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#7d878c5015b12f71f88803e615953f72">Sdl_Get_pixel_8</a> (SDL_Surface *Bmp, int X, int Y)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#a9231294bfed21ed9848c156f66ab632">Get_SDL_pixel_8</a> (SDL_Surface *bmp, int x, int y)</td></tr>
 
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">SDL_Rect **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#456c2a84ecc14d0b0d7bc952e9e6dade">Liste_Modes_Videos_SDL</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SDL_Rect **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#efd73dafe8c830ca9c484ea4a6ca6cfb">List_SDL_video_modes</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#6fb2a890ec087bd49edc980c42892baa">Ecran</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlscreen_8h.html#e8c02af6e2043c17a5a0edc96a0696eb">Screen_pixels</a></td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="184110026e7cc1ae020b7461dd4d28cd"></a><!-- doxytag: member="sdlscreen.h::Set_Mode_SDL" ref="184110026e7cc1ae020b7461dd4d28cd" args="(int *, int *, int)" -->
+<a class="anchor" name="4683b0e65b7992516d19665a7c1831ce"></a><!-- doxytag: member="sdlscreen.h::Set_mode_SDL" ref="4683b0e65b7992516d19665a7c1831ce" args="(int *, int *, int)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Set_Mode_SDL           </td>
+          <td class="memname">void Set_mode_SDL           </td>
           <td>(</td>
           <td class="paramtype">int *&nbsp;</td>
           <td class="paramname">, </td>
@@ -119,39 +119,39 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="erreurs_8h.html#3e3b842efc9f67e56cd67d9e7d5a078c">DEBUG</a>, <a class="el" href="gfxcfg_8c.html#0eeb165cfc311c19f18fbb41bc2fbd66">Ecran</a>, and <a class="el" href="global_8h.html#b24f3c58078b3f46ae99b12caa311114">Ecran_SDL</a>.</p>
+<p>References <a class="el" href="erreurs_8h.html#3e3b842efc9f67e56cd67d9e7d5a078c">DEBUG</a>, <a class="el" href="sdlscreen_8h.html#e8c02af6e2043c17a5a0edc96a0696eb">Screen_pixels</a>, and <a class="el" href="global_8h.html#3f4d842991896a5dcb9a941c675bca74">Screen_SDL</a>.</p>
 
-<p>Referenced by <a class="el" href="graph_8h.html#2fcef390c62be14ef9901ebf50a6b556">Initialiser_mode_video()</a>.</p>
+<p>Referenced by <a class="el" href="graph_8h.html#99511b20e98088eb8147da699f636292">Init_mode_video()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d97edc15bf248e23cd935974310e1930"></a><!-- doxytag: member="sdlscreen.h::UpdateRect" ref="d97edc15bf248e23cd935974310e1930" args="(short X, short Y, unsigned short Largeur, unsigned short Hauteur)" -->
+<a class="anchor" name="fbd71868d3dbb416813145748148121e"></a><!-- doxytag: member="sdlscreen.h::Update_rect" ref="fbd71868d3dbb416813145748148121e" args="(short x, short y, unsigned short width, unsigned short height)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void UpdateRect           </td>
+          <td class="memname">void Update_rect           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>X</em>, </td>
+          <td class="paramname"> <em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Y</em>, </td>
+          <td class="paramname"> <em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned short&nbsp;</td>
-          <td class="paramname"> <em>Largeur</em>, </td>
+          <td class="paramname"> <em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned short&nbsp;</td>
-          <td class="paramname"> <em>Hauteur</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,9 +164,9 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#b24f3c58078b3f46ae99b12caa311114">Ecran_SDL</a>, <a class="el" href="sdlscreen_8c.html#66c09374ee947b06a9ffc3b317e445e7">Max_X</a>, <a class="el" href="sdlscreen_8c.html#0342337933538339f8ff810d0ef64a34">Max_Y</a>, <a class="el" href="sdlscreen_8c.html#d37dc482bed4cf71df91643d0bbc80db">Min_X</a>, <a class="el" href="sdlscreen_8c.html#71ed2f54e67c2ea8686510bc7e40fbbe">Min_Y</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, and <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>.</p>
+<p>References <a class="el" href="sdlscreen_8c.html#66c09374ee947b06a9ffc3b317e445e7">Max_X</a>, <a class="el" href="sdlscreen_8c.html#0342337933538339f8ff810d0ef64a34">Max_Y</a>, <a class="el" href="sdlscreen_8c.html#d37dc482bed4cf71df91643d0bbc80db">Min_X</a>, <a class="el" href="sdlscreen_8c.html#71ed2f54e67c2ea8686510bc7e40fbbe">Min_Y</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>, and <a class="el" href="global_8h.html#3f4d842991896a5dcb9a941c675bca74">Screen_SDL</a>.</p>
 
-<p>Referenced by <a class="el" href="aide_8c.html#d30740a7fc5d4c8df8b3e62ed157eb93">Afficher_aide()</a>, <a class="el" href="windows_8c.html#d7282eaa156b0d8eb4cf372dc8cc17ce">Afficher_barre_de_split()</a>, <a class="el" href="windows_8h.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="windows_8h.html#f9d515f3953a411f3d549df241bc7802">Afficher_ecran()</a>, <a class="el" href="windows_8c.html#838905b835a1f288b3db34f9e348c27b">Afficher_foreback()</a>, <a class="el" href="windows_8h.html#30b8ec0f74e6912d2586cba8c37df40c">Afficher_limites_de_l_image()</a>, <a class="el" href="windows_8h.html#229189a6f515fa2c828f151d192f2a55">Afficher_menu()</a>, <a class="el" href="windows_8h.html#4e05650736a6b7dbac578e1c9b6f4bf4">Afficher_palette_du_menu()</a>, <a class="el" href="windows_8c.html#9be7abf2c41d4a58bc09dbbc4c73ed3c">Afficher_palette_du_menu_en_evitant_la_fenetre()</a>, <a class="el" href="pxdouble_8h.html#7fc8333c036a498315de5ba43db6addc">Afficher_partie_de_l_ecran_zoomee_Double()</a>, <a class="el" href="pxsimple_8h.html#0f0ad83886cd25a027d5800c5cb9ae0b">Afficher_partie_de_l_ecran_zoomee_Simple()</a>, <a class="el" href="pxtall_8h.html#c16374d3db02ceac61cc97a14747f6f4">Afficher_partie_de_l_ecran_zoomee_Tall()</a>, <a class="el" href="pxwide_8h.html#1ffca66728e0b82d1232425ac830c046">Afficher_partie_de_l_ecran_zoomee_Wide()</a>, <a class="el" href="windows_8h.html#58503b0fb5cf36711ec6915d8ba582ab">Afficher_pinceau_dans_fenetre()</a>, <a class="el" href="windows_8h.html#647804b31113754ed563b4b409e12a94">Afficher_pinceau_dans_menu()</a>, <a class="el" href="windows_8h.html#bd078aecc02a09bf2f182846e4ede787">Afficher_sprite_dans_menu()</a>, <a class="el" href="boutons_8c.html#4955a3bcc84c9e5671109f7ee38bce00">Afficher_sprite_effet()</a>, <a class="el" href="shade_8c.html#032317730b80b7e13624d140207a2661">Afficher_tout_le_shade()</a>, <a class="el" href="windows_8h.html#299be380576eb779236b4853edb7d375">Bloc_degrade_dans_fenetre()</a>, <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8h.html#8db25f409afdd9fcb7c4feabb43dbfb6">Bouton_Loupe()</a>, <a class="el" href="boutons_8h.html#9f5151476bfc49facf295e20c6fb92fb">Bouton_Menu_Loupe()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="palette_8h.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire()</a>, <a class="el" href="shade_8h.html#bef4b429169262aba75e5bf066116628">Bouton_Quick_shade_Menu()</a>, <a class="el" href="boutons_8h.html#2feaf0ebe7cea0c7bb067ef2872c5f7f">Bouton_Spray_Menu()</a>, <a class="el" href="aide_8h.html#b20e321c1ca3efa7f839f3fb12d5d496">Bouton_Stats()</a>, <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>, <a class="el" href="boutons_8h.html#b0fbbf5905dd8504b8b67c56afcd7416">Bouton_Trame_Menu()</a>, <a class="el" href="pxdouble_8c.html#6755b4a38c59f032652f388ccdb711d7">Clear_brush_Double()</a>, <a class="el" href="pxsimple_8c.html#3373b9d32d203f3829587ecf0348e78a">Clear_brush_Simple()</a>, <a class="el" href="pxtall_8c.html#e32c4d7dc0fed2e732aa3afa1e4cf657">Clear_brush_Tall()</a>, <a class="el" href="pxwide_8c.html#06cc72e9bc1cdcb0046ae8b1083c9475">Clear_brush_Wide()</a>, <a class="el" href="pxdouble_8c.html#40a1ee34adbec94e7c655747fadd78d1">Clear_brush_zoom_Double()</a>, <a class="el" href="pxsimple_8c.html#0afaf83f876d05dc0b1db8cc230167c3">Clear_brush_zoom_Simple()</a>, <a class="el" href="pxtall_8c.html#9d0024154c6e654502cf878b5019cf58">Clear_brush_zoom_Tall()</a>, <a class="el" href="pxwide_8c.html#05f439183bdd5f2d1018297a4ea73e43">Clear_brush_zoom_Wide()</a>, <a class="el" href="boutons_8c.html#99ce2235873cd991f21b6c49c0f352d1">Cocher_bouton_mode()</a>, <a class="el" href="boutons_8c.html#08640d590904b8fec267deb576227039">Degrade_Dessiner_bouton_de_technique()</a>, <a class="el" href="boutons_8c.html#b3d2c0fc12531037791015f7a5db5f35">Degrade_Dessiner_preview()</a>, <a class="el" href="windows_8h.html#85725e400008b18a67d76548a7317f89">Demande_de_confirmation()</a>, <a class="el" href="moteur_8c.html#fd68d1e39c424d1c54a47777c798fadd">Deplacer_fenetre()</a>, <a class="el" href="moteur_8c.html#e294e616e788c5d3667d7c1a70f4af6c">Deplacer_Split()</a>, <a class="el" href="loadsave_8c.html#a2e3fcc44a12ff31d175b38f935f5af5">Dessiner_preview_palette()</a>, <a class="el" href="boutons_8c.html#03878e66f1ca86177da744b5eff7e398">Dessiner_trame_zoomee()</a>, <a class="el" href="boutons_8c.html#cb7d8ee026d9000a7a93cb294b5152e7">Dessiner_trames_predefinies()</a>, <a class="el" href="pxdouble_8h.html#b5c422288ebd8520e5920523641d5a4a">Display_brush_Color_Double()</a>, <a class="el" href="pxsimple_8h.html#562950c4915cd72e7b0d20d17d5bda57">Display_brush_Color_Simple()</a>, <a class="el" href="pxtall_8h.html#0eb160c6095ea00fadc112a919fc4254">Display_brush_Color_Tall()</a>, <a class="el" href="pxwide_8h.html#de30742809cf91915d637f973af096d7">Display_brush_Color_Wide()</a>, <a class="el" href="pxdouble_8h.html#8dbba2d46a465cd781358860af3cf8c3">Display_brush_Mono_Double()</a>, <a class="el" href="pxsimple_8h.html#58ce11d3f4ea02bb53c3ffd4af73ff86">Display_brush_Mono_Simple()</a>, <a class="el" href="pxtall_8h.html#1cab7d81b3eed76fd8836d3ef117967d">Display_brush_Mono_Tall()</a>, <a class="el" href="pxwide_8h.html#75a4b02829c461671050019ea60b3382">Display_brush_Mono_Wide()</a>, <a class="el" href="pxdouble_8h.html#bef4d41fd9ca4746c8fc2c7650ddbae2">Display_brush_Mono_zoom_Double()</a>, <a class="el" href="pxsimple_8h.html#60b06d19926d360030e0315d8e4ccc55">Display_brush_Mono_zoom_Simple()</a>, <a class="el" href="pxtall_8h.html#aa59509225d6c6f9f31cd0999150e46c">Display_brush_Mono_zoom_Tall()</a>, <a class="el" href="pxwide_8h.html#390289bcadda7df4a5a1e07308db9489">Display_brush_Mono_zoom_Wide()</a>, <a class="el" href="windows_8h.html#be4809f84878fd28c99357d5734e8bc7">Effacer_curseur()</a>, <a class="el" href="windows_8h.html#3fe4d830808dbd39a05b8d8a545152ed">Encadrer_couleur_menu()</a>, <a class="el" href="windows_8h.html#a93f7dc3616dfe3120463ceff99b7f7b">Fenetre_Afficher_sprite_drive()</a>, <a class="el" href="aide_8h.html#728968cff0fc35d4206c08377a5fd094">Fenetre_aide()</a>, <a class="el" href="aide_8c.html#84e7f69a55aa8465b98366edda193a42">Fenetre_controle()</a>, <a class="el" href="moteur_8h.html#30ca420e727ecbbf73aff8077c5ad47a">Fenetre_Desenfoncer_bouton_normal()</a>, <a class="el" href="moteur_8h.html#0507f1566d980c2fa37357fa922bf3f5">Fenetre_Dessiner_jauge()</a>, <a class="el" href="moteur_8c.html#dd7a9fb13349024ead4f093ed5034629">Fenetre_Dropdown_click()</a>, <a class="el" href="moteur_8h.html#dcf3dacac3bd6871583e9f8c20956409">Fenetre_Effacer_bouton_saisie()</a>, <a class="el" href="moteur_8h.html#2196ed5024b3c406574fb3de2a6a3f1e">Fenetre_Effacer_tags()</a>, <a class="el" href="moteur_8h.html#5d4f344ce989dee86a5f5db33175e250">Fenetre_Enfoncer_bouton_normal()</a>, <a class="el" href="moteur_8h.html#c4ec635adfb454496e5069a64abbc761">Fermer_fenetre()</a>, <a class="el" href="moteur_8h.html#7b2e88914780aaaba7f4daabc279e7c9">Fermer_popup()</a>, <a class="el" href="moteur_8h.html#063efffc30ceaf75367a556752e5de6b">Gestion_principale()</a>, <a class="el" href="windows_8h.html#0faf6d1ff6d53ade9077384266c93ee0">Ligne_horizontale_XOR_Zoom()</a>, <a class="el" href="windows_8h.html#df540349b3dc955edce94a129ceccdf0">Ligne_verticale_XOR_Zoom()</a>, <a class="el" href="shade_8c.html#0c3f3929858d89fe9fca3123c5d6365b">Menu_Shade()</a>, <a class="el" href="boutons_8c.html#51c70d751b62e2336eaae76d27204349">Mettre_a_jour_trame()</a>, <a class="el" href="graph_8h.html#44f773b6f36e033db9662d8dc738864a">Mettre_Ecran_A_Jour()</a>, <a class="el" href="boutons_8c.html#cd26f89d7e7168080d910712aba62f24">Preparer_et_afficher_liste_fichiers()</a>, <a class="el" href="windows_8h.html#aa269593fd5cfeac370a1dd1c6fd9474">Print_compteur()</a>, <a class="el" href="windows_8h.html#5937e6b64b1dce95d543aa1ee0501d09">Print_coordonnees()</a>, <a class="el" href="windows_8h.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, <a class="el" href="windows_8h.html#e7e98e509acfdcad8648081cad0e999a">Print_dans_menu()</a>, <a class="el" href="boutons_8c.html#8d20f81830cc20f87cccda3e508c89b0">Print_Nom_fichier_dans_selecteur()</a>, <a class="el" href="boutons_8c.html#1b875f67ff18e80c2b13f4e8978bd19f">Print_repertoire_courant()</a>, <a class="el" href="readline_8h.html#0c7c39d01861a273fd308441203245c5">Readline_ex()</a>, <a class="el" href="operatio_8h.html#7971337bc3ebb3fa2a95d3e3ef332a9b">Rectangle_Degrade_0_5()</a>, <a class="el" href="operatio_8h.html#d8c35de45646bfc3a772ebee0eb07ba3">Rectangle_Degrade_0_9()</a>, <a class="el" href="operatio_8h.html#b71cafab2d695452b7dc0845272436a1">Rectangle_Degrade_12_7()</a>, <a class="el" href="moteur_8h.html#f28758e05c5bf643ad8a005b72d24765">Recuperer_couleur_derriere_fenetre()</a>, <a class="el" href="pxdouble_8h.html#bd1a322116f244f049a202a165f07fcf">Remap_screen_Double()</a>, <a class="el" href="pxsimple_8h.html#5953ed40e4c23bd9d48c8fc6b9ad1af1">Remap_screen_Simple()</a>, <a class="el" href="pxtall_8h.html#34f8bb9002ee27ef4c75cf8c976a9186">Remap_screen_Tall()</a>, <a class="el" href="pxwide_8h.html#729228b2a259bbf4d935b8b3355e017c">Remap_screen_Wide()</a>, <a class="el" href="divers_8h.html#104becb4e7ceacdec83382931c8c7503">Remplacer_une_couleur()</a>, <a class="el" href="graph_8h.html#33ea066a23590b836e423c17bdd2d923">Remplir()</a>, <a class="el" href="divers_8h.html#ebf34ff8e80569be17fb90b22c9568be">Scroll_picture()</a>, <a class="el" href="shade_8c.html#3c992c6663e216d94f9aa3ad40419fc5">Shade_Blocs_degrades()</a>, <a class="el" href="boutons_8c.html#34890a5db632ffadb5cdd557e76eadbd">Spray_Rafficher_infos()</a>, <a class="el" href="boutons_8c.html#0c4b1f32261c764409bdc203be910dcb">Stencil_Actualiser_couleur()</a>, <a class="el" href="moteur_8h.html#4e69604c31823c436bc54258c9558920">Tagger_intervalle_palette()</a>, <a class="el" href="shade_8c.html#763af046696f94a4a2dcb93d625d2fc5">Tagger_shades()</a>, <a class="el" href="moteur_8h.html#d3525bda6a78897c3d8d8d7f37eb8c3e">Tracer_cadre_de_bouton_du_menu()</a>, and <a class="el" href="windows_8h.html#ffb163523e7c7f96b69a889ce1a69882">Warning_message()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8h.html#75e3bd74223a8e8feba3bc87a2eac4c6">Button_Airbrush_menu()</a>, <a class="el" href="boutons_8h.html#9cfb47e7b613ece07553360efc1db7fb">Button_Magnify()</a>, <a class="el" href="boutons_8h.html#463af6473ae8baaa20caed8aea17969c">Button_Magnify_menu()</a>, <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8h.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette()</a>, <a class="el" href="shade_8h.html#230618ea7ae142115a320b637342bfca">Button_Quick_shade_menu()</a>, <a class="el" href="aide_8h.html#5c93538756ff9f83b2b1de4dbc5f5734">Button_Stats()</a>, <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>, <a class="el" href="boutons_8h.html#e4efd27dbe8588cc18dfa19fc15a7c44">Button_Trame_menu()</a>, <a class="el" href="boutons_8c.html#ca519af21b2da8fbffee95d4aba4560d">Check_mode_button()</a>, <a class="el" href="pxdouble_8h.html#d16a957b34c0291aecd6f473ca257fda">Clear_brush_double()</a>, <a class="el" href="pxdouble_8h.html#fa1e2b7d0a5aa9a581d1c55ff0bb675c">Clear_brush_scaled_double()</a>, <a class="el" href="pxsimple_8h.html#9ff5fef1ad4830a865da762c0c7a6356">Clear_brush_scaled_simple()</a>, <a class="el" href="pxtall_8h.html#5c087394b322dc263f131f63132fb892">Clear_brush_scaled_tall()</a>, <a class="el" href="pxwide_8h.html#b83e17b097f17e3bc290519909bab280">Clear_brush_scaled_wide()</a>, <a class="el" href="pxsimple_8h.html#52c1b6e39c09f2f265c90f585b1d416a">Clear_brush_simple()</a>, <a class="el" href="pxtall_8h.html#6be8cafb2610d8260b9f369c9dae311b">Clear_brush_tall()</a>, <a class="el" href="pxwide_8h.html#e6ffe0c587e4114ad8a1fbc3e50c2b4a">Clear_brush_wide()</a>, <a class="el" href="moteur_8h.html#9c1721c2936b2e395300a737fdbc1f41">Close_popup()</a>, <a class="el" href="moteur_8h.html#4bf44f0520bdfca14e0b196a851d1032">Close_window()</a>, <a class="el" href="windows_8h.html#51de6324e22b0322dc78509fcce9e432">Confirmation_box()</a>, <a class="el" href="windows_8h.html#17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="shade_8c.html#3b2a35c95ba376e9b6cb92b9b15117d9">Display_all_shade()</a>, <a class="el" href="pxdouble_8h.html#0ed7254faa7b4f248cf1d5bd751b996e">Display_brush_color_double()</a>, <a class="el" href="pxsimple_8h.html#aab21d1d8dbf7006ede6e07ab081af0a">Display_brush_color_simple()</a>, <a class="el" href="pxtall_8h.html#bda32435b3fd2bb014a684efba75df09">Display_brush_color_tall()</a>, <a class="el" href="pxwide_8h.html#c9809baaa34b7833ad4b7092ef194cf9">Display_brush_color_wide()</a>, <a class="el" href="pxdouble_8h.html#e3f4923b317d14cf505debae25a2b2e7">Display_brush_mono_double()</a>, <a class="el" href="pxsimple_8h.html#a6f58bdea49bbabd783bfbe628400e55">Display_brush_mono_simple()</a>, <a class="el" href="pxtall_8h.html#7001de81fea0504ced087a9addadeebe">Display_brush_mono_tall()</a>, <a class="el" href="pxwide_8h.html#8314b56052cec762ab551a2e093e6547">Display_brush_mono_wide()</a>, <a class="el" href="pxdouble_8h.html#2f29b9a4889a71d1db39258761e0f360">Display_brush_mono_zoom_double()</a>, <a class="el" href="pxsimple_8h.html#e652f8609ecaeba8cc43fc5bd77daf7d">Display_brush_mono_zoom_simple()</a>, <a class="el" href="pxtall_8h.html#916cb93ee67642385655166bc03f22a8">Display_brush_mono_zoom_tall()</a>, <a class="el" href="pxwide_8h.html#f2fbb6d2bc944b5a133b7c960f8805bb">Display_brush_mono_zoom_wide()</a>, <a class="el" href="windows_8h.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="boutons_8c.html#a4e59c213eeece0b39739b180e5c28f4">Display_effect_sprite()</a>, <a class="el" href="windows_8c.html#7466c9521272ff8dffa40ad95d98f46d">Display_foreback()</a>, <a class="el" href="windows_8h.html#65b91268e28a7da294bb12c565a721ff">Display_grad_block_in_window()</a>, <a class="el" href="aide_8c.html#d7fb26a8a022f25bbde46ffcda4709ea">Display_help()</a>, <a class="el" href="windows_8h.html#5198b4cf70cc4fcd77b8a8869db6a84d">Display_image_limits()</a>, <a class="el" href="windows_8h.html#26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="windows_8h.html#0ec5427d5c79d487da933959215bcb99">Display_menu_palette()</a>, <a class="el" href="windows_8c.html#615bbc4d3c678435a93095bfc92ec37f">Display_menu_palette_avoiding_window()</a>, <a class="el" href="windows_8h.html#ea90fee6548405732487d958d971df49">Display_paintbrush_in_menu()</a>, <a class="el" href="windows_8h.html#d050384a833195a9cae7ca912c3c4460">Display_paintbrush_in_window()</a>, <a class="el" href="pxdouble_8h.html#ee4dd8b9bd38aff20ad0f7dfe3ce906e">Display_part_of_screen_scaled_double()</a>, <a class="el" href="pxsimple_8h.html#c9362b00e086d0df84aaf216a12f777e">Display_part_of_screen_scaled_simple()</a>, <a class="el" href="pxtall_8h.html#4aab70521605b1d7517aa6c1256254f4">Display_part_of_screen_scaled_tall()</a>, <a class="el" href="pxwide_8h.html#74d7d07f0419550f85eefbb73d544fd2">Display_part_of_screen_scaled_wide()</a>, <a class="el" href="windows_8c.html#50c6ac1584f3d26ade46032b241e04fa">Display_separator()</a>, <a class="el" href="windows_8h.html#25629113f4c6223e480ba95557ce1b57">Display_sprite_in_menu()</a>, <a class="el" href="boutons_8c.html#5d8e126dfd5cf0449f0e19d5dcdddf65">Draw_button_gradient_style()</a>, <a class="el" href="boutons_8c.html#20cb189b678ea628388ba37e37679c8a">Draw_gradient_preview()</a>, <a class="el" href="moteur_8h.html#6db8538a83ce9c346764cd7b8d9f9ce6">Draw_menu_button_frame()</a>, <a class="el" href="boutons_8c.html#ea50557c1352be8af7ab4f3da273b60c">Draw_preset_sieve_patterns()</a>, <a class="el" href="boutons_8c.html#2b1adde507db8b2ed2be9108811a49e2">Draw_sieve_scaled()</a>, <a class="el" href="graph_8h.html#8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="windows_8h.html#3c639a5cc04a5ef43f4457faad5a2867">Frame_menu_color()</a>, <a class="el" href="moteur_8h.html#a22e122622e93cfc55c6ce79d739c3c9">Get_color_behind_window()</a>, <a class="el" href="operatio_8h.html#e0869bdbe6da7985364a8c57d7b5f4b0">Grad_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#c82c55cb83a45f0fef70246ebea74d38">Grad_rectangle_0_9()</a>, <a class="el" href="operatio_8h.html#85c65b7c59a0b35125d0a5c8287378b7">Grad_rectangle_12_7()</a>, <a class="el" href="windows_8h.html#5a0466cd482be1134d4c0e3c8fd8afe4">Hide_cursor()</a>, <a class="el" href="windows_8h.html#c1002ae0bc996d55bc4ab5e2fd71a462">Horizontal_XOR_line_zoom()</a>, <a class="el" href="moteur_8h.html#42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="shade_8c.html#66d37b393bc8dd6037927082533e37bb">Menu_shade()</a>, <a class="el" href="moteur_8c.html#906143211234ac6c3ee5f4635f3a90bd">Move_separator()</a>, <a class="el" href="moteur_8c.html#589f602e6b1271bcf454dfdbb2b576e7">Move_window()</a>, <a class="el" href="windows_8h.html#695f917c7ddc48104eb4e99517430dbc">Print_coordinates()</a>, <a class="el" href="windows_8h.html#ddeb396d54ca20aed9869c9a645a851f">Print_counter()</a>, <a class="el" href="windows_8h.html#98fe99fa3b0247fc3d63ad64251c3094">Print_in_menu()</a>, <a class="el" href="windows_8h.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="readline_8h.html#c581f2c9560f1c6e7f1c61039c7787e1">Readline_ex()</a>, <a class="el" href="boutons_8c.html#e187fd0464b6921737c449964fc86993">Refresh_airbrush_settings()</a>, <a class="el" href="pxdouble_8h.html#51ac36e9935f6a2dc62dffd547c664ab">Remap_screen_double()</a>, <a class="el" href="pxsimple_8h.html#7c2201ef531ae6a8adce1d9b639819dc">Remap_screen_simple()</a>, <a class="el" href="pxtall_8h.html#190073664da6c29d35074613b6efb25e">Remap_screen_tall()</a>, <a class="el" href="pxwide_8h.html#5e893c73d2273cd64394add240bd6412">Remap_screen_wide()</a>, <a class="el" href="divers_8h.html#d3c06ac6b5be0d9b45cc055f12a68990">Replace_a_color()</a>, <a class="el" href="divers_8h.html#7c36c2525339cc3229c2bf07db67d953">Scroll_picture()</a>, <a class="el" href="shade_8c.html#fa6457e4624d18b1c9b7ccc8ce086fd3">Shade_draw_grad_ranges()</a>, <a class="el" href="boutons_8c.html#2b9be6f68fa72017d73eaf4a6b238e91">Stencil_update_color()</a>, <a class="el" href="moteur_8h.html#58e463233f11eb9050580ff098f208fe">Tag_color_range()</a>, <a class="el" href="shade_8c.html#cb516d9388035e5eb5796d1d7e60abb0">Tag_shades()</a>, <a class="el" href="graph_8h.html#bf2ddaf170092d9afe9961202a139548">Update_part_of_screen()</a>, <a class="el" href="boutons_8c.html#cd575975ac148968169f5707787d64e4">Update_sieve_area()</a>, <a class="el" href="windows_8h.html#0ddc14441d7dd7dcbe2ded6b16e5a2a7">Vertical_XOR_line_zoom()</a>, <a class="el" href="windows_8h.html#5980c96128a6643d8fa5405a435feda1">Warning_message()</a>, <a class="el" href="moteur_8h.html#b9c03120eb1f45112163295d327d8d5f">Window_clear_input_button()</a>, <a class="el" href="moteur_8h.html#0950b0d63a48144b9d67f4ea4819cd9a">Window_clear_tags()</a>, <a class="el" href="windows_8h.html#762e030dd923df1560bbd301d21a7113">Window_display_icon_sprite()</a>, <a class="el" href="moteur_8h.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>, <a class="el" href="moteur_8c.html#e2ab97d33f45722b8b7f69c449724f92">Window_dropdown_on_click()</a>, <a class="el" href="aide_8h.html#b1985f9adb9c432856a7f008be5a0411">Window_help()</a>, <a class="el" href="moteur_8h.html#0dd8974290de388a8a547afc5e6f3795">Window_select_normal_button()</a>, <a class="el" href="aide_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>, and <a class="el" href="moteur_8h.html#a6119683f6c6499898168bdc0365e185">Window_unselect_normal_button()</a>.</p>
 
 </div>
 </div><p>
@@ -188,27 +188,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#b24f3c58078b3f46ae99b12caa311114">Ecran_SDL</a>, <a class="el" href="global_8h.html#4832486ae2e8cb0da5a1d69287adcd71">Hauteur_ecran</a>, <a class="el" href="global_8h.html#71463060a85d2c31eea4d9a16c535e4c">Largeur_ecran</a>, <a class="el" href="sdlscreen_8c.html#66c09374ee947b06a9ffc3b317e445e7">Max_X</a>, <a class="el" href="sdlscreen_8c.html#0342337933538339f8ff810d0ef64a34">Max_Y</a>, <a class="el" href="divers_8c.html#0e98c679b4ab60b59a3c88432d6a1c2f">Min()</a>, <a class="el" href="sdlscreen_8c.html#d37dc482bed4cf71df91643d0bbc80db">Min_X</a>, <a class="el" href="sdlscreen_8c.html#71ed2f54e67c2ea8686510bc7e40fbbe">Min_Y</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, and <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>.</p>
+<p>References <a class="el" href="sdlscreen_8c.html#66c09374ee947b06a9ffc3b317e445e7">Max_X</a>, <a class="el" href="sdlscreen_8c.html#0342337933538339f8ff810d0ef64a34">Max_Y</a>, <a class="el" href="divers_8c.html#d653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="sdlscreen_8c.html#d37dc482bed4cf71df91643d0bbc80db">Min_X</a>, <a class="el" href="sdlscreen_8c.html#71ed2f54e67c2ea8686510bc7e40fbbe">Min_Y</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>, <a class="el" href="global_8h.html#6ce95c99df7f9f0220eecea205d81c11">Screen_height</a>, <a class="el" href="global_8h.html#3f4d842991896a5dcb9a941c675bca74">Screen_SDL</a>, and <a class="el" href="global_8h.html#57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>.</p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, and <a class="el" href="readline_8h.html#0c7c39d01861a273fd308441203245c5">Readline_ex()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, and <a class="el" href="readline_8h.html#c581f2c9560f1c6e7f1c61039c7787e1">Readline_ex()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f1914992f2edfc8c97f7952b33bf2eab"></a><!-- doxytag: member="sdlscreen.h::Surface_en_bytefield" ref="f1914992f2edfc8c97f7952b33bf2eab" args="(SDL_Surface *Source, byte *Destination)" -->
+<a class="anchor" name="92a7d7b3081966126c9ce5ec3a83b70c"></a><!-- doxytag: member="sdlscreen.h::Surface_to_bytefield" ref="92a7d7b3081966126c9ce5ec3a83b70c" args="(SDL_Surface *source, byte *dest)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>* Surface_en_bytefield           </td>
+          <td class="memname">byte* Surface_to_bytefield           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>Source</em>, </td>
+          <td class="paramname"> <em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td>
-          <td class="paramname"> <em>Destination</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,18 +221,20 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#e1763c92860bcecd15a88a8a7f2010d4">Rendu_Texte_SFont()</a>, and <a class="el" href="texte_8c.html#08742ba1eb9b92c1917d07b9aea8db0b">Rendu_Texte_TTF()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>.</p>
+
+<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="texte_8c.html#6fd82265e8212cd3f6e7e0823f76c2ff">Render_text_TTF()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0de748e33b6fea654106dc638879424d"></a><!-- doxytag: member="sdlscreen.h::Conversion_couleur_SDL" ref="0de748e33b6fea654106dc638879424d" args="(byte)" -->
+<a class="anchor" name="1100c258f43dc387d9052b96e74f456c"></a><!-- doxytag: member="sdlscreen.h::Color_to_SDL_color" ref="1100c258f43dc387d9052b96e74f456c" args="(byte)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Color Conversion_couleur_SDL           </td>
+          <td class="memname">SDL_Color Color_to_SDL_color           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
+          <td class="paramtype">byte&nbsp;</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -243,33 +245,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#5f1a588fbaff890b98047add4138c451">Principal_Palette</a>.</p>
+<p>References <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#08742ba1eb9b92c1917d07b9aea8db0b">Rendu_Texte_TTF()</a>.</p>
+<p>Referenced by <a class="el" href="texte_8c.html#6fd82265e8212cd3f6e7e0823f76c2ff">Render_text_TTF()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="7d878c5015b12f71f88803e615953f72"></a><!-- doxytag: member="sdlscreen.h::Sdl_Get_pixel_8" ref="7d878c5015b12f71f88803e615953f72" args="(SDL_Surface *Bmp, int X, int Y)" -->
+<a class="anchor" name="a9231294bfed21ed9848c156f66ab632"></a><!-- doxytag: member="sdlscreen.h::Get_SDL_pixel_8" ref="a9231294bfed21ed9848c156f66ab632" args="(SDL_Surface *bmp, int x, int y)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Sdl_Get_pixel_8           </td>
+          <td class="memname">byte Get_SDL_pixel_8           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>Bmp</em>, </td>
+          <td class="paramname"> <em>bmp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>X</em>, </td>
+          <td class="paramname"> <em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Y</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -282,17 +284,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>, <a class="el" href="init_8c.html#304b0196f0bb9394658cdcbe58652fdb">Chercher_bas()</a>, <a class="el" href="init_8c.html#9076115526d187ecf6e4e5e9ad98b85e">Chercher_droite()</a>, and <a class="el" href="init_8c.html#b3f13ff0ac5efcf6d8c5096d80ab1ef1">Lire_bloc()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>.</p>
+
+<p>Referenced by <a class="el" href="init_8c.html#b1881da96d24c43de0f76aaad7720195">GUI_seek_down()</a>, <a class="el" href="init_8c.html#e6f0ce04a87cd819e18fb99621dc52d5">GUI_seek_right()</a>, <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>, and <a class="el" href="init_8c.html#2402d61c14d1297fbbda273831fc49cb">Read_GUI_block()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="456c2a84ecc14d0b0d7bc952e9e6dade"></a><!-- doxytag: member="sdlscreen.h::Liste_Modes_Videos_SDL" ref="456c2a84ecc14d0b0d7bc952e9e6dade" args="" -->
+<a class="anchor" name="efd73dafe8c830ca9c484ea4a6ca6cfb"></a><!-- doxytag: member="sdlscreen.h::List_SDL_video_modes" ref="efd73dafe8c830ca9c484ea4a6ca6cfb" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Rect** <a class="el" href="sdlscreen_8h.html#456c2a84ecc14d0b0d7bc952e9e6dade">Liste_Modes_Videos_SDL</a>          </td>
+          <td class="memname">SDL_Rect** <a class="el" href="sdlscreen_8h.html#efd73dafe8c830ca9c484ea4a6ca6cfb">List_SDL_video_modes</a>          </td>
         </tr>
       </table>
 </div>
@@ -302,12 +306,12 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="6fb2a890ec087bd49edc980c42892baa"></a><!-- doxytag: member="sdlscreen.h::Ecran" ref="6fb2a890ec087bd49edc980c42892baa" args="" -->
+<a class="anchor" name="e8c02af6e2043c17a5a0edc96a0696eb"></a><!-- doxytag: member="sdlscreen.h::Screen_pixels" ref="e8c02af6e2043c17a5a0edc96a0696eb" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>* <a class="el" href="sdlscreen_8h.html#6fb2a890ec087bd49edc980c42892baa">Ecran</a>          </td>
+          <td class="memname">byte* <a class="el" href="sdlscreen_8h.html#e8c02af6e2043c17a5a0edc96a0696eb">Screen_pixels</a>          </td>
         </tr>
       </table>
 </div>
@@ -315,10 +319,12 @@ window.onload = initDynSections;
 
 <p>
 
+<p>Referenced by <a class="el" href="pxdouble_8h.html#d16a957b34c0291aecd6f473ca257fda">Clear_brush_double()</a>, <a class="el" href="pxsimple_8h.html#52c1b6e39c09f2f265c90f585b1d416a">Clear_brush_simple()</a>, <a class="el" href="pxtall_8h.html#6be8cafb2610d8260b9f369c9dae311b">Clear_brush_tall()</a>, <a class="el" href="pxwide_8h.html#e6ffe0c587e4114ad8a1fbc3e50c2b4a">Clear_brush_wide()</a>, <a class="el" href="pxdouble_8h.html#0ed7254faa7b4f248cf1d5bd751b996e">Display_brush_color_double()</a>, <a class="el" href="pxsimple_8h.html#aab21d1d8dbf7006ede6e07ab081af0a">Display_brush_color_simple()</a>, <a class="el" href="pxtall_8h.html#bda32435b3fd2bb014a684efba75df09">Display_brush_color_tall()</a>, <a class="el" href="pxwide_8h.html#c9809baaa34b7833ad4b7092ef194cf9">Display_brush_color_wide()</a>, <a class="el" href="pxdouble_8h.html#7da101c603f4920ef7d4b606d0b283f5">Display_brush_color_zoom_double()</a>, <a class="el" href="pxtall_8h.html#056a9b89ce0cfed9040097e9e6f56d88">Display_brush_color_zoom_tall()</a>, <a class="el" href="pxdouble_8h.html#ff2d9d9e9db275bd711b71b43018aff7">Display_brush_double()</a>, <a class="el" href="pxdouble_8h.html#e3f4923b317d14cf505debae25a2b2e7">Display_brush_mono_double()</a>, <a class="el" href="pxsimple_8h.html#a6f58bdea49bbabd783bfbe628400e55">Display_brush_mono_simple()</a>, <a class="el" href="pxtall_8h.html#7001de81fea0504ced087a9addadeebe">Display_brush_mono_tall()</a>, <a class="el" href="pxwide_8h.html#8314b56052cec762ab551a2e093e6547">Display_brush_mono_wide()</a>, <a class="el" href="pxsimple_8h.html#e9a38fc24962be4f74d5186fcd1d3ac6">Display_brush_simple()</a>, <a class="el" href="pxtall_8h.html#1b8c1521be79f331e7c128dbec5a5736">Display_brush_tall()</a>, <a class="el" href="pxwide_8h.html#3d6e002a5a1cd09a1e04e5efb135cd9b">Display_brush_wide()</a>, <a class="el" href="pxdouble_8h.html#e6ab6e4cedf359d770e406d38bf3ba9e">Display_line_on_screen_double()</a>, <a class="el" href="pxdouble_8h.html#8124b8476dde599afe681404b512673d">Display_line_on_screen_fast_double()</a>, <a class="el" href="pxwide_8h.html#a34c3552dc286c2285cecf56d3ab31ab">Display_line_on_screen_fast_wide()</a>, <a class="el" href="pxsimple_8h.html#b1bdf7d0baad94347ad06f74ca463133">Display_line_on_screen_simple()</a>, <a class="el" href="pxtall_8h.html#87bf2facd9be51e9547028a6fcd29529">Display_line_on_screen_tall()</a>, <a class="el" href="pxwide_8h.html#4eb34951fed8734e2b0f10c0930ff664">Display_line_on_screen_wide()</a>, <a class="el" href="pxdouble_8h.html#0f6f9124513a42bf451d0e3bd52f7fd0">Display_part_of_screen_double()</a>, <a class="el" href="pxsimple_8h.html#d0a00a98a74427da717da373baa2ac4a">Display_part_of_screen_simple()</a>, <a class="el" href="pxtall_8h.html#a6f1dd3cbd93edfae6636078daff2562">Display_part_of_screen_tall()</a>, <a class="el" href="pxwide_8h.html#52d60cc7668853e8dd46154dc1f53d96">Display_part_of_screen_wide()</a>, <a class="el" href="pxsimple_8h.html#b1b68b37a84935837f50f231d2378e1d">Display_transparent_line_on_screen_simple()</a>, <a class="el" href="pxwide_8h.html#298e9f89bdb01a32d5d7b8d727c0c0c1">Display_transparent_line_on_screen_wide()</a>, <a class="el" href="pxdouble_8c.html#e4499182e71375477deb53cbe23b4da0">Display_transparent_mono_line_on_screen_double()</a>, <a class="el" href="pxsimple_8h.html#55a6722e143657f751f5a64144ac01cf">Display_transparent_mono_line_on_screen_simple()</a>, <a class="el" href="pxwide_8c.html#d4bdf19318595ac52c96aef54f088504">Display_transparent_mono_line_on_screen_wide()</a>, <a class="el" href="divers_8h.html#df7595245656727e4c3538c39eadaeb1">Hide_current_image_with_stencil()</a>, <a class="el" href="pxdouble_8h.html#2296201a4bd0dbe06c0f5cc0af936ec7">Horizontal_XOR_line_double()</a>, <a class="el" href="pxsimple_8h.html#fbd71bc8b0a68ff2f26350fe0d19a2d3">Horizontal_XOR_line_simple()</a>, <a class="el" href="pxtall_8h.html#6122a5b90a7694aa905b4643d8e52517">Horizontal_XOR_line_tall()</a>, <a class="el" href="pxwide_8h.html#314e16df13e618a3524ff26ce273fb8d">Horizontal_XOR_line_wide()</a>, <a class="el" href="pxdouble_8h.html#f9fff76b21acd0f226805c5067f28b5a">Pixel_double()</a>, <a class="el" href="pxsimple_8h.html#5d6d8080fc4d07e912af1173f35ae8ae">Pixel_simple()</a>, <a class="el" href="pxtall_8h.html#45b2f994a4383fae1d9fbbae5d54006d">Pixel_tall()</a>, <a class="el" href="pxwide_8h.html#fda44b9e927e2b01d2f284cab995cc34">Pixel_wide()</a>, <a class="el" href="pxdouble_8h.html#f558d0e1d3dcdd529d62ca82e876af93">Read_line_screen_double()</a>, <a class="el" href="pxsimple_8h.html#d624e14ba9adddd64f2f0beb59c0d351">Read_line_screen_simple()</a>, <a class="el" href="pxtall_8h.html#34a58bde76c2230bda60753b46489113">Read_line_screen_tall()</a>, <a class="el" href="pxwide_8h.html#16d232fdc3ee0498df6261c2af297ea8">Read_line_screen_wide()</a>, <a class="el" href="pxdouble_8h.html#6988579a68c4e71926f1a1774576ff96">Read_pixel_double()</a>, <a class="el" href="pxsimple_8h.html#b32d43ea6721e60b07cda08ac5b08170">Read_pixel_simple()</a>, <a class="el" href="pxtall_8h.html#4b56e7c37e455beacb535f2ac5f4d42d">Read_pixel_tall()</a>, <a class="el" href="pxwide_8h.html#3c54dba7ca0a9ad0ceaf634d20e6d278">Read_pixel_wide()</a>, <a class="el" href="pxdouble_8h.html#51ac36e9935f6a2dc62dffd547c664ab">Remap_screen_double()</a>, <a class="el" href="pxsimple_8h.html#7c2201ef531ae6a8adce1d9b639819dc">Remap_screen_simple()</a>, <a class="el" href="pxtall_8h.html#190073664da6c29d35074613b6efb25e">Remap_screen_tall()</a>, <a class="el" href="pxwide_8h.html#5e893c73d2273cd64394add240bd6412">Remap_screen_wide()</a>, <a class="el" href="sdlscreen_8h.html#4683b0e65b7992516d19665a7c1831ce">Set_mode_SDL()</a>, <a class="el" href="pxdouble_8h.html#495d3ac457ae294ab597f1f94c620038">Vertical_XOR_line_double()</a>, <a class="el" href="pxsimple_8h.html#a22110ec28c56b12855284fd9f995863">Vertical_XOR_line_simple()</a>, <a class="el" href="pxtall_8h.html#d18b2aabffa56ebc9e18c53e43169746">Vertical_XOR_line_tall()</a>, and <a class="el" href="pxwide_8h.html#898863d97489d68a055cd8c904b3daa6">Vertical_XOR_line_wide()</a>.</p>
+
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:09 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:13 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

@@ -72,76 +72,60 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#b246e002bd3a0b08fb247262d9fa6cf2">endian_magic16</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> x)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#00715eb351856d1608844105cec36d63">Endian_magic16</a> (word x)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#9588e083b5ce14557763e9e1817cadff">endian_magic32</a> (<a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> x)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">dword&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#738e7324626154317395e29462baf74b">Endian_magic32</a> (dword x)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#73aaad5d4ad1f9525a5b721f8ce4ce1b">read_byte</a> (FILE *Fichier, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *Dest)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#93930659bb1d0e160762e826d11126cb">Read_byte</a> (FILE *file, byte *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#06ed5782b70b77c5a4aa9d947cd46fd2">write_byte</a> (FILE *Fichier, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Byte)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#e566a27981315fc4e81e834326c88eb7">Write_byte</a> (FILE *file, byte b)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#7dd95dabd449d89610810982e4d41191">read_bytes</a> (FILE *Fichier, void *Dest, size_t Taille)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#f170d69dda0f8ce13b19a16e7d331f0e">Read_bytes</a> (FILE *file, void *dest, size_t size)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#8d31bf2d2ddbf8590fd1e89b1cd7d3c3">write_bytes</a> (FILE *Fichier, void *Src, size_t Taille)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#ca9fc012c46a03daf8ae74f600091d6a">Write_bytes</a> (FILE *file, void *src, size_t size)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#6de4e1e280b33b322b6eec4bb271ff19">read_word_le</a> (FILE *Fichier, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *Dest)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#7a3230eaab028086a714409891a1af1f">Read_word_le</a> (FILE *file, word *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#97e4e523c86f92ce42880968853c0b58">write_word_le</a> (FILE *Fichier, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Mot)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#0e00a5e4fb75a991b0615cf42d47a4f6">Write_word_le</a> (FILE *file, word w)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#4c91bb8a07de7f00c48aecaabc46d555">read_word_be</a> (FILE *Fichier, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *Dest)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#2618da9562f1d098f00e310810d59e48">Read_word_be</a> (FILE *file, word *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#d1f8c09081fb86fb7c38ceb4cc24cdad">write_word_be</a> (FILE *Fichier, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Mot)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#786c8a4ef6d9988d828eed93e4fad935">Write_word_be</a> (FILE *file, word w)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#fa8636b02c02d3d866a7a17b38c4d11f">read_dword_le</a> (FILE *Fichier, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Dest)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#93475e4aa5d917a2940a80d121c5f9df">Read_dword_le</a> (FILE *file, dword *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#5f4aadd6896878f538272f499432b58c">write_dword_le</a> (FILE *Fichier, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> Mot)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#72da9f79ab7673f6ae4a1067283f8b11">Write_dword_le</a> (FILE *file, dword dw)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#d860d5237cbc0e1fb53beab90262a9d5">read_dword_be</a> (FILE *Fichier, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *Dest)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#3533d742fd24d32551ed86360a7a5b7a">Read_dword_be</a> (FILE *file, dword *dest)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#82719de87e46a66338f3f81a0b5c1964">write_dword_be</a> (FILE *Fichier, <a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> Mot)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#932e10266a09da3c7cd3572cc9ce178a">Write_dword_be</a> (FILE *file, dword dw)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#ae894da1d7abcde4299d6c34fcb8bb00">Position_dernier_slash</a> (const char *Chaine)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash</a> (const char *str)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#399cb56ac639dc2087d77125fea18ccd">Extraire_nom_fichier</a> (char *Destination, const char *Source)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#32735db55884446398f10bb76e124591">Extract_filename</a> (char *dest, const char *source)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#2f970506e24d7c885b4276cde46fc95f">Extraire_chemin</a> (char *Destination, const char *Source)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path</a> (char *dest, const char *source)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#260aa799bda8d9c4cd8dc85c2660d783">Fichier_existe</a> (char *Fichier)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#77578130329c8d6a2102f2884ba1ed28">File_exists</a> (char *fname)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#900a0a8785e034fbc72f1e52896c1b01">Repertoire_existe</a> (char *Repertoire)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#8f3b4b4e576b2f093d6f981cdd8cba2f">Directory_exists</a> (char *directory)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#53e7fc495276275ccb692dae8acee4e9">File_length</a> (const char *fname)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#e2a1497efe5c6ffb8bae5789c1134a9c">File_length_file</a> (FILE *file)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8c.html#80c5a4b0eefab6e29fa0cd748c333223">For_each_file</a> (const char *directory_name, void Callback(const char *))</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="b246e002bd3a0b08fb247262d9fa6cf2"></a><!-- doxytag: member="io.c::endian_magic16" ref="b246e002bd3a0b08fb247262d9fa6cf2" args="(word x)" -->
+<a class="anchor" name="00715eb351856d1608844105cec36d63"></a><!-- doxytag: member="io.c::Endian_magic16" ref="00715eb351856d1608844105cec36d63" args="(word x)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> endian_magic16           </td>
+          <td class="memname">word Endian_magic16           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>x</em>          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>Referenced by <a class="el" href="gfxcfg_8c.html#7cb5a57ce3c3624124af58f791b0c91b">Interpretation_du_fichier_config()</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="9588e083b5ce14557763e9e1817cadff"></a><!-- doxytag: member="io.c::endian_magic32" ref="9588e083b5ce14557763e9e1817cadff" args="(dword x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> endian_magic32           </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
           <td class="paramname"> <em>x</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -154,21 +138,41 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="73aaad5d4ad1f9525a5b721f8ce4ce1b"></a><!-- doxytag: member="io.c::read_byte" ref="73aaad5d4ad1f9525a5b721f8ce4ce1b" args="(FILE *Fichier, byte *Dest)" -->
+<a class="anchor" name="738e7324626154317395e29462baf74b"></a><!-- doxytag: member="io.c::Endian_magic32" ref="738e7324626154317395e29462baf74b" args="(dword x)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_byte           </td>
+          <td class="memname">dword Endian_magic32           </td>
+          <td>(</td>
+          <td class="paramtype">dword&nbsp;</td>
+          <td class="paramname"> <em>x</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="93930659bb1d0e160762e826d11126cb"></a><!-- doxytag: member="io.c::Read_byte" ref="93930659bb1d0e160762e826d11126cb" args="(FILE *file, byte *dest)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Read_byte           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -181,25 +185,25 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG()</a>, <a class="el" href="loadsave_8c.html#1e6e9bb0746fdc6810e2cbfbf5675b82">Lire_octet()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, and <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#14bc0c03c49cedd2b48d6458f1adcca8">Read_one_byte()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, and <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="06ed5782b70b77c5a4aa9d947cd46fd2"></a><!-- doxytag: member="io.c::write_byte" ref="06ed5782b70b77c5a4aa9d947cd46fd2" args="(FILE *Fichier, byte Byte)" -->
+<a class="anchor" name="e566a27981315fc4e81e834326c88eb7"></a><!-- doxytag: member="io.c::Write_byte" ref="e566a27981315fc4e81e834326c88eb7" args="(FILE *file, byte b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_byte           </td>
+          <td class="memname">int Write_byte           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Byte</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>b</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,31 +216,31 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="loadsave_8c.html#d26f8878b87c0584a88e685555682436">Emergency_backup()</a>, <a class="el" href="init_8h.html#80439b08857a437828e3c8d3aee5fe43">Sauver_CFG()</a>, and <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>.</p>
+<p>Referenced by <a class="el" href="loadsave_8c.html#6d28fed7af50e5e27f44e1d8f8b11232">Emergency_backup()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, and <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="7dd95dabd449d89610810982e4d41191"></a><!-- doxytag: member="io.c::read_bytes" ref="7dd95dabd449d89610810982e4d41191" args="(FILE *Fichier, void *Dest, size_t Taille)" -->
+<a class="anchor" name="f170d69dda0f8ce13b19a16e7d331f0e"></a><!-- doxytag: member="io.c::Read_bytes" ref="f170d69dda0f8ce13b19a16e7d331f0e" args="(FILE *file, void *dest, size_t size)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_bytes           </td>
+          <td class="memname">int Read_bytes           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em>, </td>
+          <td class="paramname"> <em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&nbsp;</td>
-          <td class="paramname"> <em>Taille</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -249,31 +253,31 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG()</a>, <a class="el" href="gfxcfg_8c.html#7cb5a57ce3c3624124af58f791b0c91b">Interpretation_du_fichier_config()</a>, <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#6321478625463f5e3c159ee00da2605d">Load_PAL()</a>, <a class="el" href="loadsave_8c.html#43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#107698c21966a3086b5e01b323c6f90e">Load_RAW_24B()</a>, <a class="el" href="loadsave_8c.html#b6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#b0e1b5f5900ccc6d061331c8ff158486">Load_TGA()</a>, <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#422454fbdf259cd46fcb8506d7dbccc6">Test_GIF()</a>, <a class="el" href="loadsave_8c.html#57cad007f7278fdaf2bab3d60c8cd8cb">Test_IMG()</a>, <a class="el" href="loadsave_8c.html#3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, <a class="el" href="loadsave_8c.html#58f415efbf2090acdd70dd20030ed643">Test_PKM()</a>, <a class="el" href="loadsave_8c.html#724eb97c3f79f3d8af0b75f699169867">Test_PNG()</a>, <a class="el" href="loadsave_8c.html#20a9fa80c60e1883b72015fe99ea4c04">Test_SCx()</a>, and <a class="el" href="loadsave_8c.html#030f7c89e9d5e657b149e82313617038">Wait_for()</a>.</p>
+<p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#6321478625463f5e3c159ee00da2605d">Load_PAL()</a>, <a class="el" href="loadsave_8c.html#43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#ce7c3e4ad5f8d4d863a53279caff4aa2">Load_RAW_24b()</a>, <a class="el" href="loadsave_8c.html#b6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#87501380ab9f5975a3295b88906c330c">Load_TGA()</a>, <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#422454fbdf259cd46fcb8506d7dbccc6">Test_GIF()</a>, <a class="el" href="loadsave_8c.html#57cad007f7278fdaf2bab3d60c8cd8cb">Test_IMG()</a>, <a class="el" href="loadsave_8c.html#3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, <a class="el" href="loadsave_8c.html#58f415efbf2090acdd70dd20030ed643">Test_PKM()</a>, <a class="el" href="loadsave_8c.html#724eb97c3f79f3d8af0b75f699169867">Test_PNG()</a>, <a class="el" href="loadsave_8c.html#20a9fa80c60e1883b72015fe99ea4c04">Test_SCx()</a>, and <a class="el" href="loadsave_8c.html#af99c34e26770e32f6fd21938b4d2222">Wait_for()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="8d31bf2d2ddbf8590fd1e89b1cd7d3c3"></a><!-- doxytag: member="io.c::write_bytes" ref="8d31bf2d2ddbf8590fd1e89b1cd7d3c3" args="(FILE *Fichier, void *Src, size_t Taille)" -->
+<a class="anchor" name="ca9fc012c46a03daf8ae74f600091d6a"></a><!-- doxytag: member="io.c::Write_bytes" ref="ca9fc012c46a03daf8ae74f600091d6a" args="(FILE *file, void *src, size_t size)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_bytes           </td>
+          <td class="memname">int Write_bytes           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&nbsp;</td>
-          <td class="paramname"> <em>Src</em>, </td>
+          <td class="paramname"> <em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&nbsp;</td>
-          <td class="paramname"> <em>Taille</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -286,25 +290,25 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="loadsave_8c.html#8bdb9fd8f253ca60ecb19d123c2ac9e2">Close_ecriture()</a>, <a class="el" href="loadsave_8c.html#55932dfaa23f3fd38fe3b8eebc3b146f">Ecrire_octet()</a>, <a class="el" href="loadsave_8c.html#d26f8878b87c0584a88e685555682436">Emergency_backup()</a>, <a class="el" href="gfxcfg_8c.html#935616bd4d3d71310d77e886ca00896f">Enregistrer_config()</a>, <a class="el" href="init_8h.html#80439b08857a437828e3c8d3aee5fe43">Sauver_CFG()</a>, <a class="el" href="loadsave_8c.html#c790c88223468918b79e8027e6536c03">Save_BMP()</a>, <a class="el" href="loadsave_8c.html#75f61abc626000008ba0ea59f8d3cab7">Save_CEL()</a>, <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>, <a class="el" href="loadsave_8c.html#2029e4410580e927f1cf72531ec11307">Save_IMG()</a>, <a class="el" href="loadsave_8c.html#b96510908fca8cd40bc4ffa0b8756798">Save_KCF()</a>, <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>, <a class="el" href="loadsave_8c.html#fd60117a972fa2d788265c5d32eb1638">Save_PAL()</a>, <a class="el" href="loadsave_8c.html#726a596e26cfddcd47bdc78882da72db">Save_PC1()</a>, <a class="el" href="loadsave_8c.html#c8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>, <a class="el" href="loadsave_8c.html#a73e82a37ccdf52c8ac64afe066beed2">Save_PI1()</a>, <a class="el" href="loadsave_8c.html#f28032474ee12f42045d4196e83953c2">Save_PKM()</a>, and <a class="el" href="loadsave_8c.html#b309c5417991c814314261632f41b81b">Save_SCx()</a>.</p>
+<p>Referenced by <a class="el" href="loadsave_8c.html#6d28fed7af50e5e27f44e1d8f8b11232">Emergency_backup()</a>, <a class="el" href="loadsave_8c.html#07538974ec51baf928400843812e33c5">End_write()</a>, <a class="el" href="loadsave_8c.html#c790c88223468918b79e8027e6536c03">Save_BMP()</a>, <a class="el" href="loadsave_8c.html#75f61abc626000008ba0ea59f8d3cab7">Save_CEL()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>, <a class="el" href="loadsave_8c.html#2029e4410580e927f1cf72531ec11307">Save_IMG()</a>, <a class="el" href="loadsave_8c.html#b96510908fca8cd40bc4ffa0b8756798">Save_KCF()</a>, <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>, <a class="el" href="loadsave_8c.html#fd60117a972fa2d788265c5d32eb1638">Save_PAL()</a>, <a class="el" href="loadsave_8c.html#726a596e26cfddcd47bdc78882da72db">Save_PC1()</a>, <a class="el" href="loadsave_8c.html#c8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>, <a class="el" href="loadsave_8c.html#a73e82a37ccdf52c8ac64afe066beed2">Save_PI1()</a>, <a class="el" href="loadsave_8c.html#f28032474ee12f42045d4196e83953c2">Save_PKM()</a>, <a class="el" href="loadsave_8c.html#b309c5417991c814314261632f41b81b">Save_SCx()</a>, and <a class="el" href="loadsave_8c.html#6c626c6926a790368fbd96e4b7eb14fc">Write_one_byte()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="6de4e1e280b33b322b6eec4bb271ff19"></a><!-- doxytag: member="io.c::read_word_le" ref="6de4e1e280b33b322b6eec4bb271ff19" args="(FILE *Fichier, word *Dest)" -->
+<a class="anchor" name="7a3230eaab028086a714409891a1af1f"></a><!-- doxytag: member="io.c::Read_word_le" ref="7a3230eaab028086a714409891a1af1f" args="(FILE *file, word *dest)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_word_le           </td>
+          <td class="memname">int Read_word_le           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em></td><td>&nbsp;</td>
+          <td class="paramtype">word *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,25 +321,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG()</a>, <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#fd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, and <a class="el" href="loadsave_8c.html#d2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#fd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, and <a class="el" href="loadsave_8c.html#d2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="97e4e523c86f92ce42880968853c0b58"></a><!-- doxytag: member="io.c::write_word_le" ref="97e4e523c86f92ce42880968853c0b58" args="(FILE *Fichier, word Mot)" -->
+<a class="anchor" name="0e00a5e4fb75a991b0615cf42d47a4f6"></a><!-- doxytag: member="io.c::Write_word_le" ref="0e00a5e4fb75a991b0615cf42d47a4f6" args="(FILE *file, word w)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_word_le           </td>
+          <td class="memname">int Write_word_le           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Mot</em></td><td>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>w</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -348,25 +354,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="loadsave_8c.html#d26f8878b87c0584a88e685555682436">Emergency_backup()</a>, <a class="el" href="gfxcfg_8c.html#935616bd4d3d71310d77e886ca00896f">Enregistrer_config()</a>, <a class="el" href="init_8h.html#80439b08857a437828e3c8d3aee5fe43">Sauver_CFG()</a>, and <a class="el" href="loadsave_8c.html#c8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#6d28fed7af50e5e27f44e1d8f8b11232">Emergency_backup()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, and <a class="el" href="loadsave_8c.html#c8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="4c91bb8a07de7f00c48aecaabc46d555"></a><!-- doxytag: member="io.c::read_word_be" ref="4c91bb8a07de7f00c48aecaabc46d555" args="(FILE *Fichier, word *Dest)" -->
+<a class="anchor" name="2618da9562f1d098f00e310810d59e48"></a><!-- doxytag: member="io.c::Read_word_be" ref="2618da9562f1d098f00e310810d59e48" args="(FILE *file, word *dest)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_word_be           </td>
+          <td class="memname">int Read_word_be           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em></td><td>&nbsp;</td>
+          <td class="paramtype">word *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -378,26 +386,28 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+
+<p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, and <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d1f8c09081fb86fb7c38ceb4cc24cdad"></a><!-- doxytag: member="io.c::write_word_be" ref="d1f8c09081fb86fb7c38ceb4cc24cdad" args="(FILE *Fichier, word Mot)" -->
+<a class="anchor" name="786c8a4ef6d9988d828eed93e4fad935"></a><!-- doxytag: member="io.c::Write_word_be" ref="786c8a4ef6d9988d828eed93e4fad935" args="(FILE *file, word w)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_word_be           </td>
+          <td class="memname">int Write_word_be           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Mot</em></td><td>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>w</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -409,26 +419,28 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+
+<p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="fa8636b02c02d3d866a7a17b38c4d11f"></a><!-- doxytag: member="io.c::read_dword_le" ref="fa8636b02c02d3d866a7a17b38c4d11f" args="(FILE *Fichier, dword *Dest)" -->
+<a class="anchor" name="93475e4aa5d917a2940a80d121c5f9df"></a><!-- doxytag: member="io.c::Read_dword_le" ref="93475e4aa5d917a2940a80d121c5f9df" args="(FILE *file, dword *dest)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_dword_le           </td>
+          <td class="memname">int Read_dword_le           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -441,25 +453,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG()</a>, <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, and <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, and <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="5f4aadd6896878f538272f499432b58c"></a><!-- doxytag: member="io.c::write_dword_le" ref="5f4aadd6896878f538272f499432b58c" args="(FILE *Fichier, dword Mot)" -->
+<a class="anchor" name="72da9f79ab7673f6ae4a1067283f8b11"></a><!-- doxytag: member="io.c::Write_dword_le" ref="72da9f79ab7673f6ae4a1067283f8b11" args="(FILE *file, dword dw)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_dword_le           </td>
+          <td class="memname">int Write_dword_le           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a>&nbsp;</td>
-          <td class="paramname"> <em>Mot</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword&nbsp;</td>
+          <td class="paramname"> <em>dw</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -472,25 +486,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#80439b08857a437828e3c8d3aee5fe43">Sauver_CFG()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
+
+<p>Referenced by <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d860d5237cbc0e1fb53beab90262a9d5"></a><!-- doxytag: member="io.c::read_dword_be" ref="d860d5237cbc0e1fb53beab90262a9d5" args="(FILE *Fichier, dword *Dest)" -->
+<a class="anchor" name="3533d742fd24d32551ed86360a7a5b7a"></a><!-- doxytag: member="io.c::Read_dword_be" ref="3533d742fd24d32551ed86360a7a5b7a" args="(FILE *file, dword *dest)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int read_dword_be           </td>
+          <td class="memname">int Read_dword_be           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword *&nbsp;</td>
+          <td class="paramname"> <em>dest</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -503,25 +519,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, and <a class="el" href="loadsave_8c.html#030f7c89e9d5e657b149e82313617038">Wait_for()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, and <a class="el" href="loadsave_8c.html#af99c34e26770e32f6fd21938b4d2222">Wait_for()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="82719de87e46a66338f3f81a0b5c1964"></a><!-- doxytag: member="io.c::write_dword_be" ref="82719de87e46a66338f3f81a0b5c1964" args="(FILE *Fichier, dword Mot)" -->
+<a class="anchor" name="932e10266a09da3c7cd3572cc9ce178a"></a><!-- doxytag: member="io.c::Write_dword_be" ref="932e10266a09da3c7cd3572cc9ce178a" args="(FILE *file, dword dw)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int write_dword_be           </td>
+          <td class="memname">int Write_dword_be           </td>
           <td>(</td>
           <td class="paramtype">FILE *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>, </td>
+          <td class="paramname"> <em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#a730159e2e39a4c35fbcb22c4f1f7eb9">dword</a>&nbsp;</td>
-          <td class="paramname"> <em>Mot</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword&nbsp;</td>
+          <td class="paramname"> <em>dw</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -533,20 +551,22 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+
+<p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="ae894da1d7abcde4299d6c34fcb8bb00"></a><!-- doxytag: member="io.c::Position_dernier_slash" ref="ae894da1d7abcde4299d6c34fcb8bb00" args="(const char *Chaine)" -->
+<a class="anchor" name="6de454481b736b439fc2642b4d0b2230"></a><!-- doxytag: member="io.c::Find_last_slash" ref="6de454481b736b439fc2642b4d0b2230" args="(const char *str)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* Position_dernier_slash           </td>
+          <td class="memname">char* Find_last_slash           </td>
           <td>(</td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Chaine</em>          </td>
+          <td class="paramname"> <em>str</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -556,27 +576,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="io_8h.html#b64e7b5597e0606838e72f2212b8b2eb">SEPARATEUR_CHEMIN</a>.</p>
+<p>References <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#5e3c3a9bfb7e274e13ac85da43d262ca">Ajout_fonte()</a>, <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="io_8h.html#2f970506e24d7c885b4276cde46fc95f">Extraire_chemin()</a>, and <a class="el" href="io_8h.html#399cb56ac639dc2087d77125fea18ccd">Extraire_nom_fichier()</a>.</p>
+<p>Referenced by <a class="el" href="texte_8c.html#a174283bf5096c3fa0f9d89c1df1ebd6">Add_font()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="io_8h.html#32735db55884446398f10bb76e124591">Extract_filename()</a>, and <a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="399cb56ac639dc2087d77125fea18ccd"></a><!-- doxytag: member="io.c::Extraire_nom_fichier" ref="399cb56ac639dc2087d77125fea18ccd" args="(char *Destination, const char *Source)" -->
+<a class="anchor" name="32735db55884446398f10bb76e124591"></a><!-- doxytag: member="io.c::Extract_filename" ref="32735db55884446398f10bb76e124591" args="(char *dest, const char *source)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Extraire_nom_fichier           </td>
+          <td class="memname">void Extract_filename           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Destination</em>, </td>
+          <td class="paramname"> <em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Source</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>source</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -589,27 +609,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="io_8c.html#ae894da1d7abcde4299d6c34fcb8bb00">Position_dernier_slash()</a>.</p>
+<p>References <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#4f6c2378e49fa3c0022357520e17e099">Analyse_de_la_ligne_de_commande()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2f970506e24d7c885b4276cde46fc95f"></a><!-- doxytag: member="io.c::Extraire_chemin" ref="2f970506e24d7c885b4276cde46fc95f" args="(char *Destination, const char *Source)" -->
+<a class="anchor" name="5dd5bc8a6da3b2dc4c9affce410f8fcf"></a><!-- doxytag: member="io.c::Extract_path" ref="5dd5bc8a6da3b2dc4c9affce410f8fcf" args="(char *dest, const char *source)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Extraire_chemin           </td>
+          <td class="memname">void Extract_path           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Destination</em>, </td>
+          <td class="paramname"> <em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Source</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>source</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -622,21 +642,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="io_8c.html#ae894da1d7abcde4299d6c34fcb8bb00">Position_dernier_slash()</a>, and <a class="el" href="io_8h.html#b64e7b5597e0606838e72f2212b8b2eb">SEPARATEUR_CHEMIN</a>.</p>
+<p>References <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, and <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#4f6c2378e49fa3c0022357520e17e099">Analyse_de_la_ligne_de_commande()</a>, and <a class="el" href="setup_8c.html#6ecaa2029ceee3690330eec1939903eb">Set_Program_Directory()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, and <a class="el" href="setup_8c.html#72aac461ade365d09296bf1924f71f27">Set_program_directory()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="260aa799bda8d9c4cd8dc85c2660d783"></a><!-- doxytag: member="io.c::Fichier_existe" ref="260aa799bda8d9c4cd8dc85c2660d783" args="(char *Fichier)" -->
+<a class="anchor" name="77578130329c8d6a2102f2884ba1ed28"></a><!-- doxytag: member="io.c::File_exists" ref="77578130329c8d6a2102f2884ba1ed28" args="(char *fname)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Fichier_existe           </td>
+          <td class="memname">int File_exists           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Fichier</em>          </td>
+          <td class="paramname"> <em>fname</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -646,19 +666,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="main_8c.html#4f6c2378e49fa3c0022357520e17e099">Analyse_de_la_ligne_de_commande()</a>, <a class="el" href="boutons_8c.html#85f4b4d27b2abf95478b41bfd40c7c02">Backup_du_fichier_sauvegarde()</a>, <a class="el" href="boutons_8h.html#b7f5f6282e228ee1b945432258dde235">Bouton_Autosave()</a>, <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8c.html#ce358802a012dfb059b20a4a19b549d0">Bouton_Quitter_Routine_locale()</a>, <a class="el" href="main_8c.html#0ddf1224851353fc92bfbff6f499fa97">main()</a>, <a class="el" href="saveini_8h.html#81ba3b85b1ae4265043133319e5da136">Sauver_INI()</a>, <a class="el" href="boutons_8h.html#de8eabbafe1b3dbe00a3fc652e1fdeb9">Save_picture()</a>, and <a class="el" href="setup_8h.html#fd36d70050a4a14b07f890e9b85938b7">Set_Config_Directory()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, <a class="el" href="boutons_8c.html#cbc674d3c1c924bfceb8dacf489fde0d">Backup_existing_file()</a>, <a class="el" href="boutons_8h.html#c4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="boutons_8c.html#c37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="main_8c.html#0ddf1224851353fc92bfbff6f499fa97">main()</a>, <a class="el" href="saveini_8h.html#621a2cf7f228c0a1b884a280744f77cc">Save_INI()</a>, <a class="el" href="boutons_8h.html#1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="900a0a8785e034fbc72f1e52896c1b01"></a><!-- doxytag: member="io.c::Repertoire_existe" ref="900a0a8785e034fbc72f1e52896c1b01" args="(char *Repertoire)" -->
+<a class="anchor" name="8f3b4b4e576b2f093d6f981cdd8cba2f"></a><!-- doxytag: member="io.c::Directory_exists" ref="8f3b4b4e576b2f093d6f981cdd8cba2f" args="(char *directory)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Repertoire_existe           </td>
+          <td class="memname">int Directory_exists           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Repertoire</em>          </td>
+          <td class="paramname"> <em>directory</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -670,12 +690,89 @@ window.onload = initDynSections;
 
 <p>References <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, and <a class="el" href="setup_8h.html#fd36d70050a4a14b07f890e9b85938b7">Set_Config_Directory()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="53e7fc495276275ccb692dae8acee4e9"></a><!-- doxytag: member="io.c::File_length" ref="53e7fc495276275ccb692dae8acee4e9" args="(const char *fname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int File_length           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fname</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>, and <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e2a1497efe5c6ffb8bae5789c1134a9c"></a><!-- doxytag: member="io.c::File_length_file" ref="e2a1497efe5c6ffb8bae5789c1134a9c" args="(FILE *file)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int File_length_file           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>file</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#b6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#36a7ffeba75ec452fb3e044b1be58d0b">Test_PAL()</a>, <a class="el" href="loadsave_8c.html#fd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, and <a class="el" href="loadsave_8c.html#d2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="80c5a4b0eefab6e29fa0cd748c333223"></a><!-- doxytag: member="io.c::For_each_file" ref="80c5a4b0eefab6e29fa0cd748c333223" args="(const char *directory_name, void Callback(const char *))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void For_each_file           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>directory_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void &nbsp;</td>
+          <td class="paramname"> <em>Callback</em>const char *</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="loadsave_8c.html#28186231b8af1d380c54ef93324260d5">filename_complet()</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, and <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
+
+<p>Referenced by <a class="el" href="texte_8h.html#f0435f56b36c5f804b070c7438ee3a5c">Init_text()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

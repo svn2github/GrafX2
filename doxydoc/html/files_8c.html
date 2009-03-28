@@ -77,80 +77,101 @@ window.onload = initDynSections;
 <code>#include &quot;<a class="el" href="erreurs_8h.html">erreurs.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="io_8h.html">io.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="windows_8h.html">windows.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="sdlscreen_8h.html">sdlscreen.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="loadsave_8h.html">loadsave.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="mountlist_8h.html">mountlist.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="moteur_8h.html">moteur.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="readline_8h.html">readline.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="input_8h.html">input.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="aide_8h.html">aide.h</a>&quot;</code><br>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#f4ca397e5267f53785c56449f3781f5f">isHidden</a>(Enreg)&nbsp;&nbsp;&nbsp;((Enreg)-&gt;d_name[0]=='.')</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#5a32a2fb9bbd873149c81da61afc5c43">isHidden</a>(x)&nbsp;&nbsp;&nbsp;((x)-&gt;d_name[0]=='.')</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#58430e535f4ba218391f886710a96dfc">COULEUR_FICHIER_NORMAL</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#7def33c3c8ad767f9262dc1eeb447a03">NORMAL_FILE_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#d5e0785f91a4dfcf13dee2d57e5713f6">COULEUR_REPERTOIRE_NORMAL</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#917d1a86d052720ab6dfda46caa99dd4">NORMAL_DIRECTORY_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#95886352ceee60ffa85ee0882eb3f33d">COULEUR_FOND_NORMAL</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#bc8ff9b2f128eaaa15c564b05d992ed0">NORMAL_BACKGROUND_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#cb64f2089b94b11c199dc74eae4fead6">COULEUR_FICHIER_SELECT</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#d8b59d9ecd6ef59a2c327149b09b1d78">CM_Blanc</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#48d6116ecab7fe7fcd3a9eca2c1f4fb8">SELECTED_FILE_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fbd82dcee5167f44b13793225060361b">MC_White</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#d9cdcf777d5b97f2cab77a91c5200c67">COULEUR_REPERTOIRE_SELECT</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#2d32fc175e6797b2d1e42397505d3fb1">SELECTED_DIRECTORY_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#e975049a2a7b075393880cdf53b767ea">COULEUR_FOND_SELECT</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a></td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#f6ce5ac21f68a74c2dd7f33eb1b1bd62">FILENAMESPACE</a>&nbsp;&nbsp;&nbsp;13</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#5d281d087c52195eb8eed3f967b11cc3">SELECTED_BACKGROUND_COLOR</a>&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a></td></tr>
 
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#27a0d7b9615613f79e9d1d7a70aba2a8">Determiner_repertoire_courant</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#e4c7d57cc1269536a19ea57d125f5259">Free_fileselector_list</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#32ce2643b82320645c660888cb987413">Detruire_liste_du_fileselect</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#1cc66ddfb995a0e3feef2aa54e2c3555">Format_filename</a> (char *fname, int type)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#4c4910631d64c32c2d4736707ebc8594">Nom_formate</a> (char *Nom, int Type)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a25bbbc0ffd3e0730fd1183dfa2cf52f">Add_element_to_list</a> (char *fname, int type)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#88fa9a16a5c39fccfd254e5ced33aa54">Ajouter_element_a_la_liste</a> (char *Nom, int Type)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#569640edb370eb1677f67629b33f5bb5">Check_extension</a> (const char *filename, char *filter)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#aeaf6233254bee0d254a43721ea21b60">VerifieExtension</a> (const char *NomFichier, char *Filtre)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files</a> (byte selected_format)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#78f0c62dad768a057a30e5074504b895">Lire_liste_des_fichiers</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Format_demande)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#b9cc932195709f11fd74b18b972cedcc">Read_list_of_drives</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#619bf3e335546f1fe9898a2f2df3dd40">Lire_liste_des_lecteurs</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#7bbcdf5c591d4b3d97d9f0949bfb154c">Sort_list_of_files</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#26d9d8fd4ea6ed9b2448cc301deca366">Trier_la_liste_des_fichiers</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list</a> (short offset_first, short selector_offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers</a> (short Decalage_premier, short Decalage_select)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#cad28dea475322638b8ecf8f908d08ae">Get_selected_item</a> (short offset_first, short selector_offset, char *label, int *type)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#1d04d1d18f8ed9fa0085abfe145fe716">Determiner_element_de_la_liste</a> (short Decalage_premier, short Decalage_select, char *Libelle, int *Type)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#da6cdcb31b408571cd54f2064d05ca29">Selector_scroll_down</a> (short *offset_first, short *selector_offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#3365a5caef36d19d72c54afc97fa8556">Select_Scroll_Down</a> (short *Decalage_premier, short *Decalage_select)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#438696ae7e1127052cc16bd3abb9d809">Selector_scroll_up</a> (short *offset_first, short *selector_offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#ea8a35cb24689c6fda0c78c499f36821">Select_Scroll_Up</a> (short *Decalage_premier, short *Decalage_select)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#91dc9c8df433d6b7f245789b102fbfda">Selector_page_down</a> (short *offset_first, short *selector_offset, short lines)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#dd2190920ae25ed5d762a3ccfdf61cbe">Select_Page_Down</a> (short *Decalage_premier, short *Decalage_select, short Lignes)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#4385755fe35bba7328b92a222e3c5264">Selector_page_up</a> (short *offset_first, short *selector_offset, short lines)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#4f42cadf14882ff6e751b771928a891b">Select_Page_Up</a> (short *Decalage_premier, short *Decalage_select, short Lignes)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#b3ed444da431d2bfc2bf7194992ae0fd">Selector_end</a> (short *offset_first, short *selector_offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#9d67c31980add7afae32164138744e69">Select_End</a> (short *Decalage_premier, short *Decalage_select)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#5691e3d49a47973de83c6121ac6f90c0">Selector_home</a> (short *offset_first, short *selector_offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#9d8065556d4ab1f2a0cb022c07620bea">Select_Home</a> (short *Decalage_premier, short *Decalage_select)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#82535b1313654709788ef177ed0bd811">Compute_click_offset_in_fileselector</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#2173ca4d46cf64ea4de6a78cc5436c39">Calculer_decalage_click_dans_fileselector</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#5ecccd630b26cc750f72abe95d417d37">Display_bookmark</a> (<a class="el" href="structT__Dropdown__button.html">T_Dropdown_button</a> *<a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, int bookmark_number)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#2e49ecc318d4f8553ccffc4dcf2d2fdb">Afficher_bookmark</a> (<a class="el" href="structT__Bouton__dropdown.html">T_Bouton_dropdown</a> *<a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, int Numero_bookmark)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#1468bc677d3726e6853497f57993b9b3">Print_current_directory</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#35ef3405cb1c2187e6ab302705319784">for_each_file</a> (const char *Nom_repertoire, void Callback(const char *))</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#610d4423e9a621f50e99cb6798b9a7c4">Print_filename_in_fileselector</a> (void)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist</a> (short Position, short offset, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *button)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#8aa264e737d6be4f1f81905950c299fe">Reload_list_of_files</a> (byte filter, short Position, short offset, <a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *button)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#9901c17b51aa0520f2810fb09d33a548">Scroll_fileselector</a> (<a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *file_scroller)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#138e92cb5ea17f294841a3177f11a509">Find_file_in_fileselector</a> (char *fname)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#ed1e29d38e1e58bcf227f60a1acdafcf">Highlight_file</a> (char *fname)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#feb6da3765290205ed51aae02659c038">Find_filename_match</a> (char *fname)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save</a> (byte load, byte image)</td></tr>
+
+<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#137f2eec59845cc083acc93fba25eaf4">Selected_type</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#f7d69573dd2d3f394b9cc482b76fa494">FFF_best_name</a> [MAX_PATH_CHARACTERS]</td></tr>
 
 </table>
 <hr><h2>Define Documentation</h2>
-<a class="anchor" name="f4ca397e5267f53785c56449f3781f5f"></a><!-- doxytag: member="files.c::isHidden" ref="f4ca397e5267f53785c56449f3781f5f" args="(Enreg)" -->
+<a class="anchor" name="5a32a2fb9bbd873149c81da61afc5c43"></a><!-- doxytag: member="files.c::isHidden" ref="5a32a2fb9bbd873149c81da61afc5c43" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define isHidden          </td>
           <td>(</td>
-          <td class="paramtype">Enreg&nbsp;</td>
+          <td class="paramtype">x&nbsp;</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;((Enreg)-&gt;d_name[0]=='.')</td>
+          <td>&nbsp;&nbsp;&nbsp;((x)-&gt;d_name[0]=='.')</td>
         </tr>
       </table>
 </div>
@@ -158,16 +179,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#78f0c62dad768a057a30e5074504b895">Lire_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="58430e535f4ba218391f886710a96dfc"></a><!-- doxytag: member="files.c::COULEUR_FICHIER_NORMAL" ref="58430e535f4ba218391f886710a96dfc" args="" -->
+<a class="anchor" name="7def33c3c8ad767f9262dc1eeb447a03"></a><!-- doxytag: member="files.c::NORMAL_FILE_COLOR" ref="7def33c3c8ad767f9262dc1eeb447a03" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_FICHIER_NORMAL&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>          </td>
+          <td class="memname">#define NORMAL_FILE_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>          </td>
         </tr>
       </table>
 </div>
@@ -175,16 +196,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d5e0785f91a4dfcf13dee2d57e5713f6"></a><!-- doxytag: member="files.c::COULEUR_REPERTOIRE_NORMAL" ref="d5e0785f91a4dfcf13dee2d57e5713f6" args="" -->
+<a class="anchor" name="917d1a86d052720ab6dfda46caa99dd4"></a><!-- doxytag: member="files.c::NORMAL_DIRECTORY_COLOR" ref="917d1a86d052720ab6dfda46caa99dd4" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_REPERTOIRE_NORMAL&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>          </td>
+          <td class="memname">#define NORMAL_DIRECTORY_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>          </td>
         </tr>
       </table>
 </div>
@@ -192,16 +213,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="95886352ceee60ffa85ee0882eb3f33d"></a><!-- doxytag: member="files.c::COULEUR_FOND_NORMAL" ref="95886352ceee60ffa85ee0882eb3f33d" args="" -->
+<a class="anchor" name="bc8ff9b2f128eaaa15c564b05d992ed0"></a><!-- doxytag: member="files.c::NORMAL_BACKGROUND_COLOR" ref="bc8ff9b2f128eaaa15c564b05d992ed0" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_FOND_NORMAL&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>          </td>
+          <td class="memname">#define NORMAL_BACKGROUND_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>          </td>
         </tr>
       </table>
 </div>
@@ -209,16 +230,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="cb64f2089b94b11c199dc74eae4fead6"></a><!-- doxytag: member="files.c::COULEUR_FICHIER_SELECT" ref="cb64f2089b94b11c199dc74eae4fead6" args="" -->
+<a class="anchor" name="48d6116ecab7fe7fcd3a9eca2c1f4fb8"></a><!-- doxytag: member="files.c::SELECTED_FILE_COLOR" ref="48d6116ecab7fe7fcd3a9eca2c1f4fb8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_FICHIER_SELECT&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#d8b59d9ecd6ef59a2c327149b09b1d78">CM_Blanc</a>          </td>
+          <td class="memname">#define SELECTED_FILE_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fbd82dcee5167f44b13793225060361b">MC_White</a>          </td>
         </tr>
       </table>
 </div>
@@ -226,16 +247,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d9cdcf777d5b97f2cab77a91c5200c67"></a><!-- doxytag: member="files.c::COULEUR_REPERTOIRE_SELECT" ref="d9cdcf777d5b97f2cab77a91c5200c67" args="" -->
+<a class="anchor" name="2d32fc175e6797b2d1e42397505d3fb1"></a><!-- doxytag: member="files.c::SELECTED_DIRECTORY_COLOR" ref="2d32fc175e6797b2d1e42397505d3fb1" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_REPERTOIRE_SELECT&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>          </td>
+          <td class="memname">#define SELECTED_DIRECTORY_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>          </td>
         </tr>
       </table>
 </div>
@@ -243,16 +264,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="e975049a2a7b075393880cdf53b767ea"></a><!-- doxytag: member="files.c::COULEUR_FOND_SELECT" ref="e975049a2a7b075393880cdf53b767ea" args="" -->
+<a class="anchor" name="5d281d087c52195eb8eed3f967b11cc3"></a><!-- doxytag: member="files.c::SELECTED_BACKGROUND_COLOR" ref="5d281d087c52195eb8eed3f967b11cc3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COULEUR_FOND_SELECT&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>          </td>
+          <td class="memname">#define SELECTED_BACKGROUND_COLOR&nbsp;&nbsp;&nbsp;<a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>          </td>
         </tr>
       </table>
 </div>
@@ -260,32 +281,17 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="f6ce5ac21f68a74c2dd7f33eb1b1bd62"></a><!-- doxytag: member="files.c::FILENAMESPACE" ref="f6ce5ac21f68a74c2dd7f33eb1b1bd62" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILENAMESPACE&nbsp;&nbsp;&nbsp;13          </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
+<p>Referenced by <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="27a0d7b9615613f79e9d1d7a70aba2a8"></a><!-- doxytag: member="files.c::Determiner_repertoire_courant" ref="27a0d7b9615613f79e9d1d7a70aba2a8" args="(void)" -->
+<a class="anchor" name="e4c7d57cc1269536a19ea57d125f5259"></a><!-- doxytag: member="files.c::Free_fileselector_list" ref="e4c7d57cc1269536a19ea57d125f5259" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Determiner_repertoire_courant           </td>
+          <td class="memname">void Free_fileselector_list           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -298,51 +304,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#fad90cc380eb9639c10d78e1be066ede">Principal_Repertoire_courant</a>.</p>
+<p>References <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, and <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, and <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="files_8c.html#b9cc932195709f11fd74b18b972cedcc">Read_list_of_drives()</a>, and <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="32ce2643b82320645c660888cb987413"></a><!-- doxytag: member="files.c::Detruire_liste_du_fileselect" ref="32ce2643b82320645c660888cb987413" args="(void)" -->
+<a class="anchor" name="1cc66ddfb995a0e3feef2aa54e2c3555"></a><!-- doxytag: member="files.c::Format_filename" ref="1cc66ddfb995a0e3feef2aa54e2c3555" args="(char *fname, int type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Detruire_liste_du_fileselect           </td>
-          <td>(</td>
-          <td class="paramtype">void&nbsp;</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>References <a class="el" href="global_8h.html#98d519e524343a83660246d46a265b26">Liste_du_fileselect</a>, and <a class="el" href="structElement__de__liste__de__fileselect.html#bafdc5bdf5163124afc1d8fcebff1545">Element_de_liste_de_fileselect::Suivant</a>.</p>
-
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="files_8h.html#78f0c62dad768a057a30e5074504b895">Lire_liste_des_fichiers()</a>, and <a class="el" href="files_8h.html#619bf3e335546f1fe9898a2f2df3dd40">Lire_liste_des_lecteurs()</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="4c4910631d64c32c2d4736707ebc8594"></a><!-- doxytag: member="files.c::Nom_formate" ref="4c4910631d64c32c2d4736707ebc8594" args="(char *Nom, int Type)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* Nom_formate           </td>
+          <td class="memname">char* Format_filename           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Nom</em>, </td>
+          <td class="paramname"> <em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Type</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -355,27 +337,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#f9c3f3f65c0ded3a441a4be8de3fb491">CARACTERE_SUSPENSION</a>, and <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>.</p>
+<p>References <a class="el" href="const_8h.html#ddc93810f0c67a8490df10fd3a286b18">ELLIPSIS_CHARACTER</a>, and <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>.</p>
 
-<p>Referenced by <a class="el" href="files_8c.html#88fa9a16a5c39fccfd254e5ced33aa54">Ajouter_element_a_la_liste()</a>, and <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#a25bbbc0ffd3e0730fd1183dfa2cf52f">Add_element_to_list()</a>, and <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="88fa9a16a5c39fccfd254e5ced33aa54"></a><!-- doxytag: member="files.c::Ajouter_element_a_la_liste" ref="88fa9a16a5c39fccfd254e5ced33aa54" args="(char *Nom, int Type)" -->
+<a class="anchor" name="a25bbbc0ffd3e0730fd1183dfa2cf52f"></a><!-- doxytag: member="files.c::Add_element_to_list" ref="a25bbbc0ffd3e0730fd1183dfa2cf52f" args="(char *fname, int type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Ajouter_element_a_la_liste           </td>
+          <td class="memname">void Add_element_to_list           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Nom</em>, </td>
+          <td class="paramname"> <em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Type</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -388,27 +370,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#98d519e524343a83660246d46a265b26">Liste_du_fileselect</a>, <a class="el" href="files_8c.html#4c4910631d64c32c2d4736707ebc8594">Nom_formate()</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#121bd22bd28a5e9678e338c73dc1ae55">Element_de_liste_de_fileselect::NomAbrege</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#db2283354b8c514dfa5a464a6d1fb86a">Element_de_liste_de_fileselect::NomComplet</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#c803f9073b74c4849f00acea0eec776d">Element_de_liste_de_fileselect::Precedent</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#bafdc5bdf5163124afc1d8fcebff1545">Element_de_liste_de_fileselect::Suivant</a>, and <a class="el" href="structElement__de__liste__de__fileselect.html#90ddc90c354bcb524c61d412b0b0b424">Element_de_liste_de_fileselect::Type</a>.</p>
+<p>References <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="files_8c.html#1cc66ddfb995a0e3feef2aa54e2c3555">Format_filename()</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>, <a class="el" href="structT__Fileselector__item.html#c3b21cc151ed8cae305d4098bc3f5c31">T_Fileselector_item::Previous</a>, <a class="el" href="structT__Fileselector__item.html#9c1d338b103bc7ddf7dec2f32a3bf4f6">T_Fileselector_item::Short_name</a>, and <a class="el" href="structT__Fileselector__item.html#9e12cb4da65b29d15dfbdc8eb34ef483">T_Fileselector_item::Type</a>.</p>
 
-<p>Referenced by <a class="el" href="files_8h.html#78f0c62dad768a057a30e5074504b895">Lire_liste_des_fichiers()</a>, and <a class="el" href="files_8h.html#619bf3e335546f1fe9898a2f2df3dd40">Lire_liste_des_lecteurs()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#b9cc932195709f11fd74b18b972cedcc">Read_list_of_drives()</a>, and <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="aeaf6233254bee0d254a43721ea21b60"></a><!-- doxytag: member="files.c::VerifieExtension" ref="aeaf6233254bee0d254a43721ea21b60" args="(const char *NomFichier, char *Filtre)" -->
+<a class="anchor" name="569640edb370eb1677f67629b33f5bb5"></a><!-- doxytag: member="files.c::Check_extension" ref="569640edb370eb1677f67629b33f5bb5" args="(const char *filename, char *filter)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int VerifieExtension           </td>
+          <td class="memname">int Check_extension           </td>
           <td>(</td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>NomFichier</em>, </td>
+          <td class="paramname"> <em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Filtre</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>filter</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -421,19 +403,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="files_8h.html#78f0c62dad768a057a30e5074504b895">Lire_liste_des_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="78f0c62dad768a057a30e5074504b895"></a><!-- doxytag: member="files.c::Lire_liste_des_fichiers" ref="78f0c62dad768a057a30e5074504b895" args="(byte Format_demande)" -->
+<a class="anchor" name="048e59cec73a4c922b35d461bf69ea69"></a><!-- doxytag: member="files.c::Read_list_of_files" ref="048e59cec73a4c922b35d461bf69ea69" args="(byte selected_format)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Lire_liste_des_fichiers           </td>
+          <td class="memname">void Read_list_of_files           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Format_demande</em>          </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>selected_format</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -443,42 +425,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#88fa9a16a5c39fccfd254e5ced33aa54">Ajouter_element_a_la_liste()</a>, <a class="el" href="global_8h.html#dab1d2d11471879efd925f4fd178d94c">Config</a>, <a class="el" href="files_8c.html#32ce2643b82320645c660888cb987413">Detruire_liste_du_fileselect()</a>, <a class="el" href="structT__Format.html#688d3bcd215cf711becb6f2518cfdf78">T_Format::Extension</a>, <a class="el" href="loadsave_8c.html#dd73f84d7ebc7ba6e946f009383a2f59">FormatFichier</a>, <a class="el" href="files_8c.html#f4ca397e5267f53785c56449f3781f5f">isHidden</a>, <a class="el" href="structS__Config.html#4f4295378fbe5741d2a72e00220b7b2c">S_Config::Lire_les_fichiers_caches</a>, <a class="el" href="structS__Config.html#ca2a0a1691a4edb851fc0b0647c22346">S_Config::Lire_les_repertoires_caches</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="global_8h.html#863e363a8002dcaf9908ef41460c9605">Liste_Nb_fichiers</a>, <a class="el" href="global_8h.html#d55abdc6d536b39535492375de3b04fc">Liste_Nb_repertoires</a>, <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>, and <a class="el" href="files_8c.html#aeaf6233254bee0d254a43721ea21b60">VerifieExtension()</a>.</p>
+<p>References <a class="el" href="files_8c.html#a25bbbc0ffd3e0730fd1183dfa2cf52f">Add_element_to_list()</a>, <a class="el" href="files_8c.html#569640edb370eb1677f67629b33f5bb5">Check_extension()</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="structT__Format.html#688d3bcd215cf711becb6f2518cfdf78">T_Format::Extension</a>, <a class="el" href="loadsave_8c.html#ded5d99e0b2a1cbab2ef4f80ba594b2a">File_formats</a>, <a class="el" href="global_8h.html#11b80ecc50495df9ee94fd598fe3201e">Filelist_nb_directories</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="global_8h.html#ec7c3c53e9eaf80d07571fa914cb448c">Filelist_nb_files</a>, <a class="el" href="files_8c.html#e4c7d57cc1269536a19ea57d125f5259">Free_fileselector_list()</a>, <a class="el" href="files_8c.html#5a32a2fb9bbd873149c81da61afc5c43">isHidden</a>, <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>, <a class="el" href="structT__Config.html#07b02684018682edca8827e224aa11d4">T_Config::Show_hidden_directories</a>, and <a class="el" href="structT__Config.html#03464ac63f71475a6df0b27de9d64a9c">T_Config::Show_hidden_files</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, and <a class="el" href="boutons_8c.html#9cf3bea013a6149f850e4406410d8773">Relire_liste_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="files_8c.html#8aa264e737d6be4f1f81905950c299fe">Reload_list_of_files()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="619bf3e335546f1fe9898a2f2df3dd40"></a><!-- doxytag: member="files.c::Lire_liste_des_lecteurs" ref="619bf3e335546f1fe9898a2f2df3dd40" args="(void)" -->
+<a class="anchor" name="b9cc932195709f11fd74b18b972cedcc"></a><!-- doxytag: member="files.c::Read_list_of_drives" ref="b9cc932195709f11fd74b18b972cedcc" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Lire_liste_des_lecteurs           </td>
-          <td>(</td>
-          <td class="paramtype">void&nbsp;</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>References <a class="el" href="files_8c.html#88fa9a16a5c39fccfd254e5ced33aa54">Ajouter_element_a_la_liste()</a>, <a class="el" href="files_8c.html#32ce2643b82320645c660888cb987413">Detruire_liste_du_fileselect()</a>, <a class="el" href="const_8h.html#41426dc34e9b69de4236276552bccedccf86636ab44528c5bcd03799d1632ad0">LECTEUR_CDROM</a>, <a class="el" href="const_8h.html#41426dc34e9b69de4236276552bccedc58c7bff3cdb62bf7c65c07a53066d416">LECTEUR_FLOPPY_3_5</a>, <a class="el" href="const_8h.html#41426dc34e9b69de4236276552bccedca7b9c1da3318744f9845ae9392bc20f7">LECTEUR_HDD</a>, <a class="el" href="const_8h.html#41426dc34e9b69de4236276552bccedcce45b168844405d91b6332fd2008187d">LECTEUR_NETWORK</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="global_8h.html#863e363a8002dcaf9908ef41460c9605">Liste_Nb_fichiers</a>, <a class="el" href="global_8h.html#d55abdc6d536b39535492375de3b04fc">Liste_Nb_repertoires</a>, <a class="el" href="structmount__entry.html#03f9dec6b5f2a7c6f024e210289d5ebb">mount_entry::me_devname</a>, <a class="el" href="structmount__entry.html#d9e244dc90796fccd25a3dc2e99f5df4">mount_entry::me_dummy</a>, <a class="el" href="structmount__entry.html#646bbb85f70e7cd0d6a37b4bfce91d4a">mount_entry::me_mountdir</a>, <a class="el" href="structmount__entry.html#0936ded635c80ff3995ffc55a2515e51">mount_entry::me_next</a>, <a class="el" href="structmount__entry.html#f665ef2d1e0a9ce6e5106dd4ad67ea37">mount_entry::me_type</a>, and <a class="el" href="mountlist_8c.html#5136f6f12dab78daf741fdcd66d4c1d2">read_file_system_list()</a>.</p>
-
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="26d9d8fd4ea6ed9b2448cc301deca366"></a><!-- doxytag: member="files.c::Trier_la_liste_des_fichiers" ref="26d9d8fd4ea6ed9b2448cc301deca366" args="(void)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Trier_la_liste_des_fichiers           </td>
+          <td class="memname">void Read_list_of_drives           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -491,27 +449,51 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#98d519e524343a83660246d46a265b26">Liste_du_fileselect</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#db2283354b8c514dfa5a464a6d1fb86a">Element_de_liste_de_fileselect::NomComplet</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#c803f9073b74c4849f00acea0eec776d">Element_de_liste_de_fileselect::Precedent</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#bafdc5bdf5163124afc1d8fcebff1545">Element_de_liste_de_fileselect::Suivant</a>, and <a class="el" href="structElement__de__liste__de__fileselect.html#90ddc90c354bcb524c61d412b0b0b424">Element_de_liste_de_fileselect::Type</a>.</p>
+<p>References <a class="el" href="files_8c.html#a25bbbc0ffd3e0730fd1183dfa2cf52f">Add_element_to_list()</a>, <a class="el" href="global_8h.html#11b80ecc50495df9ee94fd598fe3201e">Filelist_nb_directories</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="global_8h.html#ec7c3c53e9eaf80d07571fa914cb448c">Filelist_nb_files</a>, <a class="el" href="files_8c.html#e4c7d57cc1269536a19ea57d125f5259">Free_fileselector_list()</a>, <a class="el" href="const_8h.html#1836769464dae276204a434f2a9e8bba9f4655b6b2bf8961f4650c4f58d6a002">ICON_CDROM</a>, <a class="el" href="const_8h.html#1836769464dae276204a434f2a9e8bba55a3ffc77bc4ba421495a47e6a98e6dd">ICON_FLOPPY_3_5</a>, <a class="el" href="const_8h.html#1836769464dae276204a434f2a9e8bba87ca60b871d89bd8a7d61fbb98b5108c">ICON_HDD</a>, <a class="el" href="const_8h.html#1836769464dae276204a434f2a9e8bba047774f4611088862639a8cf6981620d">ICON_NETWORK</a>, <a class="el" href="structmount__entry.html#03f9dec6b5f2a7c6f024e210289d5ebb">mount_entry::me_devname</a>, <a class="el" href="structmount__entry.html#d9e244dc90796fccd25a3dc2e99f5df4">mount_entry::me_dummy</a>, <a class="el" href="structmount__entry.html#646bbb85f70e7cd0d6a37b4bfce91d4a">mount_entry::me_mountdir</a>, <a class="el" href="structmount__entry.html#0936ded635c80ff3995ffc55a2515e51">mount_entry::me_next</a>, <a class="el" href="structmount__entry.html#f665ef2d1e0a9ce6e5106dd4ad67ea37">mount_entry::me_type</a>, and <a class="el" href="mountlist_8c.html#5136f6f12dab78daf741fdcd66d4c1d2">read_file_system_list()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, and <a class="el" href="boutons_8c.html#9cf3bea013a6149f850e4406410d8773">Relire_liste_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="a8b805b144612919196620afd6d2d4ae"></a><!-- doxytag: member="files.c::Afficher_la_liste_des_fichiers" ref="a8b805b144612919196620afd6d2d4ae" args="(short Decalage_premier, short Decalage_select)" -->
+<a class="anchor" name="7bbcdf5c591d4b3d97d9f0949bfb154c"></a><!-- doxytag: member="files.c::Sort_list_of_files" ref="7bbcdf5c591d4b3d97d9f0949bfb154c" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Afficher_la_liste_des_fichiers           </td>
+          <td class="memname">void Sort_list_of_files           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>, <a class="el" href="structT__Fileselector__item.html#c3b21cc151ed8cae305d4098bc3f5c31">T_Fileselector_item::Previous</a>, and <a class="el" href="structT__Fileselector__item.html#9e12cb4da65b29d15dfbdc8eb34ef483">T_Fileselector_item::Type</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="files_8c.html#8aa264e737d6be4f1f81905950c299fe">Reload_list_of_files()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="604e18fa328c02195bacac8a2c944b9d"></a><!-- doxytag: member="files.c::Display_file_list" ref="604e18fa328c02195bacac8a2c944b9d" args="(short offset_first, short selector_offset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display_file_list           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>selector_offset</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -524,39 +506,39 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#58430e535f4ba218391f886710a96dfc">COULEUR_FICHIER_NORMAL</a>, <a class="el" href="files_8c.html#cb64f2089b94b11c199dc74eae4fead6">COULEUR_FICHIER_SELECT</a>, <a class="el" href="files_8c.html#95886352ceee60ffa85ee0882eb3f33d">COULEUR_FOND_NORMAL</a>, <a class="el" href="files_8c.html#e975049a2a7b075393880cdf53b767ea">COULEUR_FOND_SELECT</a>, <a class="el" href="files_8c.html#d5e0785f91a4dfcf13dee2d57e5713f6">COULEUR_REPERTOIRE_NORMAL</a>, <a class="el" href="files_8c.html#d9cdcf777d5b97f2cab77a91c5200c67">COULEUR_REPERTOIRE_SELECT</a>, <a class="el" href="boutons_8c.html#f6ce5ac21f68a74c2dd7f33eb1b1bd62">FILENAMESPACE</a>, <a class="el" href="global_8h.html#98d519e524343a83660246d46a265b26">Liste_du_fileselect</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#121bd22bd28a5e9678e338c73dc1ae55">Element_de_liste_de_fileselect::NomAbrege</a>, <a class="el" href="windows_8c.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#bafdc5bdf5163124afc1d8fcebff1545">Element_de_liste_de_fileselect::Suivant</a>, and <a class="el" href="structElement__de__liste__de__fileselect.html#90ddc90c354bcb524c61d412b0b0b424">Element_de_liste_de_fileselect::Type</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>, <a class="el" href="files_8c.html#bc8ff9b2f128eaaa15c564b05d992ed0">NORMAL_BACKGROUND_COLOR</a>, <a class="el" href="files_8c.html#917d1a86d052720ab6dfda46caa99dd4">NORMAL_DIRECTORY_COLOR</a>, <a class="el" href="files_8c.html#7def33c3c8ad767f9262dc1eeb447a03">NORMAL_FILE_COLOR</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="files_8c.html#5d281d087c52195eb8eed3f967b11cc3">SELECTED_BACKGROUND_COLOR</a>, <a class="el" href="files_8c.html#2d32fc175e6797b2d1e42397505d3fb1">SELECTED_DIRECTORY_COLOR</a>, <a class="el" href="files_8c.html#48d6116ecab7fe7fcd3a9eca2c1f4fb8">SELECTED_FILE_COLOR</a>, <a class="el" href="structT__Fileselector__item.html#9c1d338b103bc7ddf7dec2f32a3bf4f6">T_Fileselector_item::Short_name</a>, and <a class="el" href="structT__Fileselector__item.html#9e12cb4da65b29d15dfbdc8eb34ef483">T_Fileselector_item::Type</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8c.html#cd26f89d7e7168080d910712aba62f24">Preparer_et_afficher_liste_fichiers()</a>, <a class="el" href="files_8h.html#9d67c31980add7afae32164138744e69">Select_End()</a>, <a class="el" href="files_8h.html#9d8065556d4ab1f2a0cb022c07620bea">Select_Home()</a>, <a class="el" href="files_8h.html#dd2190920ae25ed5d762a3ccfdf61cbe">Select_Page_Down()</a>, <a class="el" href="files_8h.html#4f42cadf14882ff6e751b771928a891b">Select_Page_Up()</a>, <a class="el" href="files_8h.html#3365a5caef36d19d72c54afc97fa8556">Select_Scroll_Down()</a>, and <a class="el" href="files_8h.html#ea8a35cb24689c6fda0c78c499f36821">Select_Scroll_Up()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>, <a class="el" href="files_8c.html#b3ed444da431d2bfc2bf7194992ae0fd">Selector_end()</a>, <a class="el" href="files_8c.html#5691e3d49a47973de83c6121ac6f90c0">Selector_home()</a>, <a class="el" href="files_8c.html#91dc9c8df433d6b7f245789b102fbfda">Selector_page_down()</a>, <a class="el" href="files_8c.html#4385755fe35bba7328b92a222e3c5264">Selector_page_up()</a>, <a class="el" href="files_8c.html#da6cdcb31b408571cd54f2064d05ca29">Selector_scroll_down()</a>, and <a class="el" href="files_8c.html#438696ae7e1127052cc16bd3abb9d809">Selector_scroll_up()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="1d04d1d18f8ed9fa0085abfe145fe716"></a><!-- doxytag: member="files.c::Determiner_element_de_la_liste" ref="1d04d1d18f8ed9fa0085abfe145fe716" args="(short Decalage_premier, short Decalage_select, char *Libelle, int *Type)" -->
+<a class="anchor" name="cad28dea475322638b8ecf8f908d08ae"></a><!-- doxytag: member="files.c::Get_selected_item" ref="cad28dea475322638b8ecf8f908d08ae" args="(short offset_first, short selector_offset, char *label, int *type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Determiner_element_de_la_liste           </td>
+          <td class="memname">void Get_selected_item           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em>, </td>
+          <td class="paramname"> <em>selector_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Libelle</em>, </td>
+          <td class="paramname"> <em>label</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Type</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -569,27 +551,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#98d519e524343a83660246d46a265b26">Liste_du_fileselect</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#db2283354b8c514dfa5a464a6d1fb86a">Element_de_liste_de_fileselect::NomComplet</a>, <a class="el" href="structElement__de__liste__de__fileselect.html#bafdc5bdf5163124afc1d8fcebff1545">Element_de_liste_de_fileselect::Suivant</a>, and <a class="el" href="structElement__de__liste__de__fileselect.html#90ddc90c354bcb524c61d412b0b0b424">Element_de_liste_de_fileselect::Type</a>.</p>
+<p>References <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>, and <a class="el" href="structT__Fileselector__item.html#9e12cb4da65b29d15dfbdc8eb34ef483">T_Fileselector_item::Type</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8c.html#478f3b7d89cd9ddb1e4931c3e3403ff7">On_vient_de_scroller_dans_le_fileselect()</a>, and <a class="el" href="boutons_8c.html#cd26f89d7e7168080d910712aba62f24">Preparer_et_afficher_liste_fichiers()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>, and <a class="el" href="files_8c.html#9901c17b51aa0520f2810fb09d33a548">Scroll_fileselector()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="3365a5caef36d19d72c54afc97fa8556"></a><!-- doxytag: member="files.c::Select_Scroll_Down" ref="3365a5caef36d19d72c54afc97fa8556" args="(short *Decalage_premier, short *Decalage_select)" -->
+<a class="anchor" name="da6cdcb31b408571cd54f2064d05ca29"></a><!-- doxytag: member="files.c::Selector_scroll_down" ref="da6cdcb31b408571cd54f2064d05ca29" args="(short *offset_first, short *selector_offset)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_Scroll_Down           </td>
+          <td class="memname">void Selector_scroll_down           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>selector_offset</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -602,27 +584,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>, and <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>, and <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="ea8a35cb24689c6fda0c78c499f36821"></a><!-- doxytag: member="files.c::Select_Scroll_Up" ref="ea8a35cb24689c6fda0c78c499f36821" args="(short *Decalage_premier, short *Decalage_select)" -->
+<a class="anchor" name="438696ae7e1127052cc16bd3abb9d809"></a><!-- doxytag: member="files.c::Selector_scroll_up" ref="438696ae7e1127052cc16bd3abb9d809" args="(short *offset_first, short *selector_offset)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_Scroll_Up           </td>
+          <td class="memname">void Selector_scroll_up           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>selector_offset</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -635,33 +617,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="dd2190920ae25ed5d762a3ccfdf61cbe"></a><!-- doxytag: member="files.c::Select_Page_Down" ref="dd2190920ae25ed5d762a3ccfdf61cbe" args="(short *Decalage_premier, short *Decalage_select, short Lignes)" -->
+<a class="anchor" name="91dc9c8df433d6b7f245789b102fbfda"></a><!-- doxytag: member="files.c::Selector_page_down" ref="91dc9c8df433d6b7f245789b102fbfda" args="(short *offset_first, short *selector_offset, short lines)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_Page_Down           </td>
+          <td class="memname">void Selector_page_down           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em>, </td>
+          <td class="paramname"> <em>selector_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Lignes</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>lines</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -674,33 +656,33 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>, and <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>, and <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="4f42cadf14882ff6e751b771928a891b"></a><!-- doxytag: member="files.c::Select_Page_Up" ref="4f42cadf14882ff6e751b771928a891b" args="(short *Decalage_premier, short *Decalage_select, short Lignes)" -->
+<a class="anchor" name="4385755fe35bba7328b92a222e3c5264"></a><!-- doxytag: member="files.c::Selector_page_up" ref="4385755fe35bba7328b92a222e3c5264" args="(short *offset_first, short *selector_offset, short lines)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_Page_Up           </td>
+          <td class="memname">void Selector_page_up           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em>, </td>
+          <td class="paramname"> <em>selector_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Lignes</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>lines</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -713,27 +695,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="9d67c31980add7afae32164138744e69"></a><!-- doxytag: member="files.c::Select_End" ref="9d67c31980add7afae32164138744e69" args="(short *Decalage_premier, short *Decalage_select)" -->
+<a class="anchor" name="b3ed444da431d2bfc2bf7194992ae0fd"></a><!-- doxytag: member="files.c::Selector_end" ref="b3ed444da431d2bfc2bf7194992ae0fd" args="(short *offset_first, short *selector_offset)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_End           </td>
+          <td class="memname">void Selector_end           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>selector_offset</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -746,27 +728,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>, and <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>, and <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="9d8065556d4ab1f2a0cb022c07620bea"></a><!-- doxytag: member="files.c::Select_Home" ref="9d8065556d4ab1f2a0cb022c07620bea" args="(short *Decalage_premier, short *Decalage_select)" -->
+<a class="anchor" name="5691e3d49a47973de83c6121ac6f90c0"></a><!-- doxytag: member="files.c::Selector_home" ref="5691e3d49a47973de83c6121ac6f90c0" args="(short *offset_first, short *selector_offset)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Select_Home           </td>
+          <td class="memname">void Selector_home           </td>
           <td>(</td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_premier</em>, </td>
+          <td class="paramname"> <em>offset_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short *&nbsp;</td>
-          <td class="paramname"> <em>Decalage_select</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>selector_offset</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -779,18 +761,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="files_8c.html#a8b805b144612919196620afd6d2d4ae">Afficher_la_liste_des_fichiers()</a>.</p>
+<p>References <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2173ca4d46cf64ea4de6a78cc5436c39"></a><!-- doxytag: member="files.c::Calculer_decalage_click_dans_fileselector" ref="2173ca4d46cf64ea4de6a78cc5436c39" args="(void)" -->
+<a class="anchor" name="82535b1313654709788ef177ed0bd811"></a><!-- doxytag: member="files.c::Compute_click_offset_in_fileselector" ref="82535b1313654709788ef177ed0bd811" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short Calculer_decalage_click_dans_fileselector           </td>
+          <td class="memname">short Compute_click_offset_in_fileselector           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -803,27 +785,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#97b5ab8c3d6a44ff27e0e3a79818c521">Fenetre_Pos_Y</a>, <a class="el" href="boutons_8c.html#f6ce5ac21f68a74c2dd7f33eb1b1bd62">FILENAMESPACE</a>, <a class="el" href="global_8h.html#e7bd719ebf43b1b4808cbf5104a5bfce">Liste_Nb_elements</a>, <a class="el" href="global_8h.html#547d90ab81e9c2bdaa524fbe62085fe1">Menu_Facteur_Y</a>, and <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>.</p>
+<p>References <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="global_8h.html#d65a143da22eeffea91b02e9d826fea1">Menu_factor_Y</a>, <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>, and <a class="el" href="global_8h.html#2648c309928202bf8ab639336a3a4da3">Window_pos_Y</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2e49ecc318d4f8553ccffc4dcf2d2fdb"></a><!-- doxytag: member="files.c::Afficher_bookmark" ref="2e49ecc318d4f8553ccffc4dcf2d2fdb" args="(T_Bouton_dropdown *Bouton, int Numero_bookmark)" -->
+<a class="anchor" name="5ecccd630b26cc750f72abe95d417d37"></a><!-- doxytag: member="files.c::Display_bookmark" ref="5ecccd630b26cc750f72abe95d417d37" args="(T_Dropdown_button *Button, int bookmark_number)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Afficher_bookmark           </td>
+          <td class="memname">void Display_bookmark           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Bouton__dropdown.html">T_Bouton_dropdown</a> *&nbsp;</td>
-          <td class="paramname"> <em>Bouton</em>, </td>
+          <td class="paramtype"><a class="el" href="structT__Dropdown__button.html">T_Dropdown_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>Button</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Numero_bookmark</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>bookmark_number</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -836,27 +818,81 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#1ce2f86093d2eb85ef181cb89d30d063">A_DROITE</a>, <a class="el" href="const_8h.html#51417c1d879ac9953f38d3b621497a35">A_GAUCHE</a>, <a class="el" href="global_8h.html#201f32339eeb2ebc243d1de04a856924">Block</a>, <a class="el" href="structS__Config.html#bfd3df986ccf73142bb17019ada3269c">S_Config::Bookmark_directory</a>, <a class="el" href="structS__Config.html#11c2f8ae9da174e4ddfc4ce09bb7d969">S_Config::Bookmark_label</a>, <a class="el" href="structT__Bouton__dropdown.html#1c9b045f331f00cd6bda51c6961c9d49">T_Bouton_dropdown::Bouton_actif</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="global_8h.html#dab1d2d11471879efd925f4fd178d94c">Config</a>, <a class="el" href="moteur_8c.html#1403ff873c5e6d2d267c35c520a94046">Fenetre_Dropdown_choix()</a>, <a class="el" href="moteur_8c.html#ab081eb8f1d699f0f67bfe0015263575">Fenetre_Dropdown_vider_choix()</a>, <a class="el" href="global_8h.html#f7514cf38dd0c41f29c21dc4feb39ab0">Fenetre_Pos_X</a>, <a class="el" href="global_8h.html#97b5ab8c3d6a44ff27e0e3a79818c521">Fenetre_Pos_Y</a>, <a class="el" href="global_8h.html#9165b289f849afbe536c42b2583bb636">Menu_Facteur_X</a>, <a class="el" href="global_8h.html#547d90ab81e9c2bdaa524fbe62085fe1">Menu_Facteur_Y</a>, <a class="el" href="structT__Bouton__dropdown.html#41f34c3b2ec662ec41b897216333df5d">T_Bouton_dropdown::Pos_X</a>, <a class="el" href="structT__Bouton__dropdown.html#86fefecdb2beabff0222fa66ab777909">T_Bouton_dropdown::Pos_Y</a>, <a class="el" href="windows_8c.html#901f91e4bf32a3cd3fe7f04b1f54a68d">Print_dans_fenetre()</a>, and <a class="el" href="windows_8c.html#b4b9c5209dda161364ccfb930aee04d2">Print_dans_fenetre_limite()</a>.</p>
+<p>References <a class="el" href="structT__Dropdown__button.html#3700ea4bfba17285a6b0e3d6261b1b9c">T_Dropdown_button::Active_button</a>, <a class="el" href="structT__Config.html#d5ea9833faa311a4e1530c9c342f5941">T_Config::Bookmark_directory</a>, <a class="el" href="structT__Config.html#ca72746178431e7a91ee16b52e0c2d11">T_Config::Bookmark_label</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="const_8h.html#fcef3187c40bbab100f6605e2e92c421">LEFT_SIDE</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="structT__Dropdown__button.html#2eea8432ed54b2ce936c27def321986e">T_Dropdown_button::Pos_X</a>, <a class="el" href="structT__Dropdown__button.html#070f9fea927cbcfdb6a58ae4eb3a9145">T_Dropdown_button::Pos_Y</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="windows_8c.html#aef09c3c14e3d3b939165f61ff29acce">Print_in_window_limited()</a>, <a class="el" href="const_8h.html#d3956168f0f547d8e524c4654e8648c8">RIGHT_SIDE</a>, <a class="el" href="moteur_8c.html#b5ae80337b32414ea21ac6583771e0a3">Window_dropdown_add_item()</a>, <a class="el" href="moteur_8c.html#1e1e32fd0dc790745c997cb9e0e33b5b">Window_dropdown_clear_items()</a>, and <a class="el" href="windows_8c.html#96a7e75754b315bbfa936dd205f7fedb">Window_rectangle()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="35ef3405cb1c2187e6ab302705319784"></a><!-- doxytag: member="files.c::for_each_file" ref="35ef3405cb1c2187e6ab302705319784" args="(const char *Nom_repertoire, void Callback(const char *))" -->
+<a class="anchor" name="1468bc677d3726e6853497f57993b9b3"></a><!-- doxytag: member="files.c::Print_current_directory" ref="1468bc677d3726e6853497f57993b9b3" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void for_each_file           </td>
+          <td class="memname">void Print_current_directory           </td>
           <td>(</td>
-          <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Nom_repertoire</em>, </td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="global_8h.html#553bb298b2b4d773b9953a2799b8ab47">Main_current_directory</a>, <a class="el" href="const_8h.html#625ca65bea3f4a66d4b2bee06595f8c9">MAX_DISPLAYABLE_PATH</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="windows_8h.html#d4315c6b8c5dd40569261fe6d5f33959">Update_window_area</a>, and <a class="el" href="windows_8c.html#96a7e75754b315bbfa936dd205f7fedb">Window_rectangle()</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="610d4423e9a621f50e99cb6798b9a7c4"></a><!-- doxytag: member="files.c::Print_filename_in_fileselector" ref="610d4423e9a621f50e99cb6798b9a7c4" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Print_filename_in_fileselector           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="global_8h.html#f6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="windows_8c.html#aef09c3c14e3d3b939165f61ff29acce">Print_in_window_limited()</a>, <a class="el" href="windows_8h.html#d4315c6b8c5dd40569261fe6d5f33959">Update_window_area</a>, and <a class="el" href="windows_8c.html#96a7e75754b315bbfa936dd205f7fedb">Window_rectangle()</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>, and <a class="el" href="files_8c.html#9901c17b51aa0520f2810fb09d33a548">Scroll_fileselector()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d1e2ef44c1a2b8ab4bedd7580f1a81f8"></a><!-- doxytag: member="files.c::Prepare_and_display_filelist" ref="d1e2ef44c1a2b8ab4bedd7580f1a81f8" args="(short Position, short offset, T_Scroller_button *button)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Prepare_and_display_filelist           </td>
+          <td>(</td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>Position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void &nbsp;</td>
-          <td class="paramname"> <em>Callback</em>const char *</td><td>&nbsp;</td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>button</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -869,14 +905,219 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="loadsave_8c.html#b9446ce3130676d1c1beaf3e3983ce66">Nom_fichier_complet()</a>, <a class="el" href="io_8h.html#b64e7b5597e0606838e72f2212b8b2eb">SEPARATEUR_CHEMIN</a>, and <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>.</p>
+<p>References <a class="el" href="moteur_8c.html#9a5e099a9ad06b6626c9ac54fdbc0ef8">Compute_slider_cursor_height()</a>, <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="files_8c.html#cad28dea475322638b8ecf8f908d08ae">Get_selected_item()</a>, <a class="el" href="global_8h.html#f6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="structT__Scroller__button.html#5ac3712cd58394c52301c4c5a7eafffc">T_Scroller_button::Nb_elements</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="files_8c.html#1468bc677d3726e6853497f57993b9b3">Print_current_directory()</a>, <a class="el" href="files_8c.html#610d4423e9a621f50e99cb6798b9a7c4">Print_filename_in_fileselector()</a>, <a class="el" href="windows_8h.html#d4315c6b8c5dd40569261fe6d5f33959">Update_window_area</a>, <a class="el" href="moteur_8c.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>, and <a class="el" href="windows_8c.html#96a7e75754b315bbfa936dd205f7fedb">Window_rectangle()</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8h.html#392776de4e1986e198e4ec5d90641171">Initialisation_Texte()</a>.</p>
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="files_8c.html#8aa264e737d6be4f1f81905950c299fe">Reload_list_of_files()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="8aa264e737d6be4f1f81905950c299fe"></a><!-- doxytag: member="files.c::Reload_list_of_files" ref="8aa264e737d6be4f1f81905950c299fe" args="(byte filter, short Position, short offset, T_Scroller_button *button)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reload_list_of_files           </td>
+          <td>(</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>Position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>button</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>, <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>, and <a class="el" href="files_8c.html#7bbcdf5c591d4b3d97d9f0949bfb154c">Sort_list_of_files()</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="9901c17b51aa0520f2810fb09d33a548"></a><!-- doxytag: member="files.c::Scroll_fileselector" ref="9901c17b51aa0520f2810fb09d33a548" args="(T_Scroller_button *file_scroller)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scroll_fileselector           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structT__Scroller__button.html">T_Scroller_button</a> *&nbsp;</td>
+          <td class="paramname"> <em>file_scroller</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="files_8c.html#cad28dea475322638b8ecf8f908d08ae">Get_selected_item()</a>, <a class="el" href="global_8h.html#f6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#3dc777da4145c634cba30d4697d49cac">Main_fileselector_offset</a>, <a class="el" href="global_8h.html#e190e3b0029d1d24391c2a1506fc713f">Main_fileselector_position</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="divers_8h.html#444752461591b8fb715fa39e9d442bc0">New_preview_is_needed</a>, <a class="el" href="structT__Scroller__button.html#e11862e7d57d2ffd0047555528b11d1a">T_Scroller_button::Position</a>, <a class="el" href="files_8c.html#610d4423e9a621f50e99cb6798b9a7c4">Print_filename_in_fileselector()</a>, and <a class="el" href="moteur_8c.html#937ea84a8d299ad644f654670ace43de">Window_draw_slider()</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="138e92cb5ea17f294841a3177f11a509"></a><!-- doxytag: member="files.c::Find_file_in_fileselector" ref="138e92cb5ea17f294841a3177f11a509" args="(char *fname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short Find_file_in_fileselector           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>fname</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, and <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8c.html#ed1e29d38e1e58bcf227f60a1acdafcf">Highlight_file()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="ed1e29d38e1e58bcf227f60a1acdafcf"></a><!-- doxytag: member="files.c::Highlight_file" ref="ed1e29d38e1e58bcf227f60a1acdafcf" args="(char *fname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Highlight_file           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>fname</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="files_8c.html#138e92cb5ea17f294841a3177f11a509">Find_file_in_fileselector()</a>, <a class="el" href="global_8h.html#3dc777da4145c634cba30d4697d49cac">Main_fileselector_offset</a>, and <a class="el" href="global_8h.html#e190e3b0029d1d24391c2a1506fc713f">Main_fileselector_position</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="feb6da3765290205ed51aae02659c038"></a><!-- doxytag: member="files.c::Find_filename_match" ref="feb6da3765290205ed51aae02659c038" args="(char *fname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Find_filename_match           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>fname</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="structT__Config.html#2d5d5adda2bcee81e702e7905f3157e8">T_Config::Find_file_fast</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, <a class="el" href="global_8h.html#f6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="structT__Fileselector__item.html#cedca23a1754c4db18c8d39231a21467">T_Fileselector_item::Next</a>, and <a class="el" href="structT__Fileselector__item.html#9e12cb4da65b29d15dfbdc8eb34ef483">T_Fileselector_item::Type</a>.</p>
+
+<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="70bc8f5f7c54ad13970497a47c6b2d6a"></a><!-- doxytag: member="files.c::Button_Load_or_Save" ref="70bc8f5f7c54ad13970497a47c6b2d6a" args="(byte load, byte image)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Button_Load_or_Save           </td>
+          <td>(</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>load</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>image</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>References <a class="el" href="global_8h.html#373c9a261481c707f2fd5e098570358e">Back_color</a>, <a class="el" href="structT__Config.html#d5ea9833faa311a4e1530c9c342f5941">T_Config::Bookmark_directory</a>, <a class="el" href="structT__Config.html#ca72746178431e7a91ee16b52e0c2d11">T_Config::Bookmark_label</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd613b66021233a47cc1558f29742aceaeb">BUTTON_HELP</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd647af8626785de88f69467ea546890835">BUTTON_LOAD</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd68dcc4bb9d4e2b215128f0e14faab9d48">BUTTON_SAVE</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="divers_8c.html#d37166dcd8f9380396f4c08e0efc0f54">Check_timer()</a>, <a class="el" href="moteur_8c.html#4bf44f0520bdfca14e0b196a851d1032">Close_window()</a>, <a class="el" href="const_8h.html#cc5088d870a0ea26098e042f6c394065">COMMENT_SIZE</a>, <a class="el" href="files_8c.html#82535b1313654709788ef177ed0bd811">Compute_click_offset_in_fileselector()</a>, <a class="el" href="windows_8c.html#2e45affdc94d657e6d44d75dba5bfaea">Compute_optimal_menu_colors()</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="windows_8c.html#51de6324e22b0322dc78509fcce9e432">Confirmation_box()</a>, <a class="el" href="const_8h.html#10574a1af9a32dd290975c49d0dcc147">DEFAULT_FILEFORMAT</a>, <a class="el" href="io_8c.html#8f3b4b4e576b2f093d6f981cdd8cba2f">Directory_exists()</a>, <a class="el" href="files_8c.html#5ecccd630b26cc750f72abe95d417d37">Display_bookmark()</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="files_8c.html#604e18fa328c02195bacac8a2c944b9d">Display_file_list()</a>, <a class="el" href="windows_8c.html#26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="const_8h.html#ddc93810f0c67a8490df10fd3a286b18">ELLIPSIS_CHARACTER</a>, <a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="io_8c.html#77578130329c8d6a2102f2884ba1ed28">File_exists()</a>, <a class="el" href="loadsave_8c.html#ded5d99e0b2a1cbab2ef4f80ba594b2a">File_formats</a>, <a class="el" href="global_8h.html#867cbf48127bb96f03d11ae50343527f">Filelist</a>, <a class="el" href="global_8h.html#11b80ecc50495df9ee94fd598fe3201e">Filelist_nb_directories</a>, <a class="el" href="global_8h.html#fee0c5175430d6423a69b0c5acb6b6b1">Filelist_nb_elements</a>, <a class="el" href="files_8c.html#feb6da3765290205ed51aae02659c038">Find_filename_match()</a>, <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, <a class="el" href="files_8c.html#1cc66ddfb995a0e3feef2aa54e2c3555">Format_filename()</a>, <a class="el" href="files_8c.html#e4c7d57cc1269536a19ea57d125f5259">Free_fileselector_list()</a>, <a class="el" href="structT__Fileselector__item.html#419d8c6ad7326dc383d9b2acaeb01b8d">T_Fileselector_item::Full_name</a>, <a class="el" href="files_8c.html#cad28dea475322638b8ecf8f908d08ae">Get_selected_item()</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="files_8c.html#ed1e29d38e1e58bcf227f60a1acdafcf">Highlight_file()</a>, <a class="el" href="divers_8c.html#5c073c05fbdbb272f4a880e3aa374634">Init_chrono()</a>, <a class="el" href="input_8c.html#4933fb93bafd7ab1ecc787d3456d1f86">Is_shortcut()</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#ba882abad51a370d47a72e1bd5ffb5d1">Key_ANSI</a>, <a class="el" href="global_8h.html#86b2b2d4eda22067d85d2287c118e2d8">KEY_ESC</a>, <a class="el" href="global_8h.html#0ecb0aa6acd04b7e9feb53ae5f9f15da">KEY_MOUSEWHEELDOWN</a>, <a class="el" href="global_8h.html#feee0bc2d0fe0399d111ebedf3fd4c47">KEY_MOUSEWHEELUP</a>, <a class="el" href="const_8h.html#fcef3187c40bbab100f6605e2e92c421">LEFT_SIDE</a>, <a class="el" href="loadsave_8c.html#e0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="global_8h.html#e9851f1f5270af30bcf938c07cdaecf3">Main_comment</a>, <a class="el" href="global_8h.html#553bb298b2b4d773b9953a2799b8ab47">Main_current_directory</a>, <a class="el" href="global_8h.html#615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#a743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#f6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#3dc777da4145c634cba30d4697d49cac">Main_fileselector_offset</a>, <a class="el" href="global_8h.html#e190e3b0029d1d24391c2a1506fc713f">Main_fileselector_position</a>, <a class="el" href="global_8h.html#f77c9c03f1f618275d2d19ffb75f2cc2">Main_format</a>, <a class="el" href="global_8h.html#3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#a54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#f3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="global_8h.html#d65a143da22eeffea91b02e9d826fea1">Menu_factor_Y</a>, <a class="el" href="global_8h.html#539018a0fc48fbcb317333c4a502312c">Menu_Y_before_window</a>, <a class="el" href="const_8h.html#ac23c93eadb7baf200d48301a61eb610">NB_BOOKMARKS</a>, <a class="el" href="const_8h.html#cce901290fd70352825dd875b1c5f08c">NB_FORMATS_SAVE</a>, <a class="el" href="const_8h.html#e0e2246af04c94ba2a828ba99acd7556">NB_KNOWN_FORMATS</a>, <a class="el" href="divers_8h.html#444752461591b8fb715fa39e9d442bc0">New_preview_is_needed</a>, <a class="el" href="moteur_8c.html#147205a2a2681484d2113b66398dc515">Open_window()</a>, <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>, <a class="el" href="global_8h.html#4910cc8554ed4eeef681bbfa306fa536">Pixel_load_function</a>, <a class="el" href="loadsave_8c.html#7278d7033537995b71e2d44596c8161c">Pixel_load_in_current_screen()</a>, <a class="el" href="loadsave_8c.html#5a5215eb3df1e8bde90334250167dbec">Pixel_load_in_preview()</a>, <a class="el" href="files_8c.html#d1e2ef44c1a2b8ab4bedd7580f1a81f8">Prepare_and_display_filelist()</a>, <a class="el" href="files_8c.html#610d4423e9a621f50e99cb6798b9a7c4">Print_filename_in_fileselector()</a>, <a class="el" href="windows_8c.html#defc9ab769458203ab423567bd2f9b41">Print_in_window()</a>, <a class="el" href="files_8c.html#b9cc932195709f11fd74b18b972cedcc">Read_list_of_drives()</a>, <a class="el" href="files_8c.html#048e59cec73a4c922b35d461bf69ea69">Read_list_of_files()</a>, <a class="el" href="readline_8c.html#6a5ba77aad7cb2958e513297f0f58cc7">Readline()</a>, <a class="el" href="readline_8c.html#c581f2c9560f1c6e7f1c61039c7787e1">Readline_ex()</a>, <a class="el" href="files_8c.html#8aa264e737d6be4f1f81905950c299fe">Reload_list_of_files()</a>, <a class="el" href="const_8h.html#d3956168f0f547d8e524c4654e8648c8">RIGHT_SIDE</a>, <a class="el" href="files_8c.html#9901c17b51aa0520f2810fb09d33a548">Scroll_fileselector()</a>, <a class="el" href="files_8c.html#b3ed444da431d2bfc2bf7194992ae0fd">Selector_end()</a>, <a class="el" href="files_8c.html#5691e3d49a47973de83c6121ac6f90c0">Selector_home()</a>, <a class="el" href="files_8c.html#91dc9c8df433d6b7f245789b102fbfda">Selector_page_down()</a>, <a class="el" href="files_8c.html#4385755fe35bba7328b92a222e3c5264">Selector_page_up()</a>, <a class="el" href="files_8c.html#da6cdcb31b408571cd54f2064d05ca29">Selector_scroll_down()</a>, <a class="el" href="files_8c.html#438696ae7e1127052cc16bd3abb9d809">Selector_scroll_up()</a>, <a class="el" href="divers_8c.html#7f8562564c597185de8b961ac337144e">Set_palette()</a>, <a class="el" href="files_8c.html#7bbcdf5c591d4b3d97d9f0949bfb154c">Sort_list_of_files()</a>, <a class="el" href="global_8h.html#2b764e52c50ecd8028457a6acc2879a1">Spare_current_directory</a>, <a class="el" href="global_8h.html#4f36dac3f3d9590a18014ee5fe20090b">Spare_fileselector_offset</a>, <a class="el" href="global_8h.html#87ef562055a48acfe090b7b809392cce">Spare_fileselector_position</a>, <a class="el" href="structT__Config.html#efee8fbb3125439cffdafdbe5b4248d3">T_Config::Timer_delay</a>, <a class="el" href="divers_8h.html#7173d5527df983c25892c07d6e5f8156">Timer_state</a>, <a class="el" href="moteur_8c.html#bf9c791da50bc2ed593e4700a3f98666">Unselect_bouton()</a>, <a class="el" href="windows_8h.html#d4315c6b8c5dd40569261fe6d5f33959">Update_window_area</a>, <a class="el" href="divers_8c.html#9148d5b17ed7303cf67b3184c80d625e">Wait_end_of_click()</a>, <a class="el" href="global_8h.html#0530526d29aeb87e058ffc9e0f7090c6">Window_attribute2</a>, <a class="el" href="moteur_8c.html#eebd46ea06ee04d2a007ed6636fc3f25">Window_clicked_button()</a>, <a class="el" href="windows_8c.html#07d71a1346e87ffb3f1677753f5a33d6">Window_display_frame_in()</a>, <a class="el" href="windows_8c.html#762e030dd923df1560bbd301d21a7113">Window_display_icon_sprite()</a>, <a class="el" href="moteur_8c.html#b5ae80337b32414ea21ac6583771e0a3">Window_dropdown_add_item()</a>, <a class="el" href="global_8h.html#d0e6bca6817a6e0bdd09a6616371d5b2">Window_height</a>, <a class="el" href="aide_8c.html#b1985f9adb9c432856a7f008be5a0411">Window_help()</a>, <a class="el" href="global_8h.html#2648c309928202bf8ab639336a3a4da3">Window_pos_Y</a>, <a class="el" href="windows_8c.html#96a7e75754b315bbfa936dd205f7fedb">Window_rectangle()</a>, <a class="el" href="moteur_8c.html#60017f625c5a61799718b0a377aeaf4c">Window_set_dropdown_button()</a>, <a class="el" href="moteur_8c.html#7282d622d0a80f244b0b7d5fdf24487b">Window_set_input_button()</a>, <a class="el" href="moteur_8c.html#bf4935110db5281f3cc6165604560fd6">Window_set_normal_button()</a>, <a class="el" href="moteur_8c.html#01e3006f670dd7cdddecb36d2f85dfa0">Window_set_scroller_button()</a>, <a class="el" href="moteur_8c.html#79b60fe28bfb08be9c73aa9e3924b7c0">Window_set_special_button()</a>, and <a class="el" href="global_8h.html#31a5271252a6a523df0d42c08939ca2c">Window_width</a>.</p>
+
+<p>Referenced by <a class="el" href="boutons_8h.html#e167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>, and <a class="el" href="boutons_8h.html#1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Variable Documentation</h2>
+<a class="anchor" name="137f2eec59845cc083acc93fba25eaf4"></a><!-- doxytag: member="files.c::Selected_type" ref="137f2eec59845cc083acc93fba25eaf4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="files_8c.html#137f2eec59845cc083acc93fba25eaf4">Selected_type</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f7d69573dd2d3f394b9cc482b76fa494"></a><!-- doxytag: member="files.c::FFF_best_name" ref="f7d69573dd2d3f394b9cc482b76fa494" args="[MAX_PATH_CHARACTERS]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="files_8c.html#f7d69573dd2d3f394b9cc482b76fa494">FFF_best_name</a>[MAX_PATH_CHARACTERS]          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

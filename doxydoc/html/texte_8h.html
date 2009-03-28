@@ -65,31 +65,31 @@ window.onload = initDynSections;
 <h1>texte.h File Reference</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#392776de4e1986e198e4ec5d90641171">Initialisation_Texte</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#f0435f56b36c5f804b070c7438ee3a5c">Init_text</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#fac188a2aa919a3c91cb87a9014fcd38">Support_TrueType</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#555d41f76430f0d9f060d4402e9f1607">TrueType_is_supported</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#d93996ab8944644ca9fbdd9017e0bd65">Ajout_fonte</a> (char *Nom)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#81618abc912623367e3d0be410b6c56b">Add_font</a> (char *name)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#abb7283b6eb12119c72337c1f737cda1">Rendu_Texte</a> (const char *Chaine, int Numero_fonte, int Taille, int AntiAlias, int Bold, int Italic, int *<a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, int *<a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#0ec05ce72d6a026a00b7caff5b2c5ac0">Render_text</a> (const char *str, int font_number, int size, int antialias, int bold, int italic, int *width, int *height)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#c63e5d2806036a52341bf569be32c502">Libelle_fonte</a> (int Indice)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#a79e03caf6317f9c5d4dd8a0f7225e96">Font_label</a> (int index)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#f4172a9c2e07227159ef560efd44824e">Nom_fonte</a> (int Indice)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#7c735390b8c19c2e6aa1ddf0da4d2aa5">Font_name</a> (int index)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#27171e8bd22f84ea7d6c80e0a8ce8b28">TrueType_fonte</a> (int Indice)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#9f564f1a32a7f59d94a96212466041fe">TrueType_font</a> (int index)</td></tr>
 
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte_8h.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a></td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="392776de4e1986e198e4ec5d90641171"></a><!-- doxytag: member="texte.h::Initialisation_Texte" ref="392776de4e1986e198e4ec5d90641171" args="(void)" -->
+<a class="anchor" name="f0435f56b36c5f804b070c7438ee3a5c"></a><!-- doxytag: member="texte.h::Init_text" ref="f0435f56b36c5f804b070c7438ee3a5c" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialisation_Texte           </td>
+          <td class="memname">void Init_text           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -102,18 +102,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="texte_8c.html#5e3c3a9bfb7e274e13ac85da43d262ca">Ajout_fonte()</a>, <a class="el" href="texte_8c.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>, <a class="el" href="files_8c.html#35ef3405cb1c2187e6ab302705319784">for_each_file()</a>, <a class="el" href="global_8h.html#6c14d3d33a2ee81e30956d2744bf2304">Repertoire_des_donnees</a>, and <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>.</p>
+<p>References <a class="el" href="texte_8c.html#a174283bf5096c3fa0f9d89c1df1ebd6">Add_font()</a>, <a class="el" href="io_8c.html#80c5a4b0eefab6e29fa0cd748c333223">For_each_file()</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="texte_8c.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>, and <a class="el" href="global_8h.html#6c14d3d33a2ee81e30956d2744bf2304">Repertoire_des_donnees</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="fac188a2aa919a3c91cb87a9014fcd38"></a><!-- doxytag: member="texte.h::Support_TrueType" ref="fac188a2aa919a3c91cb87a9014fcd38" args="(void)" -->
+<a class="anchor" name="555d41f76430f0d9f060d4402e9f1607"></a><!-- doxytag: member="texte.h::TrueType_is_supported" ref="555d41f76430f0d9f060d4402e9f1607" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Support_TrueType           </td>
+          <td class="memname">int TrueType_is_supported           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -126,19 +126,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="aide_8h.html#b20e321c1ca3efa7f839f3fb12d5d496">Bouton_Stats()</a>.</p>
+<p>Referenced by <a class="el" href="aide_8h.html#5c93538756ff9f83b2b1de4dbc5f5734">Button_Stats()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d93996ab8944644ca9fbdd9017e0bd65"></a><!-- doxytag: member="texte.h::Ajout_fonte" ref="d93996ab8944644ca9fbdd9017e0bd65" args="(char *Nom)" -->
+<a class="anchor" name="81618abc912623367e3d0be410b6c56b"></a><!-- doxytag: member="texte.h::Add_font" ref="81618abc912623367e3d0be410b6c56b" args="(char *name)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Ajout_fonte           </td>
+          <td class="memname">void Add_font           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Nom</em>          </td>
+          <td class="paramname"> <em>name</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -150,57 +150,57 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="abb7283b6eb12119c72337c1f737cda1"></a><!-- doxytag: member="texte.h::Rendu_Texte" ref="abb7283b6eb12119c72337c1f737cda1" args="(const char *Chaine, int Numero_fonte, int Taille, int AntiAlias, int Bold, int Italic, int *Largeur, int *Hauteur)" -->
+<a class="anchor" name="0ec05ce72d6a026a00b7caff5b2c5ac0"></a><!-- doxytag: member="texte.h::Render_text" ref="0ec05ce72d6a026a00b7caff5b2c5ac0" args="(const char *str, int font_number, int size, int antialias, int bold, int italic, int *width, int *height)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>* Rendu_Texte           </td>
+          <td class="memname">byte* Render_text           </td>
           <td>(</td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Chaine</em>, </td>
+          <td class="paramname"> <em>str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Numero_fonte</em>, </td>
+          <td class="paramname"> <em>font_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Taille</em>, </td>
+          <td class="paramname"> <em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>AntiAlias</em>, </td>
+          <td class="paramname"> <em>antialias</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Bold</em>, </td>
+          <td class="paramname"> <em>bold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Italic</em>, </td>
+          <td class="paramname"> <em>italic</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Largeur</em>, </td>
+          <td class="paramname"> <em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Hauteur</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -213,21 +213,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="structT__FONTE.html#2fb2d8f21e4dc3278c41b892569324d3">T_FONTE::EstTrueType</a>, <a class="el" href="global_8h.html#7cfc733b9288a1db646299f44117e3b7">Fonte</a>, <a class="el" href="texte_8c.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>, <a class="el" href="texte_8c.html#e1763c92860bcecd15a88a8a7f2010d4">Rendu_Texte_SFont()</a>, <a class="el" href="texte_8c.html#08742ba1eb9b92c1917d07b9aea8db0b">Rendu_Texte_TTF()</a>, and <a class="el" href="structT__FONTE.html#28e36e311584424851d64e30ae23cea9">T_FONTE::Suivante</a>.</p>
+<p>References <a class="el" href="structT__Font.html#ab852345c743a5d4c05a7933ebe44d78">T_Font::Is_truetype</a>, <a class="el" href="texte_8c.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>, <a class="el" href="structT__Font.html#97a5d7c32e47dc2d0c4fa9b2c5fc9b6b">T_Font::Next</a>, <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="texte_8c.html#6fd82265e8212cd3f6e7e0823f76c2ff">Render_text_TTF()</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="c63e5d2806036a52341bf569be32c502"></a><!-- doxytag: member="texte.h::Libelle_fonte" ref="c63e5d2806036a52341bf569be32c502" args="(int Indice)" -->
+<a class="anchor" name="a79e03caf6317f9c5d4dd8a0f7225e96"></a><!-- doxytag: member="texte.h::Font_label" ref="a79e03caf6317f9c5d4dd8a0f7225e96" args="(int index)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* Libelle_fonte           </td>
+          <td class="memname">char* Font_label           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Indice</em>          </td>
+          <td class="paramname"> <em>index</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -237,21 +237,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#7cfc733b9288a1db646299f44117e3b7">Fonte</a>, <a class="el" href="texte_8c.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>, <a class="el" href="structT__FONTE.html#2950cb2f881f0ba74412b59e28e307e3">T_FONTE::Libelle</a>, and <a class="el" href="structT__FONTE.html#28e36e311584424851d64e30ae23cea9">T_FONTE::Suivante</a>.</p>
+<p>References <a class="el" href="structT__Font.html#0b2532a4d7fd901c879cc55ed42e6fc2">T_Font::Label</a>, <a class="el" href="texte_8c.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>, and <a class="el" href="structT__Font.html#97a5d7c32e47dc2d0c4fa9b2c5fc9b6b">T_Font::Next</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8c.html#90bcd1f7397ea53c53cd381e3d75faff">Dessiner_selecteur_fontes()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8c.html#0dd0bc287f24eb76708f23746f2d35dd">Draw_font_selector()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f4172a9c2e07227159ef560efd44824e"></a><!-- doxytag: member="texte.h::Nom_fonte" ref="f4172a9c2e07227159ef560efd44824e" args="(int Indice)" -->
+<a class="anchor" name="7c735390b8c19c2e6aa1ddf0da4d2aa5"></a><!-- doxytag: member="texte.h::Font_name" ref="7c735390b8c19c2e6aa1ddf0da4d2aa5" args="(int index)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* Nom_fonte           </td>
+          <td class="memname">char* Font_name           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Indice</em>          </td>
+          <td class="paramname"> <em>index</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -261,21 +261,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#7cfc733b9288a1db646299f44117e3b7">Fonte</a>, <a class="el" href="texte_8c.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>, <a class="el" href="structT__FONTE.html#51aa1c339b061eef4d87d5ebf781f40f">T_FONTE::Nom</a>, and <a class="el" href="structT__FONTE.html#28e36e311584424851d64e30ae23cea9">T_FONTE::Suivante</a>.</p>
+<p>References <a class="el" href="structT__Font.html#6c5f059996bcfdd309b2b89446d93917">T_Font::Name</a>, <a class="el" href="texte_8c.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>, and <a class="el" href="structT__Font.html#97a5d7c32e47dc2d0c4fa9b2c5fc9b6b">T_Font::Next</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#5e3c3a9bfb7e274e13ac85da43d262ca">Ajout_fonte()</a>, <a class="el" href="texte_8c.html#e1763c92860bcecd15a88a8a7f2010d4">Rendu_Texte_SFont()</a>, and <a class="el" href="texte_8c.html#08742ba1eb9b92c1917d07b9aea8db0b">Rendu_Texte_TTF()</a>.</p>
+<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="texte_8c.html#6fd82265e8212cd3f6e7e0823f76c2ff">Render_text_TTF()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="27171e8bd22f84ea7d6c80e0a8ce8b28"></a><!-- doxytag: member="texte.h::TrueType_fonte" ref="27171e8bd22f84ea7d6c80e0a8ce8b28" args="(int Indice)" -->
+<a class="anchor" name="9f564f1a32a7f59d94a96212466041fe"></a><!-- doxytag: member="texte.h::TrueType_font" ref="9f564f1a32a7f59d94a96212466041fe" args="(int index)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* TrueType_fonte           </td>
+          <td class="memname">char* TrueType_font           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Indice</em>          </td>
+          <td class="paramname"> <em>index</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -285,19 +285,19 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="structT__FONTE.html#2fb2d8f21e4dc3278c41b892569324d3">T_FONTE::EstTrueType</a>, <a class="el" href="global_8h.html#7cfc733b9288a1db646299f44117e3b7">Fonte</a>, <a class="el" href="texte_8c.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>, and <a class="el" href="structT__FONTE.html#28e36e311584424851d64e30ae23cea9">T_FONTE::Suivante</a>.</p>
+<p>References <a class="el" href="structT__Font.html#ab852345c743a5d4c05a7933ebe44d78">T_Font::Is_truetype</a>, <a class="el" href="texte_8c.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>, and <a class="el" href="structT__Font.html#97a5d7c32e47dc2d0c4fa9b2c5fc9b6b">T_Font::Next</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>.</p>
 
 </div>
 </div><p>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="f9524a1c98605f4c5d310db8d79e06e0"></a><!-- doxytag: member="texte.h::Fonte_nombre" ref="f9524a1c98605f4c5d310db8d79e06e0" args="" -->
+<a class="anchor" name="325e4e5b5982b8081282f176d76767b3"></a><!-- doxytag: member="texte.h::Nb_fonts" ref="325e4e5b5982b8081282f176d76767b3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="texte_8h.html#f9524a1c98605f4c5d310db8d79e06e0">Fonte_nombre</a>          </td>
+          <td class="memname">int <a class="el" href="texte_8h.html#325e4e5b5982b8081282f176d76767b3">Nb_fonts</a>          </td>
         </tr>
       </table>
 </div>
@@ -305,12 +305,12 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#5e3c3a9bfb7e274e13ac85da43d262ca">Ajout_fonte()</a>, <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>, <a class="el" href="texte_8h.html#392776de4e1986e198e4ec5d90641171">Initialisation_Texte()</a>, <a class="el" href="texte_8h.html#c63e5d2806036a52341bf569be32c502">Libelle_fonte()</a>, <a class="el" href="texte_8h.html#f4172a9c2e07227159ef560efd44824e">Nom_fonte()</a>, <a class="el" href="texte_8h.html#abb7283b6eb12119c72337c1f737cda1">Rendu_Texte()</a>, and <a class="el" href="texte_8h.html#27171e8bd22f84ea7d6c80e0a8ce8b28">TrueType_fonte()</a>.</p>
+<p>Referenced by <a class="el" href="texte_8c.html#a174283bf5096c3fa0f9d89c1df1ebd6">Add_font()</a>, <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>, <a class="el" href="texte_8h.html#a79e03caf6317f9c5d4dd8a0f7225e96">Font_label()</a>, <a class="el" href="texte_8h.html#7c735390b8c19c2e6aa1ddf0da4d2aa5">Font_name()</a>, <a class="el" href="texte_8h.html#f0435f56b36c5f804b070c7438ee3a5c">Init_text()</a>, <a class="el" href="texte_8h.html#0ec05ce72d6a026a00b7caff5b2c5ac0">Render_text()</a>, and <a class="el" href="texte_8h.html#9f564f1a32a7f59d94a96212466041fe">TrueType_font()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:09 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:14 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

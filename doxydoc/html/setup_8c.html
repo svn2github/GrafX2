@@ -69,20 +69,19 @@ window.onload = initDynSections;
 <code>#include &lt;sys/stat.h&gt;</code><br>
 <code>#include &quot;<a class="el" href="struct_8h.html">struct.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="io_8h.html">io.h</a>&quot;</code><br>
-<code>#include &quot;<a class="el" href="files_8h.html">files.h</a>&quot;</code><br>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Defines</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#3cd42c63a217ee9e52214c1cc78c3af4">ARG_UNUSED</a></td></tr>
 
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#68c1b408414a44ee78043dcb3b477c38">Create_ConfigDirectory</a> (char *Config_Dir)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#681078bbc1990ac7d3c6f7478ed95753">Create_ConfigDirectory</a> (char *config_dir)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#6ecaa2029ceee3690330eec1939903eb">Set_Program_Directory</a> (ARG_UNUSED const char *argv0, char *Program_Dir)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#72aac461ade365d09296bf1924f71f27">Set_program_directory</a> (ARG_UNUSED const char *argv0, char *program_dir)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#0c856157f0055cabc6caa039b21e1675">Set_Data_Directory</a> (const char *Program_Dir, char *Data_Dir)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#21b663c3c4a8d138a405d67c30ef0fc7">Set_data_directory</a> (const char *program_dir, char *data_dir)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#fd36d70050a4a14b07f890e9b85938b7">Set_Config_Directory</a> (const char *Program_Dir, char *Config_Dir)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="setup_8c.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory</a> (const char *program_dir, char *config_dir)</td></tr>
 
 </table>
 <hr><h2>Define Documentation</h2>
@@ -102,7 +101,7 @@ window.onload = initDynSections;
 </div>
 </div><p>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="68c1b408414a44ee78043dcb3b477c38"></a><!-- doxytag: member="setup.c::Create_ConfigDirectory" ref="68c1b408414a44ee78043dcb3b477c38" args="(char *Config_Dir)" -->
+<a class="anchor" name="681078bbc1990ac7d3c6f7478ed95753"></a><!-- doxytag: member="setup.c::Create_ConfigDirectory" ref="681078bbc1990ac7d3c6f7478ed95753" args="(char *config_dir)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -110,7 +109,7 @@ window.onload = initDynSections;
           <td class="memname">int Create_ConfigDirectory           </td>
           <td>(</td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Config_Dir</em>          </td>
+          <td class="paramname"> <em>config_dir</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -120,16 +119,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="setup_8h.html#fd36d70050a4a14b07f890e9b85938b7">Set_Config_Directory()</a>.</p>
+<p>Referenced by <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="6ecaa2029ceee3690330eec1939903eb"></a><!-- doxytag: member="setup.c::Set_Program_Directory" ref="6ecaa2029ceee3690330eec1939903eb" args="(ARG_UNUSED const char *argv0, char *Program_Dir)" -->
+<a class="anchor" name="72aac461ade365d09296bf1924f71f27"></a><!-- doxytag: member="setup.c::Set_program_directory" ref="72aac461ade365d09296bf1924f71f27" args="(ARG_UNUSED const char *argv0, char *program_dir)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Set_Program_Directory           </td>
+          <td class="memname">void Set_program_directory           </td>
           <td>(</td>
           <td class="paramtype">ARG_UNUSED const char *&nbsp;</td>
           <td class="paramname"> <em>argv0</em>, </td>
@@ -138,7 +137,7 @@ window.onload = initDynSections;
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Program_Dir</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>program_dir</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,27 +150,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="io_8c.html#2f970506e24d7c885b4276cde46fc95f">Extraire_chemin()</a>.</p>
+<p>References <a class="el" href="io_8c.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, and <a class="el" href="gfxcfg_8c.html#5c274fba0a05c8c8ec7a73ba47e85e4c">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0c856157f0055cabc6caa039b21e1675"></a><!-- doxytag: member="setup.c::Set_Data_Directory" ref="0c856157f0055cabc6caa039b21e1675" args="(const char *Program_Dir, char *Data_Dir)" -->
+<a class="anchor" name="21b663c3c4a8d138a405d67c30ef0fc7"></a><!-- doxytag: member="setup.c::Set_data_directory" ref="21b663c3c4a8d138a405d67c30ef0fc7" args="(const char *program_dir, char *data_dir)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Set_Data_Directory           </td>
+          <td class="memname">void Set_data_directory           </td>
           <td>(</td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Program_Dir</em>, </td>
+          <td class="paramname"> <em>program_dir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Data_Dir</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>data_dir</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -184,25 +183,25 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, and <a class="el" href="gfxcfg_8c.html#5c274fba0a05c8c8ec7a73ba47e85e4c">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="fd36d70050a4a14b07f890e9b85938b7"></a><!-- doxytag: member="setup.c::Set_Config_Directory" ref="fd36d70050a4a14b07f890e9b85938b7" args="(const char *Program_Dir, char *Config_Dir)" -->
+<a class="anchor" name="568b7c4b80f15762fa172382be3dd066"></a><!-- doxytag: member="setup.c::Set_config_directory" ref="568b7c4b80f15762fa172382be3dd066" args="(const char *program_dir, char *config_dir)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Set_Config_Directory           </td>
+          <td class="memname">void Set_config_directory           </td>
           <td>(</td>
           <td class="paramtype">const char *&nbsp;</td>
-          <td class="paramname"> <em>Program_Dir</em>, </td>
+          <td class="paramname"> <em>program_dir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Config_Dir</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>config_dir</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -215,14 +214,14 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="setup_8c.html#68c1b408414a44ee78043dcb3b477c38">Create_ConfigDirectory()</a>, <a class="el" href="io_8c.html#260aa799bda8d9c4cd8dc85c2660d783">Fichier_existe()</a>, <a class="el" href="io_8c.html#900a0a8785e034fbc72f1e52896c1b01">Repertoire_existe()</a>, <a class="el" href="io_8h.html#b64e7b5597e0606838e72f2212b8b2eb">SEPARATEUR_CHEMIN</a>, and <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>.</p>
+<p>References <a class="el" href="setup_8c.html#681078bbc1990ac7d3c6f7478ed95753">Create_ConfigDirectory()</a>, <a class="el" href="io_8c.html#8f3b4b4e576b2f093d6f981cdd8cba2f">Directory_exists()</a>, <a class="el" href="io_8c.html#77578130329c8d6a2102f2884ba1ed28">File_exists()</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, and <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, and <a class="el" href="gfxcfg_8c.html#5c274fba0a05c8c8ec7a73ba47e85e4c">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:09 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:13 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

@@ -73,56 +73,52 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#0f65bd32acdf8d96135b0f51fba459b9">Handle_Window_Resize</a> (SDL_ResizeEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#80426d0b765212312bb7893e3e23f97f">Handle_window_resize</a> (SDL_ResizeEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#2a82d41932898443804744c30bd5a80a">Handle_Window_Exit</a> (SDL_QuitEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#e02965ea2f262a8f7c6c7ce0da0f3f0d">Handle_window_exit</a> (SDL_QuitEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#14cb7326b36f1e0b3c2418d0ef4c1acc">Est_Raccourci</a> (<a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Fonction)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#4933fb93bafd7ab1ecc787d3456d1f86">Is_shortcut</a> (word <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, word function)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#5d1d4893ddb5673ea6e425ea121ec789">Gere_Evenement_SDL</a> (SDL_Event *event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#aa2fb8d4c5b38144f211b843ec73c76e">Handle_mouse_move</a> (SDL_MouseMotionEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#910d27d843b1e7a8a1686a40b31247e2">Handle_Window_Exit</a> (<a class="el" href="struct____attribute____.html">__attribute__</a>((unused)) SDL_QuitEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#b157112ad58fc4fcdafa94aa35f9c2ac">Handle_mouse_click</a> (SDL_MouseButtonEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#457fb6802edc329b534fdc63ca50e2d8">Handle_Mouse_Move</a> (SDL_MouseMotionEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#eb9358d5687dd17c3a8c6a1d5b850847">Handle_mouse_release</a> (SDL_MouseButtonEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#eaa7965ed657408b1572984b7369d346">Handle_Mouse_Click</a> (SDL_MouseButtonEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press</a> (SDL_KeyboardEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#511c0652be2ba8bc6a46df2683a5ad36">Handle_Mouse_Release</a> (SDL_MouseButtonEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control</a> (int key_code, int modifier)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press</a> (SDL_KeyboardEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ce5166cecd1b4e569b998d2037a45527">Handle_key_release</a> (SDL_KeyboardEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle</a> (int CodeTouche, int Modifieur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press</a> (SDL_JoyButtonEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#f53e664fe2cebe690fefbd04630fa928">Handle_Key_Release</a> (SDL_KeyboardEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release</a> (SDL_JoyButtonEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press</a> (SDL_JoyButtonEvent event)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement</a> (SDL_JoyAxisEvent event)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release</a> (SDL_JoyButtonEvent event)</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement</a> (SDL_JoyAxisEvent event)</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a1648bdf48ae2c8fc879454a4aa4a21f">Cursor_displace</a> (short Delta_X, short Delta_Y)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#fea4b7be826453df47084df185e70782">Cursor_displace</a> (short delta_x, short delta_y)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input</a> (void)</td></tr>
 
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a></td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#dc07e1922f1cfe93cb743b140e15c99e">Directional_delay</a></td></tr>
 
@@ -132,30 +128,30 @@ window.onload = initDynSections;
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#dab9be2781703528037edf56911a77f4">Mouse_count</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#446353335506894525a321213a526062">INPUT_Nouveau_Mouse_X</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#673e53e18e536fcc9f975ee781dc2b30">Input_new_mouse_X</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#969eee4ba6f68a63a8293998cb46399b">INPUT_Nouveau_Mouse_Y</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#eb41796af370ff3eafa43ded1194e9b5">Input_new_mouse_Y</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#e61245a5323f0232c7b8ba62acc57b91">Button_shift</a> = -1</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#0c426dd0ea9a2ff68cbd780c423c01c8">Joybutton_shift</a> = -1</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#877764aa0cf72e2e1d3c96f04ba0edae">Button_control</a> = -1</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#010b48a6692993a2392e9cd42443f9fb">Joybutton_control</a> = -1</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#630f13213660177775a5dcc492dc6efc">Button_alt</a> = -1</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#8495a4b76a7adc5c2f6580489d7bf0ec">Joybutton_alt</a> = -1</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#7220702c4fc8f89e51c397f2bc23bd3e">Button_clic_gauche</a> = 0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#3437f2789b7f7a34b85b344466b93832">Joybutton_left_click</a> = 0</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#38dddfefbd243ae1a2d488471958958c">Button_clic_droit</a> = 0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a4ef7c5fd9058d69f01242d59bf82b45">Joybutton_right_click</a> = 0</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="0f65bd32acdf8d96135b0f51fba459b9"></a><!-- doxytag: member="input.c::Handle_Window_Resize" ref="0f65bd32acdf8d96135b0f51fba459b9" args="(SDL_ResizeEvent event)" -->
+<a class="anchor" name="80426d0b765212312bb7893e3e23f97f"></a><!-- doxytag: member="input.c::Handle_window_resize" ref="80426d0b765212312bb7893e3e23f97f" args="(SDL_ResizeEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Handle_Window_Resize           </td>
+          <td class="memname">void Handle_window_resize           </td>
           <td>(</td>
           <td class="paramtype">SDL_ResizeEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -168,18 +164,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#5b989f695e04ae221e94bf5b197d2195">Resize_Hauteur</a>, and <a class="el" href="global_8h.html#4d03006795bbfcb316f4b0821842aafa">Resize_Largeur</a>.</p>
+<p>References <a class="el" href="global_8h.html#9ca571c9736ed874f1e379a1af7d6b0f">Resize_height</a>, and <a class="el" href="global_8h.html#13f9ab54f1321e1320cd45ee37dd4550">Resize_width</a>.</p>
 
-<p>Referenced by <a class="el" href="input_8h.html#5d1d4893ddb5673ea6e425ea121ec789">Gere_Evenement_SDL()</a>, and <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2a82d41932898443804744c30bd5a80a"></a><!-- doxytag: member="input.c::Handle_Window_Exit" ref="2a82d41932898443804744c30bd5a80a" args="(SDL_QuitEvent event)" -->
+<a class="anchor" name="e02965ea2f262a8f7c6c7ce0da0f3f0d"></a><!-- doxytag: member="input.c::Handle_window_exit" ref="e02965ea2f262a8f7c6c7ce0da0f3f0d" args="(SDL_QuitEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Handle_Window_Exit           </td>
+          <td class="memname">void Handle_window_exit           </td>
           <td>(</td>
           <td class="paramtype">SDL_QuitEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -192,25 +188,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#5d1d4893ddb5673ea6e425ea121ec789">Gere_Evenement_SDL()</a>, and <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
+<p>References <a class="el" href="global_8h.html#cacd8b69ed89bcd55eeff807cc38b854">Quit_is_required</a>.</p>
+
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="14cb7326b36f1e0b3c2418d0ef4c1acc"></a><!-- doxytag: member="input.c::Est_Raccourci" ref="14cb7326b36f1e0b3c2418d0ef4c1acc" args="(word Touche, word Fonction)" -->
+<a class="anchor" name="4933fb93bafd7ab1ecc787d3456d1f86"></a><!-- doxytag: member="input.c::Is_shortcut" ref="4933fb93bafd7ab1ecc787d3456d1f86" args="(word Key, word function)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Est_Raccourci           </td>
+          <td class="memname">int Is_shortcut           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Touche</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>Key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Fonction</em></td><td>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>function</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -223,9 +221,9 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="global_8h.html#fe053f70f9364d3deedad4ef574483e4">Config_Touche</a>, <a class="el" href="global_8h.html#0d021c184b0b6bfb8d79fea775176552">Raccourci_droite</a>, and <a class="el" href="global_8h.html#c4874304ee7e66b0e8b8b4cb951b047d">Raccourci_gauche</a>.</p>
+<p>References <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="global_8h.html#a85ac83d796b14ef626ad084d6ac74d3">Config_Key</a>, <a class="el" href="global_8h.html#87ebc446cf47493e50d0ddb28d6e5ce2">Left_shortcut</a>, and <a class="el" href="global_8h.html#b808020b2b4e58cff025f6bb3fc7bdb1">Right_shortcut</a>.</p>
 
-<p>Referenced by <a class="el" href="boutons_8h.html#8fb38637fbbb477fd0ee3f6c5d43211c">Bouton_Brush_FX()</a>, <a class="el" href="boutons_8h.html#b396a98ef3179ff56938502ae12236f5">Bouton_Colorize_Menu()</a>, <a class="el" href="boutons_8h.html#b594e6d6abc370ae7e112f06bae9c5d3">Bouton_Copy_page()</a>, <a class="el" href="boutons_8h.html#95335a6d8b752c15e1a903d8b37a13fd">Bouton_Degrades()</a>, <a class="el" href="boutons_8h.html#8bfcd88dac68ce3d2845665e3827c2e7">Bouton_Effets()</a>, <a class="el" href="boutons_8c.html#6c36fe28ca19067adf49b81c9a2a33ad">Bouton_Load_ou_Save()</a>, <a class="el" href="boutons_8h.html#e7ebb9e720d8ef909c2022356432d9e6">Bouton_Menu_Grille()</a>, <a class="el" href="boutons_8h.html#9f5151476bfc49facf295e20c6fb92fb">Bouton_Menu_Loupe()</a>, <a class="el" href="boutons_8h.html#1025cf1c9b1e9740d99089dee8652762">Bouton_Menu_pinceaux()</a>, <a class="el" href="palette_8h.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="palette_8h.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire()</a>, <a class="el" href="shade_8h.html#bef4b429169262aba75e5bf066116628">Bouton_Quick_shade_Menu()</a>, <a class="el" href="boutons_8c.html#ce358802a012dfb059b20a4a19b549d0">Bouton_Quitter_Routine_locale()</a>, <a class="el" href="boutons_8h.html#d4f9a069c7697cb953e1797bb30d80d3">Bouton_Resol()</a>, <a class="el" href="boutons_8h.html#3471661b67c87af0fffbc84a0a6420c0">Bouton_Settings()</a>, <a class="el" href="boutons_8h.html#5635f61f7c0ebe33deea4e8f5c8fdd12">Bouton_Smooth_Menu()</a>, <a class="el" href="boutons_8h.html#2feaf0ebe7cea0c7bb067ef2872c5f7f">Bouton_Spray_Menu()</a>, <a class="el" href="boutons_8h.html#e757e4dda0da044cce84b7e3a98a1cad">Bouton_Texte()</a>, <a class="el" href="boutons_8h.html#93dc13f75cd7b969b1aea2daadaf138d">Bouton_Tiling_Menu()</a>, <a class="el" href="boutons_8h.html#b0fbbf5905dd8504b8b67c56afcd7416">Bouton_Trame_Menu()</a>, <a class="el" href="moteur_8h.html#063efffc30ceaf75367a556752e5de6b">Gestion_principale()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, <a class="el" href="shade_8c.html#0c3f3929858d89fe9fca3123c5d6365b">Menu_Shade()</a>, and <a class="el" href="boutons_8h.html#cc46fd9487924929e54061bc5c3a21f0">Menu_Tag_couleurs()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8h.html#75e3bd74223a8e8feba3bc87a2eac4c6">Button_Airbrush_menu()</a>, <a class="el" href="boutons_8h.html#48a3fd539c3cbe4cd47fc1dcc3e465ee">Button_Brush_FX()</a>, <a class="el" href="boutons_8h.html#bfe38990e727968fc35258d720663afe">Button_Colorize_menu()</a>, <a class="el" href="boutons_8h.html#c9365d640fba1eb9e82568e492878e4a">Button_Copy_page()</a>, <a class="el" href="boutons_8h.html#cf89cf3b809b31765e8d752d2c0f5595">Button_Effects()</a>, <a class="el" href="boutons_8h.html#65df0642ea1b2db24d8a6213ab7ea757">Button_Gradients()</a>, <a class="el" href="boutons_8h.html#0437c216c2e1a46bf571a1e35e421c21">Button_Grid_menu()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="boutons_8h.html#463af6473ae8baaa20caed8aea17969c">Button_Magnify_menu()</a>, <a class="el" href="boutons_8h.html#c0ef5b9c11ea7acdc4aea980fa25790b">Button_Paintbrush_menu()</a>, <a class="el" href="palette_8h.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="palette_8h.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette()</a>, <a class="el" href="shade_8h.html#230618ea7ae142115a320b637342bfca">Button_Quick_shade_menu()</a>, <a class="el" href="boutons_8c.html#c37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="boutons_8h.html#c9b41c19a3b00619fc4f7533681d33cc">Button_Resolution()</a>, <a class="el" href="boutons_8h.html#e2f7310aa79876016d804806de57c1f0">Button_Settings()</a>, <a class="el" href="boutons_8h.html#51602ce1c400dfbf8eeeb35de35d5ea4">Button_Smooth_menu()</a>, <a class="el" href="boutons_8h.html#56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>, <a class="el" href="boutons_8h.html#7b1fb17ca2cc61dd9b59a633860332e6">Button_Tiling_menu()</a>, <a class="el" href="boutons_8h.html#e4efd27dbe8588cc18dfa19fc15a7c44">Button_Trame_menu()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, <a class="el" href="moteur_8h.html#42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="shade_8c.html#66d37b393bc8dd6037927082533e37bb">Menu_shade()</a>, and <a class="el" href="boutons_8h.html#d6b5c783d5e695c7eee72f165e6d8dcb">Menu_tag_colors()</a>.</p>
 
 </div>
 </div><p>
@@ -246,62 +244,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="windows_8c.html#b837de751a467219ee4eaa9202c56aef">Afficher_curseur()</a>, <a class="el" href="windows_8c.html#0985b5bd3806a8c736a638c2b27cdd68">Calculer_coordonnees_pinceau()</a>, <a class="el" href="global_8h.html#dab1d2d11471879efd925f4fd178d94c">Config</a>, <a class="el" href="global_8h.html#f08933771efee67b152cdb8c1eaa99ba">Effacer_curseur</a>, <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="input_8c.html#446353335506894525a321213a526062">INPUT_Nouveau_Mouse_X</a>, <a class="el" href="input_8c.html#969eee4ba6f68a63a8293998cb46399b">INPUT_Nouveau_Mouse_Y</a>, <a class="el" href="global_8h.html#4f5e6ab2338af71ae4064d2ab9c5a985">Loupe_Mode</a>, <a class="el" href="global_8h.html#eb7d7e323e47895b2a295f565e9f9c87">Menu_Ordonnee</a>, <a class="el" href="input_8c.html#dab9be2781703528037edf56911a77f4">Mouse_count</a>, <a class="el" href="global_8h.html#2e4ccded4ffa45d9e834ca98bf366e01">Mouse_K</a>, <a class="el" href="structS__Config.html#f06cb2124db7178cb56e18479acfde08">S_Config::Mouse_Merge_movement</a>, <a class="el" href="global_8h.html#a80d3e3defad25a00ed3ee66cc69d46e">Mouse_X</a>, <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>, <a class="el" href="global_8h.html#8f2e0bad5bbe5ce33db8091505f5e62c">Operation_dans_loupe</a>, <a class="el" href="global_8h.html#1370308b31631c34a4caa89326491afe">Operation_Taille_pile</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>, <a class="el" href="global_8h.html#a10b04149a8f9950079cb17c904f0b5c">Principal_Split</a>, and <a class="el" href="global_8h.html#4edb76b48e7b0615bde91bfa0e21f8a4">Principal_X_Zoom</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#3e0bdd78c9a9ec5f99f072d5abfb2625">Compute_paintbrush_coordinates()</a>, <a class="el" href="global_8h.html#c89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="windows_8c.html#40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="global_8h.html#a0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="input_8c.html#673e53e18e536fcc9f975ee781dc2b30">Input_new_mouse_X</a>, <a class="el" href="input_8c.html#eb41796af370ff3eafa43ded1194e9b5">Input_new_mouse_Y</a>, <a class="el" href="global_8h.html#f5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#5b0b3eb2d659e5548f885979a04064fd">Main_separator_position</a>, <a class="el" href="global_8h.html#8dda2d1401996922c89b47f372f3621f">Main_X_zoom</a>, <a class="el" href="global_8h.html#f2cb57d7b7743519c8ccb6fdfbece176">Menu_Y</a>, <a class="el" href="input_8c.html#dab9be2781703528037edf56911a77f4">Mouse_count</a>, <a class="el" href="global_8h.html#2e4ccded4ffa45d9e834ca98bf366e01">Mouse_K</a>, <a class="el" href="structT__Config.html#24a66accbe62f2d88bb8e876e22ab364">T_Config::Mouse_merge_movement</a>, <a class="el" href="global_8h.html#a80d3e3defad25a00ed3ee66cc69d46e">Mouse_X</a>, <a class="el" href="global_8h.html#a79f2fc30e391a4b1117daf7fc3f34b3">Mouse_Y</a>, <a class="el" href="global_8h.html#dbbe752d5f1f286eda6a65e64c08e73e">Operation_in_magnifier</a>, <a class="el" href="global_8h.html#acdbb911967314adba4e95fe03a515a1">Operation_stack_size</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, and <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>.</p>
 
-<p>Referenced by <a class="el" href="input_8c.html#a1648bdf48ae2c8fc879454a4aa4a21f">Cursor_displace()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, <a class="el" href="input_8c.html#eaa7965ed657408b1572984b7369d346">Handle_Mouse_Click()</a>, <a class="el" href="input_8c.html#457fb6802edc329b534fdc63ca50e2d8">Handle_Mouse_Move()</a>, <a class="el" href="input_8c.html#511c0652be2ba8bc6a46df2683a5ad36">Handle_Mouse_Release()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#fea4b7be826453df47084df185e70782">Cursor_displace()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, <a class="el" href="input_8c.html#b157112ad58fc4fcdafa94aa35f9c2ac">Handle_mouse_click()</a>, <a class="el" href="input_8c.html#aa2fb8d4c5b38144f211b843ec73c76e">Handle_mouse_move()</a>, <a class="el" href="input_8c.html#eb9358d5687dd17c3a8c6a1d5b850847">Handle_mouse_release()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="5d1d4893ddb5673ea6e425ea121ec789"></a><!-- doxytag: member="input.c::Gere_Evenement_SDL" ref="5d1d4893ddb5673ea6e425ea121ec789" args="(SDL_Event *event)" -->
+<a class="anchor" name="aa2fb8d4c5b38144f211b843ec73c76e"></a><!-- doxytag: member="input.c::Handle_mouse_move" ref="aa2fb8d4c5b38144f211b843ec73c76e" args="(SDL_MouseMotionEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Gere_Evenement_SDL           </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Event *&nbsp;</td>
-          <td class="paramname"> <em>event</em>          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>References <a class="el" href="input_8c.html#2a82d41932898443804744c30bd5a80a">Handle_Window_Exit()</a>, and <a class="el" href="input_8c.html#0f65bd32acdf8d96135b0f51fba459b9">Handle_Window_Resize()</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="910d27d843b1e7a8a1686a40b31247e2"></a><!-- doxytag: member="input.c::Handle_Window_Exit" ref="910d27d843b1e7a8a1686a40b31247e2" args="(__attribute__((unused)) SDL_QuitEvent event)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Handle_Window_Exit           </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct____attribute____.html">__attribute__</a>((unused)) SDL_QuitEvent&nbsp;</td>
-          <td class="paramname"> <em>event</em>          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>References <a class="el" href="global_8h.html#f334d84a20ac54f24317cd81c5f97704">Quit_demande</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="457fb6802edc329b534fdc63ca50e2d8"></a><!-- doxytag: member="input.c::Handle_Mouse_Move" ref="457fb6802edc329b534fdc63ca50e2d8" args="(SDL_MouseMotionEvent event)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Handle_Mouse_Move           </td>
+          <td class="memname">int Handle_mouse_move           </td>
           <td>(</td>
           <td class="paramtype">SDL_MouseMotionEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -314,18 +268,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#446353335506894525a321213a526062">INPUT_Nouveau_Mouse_X</a>, <a class="el" href="input_8c.html#969eee4ba6f68a63a8293998cb46399b">INPUT_Nouveau_Mouse_Y</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, and <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>.</p>
+<p>References <a class="el" href="input_8c.html#673e53e18e536fcc9f975ee781dc2b30">Input_new_mouse_X</a>, <a class="el" href="input_8c.html#eb41796af370ff3eafa43ded1194e9b5">Input_new_mouse_Y</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#74eff5aea3bab6a130d25d1683147417">Pixel_height</a>, and <a class="el" href="global_8h.html#f8d64f88a6eca7902af827431bf92682">Pixel_width</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="eaa7965ed657408b1572984b7369d346"></a><!-- doxytag: member="input.c::Handle_Mouse_Click" ref="eaa7965ed657408b1572984b7369d346" args="(SDL_MouseButtonEvent event)" -->
+<a class="anchor" name="b157112ad58fc4fcdafa94aa35f9c2ac"></a><!-- doxytag: member="input.c::Handle_mouse_click" ref="b157112ad58fc4fcdafa94aa35f9c2ac" args="(SDL_MouseButtonEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Mouse_Click           </td>
+          <td class="memname">int Handle_mouse_click           </td>
           <td>(</td>
           <td class="paramtype">SDL_MouseButtonEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -338,18 +292,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="clavier_8c.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, <a class="el" href="gfxcfg_8c.html#c8b40f44dee740a267918957c61a1930">TOUCHE_MOUSEMIDDLE</a>, <a class="el" href="gfxcfg_8c.html#78fe4672fc80295d06db5721315472c9">TOUCHE_MOUSEWHEELDOWN</a>, and <a class="el" href="gfxcfg_8c.html#fcb8d54c86bd18900b2b7479e90e25f1">TOUCHE_MOUSEWHEELUP</a>.</p>
+<p>References <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="clavier_8c.html#c39b48ab31f617e5689999f391776064">Key_modifiers()</a>, <a class="el" href="global_8h.html#c22e7764c46533d35a1b4ca6c89cc58b">KEY_MOUSEMIDDLE</a>, <a class="el" href="global_8h.html#0ecb0aa6acd04b7e9feb53ae5f9f15da">KEY_MOUSEWHEELDOWN</a>, <a class="el" href="global_8h.html#feee0bc2d0fe0399d111ebedf3fd4c47">KEY_MOUSEWHEELUP</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="511c0652be2ba8bc6a46df2683a5ad36"></a><!-- doxytag: member="input.c::Handle_Mouse_Release" ref="511c0652be2ba8bc6a46df2683a5ad36" args="(SDL_MouseButtonEvent event)" -->
+<a class="anchor" name="eb9358d5687dd17c3a8c6a1d5b850847"></a><!-- doxytag: member="input.c::Handle_mouse_release" ref="eb9358d5687dd17c3a8c6a1d5b850847" args="(SDL_MouseButtonEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Mouse_Release           </td>
+          <td class="memname">int Handle_mouse_release           </td>
           <td>(</td>
           <td class="paramtype">SDL_MouseButtonEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -362,18 +316,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
+<p>References <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0c4380c67a7ccc5b02c9c811aab85919"></a><!-- doxytag: member="input.c::Handle_Key_Press" ref="0c4380c67a7ccc5b02c9c811aab85919" args="(SDL_KeyboardEvent event)" -->
+<a class="anchor" name="5cd36c7212a3d50a91b39a3e0796be6d"></a><!-- doxytag: member="input.c::Handle_key_press" ref="5cd36c7212a3d50a91b39a3e0796be6d" args="(SDL_KeyboardEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Key_Press           </td>
+          <td class="memname">int Handle_key_press           </td>
           <td>(</td>
           <td class="paramtype">SDL_KeyboardEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -386,27 +340,27 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#17487967a135ffd39d2f84ba0de76fb4">Autoriser_changement_de_couleur_pendant_operation</a>, <a class="el" href="clavier_8c.html#7b185138d8b8ada872b817017aa1c410">Conversion_ANSI()</a>, <a class="el" href="clavier_8c.html#eb5d48f372846b872b3346fc865e9103">Conversion_Touche()</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#14cb7326b36f1e0b3c2418d0ef4c1acc">Est_Raccourci()</a>, <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#1370308b31631c34a4caa89326491afe">Operation_Taille_pile</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74364a07bb1f411e4197b56dcb7433276f28">SPECIAL_CLICK_LEFT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c743662935e7ee9e1bdf0f9078d19515e806e">SPECIAL_CLICK_RIGHT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436aedce43f578f5302ad4e40ec068f85d6">SPECIAL_GROSSIR_PINCEAU</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74362c03b0c86a88af9e0c4a1b9435c1aeda">SPECIAL_MOUSE_DOWN</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436b2cc2e1b7011092b3e98bc0f32d7b658">SPECIAL_MOUSE_LEFT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74365bc6e170646ea48ad7f15dabaf43101a">SPECIAL_MOUSE_RIGHT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436de3aa9c097c43ecff57ccfdddaa8ea43">SPECIAL_MOUSE_UP</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74367eb56d12bd08255174257ccd17030867">SPECIAL_NEXT_BACKCOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74363b092043e0727651734bb4c7260fd00f">SPECIAL_NEXT_FORECOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436c86c7dce251001a2224fd964070f6c0a">SPECIAL_NEXT_USER_BACKCOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74366be7595db6bb019f6f724934792fa5f3">SPECIAL_NEXT_USER_FORECOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74360b620d7bb01d06eff57cfefac6141be9">SPECIAL_PREVIOUS_BACKCOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436d325d22f19e4287cf0fd47d15cab373d">SPECIAL_PREVIOUS_FORECOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436601c71c26107d11b06fc793410241fb7">SPECIAL_PREVIOUS_USER_BACKCOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74365e4e3e77e19f9a76db6f532fa79c921f">SPECIAL_PREVIOUS_USER_FORECOLOR</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436681473bcdba1b4c1e5e17963d17b6ad6">SPECIAL_RETRECIR_PINCEAU</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, and <a class="el" href="global_8h.html#1939abe8065d186565a307692a60b8bc">Touche_ANSI</a>.</p>
+<p>References <a class="el" href="global_8h.html#eebc1f6460ec1760cd5e4778ae580079">Allow_color_change_during_operation</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="input_8c.html#4933fb93bafd7ab1ecc787d3456d1f86">Is_shortcut()</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#ba882abad51a370d47a72e1bd5ffb5d1">Key_ANSI</a>, <a class="el" href="clavier_8c.html#50e0882341c9d98861b9b3480c086785">Keysym_to_ANSI()</a>, <a class="el" href="clavier_8c.html#73d0086f13b960535b84faa3e8ee21c9">Keysym_to_keycode()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#acdbb911967314adba4e95fe03a515a1">Operation_stack_size</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97fe512e5fddfd78b53f29f07adab435b3">SPECIAL_BIGGER_PAINTBRUSH</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff974a07bb1f411e4197b56dcb7433276f28">SPECIAL_CLICK_LEFT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff9762935e7ee9e1bdf0f9078d19515e806e">SPECIAL_CLICK_RIGHT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff972c03b0c86a88af9e0c4a1b9435c1aeda">SPECIAL_MOUSE_DOWN</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97b2cc2e1b7011092b3e98bc0f32d7b658">SPECIAL_MOUSE_LEFT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff975bc6e170646ea48ad7f15dabaf43101a">SPECIAL_MOUSE_RIGHT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97de3aa9c097c43ecff57ccfdddaa8ea43">SPECIAL_MOUSE_UP</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff977eb56d12bd08255174257ccd17030867">SPECIAL_NEXT_BACKCOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff973b092043e0727651734bb4c7260fd00f">SPECIAL_NEXT_FORECOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97c86c7dce251001a2224fd964070f6c0a">SPECIAL_NEXT_USER_BACKCOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff976be7595db6bb019f6f724934792fa5f3">SPECIAL_NEXT_USER_FORECOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff970b620d7bb01d06eff57cfefac6141be9">SPECIAL_PREVIOUS_BACKCOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97d325d22f19e4287cf0fd47d15cab373d">SPECIAL_PREVIOUS_FORECOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97601c71c26107d11b06fc793410241fb7">SPECIAL_PREVIOUS_USER_BACKCOLOR</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff975e4e3e77e19f9a76db6f532fa79c921f">SPECIAL_PREVIOUS_USER_FORECOLOR</a>, and <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff970b8714960b94a3746ff49ee2299feb02">SPECIAL_SMALLER_PAINTBRUSH</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="7f370e4d1477b66b47cfb60a4e3ce692"></a><!-- doxytag: member="input.c::Relache_controle" ref="7f370e4d1477b66b47cfb60a4e3ce692" args="(int CodeTouche, int Modifieur)" -->
+<a class="anchor" name="fecc5cc42e04d4bf1418c99e4b6b0ecc"></a><!-- doxytag: member="input.c::Release_control" ref="fecc5cc42e04d4bf1418c99e4b6b0ecc" args="(int key_code, int modifier)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Relache_controle           </td>
+          <td class="memname">int Release_control           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>CodeTouche</em>, </td>
+          <td class="paramname"> <em>key_code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Modifieur</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>modifier</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -419,18 +373,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#fe053f70f9364d3deedad4ef574483e4">Config_Touche</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74364a07bb1f411e4197b56dcb7433276f28">SPECIAL_CLICK_LEFT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c743662935e7ee9e1bdf0f9078d19515e806e">SPECIAL_CLICK_RIGHT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74362c03b0c86a88af9e0c4a1b9435c1aeda">SPECIAL_MOUSE_DOWN</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436b2cc2e1b7011092b3e98bc0f32d7b658">SPECIAL_MOUSE_LEFT</a>, <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c74365bc6e170646ea48ad7f15dabaf43101a">SPECIAL_MOUSE_RIGHT</a>, and <a class="el" href="const_8h.html#3541eaa1a973795459840a29fb1c7436de3aa9c097c43ecff57ccfdddaa8ea43">SPECIAL_MOUSE_UP</a>.</p>
+<p>References <a class="el" href="global_8h.html#a85ac83d796b14ef626ad084d6ac74d3">Config_Key</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff974a07bb1f411e4197b56dcb7433276f28">SPECIAL_CLICK_LEFT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff9762935e7ee9e1bdf0f9078d19515e806e">SPECIAL_CLICK_RIGHT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff972c03b0c86a88af9e0c4a1b9435c1aeda">SPECIAL_MOUSE_DOWN</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97b2cc2e1b7011092b3e98bc0f32d7b658">SPECIAL_MOUSE_LEFT</a>, <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff975bc6e170646ea48ad7f15dabaf43101a">SPECIAL_MOUSE_RIGHT</a>, and <a class="el" href="const_8h.html#d3f3c807128a4b233461622c3dc0ff97de3aa9c097c43ecff57ccfdddaa8ea43">SPECIAL_MOUSE_UP</a>.</p>
 
-<p>Referenced by <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, and <a class="el" href="input_8c.html#f53e664fe2cebe690fefbd04630fa928">Handle_Key_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, and <a class="el" href="input_8c.html#ce5166cecd1b4e569b998d2037a45527">Handle_key_release()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="f53e664fe2cebe690fefbd04630fa928"></a><!-- doxytag: member="input.c::Handle_Key_Release" ref="f53e664fe2cebe690fefbd04630fa928" args="(SDL_KeyboardEvent event)" -->
+<a class="anchor" name="ce5166cecd1b4e569b998d2037a45527"></a><!-- doxytag: member="input.c::Handle_key_release" ref="ce5166cecd1b4e569b998d2037a45527" args="(SDL_KeyboardEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Key_Release           </td>
+          <td class="memname">int Handle_key_release           </td>
           <td>(</td>
           <td class="paramtype">SDL_KeyboardEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -443,18 +397,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="clavier_8c.html#eb5d48f372846b872b3346fc865e9103">Conversion_Touche()</a>, <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>References <a class="el" href="clavier_8c.html#73d0086f13b960535b84faa3e8ee21c9">Keysym_to_keycode()</a>, <a class="el" href="global_8h.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="global_8h.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="global_8h.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="aca0236fd1ad2c48943f42598af9807c"></a><!-- doxytag: member="input.c::Handle_Joystick_Press" ref="aca0236fd1ad2c48943f42598af9807c" args="(SDL_JoyButtonEvent event)" -->
+<a class="anchor" name="3c8c79435772b63eb3f7e8ad6af44042"></a><!-- doxytag: member="input.c::Handle_joystick_press" ref="3c8c79435772b63eb3f7e8ad6af44042" args="(SDL_JoyButtonEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Joystick_Press           </td>
+          <td class="memname">int Handle_joystick_press           </td>
           <td>(</td>
           <td class="paramtype">SDL_JoyButtonEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -467,18 +421,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#630f13213660177775a5dcc492dc6efc">Button_alt</a>, <a class="el" href="input_8c.html#38dddfefbd243ae1a2d488471958958c">Button_clic_droit</a>, <a class="el" href="input_8c.html#7220702c4fc8f89e51c397f2bc23bd3e">Button_clic_gauche</a>, <a class="el" href="input_8c.html#877764aa0cf72e2e1d3c96f04ba0edae">Button_control</a>, <a class="el" href="input_8c.html#e61245a5323f0232c7b8ba62acc57b91">Button_shift</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="clavier_8c.html#1d20390ad7963a219ad5c69ff346ad2a">Modificateurs_Touche()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, and <a class="el" href="gfxcfg_8c.html#a693203d472b8bc0d5e898aa57a6ee61">TOUCHE_BUTTON</a>.</p>
+<p>References <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="input_8c.html#8495a4b76a7adc5c2f6580489d7bf0ec">Joybutton_alt</a>, <a class="el" href="input_8c.html#010b48a6692993a2392e9cd42443f9fb">Joybutton_control</a>, <a class="el" href="input_8c.html#3437f2789b7f7a34b85b344466b93832">Joybutton_left_click</a>, <a class="el" href="input_8c.html#a4ef7c5fd9058d69f01242d59bf82b45">Joybutton_right_click</a>, <a class="el" href="input_8c.html#0c426dd0ea9a2ff68cbd780c423c01c8">Joybutton_shift</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#d5f55e0da301996da705cfb4829cd2c3">KEY_JOYBUTTON</a>, <a class="el" href="clavier_8c.html#c39b48ab31f617e5689999f391776064">Key_modifiers()</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="1c3439603e94fceba033dc1c73046acd"></a><!-- doxytag: member="input.c::Handle_Joystick_Release" ref="1c3439603e94fceba033dc1c73046acd" args="(SDL_JoyButtonEvent event)" -->
+<a class="anchor" name="26f1b8e8ba3b4d8ffdf59ed474c98b2d"></a><!-- doxytag: member="input.c::Handle_joystick_release" ref="26f1b8e8ba3b4d8ffdf59ed474c98b2d" args="(SDL_JoyButtonEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Handle_Joystick_Release           </td>
+          <td class="memname">int Handle_joystick_release           </td>
           <td>(</td>
           <td class="paramtype">SDL_JoyButtonEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -491,18 +445,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#630f13213660177775a5dcc492dc6efc">Button_alt</a>, <a class="el" href="input_8c.html#877764aa0cf72e2e1d3c96f04ba0edae">Button_control</a>, <a class="el" href="input_8c.html#e61245a5323f0232c7b8ba62acc57b91">Button_shift</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>, <a class="el" href="gfxcfg_8c.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="gfxcfg_8c.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="gfxcfg_8c.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>References <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>, <a class="el" href="input_8c.html#8495a4b76a7adc5c2f6580489d7bf0ec">Joybutton_alt</a>, <a class="el" href="input_8c.html#010b48a6692993a2392e9cd42443f9fb">Joybutton_control</a>, <a class="el" href="input_8c.html#0c426dd0ea9a2ff68cbd780c423c01c8">Joybutton_shift</a>, <a class="el" href="global_8h.html#6b2d0dbee4745049e0df5982809bd8f9">MOD_ALT</a>, <a class="el" href="global_8h.html#f049e1e7c61ece4f3fbcec7c7c678912">MOD_CTRL</a>, <a class="el" href="global_8h.html#80466852094a4327279c19227119f908">MOD_SHIFT</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="85bdc72da721517408c5d45d02cba94f"></a><!-- doxytag: member="input.c::Handle_Joystick_Movement" ref="85bdc72da721517408c5d45d02cba94f" args="(SDL_JoyAxisEvent event)" -->
+<a class="anchor" name="badd574d8de813c147bb14836c7f5c2d"></a><!-- doxytag: member="input.c::Handle_joystick_movement" ref="badd574d8de813c147bb14836c7f5c2d" args="(SDL_JoyAxisEvent event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Handle_Joystick_Movement           </td>
+          <td class="memname">void Handle_joystick_movement           </td>
           <td>(</td>
           <td class="paramtype">SDL_JoyAxisEvent&nbsp;</td>
           <td class="paramname"> <em>event</em>          </td>
@@ -521,7 +475,7 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="a1648bdf48ae2c8fc879454a4aa4a21f"></a><!-- doxytag: member="input.c::Cursor_displace" ref="a1648bdf48ae2c8fc879454a4aa4a21f" args="(short Delta_X, short Delta_Y)" -->
+<a class="anchor" name="fea4b7be826453df47084df185e70782"></a><!-- doxytag: member="input.c::Cursor_displace" ref="fea4b7be826453df47084df185e70782" args="(short delta_x, short delta_y)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -529,13 +483,13 @@ window.onload = initDynSections;
           <td class="memname">int Cursor_displace           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Delta_X</em>, </td>
+          <td class="paramname"> <em>delta_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Delta_Y</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>delta_y</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -548,7 +502,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#4832486ae2e8cb0da5a1d69287adcd71">Hauteur_ecran</a>, <a class="el" href="input_8c.html#446353335506894525a321213a526062">INPUT_Nouveau_Mouse_X</a>, <a class="el" href="input_8c.html#969eee4ba6f68a63a8293998cb46399b">INPUT_Nouveau_Mouse_Y</a>, <a class="el" href="global_8h.html#71463060a85d2c31eea4d9a16c535e4c">Largeur_ecran</a>, <a class="el" href="global_8h.html#d5944d3555e9ddbd0f35e0cc51d72914">Loupe_Facteur</a>, <a class="el" href="global_8h.html#4f5e6ab2338af71ae4064d2ab9c5a985">Loupe_Mode</a>, <a class="el" href="divers_8c.html#e0199be6ac193f13366c20da05dbbef5">Max()</a>, <a class="el" href="divers_8c.html#0e98c679b4ab60b59a3c88432d6a1c2f">Min()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, and <a class="el" href="global_8h.html#a10b04149a8f9950079cb17c904f0b5c">Principal_Split</a>.</p>
+<p>References <a class="el" href="input_8c.html#673e53e18e536fcc9f975ee781dc2b30">Input_new_mouse_X</a>, <a class="el" href="input_8c.html#eb41796af370ff3eafa43ded1194e9b5">Input_new_mouse_Y</a>, <a class="el" href="global_8h.html#0ac98f60637f9c38e92f263474f2d436">Main_magnifier_factor</a>, <a class="el" href="global_8h.html#f5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#5b0b3eb2d659e5548f885979a04064fd">Main_separator_position</a>, <a class="el" href="divers_8c.html#735a63fa1a71c1a3f4cf51286466cea1">Max()</a>, <a class="el" href="divers_8c.html#d653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, <a class="el" href="global_8h.html#6ce95c99df7f9f0220eecea205d81c11">Screen_height</a>, <a class="el" href="global_8h.html#57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>, and <a class="el" href="structT__Polygon__edge.html#7991f0ba40253d4e7161efb8f4498cc8">T_Polygon_edge::x</a>.</p>
 
 <p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>.</p>
 
@@ -572,9 +526,9 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="input_8c.html#a1648bdf48ae2c8fc879454a4aa4a21f">Cursor_displace()</a>, <a class="el" href="input_8c.html#dc07e1922f1cfe93cb743b140e15c99e">Directional_delay</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#9c407d583501eccfd1754d792e2de12f">Directional_last_move</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#c6e1b8af5d42441862267ea0bd9e2d7e">Directional_step</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="sdlscreen_8c.html#93853989aee9a7a6d6b9398fa36b6c70">Flush_update()</a>, <a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, <a class="el" href="input_8c.html#f53e664fe2cebe690fefbd04630fa928">Handle_Key_Release()</a>, <a class="el" href="input_8c.html#eaa7965ed657408b1572984b7369d346">Handle_Mouse_Click()</a>, <a class="el" href="input_8c.html#457fb6802edc329b534fdc63ca50e2d8">Handle_Mouse_Move()</a>, <a class="el" href="input_8c.html#511c0652be2ba8bc6a46df2683a5ad36">Handle_Mouse_Release()</a>, <a class="el" href="input_8c.html#2a82d41932898443804744c30bd5a80a">Handle_Window_Exit()</a>, <a class="el" href="input_8c.html#0f65bd32acdf8d96135b0f51fba459b9">Handle_Window_Resize()</a>, <a class="el" href="input_8c.html#dab9be2781703528037edf56911a77f4">Mouse_count</a>, <a class="el" href="global_8h.html#cad5ab65848f5ae7ccfa2e524e89e808">Touche</a>, and <a class="el" href="global_8h.html#1939abe8065d186565a307692a60b8bc">Touche_ANSI</a>.</p>
+<p>References <a class="el" href="input_8c.html#fea4b7be826453df47084df185e70782">Cursor_displace()</a>, <a class="el" href="input_8c.html#dc07e1922f1cfe93cb743b140e15c99e">Directional_delay</a>, <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>, <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>, <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>, <a class="el" href="input_8c.html#9c407d583501eccfd1754d792e2de12f">Directional_last_move</a>, <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>, <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>, <a class="el" href="input_8c.html#c6e1b8af5d42441862267ea0bd9e2d7e">Directional_step</a>, <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>, <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>, <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>, <a class="el" href="sdlscreen_8c.html#93853989aee9a7a6d6b9398fa36b6c70">Flush_update()</a>, <a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, <a class="el" href="input_8c.html#ce5166cecd1b4e569b998d2037a45527">Handle_key_release()</a>, <a class="el" href="input_8c.html#b157112ad58fc4fcdafa94aa35f9c2ac">Handle_mouse_click()</a>, <a class="el" href="input_8c.html#aa2fb8d4c5b38144f211b843ec73c76e">Handle_mouse_move()</a>, <a class="el" href="input_8c.html#eb9358d5687dd17c3a8c6a1d5b850847">Handle_mouse_release()</a>, <a class="el" href="input_8c.html#e02965ea2f262a8f7c6c7ce0da0f3f0d">Handle_window_exit()</a>, <a class="el" href="input_8c.html#80426d0b765212312bb7893e3e23f97f">Handle_window_resize()</a>, <a class="el" href="global_8h.html#976bf0e974e49511081dcd5ffdbeddeb">Key</a>, <a class="el" href="global_8h.html#ba882abad51a370d47a72e1bd5ffb5d1">Key_ANSI</a>, and <a class="el" href="input_8c.html#dab9be2781703528037edf56911a77f4">Mouse_count</a>.</p>
 
-<p>Referenced by <a class="el" href="moteur_8h.html#271223a0aa91f89715e4b3215c040d49">Attendre_click_dans_palette()</a>, <a class="el" href="shade_8c.html#2c1b584007a48f9dda6cba73642d50d1">Attendre_click_dans_shade()</a>, <a class="el" href="divers_8h.html#5bc9ce57e8bd1e013f7fe02c30903d1c">Attendre_fin_de_click()</a>, <a class="el" href="boutons_8h.html#9a6900c720dfe2bdfbbf5781e8d63808">Bouton_Message_initial()</a>, <a class="el" href="moteur_8c.html#fd68d1e39c424d1c54a47777c798fadd">Deplacer_fenetre()</a>, <a class="el" href="moteur_8c.html#e294e616e788c5d3667d7c1a70f4af6c">Deplacer_Split()</a>, <a class="el" href="moteur_8h.html#047d5c4431ce0351abe4b8c098a3bbcb">Fenetre_Bouton_clicke()</a>, <a class="el" href="moteur_8c.html#3729db55c872200c019188e8beb46898">Fenetre_bouton_normal_click()</a>, <a class="el" href="moteur_8c.html#dd7a9fb13349024ead4f093ed5034629">Fenetre_Dropdown_click()</a>, <a class="el" href="moteur_8h.html#063efffc30ceaf75367a556752e5de6b">Gestion_principale()</a>, <a class="el" href="readline_8h.html#0c7c39d01861a273fd308441203245c5">Readline_ex()</a>, <a class="el" href="moteur_8h.html#f28758e05c5bf643ad8a005b72d24765">Recuperer_couleur_derriere_fenetre()</a>, <a class="el" href="aide_8c.html#1c18b4a4b52e963e0147d9124dfc9532">Redefinir_controle()</a>, and <a class="el" href="divers_8h.html#0ece07578d5002d5b29784e3fb14cb64">Tempo_jauge()</a>.</p>
+<p>Referenced by <a class="el" href="boutons_8h.html#1a9e922a028080dab666d893574a382c">Button_Message_initial()</a>, <a class="el" href="moteur_8h.html#a22e122622e93cfc55c6ce79d739c3c9">Get_color_behind_window()</a>, <a class="el" href="moteur_8h.html#42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="moteur_8c.html#906143211234ac6c3ee5f4635f3a90bd">Move_separator()</a>, <a class="el" href="moteur_8c.html#589f602e6b1271bcf454dfdbb2b576e7">Move_window()</a>, <a class="el" href="readline_8h.html#c581f2c9560f1c6e7f1c61039c7787e1">Readline_ex()</a>, <a class="el" href="aide_8c.html#2cf00e9a04e519dad8d025b44852bc61">Redefine_control()</a>, <a class="el" href="divers_8h.html#ce95366b3271f0d48d429b87d9c70d2f">Slider_timer()</a>, <a class="el" href="moteur_8h.html#15e3f726b82975c6c1a35430155089de">Wait_click_in_palette()</a>, <a class="el" href="shade_8c.html#9be0633320d9b4a6386464fff1eca79e">Wait_click_in_shade_table()</a>, <a class="el" href="divers_8h.html#9148d5b17ed7303cf67b3184c80d625e">Wait_end_of_click()</a>, <a class="el" href="moteur_8h.html#eebd46ea06ee04d2a007ed6636fc3f25">Window_clicked_button()</a>, <a class="el" href="moteur_8c.html#e2ab97d33f45722b8b7f69c449724f92">Window_dropdown_on_click()</a>, and <a class="el" href="moteur_8c.html#a5684b29e4b1131f0ee29e044fde4856">Window_normal_button_onclick()</a>.</p>
 
 </div>
 </div><p>
@@ -584,7 +538,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#9bf4f30e8507c35bff658d465b1678ad">Directional_up</a>          </td>
         </tr>
       </table>
 </div>
@@ -592,7 +546,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
@@ -601,7 +555,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#5ebaf122374115c300fa1fad5464cdd1">Directional_up_right</a>          </td>
         </tr>
       </table>
 </div>
@@ -609,7 +563,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
@@ -618,7 +572,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#1e5e3d499e5e31347596eb198441857b">Directional_right</a>          </td>
         </tr>
       </table>
 </div>
@@ -626,7 +580,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
@@ -635,7 +589,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#a2ba195a54390adea63210de7e0f8de1">Directional_down_right</a>          </td>
         </tr>
       </table>
 </div>
@@ -643,7 +597,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
@@ -652,7 +606,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#d2cb0be84bb0f47cab7fdb49f8c22501">Directional_down</a>          </td>
         </tr>
       </table>
 </div>
@@ -660,7 +614,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
@@ -669,7 +623,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#a3d9113efa126f5e5fd647f9d31869ee">Directional_down_left</a>          </td>
         </tr>
       </table>
 </div>
@@ -677,7 +631,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
@@ -686,7 +640,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#dbb8bf844bc8a159e611429ea3671ed0">Directional_left</a>          </td>
         </tr>
       </table>
 </div>
@@ -694,7 +648,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#85bdc72da721517408c5d45d02cba94f">Handle_Joystick_Movement()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#badd574d8de813c147bb14836c7f5c2d">Handle_joystick_movement()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
@@ -703,7 +657,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#fd8406a5fbac0e7b942f3b2d29832287">Directional_up_left</a>          </td>
         </tr>
       </table>
 </div>
@@ -711,7 +665,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8h.html#1bf7bef2c4a42c1691f00798ff31ccba">Get_input()</a>, <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
@@ -783,12 +737,12 @@ window.onload = initDynSections;
 
 </div>
 </div><p>
-<a class="anchor" name="446353335506894525a321213a526062"></a><!-- doxytag: member="input.c::INPUT_Nouveau_Mouse_X" ref="446353335506894525a321213a526062" args="" -->
+<a class="anchor" name="673e53e18e536fcc9f975ee781dc2b30"></a><!-- doxytag: member="input.c::Input_new_mouse_X" ref="673e53e18e536fcc9f975ee781dc2b30" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="input_8c.html#446353335506894525a321213a526062">INPUT_Nouveau_Mouse_X</a>          </td>
+          <td class="memname">word <a class="el" href="input_8c.html#673e53e18e536fcc9f975ee781dc2b30">Input_new_mouse_X</a>          </td>
         </tr>
       </table>
 </div>
@@ -796,16 +750,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#a1648bdf48ae2c8fc879454a4aa4a21f">Cursor_displace()</a>, <a class="el" href="input_8c.html#457fb6802edc329b534fdc63ca50e2d8">Handle_Mouse_Move()</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#fea4b7be826453df47084df185e70782">Cursor_displace()</a>, <a class="el" href="input_8c.html#aa2fb8d4c5b38144f211b843ec73c76e">Handle_mouse_move()</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="969eee4ba6f68a63a8293998cb46399b"></a><!-- doxytag: member="input.c::INPUT_Nouveau_Mouse_Y" ref="969eee4ba6f68a63a8293998cb46399b" args="" -->
+<a class="anchor" name="eb41796af370ff3eafa43ded1194e9b5"></a><!-- doxytag: member="input.c::Input_new_mouse_Y" ref="eb41796af370ff3eafa43ded1194e9b5" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="input_8c.html#969eee4ba6f68a63a8293998cb46399b">INPUT_Nouveau_Mouse_Y</a>          </td>
+          <td class="memname">word <a class="el" href="input_8c.html#eb41796af370ff3eafa43ded1194e9b5">Input_new_mouse_Y</a>          </td>
         </tr>
       </table>
 </div>
@@ -813,16 +767,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#a1648bdf48ae2c8fc879454a4aa4a21f">Cursor_displace()</a>, <a class="el" href="input_8c.html#457fb6802edc329b534fdc63ca50e2d8">Handle_Mouse_Move()</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#fea4b7be826453df47084df185e70782">Cursor_displace()</a>, <a class="el" href="input_8c.html#aa2fb8d4c5b38144f211b843ec73c76e">Handle_mouse_move()</a>, and <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="3eb891f4f6797408f260c6cd5632e6ac"></a><!-- doxytag: member="input.c::INPUT_Nouveau_Mouse_K" ref="3eb891f4f6797408f260c6cd5632e6ac" args="" -->
+<a class="anchor" name="9df561d262ff86cc983a48f929c2289d"></a><!-- doxytag: member="input.c::Input_new_mouse_K" ref="9df561d262ff86cc983a48f929c2289d" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="input_8c.html#3eb891f4f6797408f260c6cd5632e6ac">INPUT_Nouveau_Mouse_K</a>          </td>
+          <td class="memname">byte <a class="el" href="input_8c.html#9df561d262ff86cc983a48f929c2289d">Input_new_mouse_K</a>          </td>
         </tr>
       </table>
 </div>
@@ -830,16 +784,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>, <a class="el" href="input_8c.html#0c4380c67a7ccc5b02c9c811aab85919">Handle_Key_Press()</a>, <a class="el" href="input_8c.html#eaa7965ed657408b1572984b7369d346">Handle_Mouse_Click()</a>, <a class="el" href="input_8c.html#511c0652be2ba8bc6a46df2683a5ad36">Handle_Mouse_Release()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, and <a class="el" href="input_8c.html#7f370e4d1477b66b47cfb60a4e3ce692">Relache_controle()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>, <a class="el" href="input_8c.html#5cd36c7212a3d50a91b39a3e0796be6d">Handle_key_press()</a>, <a class="el" href="input_8c.html#b157112ad58fc4fcdafa94aa35f9c2ac">Handle_mouse_click()</a>, <a class="el" href="input_8c.html#eb9358d5687dd17c3a8c6a1d5b850847">Handle_mouse_release()</a>, <a class="el" href="input_8c.html#d2c0c70d08cd207f823d18ecb75fdb20">Move_cursor_with_constraints()</a>, and <a class="el" href="input_8c.html#fecc5cc42e04d4bf1418c99e4b6b0ecc">Release_control()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="e61245a5323f0232c7b8ba62acc57b91"></a><!-- doxytag: member="input.c::Button_shift" ref="e61245a5323f0232c7b8ba62acc57b91" args="" -->
+<a class="anchor" name="0c426dd0ea9a2ff68cbd780c423c01c8"></a><!-- doxytag: member="input.c::Joybutton_shift" ref="0c426dd0ea9a2ff68cbd780c423c01c8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short <a class="el" href="input_8c.html#e61245a5323f0232c7b8ba62acc57b91">Button_shift</a> = -1          </td>
+          <td class="memname">short <a class="el" href="input_8c.html#0c426dd0ea9a2ff68cbd780c423c01c8">Joybutton_shift</a> = -1          </td>
         </tr>
       </table>
 </div>
@@ -847,16 +801,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="877764aa0cf72e2e1d3c96f04ba0edae"></a><!-- doxytag: member="input.c::Button_control" ref="877764aa0cf72e2e1d3c96f04ba0edae" args="" -->
+<a class="anchor" name="010b48a6692993a2392e9cd42443f9fb"></a><!-- doxytag: member="input.c::Joybutton_control" ref="010b48a6692993a2392e9cd42443f9fb" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short <a class="el" href="input_8c.html#877764aa0cf72e2e1d3c96f04ba0edae">Button_control</a> = -1          </td>
+          <td class="memname">short <a class="el" href="input_8c.html#010b48a6692993a2392e9cd42443f9fb">Joybutton_control</a> = -1          </td>
         </tr>
       </table>
 </div>
@@ -864,16 +818,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="630f13213660177775a5dcc492dc6efc"></a><!-- doxytag: member="input.c::Button_alt" ref="630f13213660177775a5dcc492dc6efc" args="" -->
+<a class="anchor" name="8495a4b76a7adc5c2f6580489d7bf0ec"></a><!-- doxytag: member="input.c::Joybutton_alt" ref="8495a4b76a7adc5c2f6580489d7bf0ec" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short <a class="el" href="input_8c.html#630f13213660177775a5dcc492dc6efc">Button_alt</a> = -1          </td>
+          <td class="memname">short <a class="el" href="input_8c.html#8495a4b76a7adc5c2f6580489d7bf0ec">Joybutton_alt</a> = -1          </td>
         </tr>
       </table>
 </div>
@@ -881,16 +835,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>, and <a class="el" href="input_8c.html#1c3439603e94fceba033dc1c73046acd">Handle_Joystick_Release()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>, and <a class="el" href="input_8c.html#26f1b8e8ba3b4d8ffdf59ed474c98b2d">Handle_joystick_release()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="7220702c4fc8f89e51c397f2bc23bd3e"></a><!-- doxytag: member="input.c::Button_clic_gauche" ref="7220702c4fc8f89e51c397f2bc23bd3e" args="" -->
+<a class="anchor" name="3437f2789b7f7a34b85b344466b93832"></a><!-- doxytag: member="input.c::Joybutton_left_click" ref="3437f2789b7f7a34b85b344466b93832" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short <a class="el" href="input_8c.html#7220702c4fc8f89e51c397f2bc23bd3e">Button_clic_gauche</a> = 0          </td>
+          <td class="memname">short <a class="el" href="input_8c.html#3437f2789b7f7a34b85b344466b93832">Joybutton_left_click</a> = 0          </td>
         </tr>
       </table>
 </div>
@@ -898,16 +852,16 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="38dddfefbd243ae1a2d488471958958c"></a><!-- doxytag: member="input.c::Button_clic_droit" ref="38dddfefbd243ae1a2d488471958958c" args="" -->
+<a class="anchor" name="a4ef7c5fd9058d69f01242d59bf82b45"></a><!-- doxytag: member="input.c::Joybutton_right_click" ref="a4ef7c5fd9058d69f01242d59bf82b45" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short <a class="el" href="input_8c.html#38dddfefbd243ae1a2d488471958958c">Button_clic_droit</a> = 0          </td>
+          <td class="memname">short <a class="el" href="input_8c.html#a4ef7c5fd9058d69f01242d59bf82b45">Joybutton_right_click</a> = 0          </td>
         </tr>
       </table>
 </div>
@@ -915,12 +869,12 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="input_8c.html#aca0236fd1ad2c48943f42598af9807c">Handle_Joystick_Press()</a>.</p>
+<p>Referenced by <a class="el" href="input_8c.html#3c8c79435772b63eb3f7e8ad6af44042">Handle_joystick_press()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

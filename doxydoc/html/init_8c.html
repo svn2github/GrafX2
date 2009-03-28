@@ -64,8 +64,6 @@ window.onload = initDynSections;
 <div class="contents">
 <h1>init.c File Reference</h1><code>#include &lt;fcntl.h&gt;</code><br>
 <code>#include &lt;stdio.h&gt;</code><br>
-<code>#include &lt;sys/types.h&gt;</code><br>
-<code>#include &lt;sys/stat.h&gt;</code><br>
 <code>#include &lt;string.h&gt;</code><br>
 <code>#include &lt;unistd.h&gt;</code><br>
 <code>#include &lt;stdlib.h&gt;</code><br>
@@ -85,7 +83,6 @@ window.onload = initDynSections;
 <code>#include &quot;<a class="el" href="clavier_8h.html">clavier.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="io_8h.html">io.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="hotkeys_8h.html">hotkeys.h</a>&quot;</code><br>
-<code>#include &quot;<a class="el" href="files_8h.html">files.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="setup_8h.html">setup.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="windows_8h.html">windows.h</a>&quot;</code><br>
 <code>#include &quot;<a class="el" href="sdlscreen_8h.html">sdlscreen.h</a>&quot;</code><br>
@@ -94,77 +91,77 @@ window.onload = initDynSections;
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#304b0196f0bb9394658cdcbe58652fdb">Chercher_bas</a> (SDL_Surface *GUI, int *Debut_X, int *Debut_Y, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur_neutre, char *Section)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#b1881da96d24c43de0f76aaad7720195">GUI_seek_down</a> (SDL_Surface *gui, int *start_x, int *start_y, byte neutral_color, char *section)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#9076115526d187ecf6e4e5e9ad98b85e">Chercher_droite</a> (SDL_Surface *GUI, int *Debut_X, int Debut_Y, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Couleur_neutre, char *Section)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#e6f0ce04a87cd819e18fb99621dc52d5">GUI_seek_right</a> (SDL_Surface *gui, int *start_x, int start_y, byte neutral_color, char *section)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#b3f13ff0ac5efcf6d8c5096d80ab1ef1">Lire_bloc</a> (SDL_Surface *GUI, int Debut_X, int Debut_Y, void *Dest, int <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, int <a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>, char *Section, int Type)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#2402d61c14d1297fbbda273831fc49cb">Read_GUI_block</a> (SDL_Surface *gui, int start_x, int start_y, void *dest, int width, int height, char *section, int type)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a6cbfa93eaa52f1f82af4fea52cb1a29">Lire_trame</a> (SDL_Surface *GUI, int Debut_X, int Debut_Y, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *Dest, char *Section)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#3d51877e8fffbeb5c8c1f8b1099b705b">Read_GUI_pattern</a> (SDL_Surface *gui, int start_x, int start_y, word *dest, char *section)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#602ef586f96b95e86db8e186cff2dfa1">Rien_du_tout</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#7ae0e21d04e4c072ef2930d23d8fa725">Do_nothing</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#d38ca1ae4c7067643a333f2e48a83d5b">Initialiser_bouton</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Numero, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#0d28e3259289f6b581dccbcc3e0c6bdf">Decalage_X</a>, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#222b23b7778c0a2852856d32d94087b7">Decalage_Y</a>, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> <a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="global_8h.html#e06dc39ca124fda352290892793aef60">Forme</a>, <a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a> <a class="el" href="global_8h.html#36ed47edbe0d76f4643fc1c9ce6b01d3">Gauche</a>, <a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a> <a class="el" href="global_8h.html#18610a81343007709df6475c5f673bf3">Droite</a>, <a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a> <a class="el" href="global_8h.html#4143d3958892c8ddb5cacce71250b889">Desenclencher</a>, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> <a class="el" href="global_8h.html#a5cc95e9ed6c1c5c652efcee0a443341">Famille</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#21c53cbc038c9ab83b6f9a9953ba4920">Init_button</a> (byte btn_number, word x_offset, word y_offset, word width, word height, byte shape, <a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a> <a class="el" href="global_8h.html#b0b3a84dda9d150e48e0510432fa7057">Gauche</a>, <a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a> <a class="el" href="global_8h.html#4504d1b50f7c07ceedd318adf2b961e9">Droite</a>, <a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a> <a class="el" href="global_8h.html#0bda92fa4c29165f6cf66a603315998f">Desenclencher</a>, byte family)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#8e2cb4e76fcbd7539c90c920665f7c40">Initialisation_des_boutons</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#377fdc29b1293a7db9de2377e9022f28">Init_buttons</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#2e9af314a4658b2f2600c5477e662614">Initialiser_operation</a> (<a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Numero_operation, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Numero_bouton_souris, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Taille_de_pile, <a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a> <a class="el" href="global_8h.html#5d2e7e55a1081821995cc3bab2552156">Action</a>, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Effacer_curseur)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#98921c4d4426152662e06a33b79d03d9">Init_operation</a> (byte operation_number, byte mouse_button, byte stack_index, <a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a> <a class="el" href="global_8h.html#a3ec8b9b7d5b86246b3397b6fc1eb53d">Action</a>, byte Hide_cursor)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#91fe359cc51d4843eda9abf05fa8af6b">Initialisation_des_operations</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#9d2e3197e08282bf4261ff4b6a18395d">Init_operations</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#421a5389cbdf1c0481683c558e6e7b1c">Definir_mode_video</a> (short <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, short <a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>, <a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a> Mode, <a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> Fullscreen)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#05d192ba58c39730e20a24055c2912e6">Set_video_mode</a> (short width, short height, byte mode, word fullscreen)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#c06389122e07a9c3a71edf80907c3cbc">Compare_modes_video</a> (const void *p1, const void *p2)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#daed1ff05064a53c429d6cfb7150ba59">Compare_video_modes</a> (const void *p1, const void *p2)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#3a746f07e9e26b371327fcece4f66aa0">Definition_des_modes_video</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#e9bec23ba7ee3bfbfeb3e9b6bd98cd26">Set_all_video_modes</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#95e24fc27e420f60c94da5448ca676e8">Charger_CFG</a> (int Tout_charger)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG</a> (int reload_all)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#80439b08857a437828e3c8d3aee5fe43">Sauver_CFG</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#bcf32ccea7a59ea789a14166ce614a49">Initialiser_les_tables_de_multiplication</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#6262ae4be7f119760ebbfee45b5c129c">Init_multiplication_tables</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#0f71bc8c7504682697c942cc48f10384">Config_par_defaut</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#2c31b4c4b1d3ce794dc318e55607bfb6">Set_config_defaults</a> (void)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#566de74b0bfa1e330e19d773b9140c41">Initialiser_sighandler</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#f950d05be068beedd7f678f2a1e5a7b6">Init_sighandler</a> (void)</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="304b0196f0bb9394658cdcbe58652fdb"></a><!-- doxytag: member="init.c::Chercher_bas" ref="304b0196f0bb9394658cdcbe58652fdb" args="(SDL_Surface *GUI, int *Debut_X, int *Debut_Y, byte Couleur_neutre, char *Section)" -->
+<a class="anchor" name="b1881da96d24c43de0f76aaad7720195"></a><!-- doxytag: member="init.c::GUI_seek_down" ref="b1881da96d24c43de0f76aaad7720195" args="(SDL_Surface *gui, int *start_x, int *start_y, byte neutral_color, char *section)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Chercher_bas           </td>
+          <td class="memname">void GUI_seek_down           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>GUI</em>, </td>
+          <td class="paramname"> <em>gui</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Debut_X</em>, </td>
+          <td class="paramname"> <em>start_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Debut_Y</em>, </td>
+          <td class="paramname"> <em>start_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur_neutre</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>neutral_color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Section</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>section</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,45 +174,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="erreurs_8h.html#1eaaeb3005eecdd9344d33213b87c24d">Erreur</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be561a062de7e076bd44376c4b8e873f31">ERREUR_GUI_CORROMPU</a>, and <a class="el" href="sdlscreen_8c.html#7d878c5015b12f71f88803e615953f72">Sdl_Get_pixel_8()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2579d728f2a7da66885ba503d750cd3138">ERROR_GUI_CORRUPTED</a>, and <a class="el" href="sdlscreen_8c.html#a9231294bfed21ed9848c156f66ab632">Get_SDL_pixel_8()</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="9076115526d187ecf6e4e5e9ad98b85e"></a><!-- doxytag: member="init.c::Chercher_droite" ref="9076115526d187ecf6e4e5e9ad98b85e" args="(SDL_Surface *GUI, int *Debut_X, int Debut_Y, byte Couleur_neutre, char *Section)" -->
+<a class="anchor" name="e6f0ce04a87cd819e18fb99621dc52d5"></a><!-- doxytag: member="init.c::GUI_seek_right" ref="e6f0ce04a87cd819e18fb99621dc52d5" args="(SDL_Surface *gui, int *start_x, int start_y, byte neutral_color, char *section)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Chercher_droite           </td>
+          <td class="memname">void GUI_seek_right           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>GUI</em>, </td>
+          <td class="paramname"> <em>gui</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&nbsp;</td>
-          <td class="paramname"> <em>Debut_X</em>, </td>
+          <td class="paramname"> <em>start_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Debut_Y</em>, </td>
+          <td class="paramname"> <em>start_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Couleur_neutre</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>neutral_color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Section</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>section</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,63 +225,63 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="erreurs_8h.html#1eaaeb3005eecdd9344d33213b87c24d">Erreur</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be561a062de7e076bd44376c4b8e873f31">ERREUR_GUI_CORROMPU</a>, <a class="el" href="sdlscreen_8c.html#7d878c5015b12f71f88803e615953f72">Sdl_Get_pixel_8()</a>, and <a class="el" href="structPOLYGON__EDGE.html#e79b22643cefa6bca87f2631a9fd0945">POLYGON_EDGE::w</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2579d728f2a7da66885ba503d750cd3138">ERROR_GUI_CORRUPTED</a>, <a class="el" href="sdlscreen_8c.html#a9231294bfed21ed9848c156f66ab632">Get_SDL_pixel_8()</a>, <a class="el" href="structT__Polygon__edge.html#f9946998df28912e1bcf8a7533404a11">T_Polygon_edge::w</a>, and <a class="el" href="structT__Polygon__edge.html#7991f0ba40253d4e7161efb8f4498cc8">T_Polygon_edge::x</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="b3f13ff0ac5efcf6d8c5096d80ab1ef1"></a><!-- doxytag: member="init.c::Lire_bloc" ref="b3f13ff0ac5efcf6d8c5096d80ab1ef1" args="(SDL_Surface *GUI, int Debut_X, int Debut_Y, void *Dest, int Largeur, int Hauteur, char *Section, int Type)" -->
+<a class="anchor" name="2402d61c14d1297fbbda273831fc49cb"></a><!-- doxytag: member="init.c::Read_GUI_block" ref="2402d61c14d1297fbbda273831fc49cb" args="(SDL_Surface *gui, int start_x, int start_y, void *dest, int width, int height, char *section, int type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Lire_bloc           </td>
+          <td class="memname">void Read_GUI_block           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>GUI</em>, </td>
+          <td class="paramname"> <em>gui</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Debut_X</em>, </td>
+          <td class="paramname"> <em>start_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Debut_Y</em>, </td>
+          <td class="paramname"> <em>start_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em>, </td>
+          <td class="paramname"> <em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Largeur</em>, </td>
+          <td class="paramname"> <em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Hauteur</em>, </td>
+          <td class="paramname"> <em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Section</em>, </td>
+          <td class="paramname"> <em>section</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Type</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -297,45 +294,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#d8b59d9ecd6ef59a2c327149b09b1d78">CM_Blanc</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="global_8h.html#5bd968f9c21db3d789e262dd96ee13d2">CM_Trans</a>, <a class="el" href="erreurs_8h.html#1eaaeb3005eecdd9344d33213b87c24d">Erreur</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be561a062de7e076bd44376c4b8e873f31">ERREUR_GUI_CORROMPU</a>, and <a class="el" href="sdlscreen_8c.html#7d878c5015b12f71f88803e615953f72">Sdl_Get_pixel_8()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2579d728f2a7da66885ba503d750cd3138">ERROR_GUI_CORRUPTED</a>, <a class="el" href="sdlscreen_8c.html#a9231294bfed21ed9848c156f66ab632">Get_SDL_pixel_8()</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="global_8h.html#7e054c109f7fbd1ff6f0040e7ed2ef34">MC_Trans</a>, <a class="el" href="global_8h.html#fbd82dcee5167f44b13793225060361b">MC_White</a>, and <a class="el" href="structT__Polygon__edge.html#7991f0ba40253d4e7161efb8f4498cc8">T_Polygon_edge::x</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>, and <a class="el" href="init_8c.html#a6cbfa93eaa52f1f82af4fea52cb1a29">Lire_trame()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>, and <a class="el" href="init_8c.html#3d51877e8fffbeb5c8c1f8b1099b705b">Read_GUI_pattern()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="a6cbfa93eaa52f1f82af4fea52cb1a29"></a><!-- doxytag: member="init.c::Lire_trame" ref="a6cbfa93eaa52f1f82af4fea52cb1a29" args="(SDL_Surface *GUI, int Debut_X, int Debut_Y, word *Dest, char *Section)" -->
+<a class="anchor" name="3d51877e8fffbeb5c8c1f8b1099b705b"></a><!-- doxytag: member="init.c::Read_GUI_pattern" ref="3d51877e8fffbeb5c8c1f8b1099b705b" args="(SDL_Surface *gui, int start_x, int start_y, word *dest, char *section)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Lire_trame           </td>
+          <td class="memname">void Read_GUI_pattern           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>GUI</em>, </td>
+          <td class="paramname"> <em>gui</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Debut_X</em>, </td>
+          <td class="paramname"> <em>start_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Debut_Y</em>, </td>
+          <td class="paramname"> <em>start_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a> *&nbsp;</td>
-          <td class="paramname"> <em>Dest</em>, </td>
+          <td class="paramtype">word *&nbsp;</td>
+          <td class="paramname"> <em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>Section</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>section</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -348,18 +345,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="init_8c.html#b3f13ff0ac5efcf6d8c5096d80ab1ef1">Lire_bloc()</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="init_8c.html#2402d61c14d1297fbbda273831fc49cb">Read_GUI_block()</a>, and <a class="el" href="structT__Polygon__edge.html#7991f0ba40253d4e7161efb8f4498cc8">T_Polygon_edge::x</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#aeb539f827bf9a55a73af4ccaea3da01">Charger_DAT()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#9978cfdc345f9431acfaf88ccfdc5cf1">Load_DAT()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="aeb539f827bf9a55a73af4ccaea3da01"></a><!-- doxytag: member="init.c::Charger_DAT" ref="aeb539f827bf9a55a73af4ccaea3da01" args="(void)" -->
+<a class="anchor" name="9978cfdc345f9431acfaf88ccfdc5cf1"></a><!-- doxytag: member="init.c::Load_DAT" ref="9978cfdc345f9431acfaf88ccfdc5cf1" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Charger_DAT           </td>
+          <td class="memname">void Load_DAT           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -372,18 +369,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#e5bb643c66488909117b5f54580ce95a">BLOCK_MENU</a>, <a class="el" href="init_8c.html#304b0196f0bb9394658cdcbe58652fdb">Chercher_bas()</a>, <a class="el" href="init_8c.html#9076115526d187ecf6e4e5e9ad98b85e">Chercher_droite()</a>, <a class="el" href="global_8h.html#d8b59d9ecd6ef59a2c327149b09b1d78">CM_Blanc</a>, <a class="el" href="global_8h.html#76e6f9f9677aa5d91e0cf13e38a3b7ea">CM_Clair</a>, <a class="el" href="global_8h.html#02a0b5b38a87add8d0effd7b1575f4e0">CM_Fonce</a>, <a class="el" href="global_8h.html#cd2803f162f85b24ac1c1b2a2c25b6de">CM_Noir</a>, <a class="el" href="global_8h.html#5bd968f9c21db3d789e262dd96ee13d2">CM_Trans</a>, <a class="el" href="global_8h.html#23a5a14a3c19ab7f00f1459b30f7c132">Curseur_Decalage_X</a>, <a class="el" href="global_8h.html#d2b860f9c57c30d1cbda5f80f899885c">Curseur_Decalage_Y</a>, <a class="el" href="erreurs_8h.html#1eaaeb3005eecdd9344d33213b87c24d">Erreur</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be22456fb9106fbdf6bad6050cc948fbfa">ERREUR_GUI_ABSENT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be561a062de7e076bd44376c4b8e873f31">ERREUR_GUI_CORROMPU</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be6998c75302ad373b61f274e9dc38f8cd">ERREUR_MEMOIRE</a>, <a class="el" href="global_8h.html#7cfc733b9288a1db646299f44117e3b7">Fonte</a>, <a class="el" href="global_8h.html#8f13653acdf13a69cb323ce07670c05e">Fonte_fun</a>, <a class="el" href="global_8h.html#873884336f0275db204976a35eec7033">Fonte_help_bold</a>, <a class="el" href="global_8h.html#9db34ec94e4dbd1ab77f949e22fcb407">Fonte_help_norm</a>, <a class="el" href="global_8h.html#3763a9d056c857dfd87980acfde0d489">Fonte_help_t1</a>, <a class="el" href="global_8h.html#7eade542fda24a35ad054e73df91084c">Fonte_help_t2</a>, <a class="el" href="global_8h.html#c1e8281ed059f5e6e52b0a4d03fa612e">Fonte_help_t3</a>, <a class="el" href="global_8h.html#e964e589ebfd0b83025d821d0858fe56">Fonte_help_t4</a>, <a class="el" href="global_8h.html#609755f741317c8581171e34d09da4ee">Fonte_systeme</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffccec243b5d2fab945b3f9f55622bc9949a9">FORME_CURSEUR_CIBLE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce2347d93627639279c640e679f6c5ac32">FORME_CURSEUR_CIBLE_FINE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce6f8e1bfae156da4724697f1b9fc255ed">FORME_CURSEUR_CIBLE_PIPETTE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce54d8a6d3e385bd62a3557226c086fd29">FORME_CURSEUR_CIBLE_PIPETTE_FINE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffccec5c853f904868573fc1bb35e0cf6147e">FORME_CURSEUR_FLECHE</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce884d9d9ae0e42ed4b416aed295059b33">FORME_CURSEUR_HORIZONTAL</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcceb20171213252a88a22c3af7fa79271d4">FORME_CURSEUR_MULTIDIRECTIONNEL</a>, <a class="el" href="const_8h.html#d443a3229c9090775400886ebdbffcce6cef0ff269d04ef95fc5d29735c4d2b7">FORME_CURSEUR_SABLIER</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1ec3cf2c0ddc10d551962198d7552c394">FORME_PINCEAU_ALEATOIRE</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1173c613a021923f37be605756a46774a">FORME_PINCEAU_ANTISLASH</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1eab6e5afc6e34685e01dc078338e04a5">FORME_PINCEAU_BARRE_HORIZONTALE</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef16d85b8c7e559fa058a578595a85228ee">FORME_PINCEAU_BARRE_VERTICALE</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1a30f4b492df004eecdb43657399fa2d1">FORME_PINCEAU_CARRE</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef19595b7b71b7606edcda4d45c96a3f01a">FORME_PINCEAU_CARRE_TRAME</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef169652f89662b7a1042d81bad6a20b3f4">FORME_PINCEAU_DIVERS</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef11e1dd756ebf9356cd19aee0249567a57">FORME_PINCEAU_LOSANGE</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1c98db20269790b1f29027d79f21843f8">FORME_PINCEAU_PLUS</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef142b94f17d5a6880c5bd31ebf156a6952">FORME_PINCEAU_ROND</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef17704f4226ac142de589eaab0ed16de02">FORME_PINCEAU_ROND_TRAME</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef197f77585145199b4b00bd2adef18ee9a">FORME_PINCEAU_SLASH</a>, <a class="el" href="const_8h.html#a4039b8d89fe9f09bf46438ed1152ef1460f2817bf7cf157ff4ec773a41ac5a5">FORME_PINCEAU_X</a>, <a class="el" href="const_8h.html#45b0893ecc130e9d0ea8c839f3c5f8b3">HAUTEUR_MENU</a>, <a class="el" href="const_8h.html#04cb6a1648a8d0cec050b46981c7c794">HAUTEUR_PINCEAU</a>, <a class="el" href="const_8h.html#e7150e0fc1b0025c65917e1338bb8c31">HAUTEUR_SPRITE_CURSEUR</a>, <a class="el" href="const_8h.html#96c65fdd5da9b3be8de622a1cabdb830">HAUTEUR_SPRITE_DRIVE</a>, <a class="el" href="const_8h.html#217c4d5322e621810f97576d11a5e961">HAUTEUR_SPRITE_MENU</a>, <a class="el" href="const_8h.html#b395b90346e292578f3b819b1863a5e2">LARGEUR_MENU</a>, <a class="el" href="const_8h.html#584b19a969e0de14a24c1daca13f6a6e">LARGEUR_PINCEAU</a>, <a class="el" href="const_8h.html#34c1aae58ecbe207469b2c5ec0a70d2b">LARGEUR_SPRITE_CURSEUR</a>, <a class="el" href="const_8h.html#36f88291270b1233f98694188a3a36e2">LARGEUR_SPRITE_DRIVE</a>, <a class="el" href="const_8h.html#b89506808c45d780b0ec58a097ed4bd2">LARGEUR_SPRITE_MENU</a>, <a class="el" href="init_8c.html#b3f13ff0ac5efcf6d8c5096d80ab1ef1">Lire_bloc()</a>, <a class="el" href="init_8c.html#a6cbfa93eaa52f1f82af4fea52cb1a29">Lire_trame()</a>, <a class="el" href="global_8h.html#dcaa6afb88354d24da5f39d3ee8bc019">Logo_GrafX2</a>, <a class="el" href="const_8h.html#2a8b0e5ca72fa705dff59c90e9cd3a66">NB_SPRITES_CURSEUR</a>, <a class="el" href="const_8h.html#5611fbf86a2e2de82fb0cb02b153ea32">NB_SPRITES_DRIVES</a>, <a class="el" href="const_8h.html#1a406bd243077e96fc2f7ba545abab2e">NB_SPRITES_EFFETS</a>, <a class="el" href="const_8h.html#f2a435a952242c18a0f60fa1c1e5eb70">NB_SPRITES_MENU</a>, <a class="el" href="const_8h.html#bbcdc459326adfeb968c80167f53a2db">NB_SPRITES_PINCEAU</a>, <a class="el" href="const_8h.html#6c0172d47d968b90d8c4abb7e76f07f6">NB_TRAMES_PREDEFINIES</a>, <a class="el" href="global_8h.html#a46c4ecdd41adf8bc3d8d580a80dd100">Palette_defaut</a>, <a class="el" href="global_8h.html#fb770fc60a2db4334d68dff8d45bb61b">Pinceau_predefini_Decalage_X</a>, <a class="el" href="global_8h.html#074c164ef01ff9736b02aa7efd84d896">Pinceau_predefini_Decalage_Y</a>, <a class="el" href="global_8h.html#96ec3c761b006e29d72a1c7a3445548d">Pinceau_predefini_Hauteur</a>, <a class="el" href="global_8h.html#5fc8f05acf016ea861dc40e89abcdc89">Pinceau_predefini_Largeur</a>, <a class="el" href="global_8h.html#451545e29266fba0f237893192987c79">Pinceau_Type</a>, <a class="el" href="global_8h.html#6d6ccd6a32167407649f0409d0524b8e">Position_d_aide_en_cours</a>, <a class="el" href="global_8h.html#6c14d3d33a2ee81e30956d2744bf2304">Repertoire_des_donnees</a>, <a class="el" href="sdlscreen_8c.html#7d878c5015b12f71f88803e615953f72">Sdl_Get_pixel_8()</a>, <a class="el" href="global_8h.html#2c4cb6eda4edb6f3ae85f2c0c0989074">Section_d_aide_en_cours</a>, <a class="el" href="global_8h.html#9ae08e4b6996085860f6608457db8d17">SPRITE_CURSEUR</a>, <a class="el" href="global_8h.html#1d6713dc49ead0c7a20b3ea1a26549ea">SPRITE_DRIVE</a>, <a class="el" href="global_8h.html#18e6a845e74f14d39d39fdd237e8dabd">SPRITE_EFFET</a>, <a class="el" href="global_8h.html#f06781a11736d193363423d6653406c9">SPRITE_MENU</a>, <a class="el" href="global_8h.html#23314deeab13f16063c948a86a1900fa">SPRITE_PINCEAU</a>, <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>, and <a class="el" href="global_8h.html#c5e999fb12c13c129d9a6050a9f4b279">TRAME_PREDEFINIE</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#c582f4b669895a6bb60cd7ab17a05fbb">Current_help_section</a>, <a class="el" href="global_8h.html#f93179a0c661999ac43c41a713b642e9">Cursor_offset_X</a>, <a class="el" href="global_8h.html#96c6fe4ed0468bbf3ac41a854ff9c839">Cursor_offset_Y</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251abcc273effaf4adced7d74d4d3e9bd0e78">CURSOR_SHAPE_ARROW</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab2eaea62d48e24322f55088e9df92d198">CURSOR_SHAPE_COLORPICKER</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251abd1f496c0f73967258ca44527b790cd44">CURSOR_SHAPE_HORIZONTAL</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab0943e38fb4fbc8f27496f246798f25f6">CURSOR_SHAPE_HOURGLASS</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab9260c70f32342f0d7e3401ec9141a020">CURSOR_SHAPE_MULTIDIRECTIONNAL</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab35af2fb8accd000c7b54a141dd8b9d1c">CURSOR_SHAPE_TARGET</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251abf233daa4f8eef6c567cfa3d525b8d459">CURSOR_SHAPE_THIN_COLORPICKER</a>, <a class="el" href="const_8h.html#195dc89fc27761def8e31edf71c251ab104b04e518a8ef930fa13e7a76adf241">CURSOR_SHAPE_THIN_TARGET</a>, <a class="el" href="const_8h.html#92b3d3c301ffc3d0e797f0d6bc19855a">CURSOR_SPRITE_HEIGHT</a>, <a class="el" href="const_8h.html#653ae4e9b5ecc93f6349cefb596d87ff">CURSOR_SPRITE_WIDTH</a>, <a class="el" href="global_8h.html#a833a11fb87069204e6efec4e447fe3e">Default_palette</a>, <a class="el" href="erreurs_8h.html#e07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f2579d728f2a7da66885ba503d750cd3138">ERROR_GUI_CORRUPTED</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f250af75619064496fe5eb0549353df510c">ERROR_GUI_MISSING</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25632a15615c9d0f691788ab4f0a66e41d">ERROR_MEMORY</a>, <a class="el" href="sdlscreen_8c.html#a9231294bfed21ed9848c156f66ab632">Get_SDL_pixel_8()</a>, <a class="el" href="global_8h.html#57620efbef13463f6bc9a0231ffe7306">GFX_bold_font</a>, <a class="el" href="global_8h.html#970e817d1936157de0b0128bb2731e91">GFX_cursor_sprite</a>, <a class="el" href="global_8h.html#4df130f1e61c3920d6f2e71f2c81c61b">GFX_effect_sprite</a>, <a class="el" href="global_8h.html#e2b9388b755e4b657e331f67cb9fca4a">GFX_fun_font</a>, <a class="el" href="global_8h.html#52ffcb9ffd532d82934f62868a0cf289">GFX_help_font_norm</a>, <a class="el" href="global_8h.html#a77e3831ff498d1bffef55c73629222a">GFX_help_font_t1</a>, <a class="el" href="global_8h.html#8221541090050b4b9e6c7fe39a6debe9">GFX_help_font_t2</a>, <a class="el" href="global_8h.html#5c2a35182646fc6a327a7fef26617451">GFX_help_font_t3</a>, <a class="el" href="global_8h.html#ae8c30c4fd7fbc66c3a480d38fc60d56">GFX_help_font_t4</a>, <a class="el" href="global_8h.html#dafa0c38b39fca20b671d38dabc7d626">GFX_icon_sprite</a>, <a class="el" href="global_8h.html#46ffb78e00d21212ca1c6028ae116b4b">GFX_logo_grafx2</a>, <a class="el" href="global_8h.html#5569ef74bd63d1930b1e869972f91210">GFX_menu_block</a>, <a class="el" href="global_8h.html#d81a48c6240df2b58d82dcfa276182ad">GFX_menu_sprite</a>, <a class="el" href="global_8h.html#724d29a20b27bb717c6518517eb32d34">GFX_paintbrush_sprite</a>, <a class="el" href="global_8h.html#004c42e7ff16d0d7f79130054e70917d">GFX_sieve_pattern</a>, <a class="el" href="global_8h.html#37f8af5bc4069f75dbc8a3f7f11bfa89">GFX_system_font</a>, <a class="el" href="init_8c.html#b1881da96d24c43de0f76aaad7720195">GUI_seek_down()</a>, <a class="el" href="init_8c.html#e6f0ce04a87cd819e18fb99621dc52d5">GUI_seek_right()</a>, <a class="el" href="global_8h.html#d3af1349a5182d09c272079dc6d3db95">Help_position</a>, <a class="el" href="const_8h.html#aab8ca7bf13cec47959942be6213f496">ICON_SPRITE_HEIGHT</a>, <a class="el" href="const_8h.html#ad32a76ec0836f5be840704d80c5f543">ICON_SPRITE_WIDTH</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="global_8h.html#5885f1832a1d2f1edccbfe71f42d7287">MC_Black</a>, <a class="el" href="global_8h.html#fa60d3cfd374aa488e3a22c6322bef6f">MC_Dark</a>, <a class="el" href="global_8h.html#c4805f272a07c1529a7366c545e08d6e">MC_Light</a>, <a class="el" href="global_8h.html#7e054c109f7fbd1ff6f0040e7ed2ef34">MC_Trans</a>, <a class="el" href="global_8h.html#fbd82dcee5167f44b13793225060361b">MC_White</a>, <a class="el" href="global_8h.html#e05de4515bea796801216dfa5645edce">Menu_font</a>, <a class="el" href="const_8h.html#aa3f89d08a9fcf0af415b012b8138ebf">MENU_HEIGHT</a>, <a class="el" href="const_8h.html#3898d58b218c8724ba95879af8a12567">MENU_SPRITE_HEIGHT</a>, <a class="el" href="const_8h.html#1f04626f4ae4ce0f707b5dd7b5af6f1d">MENU_SPRITE_WIDTH</a>, <a class="el" href="const_8h.html#e64f028be3d52d84433789a433ba4034">MENU_WIDTH</a>, <a class="el" href="const_8h.html#13b1a0444c3382fa6d5f1bea644c2848">NB_CURSOR_SPRITES</a>, <a class="el" href="const_8h.html#08b1999d909f2863e46791cfc13de03b">NB_EFFECTS_SPRITES</a>, <a class="el" href="const_8h.html#ce2b202eb3f96a27a226f949f9612cc9">NB_ICON_SPRITES</a>, <a class="el" href="const_8h.html#75438577788feeafa88d7a0a04db977b">NB_MENU_SPRITES</a>, <a class="el" href="const_8h.html#7bc9c842fa9b94549d654cd494fec22e">NB_PAINTBRUSH_SPRITES</a>, <a class="el" href="const_8h.html#b9ec87bd2253d66b3519b53acc867418">NB_PRESET_SIEVE</a>, <a class="el" href="const_8h.html#2de89d4a4132b32c3577c6262def1ac1">PAINTBRUSH_HEIGHT</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b0d9996760a0bb05ca398a5fdba792b40">PAINTBRUSH_SHAPE_ANTISLASH</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b9fa5c1a8b3aed6da0fe35bca189c0379">PAINTBRUSH_SHAPE_CROSS</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b09343e25e64553152e8712f4a9573346">PAINTBRUSH_SHAPE_DIAMOND</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b3e45ece291dda420b66fd100c212bdad">PAINTBRUSH_SHAPE_HORIZONTAL_BAR</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b7a10826f34fba74d1873eee73807f724">PAINTBRUSH_SHAPE_MISC</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b07139f0d48b4d353e9bf7b09534eb73f">PAINTBRUSH_SHAPE_PLUS</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7be0bac90281b4a2a10b0e06bb95312faa">PAINTBRUSH_SHAPE_RANDOM</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7bd1369a1bcaa67d58205f5ef17b525bb9">PAINTBRUSH_SHAPE_ROUND</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b9b38226480e9386877fc91bdf29838e8">PAINTBRUSH_SHAPE_SIEVE_ROUND</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b56784001a5bcc1498bb6172422da01b9">PAINTBRUSH_SHAPE_SIEVE_SQUARE</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b7e77119f2f5585bee143ced2829d96ec">PAINTBRUSH_SHAPE_SLASH</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7b91986fcd90495579378b2c301ab021ed">PAINTBRUSH_SHAPE_SQUARE</a>, <a class="el" href="const_8h.html#5846d255bb66b8c258306c9d0e1d2c7bbe8fd0fb6aead6b57db8964c79ed280a">PAINTBRUSH_SHAPE_VERTICAL_BAR</a>, <a class="el" href="global_8h.html#4c346980b046cd811b42d0bc35b1badf">Paintbrush_type</a>, <a class="el" href="const_8h.html#653ead380b47a32c98da1f24f750a29e">PAINTBRUSH_WIDTH</a>, <a class="el" href="global_8h.html#2584169f96b5cc0eb67641fc37a4345a">Preset_paintbrush_height</a>, <a class="el" href="global_8h.html#00fa6dcd3c8a207e8863b4331dee211f">Preset_paintbrush_offset_X</a>, <a class="el" href="global_8h.html#a44661ee3bda16a37d994b10719d9685">Preset_paintbrush_offset_Y</a>, <a class="el" href="global_8h.html#4288eefcd5d90f14afa8994904b8f7b3">Preset_paintbrush_width</a>, <a class="el" href="init_8c.html#2402d61c14d1297fbbda273831fc49cb">Read_GUI_block()</a>, <a class="el" href="init_8c.html#3d51877e8fffbeb5c8c1f8b1099b705b">Read_GUI_pattern()</a>, and <a class="el" href="global_8h.html#6c14d3d33a2ee81e30956d2744bf2304">Repertoire_des_donnees</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="602ef586f96b95e86db8e186cff2dfa1"></a><!-- doxytag: member="init.c::Rien_du_tout" ref="602ef586f96b95e86db8e186cff2dfa1" args="(void)" -->
+<a class="anchor" name="7ae0e21d04e4c072ef2930d23d8fa725"></a><!-- doxytag: member="init.c::Do_nothing" ref="7ae0e21d04e4c072ef2930d23d8fa725" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Rien_du_tout           </td>
+          <td class="memname">void Do_nothing           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -396,73 +393,73 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="init_8h.html#8e2cb4e76fcbd7539c90c920665f7c40">Initialisation_des_boutons()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#377fdc29b1293a7db9de2377e9022f28">Init_buttons()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="d38ca1ae4c7067643a333f2e48a83d5b"></a><!-- doxytag: member="init.c::Initialiser_bouton" ref="d38ca1ae4c7067643a333f2e48a83d5b" args="(byte Numero, word Decalage_X, word Decalage_Y, word Largeur, word Hauteur, byte Forme, fonction_action Gauche, fonction_action Droite, fonction_action Desenclencher, byte Famille)" -->
+<a class="anchor" name="21c53cbc038c9ab83b6f9a9953ba4920"></a><!-- doxytag: member="init.c::Init_button" ref="21c53cbc038c9ab83b6f9a9953ba4920" args="(byte btn_number, word x_offset, word y_offset, word width, word height, byte shape, Func_action Gauche, Func_action Droite, Func_action Desenclencher, byte family)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialiser_bouton           </td>
+          <td class="memname">void Init_button           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Numero</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>btn_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Decalage_X</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Decalage_Y</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Largeur</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Hauteur</em>, </td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Forme</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>shape</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a>&nbsp;</td>
           <td class="paramname"> <em>Gauche</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a>&nbsp;</td>
           <td class="paramname"> <em>Droite</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a>&nbsp;</td>
           <td class="paramname"> <em>Desenclencher</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Famille</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>family</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -475,18 +472,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>.</p>
+<p>References <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#8e2cb4e76fcbd7539c90c920665f7c40">Initialisation_des_boutons()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#377fdc29b1293a7db9de2377e9022f28">Init_buttons()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="8e2cb4e76fcbd7539c90c920665f7c40"></a><!-- doxytag: member="init.c::Initialisation_des_boutons" ref="8e2cb4e76fcbd7539c90c920665f7c40" args="(void)" -->
+<a class="anchor" name="377fdc29b1293a7db9de2377e9022f28"></a><!-- doxytag: member="init.c::Init_buttons" ref="377fdc29b1293a7db9de2377e9022f28" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialisation_des_boutons           </td>
+          <td class="memname">void Init_buttons           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -499,45 +496,45 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="aide_8c.html#87046cda4339ec24652df49eb5fc50c7">Bouton_Aide()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a863f01ddf6c6208bd0df6b15ee6cc363b">BOUTON_AIDE</a>, <a class="el" href="boutons_8c.html#e9012daa63a75a10aaf01234a0c76051">Bouton_Ajuster()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a871c14cb661f5eb5940d02d77529ee08c">BOUTON_AJUSTER</a>, <a class="el" href="boutons_8c.html#b7f5f6282e228ee1b945432258dde235">Bouton_Autosave()</a>, <a class="el" href="boutons_8c.html#e9cf3fe99c8962fe1e08908e65292a22">Bouton_Brosse()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8f5e6b32bd32340889dc4c2e2265dc5cd">BOUTON_BROSSE</a>, <a class="el" href="boutons_8c.html#1319847bff840ea7e3731257ddba8092">Bouton_Brosse_monochrome()</a>, <a class="el" href="boutons_8c.html#8fb38637fbbb477fd0ee3f6c5d43211c">Bouton_Brush_FX()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8e99be2970d8662ee2b6e60202be37e64">BOUTON_CACHER</a>, <a class="el" href="boutons_8c.html#8b204fbe9c2a9d8a97e25b4a9dad6425">Bouton_Cacher_menu()</a>, <a class="el" href="boutons_8c.html#e639c686be39f20b59b87fbc502c7730">Bouton_Cercle_degrade()</a>, <a class="el" href="boutons_8c.html#887fd978146d956c16a8d3d53a864fb1">Bouton_Cercle_plein()</a>, <a class="el" href="boutons_8c.html#d9ce6d79a277b9e9ca0a075b9aaeb9c0">Bouton_Cercle_vide()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8933ea4a8bc32068c5c94d1f596b084d4">BOUTON_CERCLES</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a89e236e3d2a53a9135aa2ad1ec33d3c0d">BOUTON_CHARGER</a>, <a class="el" href="boutons_8c.html#a5ecbc3a427df2d9f33f5c8e542e9543">Bouton_Choix_backcolor()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a82854e7fc967203b6a2f5dcb20a628b6c">BOUTON_CHOIX_COL</a>, <a class="el" href="boutons_8c.html#16626b87a4da507caf87967a321c358f">Bouton_Choix_forecolor()</a>, <a class="el" href="boutons_8c.html#33340ea6aae1ee5550a50063d7a2d8ab">Bouton_Clear()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8dd0b322172a81b43eee6761e51f7ff2d">BOUTON_CLEAR</a>, <a class="el" href="boutons_8c.html#6e2fb0a66f52babf5e5e365e8f2f384a">Bouton_Clear_colore()</a>, <a class="el" href="boutons_8c.html#b594e6d6abc370ae7e112f06bae9c5d3">Bouton_Copy_page()</a>, <a class="el" href="boutons_8c.html#237555b6276d74cddbcdc4242452abf0">Bouton_Courbes()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8ea0e113a03a16998a05f948bf8a3f657">BOUTON_COURBES</a>, <a class="el" href="boutons_8c.html#7863ca7c7545b911fad3634b8f560420">Bouton_Courbes_Switch_mode()</a>, <a class="el" href="boutons_8c.html#95335a6d8b752c15e1a903d8b37a13fd">Bouton_Degrades()</a>, <a class="el" href="boutons_8c.html#2ef5b67f07b849b6611005c861fc24fc">Bouton_desenclencher_Brosse()</a>, <a class="el" href="boutons_8c.html#70fafcf2d27ae6951848d7344495507b">Bouton_desenclencher_Fill()</a>, <a class="el" href="boutons_8c.html#293b8fed1ea4107543d33fa55b7255e9">Bouton_desenclencher_Lasso()</a>, <a class="el" href="boutons_8c.html#e8fc5f36e33f329cc00867f140e0aaf5">Bouton_desenclencher_Loupe()</a>, <a class="el" href="boutons_8c.html#ee8c5cdbb1607493e6d8bb11aea14906">Bouton_desenclencher_Pipette()</a>, <a class="el" href="boutons_8c.html#25ac04007371a274f160875ee196d70a">Bouton_Dessin()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8c6e2f3a29ebe9b275b1c352e573faff3">BOUTON_DESSIN</a>, <a class="el" href="boutons_8c.html#1cdb24beacc8a3eb7c7f974b2f2321f9">Bouton_Dessin_Switch_mode()</a>, <a class="el" href="boutons_8c.html#8bfcd88dac68ce3d2845665e3827c2e7">Bouton_Effets()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8ef3e3177c1040f635c90464b69e062a8">BOUTON_EFFETS</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a86b28f0935378b6150000ba03c72e7ee0">BOUTON_EFFETS_BROSSE</a>, <a class="el" href="boutons_8c.html#347c02a3f802a703d98c4493df447ee5">Bouton_Ellipse_degrade()</a>, <a class="el" href="boutons_8c.html#393871d10aa042ab9b0cc41ebef9e016">Bouton_Ellipse_pleine()</a>, <a class="el" href="boutons_8c.html#3e931404c2bbf6f893ebaf987eaa8516">Bouton_Ellipse_vide()</a>, <a class="el" href="boutons_8c.html#c1f684242daf88a6dec817a98530a34d">Bouton_Fill()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8b8bfcb07adaf012003b06126c72d5615">BOUTON_FILLCERC</a>, <a class="el" href="boutons_8c.html#8b84ac0035398efa5d45c703b5ffd79b">Bouton_Filled_polyform()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a81f684e382ab4b187b2555aa846074943">BOUTON_FILLRECT</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a89e843eb9281466838f78237cc9e6d67b">BOUTON_FLOODFILL</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a86b12f9017a1d451077a212821c12c3d5">BOUTON_GRADMENU</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8937946caae22414bfaa30c7b26b89384">BOUTON_GRADRECT</a>, <a class="el" href="boutons_8c.html#ffbd03c6af16b8a65d2c75c7f8474021">Bouton_Inverser_foreback()</a>, <a class="el" href="boutons_8c.html#3e19b3abef9bfaf1afc33ad22af2e19f">Bouton_Kill()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8c89f087b26d493255ae65e99a4ca255c">BOUTON_KILL</a>, <a class="el" href="boutons_8c.html#96e278eab6c9532425c44a3f50f00d6d">Bouton_Lasso()</a>, <a class="el" href="boutons_8c.html#f403024426b59d5cafaa92bc934a7855">Bouton_Lignes()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8abf422543ee6a3d4fe520934a6199a75">BOUTON_LIGNES</a>, <a class="el" href="boutons_8c.html#ef62259fb7eaba23c9cf4b498a944afe">Bouton_Lignes_Switch_mode()</a>, <a class="el" href="boutons_8c.html#53383a37b930df62409efa70ec44fcfa">Bouton_Load()</a>, <a class="el" href="boutons_8c.html#8db25f409afdd9fcb7c4feabb43dbfb6">Bouton_Loupe()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8fba0bb2b407c79848d6b7b85b7f10ca2">BOUTON_LOUPE</a>, <a class="el" href="boutons_8c.html#9f5151476bfc49facf295e20c6fb92fb">Bouton_Menu_Loupe()</a>, <a class="el" href="boutons_8c.html#1025cf1c9b1e9740d99089dee8652762">Bouton_Menu_pinceaux()</a>, <a class="el" href="boutons_8c.html#bc347ebe12cd2e6638a2d37e7677bf7a">Bouton_Page()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8370b45403ebf70907c738b0167ed60d0">BOUTON_PAGE</a>, <a class="el" href="boutons_8c.html#8a2aced4bff0b687fb14f863c1f54680">Bouton_Pal_left()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a80002f032db5905d8cedbe1963ed09fc4">BOUTON_PAL_LEFT</a>, <a class="el" href="boutons_8c.html#c4d4047ef0c6ba9a90511f5c5c5c74ed">Bouton_Pal_left_fast()</a>, <a class="el" href="boutons_8c.html#92f22afb2cee68ee9db4bec313126c26">Bouton_Pal_right()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a80e5e32b4c8b1d133118a2a3e96ac02ca">BOUTON_PAL_RIGHT</a>, <a class="el" href="boutons_8c.html#1667c41ea77442ad079ed322e951bc4c">Bouton_Pal_right_fast()</a>, <a class="el" href="palette_8c.html#113dfd1ae0d38c66d6acb93949efe0eb">Bouton_Palette()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a819f5b01ec0673a836e61ee9f98d2ec40">BOUTON_PALETTE</a>, <a class="el" href="palette_8c.html#493f7b4bcddbe23d367cf341af3d95bf">Bouton_Palette_secondaire()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a862f683a4203018dcc5563581287dca77">BOUTON_PARAMETRES</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8621490ae17d9eebcf9be57c257788051">BOUTON_PINCEAUX</a>, <a class="el" href="boutons_8c.html#77931993f50f7f7d5511c0644f3020b7">Bouton_Pipette()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a83dfd76db70afcfc9faa0f3ae4861f380">BOUTON_PIPETTE</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8414f51b557666f3e9502bcacbde0fd18">BOUTON_POLYBROSSE</a>, <a class="el" href="boutons_8c.html#92c1eabd22c8e649b847454c31ac9b34">Bouton_Polyfill()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8d9418e342e7d3a34551930aeca882396">BOUTON_POLYFILL</a>, <a class="el" href="boutons_8c.html#68a96d96cc56c3a9ba1e7cd74cb5d2fc">Bouton_Polyform()</a>, <a class="el" href="boutons_8c.html#79214d2df72ffed91decda32e61cc089">Bouton_Polygone()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8452973b6cd2a7d4bd2aa7f420f31bad1">BOUTON_POLYGONES</a>, <a class="el" href="boutons_8c.html#2912a0c4cf5a112d074f6c436961d379">Bouton_Quit()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a844c5bb56d92535ed1df11c70d4f2da0a">BOUTON_QUIT</a>, <a class="el" href="boutons_8c.html#ccd0d040dee9bf9050ce6cdb64e151c7">Bouton_Rectangle_degrade()</a>, <a class="el" href="boutons_8c.html#d58413c3a5ac5ca31b567e8f9df09f75">Bouton_Rectangle_plein()</a>, <a class="el" href="boutons_8c.html#e2b877a161818da4aa37af033ff072d0">Bouton_Rectangle_vide()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8cfe29410d3710b5503fd2bd1f7505c6b">BOUTON_RECTANGLES</a>, <a class="el" href="boutons_8c.html#9318e1f41c356a326ea9f30f97a1da4e">Bouton_Redo()</a>, <a class="el" href="boutons_8c.html#a350c5b78979a9623872e30f5a4af74d">Bouton_Reload()</a>, <a class="el" href="boutons_8c.html#2bbff124f9d007e1c56a2be06361e4ce">Bouton_Remplacer()</a>, <a class="el" href="boutons_8c.html#d4f9a069c7697cb953e1797bb30d80d3">Bouton_Resol()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8911ab96bafaf4ded0b82b7b80f1b9cf5">BOUTON_RESOL</a>, <a class="el" href="boutons_8c.html#d5673ca319fce9f2b2a1de38edb46ac9">Bouton_Restaurer_brosse()</a>, <a class="el" href="boutons_8c.html#2c3f116d41308add552433e0ec11b08d">Bouton_Safety_resol()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a828ffc09f715e014572afaa3ef9567ef5">BOUTON_SAUVER</a>, <a class="el" href="boutons_8c.html#443cb3137ebf2f59bc92d7d578a04dc3">Bouton_Save()</a>, <a class="el" href="boutons_8c.html#3471661b67c87af0fffbc84a0a6420c0">Bouton_Settings()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8922e488f96a40f23649669ee991060b8">BOUTON_SPHERES</a>, <a class="el" href="boutons_8c.html#a5276585924363fd52110e5a726de68c">Bouton_Spray()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a84e7bbb25adb4b3cb908d444a61b0f6da">BOUTON_SPRAY</a>, <a class="el" href="boutons_8c.html#2feaf0ebe7cea0c7bb067ef2872c5f7f">Bouton_Spray_Menu()</a>, <a class="el" href="aide_8c.html#b20e321c1ca3efa7f839f3fb12d5d496">Bouton_Stats()</a>, <a class="el" href="boutons_8c.html#b8f0c5b357de9c2ad5513af297e25a7b">Bouton_Texte()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a849df2deb68867aa6b30ebe9b60cf8b53">BOUTON_TEXTE</a>, <a class="el" href="boutons_8c.html#360b6e16d4fa792f617671080f37a696">Bouton_Undo()</a>, <a class="el" href="const_8h.html#67ce97fb706063548062aa641d77a7a8000f945ceacbafc956931410d2f77bc5">BOUTON_UNDO</a>, <a class="el" href="const_8h.html#4b22b36ac43fe8c8e9413e9bf01eecfc9b9bdd0f699d6bdc40ef29ee1741006b">FAMILLE_EFFETS</a>, <a class="el" href="const_8h.html#4b22b36ac43fe8c8e9413e9bf01eecfc6b21760169000ddeb2cc09584236476a">FAMILLE_INSTANTANE</a>, <a class="el" href="const_8h.html#4b22b36ac43fe8c8e9413e9bf01eecfcefcb441247128d6c39c3a35c1f8913e2">FAMILLE_INTERRUPTION</a>, <a class="el" href="const_8h.html#4b22b36ac43fe8c8e9413e9bf01eecfce19920b9f9ab27e60af641e1d2d2af75">FAMILLE_OUTIL</a>, <a class="el" href="const_8h.html#4b22b36ac43fe8c8e9413e9bf01eecfc1ee2d5697914267953fa4302c636ce22">FAMILLE_TOOLBAR</a>, <a class="el" href="const_8h.html#cf02589d6189f2bf0f3d231d0ceea869dea196ba26bbc6d86cc864838650d107">FORME_BOUTON_RECTANGLE</a>, <a class="el" href="const_8h.html#cf02589d6189f2bf0f3d231d0ceea86998e562de61e4c0cc365a818ceb8e26f2">FORME_BOUTON_SANS_CADRE</a>, <a class="el" href="const_8h.html#cf02589d6189f2bf0f3d231d0ceea869ae16f69f7a9ee847223529b853b0adf2">FORME_BOUTON_TRIANGLE_BAS_DROITE</a>, <a class="el" href="const_8h.html#cf02589d6189f2bf0f3d231d0ceea869ecb776316ef89f89bb9c39e5c54b227e">FORME_BOUTON_TRIANGLE_HAUT_GAUCHE</a>, <a class="el" href="init_8c.html#d38ca1ae4c7067643a333f2e48a83d5b">Initialiser_bouton()</a>, <a class="el" href="const_8h.html#b395b90346e292578f3b819b1863a5e2">LARGEUR_MENU</a>, <a class="el" href="boutons_8c.html#c49e5fdef5eac3b8ac275988c7449d34">Message_Non_disponible()</a>, <a class="el" href="const_8h.html#a8b25d7d4cca8bb170edf42c1bb25948">NB_BOUTONS</a>, and <a class="el" href="global_8h.html#602ef586f96b95e86db8e186cff2dfa1">Rien_du_tout()</a>.</p>
+<p>References <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="boutons_8c.html#0f08df5cd9445b29323dab080a0591f8">Button_Adjust()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6d1d972b48c21811667c979d41b4677a1">BUTTON_ADJUST</a>, <a class="el" href="boutons_8c.html#8e71b85ae89e9741f66fcfcf6ae6a776">Button_Airbrush()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6023befee1ddac5aa087bcd9f8faf5531">BUTTON_AIRBRUSH</a>, <a class="el" href="boutons_8c.html#75e3bd74223a8e8feba3bc87a2eac4c6">Button_Airbrush_menu()</a>, <a class="el" href="boutons_8c.html#c4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="boutons_8c.html#e0b1731a237776d8d1150644eb50cfd6">Button_Brush()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6ee3eaea9709cbb2a3a3de3d1a514cf13">BUTTON_BRUSH</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6a582fc90ba02069b5d8cb79f33e3691b">BUTTON_BRUSH_EFFECTS</a>, <a class="el" href="boutons_8c.html#48a3fd539c3cbe4cd47fc1dcc3e465ee">Button_Brush_FX()</a>, <a class="el" href="boutons_8c.html#e01618aea29a18c03d031a5bd0065d5d">Button_Brush_monochrome()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6dd1b56fca7301a7b7b7aefb1f7ad0778">BUTTON_CHOOSE_COL</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6ee0c143788afd00a6af5db31daa6a1ec">BUTTON_CIRCLES</a>, <a class="el" href="boutons_8c.html#2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6b0d8804d675c139d8170f4fa545f9c09">BUTTON_CLEAR</a>, <a class="el" href="boutons_8c.html#45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="boutons_8c.html#603f8a7f6f1f040037c345911027dee3">Button_Colorpicker()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6190c63bd91101bf1c36c7866d7ffec97">BUTTON_COLORPICKER</a>, <a class="el" href="boutons_8c.html#c9365d640fba1eb9e82568e492878e4a">Button_Copy_page()</a>, <a class="el" href="boutons_8c.html#88cce1eddfc9e70a81e943a65fa53fcc">Button_Curves()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd66b166bf092048d4de9555d11251b90ff">BUTTON_CURVES</a>, <a class="el" href="boutons_8c.html#26e996fd29285b9236713505c5815c44">Button_Curves_switch_mode()</a>, <a class="el" href="boutons_8c.html#9c66d0b5e30dc0cfc8ef054700113768">Button_Draw()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6b8e823596afbdbc1666bc036ab89cb61">BUTTON_DRAW</a>, <a class="el" href="boutons_8c.html#894b2795b0e709b88a13fab3365ad271">Button_Draw_switch_mode()</a>, <a class="el" href="boutons_8c.html#cf89cf3b809b31765e8d752d2c0f5595">Button_Effects()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd63b7528f54129d8fa54d332fc308b3287">BUTTON_EFFECTS</a>, <a class="el" href="boutons_8c.html#3642c39ed695dd3cd774b0f1f7fe5972">Button_Empty_circle()</a>, <a class="el" href="boutons_8c.html#fd4683cf94817fc0cd5b16b3c379fc28">Button_Empty_ellipse()</a>, <a class="el" href="boutons_8c.html#771df0b8321eb66b6ea3d871b2afbbd1">Button_Empty_rectangle()</a>, <a class="el" href="boutons_8c.html#133c616025e8c2cb060dd4fdf32671c1">Button_Fill()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6693ebcbdf40e43d1bbdcee6dd80337c0">BUTTON_FILLCIRC</a>, <a class="el" href="boutons_8c.html#1a26b6336d27956b55b18601453a3aa5">Button_Filled_circle()</a>, <a class="el" href="boutons_8c.html#6b35ff216f0191720edeef071d652911">Button_Filled_ellipse()</a>, <a class="el" href="boutons_8c.html#a2c026a8137d540f12f2359fc4debc1c">Button_Filled_polyform()</a>, <a class="el" href="boutons_8c.html#ac7cbe0ecf4255378cc41fb18944d9e7">Button_Filled_rectangle()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6a4d6217261aa22e632708d016955a157">BUTTON_FILLRECT</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6e420e5fdd1bf9c161148493c623d37ea">BUTTON_FLOODFILL</a>, <a class="el" href="boutons_8c.html#9ad546fda169e64e6df6a1de707c807d">Button_Grad_circle()</a>, <a class="el" href="boutons_8c.html#fea53cf273d4416e53171d5d0cadf097">Button_Grad_ellipse()</a>, <a class="el" href="boutons_8c.html#7ce505861618a8f9d9bdc130c7eddc9a">Button_Grad_rectangle()</a>, <a class="el" href="boutons_8c.html#65df0642ea1b2db24d8a6213ab7ea757">Button_Gradients()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6bf163dd41fa621d798fdb233e69f1808">BUTTON_GRADMENU</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6f53da0e859ce73b3d5967b28445e67ae">BUTTON_GRADRECT</a>, <a class="el" href="aide_8c.html#bd432a7e25ce84abfb67abe98b6834a5">Button_Help()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd613b66021233a47cc1558f29742aceaeb">BUTTON_HELP</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6ca22e916c2e07490395ea8500a916d44">BUTTON_HIDE</a>, <a class="el" href="boutons_8c.html#640621df9788d99c4803cf2ca3f48014">Button_Hide_menu()</a>, <a class="el" href="boutons_8c.html#2d540f8792ab10cde9a301286d62c49f">Button_Invert_foreback()</a>, <a class="el" href="boutons_8c.html#9c521053151926c83470dec7275cd469">Button_Kill()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd68596d0fa3754bdff7bdb0a507a877a42">BUTTON_KILL</a>, <a class="el" href="boutons_8c.html#ec5787bce55d9d3eadb7d5d20b6a1764">Button_Lasso()</a>, <a class="el" href="boutons_8c.html#93cbe59dfaee929824948b15d367a429">Button_Lines()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd68e52063a5c9363d5d4871bc82c82f686">BUTTON_LINES</a>, <a class="el" href="boutons_8c.html#a5200c40f9dd6720c273d0b39f8d4c66">Button_Lines_switch_mode()</a>, <a class="el" href="boutons_8c.html#d52c343b6a78df333c7c414b15997ac2">Button_Load()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd647af8626785de88f69467ea546890835">BUTTON_LOAD</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6ada6ad55200561949ab1746513f21335">BUTTON_MAGNIFIER</a>, <a class="el" href="boutons_8c.html#9cfb47e7b613ece07553360efc1db7fb">Button_Magnify()</a>, <a class="el" href="boutons_8c.html#463af6473ae8baaa20caed8aea17969c">Button_Magnify_menu()</a>, <a class="el" href="boutons_8c.html#a3281c7fb1160ed32c5a4a97424e1968">Button_Page()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6d4722bfe156e0dcfbd799fa50d064d74">BUTTON_PAGE</a>, <a class="el" href="boutons_8c.html#c0ef5b9c11ea7acdc4aea980fa25790b">Button_Paintbrush_menu()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd654a51efd29b0081a65d33795a8147d1d">BUTTON_PAINTBRUSHES</a>, <a class="el" href="boutons_8c.html#6ce23ee9e2b626057e4f7e062f3910c4">Button_Pal_left()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd669b6c7e7aee7c931d739858bedf98237">BUTTON_PAL_LEFT</a>, <a class="el" href="boutons_8c.html#a3bfc9e8d61b631204eb643ea22065d3">Button_Pal_left_fast()</a>, <a class="el" href="boutons_8c.html#139fa08a2e9bf5a8dbccb00e7832ce16">Button_Pal_right()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6387f46ff7360fae00ffcd212634ba427">BUTTON_PAL_RIGHT</a>, <a class="el" href="boutons_8c.html#d5de62cff779f84294b85f29f5e82e84">Button_Pal_right_fast()</a>, <a class="el" href="palette_8c.html#389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd62b7a2386935fd6293079b4526a18d75c">BUTTON_PALETTE</a>, <a class="el" href="palette_8c.html#ec9495474d1f999ff10971f415cd224e">Button_Pecondary_palette()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd64e61db8cc469f849576d9f7c04c63fe6">BUTTON_POLYBRUSH</a>, <a class="el" href="boutons_8c.html#c150d0c010bcff2026143bf6fb364cbc">Button_Polyfill()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6f7333626fdee7435f32cc2bebb2f396f">BUTTON_POLYFILL</a>, <a class="el" href="boutons_8c.html#ef4f378d7166d7698b9c5ab6915916a2">Button_Polyform()</a>, <a class="el" href="boutons_8c.html#2ee895960443495ac6bb871123c9070a">Button_polygon()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd667f8c3ed611bf0088b73e88de25567a5">BUTTON_POLYGONS</a>, <a class="el" href="boutons_8c.html#d3317ff639d9923de8ff50463a8aac53">Button_Quit()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6ae33feffcbb3e0f362458e0874fe3726">BUTTON_QUIT</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd61da2ac7df4cb0fc37ac8311aedb0bd90">BUTTON_RECTANGLES</a>, <a class="el" href="boutons_8c.html#90ffd981b98eb122748ddb35821e3de9">Button_Redo()</a>, <a class="el" href="boutons_8c.html#50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="boutons_8c.html#9a64f4f3b5b67ec32a63f2cea6177a18">Button_Replace()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd665a09053c4e1dcc133111d262d140f13">BUTTON_RESOL</a>, <a class="el" href="boutons_8c.html#c9b41c19a3b00619fc4f7533681d33cc">Button_Resolution()</a>, <a class="el" href="boutons_8c.html#205e18588b2b53b04e4e41ae3e856a3c">Button_Restore_brush()</a>, <a class="el" href="boutons_8c.html#66706db62caa3f774845a54912993692">Button_Safety_resolution()</a>, <a class="el" href="boutons_8c.html#0825f43b05b2a46697fc7471931369f6">Button_Save()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd68dcc4bb9d4e2b215128f0e14faab9d48">BUTTON_SAVE</a>, <a class="el" href="boutons_8c.html#bd77296d5f297a5e4d8c89ddd4da5e74">Button_Select_backcolor()</a>, <a class="el" href="boutons_8c.html#8914e628d17ee950542f2b3674b29a90">Button_Select_forecolor()</a>, <a class="el" href="boutons_8c.html#e2f7310aa79876016d804806de57c1f0">Button_Settings()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6e38022dc4fdee82b0d0433f48175417c">BUTTON_SETTINGS</a>, <a class="el" href="const_8h.html#a26b64ac86049c25b25697922bb8dea5e9640fab98e83d0ae97b8a32a78d5e63">BUTTON_SHAPE_NO_FRAME</a>, <a class="el" href="const_8h.html#a26b64ac86049c25b25697922bb8dea54ec93b4e57ed8586513bb313c4764f13">BUTTON_SHAPE_RECTANGLE</a>, <a class="el" href="const_8h.html#a26b64ac86049c25b25697922bb8dea5533d2ff7ab957a8a80614d8f3be8a1e6">BUTTON_SHAPE_TRIANGLE_BOTTOM_RIGHT</a>, <a class="el" href="const_8h.html#a26b64ac86049c25b25697922bb8dea5673ce6c250e91e1e5a3b74e955eeaffe">BUTTON_SHAPE_TRIANGLE_TOP_LEFT</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd62f967e4aedf160f8c45013bf4299c1a8">BUTTON_SPHERES</a>, <a class="el" href="aide_8c.html#5c93538756ff9f83b2b1de4dbc5f5734">Button_Stats()</a>, <a class="el" href="boutons_8c.html#249592d3769cc6d58b55e72cfc376247">Button_Text()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd6bd591794e39933c50bd6240b5974588b">BUTTON_TEXT</a>, <a class="el" href="boutons_8c.html#501d5f15b744efdbc56f4a7a8142417c">Button_Undo()</a>, <a class="el" href="const_8h.html#052baf904096fcb00038448cccc7afd63de8f2170f1f59b50449e7a2f3eadcc7">BUTTON_UNDO</a>, <a class="el" href="boutons_8c.html#e824e8122e87a0abd084bbfcd1976c43">Button_Unselect_brush()</a>, <a class="el" href="boutons_8c.html#efbe0c7d11f56d4c63c9aa1fc83175cc">Button_Unselect_colorpicker()</a>, <a class="el" href="boutons_8c.html#5d1eb1602beb28174c368a768be682e1">Button_Unselect_fill()</a>, <a class="el" href="boutons_8c.html#f302685454da7c297f6f8b9866551797">Button_Unselect_lasso()</a>, <a class="el" href="boutons_8c.html#7de05de76d3c9940b1e68b86c7e94e57">Button_Unselect_magnifier()</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#7ae0e21d04e4c072ef2930d23d8fa725">Do_nothing()</a>, <a class="el" href="const_8h.html#0ba9ab412e1434cefdb90bc97b78deeed10a807201dae27ea0fdd5af636f5e81">FAMILY_EFFECTS</a>, <a class="el" href="const_8h.html#0ba9ab412e1434cefdb90bc97b78deeef00cd415126d6fffff20513d9802ffc7">FAMILY_INSTANT</a>, <a class="el" href="const_8h.html#0ba9ab412e1434cefdb90bc97b78deee9af7e914f20463fdbd1efc773af41425">FAMILY_INTERRUPTION</a>, <a class="el" href="const_8h.html#0ba9ab412e1434cefdb90bc97b78deeeb0b35ae07933e168b0e476046c77f32f">FAMILY_TOOL</a>, <a class="el" href="const_8h.html#0ba9ab412e1434cefdb90bc97b78deeec7ca949eda005aec762dce989ec659cb">FAMILY_TOOLBAR</a>, <a class="el" href="init_8c.html#21c53cbc038c9ab83b6f9a9953ba4920">Init_button()</a>, <a class="el" href="const_8h.html#e64f028be3d52d84433789a433ba4034">MENU_WIDTH</a>, <a class="el" href="boutons_8c.html#d8af234ec5d567a33c3035e9387331cb">Message_not_implemented()</a>, and <a class="el" href="const_8h.html#2f368ad3b2204a93b93a69052707b5e7">NB_BUTTONS</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="2e9af314a4658b2f2600c5477e662614"></a><!-- doxytag: member="init.c::Initialiser_operation" ref="2e9af314a4658b2f2600c5477e662614" args="(byte Numero_operation, byte Numero_bouton_souris, byte Taille_de_pile, fonction_action Action, byte Effacer_curseur)" -->
+<a class="anchor" name="98921c4d4426152662e06a33b79d03d9"></a><!-- doxytag: member="init.c::Init_operation" ref="98921c4d4426152662e06a33b79d03d9" args="(byte operation_number, byte mouse_button, byte stack_index, Func_action Action, byte Hide_cursor)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialiser_operation           </td>
+          <td class="memname">void Init_operation           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Numero_operation</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>operation_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Numero_bouton_souris</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>mouse_button</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Taille_de_pile</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>stack_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#889b556e8cd42386bd4f79d6320e27d2">fonction_action</a>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="struct_8h.html#85eb4478ccbaecb1c93718a5658e2ae9">Func_action</a>&nbsp;</td>
           <td class="paramname"> <em>Action</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Effacer_curseur</em></td><td>&nbsp;</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>Hide_cursor</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -550,18 +547,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#44aaf804a3316a616cab6115bd0e1cd7">Operation</a>.</p>
+<p>References <a class="el" href="global_8h.html#e5319db256fc0a1ffe1e84a3138277f5">Operation</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#91fe359cc51d4843eda9abf05fa8af6b">Initialisation_des_operations()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#9d2e3197e08282bf4261ff4b6a18395d">Init_operations()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="91fe359cc51d4843eda9abf05fa8af6b"></a><!-- doxytag: member="init.c::Initialisation_des_operations" ref="91fe359cc51d4843eda9abf05fa8af6b" args="(void)" -->
+<a class="anchor" name="9d2e3197e08282bf4261ff4b6a18395d"></a><!-- doxytag: member="init.c::Init_operations" ref="9d2e3197e08282bf4261ff4b6a18395d" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialisation_des_operations           </td>
+          <td class="memname">void Init_operations           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -574,39 +571,39 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="operatio_8c.html#8d57be41adffde088efa46cf63f5f92c">Brosse_0_5()</a>, <a class="el" href="operatio_8c.html#83dc3654e49ce24bb2bd47602eb2b8d5">Brosse_12_0()</a>, <a class="el" href="operatio_8c.html#d2baf51857582ae6291d4ec26516dc60">Brosse_12_5()</a>, <a class="el" href="operatio_8c.html#4ffed8786387a3c56020708f204c64c0">Cercle_12_0()</a>, <a class="el" href="operatio_8c.html#8574df20ad7b0fd43dbebfdeb0251466">Cercle_12_5()</a>, <a class="el" href="operatio_8c.html#3edb81dc01e948b58c5f8a20af06d604">Cercle_degrade_0_6()</a>, <a class="el" href="operatio_8c.html#e3b4232e43a57c22e811201acf99f089">Cercle_degrade_12_0()</a>, <a class="el" href="operatio_8c.html#2c28d845fd5e6ad2efc04ee22cba3bbe">Cercle_degrade_12_6()</a>, <a class="el" href="operatio_8c.html#735165b25bcc277e36b138c4c225dbec">Cercle_degrade_12_8()</a>, <a class="el" href="operatio_8c.html#829f1da39b69a24a812fd03447403efd">Cercle_ou_ellipse_degrade_0_8()</a>, <a class="el" href="operatio_8c.html#cd3ea76649e6e77df7051ba07a2c91b5">Cercle_plein_0_5()</a>, <a class="el" href="operatio_8c.html#05b8e83538792f8a6aa84f3761b6a23b">Cercle_vide_0_5()</a>, <a class="el" href="operatio_8c.html#a7c582b73d14a9fe4a6693fbdc5d8c4d">Courbe_34_points_1_0()</a>, <a class="el" href="operatio_8c.html#8b658642201b782d5505862217a04c56">Courbe_34_points_1_5()</a>, <a class="el" href="operatio_8c.html#71a97dd5751585b9085b4fb261eb240e">Courbe_34_points_2_0()</a>, <a class="el" href="operatio_8c.html#23355a318481ae1d72ee264064ad16f8">Courbe_34_points_2_5()</a>, <a class="el" href="operatio_8c.html#1bf89b9cda3584469bfb798dcc9b7272">Courbe_3_points_0_11()</a>, <a class="el" href="operatio_8c.html#de31d7a71bac813d2ae6c4de423a0889">Courbe_3_points_0_5()</a>, <a class="el" href="operatio_8c.html#62f742062e61c6c1d193e6dfda69e055">Courbe_3_points_12_11()</a>, <a class="el" href="operatio_8c.html#20b816af766c239445a7827079e768f7">Courbe_4_points_0_5()</a>, <a class="el" href="operatio_8c.html#a92c7f31063302cac49929c976d16f68">Courbe_4_points_1_9()</a>, <a class="el" href="operatio_8c.html#03c67705e83e5e6c1c8de8e47abffdda">Courbe_4_points_2_9()</a>, <a class="el" href="operatio_8c.html#08ff2febd7aeabbaa2d25a1a1fb2399b">Ellipse_12_0()</a>, <a class="el" href="operatio_8c.html#975380f74948945bf63f831bfd9d47a0">Ellipse_12_5()</a>, <a class="el" href="operatio_8c.html#95b33e5cbbafa2a06e38425c73d2ebab">Ellipse_degradee_0_6()</a>, <a class="el" href="operatio_8c.html#dc6183a87883c39ea3b722f7164c75e4">Ellipse_degradee_12_0()</a>, <a class="el" href="operatio_8c.html#a6263610605f2ba572fc4a27e0767d20">Ellipse_degradee_12_6()</a>, <a class="el" href="operatio_8c.html#4e932b49a46e0def7f0106abf260d3cd">Ellipse_degradee_12_8()</a>, <a class="el" href="operatio_8c.html#22e2b45a3e849087f82ad50d3c8d86bb">Ellipse_pleine_0_5()</a>, <a class="el" href="operatio_8c.html#8bd7c56552722b92c5dbae311e5b0778">Ellipse_vide_0_5()</a>, <a class="el" href="operatio_8c.html#9c0df21237e76cd39f04575aaf5ec95c">Etirer_brosse_0_7()</a>, <a class="el" href="operatio_8c.html#39c86f86d7d9bc2afebfb0d50564b13a">Etirer_brosse_12_0()</a>, <a class="el" href="operatio_8c.html#69b08bfbec798ad6441276aa5ffb1783">Etirer_brosse_1_7()</a>, <a class="el" href="operatio_8c.html#56e3db450681008c9766d004f9fdc012">Etirer_brosse_2_7()</a>, <a class="el" href="operatio_8c.html#5e7aab059d4708135cfdf0d2132ded3e">Fill_1_0()</a>, <a class="el" href="operatio_8c.html#f70f127fd7d3374515549b131cdf068e">Fill_2_0()</a>, <a class="el" href="operatio_8c.html#cb498974d84c2012808506e4c09ae4c8">Filled_contour_0_8()</a>, <a class="el" href="operatio_8c.html#1a27edec39385a00a10238dce31662c6">Filled_polyform_0_8()</a>, <a class="el" href="operatio_8c.html#d93031ef3d1fa248f57e5feb96bb575a">Filled_polyform_12_0()</a>, <a class="el" href="operatio_8c.html#dc4585c134d527f590a95b5142d0df84">Filled_polyform_12_8()</a>, <a class="el" href="operatio_8c.html#f0fda615e27b4e3f98cd0126f3e7267a">Freehand_Mode12_0_2()</a>, <a class="el" href="operatio_8c.html#c515c9f0bae8d9ee549f44568e241e2a">Freehand_Mode1_1_0()</a>, <a class="el" href="operatio_8c.html#1f9929ec6c202a2adf82f162b8b8fdcd">Freehand_Mode1_1_2()</a>, <a class="el" href="operatio_8c.html#829c1be6e6e3882a0dc079f8402688d8">Freehand_Mode1_2_0()</a>, <a class="el" href="operatio_8c.html#571381d10c5209102d1b48248ff50f45">Freehand_Mode1_2_2()</a>, <a class="el" href="operatio_8c.html#cce4153754ce37d7db821d4c0075dc96">Freehand_Mode2_1_0()</a>, <a class="el" href="operatio_8c.html#48df28c2c4b151488eb8ad811f21831f">Freehand_Mode2_1_2()</a>, <a class="el" href="operatio_8c.html#9c8c4c7719f65cb81ddda995a4fdb491">Freehand_Mode2_2_0()</a>, <a class="el" href="operatio_8c.html#0dc3249b0ddd3de01e9ac65e3e521af4">Freehand_Mode2_2_2()</a>, <a class="el" href="operatio_8c.html#98329e38c475fb6fc27827a4a2865ab8">Freehand_Mode3_0_1()</a>, <a class="el" href="operatio_8c.html#50a16f6a8b77f630018a765b5327e15f">Freehand_Mode3_1_0()</a>, <a class="el" href="operatio_8c.html#2e12e275fbd879778a1158e28e99b590">Freehand_Mode3_2_0()</a>, <a class="el" href="init_8c.html#2e9af314a4658b2f2600c5477e662614">Initialiser_operation()</a>, <a class="el" href="operatio_8c.html#3bdbd4082e7f63af4a42fd53b5262675">K_Ligne_0_6()</a>, <a class="el" href="operatio_8c.html#b2d1851ae368f7904a6347147b7ba977">K_Ligne_12_0()</a>, <a class="el" href="operatio_8c.html#d3084be8f3782954565a067dc8b340ff">K_Ligne_12_6()</a>, <a class="el" href="operatio_8c.html#c35b722cbdddab4d32bf47abcfd7cb59">K_Ligne_12_7()</a>, <a class="el" href="operatio_8c.html#086aaebc2efe46a29566a491f2f82ec4">Ligne_0_5()</a>, <a class="el" href="operatio_8c.html#07a0d6766fef898f11ae60a70e73946c">Ligne_12_0()</a>, <a class="el" href="operatio_8c.html#4979c036890934b0ff4ed23e518b88f3">Ligne_12_5()</a>, <a class="el" href="operatio_8c.html#87d207a2498477ee490872b3880a67e5">Lignes_centrees_0_3()</a>, <a class="el" href="operatio_8c.html#a5ee8d38d3f73ab0f1d52cbbdbbbe9c6">Lignes_centrees_0_7()</a>, <a class="el" href="operatio_8c.html#dc9aea28d98a2a405599765e96e2b39b">Lignes_centrees_12_0()</a>, <a class="el" href="operatio_8c.html#013d7cfbac843a1c4f127e1f83bce844">Lignes_centrees_12_3()</a>, <a class="el" href="operatio_8c.html#3c3c5ab11ad2ef724d3897d663e47722">Lignes_centrees_12_7()</a>, <a class="el" href="operatio_8c.html#3ee83b00b1eb52a26ecba62d71147129">Loupe_12_0()</a>, <a class="el" href="const_8h.html#33a21110f1e954063f13b7be8ef2c95a">NB_OPERATIONS</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6586c4bad2d08fd5858740a9a98a088f6">OPERATION_CERCLE_DEGRADE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc694d52afb2b94c8697872f041d68c32c7">OPERATION_CERCLE_PLEIN</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc60aa426f27916a0c12a1694dbc4b0e4b3">OPERATION_CERCLE_VIDE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc67db281d3b6611b3e5e997769e1f8e787">OPERATION_COURBE_3_POINTS</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6229ec57afbbc3ed3a7112eba78fa2f27">OPERATION_COURBE_4_POINTS</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6a3f7954531da33c6471ba012a566f241">OPERATION_DESSIN_CONTINU</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6b51c6b81aaeead4da842f3d96a30f9e3">OPERATION_DESSIN_DISCONTINU</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc64c85bf231fae098a41e602018fb64a36">OPERATION_DESSIN_POINT</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6f0fa6e930e633841c92ca8163e9111bc">OPERATION_ELLIPSE_DEGRADEE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6245f2951a636279b9d37b86a65c9cbd1">OPERATION_ELLIPSE_PLEINE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6464104b92341a065a31a7ef8004048c7">OPERATION_ELLIPSE_VIDE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc625cdcd23a7310db868ad362aaffa4558">OPERATION_ETIRER_BROSSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6fecc36c1dcca218b5440e93251a385c8">OPERATION_FILL</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6c5a4c57cff7930133c9e54280a1b4901">OPERATION_FILLED_CONTOUR</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc68e1b62a0848e2e7f998ba0292b3bb091">OPERATION_FILLED_POLYFORM</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6596ed53e546c3c5bafe8f4eafdf13f75">OPERATION_K_LIGNE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6c32a4d9cf05ac230e7f5932e7defd2ab">OPERATION_LIGNE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc602ecbe874caec5402e1dbd1e271931dd">OPERATION_LIGNES_CENTREES</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc69457969cee258963b2f2bf3819754b86">OPERATION_LOUPE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6a00017130e9bac9e618543bff8ff70ce">OPERATION_PIPETTE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc699c8e5eae68accfa2d4da5133c78a3f4">OPERATION_POLYBROSSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc66e76275c924e7e9700e40c14b817f808">OPERATION_POLYFILL</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6edd74a121b2eeaea98b452841de6a433">OPERATION_POLYFORM</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc63d6cfc234feaf91b3bf54972c924b4dc">OPERATION_POLYGONE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc60e6e212311cfe11ffe667565f7eb66ec">OPERATION_PRISE_BROSSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc692aaa4232c75faf4681b30f47abce2ba">OPERATION_RECTANGLE_DEGRADE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc68e8604bebd8f355d652daad800d38cd6">OPERATION_RECTANGLE_PLEIN</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6868f37b7906f3dec06f5f1d55ad665c5">OPERATION_RECTANGLE_VIDE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc60bf13475043a38be1a5622f134604853">OPERATION_REMPLACER</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc62fa8a592a8a103e59976b286d8a1a307">OPERATION_SCROLL</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6292982e55f3560dc385f48d334fcfe68">OPERATION_SPRAY</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6923c95b1ebf9bf3e20b9018cb8d3e02e">OPERATION_TOURNER_BROSSE</a>, <a class="el" href="operatio_8c.html#4a629179ec3128fa9e581993ce156102">Pipette_0_1()</a>, <a class="el" href="operatio_8c.html#1f114d65d580fd4f2b3c42c9b01f65e5">Pipette_12_0()</a>, <a class="el" href="operatio_8c.html#9eb21c269985378ddf7cfde4e4d72b14">Pipette_1_1()</a>, <a class="el" href="operatio_8c.html#d4233ec480c01dfe74e77c92374d3397">Pipette_2_1()</a>, <a class="el" href="global_8h.html#c99a646015fadd6e714772b1d2d86605">Pipette_Couleur</a>, <a class="el" href="operatio_8c.html#0d9413003f38d56b3d7bb3151dc42878">Polybrosse_12_8()</a>, <a class="el" href="operatio_8c.html#47020dce86934755bf4915b162755040">Polyfill_0_8()</a>, <a class="el" href="operatio_8c.html#0b95c625f2732ba0beee961d4ec7dfbf">Polyfill_12_0()</a>, <a class="el" href="operatio_8c.html#973ab655937e97697b7b73594e5dc681">Polyfill_12_8()</a>, <a class="el" href="operatio_8c.html#9bd1c10800e213a552d84f208b62687b">Polyfill_12_9()</a>, <a class="el" href="operatio_8c.html#bf6525308045edb051af2921fdeb9a0c">Polyform_0_8()</a>, <a class="el" href="operatio_8c.html#ef74ff3c3a143ec318f083c101741f35">Polyform_12_0()</a>, <a class="el" href="operatio_8c.html#812acd49035c414d1aecf286fba6e59a">Polyform_12_8()</a>, <a class="el" href="operatio_8c.html#5d4b7fb696dab653a40bc5b90ddc1da5">Polygone_12_0()</a>, <a class="el" href="operatio_8c.html#64cf0f2c5b66144b6f5c9b4dd3c7f823">Polygone_12_9()</a>, <a class="el" href="windows_8c.html#5937e6b64b1dce95d543aa1ee0501d09">Print_coordonnees()</a>, <a class="el" href="operatio_8c.html#693638a5b36064ac4329770e0eecf885">Rectangle_12_0()</a>, <a class="el" href="operatio_8c.html#daf3c3b6fe4278bdf0a4e12ac11b3cdd">Rectangle_12_5()</a>, <a class="el" href="operatio_8c.html#7971337bc3ebb3fa2a95d3e3ef332a9b">Rectangle_Degrade_0_5()</a>, <a class="el" href="operatio_8c.html#2f1e4233b24730f3fc075dc7ab1052c5">Rectangle_Degrade_0_7()</a>, <a class="el" href="operatio_8c.html#d8c35de45646bfc3a772ebee0eb07ba3">Rectangle_Degrade_0_9()</a>, <a class="el" href="operatio_8c.html#96996ce9df8b91722f1915e8a8113ebd">Rectangle_Degrade_12_0()</a>, <a class="el" href="operatio_8c.html#e7112c5a2af2fc2e380bb24d63378d91">Rectangle_Degrade_12_5()</a>, <a class="el" href="operatio_8c.html#b71cafab2d695452b7dc0845272436a1">Rectangle_Degrade_12_7()</a>, <a class="el" href="operatio_8c.html#a15f9bc73b88fd9603413447aaa5b89a">Rectangle_Degrade_12_9()</a>, <a class="el" href="operatio_8c.html#7d1b742a8d6ecf389d707eee89aa58b0">Rectangle_plein_0_5()</a>, <a class="el" href="operatio_8c.html#27b196cbacc4c9bc3c709fc5508d9676">Rectangle_vide_0_5()</a>, <a class="el" href="operatio_8c.html#4798b49d1907ebcb0c501a884990490b">Remplacer_1_0()</a>, <a class="el" href="operatio_8c.html#4f27829cf251e77244e0f25fddc7bc03">Remplacer_2_0()</a>, <a class="el" href="operatio_8c.html#bbbf9a41b8f745c7cd5bdd069d120060">Scroll_0_4()</a>, <a class="el" href="operatio_8c.html#7912a57ae0100839cde8d0afc1f87bf9">Scroll_12_0()</a>, <a class="el" href="operatio_8c.html#3bbefcb4aba9861d727a93f03a13d1b4">Scroll_12_4()</a>, <a class="el" href="operatio_8c.html#82076698b660bb7234451d25a15642ea">Spray_0_2()</a>, <a class="el" href="operatio_8c.html#5df8d971ffac092a1a13da5135c8c0c6">Spray_12_2()</a>, <a class="el" href="operatio_8c.html#ad59ba8580cb9d933740c2ce707be5e2">Spray_1_0()</a>, <a class="el" href="operatio_8c.html#0d1c0f4cbcc63af998e776909ac4b487">Spray_2_0()</a>, <a class="el" href="const_8h.html#730339edea0233c9bf56626e322f3765">TAILLE_PILE_OPERATIONS</a>, <a class="el" href="operatio_8c.html#93ae1af3f45ebc6295d15ad56875eb23">Tourner_brosse_0_5()</a>, <a class="el" href="operatio_8c.html#019f75d309bc32c2500d0d5ffd67a2d2">Tourner_brosse_12_0()</a>, <a class="el" href="operatio_8c.html#8625ce6837d4ea2e3c63b8fe293af85a">Tourner_brosse_1_5()</a>, and <a class="el" href="operatio_8c.html#8b30396790dd600656a4370545bc2dca">Tourner_brosse_2_5()</a>.</p>
+<p>References <a class="el" href="operatio_8c.html#e036ae140c892d1c495b6ad0927863b4">Airbrush_0_2()</a>, <a class="el" href="operatio_8c.html#108ca47a1157a7d0257ba5ab1f8cc95a">Airbrush_12_2()</a>, <a class="el" href="operatio_8c.html#3e04e1c351393fabf15c6b1a93581bfe">Airbrush_1_0()</a>, <a class="el" href="operatio_8c.html#235425e6eab503ea8d76641008fde102">Airbrush_2_0()</a>, <a class="el" href="operatio_8c.html#5e0234342deeccaa3d996000f4c16731">Brush_0_5()</a>, <a class="el" href="operatio_8c.html#92e5a52893f4e4b046f25aaa6d9bb909">Brush_12_0()</a>, <a class="el" href="operatio_8c.html#42dcc550c44b0bb37a3c11b448ae40b6">Brush_12_5()</a>, <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="operatio_8c.html#ec214b03cb3a208be93510adb28f124e">Centered_lines_0_3()</a>, <a class="el" href="operatio_8c.html#dbf85caaba64f24c1a444689b56efaa9">Centered_lines_0_7()</a>, <a class="el" href="operatio_8c.html#635279a361be01171376d11b3f618e03">Centered_lines_12_0()</a>, <a class="el" href="operatio_8c.html#4b8741f845ee27f9a837d7cdccd14035">Centered_lines_12_3()</a>, <a class="el" href="operatio_8c.html#51edf512c8722eaa3de4639805a272d0">Centered_lines_12_7()</a>, <a class="el" href="operatio_8c.html#b7b5f72d11aec83d57dd450b645e2cf9">Circle_12_0()</a>, <a class="el" href="operatio_8c.html#93a27febb22697e1644eced1fc707c49">Circle_12_5()</a>, <a class="el" href="operatio_8c.html#bcce191819e6502bc327d217d18d7fc9">Colorpicker_0_1()</a>, <a class="el" href="operatio_8c.html#ede9c7153f8f785a982daa8e00f5726c">Colorpicker_12_0()</a>, <a class="el" href="operatio_8c.html#b7d00048924f695c41f868145f2c8a7e">Colorpicker_1_1()</a>, <a class="el" href="operatio_8c.html#d50b647c3b07309c244e8754a251d9cc">Colorpicker_2_1()</a>, <a class="el" href="global_8h.html#be6b76dce5b82fc50ab0107a2623c8f3">Colorpicker_color</a>, <a class="el" href="operatio_8c.html#10ddd7eb931172fd26abfe0f77d813c3">Curve_34_points_1_0()</a>, <a class="el" href="operatio_8c.html#15444af0806c14a9c19b5323261a7b00">Curve_34_points_1_5()</a>, <a class="el" href="operatio_8c.html#c063cd71ba885456e9698528619e6a32">Curve_34_points_2_0()</a>, <a class="el" href="operatio_8c.html#2b49e05d88a2aa4e56afacf4117559d3">Curve_34_points_2_5()</a>, <a class="el" href="operatio_8c.html#39081cf629fed5979ba38223eb3a06f5">Curve_3_points_0_11()</a>, <a class="el" href="operatio_8c.html#ff7a09d8c40471b336243a2df30eb175">Curve_3_points_0_5()</a>, <a class="el" href="operatio_8c.html#8d998909fbab9fae31e760132b910d86">Curve_3_points_12_11()</a>, <a class="el" href="operatio_8c.html#dc36612f47b8ceb7a5312a7799ec79fb">Curve_4_points_0_5()</a>, <a class="el" href="operatio_8c.html#1a7ec29a74dc5c2cb3281730082fba71">Curve_4_points_1_9()</a>, <a class="el" href="operatio_8c.html#72507eb7a3cf24c936b272ce5748bc4f">Curve_4_points_2_9()</a>, <a class="el" href="operatio_8c.html#08ff2febd7aeabbaa2d25a1a1fb2399b">Ellipse_12_0()</a>, <a class="el" href="operatio_8c.html#975380f74948945bf63f831bfd9d47a0">Ellipse_12_5()</a>, <a class="el" href="operatio_8c.html#d3e6cf616efac87e1b03b9b7e6af9ef0">Empty_circle_0_5()</a>, <a class="el" href="operatio_8c.html#3ac9e41fe1601812771efbea546d9db9">Empty_ellipse_0_5()</a>, <a class="el" href="operatio_8c.html#396edf9e3b92dd32e784af56388964b7">Empty_rectangle_0_5()</a>, <a class="el" href="operatio_8c.html#5e7aab059d4708135cfdf0d2132ded3e">Fill_1_0()</a>, <a class="el" href="operatio_8c.html#f70f127fd7d3374515549b131cdf068e">Fill_2_0()</a>, <a class="el" href="operatio_8c.html#861e044b97f00124ba5514185f2eed2e">Filled_circle_0_5()</a>, <a class="el" href="operatio_8c.html#cb498974d84c2012808506e4c09ae4c8">Filled_contour_0_8()</a>, <a class="el" href="operatio_8c.html#14bad98d6f50d6828ac63f3df02535c5">Filled_ellipse_0_5()</a>, <a class="el" href="operatio_8c.html#1a27edec39385a00a10238dce31662c6">Filled_polyform_0_8()</a>, <a class="el" href="operatio_8c.html#d93031ef3d1fa248f57e5feb96bb575a">Filled_polyform_12_0()</a>, <a class="el" href="operatio_8c.html#dc4585c134d527f590a95b5142d0df84">Filled_polyform_12_8()</a>, <a class="el" href="operatio_8c.html#0e3cbf930c5b6ed8eaa26242f5521121">Filled_rectangle_0_5()</a>, <a class="el" href="operatio_8c.html#9b23d339fc5af4c97431278ec91851c1">Freehand_mode12_0_2()</a>, <a class="el" href="operatio_8c.html#b80df96946d02c732d0ca36c789d41f4">Freehand_mode1_1_0()</a>, <a class="el" href="operatio_8c.html#aa311559ae5276b8095e156158c412b5">Freehand_mode1_1_2()</a>, <a class="el" href="operatio_8c.html#3cc184cf55337b192971009082df1bec">Freehand_mode1_2_0()</a>, <a class="el" href="operatio_8c.html#6f457fcac3ea14c5182cd10c58356429">Freehand_mode1_2_2()</a>, <a class="el" href="operatio_8c.html#7a727714054e6c398d1876aa95ea6f09">Freehand_mode2_1_0()</a>, <a class="el" href="operatio_8c.html#b011af97253db51fca932afcb85c4888">Freehand_mode2_1_2()</a>, <a class="el" href="operatio_8c.html#8c49d08448bc9288894817ff1788a028">Freehand_mode2_2_0()</a>, <a class="el" href="operatio_8c.html#7d2e5aea134caeff8f0048fbd6c429e7">Freehand_mode2_2_2()</a>, <a class="el" href="operatio_8c.html#2e176dd456727e5fb5c5375b28610281">Freehand_mode3_0_1()</a>, <a class="el" href="operatio_8c.html#c2882732eaa9cfda2e9cfba97301b5c9">Freehand_mode3_1_0()</a>, <a class="el" href="operatio_8c.html#2e12e275fbd879778a1158e28e99b590">Freehand_Mode3_2_0()</a>, <a class="el" href="operatio_8c.html#1182b57479b30596fdff21acd09c3eb4">Grad_circle_0_6()</a>, <a class="el" href="operatio_8c.html#45c81a28a644bcb53176a6c6e4cf448b">Grad_circle_12_0()</a>, <a class="el" href="operatio_8c.html#ce8198a989f3097751e241b06e71d551">Grad_circle_12_6()</a>, <a class="el" href="operatio_8c.html#c8bfdab931d3f8f00c06c2b5bef391cc">Grad_circle_12_8()</a>, <a class="el" href="operatio_8c.html#28e39ecad326778a22dd218e5f0572dd">Grad_circle_or_ellipse_0_8()</a>, <a class="el" href="operatio_8c.html#8e458d13a13c5f80a10d5a39bd075a20">Grad_ellipse_0_6()</a>, <a class="el" href="operatio_8c.html#1aefe07c38c73a08d04760a83890fada">Grad_ellipse_12_0()</a>, <a class="el" href="operatio_8c.html#97f0f75009b0e8c98d25aa4e80d82028">Grad_ellipse_12_6()</a>, <a class="el" href="operatio_8c.html#c778462b34cfec4f50d37d93330877e2">Grad_ellipse_12_8()</a>, <a class="el" href="operatio_8c.html#e0869bdbe6da7985364a8c57d7b5f4b0">Grad_rectangle_0_5()</a>, <a class="el" href="operatio_8c.html#4b9f27810c1695cbabedd92b075e71be">Grad_rectangle_0_7()</a>, <a class="el" href="operatio_8c.html#c82c55cb83a45f0fef70246ebea74d38">Grad_rectangle_0_9()</a>, <a class="el" href="operatio_8c.html#f016d6448cb1f4d2084b3376ff60abbe">Grad_rectangle_12_0()</a>, <a class="el" href="operatio_8c.html#094bf9bcdc406e4acbf91df0f8c07699">Grad_rectangle_12_5()</a>, <a class="el" href="operatio_8c.html#85c65b7c59a0b35125d0a5c8287378b7">Grad_rectangle_12_7()</a>, <a class="el" href="operatio_8c.html#9f0de646183d0770d7040a7b9364d583">Grad_rectangle_12_9()</a>, <a class="el" href="init_8c.html#98921c4d4426152662e06a33b79d03d9">Init_operation()</a>, <a class="el" href="operatio_8c.html#695f8a2cc6b91f30a47a73dbab067efd">K_line_0_6()</a>, <a class="el" href="operatio_8c.html#1e286c8c896c2e7a8c75074aabba7fdd">K_line_12_0()</a>, <a class="el" href="operatio_8c.html#5e85aaf48c10e42c8f8ba1ca673ba001">K_line_12_6()</a>, <a class="el" href="operatio_8c.html#471b207e6bc2fb954317f03b0fdf43aa">K_line_12_7()</a>, <a class="el" href="operatio_8c.html#0b826f43bf092d563e08d4f9b2cf1753">Line_0_5()</a>, <a class="el" href="operatio_8c.html#7c20d81039a3f90933bff2f7bf1cdfcc">Line_12_0()</a>, <a class="el" href="operatio_8c.html#a4847b3a261af9cf6509293d6cf81a11">Line_12_5()</a>, <a class="el" href="operatio_8c.html#060373c35995e8497ab7393a24cc9f11">Magnifier_12_0()</a>, <a class="el" href="const_8h.html#33a21110f1e954063f13b7be8ef2c95a">NB_OPERATIONS</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc61ab9f3d4bd198e29afca274a901d4e13">OPERATION_3_POINTS_CURVE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc61cee6ed41bfbbe7844c42a72edca8a37">OPERATION_4_POINTS_CURVE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6b969ac2f74755d1efcc2c0f2e8ae267d">OPERATION_AIRBRUSH</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6f14e39793bbb2b4d9a33024dc677ebae">OPERATION_CENTERED_LINES</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6d7851a039582cc366cbc66e7263dd9d6">OPERATION_COLORPICK</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6f7140f44da3e515ba8d40260bc78a3b0">OPERATION_CONTINUOUS_DRAW</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc69352cd20d6cdf93f0ff770b1279ea9ff">OPERATION_DISCONTINUOUS_DRAW</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc60bdc3ed987af3f0ed0882557a3c59281">OPERATION_EMPTY_CIRCLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc625164f4a7d02802d9b3a1efc1198786c">OPERATION_EMPTY_ELLIPSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc689328c68abd9e49ceaa636df33381add">OPERATION_EMPTY_RECTANGLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6fecc36c1dcca218b5440e93251a385c8">OPERATION_FILL</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc641d07a7d694b67a4eff4d2e3bb808e8b">OPERATION_FILLED_CIRCLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6c5a4c57cff7930133c9e54280a1b4901">OPERATION_FILLED_CONTOUR</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc64670d12774579f0e429f576b45685c69">OPERATION_FILLED_ELLIPSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc68e1b62a0848e2e7f998ba0292b3bb091">OPERATION_FILLED_POLYFORM</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6420bb10d11d385d1b51df6dec92bfb5d">OPERATION_FILLED_RECTANGLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6af5e21444dd933810807141aba37cb4b">OPERATION_GRAB_BRUSH</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6838713b83eef11ceea5b5a20d64e59ef">OPERATION_GRAD_CIRCLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6b21b76284ca0e1fc7c0081fa00fb3313">OPERATION_GRAD_ELLIPSE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc68f2dadc5b9b10b7a0bcff72cfe6aa235">OPERATION_GRAD_RECTANGLE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6596ed53e546c3c5bafe8f4eafdf13f75">OPERATION_K_LIGNE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc611e5bf726df4d64f1d8802b0d2fecbeb">OPERATION_LINE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc63427fd2b3196a3af3e133119df2ca01e">OPERATION_MAGNIFY</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6e1f3add8ea9d64b6d86e1d9ccb6b3a89">OPERATION_POINT_DRAW</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6c28cb394e816ee775d76ae152fa80679">OPERATION_POLYBRUSH</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc66e76275c924e7e9700e40c14b817f808">OPERATION_POLYFILL</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6edd74a121b2eeaea98b452841de6a433">OPERATION_POLYFORM</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6d1d0c492fc1ac94cd9e6ccab631c3c93">OPERATION_POLYGON</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc64d7a993794c148cf0c3ad30271a6ed91">OPERATION_REPLACE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc669bec33991d0529913cfa66390cde6d7">OPERATION_ROTATE_BRUSH</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc62fa8a592a8a103e59976b286d8a1a307">OPERATION_SCROLL</a>, <a class="el" href="const_8h.html#8d00b5ae3fef3e6c8e563585def9b676">OPERATION_STACK_SIZE</a>, <a class="el" href="const_8h.html#eedeb326a2c1f5bb767158e0b45e6fc6bf41df4a2104574e553207e252f15497">OPERATION_STRETCH_BRUSH</a>, <a class="el" href="operatio_8c.html#96cbc01ad23c75758df8e6c0c98d3df9">Polybrush_12_8()</a>, <a class="el" href="operatio_8c.html#47020dce86934755bf4915b162755040">Polyfill_0_8()</a>, <a class="el" href="operatio_8c.html#0b95c625f2732ba0beee961d4ec7dfbf">Polyfill_12_0()</a>, <a class="el" href="operatio_8c.html#973ab655937e97697b7b73594e5dc681">Polyfill_12_8()</a>, <a class="el" href="operatio_8c.html#9bd1c10800e213a552d84f208b62687b">Polyfill_12_9()</a>, <a class="el" href="operatio_8c.html#bf6525308045edb051af2921fdeb9a0c">Polyform_0_8()</a>, <a class="el" href="operatio_8c.html#ef74ff3c3a143ec318f083c101741f35">Polyform_12_0()</a>, <a class="el" href="operatio_8c.html#812acd49035c414d1aecf286fba6e59a">Polyform_12_8()</a>, <a class="el" href="operatio_8c.html#7c9e28ff30681c149aa4b6928e946c51">Polygon_12_0()</a>, <a class="el" href="operatio_8c.html#406241ea0535e9898b08f46d1c3e8fa5">Polygon_12_9()</a>, <a class="el" href="windows_8c.html#695f917c7ddc48104eb4e99517430dbc">Print_coordinates()</a>, <a class="el" href="operatio_8c.html#693638a5b36064ac4329770e0eecf885">Rectangle_12_0()</a>, <a class="el" href="operatio_8c.html#daf3c3b6fe4278bdf0a4e12ac11b3cdd">Rectangle_12_5()</a>, <a class="el" href="operatio_8c.html#7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, <a class="el" href="operatio_8c.html#47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>, <a class="el" href="operatio_8c.html#9b8327c7cfc9566b48b1fa63e6c2408b">Rotate_brush_0_5()</a>, <a class="el" href="operatio_8c.html#7e82130be2ce36999811071f33e85f01">Rotate_brush_12_0()</a>, <a class="el" href="operatio_8c.html#330dbcfe4ef32cea3bdbd88819701448">Rotate_brush_1_5()</a>, <a class="el" href="operatio_8c.html#81c3739f7cd7e909f344f602c9db7a80">Rotate_brush_2_5()</a>, <a class="el" href="operatio_8c.html#bbbf9a41b8f745c7cd5bdd069d120060">Scroll_0_4()</a>, <a class="el" href="operatio_8c.html#7912a57ae0100839cde8d0afc1f87bf9">Scroll_12_0()</a>, <a class="el" href="operatio_8c.html#3bbefcb4aba9861d727a93f03a13d1b4">Scroll_12_4()</a>, <a class="el" href="operatio_8c.html#27c4db611ccfb11e3513b40fea98c0bf">Stretch_brush_0_7()</a>, <a class="el" href="operatio_8c.html#84ad63995362d96d5b6e4402c0229e3c">Stretch_brush_12_0()</a>, <a class="el" href="operatio_8c.html#70bc90f345d317900c9ccf3c6786d6cc">Stretch_brush_1_7()</a>, and <a class="el" href="operatio_8c.html#b08e61900bb3e0a1b94b35892827ba3f">Stretch_brush_2_7()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="421a5389cbdf1c0481683c558e6e7b1c"></a><!-- doxytag: member="init.c::Definir_mode_video" ref="421a5389cbdf1c0481683c558e6e7b1c" args="(short Largeur, short Hauteur, byte Mode, word Fullscreen)" -->
+<a class="anchor" name="05d192ba58c39730e20a24055c2912e6"></a><!-- doxytag: member="init.c::Set_video_mode" ref="05d192ba58c39730e20a24055c2912e6" args="(short width, short height, byte mode, word fullscreen)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Definir_mode_video           </td>
+          <td class="memname">void Set_video_mode           </td>
           <td>(</td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Largeur</em>, </td>
+          <td class="paramname"> <em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">short&nbsp;</td>
-          <td class="paramname"> <em>Hauteur</em>, </td>
+          <td class="paramname"> <em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#b8ef12fab634c171394422d0ee8baf94">byte</a>&nbsp;</td>
-          <td class="paramname"> <em>Mode</em>, </td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_8h.html#acc262b7acb8ef2b1d38df8b855bc0f6">word</a>&nbsp;</td>
-          <td class="paramname"> <em>Fullscreen</em></td><td>&nbsp;</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>fullscreen</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -619,18 +616,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="erreurs_8h.html#3e3b842efc9f67e56cd67d9e7d5a078c">DEBUG</a>, <a class="el" href="structS__Mode__video.html#e7082f8776c47d332636706831ee77d2">S_Mode_video::Etat</a>, <a class="el" href="structS__Mode__video.html#cb2a6ab4c7a7d14d15c490390c352842">S_Mode_video::Fullscreen</a>, <a class="el" href="structS__Mode__video.html#60eb8c2e9abcd788a943e2135a4edb58">S_Mode_video::Hauteur</a>, <a class="el" href="structS__Mode__video.html#73b691ac559cdbbfaf56f6ed6493398c">S_Mode_video::Largeur</a>, <a class="el" href="const_8h.html#578e34b2395e6d62e54509ee949e7c86">MAX_MODES_VIDEO</a>, <a class="el" href="structS__Mode__video.html#9100bf633b7c3d26086c0d5d634141be">S_Mode_video::Mode</a>, <a class="el" href="global_8h.html#a2f5a72d34ad1b559d2fd4570b2acce2">Mode_video</a>, and <a class="el" href="global_8h.html#92078103246bc8c8c8b52041f49eb95d">Nb_modes_video</a>.</p>
+<p>References <a class="el" href="struct_8h.html#71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="erreurs_8h.html#3e3b842efc9f67e56cd67d9e7d5a078c">DEBUG</a>, <a class="el" href="structT__Video__mode.html#7f93b2d6a3c49a488b51ca18d131ad5b">T_Video_mode::Fullscreen</a>, <a class="el" href="structT__Video__mode.html#a336ff54ef0fe1229783a884cb9a5b6c">T_Video_mode::Height</a>, <a class="el" href="const_8h.html#923b4beac659942a4cbea3f424a73eb7">MAX_VIDEO_MODES</a>, <a class="el" href="structT__Video__mode.html#14f6f04f7050979bfce2596d357d64d0">T_Video_mode::Mode</a>, <a class="el" href="global_8h.html#8da42d40f2e806e379b6ab4b7d20e658">Nb_video_modes</a>, <a class="el" href="structT__Video__mode.html#323aab11c90d99cf82899337efe6a66f">T_Video_mode::State</a>, <a class="el" href="global_8h.html#1a4d7a3db85cfea3dd3c404ecd43b482">Video_mode</a>, and <a class="el" href="structT__Video__mode.html#e8cf26f03aafccc09a924d9305851a67">T_Video_mode::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#3a746f07e9e26b371327fcece4f66aa0">Definition_des_modes_video()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#e9bec23ba7ee3bfbfeb3e9b6bd98cd26">Set_all_video_modes()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="c06389122e07a9c3a71edf80907c3cbc"></a><!-- doxytag: member="init.c::Compare_modes_video" ref="c06389122e07a9c3a71edf80907c3cbc" args="(const void *p1, const void *p2)" -->
+<a class="anchor" name="daed1ff05064a53c429d6cfb7150ba59"></a><!-- doxytag: member="init.c::Compare_video_modes" ref="daed1ff05064a53c429d6cfb7150ba59" args="(const void *p1, const void *p2)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Compare_modes_video           </td>
+          <td class="memname">int Compare_video_modes           </td>
           <td>(</td>
           <td class="paramtype">const void *&nbsp;</td>
           <td class="paramname"> <em>p1</em>, </td>
@@ -652,18 +649,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="structS__Mode__video.html#60eb8c2e9abcd788a943e2135a4edb58">S_Mode_video::Hauteur</a>, and <a class="el" href="structS__Mode__video.html#73b691ac559cdbbfaf56f6ed6493398c">S_Mode_video::Largeur</a>.</p>
+<p>References <a class="el" href="structT__Video__mode.html#a336ff54ef0fe1229783a884cb9a5b6c">T_Video_mode::Height</a>, and <a class="el" href="structT__Video__mode.html#e8cf26f03aafccc09a924d9305851a67">T_Video_mode::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="init_8h.html#3a746f07e9e26b371327fcece4f66aa0">Definition_des_modes_video()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#e9bec23ba7ee3bfbfeb3e9b6bd98cd26">Set_all_video_modes()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="3a746f07e9e26b371327fcece4f66aa0"></a><!-- doxytag: member="init.c::Definition_des_modes_video" ref="3a746f07e9e26b371327fcece4f66aa0" args="(void)" -->
+<a class="anchor" name="e9bec23ba7ee3bfbfeb3e9b6bd98cd26"></a><!-- doxytag: member="init.c::Set_all_video_modes" ref="e9bec23ba7ee3bfbfeb3e9b6bd98cd26" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Definition_des_modes_video           </td>
+          <td class="memname">void Set_all_video_modes           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -676,21 +673,21 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="init_8c.html#c06389122e07a9c3a71edf80907c3cbc">Compare_modes_video()</a>, <a class="el" href="init_8c.html#421a5389cbdf1c0481683c558e6e7b1c">Definir_mode_video()</a>, <a class="el" href="global_8h.html#0c5ed86b0b71ed97746a96e443e5563c">Hauteur</a>, <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, <a class="el" href="global_8h.html#a2f5a72d34ad1b559d2fd4570b2acce2">Mode_video</a>, and <a class="el" href="global_8h.html#92078103246bc8c8c8b52041f49eb95d">Nb_modes_video</a>.</p>
+<p>References <a class="el" href="init_8c.html#daed1ff05064a53c429d6cfb7150ba59">Compare_video_modes()</a>, <a class="el" href="global_8h.html#aa1f7c6baace5e98efec0ecb62c7803a">Height</a>, <a class="el" href="global_8h.html#8da42d40f2e806e379b6ab4b7d20e658">Nb_video_modes</a>, <a class="el" href="init_8c.html#05d192ba58c39730e20a24055c2912e6">Set_video_mode()</a>, <a class="el" href="global_8h.html#1a4d7a3db85cfea3dd3c404ecd43b482">Video_mode</a>, <a class="el" href="structT__Polygon__edge.html#f9946998df28912e1bcf8a7533404a11">T_Polygon_edge::w</a>, and <a class="el" href="global_8h.html#08387db6d493d02807972ccd00885063">Width</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="95e24fc27e420f60c94da5448ca676e8"></a><!-- doxytag: member="init.c::Charger_CFG" ref="95e24fc27e420f60c94da5448ca676e8" args="(int Tout_charger)" -->
+<a class="anchor" name="758244ae95be4da218c7ce34a67a0b0d"></a><!-- doxytag: member="init.c::Load_CFG" ref="758244ae95be4da218c7ce34a67a0b0d" args="(int reload_all)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Charger_CFG           </td>
+          <td class="memname">int Load_CFG           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>Tout_charger</em>          </td>
+          <td class="paramname"> <em>reload_all</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -700,18 +697,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#3c0b9279f3bb789b4f5723b3c17eaf0c">BETA1</a>, <a class="el" href="const_8h.html#5e33e4ef7e5a5f5f8565818d698301ae">BETA2</a>, <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="gfxcfg_8c.html#0f901364dd6306dc58f30f86f741a73f">Chunk</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331df174326bb1d8ba4daf1204f6df0c896">CHUNK_DEGRADES</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331e243ba24574e95d5639f1b331f7d8248">CHUNK_EXCLUDE_COLORS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331f7ee64cc09bca02e88124a794ed4cb49">CHUNK_GRILLE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c71fe8ae92c0556d510750ef69657f0f">CHUNK_MASQUE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331dfdf21379cab708134a6bedd473e912f">CHUNK_MODES_VIDEO</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3317f1b6bde4828143c5b9866b06f63339b">CHUNK_QUICK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331b848881b1b05e9f2d0895bca7ace5c59">CHUNK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c2afe216878002f90570136c805b2435">CHUNK_SMOOTH</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3311ca1019d0adf30cf7b4eb79052e86654">CHUNK_STENCIL</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331493b830951b01526f9db9461b3f0722d">CHUNK_TOUCHES</a>, <a class="el" href="global_8h.html#fe053f70f9364d3deedad4ef574483e4">Config_Touche</a>, <a class="el" href="hotkeys_8c.html#4d0a9100bfc84011b8ca2e444d31c801">ConfigTouche</a>, <a class="el" href="boutons_8c.html#7568d05a09b83f9e1b23fab6c0c8909e">Degrade_Charger_infos_du_tableau()</a>, <a class="el" href="global_8h.html#1ac71fe9d9ff8c7ea8ab7799663a5a71">Degrade_Courant</a>, <a class="el" href="global_8h.html#3191cd03b9b1fdeb38d31dbb44621249">Degrade_Tableau</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479bebe698d0dcfc99c5d108ab28d0a5917ef">ERREUR_CFG_ABSENT</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be7343c14d6a72f3d4daee2d31efb9a17a">ERREUR_CFG_ANCIEN</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479be259be6b9ac002c3b830a0737095374ff">ERREUR_CFG_CORROMPU</a>, <a class="el" href="structS__Mode__video.html#e7082f8776c47d332636706831ee77d2">S_Mode_video::Etat</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="structS__Mode__video.html#60eb8c2e9abcd788a943e2135a4edb58">S_Mode_video::Hauteur</a>, <a class="el" href="global_8h.html#018f388352a08434a4685baa424b8929">Largeur</a>, <a class="el" href="graph_8c.html#8c8c02edc8f757911e0f706701a84730">Liste2tables()</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="global_8h.html#a2f5a72d34ad1b559d2fd4570b2acce2">Mode_video</a>, <a class="el" href="global_8h.html#92078103246bc8c8c8b52041f49eb95d">Nb_modes_video</a>, <a class="el" href="const_8h.html#b45c149d2f392b5ecf4cf169bd0f19a0">NB_TOUCHES</a>, <a class="el" href="structS__ConfigTouche.html#be744707bae702aeb3a28e12c5a9ba06">S_ConfigTouche::Numero</a>, <a class="el" href="hotkeys_8c.html#a54a223f5218119b072de29f10405fa3">Ordonnancement</a>, <a class="el" href="global_8h.html#ddfcf46c011b63fc0420b192cfe802f9">Quick_shade_Loop</a>, <a class="el" href="global_8h.html#3898c4ebf4acb99debedd6ebcbc0880c">Quick_shade_Step</a>, <a class="el" href="io_8c.html#73aaad5d4ad1f9525a5b721f8ce4ce1b">read_byte()</a>, <a class="el" href="io_8c.html#7dd95dabd449d89610810982e4d41191">read_bytes()</a>, <a class="el" href="io_8c.html#fa8636b02c02d3d866a7a17b38c4d11f">read_dword_le()</a>, <a class="el" href="io_8c.html#6de4e1e280b33b322b6eec4bb271ff19">read_word_le()</a>, <a class="el" href="global_8h.html#7e7ad9205a82bd1d4509ae4192410e70">Repertoire_de_configuration</a>, <a class="el" href="global_8h.html#64df8d19ea0bea419a8067dee04bb6b5">Shade_Actuel</a>, <a class="el" href="global_8h.html#c04ed0b1f486e833f801bcfb482c5610">Shade_Liste</a>, <a class="el" href="global_8h.html#ea1d12331bf0a47fa95e9a525ef33b23">Shade_Table_droite</a>, <a class="el" href="global_8h.html#26440f9d65f34c258bc747c9aff84b18">Shade_Table_gauche</a>, <a class="el" href="global_8h.html#a37544a4a832134207f56be13dae07f8">Smooth_Matrice</a>, <a class="el" href="global_8h.html#7069dde650cd5806b64dfb80f228d98f">Snap_Decalage_X</a>, <a class="el" href="global_8h.html#99a1b9d7d035a7c0b73e17539a85328d">Snap_Decalage_Y</a>, <a class="el" href="global_8h.html#de0cd8eddc9a7dc3837c97252de7d3da">Snap_Hauteur</a>, <a class="el" href="global_8h.html#119c9281e01407c604dd501635f884f3">Snap_Largeur</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>, <a class="el" href="clavier_8c.html#f8205c931fd5746f6b7ffe575c747711">Touche_pour_scancode()</a>, <a class="el" href="const_8h.html#19efa2f81d63ff13a7e60e352b9eb929">VERSION1</a>, and <a class="el" href="const_8h.html#30448eb6a744ed516cfd498fc188a14c">VERSION2</a>.</p>
+<p>References <a class="el" href="const_8h.html#3c0b9279f3bb789b4f5723b3c17eaf0c">BETA1</a>, <a class="el" href="structT__Config__header.html#4af71023fac1c2b15281a725f589c2d1">T_Config_header::Beta1</a>, <a class="el" href="const_8h.html#5e33e4ef7e5a5f5f8565818d698301ae">BETA2</a>, <a class="el" href="structT__Config__header.html#4deeece8143fdd42dea3d94a2b3026f6">T_Config_header::Beta2</a>, <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331e243ba24574e95d5639f1b331f7d8248">CHUNK_EXCLUDE_COLORS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf33125937bab17adcdb7e88617b21509758f">CHUNK_GRADIENTS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331aa07b3c3af52f0ad6200ae2e9c7a3663">CHUNK_GRID</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331a93fe52c4a6104ec64ee9e26ecb5e7a4">CHUNK_KEYS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3313c1f5e057896063cccbbf3760b340bdb">CHUNK_MASK</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3317f1b6bde4828143c5b9866b06f63339b">CHUNK_QUICK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331b848881b1b05e9f2d0895bca7ace5c59">CHUNK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c2afe216878002f90570136c805b2435">CHUNK_SMOOTH</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3311ca1019d0adf30cf7b4eb79052e86654">CHUNK_STENCIL</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3316e9ee11242e69baa61de6c131c39622b">CHUNK_VIDEO_MODES</a>, <a class="el" href="global_8h.html#1a2f2691154067f71fb428023659d9d0">Config_directory</a>, <a class="el" href="global_8h.html#a85ac83d796b14ef626ad084d6ac74d3">Config_Key</a>, <a class="el" href="hotkeys_8c.html#747d98b6c20219025f558d639b0ab1ae">ConfigKey</a>, <a class="el" href="global_8h.html#863cb5ec51cb14be80bff4282b910e14">Current_gradient</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25e76bd5a99f058f03603cdb6ce9ca918a">ERROR_CFG_CORRUPTED</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25ae49117a2c52a0eba6db1e355580fd8a">ERROR_CFG_MISSING</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f25a52e91d06a7a633fc9bb4d9c94029839">ERROR_CFG_OLD</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="io_8c.html#53e7fc495276275ccb692dae8acee4e9">File_length()</a>, <a class="el" href="global_8h.html#783d72c5b3c5fc6f877e628c7f3393a8">Gradient_array</a>, <a class="el" href="structT__Video__mode.html#a336ff54ef0fe1229783a884cb9a5b6c">T_Video_mode::Height</a>, <a class="el" href="structT__Config__video__mode.html#047a6e80ea116fa450d6600178d30191">T_Config_video_mode::Height</a>, <a class="el" href="structT__Config__shortcut__info.html#85e018185b28265ba82cc610ac743e38">T_Config_shortcut_info::Key</a>, <a class="el" href="structT__Config__shortcut__info.html#1c4656d6a3b8515f5aa5498ec1a0b483">T_Config_shortcut_info::Key2</a>, <a class="el" href="clavier_8c.html#03459332e6f78e484ecc25b08ef623b2">Key_for_scancode()</a>, <a class="el" href="boutons_8c.html#0566fe8428f2bd983e198bf06f30d156">Load_gradient_data()</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="const_8h.html#d1da3abc5e55091563885e492a66ff35">NB_SHORTCUTS</a>, <a class="el" href="global_8h.html#8da42d40f2e806e379b6ab4b7d20e658">Nb_video_modes</a>, <a class="el" href="structT__Config__shortcut__info.html#34c9420465b4d16213a31c85d9bcd8a6">T_Config_shortcut_info::Number</a>, <a class="el" href="structT__Config__chunk.html#c4ac36188cf6a8693d903ac58294b00f">T_Config_chunk::Number</a>, <a class="el" href="hotkeys_8c.html#95f1c55777a4ca6f2a6285aabbf8f358">Ordering</a>, <a class="el" href="global_8h.html#bc7679865b20bdd9c04d598c01e3027c">Quick_shade_loop</a>, <a class="el" href="global_8h.html#e15aa468ec84fd24a174cf33b4038e11">Quick_shade_step</a>, <a class="el" href="io_8c.html#93930659bb1d0e160762e826d11126cb">Read_byte()</a>, <a class="el" href="io_8c.html#f170d69dda0f8ce13b19a16e7d331f0e">Read_bytes()</a>, <a class="el" href="io_8c.html#93475e4aa5d917a2940a80d121c5f9df">Read_dword_le()</a>, <a class="el" href="io_8c.html#7a3230eaab028086a714409891a1af1f">Read_word_le()</a>, <a class="el" href="global_8h.html#c06e34106894d4831215514ba2b0a8c0">Shade_current</a>, <a class="el" href="global_8h.html#0f48017e3c41c7ac25bc1b7bb100ba2f">Shade_list</a>, <a class="el" href="graph_8c.html#d2677771574a25993d1acc522863df05">Shade_list_to_lookup_tables()</a>, <a class="el" href="global_8h.html#ecf8e6e3c56c7f8132c0fdadacaf8a44">Shade_table_left</a>, <a class="el" href="global_8h.html#b51339fe647feb1c40e4fd565e5b4849">Shade_table_right</a>, <a class="el" href="structT__Config__header.html#0b9edad715370417abd4defb2d502301">T_Config_header::Signature</a>, <a class="el" href="structT__Config__chunk.html#541959a34cf2f61c445a912eb2e447d7">T_Config_chunk::Size</a>, <a class="el" href="global_8h.html#450ef0cef2208772ebc89416e68dc897">Smooth_matrix</a>, <a class="el" href="global_8h.html#b379423df240654895d25ad27bd0e667">Snap_height</a>, <a class="el" href="global_8h.html#2ceb35c198734fa891170f57a8e5587a">Snap_offset_X</a>, <a class="el" href="global_8h.html#66dc5d17ad4182e09f2b463e8c1d13e1">Snap_offset_Y</a>, <a class="el" href="global_8h.html#511a47340a0f05623ac4ec571359e8b6">Snap_width</a>, <a class="el" href="structT__Config__video__mode.html#c3931f17d7a5394f68aeb6030f059702">T_Config_video_mode::State</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="const_8h.html#19efa2f81d63ff13a7e60e352b9eb929">VERSION1</a>, <a class="el" href="structT__Config__header.html#4e0642f30337e9452bde0c98bc7255a2">T_Config_header::Version1</a>, <a class="el" href="const_8h.html#30448eb6a744ed516cfd498fc188a14c">VERSION2</a>, <a class="el" href="structT__Config__header.html#c6a463c37a3f1c0be50d86e11129bbe7">T_Config_header::Version2</a>, <a class="el" href="global_8h.html#1a4d7a3db85cfea3dd3c404ecd43b482">Video_mode</a>, <a class="el" href="global_8h.html#08387db6d493d02807972ccd00885063">Width</a>, and <a class="el" href="structT__Config__video__mode.html#597c251fdcb7d95fb1d9a0c13c8365c6">T_Config_video_mode::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>, and <a class="el" href="boutons_8c.html#fba678c476bf96df89125120d4dce9b7">Settings_Charger_config()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, and <a class="el" href="boutons_8c.html#c37dbf29dd70d9363452d03b8aebfccd">Settings_load_config()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="80439b08857a437828e3c8d3aee5fe43"></a><!-- doxytag: member="init.c::Sauver_CFG" ref="80439b08857a437828e3c8d3aee5fe43" args="(void)" -->
+<a class="anchor" name="8a3eff04d9181be45058cfe78a10c1e7"></a><!-- doxytag: member="init.c::Save_CFG" ref="8a3eff04d9181be45058cfe78a10c1e7" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Sauver_CFG           </td>
+          <td class="memname">int Save_CFG           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -724,18 +721,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="const_8h.html#3c0b9279f3bb789b4f5723b3c17eaf0c">BETA1</a>, <a class="el" href="const_8h.html#5e33e4ef7e5a5f5f8565818d698301ae">BETA2</a>, <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="gfxcfg_8c.html#0f901364dd6306dc58f30f86f741a73f">Chunk</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331df174326bb1d8ba4daf1204f6df0c896">CHUNK_DEGRADES</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331e243ba24574e95d5639f1b331f7d8248">CHUNK_EXCLUDE_COLORS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331f7ee64cc09bca02e88124a794ed4cb49">CHUNK_GRILLE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c71fe8ae92c0556d510750ef69657f0f">CHUNK_MASQUE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331dfdf21379cab708134a6bedd473e912f">CHUNK_MODES_VIDEO</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3317f1b6bde4828143c5b9866b06f63339b">CHUNK_QUICK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331b848881b1b05e9f2d0895bca7ace5c59">CHUNK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c2afe216878002f90570136c805b2435">CHUNK_SMOOTH</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3311ca1019d0adf30cf7b4eb79052e86654">CHUNK_STENCIL</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331493b830951b01526f9db9461b3f0722d">CHUNK_TOUCHES</a>, <a class="el" href="global_8h.html#fe053f70f9364d3deedad4ef574483e4">Config_Touche</a>, <a class="el" href="hotkeys_8c.html#4d0a9100bfc84011b8ca2e444d31c801">ConfigTouche</a>, <a class="el" href="global_8h.html#1ac71fe9d9ff8c7ea8ab7799663a5a71">Degrade_Courant</a>, <a class="el" href="global_8h.html#3191cd03b9b1fdeb38d31dbb44621249">Degrade_Tableau</a>, <a class="el" href="const_8h.html#87f5c1d54b898a61ab8bb5d46ac479becf10d3bdd7704cac2b24419a3d9e0f7b">ERREUR_SAUVEGARDE_CFG</a>, <a class="el" href="structS__Mode__video.html#e7082f8776c47d332636706831ee77d2">S_Mode_video::Etat</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="structS__Mode__video.html#60eb8c2e9abcd788a943e2135a4edb58">S_Mode_video::Hauteur</a>, <a class="el" href="structS__Mode__video.html#73b691ac559cdbbfaf56f6ed6493398c">S_Mode_video::Largeur</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="global_8h.html#a2f5a72d34ad1b559d2fd4570b2acce2">Mode_video</a>, <a class="el" href="global_8h.html#92078103246bc8c8c8b52041f49eb95d">Nb_modes_video</a>, <a class="el" href="const_8h.html#b45c149d2f392b5ecf4cf169bd0f19a0">NB_TOUCHES</a>, <a class="el" href="structS__ConfigTouche.html#be744707bae702aeb3a28e12c5a9ba06">S_ConfigTouche::Numero</a>, <a class="el" href="hotkeys_8c.html#a54a223f5218119b072de29f10405fa3">Ordonnancement</a>, <a class="el" href="global_8h.html#ddfcf46c011b63fc0420b192cfe802f9">Quick_shade_Loop</a>, <a class="el" href="global_8h.html#3898c4ebf4acb99debedd6ebcbc0880c">Quick_shade_Step</a>, <a class="el" href="global_8h.html#7e7ad9205a82bd1d4509ae4192410e70">Repertoire_de_configuration</a>, <a class="el" href="global_8h.html#64df8d19ea0bea419a8067dee04bb6b5">Shade_Actuel</a>, <a class="el" href="global_8h.html#c04ed0b1f486e833f801bcfb482c5610">Shade_Liste</a>, <a class="el" href="global_8h.html#a37544a4a832134207f56be13dae07f8">Smooth_Matrice</a>, <a class="el" href="global_8h.html#7069dde650cd5806b64dfb80f228d98f">Snap_Decalage_X</a>, <a class="el" href="global_8h.html#99a1b9d7d035a7c0b73e17539a85328d">Snap_Decalage_Y</a>, <a class="el" href="global_8h.html#de0cd8eddc9a7dc3837c97252de7d3da">Snap_Hauteur</a>, <a class="el" href="global_8h.html#119c9281e01407c604dd501635f884f3">Snap_Largeur</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="const_8h.html#902d5031f45feff7645d54db1fb09cc8">TAILLE_CHEMIN_FICHIER</a>, <a class="el" href="const_8h.html#19efa2f81d63ff13a7e60e352b9eb929">VERSION1</a>, <a class="el" href="const_8h.html#30448eb6a744ed516cfd498fc188a14c">VERSION2</a>, <a class="el" href="io_8c.html#06ed5782b70b77c5a4aa9d947cd46fd2">write_byte()</a>, <a class="el" href="io_8c.html#8d31bf2d2ddbf8590fd1e89b1cd7d3c3">write_bytes()</a>, <a class="el" href="io_8c.html#5f4aadd6896878f538272f499432b58c">write_dword_le()</a>, and <a class="el" href="io_8c.html#97e4e523c86f92ce42880968853c0b58">write_word_le()</a>.</p>
+<p>References <a class="el" href="const_8h.html#3c0b9279f3bb789b4f5723b3c17eaf0c">BETA1</a>, <a class="el" href="structT__Config__header.html#4af71023fac1c2b15281a725f589c2d1">T_Config_header::Beta1</a>, <a class="el" href="const_8h.html#5e33e4ef7e5a5f5f8565818d698301ae">BETA2</a>, <a class="el" href="structT__Config__header.html#4deeece8143fdd42dea3d94a2b3026f6">T_Config_header::Beta2</a>, <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331e243ba24574e95d5639f1b331f7d8248">CHUNK_EXCLUDE_COLORS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf33125937bab17adcdb7e88617b21509758f">CHUNK_GRADIENTS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331aa07b3c3af52f0ad6200ae2e9c7a3663">CHUNK_GRID</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331a93fe52c4a6104ec64ee9e26ecb5e7a4">CHUNK_KEYS</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3313c1f5e057896063cccbbf3760b340bdb">CHUNK_MASK</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3317f1b6bde4828143c5b9866b06f63339b">CHUNK_QUICK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331b848881b1b05e9f2d0895bca7ace5c59">CHUNK_SHADE</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf331c2afe216878002f90570136c805b2435">CHUNK_SMOOTH</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3311ca1019d0adf30cf7b4eb79052e86654">CHUNK_STENCIL</a>, <a class="el" href="const_8h.html#009a3d8d635916048d539c16a3ddf3316e9ee11242e69baa61de6c131c39622b">CHUNK_VIDEO_MODES</a>, <a class="el" href="global_8h.html#1a2f2691154067f71fb428023659d9d0">Config_directory</a>, <a class="el" href="global_8h.html#a85ac83d796b14ef626ad084d6ac74d3">Config_Key</a>, <a class="el" href="hotkeys_8c.html#747d98b6c20219025f558d639b0ab1ae">ConfigKey</a>, <a class="el" href="global_8h.html#863cb5ec51cb14be80bff4282b910e14">Current_gradient</a>, <a class="el" href="const_8h.html#938a8c46255e5666f6a434ca0eb87f250f7bcdb9feb4314dae620cfef98a1f1b">ERROR_SAVING_CFG</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="global_8h.html#783d72c5b3c5fc6f877e628c7f3393a8">Gradient_array</a>, <a class="el" href="structT__Video__mode.html#a336ff54ef0fe1229783a884cb9a5b6c">T_Video_mode::Height</a>, <a class="el" href="structT__Config__video__mode.html#047a6e80ea116fa450d6600178d30191">T_Config_video_mode::Height</a>, <a class="el" href="structT__Config__shortcut__info.html#85e018185b28265ba82cc610ac743e38">T_Config_shortcut_info::Key</a>, <a class="el" href="structT__Config__shortcut__info.html#1c4656d6a3b8515f5aa5498ec1a0b483">T_Config_shortcut_info::Key2</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, <a class="el" href="const_8h.html#d1da3abc5e55091563885e492a66ff35">NB_SHORTCUTS</a>, <a class="el" href="global_8h.html#8da42d40f2e806e379b6ab4b7d20e658">Nb_video_modes</a>, <a class="el" href="structT__Key__config.html#09176c7d4a63d87aed351e91f641ae82">T_Key_config::Number</a>, <a class="el" href="structT__Config__shortcut__info.html#34c9420465b4d16213a31c85d9bcd8a6">T_Config_shortcut_info::Number</a>, <a class="el" href="structT__Config__chunk.html#c4ac36188cf6a8693d903ac58294b00f">T_Config_chunk::Number</a>, <a class="el" href="hotkeys_8c.html#95f1c55777a4ca6f2a6285aabbf8f358">Ordering</a>, <a class="el" href="global_8h.html#bc7679865b20bdd9c04d598c01e3027c">Quick_shade_loop</a>, <a class="el" href="global_8h.html#e15aa468ec84fd24a174cf33b4038e11">Quick_shade_step</a>, <a class="el" href="global_8h.html#c06e34106894d4831215514ba2b0a8c0">Shade_current</a>, <a class="el" href="global_8h.html#0f48017e3c41c7ac25bc1b7bb100ba2f">Shade_list</a>, <a class="el" href="structT__Config__header.html#0b9edad715370417abd4defb2d502301">T_Config_header::Signature</a>, <a class="el" href="structT__Config__chunk.html#541959a34cf2f61c445a912eb2e447d7">T_Config_chunk::Size</a>, <a class="el" href="global_8h.html#450ef0cef2208772ebc89416e68dc897">Smooth_matrix</a>, <a class="el" href="global_8h.html#b379423df240654895d25ad27bd0e667">Snap_height</a>, <a class="el" href="global_8h.html#2ceb35c198734fa891170f57a8e5587a">Snap_offset_X</a>, <a class="el" href="global_8h.html#66dc5d17ad4182e09f2b463e8c1d13e1">Snap_offset_Y</a>, <a class="el" href="global_8h.html#511a47340a0f05623ac4ec571359e8b6">Snap_width</a>, <a class="el" href="structT__Video__mode.html#323aab11c90d99cf82899337efe6a66f">T_Video_mode::State</a>, <a class="el" href="structT__Config__video__mode.html#c3931f17d7a5394f68aeb6030f059702">T_Config_video_mode::State</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="const_8h.html#19efa2f81d63ff13a7e60e352b9eb929">VERSION1</a>, <a class="el" href="structT__Config__header.html#4e0642f30337e9452bde0c98bc7255a2">T_Config_header::Version1</a>, <a class="el" href="const_8h.html#30448eb6a744ed516cfd498fc188a14c">VERSION2</a>, <a class="el" href="structT__Config__header.html#c6a463c37a3f1c0be50d86e11129bbe7">T_Config_header::Version2</a>, <a class="el" href="global_8h.html#1a4d7a3db85cfea3dd3c404ecd43b482">Video_mode</a>, <a class="el" href="structT__Video__mode.html#e8cf26f03aafccc09a924d9305851a67">T_Video_mode::Width</a>, <a class="el" href="structT__Config__video__mode.html#597c251fdcb7d95fb1d9a0c13c8365c6">T_Config_video_mode::Width</a>, <a class="el" href="io_8c.html#e566a27981315fc4e81e834326c88eb7">Write_byte()</a>, <a class="el" href="io_8c.html#ca9fc012c46a03daf8ae74f600091d6a">Write_bytes()</a>, <a class="el" href="io_8c.html#72da9f79ab7673f6ae4a1067283f8b11">Write_dword_le()</a>, and <a class="el" href="io_8c.html#0e00a5e4fb75a991b0615cf42d47a4f6">Write_word_le()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#c073e499767ba1999d9b4ca4bbb4a91a">Fermeture_du_programme()</a>, and <a class="el" href="boutons_8c.html#289ab91a43a41811c53ef8326316c0fe">Settings_Sauver_config()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#c900417a3c976f222d105a4f157b1fa0">Program_shutdown()</a>, and <a class="el" href="boutons_8c.html#f264cf99f3edef3733316c512bb3fd85">Settings_save_config()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="bcf32ccea7a59ea789a14166ce614a49"></a><!-- doxytag: member="init.c::Initialiser_les_tables_de_multiplication" ref="bcf32ccea7a59ea789a14166ce614a49" args="(void)" -->
+<a class="anchor" name="6262ae4be7f119760ebbfee45b5c129c"></a><!-- doxytag: member="init.c::Init_multiplication_tables" ref="6262ae4be7f119760ebbfee45b5c129c" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialiser_les_tables_de_multiplication           </td>
+          <td class="memname">void Init_multiplication_tables           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -748,18 +745,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#e8621b2cef6e3109570327c92de9e557">FACTEUR_ZOOM</a>, <a class="el" href="const_8h.html#80b8f913b5de9979f8b52e2f7833187a">NB_FACTEURS_DE_ZOOM</a>, and <a class="el" href="global_8h.html#863a560ba1b4905ffb7daa328eecce7d">TABLE_ZOOM</a>.</p>
+<p>References <a class="el" href="global_8h.html#7ba8169280b1eff10be4365d835d9bed">Magnify_table</a>, <a class="el" href="const_8h.html#872b3ce7549420e7ed84d52dc0c226a3">NB_ZOOM_FACTORS</a>, <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>, and <a class="el" href="global_8h.html#088eb30352112cc3de689755bcf19c1e">ZOOM_FACTOR</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="0f71bc8c7504682697c942cc48f10384"></a><!-- doxytag: member="init.c::Config_par_defaut" ref="0f71bc8c7504682697c942cc48f10384" args="(void)" -->
+<a class="anchor" name="2c31b4c4b1d3ce794dc318e55607bfb6"></a><!-- doxytag: member="init.c::Set_config_defaults" ref="2c31b4c4b1d3ce794dc318e55607bfb6" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Config_par_defaut           </td>
+          <td class="memname">void Set_config_defaults           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -772,18 +769,18 @@ window.onload = initDynSections;
 
 <p>
 
-<p>References <a class="el" href="global_8h.html#6249281b8b8ee83c612353295e0037f4">Bouton</a>, <a class="el" href="global_8h.html#fe053f70f9364d3deedad4ef574483e4">Config_Touche</a>, <a class="el" href="hotkeys_8c.html#4d0a9100bfc84011b8ca2e444d31c801">ConfigTouche</a>, <a class="el" href="boutons_8c.html#7568d05a09b83f9e1b23fab6c0c8909e">Degrade_Charger_infos_du_tableau()</a>, <a class="el" href="global_8h.html#1ac71fe9d9ff8c7ea8ab7799663a5a71">Degrade_Courant</a>, <a class="el" href="global_8h.html#3191cd03b9b1fdeb38d31dbb44621249">Degrade_Tableau</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="graph_8c.html#8c8c02edc8f757911e0f706701a84730">Liste2tables()</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="structT__Shade.html#da12ddda61fa564b80276e614dbfbe52">T_Shade::Mode</a>, <a class="el" href="const_8h.html#b45c149d2f392b5ecf4cf169bd0f19a0">NB_TOUCHES</a>, <a class="el" href="hotkeys_8c.html#a54a223f5218119b072de29f10405fa3">Ordonnancement</a>, <a class="el" href="structT__Shade.html#42eac7e72481e9075d9ca918ff7116aa">T_Shade::Pas</a>, <a class="el" href="global_8h.html#ddfcf46c011b63fc0420b192cfe802f9">Quick_shade_Loop</a>, <a class="el" href="global_8h.html#3898c4ebf4acb99debedd6ebcbc0880c">Quick_shade_Step</a>, <a class="el" href="global_8h.html#64df8d19ea0bea419a8067dee04bb6b5">Shade_Actuel</a>, <a class="el" href="global_8h.html#c04ed0b1f486e833f801bcfb482c5610">Shade_Liste</a>, <a class="el" href="global_8h.html#ea1d12331bf0a47fa95e9a525ef33b23">Shade_Table_droite</a>, <a class="el" href="global_8h.html#26440f9d65f34c258bc747c9aff84b18">Shade_Table_gauche</a>, <a class="el" href="global_8h.html#a37544a4a832134207f56be13dae07f8">Smooth_Matrice</a>, <a class="el" href="global_8h.html#7069dde650cd5806b64dfb80f228d98f">Snap_Decalage_X</a>, <a class="el" href="global_8h.html#99a1b9d7d035a7c0b73e17539a85328d">Snap_Decalage_Y</a>, <a class="el" href="global_8h.html#de0cd8eddc9a7dc3837c97252de7d3da">Snap_Hauteur</a>, <a class="el" href="global_8h.html#119c9281e01407c604dd501635f884f3">Snap_Largeur</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="structS__ConfigTouche.html#f79bdde0e1e5bd5aefe4bee029dc9b4d">S_ConfigTouche::Touche</a>, and <a class="el" href="structS__ConfigTouche.html#7f97e75ac3d758d1d1b30bdc202d1a3e">S_ConfigTouche::Touche2</a>.</p>
+<p>References <a class="el" href="global_8h.html#9754080a7254e770d5d1a489113169d0">Button</a>, <a class="el" href="global_8h.html#a85ac83d796b14ef626ad084d6ac74d3">Config_Key</a>, <a class="el" href="hotkeys_8c.html#747d98b6c20219025f558d639b0ab1ae">ConfigKey</a>, <a class="el" href="global_8h.html#863cb5ec51cb14be80bff4282b910e14">Current_gradient</a>, <a class="el" href="structT__Gradient__array.html#c41dac9a6222dd291ea5a7ac065cdfaf">T_Gradient_array::End</a>, <a class="el" href="global_8h.html#248b0012e21b313e3b99cbe636be93a5">Exclude_color</a>, <a class="el" href="global_8h.html#783d72c5b3c5fc6f877e628c7f3393a8">Gradient_array</a>, <a class="el" href="structT__Gradient__array.html#b0904d2e34e52d3f81784048af42c24c">T_Gradient_array::Inverse</a>, <a class="el" href="structT__Key__config.html#76b7c03b194fd88044ddfef1149d7ed8">T_Key_config::Key</a>, <a class="el" href="structT__Key__config.html#c3a0aae0cab540d31dd09e6250d31d8c">T_Key_config::Key2</a>, <a class="el" href="boutons_8c.html#0566fe8428f2bd983e198bf06f30d156">Load_gradient_data()</a>, <a class="el" href="global_8h.html#3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="structT__Gradient__array.html#33122a597c5efd2f2e610ff73a69c295">T_Gradient_array::Mix</a>, <a class="el" href="structT__Shade.html#da12ddda61fa564b80276e614dbfbe52">T_Shade::Mode</a>, <a class="el" href="const_8h.html#d1da3abc5e55091563885e492a66ff35">NB_SHORTCUTS</a>, <a class="el" href="hotkeys_8c.html#95f1c55777a4ca6f2a6285aabbf8f358">Ordering</a>, <a class="el" href="global_8h.html#bc7679865b20bdd9c04d598c01e3027c">Quick_shade_loop</a>, <a class="el" href="global_8h.html#e15aa468ec84fd24a174cf33b4038e11">Quick_shade_step</a>, <a class="el" href="global_8h.html#c06e34106894d4831215514ba2b0a8c0">Shade_current</a>, <a class="el" href="global_8h.html#0f48017e3c41c7ac25bc1b7bb100ba2f">Shade_list</a>, <a class="el" href="graph_8c.html#d2677771574a25993d1acc522863df05">Shade_list_to_lookup_tables()</a>, <a class="el" href="global_8h.html#ecf8e6e3c56c7f8132c0fdadacaf8a44">Shade_table_left</a>, <a class="el" href="global_8h.html#b51339fe647feb1c40e4fd565e5b4849">Shade_table_right</a>, <a class="el" href="global_8h.html#450ef0cef2208772ebc89416e68dc897">Smooth_matrix</a>, <a class="el" href="global_8h.html#b379423df240654895d25ad27bd0e667">Snap_height</a>, <a class="el" href="global_8h.html#2ceb35c198734fa891170f57a8e5587a">Snap_offset_X</a>, <a class="el" href="global_8h.html#66dc5d17ad4182e09f2b463e8c1d13e1">Snap_offset_Y</a>, <a class="el" href="global_8h.html#511a47340a0f05623ac4ec571359e8b6">Snap_width</a>, <a class="el" href="structT__Gradient__array.html#b10b35971efcb9da5b659fd60e8fe954">T_Gradient_array::Start</a>, <a class="el" href="global_8h.html#3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, <a class="el" href="structT__Shade.html#ce350b3dffa783365dbf26be96b02521">T_Shade::Step</a>, and <a class="el" href="structT__Gradient__array.html#48e512ccfc68b5288a447bf4ba0739df">T_Gradient_array::Technique</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
-<a class="anchor" name="566de74b0bfa1e330e19d773b9140c41"></a><!-- doxytag: member="init.c::Initialiser_sighandler" ref="566de74b0bfa1e330e19d773b9140c41" args="(void)" -->
+<a class="anchor" name="f950d05be068beedd7f678f2a1e5a7b6"></a><!-- doxytag: member="init.c::Init_sighandler" ref="f950d05be068beedd7f678f2a1e5a7b6" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Initialiser_sighandler           </td>
+          <td class="memname">void Init_sighandler           </td>
           <td>(</td>
           <td class="paramtype">void&nbsp;</td>
           <td class="paramname">          </td>
@@ -796,12 +793,12 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="main_8c.html#f089af495e759e0b6aee06c3a0aae867">Initialisation_du_programme()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#d289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Mar 15 14:38:08 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>
