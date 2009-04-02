@@ -174,7 +174,7 @@ This version was 1st shown at the Wired'96 demo party in Belgium. We gave it to 
   * Improved: Brush streching is now in "real time" (and snaps to the grid if "Adjust brush picking" is set).
   * Added: Brush rotation by any angle.
 
-=GRAFX 2.00 Beta 97.0%
+=GRAFX 2.00 Beta 97.0% (10/??/2008)=
   * Improved : Welcome screen behave like a spash screen: Any click or keypress dismisses it.
   * Added : The SVN revision used to compile is now reported in the Statistics window.
   * Improved : Multiple windows can be open at the same time
