@@ -68,7 +68,7 @@ This version was 1st shown at the Wired'96 demo party in Belgium. We gave it to 
   * Modified: We now use the EOS dos-extender Copyright (c) 1996 by Eclipse, so read carefully the docs if you can't use GrafX2 anymore.
 
 =GRAFX 2.00 Beta 95% (07/18/1997) - Wired'97 release=
-(It's GrafX2 creation's 1st anniversary! =D     (...but still Beta :/) We wrote the usual "void main(int argc, char * argv[])" one year ago!)
+(It's GrafX2 creation's 1st anniversary! =D     (...but still Beta :/) We wrote the usual "void main(int argc, char `*` argv[])" one year ago!)
   * Fixed: PCX files with odd widths should be supported now. (We fixed a bug in version 94.1% which added a new one) :(
   * Fixed: Small display bug in the grid of the Sieve menu.
   * Fixed: Oops! We forgot to remap the colors of the menu when loading a PAL file. That's stupid! :)
