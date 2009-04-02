@@ -275,6 +275,24 @@ HISTORY of GRAFX: (in chronological order: latest version at the end)
         grid if "Adjust brush picking" is set).
         - Added: Brush rotation by any angle.
 
+=GRAFX 2.00 Beta 97.0%
+Made the welcome screen behave like a spash screen: Any click or keypress dismisses it.
+The SVN revision used to compile is now reported in the Statistics window.
+Multiple windows open at the same time
+contextual help with F1 key
+Fixed resolution menu behavior when less than 12 resolutions are available.
+removed useless "vesa info" field in the stats window
+Resolution and window size remembered in gfx2.ini.
+SDL Graphics mode detection and checking if valid, CFG saves only configuration for valid modes where the user set <3 | Imperfect | Unsupported.
+Video modes can now be windowed or fullscreen. Also allows to resize the window at runtime.
+When gfx2.ini is missing, default values are now taken from gfx2.dat.
+New configuration tool
+Long file names support
+Use fopen/fread instead of open/read. This is buffered and cross platform.
+Do not crash if there is more than 1GB ram available
+Made the code endian-aware and do not assume structure packing
+Rewrote a big part of the program to make it work with SDL under linux, windows, mac os X, and amigaos4.
+
 =GRAFX 2.00 Beta 98.0% (01/??/2009)=
 Added palette constraint modes: Run the program with command-line option "/rgb <N>" to force RGB components have N levels instead of 256. Ex: /rgb 16 enforces a classic Amiga 4096 color palette, 64 is PC VGA, /rgb 3 is Amstrad CPC...) Added missing messages for /wide and /tall command-line arguments.
 Use GIF as the default format, as PKM can't save the whole palette range.
