@@ -5,13 +5,11 @@
 
 Selects the rectangle with gradations as the active drawing tool.
 
-Set a corner of a rectangle. Maintain the click to move the opposite corner and release the mouse button to set it definitively.")
+Set a corner of a rectangle. Maintain the click to move the opposite corner and release the mouse button to set it definitively.
 
-Then click and hold the mouse in a point you want to have the starting color, drag to a point where you want the ending color, and release the button.
+If you don't like what you have done and want to restart, you can use the right click to cancel everything at this point. If you think it's nice, then click and hold the mouse in a point you want to have the starting color, drag to a point where you want the ending color, and release the button. You can press SHIFT to enforce your line to be vertical, horizontal, or diagonal.
 
 =Gradation menu=
-
-==Any click==
 
 Opens a window where you can define the way gradations are processed. The different sections of this menu are:
 
