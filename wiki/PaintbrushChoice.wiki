@@ -27,6 +27,7 @@ Paintbrushes are sorted by family. You can see some paintbrushes of the same fam
   * Cross +
 
 The 3 last paintbrushes in the menu belong to the "miscellaneous" family and their size cannot be modified.
+When using one of these, you can change the brush size with the keys ',' (reduce) and '.' (increase). The last 3 paintbrushes in the menu belong to the "miscellaneous" family and their size cannot be modified.
 
 == Right click ==
 
