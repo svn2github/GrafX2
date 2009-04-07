@@ -7,10 +7,10 @@
 
 Displays a fileselector where the following options are available:
 
- * Drives: Allow you to change the current drive. You can use <Alt>+<Letter> to change drives too.
- * Select drive: Allow you to select drives by their name. Useful on non-windows systems.
+ * Select drive: Allow you to change the current drive.or volume (depending on your operating system)
  * Format: Allows you to choose the file format you want. (PAL and KCF file formats are "palette" files).
  * Filename: Allows you to give a new name to the picture. If no extension is given, the default (according to the format) will be used.
+ * Bookmarks: The four dropdown buttons allow you to bookmark frequently used directories. Use right-click to open a contextual menu to Set it (memorize current directory), Rename it to change its label, and Clear it if you no longer need it. Use left-click to change to the memorized directory.
  * File-list: Allows you to flick through the disk tree or to overwrite an existing file.
  * Delete: Allows you to delete the item under the selection bar. If the item is a directory, it must be empty to be removed.
  * Save: Saves the picture with the current filename, with the chosen format and with the current comment (for PKM files). If the current filename represents a directory, you'll enter it.
