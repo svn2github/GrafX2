@@ -5,11 +5,16 @@
 
 ==Left click==
 
-Displays a menu where you can define the size of your picture by clicking in the boxes named "Width" and "Height"; and the resolution in which you want to draw (in the list).
+Displays a menu where you can define the size of your picture and choose the screen resolution.
 
-Clicking on a resolution button with the right mouse button will not only set the resolution of the screen, but also set the picture dimensions to the screen ones.
+===Image size==
+Click in the boxes named "Width" and "Height" to change the size of the image you're editing, up to 9999x9999. You can also right-click a video mode to copy its dimensions to the image's.
 
-The small buttons on the left-hand side of the lines in the list of modes have been designed to allow you to disable some modes that are not supported by your card or monitor. So, the modes that you will disable won't be used when loading pictures with "Auto-set resolution" ON.
+===Pixel size===
+If you choose Double pixels, Grafx2 will emulate lower resolutions by drawing a 2x2 rectangle for each pixel. As a result, the image will appear bigger in the normal view. If you choose 'Wide' or 'Tall' pixels, it will simulate video modes that have non-square pixels.
+
+===Video mode===
+Click on a video mode to select it. Grafx2 only lists modes that are detected as available on your computer. Depending on your video card and drivers, there can be a huge difference in the number of modes it can propose. The small buttons on the left-hand side of the lines in the list of modes have been designed to allow you to disable some modes that are not supported by your card. So, the modes that you will disable won't be used  when loading pictures with "Auto-set resolution" ON.
 
 When you click on one of these buttons, its color changes to one of the 4 following. The signification for each color of these buttons is:
 
