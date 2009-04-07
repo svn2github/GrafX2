@@ -307,3 +307,4 @@ Most of these features are available in the svn experimental builds. Use them if
   * Added : (un)installer script for windows (NSIS).
   * Fixed : When the last resize was by the 'safe resolution' button, on exit the program recorded the previous window size instead.
   * Fixed : "Parent dir" in the file selector for amigas. Should make it easier to use.
+  * Fixed : Rotating a very small brush does not crash the program anymore.
