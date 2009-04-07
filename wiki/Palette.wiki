@@ -21,9 +21,9 @@ Displays a menu where the following options are available:
  * Copy: Copies the current selection to another color-block. Click on the beginning of the new color-block.
  * Spread: Computes a gradation between two colors. If your selection is only made up of one color, select the second color in the palette. Otherwise, the two colors used will be its extremities.
  * Sort: sorts the palette by color ranges.
- * X-Sort: *Not implemented yet*
  * Used: Indicates the number of colors used in the picture.
  * Zap unused: Erases the unused colors with copies of the current selection. (The keyboard shortcut for this button is <Del>).
+ * HSL: Switches between RGB and HSL color spaces. In HSL mode, the three sliders allow you to set the Hue (tint), Saturation (from grayscale to pure color) and lightness (from black to white).
  * Reduce: Allows you to reduce the palette to the number of colors you want (and modifies the picture).
  * Undo: Allows you to recover the last modifications made on the palette. If the last operation modified the picture, it won't recover them: you'll have to click on Cancel to do so.
 
@@ -38,8 +38,17 @@ Warning! If you press Undo after an action that modifies the picture (X-Swap, X-
 
 ==Right click==
 
-Opens a menu from where you can access the following menus:
+Opens a menu from where you have the following options:
 
- * A menu in which you can select the colors that have not to be used for smoothing, for the transparency mode and for remapping.
- * A menu in which you can define color series.
+ * Colors for best match: A menu in which you can select the colors that have to be used for smoothing, transparency and remapping.
+ * User's color series: a menu in which you can define color series for next/previous colors.
         *** Not implemented yet ***
+ * Palette layout: lets you customize the palette that appears on the right of the menu. You can choose the number of lines and columns. If you want the colors to run top to bottom, check the "Vertical" button, otherwise the colors run left to right.
+
+ * RGB scale: lets you select the scale of the R G B sliders in the palette screen. You should normally leave it at 256 to get the full 0-255 range, but if you want to constrain the palette to the capabilities of some specific computers and consoles, you can choose eg:
+   * 64 for VGA
+   * 16 for Amiga / Atari STe / Amstrad Plus
+   * 8 for Atari STf
+   * 4 for MSX2
+   * 3 for Amstrad CPC
+   * 2 for ZX Spectrum
