@@ -249,8 +249,8 @@ This version was 1st shown at the Wired'96 demo party in Belgium. We gave it to 
   * Added : the Additive and Substractive modes, missing from the DOS version
   * Fixed : Implemented Meilleure_couleur_sans_exclusion().
 
-=GRAFX 2.00 Beta 99.0% (not yet available!)=
-Most of these features are available in the svn experimental builds. Use them if you need some...
+=GRAFX 2.00 Beta 99.0% (04/13/2009)=
+Much more stable than beta 98.0%.
   * Improved : Grafx2's default FG and BG colors are now white and black (instead of 15 and 0).
   * Fixed : Palette ordering (issue 112). You can activate it in the secondary palette window (shift-P), it's saved in gfx2.ini.
   * Updated : contextual help for all the new tools and features.
