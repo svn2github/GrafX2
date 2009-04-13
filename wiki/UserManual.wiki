@@ -22,7 +22,7 @@ If you dream about a very useful option we haven't thought of yet, do not hesita
 
 = Contacting us =
 
-If you have some comments about the program, just post a comment here in the wiki or fill in an issue report in the bugtracker. If you just want to chat with us, send pictures you made for us to add in the [gallery], just send out an email to pulkomandy(at)gmail(dot)com.
+If you have some comments about the program, just post a comment here in the wiki or fill in an issue report in the bugtracker. If you just want to chat with us, send pictures you made for us to add in the [gallery], just send out an email to grafx2(at)googlegroups(dot)com. You can join the group at http://groups.google.com/group/grafx2 if you want to get involved.
 
 = Configuration files =
 
