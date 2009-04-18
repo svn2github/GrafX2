@@ -62,7 +62,10 @@ window.onload = initDynSections;
   </div>
 </div>
 <div class="contents">
-<h1>hotkeys.h File Reference</h1><code>#include &lt;stdbool.h&gt;</code><br>
+<h1>hotkeys.h File Reference</h1>Definition of the tables used by the keyboard shortcuts.  
+<a href="#_details">More...</a>
+<p>
+<code>#include &lt;stdbool.h&gt;</code><br>
 <code>#include &lt;SDL.h&gt;</code><br>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -72,10 +75,15 @@ window.onload = initDynSections;
 <tr><td colspan="2"><br><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structT__Key__config.html">T_Key_config</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="hotkeys_8h.html#747d98b6c20219025f558d639b0ab1ae">ConfigKey</a> [NB_SHORTCUTS]</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Table with all the configurable shortcuts, whether they are for a menu button or a special action.  <a href="#747d98b6c20219025f558d639b0ab1ae"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="hotkeys_8h.html#95f1c55777a4ca6f2a6285aabbf8f358">Ordering</a> [NB_SHORTCUTS]</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Translation table from a shortcut index to a shortcut identifier.  <a href="#95f1c55777a4ca6f2a6285aabbf8f358"></a><br></td></tr>
 </table>
-<hr><h2>Variable Documentation</h2>
+<hr><a name="_details"></a><h2>Detailed Description</h2>
+Definition of the tables used by the keyboard shortcuts. 
+<p>
+The actual data is in <a class="el" href="hotkeys_8c.html">hotkeys.c</a> <hr><h2>Variable Documentation</h2>
 <a class="anchor" name="747d98b6c20219025f558d639b0ab1ae"></a><!-- doxytag: member="hotkeys.h::ConfigKey" ref="747d98b6c20219025f558d639b0ab1ae" args="[NB_SHORTCUTS]" -->
 <div class="memitem">
 <div class="memproto">
@@ -88,8 +96,10 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Table with all the configurable shortcuts, whether they are for a menu button or a special action. 
+<p>
 
-<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="init_8h.html#2c31b4c4b1d3ce794dc318e55607bfb6">Set_config_defaults()</a>, and <a class="el" href="aide_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="init_8h.html#2c31b4c4b1d3ce794dc318e55607bfb6">Set_config_defaults()</a>, and <a class="el" href="help_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
 
 </div>
 </div><p>
@@ -105,13 +115,17 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Translation table from a shortcut index to a shortcut identifier. 
+<p>
+The value is either:<ul>
+<li>0x000 + special shortcut number</li><li>0x100 + button number (left click)</li><li>0x200 + button number (right click) </li></ul>
 
-<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="init_8h.html#2c31b4c4b1d3ce794dc318e55607bfb6">Set_config_defaults()</a>, and <a class="el" href="aide_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
+<p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="init_8h.html#2c31b4c4b1d3ce794dc318e55607bfb6">Set_config_defaults()</a>, and <a class="el" href="help_8c.html#8a372eed43beded22a1e8c48a0eac21f">Window_set_shortcut()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Apr 18 22:25:40 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

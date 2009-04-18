@@ -74,16 +74,22 @@ window.onload = initDynSections;
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structSFont__Font.html">SFont_Font</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#fca0afa0e3fb01038193c3a72eb98001">SFont_InitFont</a> (SDL_Surface *Surface)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializes the font.  <a href="#fca0afa0e3fb01038193c3a72eb98001"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#d761bb03b392911bb15473e0a229d662">SFont_FreeFont</a> (<a class="el" href="structSFont__Font.html">SFont_Font</a> *FontInfo)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Frees the font.  <a href="#d761bb03b392911bb15473e0a229d662"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#cf51fc8004b7c33bb87cd5c32e031bd4">SFont_Write</a> (SDL_Surface *Surface, const <a class="el" href="structSFont__Font.html">SFont_Font</a> *Font, int x, int y, const char *text)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Blits a string to a surface.  <a href="#cf51fc8004b7c33bb87cd5c32e031bd4"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#50411934422feeb8ca28a8d69b66bf85">SFont_TextWidth</a> (const <a class="el" href="structSFont__Font.html">SFont_Font</a> *Font, const char *text)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the width of "text" in pixels.  <a href="#50411934422feeb8ca28a8d69b66bf85"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#8294a63e456328d491ab01e5ae905884">SFont_TextHeight</a> (const <a class="el" href="structSFont__Font.html">SFont_Font</a> *Font)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the height of "text" in pixels (which is always equal to Font-&gt;Surface-&gt;h).  <a href="#8294a63e456328d491ab01e5ae905884"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SFont_8c.html#7c51512a71d5ee897571ec958bec7785">SFont_WriteCenter</a> (SDL_Surface *Surface, const <a class="el" href="structSFont__Font.html">SFont_Font</a> *Font, int y, const char *text)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Blits a string to Surface with centered x position.  <a href="#7c51512a71d5ee897571ec958bec7785"></a><br></td></tr>
 </table>
 <hr><h2>Function Documentation</h2>
 <a class="anchor" name="15bb2738193a3dd9dc83a06d8d2f3b68"></a><!-- doxytag: member="SFont.c::GetPixel" ref="15bb2738193a3dd9dc83a06d8d2f3b68" args="(SDL_Surface *Surface, Sint32 X, Sint32 Y)" -->
@@ -131,7 +137,7 @@ window.onload = initDynSections;
           <td class="memname"><a class="el" href="structSFont__Font.html">SFont_Font</a>* SFont_InitFont           </td>
           <td>(</td>
           <td class="paramtype">SDL_Surface *&nbsp;</td>
-          <td class="paramname"> <em>Surface</em>          </td>
+          <td class="paramname"> <em>Font</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -140,10 +146,17 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Initializes the font. 
+<p>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Font</em>&nbsp;</td><td>this contains the suface with the font. The Surface must be loaded before calling this function </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="structSFont__Font.html#d05fea05d81d966a6c348ad402d33838">SFont_Font::CharPos</a>, <a class="el" href="SFont_8c.html#15bb2738193a3dd9dc83a06d8d2f3b68">GetPixel()</a>, <a class="el" href="structSFont__Font.html#5790b0f45b79591f92f31cbe9e8b80f2">SFont_Font::MaxPos</a>, and <a class="el" href="structSFont__Font.html#bc8097ea87278ce195a7fcebf7664187">SFont_Font::Surface</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
+<p>Referenced by <a class="el" href="text_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
 
 </div>
 </div><p>
@@ -155,7 +168,7 @@ window.onload = initDynSections;
           <td class="memname">void SFont_FreeFont           </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSFont__Font.html">SFont_Font</a> *&nbsp;</td>
-          <td class="paramname"> <em>FontInfo</em>          </td>
+          <td class="paramname"> <em>Font</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -164,10 +177,17 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Frees the font. 
+<p>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Font</em>&nbsp;</td><td>The font to free The font must be loaded before using this function. </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="structSFont__Font.html#bc8097ea87278ce195a7fcebf7664187">SFont_Font::Surface</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
+<p>Referenced by <a class="el" href="text_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
 
 </div>
 </div><p>
@@ -215,10 +235,21 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Blits a string to a surface. 
+<p>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Surface</em>&nbsp;</td><td>The surface you want to blit to. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Font</em>&nbsp;</td><td>The font to use. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>A string containing the text you want to blit. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>Coordinates to start drawing. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>Coordinates to start drawing. </td></tr>
+  </table>
+</dl>
 
 <p>References <a class="el" href="structSFont__Font.html#d05fea05d81d966a6c348ad402d33838">SFont_Font::CharPos</a>, <a class="el" href="structSFont__Font.html#5790b0f45b79591f92f31cbe9e8b80f2">SFont_Font::MaxPos</a>, and <a class="el" href="structSFont__Font.html#bc8097ea87278ce195a7fcebf7664187">SFont_Font::Surface</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="SFont_8h.html#7c51512a71d5ee897571ec958bec7785">SFont_WriteCenter()</a>.</p>
+<p>Referenced by <a class="el" href="text_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="SFont_8h.html#7c51512a71d5ee897571ec958bec7785">SFont_WriteCenter()</a>.</p>
 
 </div>
 </div><p>
@@ -248,10 +279,12 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns the width of "text" in pixels. 
+<p>
 
 <p>References <a class="el" href="structSFont__Font.html#d05fea05d81d966a6c348ad402d33838">SFont_Font::CharPos</a>, and <a class="el" href="structSFont__Font.html#5790b0f45b79591f92f31cbe9e8b80f2">SFont_Font::MaxPos</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="SFont_8h.html#7c51512a71d5ee897571ec958bec7785">SFont_WriteCenter()</a>.</p>
+<p>Referenced by <a class="el" href="text_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>, and <a class="el" href="SFont_8h.html#7c51512a71d5ee897571ec958bec7785">SFont_WriteCenter()</a>.</p>
 
 </div>
 </div><p>
@@ -272,10 +305,12 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns the height of "text" in pixels (which is always equal to Font-&gt;Surface-&gt;h). 
+<p>
 
 <p>References <a class="el" href="structSFont__Font.html#bc8097ea87278ce195a7fcebf7664187">SFont_Font::Surface</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
+<p>Referenced by <a class="el" href="text_8c.html#041a5bd4f04da0723cfb41ea4f85c5a0">Render_text_SFont()</a>.</p>
 
 </div>
 </div><p>
@@ -317,13 +352,15 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Blits a string to Surface with centered x position. 
+<p>
 
 <p>References <a class="el" href="SFont_8c.html#50411934422feeb8ca28a8d69b66bf85">SFont_TextWidth()</a>, and <a class="el" href="SFont_8c.html#cf51fc8004b7c33bb87cd5c32e031bd4">SFont_Write()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:13 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Apr 18 22:25:46 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

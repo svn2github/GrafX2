@@ -62,7 +62,10 @@ window.onload = initDynSections;
   </div>
 </div>
 <div class="contents">
-<h1>io.h File Reference</h1><table border="0" cellpadding="0" cellspacing="0">
+<h1>io.h File Reference</h1>Low-level endian-neutral file operations, and also some filesystem operations.  
+<a href="#_details">More...</a>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Defines</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>&nbsp;&nbsp;&nbsp;&quot;/&quot;</td></tr>
@@ -70,49 +73,76 @@ window.onload = initDynSections;
 <tr><td colspan="2"><br><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#00715eb351856d1608844105cec36d63">Endian_magic16</a> (word x)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns x, swapped if the current target is low-endian. Deprecated, please don't use it.  <a href="#00715eb351856d1608844105cec36d63"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">dword&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#738e7324626154317395e29462baf74b">Endian_magic32</a> (dword x)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns x, swapped if the current target is low-endian. Deprecated, please don't use it.  <a href="#738e7324626154317395e29462baf74b"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#93930659bb1d0e160762e826d11126cb">Read_byte</a> (FILE *file, byte *dest)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads a single byte from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#93930659bb1d0e160762e826d11126cb"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#e566a27981315fc4e81e834326c88eb7">Write_byte</a> (FILE *file, byte b)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes a single byte to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#e566a27981315fc4e81e834326c88eb7"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#f170d69dda0f8ce13b19a16e7d331f0e">Read_bytes</a> (FILE *file, void *dest, size_t size)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads several bytes from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#f170d69dda0f8ce13b19a16e7d331f0e"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#d973738c81374df210f5936e275859e5">Write_bytes</a> (FILE *file, void *dest, size_t size)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes several bytes to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#d973738c81374df210f5936e275859e5"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#7a3230eaab028086a714409891a1af1f">Read_word_le</a> (FILE *file, word *dest)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads a 16-bit Low-Endian word from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#7a3230eaab028086a714409891a1af1f"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#0e00a5e4fb75a991b0615cf42d47a4f6">Write_word_le</a> (FILE *file, word w)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes a 16-bit Low-Endian word to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#0e00a5e4fb75a991b0615cf42d47a4f6"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#93475e4aa5d917a2940a80d121c5f9df">Read_dword_le</a> (FILE *file, dword *dest)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads a 32-bit Low-Endian dword from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#93475e4aa5d917a2940a80d121c5f9df"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#72da9f79ab7673f6ae4a1067283f8b11">Write_dword_le</a> (FILE *file, dword dw)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes a 32-bit Low-Endian dword to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#72da9f79ab7673f6ae4a1067283f8b11"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#2618da9562f1d098f00e310810d59e48">Read_word_be</a> (FILE *file, word *dest)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads a 16-bit Big-Endian word from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#2618da9562f1d098f00e310810d59e48"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#786c8a4ef6d9988d828eed93e4fad935">Write_word_be</a> (FILE *file, word w)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes a 16-bit Big-Endian word to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#786c8a4ef6d9988d828eed93e4fad935"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#3533d742fd24d32551ed86360a7a5b7a">Read_dword_be</a> (FILE *file, dword *dest)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reads a 32-bit Big-Endian dword from an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#3533d742fd24d32551ed86360a7a5b7a"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#932e10266a09da3c7cd3572cc9ce178a">Write_dword_be</a> (FILE *file, dword dw)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes a 32-bit Big-Endian dword to an open file. Returns true if OK, false if a file i/o error occurred.  <a href="#932e10266a09da3c7cd3572cc9ce178a"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#32735db55884446398f10bb76e124591">Extract_filename</a> (char *dest, const char *source)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extracts the filename part from a full file name.  <a href="#32735db55884446398f10bb76e124591"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path</a> (char *dest, const char *source)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extracts the directory from a full file name.  <a href="#5dd5bc8a6da3b2dc4c9affce410f8fcf"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash</a> (const char *str)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Finds the rightmost path separator in a full filename. Used to separate directory from file.  <a href="#6de454481b736b439fc2642b4d0b2230"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#53e7fc495276275ccb692dae8acee4e9">File_length</a> (const char *fname)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Size of a file, in bytes. Returns 0 in case of error.  <a href="#53e7fc495276275ccb692dae8acee4e9"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#e2a1497efe5c6ffb8bae5789c1134a9c">File_length_file</a> (FILE *file)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Size of a file, in bytes. Takes an open file as argument, returns 0 in case of error.  <a href="#e2a1497efe5c6ffb8bae5789c1134a9c"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#77578130329c8d6a2102f2884ba1ed28">File_exists</a> (char *fname)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if a file passed as a parameter exists in the current directory.  <a href="#77578130329c8d6a2102f2884ba1ed28"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#8f3b4b4e576b2f093d6f981cdd8cba2f">Directory_exists</a> (char *directory)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if a directory passed as a parameter exists in the current directory.  <a href="#8f3b4b4e576b2f093d6f981cdd8cba2f"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#80c5a4b0eefab6e29fa0cd748c333223">For_each_file</a> (const char *directory_name, void Callback(const char *))</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Scans a directory, calls Callback for each file in it,.  <a href="#80c5a4b0eefab6e29fa0cd748c333223"></a><br></td></tr>
 </table>
+<hr><a name="_details"></a><h2>Detailed Description</h2>
+Low-level endian-neutral file operations, and also some filesystem operations. 
+<p>
+Many of these may seem trivial, but the wrappers eliminate the need for a forest of preprocessor defines in each file. You MUST use the functions in this file instead of:<ul>
+<li>fread() and fwrite()</li><li>stat()</li><li>fstat()</li><li>opendir()</li><li>readdir()</li><li>Also, don't assume "/" or "\\", use PATH_SEPARATOR If you don't, you break another platform. </li></ul>
 <hr><h2>Define Documentation</h2>
 <a class="anchor" name="256a5721249aa3309437212cc21a9fe4"></a><!-- doxytag: member="io.h::PATH_SEPARATOR" ref="256a5721249aa3309437212cc21a9fe4" args="" -->
 <div class="memitem">
@@ -127,7 +157,7 @@ window.onload = initDynSections;
 
 <p>
 
-<p>Referenced by <a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>, <a class="el" href="loadsave_8h.html#28186231b8af1d380c54ef93324260d5">filename_complet()</a>, <a class="el" href="io_8h.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, <a class="el" href="io_8h.html#80c5a4b0eefab6e29fa0cd748c333223">For_each_file()</a>, <a class="el" href="files_8c.html#1468bc677d3726e6853497f57993b9b3">Print_current_directory()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
+<p>Referenced by <a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>, <a class="el" href="loadsave_8h.html#28186231b8af1d380c54ef93324260d5">filename_complet()</a>, <a class="el" href="io_8h.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, <a class="el" href="io_8h.html#80c5a4b0eefab6e29fa0cd748c333223">For_each_file()</a>, <a class="el" href="filesel_8c.html#1468bc677d3726e6853497f57993b9b3">Print_current_directory()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
 
 </div>
 </div><p>
@@ -149,6 +179,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns x, swapped if the current target is low-endian. Deprecated, please don't use it. 
+<p>
 
 </div>
 </div><p>
@@ -168,6 +200,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Returns x, swapped if the current target is low-endian. Deprecated, please don't use it. 
 <p>
 
 </div>
@@ -197,6 +231,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Reads a single byte from an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#14bc0c03c49cedd2b48d6458f1adcca8">Read_one_byte()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, and <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>.</p>
@@ -228,6 +264,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Writes a single byte to an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#6d28fed7af50e5e27f44e1d8f8b11232">Emergency_backup()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, and <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>.</p>
@@ -266,6 +304,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Reads several bytes from an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#6321478625463f5e3c159ee00da2605d">Load_PAL()</a>, <a class="el" href="loadsave_8c.html#43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#ce7c3e4ad5f8d4d863a53279caff4aa2">Load_RAW_24b()</a>, <a class="el" href="loadsave_8c.html#b6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#87501380ab9f5975a3295b88906c330c">Load_TGA()</a>, <a class="el" href="loadsave_8c.html#c0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#422454fbdf259cd46fcb8506d7dbccc6">Test_GIF()</a>, <a class="el" href="loadsave_8c.html#57cad007f7278fdaf2bab3d60c8cd8cb">Test_IMG()</a>, <a class="el" href="loadsave_8c.html#3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, <a class="el" href="loadsave_8c.html#a67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, <a class="el" href="loadsave_8c.html#58f415efbf2090acdd70dd20030ed643">Test_PKM()</a>, <a class="el" href="loadsave_8c.html#724eb97c3f79f3d8af0b75f699169867">Test_PNG()</a>, <a class="el" href="loadsave_8c.html#20a9fa80c60e1883b72015fe99ea4c04">Test_SCx()</a>, and <a class="el" href="loadsave_8c.html#af99c34e26770e32f6fd21938b4d2222">Wait_for()</a>.</p>
 
@@ -303,6 +343,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Writes several bytes to an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#6d28fed7af50e5e27f44e1d8f8b11232">Emergency_backup()</a>, <a class="el" href="loadsave_8c.html#07538974ec51baf928400843812e33c5">End_write()</a>, <a class="el" href="loadsave_8c.html#c790c88223468918b79e8027e6536c03">Save_BMP()</a>, <a class="el" href="loadsave_8c.html#75f61abc626000008ba0ea59f8d3cab7">Save_CEL()</a>, <a class="el" href="init_8h.html#8a3eff04d9181be45058cfe78a10c1e7">Save_CFG()</a>, <a class="el" href="loadsave_8c.html#19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>, <a class="el" href="loadsave_8c.html#2029e4410580e927f1cf72531ec11307">Save_IMG()</a>, <a class="el" href="loadsave_8c.html#b96510908fca8cd40bc4ffa0b8756798">Save_KCF()</a>, <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>, <a class="el" href="loadsave_8c.html#fd60117a972fa2d788265c5d32eb1638">Save_PAL()</a>, <a class="el" href="loadsave_8c.html#726a596e26cfddcd47bdc78882da72db">Save_PC1()</a>, <a class="el" href="loadsave_8c.html#c8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>, <a class="el" href="loadsave_8c.html#a73e82a37ccdf52c8ac64afe066beed2">Save_PI1()</a>, <a class="el" href="loadsave_8c.html#f28032474ee12f42045d4196e83953c2">Save_PKM()</a>, <a class="el" href="loadsave_8c.html#b309c5417991c814314261632f41b81b">Save_SCx()</a>, and <a class="el" href="loadsave_8c.html#6c626c6926a790368fbd96e4b7eb14fc">Write_one_byte()</a>.</p>
 
@@ -333,6 +375,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Reads a 16-bit Low-Endian word from an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
@@ -367,6 +411,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Writes a 16-bit Low-Endian word to an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
@@ -399,6 +445,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Reads a 32-bit Low-Endian dword from an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
@@ -433,6 +481,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Writes a 32-bit Low-Endian dword to an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
 
@@ -465,6 +515,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Reads a 16-bit Big-Endian word from an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
@@ -499,6 +551,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Writes a 16-bit Big-Endian word to an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>References <a class="el" href="struct_8h.html#836535f59bf515522a395858a8029d42">word</a>.</p>
 
@@ -531,6 +585,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Reads a 32-bit Big-Endian dword from an open file. Returns true if OK, false if a file i/o error occurred. 
 <p>
 
 <p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
@@ -565,6 +621,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Writes a 32-bit Big-Endian dword to an open file. Returns true if OK, false if a file i/o error occurred. 
+<p>
 
 <p>References <a class="el" href="struct_8h.html#55849dc98f28432a4601c29a4a352a97">dword</a>.</p>
 
@@ -597,6 +655,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Extracts the filename part from a full file name. 
 <p>
 
 <p>References <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>.</p>
@@ -631,8 +691,10 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Extracts the directory from a full file name. 
+<p>
 
-<p>References <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, and <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
+<p>References <a class="el" href="io_8c.html#6de454481b736b439fc2642b4d0b2230">Find_last_slash()</a>, <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>, and <a class="el" href="realpath_8c.html#c8079a5b6c005b1f46eca5d210215e42">Realpath()</a>.</p>
 
 <p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, and <a class="el" href="setup_8c.html#72aac461ade365d09296bf1924f71f27">Set_program_directory()</a>.</p>
 
@@ -655,10 +717,12 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Finds the rightmost path separator in a full filename. Used to separate directory from file. 
+<p>
 
 <p>References <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8c.html#a174283bf5096c3fa0f9d89c1df1ebd6">Add_font()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="io_8h.html#32735db55884446398f10bb76e124591">Extract_filename()</a>, and <a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>.</p>
+<p>Referenced by <a class="el" href="text_8h.html#a174283bf5096c3fa0f9d89c1df1ebd6">Add_font()</a>, <a class="el" href="filesel_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="io_8h.html#32735db55884446398f10bb76e124591">Extract_filename()</a>, and <a class="el" href="io_8h.html#5dd5bc8a6da3b2dc4c9affce410f8fcf">Extract_path()</a>.</p>
 
 </div>
 </div><p>
@@ -678,6 +742,8 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
+<p>
+Size of a file, in bytes. Returns 0 in case of error. 
 <p>
 
 <p>Referenced by <a class="el" href="init_8h.html#758244ae95be4da218c7ce34a67a0b0d">Load_CFG()</a>, <a class="el" href="loadsave_8c.html#bd6a836b450e557ec08985898031db84">Save_LBM()</a>, and <a class="el" href="loadsave_8c.html#59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>.</p>
@@ -701,6 +767,8 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Size of a file, in bytes. Takes an open file as argument, returns 0 in case of error. 
+<p>
 
 <p>Referenced by <a class="el" href="loadsave_8c.html#77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="loadsave_8c.html#9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#dccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#b9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#b6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#36a7ffeba75ec452fb3e044b1be58d0b">Test_PAL()</a>, <a class="el" href="loadsave_8c.html#fd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, and <a class="el" href="loadsave_8c.html#d2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>.</p>
 
@@ -723,8 +791,10 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns true if a file passed as a parameter exists in the current directory. 
+<p>
 
-<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, <a class="el" href="boutons_8c.html#cbc674d3c1c924bfceb8dacf489fde0d">Backup_existing_file()</a>, <a class="el" href="boutons_8h.html#c4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="boutons_8c.html#c37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="main_8c.html#0ddf1224851353fc92bfbff6f499fa97">main()</a>, <a class="el" href="saveini_8h.html#621a2cf7f228c0a1b884a280744f77cc">Save_INI()</a>, <a class="el" href="boutons_8h.html#1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#9ee1b9c2bb3dd9ffe2be208523ed12cf">Analyze_command_line()</a>, <a class="el" href="buttons_8c.html#cbc674d3c1c924bfceb8dacf489fde0d">Backup_existing_file()</a>, <a class="el" href="buttons_8h.html#c4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="filesel_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="buttons_8c.html#c37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="main_8c.html#0ddf1224851353fc92bfbff6f499fa97">main()</a>, <a class="el" href="saveini_8h.html#621a2cf7f228c0a1b884a280744f77cc">Save_INI()</a>, <a class="el" href="buttons_8h.html#1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
 
 </div>
 </div><p>
@@ -745,10 +815,12 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Returns true if a directory passed as a parameter exists in the current directory. 
+<p>
 
 <p>References <a class="el" href="const_8h.html#3da3f4e00591ea090b7f24868b153464">PARENT_DIR</a>.</p>
 
-<p>Referenced by <a class="el" href="files_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
+<p>Referenced by <a class="el" href="filesel_8h.html#70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, and <a class="el" href="setup_8h.html#568b7c4b80f15762fa172382be3dd066">Set_config_directory()</a>.</p>
 
 </div>
 </div><p>
@@ -778,15 +850,17 @@ window.onload = initDynSections;
 <div class="memdoc">
 
 <p>
+Scans a directory, calls Callback for each file in it,. 
+<p>
 
 <p>References <a class="el" href="loadsave_8c.html#28186231b8af1d380c54ef93324260d5">filename_complet()</a>, <a class="el" href="const_8h.html#792e51cd8ad2f90941169d03eabd2533">MAX_PATH_CHARACTERS</a>, and <a class="el" href="io_8h.html#256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="texte_8h.html#f0435f56b36c5f804b070c7438ee3a5c">Init_text()</a>.</p>
+<p>Referenced by <a class="el" href="text_8h.html#f0435f56b36c5f804b070c7438ee3a5c">Init_text()</a>.</p>
 
 </div>
 </div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Mar 28 17:05:12 2009 for GrafX2 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Apr 18 22:25:41 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>
