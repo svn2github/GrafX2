@@ -1,6 +1,7 @@
 #summary Differences with the original DOS version
-If you have been using the DOS version of Grafx2 (or still using it through DOSbox), the following information will tell you how Grafx2 adapts to the new platform(s).
+If you have been using the DOS version of Grafx2 (or still using it through DOSbox), the following information will tell you how Grafx2 adapts to the new platforms.
 Even if you've been using the Win32 port by Eclipse-game, some of this information may interest you.
+
 = Operating system and Endianness =
 The program works on Windows or Linux (and others), and on little-endian or big-endian CPUs.
 It also compiles and runs fine on 64bit systems.
@@ -17,8 +18,10 @@ GrafX2 doesn't run on iPod, Nintendo DS, nor your toaster yet. Sorry :). Feel fr
 = File system =
 Long file names are accepted. The Save/Load screens have been adapted to show up to 28 characters for the current file name, but the area can scroll right and left as needed to allow editing of longer filenames.
 Character encoding is the one known as Latin-1, or Windows-1252, or Western European.
-The "drives" icons have been replaced by a "Select drive" button that allows you to choose between the drives (windows), or "/", "$HOME", and mount points (linux).
+The "drives" icons have been replaced by a "Select drive" button that allows you to choose between the drives (windows), or "/", "$HOME", and mount points (linux) and volume names (Amiga).
 On all platforms, the files are sorted in a case-sensitive way, but the "quicksearch" feature is case-insensitive.
+The list of drives is queried whenever you click the button, so you can use drives that are added dynamically, for example when you plug a USB memory stick.
+
 = Library =
 The program uses SDL instead of direct hardware calls and VGA / VESA. This affects the following:
 == Mouse ==
