@@ -64,9 +64,25 @@ The syntax is
 
 #if SDL_BYTEORDER == SDL_BIG_ENDIAN
 }}}
-Endian-neutral functions (conditional swapping, reading and writing files) are already implemented in io.c
+Don't use them. The only reason you need to know endianness is when you read or write data to disk, and all the necessary functions have been coded in io.c, in two forms : big-endian (_`Read_word_be()`_) and little-endian (_`Read_word_le()`_). Just choose the functions that have the right endianness for the *file format* (ex:GIF is little-endian, LBM is big-endian), and the functions will perform swapping as necessary.
 
 = Struct packing =
 It's not really a matter of platform, but a topic of interest for someone trying to make GrafX2 run on a new platform:
-Structs in C are not guaranteed to be contiguous in memory, the compiler can insert dummy bytes between struct members in order to align the members on 4-byte or 8-byte addresses, it can make the program faster.
-Many file loading/saving functions can break if structure size are not as intended. All structures that need to be packed should be marked with the GCC extension attribute: `__attribute__((__packed__))`.
+Structs in C are not guaranteed to be contiguous in memory, the compiler can insert dummy bytes between struct members in order to align the members on 2-byte, 4-byte or 8-byte addresses, it can make the program faster. One platform ("Sparc" cpu) even *requires* padding to access the members at all.
+
+The default behavior of Watcom C was to pack structures (Original code from 1996)
+The default behavior of gcc is to pad them, so 2-byte data is on address multiple of 2, 4-byte data is on addresses multiple of 4.
+
+As you can guess, when porting grafx2 we ran right into this one. An early fix was to pack a lot of structures by marking them with an GCC extension attribute: `__attribute__((__packed__))`.
+Since then, to support big-endian cpus, all datatypes of more than one byte had to be handled individually for endianness anyway, the code now loads/saves them as individuel fread() and fwrite(), and thus the program no longer relies on having the structures packed.
+
+= Make dependencies =
+In release source packages, the dependency file (Makefile.dep) is packed with the sources, and may be used on a different platform than the one where it was generated.
+When this file is not up-to-date, you can get strange compilation or run-time time errors, that disappear only when you `make clean` and then `make`.
+To keep everybody happy, running *make depend* should generate an identical file on all platforms. It's not difficult, you only have to avoid including some grafx2 headers conditionally:
+{{{
+#ifdef __WIN32__
+#include "gfx2win.h" // bad
+#endif
+}}}
+If you have such situation where there is source file that is not needed for all platforms ("gfx2win.c"), include the header always, and _in the header file itself_, enclose all the declarations in a conditional #if.
