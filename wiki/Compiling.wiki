@@ -16,18 +16,19 @@ The subversion also includes an XCode project for building under Mac OS X. If yo
 = Building GrafX2 =
 == Requirements ==
 === All platforms ===
-  * gcc C compiler
-  * SDL library
+  * GNU C compiler (gcc)
+  * GNU make v3.80 minimum
+  * SDL library v1.2
   * SDL_image library
   * FreeType library (optional)
   * SDL_ttf library (optional)
 === Windows only ===
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
-  * the MinGW C compiler (this replaces gcc)
+  * the MinGW C compiler (this replaces gcc) Version 3.4.2 is known to work.
 
 == Instructions ==
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
-If all goes well, it should build *grafx2* (the main program) and *gfxcfg* (the utility to view and change the keyboard shortcuts) in the current directory. Voilà.
+If all goes well, it should build *grafx2* in the current directory. Voilà.
 If you don't have FreeType and SDL_ttf, type `make NOTTF=1` instead. It will build a version without TrueType support : the Text tool will be limited to bitmap fonts, proportional fonts wiht .ttf extension won't be available.
 
 Under linux, you can then run `make install` to get the files installed in your system, in the /usr/local/ and /usr/share directories (the usual UNIX way). This may or may not work, the installation needs some more testing.
@@ -51,7 +52,10 @@ Edit this file in vi or any text editor to see where SDL believe it's installed.
 
 If one line says `prefix=/` you have installed SDL in MSYS's directories (headers in `<msys root>/include/SDL` and library in `<msys root>/libs`) and it doesn't work under Windows, you need to change the config line so it says `prefix=/usr` or `prefix=` and it will work correctly.
 Headers and libs for SDL_image and SDL_ttf should be stored in the same directories as SDL.
-
+===Makefile:nn: Extraneous text after `else' directive===
+This fatal error is due to using a version of `make` earlier than v3.80.
+Type `make --v` to check your version.
+Note that on windows, depending on your installation you may have /bin/make.exe and also /mingw/bin/mingw32-make.exe 
 = Developers: Building variations =
 You can use `make clean` to remove the intermediate generated files (.o) and binary.
 
