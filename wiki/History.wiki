@@ -308,3 +308,29 @@ Much more stable than beta 98.0%.
   * Fixed : When the last resize was by the 'safe resolution' button, on exit the program recorded the previous window size instead.
   * Fixed : "Parent dir" in the file selector for amigas. Should make it easier to use.
   * Fixed : Rotating a very small brush does not crash the program anymore.
+
+=GRAFX 2.00 final (not yet released!)=
+*FIXED: Sort color by lightness only if you use right click on the sort button.
+*FIXED: Added buttons x2 and /2 to select usual color scales easily. 
+* NEW: Allows "2" as RGB scale.
+*FIXED: Made RGB scaler a bit larger in palette secondary screen.
+*FIXED: Preview in text window is now drawn with the back color, so you can see the antialiasing correctly.
+*NEW: Allow sorting only a range of colors in the palette 
+*Fixed: Reverted Lightness sorting order so white is first.
+*FIXED: colorpicker cursor not displayed correctly on screen border
+*New: Picture effects screen, resizes / mirrors / rotates image 
+*New: Distort brush (Issue 34) 
+*New: Pixel scaler "Triple" for 3x3 zoom (Issue 147) 
+*New: Pixel scaler "Quadruple" for 4x4 zoom (Issue 151) 
+*New: Pixel scaler "Wide2" for 4x2 zoom (Issue 148) 
+*New: Pixel scaler "Tall2" for 2x4 zoom (Issue 149) 
+*Fix of very old bug: Resizing the image didn't mark the image 'modified since last save'	May 02, 
+* Fixed a bug in the draw gradient ellipse that caused the cursor to remain on screen after the drawing operation.
+*FIXED: Now works on SPARC cpu
+*FIXED: some specific macosx shortcuts (command+h)
+*NEW: Discontinuous freehand now uses an asynchronous method for delaying. It is sensitive to the delay set in the airbrush/spray menu.
+*NEW: Frame the backcolor with a dark dotted line.
+*NEW: Double clicking in palette will open the palette window.
+*Fix: Made the "Safe resolution" shortcut do nothing in windowed mode. (issue 118) 	*New: Implemented the functions for previous and next user's colors. (Keys = and -) They use the Shade settings. 
+*Minor display fix: In Shortcuts screen, explanation text can no longer overdraw the border.
+*FIXED: Grey out + and - buttons in palette screen when you use HSL mode as they do nothing.
