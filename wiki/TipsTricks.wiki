@@ -9,14 +9,17 @@ This section deals with tips that can help you to draw some cool effects, or jus
 
 This is not an effect proposed by GrafX2 but a drawing method. It consists in placing medium colored pixels in the angles formed by contrasted pixels for artistically smoothing their aspect. From our point of view, this is essential for drawing really nice pictures. An easy but tiresome way (the best way!) is to start by adding 1 middle color, then antialias the new colors "recursively" while you have intermediate colors in your palette.
 
-                           ÛÛÛÛÛÛÛÛÛÛÛÛ
-                                       ÛÛÛÛÛÛÛÛÛÛÛÛ
+{{{
 
-                           ÛÛÛÛÛÛÛÛ±±±±±±±±
-                                   ±±±±±±±±ÛÛÛÛÛÛÛÛ
+                           ############
+                                       ############
 
-                           ÛÛÛÛ²²²²²±±±±°°°°
-                                  °°°°±±±±²²²²²ÛÛÛÛ
+                           ########±±±±±±±±
+                                   ±±±±±±±±########
+
+                           ####MMMMM±±±±xxxx
+                                  xxxx±±±±MMMMM####
+}}}
 
 
 ==Smear mode combined with concentric lines==
@@ -49,9 +52,11 @@ With a wider diameter, it permits to add granularity to a texture, because placi
 
 You can also draw more elaborated textures using a paintbrush of the shape of a small curve or line as these figures "try" to show. ;) Thus, you can create textures of straw, hair, rock, marble (although hand-drawing would be more recommanded than spray for this last one).
 
+{{{
 \      _
  \      \
   \     |
+}}}
 
 ==Shade mode used for replacing a color gradation by another one==
 
@@ -73,6 +78,7 @@ Here is a fast and efficient method to draw drops. Just draw very bright pixels 
 Here are examples with a light coming from the top-left corner. 
 You may think that the smallest  drop doesn't really look like a drop, but draw it in graph mode and you'll see it DOES look like a drop.
 
+{{{
 ±±±±±±±±±±±±  ±±±±±±±±
 ±±±±±±±±±±±±  ±±±±±±±±
 ±±±±²±°±±±±±  ±±Û°±±±±
@@ -83,5 +89,14 @@ You may think that the smallest  drop doesn't really look like a drop, but draw 
 ±±±±±°°°±±±±
 ±±±±±±±±±±±±
 ±±±±±±±±±±±±
+}}}
 
 If you don't trust me, then know that it's by looking at Lazur's graphs that I found this method. And in a general way, it's always good to study the work of the best artists to learn new techniques.
+
+== Load a picture adapting it to the current palette ==
+* Open an image with the right palette
+* Switch to the spare page (tab)
+* Load the image you want to adapt
+* Switch back to first image (tab)
+* Open the 'copy to spare' menu (shift-tab)
+* Choose 'palette and remap'
