@@ -20,15 +20,14 @@ Displays a menu where the following options are available:
  * X-Swap: Works as above but modifies the picture so that it looks the same. This may be useful if you want to sort your palette.
  * Copy: Copies the current selection to another color-block. Click on the beginning of the new color-block.
  * Spread: Computes a gradation between two colors. If your selection is only made up of one color, select the second color in the palette. Otherwise, the two colors used will be its extremities.
- * Sort: sorts the palette by color ranges.
+ * Sort: sorts the palette by color ranges. If you click with the left mouse button, it will sort by H S L; and if you click with the right mouse button, it will sort by L only. Note that you can choose a range of colors before sorting, and instead of the whole palette it will sort this range.
  * Used: Indicates the number of colors used in the picture.
  * Zap unused: Erases the unused colors with copies of the current selection. (The keyboard shortcut for this button is `<`Del`>`).
  * HSL: Switches between RGB and HSL color spaces. In HSL mode, the three sliders allow you to set the Hue (tint), Saturation (from grayscale to pure color) and lightness (from black to white).
  * Reduce: Allows you to reduce the palette to the number of colors you want (and modifies the picture).
  * Undo: Allows you to recover the last modifications made on the palette. If the last operation modified the picture, it won't recover them: you'll have to click on Cancel to do so.
 
-If you press `<`Backspace`>`, the program will replace, as well as possible, some unused colors by the four default colors of the menu. The image won't look altered because the modified colors (in the case they were used on a few points) will be replaced by the closest colors in the rest of the palette. This option is really useful when you modify the palette so that there are no colors that fit for the menu (eg: "Zap unused" while very little colors are used in the picture; or "Reduce" with a very small number of
-      colors).
+If you press `<`Backspace`>`, the program will replace, as well as possible, some unused colors by the four default colors of the menu. The image won't look altered because the modified colors (in the case they were used on a few points) will be replaced by the closest colors in the rest of the palette. This option is really useful when you modify the palette so that there are no colors that fit for the menu (eg: "Zap unused" while very little colors are used in the picture; or "Reduce" with a very small number of colors).
 
 If you press the key below `<`Escape`>` or `<`,`>` (QWERTY), the menu will disappear and you will be able to pick up a color from the picture easily. Press `<`Escape`>` to cancel.
 
