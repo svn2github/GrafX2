@@ -8,7 +8,7 @@
 Displays a menu where you can configure some miscellaneous elements of the program:
  * Number of UNDO pages: indicates the total number of pages that GrafX2 will memorize. Each time you modify the picture, its current state is memorized in one of these pages. To flick through these pages, use the "[Undo Oops]" button (Undo/Redo).
  * Font: determines whether you want to use GrafX2 with a classical font, or another one a bit funnier.
- * Mouse sensibility: Modifies the speed of the mouse.
+ * Mouse sensibility: Modifies the speed of the mouse when you're in fullscreen. With the normal setting (slider on top), you may find the mouse too fast, especially in video modes which are much smaller than your desktop. You can lower the slider to divide the speed by 2, 3 or 4 When using videomodes with native skewed pixels like 640x240 or 320x512, you'll probably want to use a stronger reduction on the axis which has less pixels.
  * Show/Hide in file list: Defines whether some particular files or directories must be displayed by the fileselectors or not.
  * Show/Hide picture limits: Indicates if the picture boundaries must be displayed when you are in a resolution bigger than the picture.
  * Clear palette: Indicates if loading a file with a palette of less than 256 colors must erase the rest of the current palette (replace by the black color).
