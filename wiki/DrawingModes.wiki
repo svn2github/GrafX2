@@ -3,7 +3,7 @@
 
 =Drawing modes=
 
-This button opens a menu where you can switch on or off the different drawing modes. ([F1]-[F9] keys correspond to the 9 buttons)
+This button opens a menu where you can switch on or off the different drawing modes.
 
 In this menu, the "All off" button switches all the drawing modes off. The [Del] key is the keyboard shortcut for this button.
 
