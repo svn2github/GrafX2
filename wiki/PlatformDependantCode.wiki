@@ -26,7 +26,7 @@ How to code in GrafX2 for one platform without breaking the others.
 ||`__aros__`    || || ||   ||  ||  ||  ||  ||X||  || ||   || ||
 ||`__morphos__` || || ||   ||  ||  ||  ||  || ||X || ||   || ||
 ||`__FreeBSD__` || || ||   ||  ||  ||  ||  || ||  ||X||   || ||
-||`__gp2x__`    || || ||   ||  ||  ||  ||  || ||  || || X || ||
+||`__GP2X__`    || || ||   ||  ||  ||  ||  || ||  || || X || ||
 ||`__amigaos__` || || ||   ||  ||  ||  ||  || ||  || ||   ||X||
 
 Generally, you should assume a globally "unix" platform, and only put code in #ifdef block when you need to do something different for one platform.
