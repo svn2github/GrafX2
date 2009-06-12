@@ -309,8 +309,7 @@ Much more stable than beta 98.0%.
   * Fixed : "Parent dir" in the file selector for amigas. Should make it easier to use.
   * Fixed : Rotating a very small brush does not crash the program anymore.
 
-=GRAFX 2.00 final (in-progress)=
-(Last updated: r822)
+=GRAFX 2.00 final (06/12/2009)=
   * Fixed: A delay on window resize (issue 169)
   * Fixed: Display of filenames in Save/Load, when they contain multiple dots (issue 170).
   * Improved: Added user-definable mouse sensitivity, useful for fullscreen low-res modes (issue 159).
@@ -344,3 +343,11 @@ Much more stable than beta 98.0%.
   * New: Shortcuts for previous and next colors in user-defined range. (Keys = and -) They use the Shade settings. 
   * Fixed: In Shortcuts screen, explanation text can no longer overdraw the border.
   * Fixed: Grey out + and - buttons in palette screen when you use HSL mode, as they are irrelevant this mode.
+  * Fixed: Removed useless precalculation tables that made the program crash on very high resolutions
+  * Fixed: Big ellipses had an overflow in claculations 
+  * Fixed: Help screens updated
+  * Fixed: Clear values of some text fields on right click
+  * Fixed: mouse shortcuts were not locked in some cases, causing screen corruption
+  * Fixed: GP2X build use correct 320x240 size by default, and no longer proposes a windowed mode. Write confing on the local dir and not $HOME.
+  * Fixed: when there are less than 12 modes it was possible to cause a segfault when opening the screenmodes list.
+  * Fixed: source archives are now packed with a directory inside, the usual unix way.
