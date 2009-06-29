@@ -309,7 +309,8 @@ Much more stable than beta 98.0%.
   * Fixed : "Parent dir" in the file selector for amigas. Should make it easier to use.
   * Fixed : Rotating a very small brush does not crash the program anymore.
 
-=GRAFX 2.00 final (06/12/2009)=
+=GRAFX 2.00 final (06/12/2009) - Summer Sunset Edition =
+This is the final GraFX 2.0 release. It includes everything planned by sunset design, and some more.
   * Fixed: A delay on window resize (issue 169)
   * Fixed: Display of filenames in Save/Load, when they contain multiple dots (issue 170).
   * Improved: Added user-definable mouse sensitivity, useful for fullscreen low-res modes (issue 159).
@@ -352,8 +353,15 @@ Much more stable than beta 98.0%.
   * Fixed: when there are less than 12 modes it was possible to cause a segfault when opening the screenmodes list.
   * Fixed: source archives are now packed with a directory inside, the usual unix way.
 
-=GRAFX 2.00.874 (06/16/2009)=
+=GRAFX 2.00.874 bugfix release (06/16/2009)=
+There was some bugs left in the 2.0 official release, so we fixed them while working on new features for 2.1. These versions only include the bugfixes, and not the new features. 2.0 will be supported like that until we get 2.1 out.
   * Fixed: Quicksearch filenames and brush resize shortcuts don't work (issue 180)
 
-=GRAFX 2.00.880 (04/20/2009)=
+=GRAFX 2.00.880 bugfix release (04/20/2009)=
   * Fixed: Out-of-memory errors on machines with more than 4Gb or RAM (issue 182)
+
+=GRAFX 2.1 (WIP, updated upto r892, not released yet!)=
+We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
+  * New keyboard shortcuts: quickly set transparency, all effects off, double click and key-combo support (ie you can type 3 4 to get 34% transparency)
+  * Merged grad rectangle and grad menu buttons
+  * New settings screen specifically for the look of the program : font, skin, and cursor type selection
