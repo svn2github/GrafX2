@@ -1,0 +1,19 @@
+#summary Index of wiki documentation
+
+= Main Wiki pages =
+  * [KeyFeatures Program overview]
+  * [History Program history and change list]
+  * [gallery Gallery and screenshots]
+
+  * [UserManual User Manual index]
+  * [KeyboardShortcuts]
+  * [FileFormats File formats supported by GrafX2]
+  * [CommandLine Command-line arguments]
+  * [DifferencesWithDOSVersion Differences with the DOS version] : How Grafx2 behaves on your operating system
+
+  * [Compiling Compiling the program]
+  * [TipsTricks Tips & Tricks]
+  * [FAQ]
+
+  * [DevelopperDocumentation Developer's documentation index]
+  * [FreeSoftwareRelease A note on this free software release] (by Sunset Design, originally written in 2001)
