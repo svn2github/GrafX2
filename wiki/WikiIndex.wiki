@@ -17,3 +17,6 @@
 
   * [DevelopperDocumentation Developer's documentation index]
   * [FreeSoftwareRelease A note on this free software release] (by Sunset Design, originally written in 2001)
+
+
+[http://code.google.com/p/grafx2/w/list View/Search all].
