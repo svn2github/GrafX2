@@ -1,0 +1,42 @@
+#summary Documentation about the svn repository
+#labels Developpers
+
+= Subversion repository =
+The source code of grafx2 is stored in a Subversion (aka SVN) repository, where all versions of each file are available. The web site http://code.google.com/p/grafx2/ allows browsing through it (read-only), but developers can use a Subversion client for full access.
+We often use the svn revision number to identify a particular set of change.
+
+= Location =
+
+To quote googlecode's [http://code.google.com/p/grafx2/source/checkout checkout] page:
+
+Project members authenticate over HTTPS to allow committing changes.
+
+{{{
+svn checkout https://grafx2.googlecode.com/svn/trunk/ grafx2 --username yrizoud
+}}}
+
+When prompted, enter your [http://code.google.com/hosting/settings generated googlecode.com password]. 
+
+_note: This creates a new working space in (new?) directory *grafx2*_
+
+
+---- 
+
+== Repository tree ==
+=== trunk ===
+This is where most work takes place. It contains at all times the work-in-progress version, sometimes unstable. When publishing a stable version, the code in trunk is copied to branches/release and replaces it.
+
+=== branches/release ===
+Contains a development branch for the latest stable release version. Most of the time there is no activity, the branch stays available to quickly fix a critical bug that would be found in a release version.
+
+To check out this branch:
+{{{
+svn checkout http://grafx2.googlecode.com/svn/branches/release/ stable
+}}}
+This creates a working copy in (new) directory _stable_.
+
+After they're coded and packaged, the fixes can be reported back to trunk (so the next unstable version also benefits from the fixes). To do so, change directory to a working copy of trunk, and type: 
+{{{
+svn merge https://grafx2.googlecode.com/svn/branches/release/
+}}}
+Don't forget to commit the change with a comment that explains what you reported.
