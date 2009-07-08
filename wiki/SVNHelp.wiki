@@ -40,3 +40,13 @@ After they're coded and packaged, the fixes can be reported back to trunk (so th
 svn merge https://grafx2.googlecode.com/svn/branches/release/
 }}}
 Don't forget to commit the change with a comment that explains what you reported.
+
+=== wiki ===
+It is possible to get the wiki content with svn. This makes it easier to upload a bunch of files (for example, images) to it than the online page editor.
+
+To check out:
+{{{
+svn checkout http://grafx2.googlecode.com/svn/wiki/ wiki
+}}}
+
+You can edit existing pages from your working copy. You can also create new pages, but then please take care of linking them from other pages and not creating orphans.
