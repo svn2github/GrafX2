@@ -5,6 +5,7 @@
 (in reverse chronological order: latest version at the beginning)
 ==GRAFX 2.1 (WIP, updated upto r911, not released yet!)==
 We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
+  * Improved: Hold SHIFT while drawing a line new finds the closest multiple of 45° or isometric angle.
   * Key-combo support to quickly set transparency, ie you can type 3 4 to get 34% transparency (Issue 154)
   * New keyboard shortcut: All effects off (shift-E)
   * Gradient-filled rectangle and Gradient menu are now a single button.
