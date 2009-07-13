@@ -360,8 +360,13 @@ There was some bugs left in the 2.0 official release, so we fixed them while wor
 =GRAFX 2.00.880 bugfix release (04/20/2009)=
   * Fixed: Out-of-memory errors on machines with more than 4Gb or RAM (issue 182)
 
-=GRAFX 2.1 (WIP, updated upto r892, not released yet!)=
+=GRAFX 2.1 (WIP, updated upto r911, not released yet!)=
 We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
-  * New keyboard shortcuts: quickly set transparency, all effects off, double click and key-combo support (ie you can type 3 4 to get 34% transparency)
-  * Merged grad rectangle and grad menu buttons
-  * New settings screen specifically for the look of the program : font, skin, and cursor type selection
+  * Key-combo support to quickly set transparency, ie you can type 3 4 to get 34% transparency (Issue 154)
+  * New keyboard shortcut: All effects off (shift-E)
+  * Gradient-filled rectangle and Gradient menu are now a single button.
+  * New settings screen specifically for the look of the program (font, menu graphics, mouse cursor) : Right-click the Settings button.
+  * New default skin and several alternate fonts, made by Ilkke.
+  * Fixed: Releasing shift control or alt had the extra effect of releasing all mouse buttons (issue 187)
+  * Improved: MacOSX : Configuration is now preserved when upgrading grafx2 (issue 192)
+  * New: Support for loading and saving Neochrome image file format (*.NEO files)
