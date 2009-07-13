@@ -1,4 +1,12 @@
+This is a copy of the document "ST Picture Formats" : [http://www.umich.edu/~archive/atari/Graphics/picfmts.doc picfmts.doc]
 
+We use it as a reference for implementing NEOchrome images support.
+
+The original document is enclosed in tags to prevent wiki formatting, but otherwise unmodified.
+
+----
+<pre>
+{{{
                            ST Picture Formats
                            ------------------
                                Edited by:
@@ -743,5 +751,7 @@ For a given control byte 'n':
 
 Version of Wed Dec 19 11:20:55 EST 1990
 Cosmetic changes Tue Jan 29 00:17:51 EST 1991
-
-
+}}}
+</pre>
+----
+End of picfmts.doc
