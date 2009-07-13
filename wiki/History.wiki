@@ -1,255 +1,71 @@
 #summary See all the versions of grafx2
 #labels Featured
 
-HISTORY of GRAFX: (in chronological order: latest version at the end)
+=HISTORY of GRAFX=
+(in reverse chronological order: latest version at the beginning)
+==GRAFX 2.1 (WIP, updated upto r911, not released yet!)==
+We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
+  * Key-combo support to quickly set transparency, ie you can type 3 4 to get 34% transparency (Issue 154)
+  * New keyboard shortcut: All effects off (shift-E)
+  * Gradient-filled rectangle and Gradient menu are now a single button.
+  * New settings screen specifically for the look of the program (font, menu graphics, mouse cursor) : Right-click the Settings button.
+  * New default skin and several alternate fonts, made by Ilkke.
+  * Fixed: Releasing shift control or alt had the extra effect of releasing all mouse buttons (issue 187)
+  * Improved: MacOSX : Configuration is now preserved when upgrading grafx2 (issue 192)
+  * New: Support for loading and saving Neochrome image file format (.NEO files)
+  
+==GRAFX 2.00.880 bugfix release (04/20/2009)==
+  * Fixed: Out-of-memory errors on machines with more than 4Gb or RAM (issue 182)
 
-=GRAFX 1.0á -> 1.02 (09/??/1995 -> 07/??/1996)=
-Forget it!
+==GRAFX 2.00.874 bugfix release (06/16/2009)==
+There was some bugs left in the 2.0 official release, so we fixed them while working on new features for 2.1. These versions only include the bugfixes, and not the new features. 2.0 will be supported like that until we get 2.1 out.
+  * Fixed: Quicksearch filenames and brush resize shortcuts don't work (issue 180)
 
-=GRAFX 2.00 Beta 90% (11/01/1996) - Wired'96 release=
-This version was 1st shown at the Wired'96 demo party in Belgium. We gave it to many people there, so let's start history from here. Note that there were a few different "90%" versions because we didn't want to change the number just for tiny bug-fixes.
+==GRAFX 2.00 final (06/12/2009) - Summer Sunset Edition ==
+This is the final GraFX 2.0 release. It includes everything planned by sunset design, and some more.
+  * Fixed: A delay on window resize (issue 169)
+  * Fixed: Display of filenames in Save/Load, when they contain multiple dots (issue 170).
+  * Improved: Added user-definable mouse sensitivity, useful for fullscreen low-res modes (issue 159).
+  * Fixed: (Linux) The window "resisted" resizing (issue 161)
+  * Fixed: (Win98) Crash related to key ^ on French or German character (issue 167)
+  * Fixed: Bookmarks didn't allow characters ; and # in their name or target (issue 166).
+  * Improved: (Windows) The program records window position on exit, and restores it on startup.
+  * Fixed: Some odd keys were displayed with the wrong scancode in help and config.
+  * Improved: Added buttons x2 and /2 to select usual color scales easily. 
+  * Improved: Allows "2" as RGB scale.
+  * Improved: Made RGB scaler a bit larger in palette secondary screen.
+  * Fixed: Preview in text window is now drawn with the back color, so you can see the antialiasing correctly.
+  * New: Allow sorting only a range of colors in the palette : when you right-click 'Sort'.
+  * Fixed: Reverted Lightness sorting order so white is first.
+  * Fixed: colorpicker cursor disappearing when too close to screen edge
+  * New: Picture effects screen : Resizes / mirrors / rotates image 
+  * New: Distort brush (Issue 34) 
+  * New: Pixel scaler "Triple" for 3x3 zoom (Issue 147) 
+  * New: Pixel scaler "Quadruple" for 4x4 zoom (Issue 151) 
+  * New: Pixel scaler "Wide2" for 4x2 zoom (Issue 148) 
+  * New: Pixel scaler "Tall2" for 2x4 zoom (Issue 149) 
+  * Fixed: Resizing the image didn't mark the image 'modified since last save'
+  * Fixed: When drawing a gradient ellipse, the cursor remained on screen after the drawing operation.
+  * Fixed: Grafx2 now works on SPARC cpu
+  * Fixed: Some specific macosx shortcuts (command+h)
+  * Improved: You can assign "command"+key shortcuts, if the combination isn't a system one.
+  * Improved: Discontinuous freehand now uses an asynchronous method for delaying. It is sensitive to the delay set in the airbrush/spray menu.
+  * New: Frame the backcolor with a dark dotted line.
+  * New: Double clicking in palette will open the palette window.
+  * Fixed: Made the "Safe resolution" shortcut do nothing in windowed mode. (issue 118)
+  * New: Shortcuts for previous and next colors in user-defined range. (Keys = and -) They use the Shade settings. 
+  * Fixed: In Shortcuts screen, explanation text can no longer overdraw the border.
+  * Fixed: Grey out + and - buttons in palette screen when you use HSL mode, as they are irrelevant this mode.
+  * Fixed: Removed useless precalculation tables that made the program crash on very high resolutions
+  * Fixed: Big ellipses had an overflow in claculations 
+  * Fixed: Help screens updated
+  * Fixed: Clear values of some text fields on right click
+  * Fixed: mouse shortcuts were not locked in some cases, causing screen corruption
+  * Fixed: GP2X build use correct 320x240 size by default, and no longer proposes a windowed mode. Write confing on the local dir and not $HOME.
+  * Fixed: when there are less than 12 modes it was possible to cause a segfault when opening the screenmodes list.
+  * Fixed: source archives are now packed with a directory inside, the usual unix way.
 
-=GRAFX 2.00 Beta 91% (11/20/1996)=
-  * Fixed: Terrific bug in Help/Messages (one line was too long and crashed the program!).
-  * Added: Some new parameters for the settings.
-  * Added: Now, you can automatically set the best resolution for the picture loaded and/or slightly adapt the picture to keep the colors of the menu (for those who want to use GrafX2 as a viewer).
-  * Fixed: Bug that occured when you wanted to restore your previous brush while being in "grab brush" mode.
-  * Added: English user's manual written (will be updated later, and translated into French).
-  * Fixed: No more displays pixels out of the preview window when loading corrupt pictures.
-  * Fixed: Small bug in LBM loading (for non-standard widths).
-  * Fixed: Minor error when saving the original screen dimensions in PKM files. (we didn't save words with Intel conventions)
-  * Fixed: Exactly the same bug for LBM (but with Motorola conventions)
-  * Removed: No more saving the current palette when exiting the program (that was useless and boring when pictures had a weird palette).
-
-=GRAFX 2.00 Beta 92% (11/27/1996)=
-  * Fixed/Removed: Error message occuring when accessing a drive with no disk or so finally suppressed!
-  * Fixed: BMP loading was almost completely bugged and it should now be completely debugged.
-  * Fixed/Modified: Set_palette routine (the previous one was fast but did not work with some weird cards that don't support a REP OUTSB).
-  * Added: Multi-Undo.
-  * Added: Backup (`*`.BAK) files.
-
-=GRAFX 2.00 Beta 93% (12/12/1996)=
-  * Fixed: Bug that occured when approaching the borders of the screen in grid mode with the type of cursor used for brush grabbing.
-  * Fixed: Small but annoying bug when saving files with a name of 9 characters.
-  * Fixed: Saved PAL files no longer modify the picture's name (some mistake must have been done when we implemented the backup option).
-  * Added: Now, you can stop the loading of previews by pressing a key.
-  * Improved: Video cards that don't use the same VESA bank for reading and writing should now work correctly.
-  * Improved: Frame displayed around the magnifier's preview.
-  * Improved: Menu of resolutions completely modified, and many new modes added.
-  * Modified: The default colors of the menu have been slightly lightened.
-  * Improved: The whole configuration is now saved and reloaded in the settings menu.
-
-=GRAFX 2.00 Beta 94.0|1|2% (02/13-23/1997) - ACE CD #4 & Volcanic3 releases=
-(These different versions were too close from each other to be separated in this file. Just check the last modifications to know which version you have)
-  * Added/Improved: (approximative) HAM6 and HAM8 support in IFF(LBM) files, and improved compatibily with Amiga IFF files => should be total now.
-  * Added: The absolutely useless :) CEL and KCF (KISS) file formats.
-  * Added: The not much more useful SCx (ColoRIX) file format.
-  * Improved: You can now use the keys to scroll the text in the Help.
-  * Fixed: Small bug in the scrolling list of resolutions (1 extra line was displayed at the end of the list when current mode was 640x512).
-  * Added: English user's manual translated into French (and corrected.. There can be bugs in text files :)).
-  * Improved: Now, you can use the brush as an eraser by right clicking.
-  * Added: X-Invert in the palette editor.
-  * Fixed: Small bug in the reduce-palette function.
-  * Improved: GIF saving strongly accelerated (finally!).
-  * Improved: Shade mode completely modified (customized shades added).
-  * Fixed: Tiny bug in the block definition of the palette editor.
-  * Improved: Non-standard PCX files that don't reset the compression after each line should be supported now (at least for 256-color pictures).
-  * Added: Undo in the Shade menu.
-  * Added: Statistics screen.
-
-=GRAFX 2.00 Beta 94.666% (03/20/1997)=
-  * Fixed: Statistics screen no longer displays that VESA 1.2 is not supported.
-  * Fixed: A few bugs of no consequence.
-  * Fixed: Bug in the mode-X initialization introduced in the previous version.
-  * Added: It is possible to choose between Relative and Absolute coordinates in the settings menu.
-  * Improved: The colors of the menu are now calculated from the current palette, so you won't have to be concerned by the colors of the menu any more.
-  * Fixed: The VESA modes are no longer disabled for some video cards.
-  * Imporoved: "Windows 95" keys are now usable.
-  * Modified: We now use the EOS dos-extender Copyright (c) 1996 by Eclipse, so read carefully the docs if you can't use GrafX2 anymore.
-
-=GRAFX 2.00 Beta 95% (07/18/1997) - Wired'97 release=
-(It's GrafX2 creation's 1st anniversary! =D     (...but still Beta :/) We wrote the usual "void main(int argc, char `*` argv[])" one year ago!)
-  * Fixed: PCX files with odd widths should be supported now. (We fixed a bug in version 94.1% which added a new one) :(
-  * Fixed: Small display bug in the grid of the Sieve menu.
-  * Fixed: Oops! We forgot to remap the colors of the menu when loading a PAL file. That's stupid! :)
-  * Improved: The number of predefined paintbrushes has been doubled.
-  * Added: Outline and Nibble effects for brushes.
-  * Improved: The "Brush grabbing", "Zoom" and "Pipette" options are no more stopped by hiding/showing the tool-bar.
-  * Improved: Now, you can change the current color while drawing.
-  * Improved: The "auto-set resolution" option works better.
-  * Added: The 3 color components are displayed in the toolbar when you want to choose a color.
-  * Added: A small preview of the color selected by the pipette is displayed in the tool-bar.
-  * Fixed: GIF saving (the bug didn't corrupt the file but resulted in a file that wasn't as well compressed as it should have been).
-  * Fixed: GIF loading doesn't flash any more on some pictures that were not corrupt; and LBM neither when loading is interrupted by user.
-  * Added: Menu where you can choose what you want to copy to the spare page (pixels, palette, or both...).
-  * Modified: The size of the palette editor has been very slightly reduced.
-  * Modified: The Stencil is now taken into account when using the "Clear" button.
-  * Improved: The "magnify" mode is finally displayed with a splitted screen where you can see both zoomed and unzoomed parts of the picture.
-  * Added: Now, you can load a picture from the command line (type "gfx2 /?" for the syntax).
-  * Added: The preview of a PAL file is now displayed in file-selectors.
-  * Modified: The tool-bar has been reduced vertically by about 1/3.
-  * Fixed: Bug in the Grid menu. (The user was able to enter a null grid step. Doh!)
-  * Added: "Adjust brush pick" option.
-  * Fixed: DP2e (LBM-"PBM") files (including new BBM files) with odd width are now loaded correctly.
-  * Improved: LBM files are now saved with their exact width and not with a multiple-of-16 witdh (viewers that can't read these files are "badly coded" because we save them correctly).
-  * Improved: The selector bar is now placed on last visited directory when you change directory.
-  * Added: "Mask" drawing mode.
-  * Added: "Smear" drawing mode.
-  * Improved: "Shade" mode options (normal, loop, saturation).
-  * Added: You can define if you want Feedback (or not) while drawing in the drawing modes (effects).
-  * Improved: The amount of memory used for brushes has been reduced.
-  * Improved: Scrolling lists speed slightly accelerated.
-  * Improved: FloodFill slightly accelerated.
-
-=GRAFX 2.00 Beta 95.5% (09/04/1997)=
-  * Improved: SCx files with less than 256 colors are now supported.
-  * Fixed: Bug when double-clicking on the Floodfill button.
-  * Fixed: Bug when "flood-filling" with an effect with feedback.
-  * Fixed: Bug when filling a vertical-1-pixel-wide area.
-  * Fixed: Bug of the shape of the cursor when a window is open in magnify mode.
-  * Added: Special cursor shape for the pipette.
-  * Modified: The method to recenter the page when exiting magnifier mode (the picture recovers its position as it was before zooming).
-  * Added: Linear Frame Buffer (VESA 2.0 LFB) supported.
-  * Added: You can now load and save brushes (from the Brush FX menu).
-  * Fixed: A few video modes (Modes X with a height multiple of 270).
-  * Fixed: You couldn't save the configuration in the settings menu if the Auto-save option was off.
-  * Improved: Polyform has now reached its definitive behaviour.
-  * Added: Polyfill and filled polyform.
-  * Added: Lasso (polyformed brushes).
-  * Added: Concentric lines.
-  * Added: GFX2.INI file (check its contents for new options).
-  * Improved: GFX2.CFG file will have ascending compatibility with future versions from now.
-  * Added: Some drawing tips have been detailed in the documentation files.
-  * Improved: Pipette handling.
-
-=GRAFX 2.00 Beta 96% (11/03/1997) - Saturne (aborted) party 5 release=
-  * Added: Now, you can increase or decrease the size of the paintbrush. The default keys are [,<] and [.>] ([;.] and [:/] for azerty).
-  * Added: Typing the first letters of a filename in file-selectors will place the selection bar onto it.
-  * Fixed: Small but annoying bugs in the writing of the GFX2.CFG file in GFXCFG. The data concerning Shade and Stencil modes were destroyed.
-  * Added/Improved: It is now possible to define the matrix of the Smooth mode. We also seized the opportunity to improve the Smooth on the boundaries of the picture, and to improve the function that calculates nearest colors.
-  * Added: The "Replace color" option that replaces all the pixels of the color pointed by the mouse with the paintbrush color. This tool is accessible by right clicking on the Floodfill button.
-  * Improved: FloodFill slightly accelerated (especially with small surfaces).
-  * Fixed: The picture was automatically zoomed when choosing a zoom factor in the menu if the Fast_zoom option was set.
-  * Added: "Stretch brush".
-  * Added: Now, you can move windows (menus) and even hide the palette menu for picking a color that is behind it (with the key just below <Escape>).
-  * Fixed: Small bug in "Menu_ratio=2" mode when remapping the screen after color changes.
-  * Added: "Thin" cursor type (looks like VGApaint's one).
-  * Fixed: A few video modes (Modes X with a height multiple of 224 and some others).
-  * Added: It is now possible to select the colors that can be used for the smooth and transparency modes, and remapping.
-  * Fixed: Clicking twice on the Lasso button did not restore the paint-brush correctly.
-  * Fixed: the absolute coordinates option wasn't correctly saved in the .INI file.
-  * Added: A few new parameters can be defined in the .INI file.
-  * Added: "Copy palette to spare page and remap destination" option (accessible from the "Copy to spare page" menu (default: Shift+Tab)).
-
-=GRAFX 2.00 Beta 96.1% (02/28/1998) - Volcanic Party 4 release=
-  * Fixed: File selector gauges don't bug any more when there are more than 584 entries :) in the current directory.
-  * Fixed: The file selector _should_ hang no more on non-image (or corrupt image) files containing data that look like a known format signature.
-  * Fixed: Old and horrible :) video bug. Most of the VESA video cards that displayed unexpected pixels (when moving the mouse for instance) should work better (perfectly?) now.
-  * Fixed: The mouse correction factors didn't work properly.
-  * Added: Quick-shade mode.
-  * Improved: You can hide any menu that needs a color selection to pick up a color behind the window.
-  * Added: A couple of new parameters in the GFX2.INI file.
-
-=GRAFX 2.00 Alpha 96.3% (04/11/1998) - Lucky n' Tigrou Party 2 release=
-!!! Warning: possibly unstable version !!!
-  * Improved: You can edit pictures bigger than 1024x768, and small pictures take much less memory, allowing to have many more undo pages!
-  * Improved: The list of undo pages is preserved when you load a picture, modify its size, or just go to the spare page.
-  * Added: You can "kill" a page (i.e. removing it from the list of undo pages).
-  * Modified: The Settings menu has been reorganized.
-  * Improved: The drawing mode is no more set to "discontinuous" by default.
-  * Improved: The function to compute the best matching RGB color used in smooth, colorize, and some other operations has been strongly accelerated on 486 and Cyrix processors, while it should be about the same speed or very slightly slower on Intel Pentiums (II) than before.
-  * Fixed: The program finally works under Windows NT (without dos4gw)!
-
-=GRAFX 2.00 Beta 96.5% (12/23/1999) - Xmas'99 release=
-  * Fixed: This version seems (is!) stable even with huge pictures. :)
-  * Fixed: A few options on brushes kept modifying the continuity of the free-hand drawing mode.
-  * Fixed: The "nibble brush" operation crashed sometimes.
-  * Fixed: Remapping the screen after modifying colors in the palette editor displayed, in rare cases, unexpected pixels or even crashed. It didn't remap correctly the picture in "Magnify" mode, too.
-  * Fixed: Catastrophic bug occuring when you "flood-filled" an area starting at the bottom of the picture.
-  * Added: An option in GFX2.INI to tell if the number of colors used must be automatically calculated, and another one for the default video mode at startup.
-  * Fixed: The colors of the menu are now correctly remapped when getting colors from the brush.
-  * Added: Degas Elite's file formats (PI1,PC1,...) support.
-  * Added: True-color BMP (Windows) and PCX images can be loaded. They will be converted to a 256-color image with palette optimization and Floyd/Steinberg dithering. Note: some other true-color formats will be added in the next release.
-  * Fixed: Loading corrupt pictures with null dimensions could crash.
-  * Improved: Brush streching is now in "real time" (and snaps to the grid if "Adjust brush picking" is set).
-  * Added: Brush rotation by any angle.
-
-=GRAFX 2.00 Beta 97.0% (10/??/2008)=
-  * Improved : Welcome screen behave like a spash screen: Any click or keypress dismisses it.
-  * Added : The SVN revision used to compile is now reported in the Statistics window.
-  * Improved : Multiple windows can be open at the same time
-  * Added : Contextual help with F1 key
-  * Fixed : resolution menu behavior when less than 12 resolutions are available.
-  * Removed : useless "vesa info" field in the stats window
-  * Added : Resolution and window size remembered in gfx2.ini.
-  * Improved : SDL Graphics mode detection and checking if valid, CFG saves only  configuration for valid modes where the user set <3 | Imperfect | Unsupported.
-  * Improved : Video modes can now be windowed or fullscreen. Also allows to resize the window at runtime.
-  * Imroved : When gfx2.ini is missing, default values are now taken from gfx2.dat.
-  * Added : New configuration tool
-  * Added : Long file names support
-  * Fixed : Use fopen/fread instead of open/read. This is buffered and cross platform.
-  * Fixed : Do not crash if there is more than 1GB ram available
-  * Fixed : Made the code endian-aware and do not assume structure packing
-  * Improved : Rewrote a big part of the program to make it work with SDL under linux, windows, mac os X, and amigaos4. This version will not run directly under good old MS-Dos, but it is still possible to use HX-DOS extender with the windows version.
-  * Introduces a lot of new bugs, most notably missing refresh of screen.
-
-=GRAFX 2.00 Beta 98.0% (01/??/2009)=
-  * Added : palette constraint modes: Run the program with command-line option "/rgb <N>" to force RGB components have N levels instead of 256. Ex: /rgb 16 enforces a classic Amiga 4096 color palette, 64 is PC VGA, /rgb 3 is Amstrad CPC...) Added missing messages for /wide and /tall command-line arguments.
-  * Improved : Use GIF as the default format, as PKM can't save the whole palette range.
-  * Imroved : The buttons in the screens FX and Brush FX now use the same shortcuts as when drawing.
-  * Fixed : The Spray tool no longer lags when you use a >0 delay setting. Delay is now expressed in 1/100s, with range 0-99
-  * Fixed : a severe memory leak, up to 200Kb every time you closed a window.
-  * Added : Simple joystick support.
-  * Added : a listing of all the mountpoints under linux.
-  * fixed : Sliders no longer lag the mouse cursor, and the delay stops when you release one mouse button or click the other.
-  * Fixed : Endianess in Save_BMP
-  * Fixed : screen updates problems
-  * Fixed : keyboard-drawing in zoom area: "Escaping" the zoom window, and going up at the top warps to the bottom. Also, even with mouse,when you draw downwards into the menu, the cursor no longer blinks into the top line of the menu.
-  * Improved : Cursor moves faster when using the keyboard shortcuts over the zoomed screen.
-  * Fixed : some problems of sreen update in smear mode (issue 66) and possibly some others.
-  * Fixed : a bug which attempted to refresh below the screen when menu is hidden
-  * Fixed : Random crash and weird coordinates of viewports when resizing the screen (w/ and w/o zoom, with resolution change or window resize) 
-  * Fixed : crash when using line,polyline,polygon etc. with a starting point below the picture (outside).
-  * Fixed : issue 56: Window resizing and zoom mode. 
-  * Fixed : issue 70: Keyboard shortcuts during brush rotation and stretch.
-  * Improved : Allow sliders to scroll more than once when the mouse button is pressed
-  * Fixed : broken characters >127 in the help window. Fix broken characters >127 in normal fonts.
-  * Remove : useless setting "show system directories".
-  * Fixed : wrong color selection in Spray menu when clicking between columnns
-  * Added : Support for "wide pixel" mode (Each pixel is 2x1). Run the program with "/wide" argument to test. Now you can draw graphics for Amstrad CPC's "mode 0" :)	
-  * Improved : Now idles when there is nothing to do. Much less CPUtime use, but the spray is slowed down.
-  * Added : Support for "tall pixel" mode (Each pixel is 1x2). Run the program with "/tall" argument to test. The following tools don't take the ratio into account; Circle, Grad rectangle, Brush rotation, Resizable brushes (diamond, squares, circles...)
-  * Improved : faster color reduction algorithm.
-  * Fixed : "Backspace" shortcut detecting root only on MS filesystems in load/save screen.
-  * Improved : On all screens that display a palette, the grey columns are no longer "dead", you can click them to pick the color to its right.
-  * Fixed : display of colored rectangles in Palette screen (issue 64)
-  * Fixed : wrong shortcuts in Palette screen Removed an obsolete message ("Sensibilite Souris") and dead code
-  * Fixed : Floyd steinberg dithering. The error was added to the neighbour pixels, it is now substracted, the results are much better. However, the palette seems to lack saturated colors (in comparison to the one generated by gimp, wich gives more dithering, but better overall subjective ressemblance to the 24bit image.
-  * Improved : Palette now uses RGB components in the full 0-255 range instead of 0-63. All palette functions can be used in HSL color space too.
-  * Improved : directory handling: - Unix users can "make install" and "make uninstall" (as root). - Installation creates shortcuts "grafx2" and "gfx2cfg" in /usr/local/bin - Installation puts data files (icon GIFs, gfx2.dat,..) and the actual binaries in /usr/local/share/grafx2 - At runtime, the programs search and create configuration files (gfx2.cfg and gfx2.ini) in ~/.grafx2 (But if there are some present in program's own directory, they override)
-  * Fixed : program hang in Save/Load (Issue 59)
-  * Improved : Add 32 null bytes at end of PI1 files to make ST Deluxe Paint happy
-  * Improved : Help screens show the keyboard shortcuts from current configuration
-  * Fixed : long filenames, and cursor keys while editing text
-  * Added : handling for right mouse button when entering filenames input array (clears it) also using escape key restores old filename.
-  * Fixed : Clicking the button with default filename in an empty directory wouldn't work.
-  * Fixed : crash in Save_PKM() which were due to the packing routine accessing a byte of a picture beyond the allocated memory block.
-  * Fixed : the display of the current directory size if it is big.
-  * Fixed : drawing with the keyboard. Space key release wasn't taken into account. Now you can plot a single pixel.
-  * Added : Load/Save: "Select Drive" button. Allows a way for the AmigaOS4 version to display the list of drives / volume names.
-  * Added : TEXT Tool with support for truetype and bitmap fonts.
-  * Fixed : sprite cursor drawing on screen edges
-  * Added : AmigaOS 3, BeOS, Haiku, AROS, SkyOS, MorphOS, gp2x support
-  * Fixed : x-swap and swap
-  * Added : Gradiation rectangle.
-  * Added : support for 192:145 (1152*870) aspect ratio in screen sizes dialog (and revamped the column a bit).
-  * Improved : Straight lines drawn with shift + click.
-  * Added : Palette sorting.
-  * Fixed : text alignment in the about screen
-  * Added : the Additive and Substractive modes, missing from the DOS version
-  * Fixed : Implemented Meilleure_couleur_sans_exclusion().
-
-=GRAFX 2.00 Beta 99.0% (04/13/2009)=
+==GRAFX 2.00 Beta 99.0% (04/13/2009)==
 Much more stable than beta 98.0%.
   * Improved : Grafx2's default FG and BG colors are now white and black (instead of 15 and 0).
   * Fixed : Palette ordering (issue 112). You can activate it in the secondary palette window (shift-P), it's saved in gfx2.ini.
@@ -309,64 +125,248 @@ Much more stable than beta 98.0%.
   * Fixed : "Parent dir" in the file selector for amigas. Should make it easier to use.
   * Fixed : Rotating a very small brush does not crash the program anymore.
 
-=GRAFX 2.00 final (06/12/2009) - Summer Sunset Edition =
-This is the final GraFX 2.0 release. It includes everything planned by sunset design, and some more.
-  * Fixed: A delay on window resize (issue 169)
-  * Fixed: Display of filenames in Save/Load, when they contain multiple dots (issue 170).
-  * Improved: Added user-definable mouse sensitivity, useful for fullscreen low-res modes (issue 159).
-  * Fixed: (Linux) The window "resisted" resizing (issue 161)
-  * Fixed: (Win98) Crash related to key ^ on French or German character (issue 167)
-  * Fixed: Bookmarks didn't allow characters ; and # in their name or target (issue 166).
-  * Improved: (Windows) The program records window position on exit, and restores it on startup.
-  * Fixed: Some odd keys were displayed with the wrong scancode in help and config.
-  * Improved: Added buttons x2 and /2 to select usual color scales easily. 
-  * Improved: Allows "2" as RGB scale.
-  * Improved: Made RGB scaler a bit larger in palette secondary screen.
-  * Fixed: Preview in text window is now drawn with the back color, so you can see the antialiasing correctly.
-  * New: Allow sorting only a range of colors in the palette : when you right-click 'Sort'.
-  * Fixed: Reverted Lightness sorting order so white is first.
-  * Fixed: colorpicker cursor disappearing when too close to screen edge
-  * New: Picture effects screen : Resizes / mirrors / rotates image 
-  * New: Distort brush (Issue 34) 
-  * New: Pixel scaler "Triple" for 3x3 zoom (Issue 147) 
-  * New: Pixel scaler "Quadruple" for 4x4 zoom (Issue 151) 
-  * New: Pixel scaler "Wide2" for 4x2 zoom (Issue 148) 
-  * New: Pixel scaler "Tall2" for 2x4 zoom (Issue 149) 
-  * Fixed: Resizing the image didn't mark the image 'modified since last save'
-  * Fixed: When drawing a gradient ellipse, the cursor remained on screen after the drawing operation.
-  * Fixed: Grafx2 now works on SPARC cpu
-  * Fixed: Some specific macosx shortcuts (command+h)
-  * Improved: You can assign "command"+key shortcuts, if the combination isn't a system one.
-  * Improved: Discontinuous freehand now uses an asynchronous method for delaying. It is sensitive to the delay set in the airbrush/spray menu.
-  * New: Frame the backcolor with a dark dotted line.
-  * New: Double clicking in palette will open the palette window.
-  * Fixed: Made the "Safe resolution" shortcut do nothing in windowed mode. (issue 118)
-  * New: Shortcuts for previous and next colors in user-defined range. (Keys = and -) They use the Shade settings. 
-  * Fixed: In Shortcuts screen, explanation text can no longer overdraw the border.
-  * Fixed: Grey out + and - buttons in palette screen when you use HSL mode, as they are irrelevant this mode.
-  * Fixed: Removed useless precalculation tables that made the program crash on very high resolutions
-  * Fixed: Big ellipses had an overflow in claculations 
-  * Fixed: Help screens updated
-  * Fixed: Clear values of some text fields on right click
-  * Fixed: mouse shortcuts were not locked in some cases, causing screen corruption
-  * Fixed: GP2X build use correct 320x240 size by default, and no longer proposes a windowed mode. Write confing on the local dir and not $HOME.
-  * Fixed: when there are less than 12 modes it was possible to cause a segfault when opening the screenmodes list.
-  * Fixed: source archives are now packed with a directory inside, the usual unix way.
+==GRAFX 2.00 Beta 98.0% (01/??/2009)==
+  * Added : palette constraint modes: Run the program with command-line option "/rgb `<N>`" to force RGB components have N levels instead of 256. Ex: /rgb 16 enforces a classic Amiga 4096 color palette, 64 is PC VGA, /rgb 3 is Amstrad CPC...) Added missing messages for /wide and /tall command-line arguments.
+  * Improved : Use GIF as the default format, as PKM can't save the whole palette range.
+  * Imroved : The buttons in the screens FX and Brush FX now use the same shortcuts as when drawing.
+  * Fixed : The Spray tool no longer lags when you use a >0 delay setting. Delay is now expressed in 1/100s, with range 0-99
+  * Fixed : a severe memory leak, up to 200Kb every time you closed a window.
+  * Added : Simple joystick support.
+  * Added : a listing of all the mountpoints under linux.
+  * fixed : Sliders no longer lag the mouse cursor, and the delay stops when you release one mouse button or click the other.
+  * Fixed : Endianess in Save_BMP
+  * Fixed : screen updates problems
+  * Fixed : keyboard-drawing in zoom area: "Escaping" the zoom window, and going up at the top warps to the bottom. Also, even with mouse,when you draw downwards into the menu, the cursor no longer blinks into the top line of the menu.
+  * Improved : Cursor moves faster when using the keyboard shortcuts over the zoomed screen.
+  * Fixed : some problems of sreen update in smear mode (issue 66) and possibly some others.
+  * Fixed : a bug which attempted to refresh below the screen when menu is hidden
+  * Fixed : Random crash and weird coordinates of viewports when resizing the screen (w/ and w/o zoom, with resolution change or window resize) 
+  * Fixed : crash when using line,polyline,polygon etc. with a starting point below the picture (outside).
+  * Fixed : issue 56: Window resizing and zoom mode. 
+  * Fixed : issue 70: Keyboard shortcuts during brush rotation and stretch.
+  * Improved : Allow sliders to scroll more than once when the mouse button is pressed
+  * Fixed : broken characters >127 in the help window. Fix broken characters >127 in normal fonts.
+  * Remove : useless setting "show system directories".
+  * Fixed : wrong color selection in Spray menu when clicking between columnns
+  * Added : Support for "wide pixel" mode (Each pixel is 2x1). Run the program with "/wide" argument to test. Now you can draw graphics for Amstrad CPC's "mode 0" :)	
+  * Improved : Now idles when there is nothing to do. Much less CPUtime use, but the spray is slowed down.
+  * Added : Support for "tall pixel" mode (Each pixel is 1x2). Run the program with "/tall" argument to test. The following tools don't take the ratio into account; Circle, Grad rectangle, Brush rotation, Resizable brushes (diamond, squares, circles...)
+  * Improved : faster color reduction algorithm.
+  * Fixed : "Backspace" shortcut detecting root only on MS filesystems in load/save screen.
+  * Improved : On all screens that display a palette, the grey columns are no longer "dead", you can click them to pick the color to its right.
+  * Fixed : display of colored rectangles in Palette screen (issue 64)
+  * Fixed : wrong shortcuts in Palette screen Removed an obsolete message ("Sensibilite Souris") and dead code
+  * Fixed : Floyd steinberg dithering. The error was added to the neighbour pixels, it is now substracted, the results are much better. However, the palette seems to lack saturated colors (in comparison to the one generated by gimp, wich gives more dithering, but better overall subjective ressemblance to the 24bit image.
+  * Improved : Palette now uses RGB components in the full 0-255 range instead of 0-63. All palette functions can be used in HSL color space too.
+  * Improved : directory handling: - Unix users can "make install" and "make uninstall" (as root). - Installation creates shortcuts "grafx2" and "gfx2cfg" in /usr/local/bin - Installation puts data files (icon GIFs, gfx2.dat,..) and the actual binaries in /usr/local/share/grafx2 - At runtime, the programs search and create configuration files (gfx2.cfg and gfx2.ini) in ~/.grafx2 (But if there are some present in program's own directory, they override)
+  * Fixed : program hang in Save/Load (Issue 59)
+  * Improved : Add 32 null bytes at end of PI1 files to make ST Deluxe Paint happy
+  * Improved : Help screens show the keyboard shortcuts from current configuration
+  * Fixed : long filenames, and cursor keys while editing text
+  * Added : handling for right mouse button when entering filenames input array (clears it) also using escape key restores old filename.
+  * Fixed : Clicking the button with default filename in an empty directory wouldn't work.
+  * Fixed : crash in Save_PKM() which were due to the packing routine accessing a byte of a picture beyond the allocated memory block.
+  * Fixed : the display of the current directory size if it is big.
+  * Fixed : drawing with the keyboard. Space key release wasn't taken into account. Now you can plot a single pixel.
+  * Added : Load/Save: "Select Drive" button. Allows a way for the AmigaOS4 version to display the list of drives / volume names.
+  * Added : TEXT Tool with support for truetype and bitmap fonts.
+  * Fixed : sprite cursor drawing on screen edges
+  * Added : AmigaOS 3, BeOS, Haiku, AROS, SkyOS, MorphOS, gp2x support
+  * Fixed : x-swap and swap
+  * Added : Gradiation rectangle.
+  * Added : support for 192:145 (1152*870) aspect ratio in screen sizes dialog (and revamped the column a bit).
+  * Improved : Straight lines drawn with shift + click.
+  * Added : Palette sorting.
+  * Fixed : text alignment in the about screen
+  * Added : the Additive and Substractive modes, missing from the DOS version
+  * Fixed : Implemented Meilleure_couleur_sans_exclusion().
 
-=GRAFX 2.00.874 bugfix release (06/16/2009)=
-There was some bugs left in the 2.0 official release, so we fixed them while working on new features for 2.1. These versions only include the bugfixes, and not the new features. 2.0 will be supported like that until we get 2.1 out.
-  * Fixed: Quicksearch filenames and brush resize shortcuts don't work (issue 180)
+==GRAFX 2.00 Beta 97.0% (10/??/2008)==
+  * Improved : Welcome screen behave like a spash screen: Any click or keypress dismisses it.
+  * Added : The SVN revision used to compile is now reported in the Statistics window.
+  * Improved : Multiple windows can be open at the same time
+  * Added : Contextual help with F1 key
+  * Fixed : resolution menu behavior when less than 12 resolutions are available.
+  * Removed : useless "vesa info" field in the stats window
+  * Added : Resolution and window size remembered in gfx2.ini.
+  * Improved : SDL Graphics mode detection and checking if valid, CFG saves only  configuration for valid modes where the user set <3 | Imperfect | Unsupported.
+  * Improved : Video modes can now be windowed or fullscreen. Also allows to resize the window at runtime.
+  * Imroved : When gfx2.ini is missing, default values are now taken from gfx2.dat.
+  * Added : New configuration tool
+  * Added : Long file names support
+  * Fixed : Use fopen/fread instead of open/read. This is buffered and cross platform.
+  * Fixed : Do not crash if there is more than 1GB ram available
+  * Fixed : Made the code endian-aware and do not assume structure packing
+  * Improved : Rewrote a big part of the program to make it work with SDL under linux, windows, mac os X, and amigaos4. This version will not run directly under good old MS-Dos, but it is still possible to use HX-DOS extender with the windows version.
+  * Introduces a lot of new bugs, most notably missing refresh of screen.
 
-=GRAFX 2.00.880 bugfix release (04/20/2009)=
-  * Fixed: Out-of-memory errors on machines with more than 4Gb or RAM (issue 182)
+==GRAFX 2.00 Beta 96.5% (12/23/1999) - Xmas'99 release==
+  * Fixed: This version seems (is!) stable even with huge pictures. :)
+  * Fixed: A few options on brushes kept modifying the continuity of the free-hand drawing mode.
+  * Fixed: The "nibble brush" operation crashed sometimes.
+  * Fixed: Remapping the screen after modifying colors in the palette editor displayed, in rare cases, unexpected pixels or even crashed. It didn't remap correctly the picture in "Magnify" mode, too.
+  * Fixed: Catastrophic bug occuring when you "flood-filled" an area starting at the bottom of the picture.
+  * Added: An option in GFX2.INI to tell if the number of colors used must be automatically calculated, and another one for the default video mode at startup.
+  * Fixed: The colors of the menu are now correctly remapped when getting colors from the brush.
+  * Added: Degas Elite's file formats (PI1,PC1,...) support.
+  * Added: True-color BMP (Windows) and PCX images can be loaded. They will be converted to a 256-color image with palette optimization and Floyd/Steinberg dithering. Note: some other true-color formats will be added in the next release.
+  * Fixed: Loading corrupt pictures with null dimensions could crash.
+  * Improved: Brush streching is now in "real time" (and snaps to the grid if "Adjust brush picking" is set).
+  * Added: Brush rotation by any angle.
 
-=GRAFX 2.1 (WIP, updated upto r911, not released yet!)=
-We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
-  * Key-combo support to quickly set transparency, ie you can type 3 4 to get 34% transparency (Issue 154)
-  * New keyboard shortcut: All effects off (shift-E)
-  * Gradient-filled rectangle and Gradient menu are now a single button.
-  * New settings screen specifically for the look of the program (font, menu graphics, mouse cursor) : Right-click the Settings button.
-  * New default skin and several alternate fonts, made by Ilkke.
-  * Fixed: Releasing shift control or alt had the extra effect of releasing all mouse buttons (issue 187)
-  * Improved: MacOSX : Configuration is now preserved when upgrading grafx2 (issue 192)
-  * New: Support for loading and saving Neochrome image file format (*.NEO files)
+==GRAFX 2.00 Alpha 96.3% (04/11/1998) - Lucky n' Tigrou Party 2 release==
+!!! Warning: possibly unstable version !!!
+  * Improved: You can edit pictures bigger than 1024x768, and small pictures take much less memory, allowing to have many more undo pages!
+  * Improved: The list of undo pages is preserved when you load a picture, modify its size, or just go to the spare page.
+  * Added: You can "kill" a page (i.e. removing it from the list of undo pages).
+  * Modified: The Settings menu has been reorganized.
+  * Improved: The drawing mode is no more set to "discontinuous" by default.
+  * Improved: The function to compute the best matching RGB color used in smooth, colorize, and some other operations has been strongly accelerated on 486 and Cyrix processors, while it should be about the same speed or very slightly slower on Intel Pentiums (II) than before.
+  * Fixed: The program finally works under Windows NT (without dos4gw)!
+
+==GRAFX 2.00 Beta 96.1% (02/28/1998) - Volcanic Party 4 release==
+  * Fixed: File selector gauges don't bug any more when there are more than 584 entries :) in the current directory.
+  * Fixed: The file selector _should_ hang no more on non-image (or corrupt image) files containing data that look like a known format signature.
+  * Fixed: Old and horrible :) video bug. Most of the VESA video cards that displayed unexpected pixels (when moving the mouse for instance) should work better (perfectly?) now.
+  * Fixed: The mouse correction factors didn't work properly.
+  * Added: Quick-shade mode.
+  * Improved: You can hide any menu that needs a color selection to pick up a color behind the window.
+  * Added: A couple of new parameters in the GFX2.INI file.
+
+==GRAFX 2.00 Beta 96% (11/03/1997) - Saturne (aborted) party 5 release==
+  * Added: Now, you can increase or decrease the size of the paintbrush. The default keys are [,<] and [.>] ([;.] and [:/] for azerty).
+  * Added: Typing the first letters of a filename in file-selectors will place the selection bar onto it.
+  * Fixed: Small but annoying bugs in the writing of the GFX2.CFG file in GFXCFG. The data concerning Shade and Stencil modes were destroyed.
+  * Added/Improved: It is now possible to define the matrix of the Smooth mode. We also seized the opportunity to improve the Smooth on the boundaries of the picture, and to improve the function that calculates nearest colors.
+  * Added: The "Replace color" option that replaces all the pixels of the color pointed by the mouse with the paintbrush color. This tool is accessible by right clicking on the Floodfill button.
+  * Improved: FloodFill slightly accelerated (especially with small surfaces).
+  * Fixed: The picture was automatically zoomed when choosing a zoom factor in the menu if the Fast_zoom option was set.
+  * Added: "Stretch brush".
+  * Added: Now, you can move windows (menus) and even hide the palette menu for picking a color that is behind it (with the key just below `<Escape>` ).
+  * Fixed: Small bug in "Menu_ratio=2" mode when remapping the screen after color changes.
+  * Added: "Thin" cursor type (looks like VGApaint's one).
+  * Fixed: A few video modes (Modes X with a height multiple of 224 and some others).
+  * Added: It is now possible to select the colors that can be used for the smooth and transparency modes, and remapping.
+  * Fixed: Clicking twice on the Lasso button did not restore the paint-brush correctly.
+  * Fixed: the absolute coordinates option wasn't correctly saved in the .INI file.
+  * Added: A few new parameters can be defined in the .INI file.
+  * Added: "Copy palette to spare page and remap destination" option (accessible from the "Copy to spare page" menu (default: Shift+Tab)).
+
+==GRAFX 2.00 Beta 95.5% (09/04/1997)==
+  * Improved: SCx files with less than 256 colors are now supported.
+  * Fixed: Bug when double-clicking on the Floodfill button.
+  * Fixed: Bug when "flood-filling" with an effect with feedback.
+  * Fixed: Bug when filling a vertical-1-pixel-wide area.
+  * Fixed: Bug of the shape of the cursor when a window is open in magnify mode.
+  * Added: Special cursor shape for the pipette.
+  * Modified: The method to recenter the page when exiting magnifier mode (the picture recovers its position as it was before zooming).
+  * Added: Linear Frame Buffer (VESA 2.0 LFB) supported.
+  * Added: You can now load and save brushes (from the Brush FX menu).
+  * Fixed: A few video modes (Modes X with a height multiple of 270).
+  * Fixed: You couldn't save the configuration in the settings menu if the Auto-save option was off.
+  * Improved: Polyform has now reached its definitive behaviour.
+  * Added: Polyfill and filled polyform.
+  * Added: Lasso (polyformed brushes).
+  * Added: Concentric lines.
+  * Added: GFX2.INI file (check its contents for new options).
+  * Improved: GFX2.CFG file will have ascending compatibility with future versions from now.
+  * Added: Some drawing tips have been detailed in the documentation files.
+  * Improved: Pipette handling.
+
+==GRAFX 2.00 Beta 95% (07/18/1997) - Wired'97 release==
+(It's GrafX2 creation's 1st anniversary! =D     (...but still Beta :/) We wrote the usual "void main(int argc, char `*` argv[])" one year ago!)
+  * Fixed: PCX files with odd widths should be supported now. (We fixed a bug in version 94.1% which added a new one) :(
+  * Fixed: Small display bug in the grid of the Sieve menu.
+  * Fixed: Oops! We forgot to remap the colors of the menu when loading a PAL file. That's stupid! :)
+  * Improved: The number of predefined paintbrushes has been doubled.
+  * Added: Outline and Nibble effects for brushes.
+  * Improved: The "Brush grabbing", "Zoom" and "Pipette" options are no more stopped by hiding/showing the tool-bar.
+  * Improved: Now, you can change the current color while drawing.
+  * Improved: The "auto-set resolution" option works better.
+  * Added: The 3 color components are displayed in the toolbar when you want to choose a color.
+  * Added: A small preview of the color selected by the pipette is displayed in the tool-bar.
+  * Fixed: GIF saving (the bug didn't corrupt the file but resulted in a file that wasn't as well compressed as it should have been).
+  * Fixed: GIF loading doesn't flash any more on some pictures that were not corrupt; and LBM neither when loading is interrupted by user.
+  * Added: Menu where you can choose what you want to copy to the spare page (pixels, palette, or both...).
+  * Modified: The size of the palette editor has been very slightly reduced.
+  * Modified: The Stencil is now taken into account when using the "Clear" button.
+  * Improved: The "magnify" mode is finally displayed with a splitted screen where you can see both zoomed and unzoomed parts of the picture.
+  * Added: Now, you can load a picture from the command line (type "gfx2 /?" for the syntax).
+  * Added: The preview of a PAL file is now displayed in file-selectors.
+  * Modified: The tool-bar has been reduced vertically by about 1/3.
+  * Fixed: Bug in the Grid menu. (The user was able to enter a null grid step. Doh!)
+  * Added: "Adjust brush pick" option.
+  * Fixed: DP2e (LBM-"PBM") files (including new BBM files) with odd width are now loaded correctly.
+  * Improved: LBM files are now saved with their exact width and not with a multiple-of-16 witdh (viewers that can't read these files are "badly coded" because we save them correctly).
+  * Improved: The selector bar is now placed on last visited directory when you change directory.
+  * Added: "Mask" drawing mode.
+  * Added: "Smear" drawing mode.
+  * Improved: "Shade" mode options (normal, loop, saturation).
+  * Added: You can define if you want Feedback (or not) while drawing in the drawing modes (effects).
+  * Improved: The amount of memory used for brushes has been reduced.
+  * Improved: Scrolling lists speed slightly accelerated.
+  * Improved: FloodFill slightly accelerated.
+
+==GRAFX 2.00 Beta 94.666% (03/20/1997)==
+  * Fixed: Statistics screen no longer displays that VESA 1.2 is not supported.
+  * Fixed: A few bugs of no consequence.
+  * Fixed: Bug in the mode-X initialization introduced in the previous version.
+  * Added: It is possible to choose between Relative and Absolute coordinates in the settings menu.
+  * Improved: The colors of the menu are now calculated from the current palette, so you won't have to be concerned by the colors of the menu any more.
+  * Fixed: The VESA modes are no longer disabled for some video cards.
+  * Imporoved: "Windows 95" keys are now usable.
+  * Modified: We now use the EOS dos-extender Copyright (c) 1996 by Eclipse, so read carefully the docs if you can't use GrafX2 anymore.
+
+==GRAFX 2.00 Beta 94.0|1|2% (02/13-23/1997) - ACE CD #4 & Volcanic3 releases==
+(These different versions were too close from each other to be separated in this file. Just check the last modifications to know which version you have)
+  * Added/Improved: (approximative) HAM6 and HAM8 support in IFF(LBM) files, and improved compatibily with Amiga IFF files => should be total now.
+  * Added: The absolutely useless :) CEL and KCF (KISS) file formats.
+  * Added: The not much more useful SCx (ColoRIX) file format.
+  * Improved: You can now use the keys to scroll the text in the Help.
+  * Fixed: Small bug in the scrolling list of resolutions (1 extra line was displayed at the end of the list when current mode was 640x512).
+  * Added: English user's manual translated into French (and corrected.. There can be bugs in text files :)).
+  * Improved: Now, you can use the brush as an eraser by right clicking.
+  * Added: X-Invert in the palette editor.
+  * Fixed: Small bug in the reduce-palette function.
+  * Improved: GIF saving strongly accelerated (finally!).
+  * Improved: Shade mode completely modified (customized shades added).
+  * Fixed: Tiny bug in the block definition of the palette editor.
+  * Improved: Non-standard PCX files that don't reset the compression after each line should be supported now (at least for 256-color pictures).
+  * Added: Undo in the Shade menu.
+  * Added: Statistics screen.
+
+==GRAFX 2.00 Beta 93% (12/12/1996)==
+  * Fixed: Bug that occured when approaching the borders of the screen in grid mode with the type of cursor used for brush grabbing.
+  * Fixed: Small but annoying bug when saving files with a name of 9 characters.
+  * Fixed: Saved PAL files no longer modify the picture's name (some mistake must have been done when we implemented the backup option).
+  * Added: Now, you can stop the loading of previews by pressing a key.
+  * Improved: Video cards that don't use the same VESA bank for reading and writing should now work correctly.
+  * Improved: Frame displayed around the magnifier's preview.
+  * Improved: Menu of resolutions completely modified, and many new modes added.
+  * Modified: The default colors of the menu have been slightly lightened.
+  * Improved: The whole configuration is now saved and reloaded in the settings menu.
+
+==GRAFX 2.00 Beta 92% (11/27/1996)==
+  * Fixed/Removed: Error message occuring when accessing a drive with no disk or so finally suppressed!
+  * Fixed: BMP loading was almost completely bugged and it should now be completely debugged.
+  * Fixed/Modified: Set_palette routine (the previous one was fast but did not work with some weird cards that don't support a REP OUTSB).
+  * Added: Multi-Undo.
+  * Added: Backup (`*`.BAK) files.
+
+==GRAFX 2.00 Beta 91% (11/20/1996)==
+  * Fixed: Terrific bug in Help/Messages (one line was too long and crashed the program!).
+  * Added: Some new parameters for the settings.
+  * Added: Now, you can automatically set the best resolution for the picture loaded and/or slightly adapt the picture to keep the colors of the menu (for those who want to use GrafX2 as a viewer).
+  * Fixed: Bug that occured when you wanted to restore your previous brush while being in "grab brush" mode.
+  * Added: English user's manual written (will be updated later, and translated into French).
+  * Fixed: No more displays pixels out of the preview window when loading corrupt pictures.
+  * Fixed: Small bug in LBM loading (for non-standard widths).
+  * Fixed: Minor error when saving the original screen dimensions in PKM files. (we didn't save words with Intel conventions)
+  * Fixed: Exactly the same bug for LBM (but with Motorola conventions)
+  * Removed: No more saving the current palette when exiting the program (that was useless and boring when pictures had a weird palette).
+
+==GRAFX 2.00 Beta 90% (11/01/1996) - Wired'96 release==
+This version was 1st shown at the Wired'96 demo party in Belgium. We gave it to many people there, so let's start history from here. Note that there were a few different "90%" versions because we didn't want to change the number just for tiny bug-fixes.
+
+==GRAFX 1.0? -> 1.02 (09/??/1995 -> 07/??/1996)==
+Forget it!
