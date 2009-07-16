@@ -1,0 +1,4 @@
+#summary The sidebar is used for navigation in the wiki.
+  * UserManual
+  * DeveloperDocumentation
+  * [gallery]
