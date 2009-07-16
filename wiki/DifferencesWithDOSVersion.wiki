@@ -21,6 +21,7 @@ Character encoding is the one known as Latin-1, or Windows-1252, or Western Euro
 The "drives" icons have been replaced by a "Select drive" button that allows you to choose between the drives (windows), or "/", "$HOME", and mount points (linux) and volume names (Amiga).
 On all platforms, the files are sorted in a case-sensitive way, but the "quicksearch" feature is case-insensitive.
 The list of drives is queried whenever you click the button, so you can use drives that are added dynamically, for example when you plug a USB memory stick.
+There are 4 dropdown boxes allowing you to save your favourites folders and reach them quickly.
 
 = Library =
 The program uses SDL instead of direct hardware calls and VGA / VESA. This affects the following:
@@ -61,10 +62,11 @@ The original GrafX2 is a single-tasking DOS program, it uses all available CPU c
 Grafx2 can load configuration files (grafx2.ini and grafx2.cfg) from the DOS version. It will recover as much of your keyboard shortcuts, options, stencil tables, shades, etc. as possible.
 
 = Image file formats =
-Grafx2 can still save & load the file formats originally implemented. PNG is now available. The BMP loader has been debugged and improved to load more BMP variants. The PKM file format still uses 18bit colors, so when saving images in PKM format your palette loses some precision, you should use some other format like GIF, for example.
+Grafx2 can still save & load the file formats originally implemented. PNG and Neochrome are now available. The BMP loader has been debugged and improved to load more BMP variants. The PKM file format still uses 18bit colors, so when saving images in PKM format your palette loses some precision, you should use some other format like GIF or PNG, for example.
 
 = New features =
-The two missing tools in the DOS version were added, so you can now draw gradiation rectangles and draw text. The brush distortion is on its way, as well as Picture effects (transform).
+All the missing features from the dos version are available. Gradiation rectangles, text (both ttf and bitmap), brush distortion and some picture effects.
+The program is also fully skinnable. The GUI has been improved, to make it behave more like modern things (click buttons on mouse release, don't leave a slider while the mouse is clicked for example). Simple support for dropdown menus was added.
 
 = Online help =
 If you forgot some shortcut or can't get a tool to work like you want, just remember that you can press the F1 key at any time. That will open a window with some text about the active tool, opened window, or the button you are hovering with the cursor in the menu.
