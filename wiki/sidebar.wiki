@@ -2,7 +2,7 @@
   * [UserManual Users]
     * [DifferencesWithDOSVersion Differences with DOS version]
     * [gallery]
-  *[DevelopperDocumentation Devs]
+  * [DevelopperDocumentation Devs]
     * [Compiling How to build Grafx2]
     * [http://grafx2.googlecode.com/svn/doxydoc/html/index.html Doxygen reference]
     * [PlatformDependantCode How to write platform independant code]
