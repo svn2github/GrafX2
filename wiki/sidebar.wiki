@@ -1,8 +1,8 @@
 #summary The sidebar is used for navigation in the wiki.
-=[UserManual Users]=
-  * [DifferencesWithDOSVersion Differences with DOS version]
-  * [gallery]
-=[DevelopperDocumentation Devs]=
-  * [Compiling How to build Grafx2]
-  * [http://grafx2.googlecode.com/svn/doxydoc/html/index.html Doxygen reference]
-  * [PlatformDependantCode How to write platform independant code]
+  * [UserManual Users]
+    * [DifferencesWithDOSVersion Differences with DOS version]
+    * [gallery]
+  *[DevelopperDocumentation Devs]
+    * [Compiling How to build Grafx2]
+    * [http://grafx2.googlecode.com/svn/doxydoc/html/index.html Doxygen reference]
+    * [PlatformDependantCode How to write platform independant code]
