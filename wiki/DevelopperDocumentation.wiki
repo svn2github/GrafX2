@@ -1,5 +1,5 @@
 #summary Documentation for developers. You should read this before starting to mess with the sourcecode.
-#labels Featured
+#labels Featured,Developpers
 
 = Developper documentation =
 
@@ -8,3 +8,4 @@
  * There's some documentation on how to code according to the different [PlatformDependantCode platforms]
  * Grafx2 uses a custom picture format called [PKMSpec PKM]. Here are some informations about it.
  * The internals of the program are divided in many parts, however we have documentation only for the [InputInterface input interface], and the [OperationsEngine operations engine]. This should be enough if you want to add more tools to the program.
+ * Also check the current improvement proposals : [LayersAndAnimation Pages, layers and animation features]
