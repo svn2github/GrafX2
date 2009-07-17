@@ -16,7 +16,7 @@ There is a thing that i'm not sure: should the spare page be also an animated ti
 
 = Architecture overview =
 
--add link to class diagram-
+http://code.google.com/p/grafx2/svn/wiki/pictures/devdocs/pages_class_diagram.png
 
 = Notes =
 We introduce three new structures: T_Timeline, T_Frame, and T_Layer, and we do some changes in the T_Page and T_List_of_page.
