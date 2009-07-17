@@ -1,0 +1,48 @@
+#summary Design of the new page management system to handle layers and animation.
+#labels Developpers
+
+= Introduction =
+
+Two of the big features we plan to add in GrafX2, layers and animation, need a rewrite of the management of pages in the program. This page gather the ideas and possible designs and is open for discussion.
+
+I somewhat mixed technical stuff with my notes on the user interface design. It seems a good idea to separate them.
+
+= User interface overview =
+The timeline is the main thing we create when we open a file. It is possible to render a specific frame to the screen. Rendering all the frame according to their timestamp will play the animation. Rendering only one frame allows to preview it. It is possible to switch between frame preview and layer edition. It is not possible to paint on a frame. We could use the splitscreen system of the zoomed view to display both the frame rendering (as the normal view) and the edited layer (as the zoomed view).
+
+An animation is a set of frames arranged in a timeline. Each fram can have a different palette, so it is possible to use them to do simple palette cycling animations. They also hold a list of layers. Each layer is composed of two parts: picture data and distorsion information. Picture data is the real set of pixels. The same picture data can be used in multiple layers, either in multiple frames (this is what happen when you do palette cycling: the same pixels are dispayed over and over, with the same palette). The distorsion is the position, rotation, stretch and linear distorsion of the layer. It can be handled pretty much like the current "brush effects" screen. So you can have a part of your picture scrolling over the screen while rotating, if you want.
+
+There is a thing that i'm not sure: should the spare page be also an animated timeline ? or should just it be a still frame with fixed layers ? or just a single page ?
+
+= Architecture overview =
+
+-add link to class diagram-
+
+= Notes =
+We introduce three new structures: T_Timeline, T_Frame, and T_Layer, and we do some changes in the T_Page and T_List_of_page.
+
+==T_Timeline==
+Its a linked list of T_Frames, sorted by timestamp.
+The T_Timeline holds the comment, filename, format and directory of the current edited file. It is possible to have only one T_Frame, one T_Layer and one T_Page to handle usual still picture files.
+
+==T_Frame==
+This holds the data for a frame: palette, timestamp, and a linked list of layers. The palette is stored here because it needs to be global to the frame (we allow 256 colors on screen at once, no more) and because this allows to display the same page with different palettes for palette cycling.
+
+==T_Layer==
+This is the struc defining a layer. It holds a pointer to the picture data (this picture data can be used in multiple layers, in the same frame or in different successive frames). It also holds the transparent color number (this one can also be different for each occurence of the picture data) (maybe there should be multiple transparent colors ?), and finally, the distorsion is handled there simply by storing the screen pixel coordinates of the 4 corners of the layer. This allow to render any kind of distorsion using only the linear_distort function we have for brushes. However, it's pretty hard to generate this data by hand to make a proper rotation, so we will need a powerful way of generating them. We may want to store the parameters used for this generator (lets say, translation vector, rotation speed, zoom ratio, and simple offset for hand-distorsion of each of the 4 corners), allow the user to tweak them at any time to change his animation, then interpolate them to generate our distorsion points. This would then be some kind of keyframe you place at main points of the animation, while the other frames are interpolated from them.
+
+==T_Page==
+A T_Page holds a bunch of pixels with the width and height. It can be packed using some RLE and delta system to avoid wasting memory. However, I think all pages used in the animation should be depacked before playing. This can be done at the same time we generate interpolated frames from the keyframes, when you click the "render and play" button. The packing is particularly interesting for backup pages that, most of the time, are not used (particularly the old ones). Actually, the delta only make sense in the backup list because this animation system does not provide a way to have ordered pixel data to make an hand-drawn animation. If you do that, it's just a set of frames with different pages of the same size, the same palette, and the same distorsion everywhere. But the T_Pages does not know they are ordered in an animation. They can even be used in completely unrelated places and without animation (or in reverse order) at another place.
+
+As a T_Page can be used in multiple layers, i think it makes sense to add some simple reference counting mechanism. Each time an object get a pointer to a page, it increments a counter. When the object is deleted or release its pointer in any way, it decrements the counter. When the counter reaches 0 the page could be deleted immediately. Or it could be kept in packed form in some kind of pagelist, allowing to use it later in another layer.
+
+==T_List_of_pages==
+This is used in the current backup system. I'm not sure how we should handle undo/redo with the animation. We can have a separate undo list for each T_Page, or for each T_Layer (allowing to undo distorsion changes too), or for each T_Frame (allownig to undo any change). If the undo list is at the T_Frame level, we'll be in trouble because we only need to store the layer that is actually changed. The delta+rle will make the other layers take very little space, so it can be a workaround in this scheme.
+
+If the backup list is a list of frame, then it is possible to undo frame deletion, because we can push the frame back in the main list thanks to its timestamp.
+
+=File format=
+We will probably have to design our own format to store all of this in a convenient form. PKM can be extended for that using more/different chunks, not necessarily keeping compatibility and name, but using the same chunk system.
+We will want to import palette cycling from neochrome and degas elite (maybe others), and to save/load gif animations. Maybe we can find infos on what other animation package such as Autodesk Animator Pro had (features, file format, ...)
+
+Maybe vgapaint has some things too ?
