@@ -12,6 +12,7 @@ The developers are testing on:
   * (yr) A desktop PC (little-endian) Windows 98.
   * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
   * (hh) An Intel macintosh.
+  * (pg) An AmigaOne XE-G4 PowerPC (big-endian), AmigaOS 4.
 
 GrafX2 doesn't run on iPod, Nintendo DS, nor your toaster yet. Sorry :). Feel free to offer your help for a port.
 
