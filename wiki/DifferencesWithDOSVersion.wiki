@@ -7,12 +7,16 @@ The program works on Windows or Linux (and others), and on little-endian or big-
 It also compiles and runs fine on 64bit systems.
 
 The developers are testing on:
-  * (pm) An iBook PowerPC (big-endian), Linux.
-  * (pm) A Dell laptop with 64bit cpu, Linux.
-  * (yr) A desktop PC (little-endian) Windows 98.
-  * (yr) An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
-  * (hh) An Intel macintosh.
-  * (pg) An AmigaOne XE-G4 PowerPC (big-endian), AmigaOS 4.
+  * PulkoMandy
+    * A gp2x f100 mk2 (ARM CPU, Custom linux)
+    * A Dell inspiron laptop with 64bit cpu, Linux.
+  * Yves
+    * A desktop PC (little-endian) Windows 98.
+    * An IBM laptop (little-endian) Debian linux (Gnome) and Windows XP.
+  * Hitchhikr
+    * An Intel macintosh.
+  * Peter Gorgon
+    * An AmigaOne XE-G4 PowerPC (big-endian), AmigaOS 4.
 
 GrafX2 doesn't run on iPod, Nintendo DS, nor your toaster yet. Sorry :). Feel free to offer your help for a port.
 
