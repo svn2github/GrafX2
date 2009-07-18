@@ -31,6 +31,8 @@ The T_Timeline holds the comment, filename, format and directory of the current 
 ==T_Frame==
 This holds the data for a frame: palette, timestamp, and a linked list of layers. The palette is stored here because it needs to be global to the frame (we allow 256 colors on screen at once, no more) and because this allows to display the same page with different palettes for palette cycling.
 
+Of course the list of layers is ordered by Z-Order, from bottom to top, this allow easy rendering of the frame by simply rendering the layers in the order they come in the list.
+
 ==T_Layer==
 This is the struc defining a layer. It holds a pointer to the picture data (this picture data can be used in multiple layers, in the same frame or in different successive frames). It also holds the transparent color number (this one can also be different for each occurence of the picture data) (maybe there should be multiple transparent colors ?), and finally, the distorsion is handled there simply by storing the screen pixel coordinates of the 4 corners of the layer. This allow to render any kind of distorsion using only the linear_distort function we have for brushes. However, it's pretty hard to generate this data by hand to make a proper rotation, so we will need a powerful way of generating them. We may want to store the parameters used for this generator (lets say, translation vector, rotation speed, zoom ratio, and simple offset for hand-distorsion of each of the 4 corners), allow the user to tweak them at any time to change his animation, then interpolate them to generate our distorsion points. This would then be some kind of keyframe you place at main points of the animation, while the other frames are interpolated from them.
 
@@ -49,3 +51,7 @@ We will probably have to design our own format to store all of this in a conveni
 We will want to import palette cycling from neochrome and degas elite (maybe others), and to save/load gif animations. Maybe we can find infos on what other animation package such as Autodesk Animator Pro had (features, file format, ...)
 
 Maybe vgapaint has some things too ?
+
+=Use of animations=
+Of course playing with animations is nice, but if they can't go out of the program, it's of little interest. Gif export is already a nice solution, but the ability to play your own format in another program directly would be really nice.
+The idea is to provide a piece of code to render and play the animation in any program using SDL. In this context, another program could ask us to render a frame to an SDL screen, either with some content already in it, or just filled with magic pink for blitting later. The frame render should not touch the unused pixels, it should not fill the screen in black. It'd be really nice to be able to control the engine and use it to build simple games (let it load all the layers, but build the timeline in realtime depending on what the player does). But maybe i'm dreaming too much :). Rendering over a 24bit screen could also be a nice feature, in order to have a 24bit background and then simple layers in 256colors over it. Or a 3d game with some animation to make the ingame display. But, let's start with simple things :) 
