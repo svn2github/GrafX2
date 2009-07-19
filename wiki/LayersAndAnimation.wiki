@@ -92,3 +92,22 @@ I don't want to feel limited by any existing existing format, be it gif or any o
 
 We have to define the goals for this animation system... for me it's meant to make animation sequences in game, providing a packed format and allowing to replay from any program using SDL. In this context there is no need to render to any format for external replaying. But there may be a lot of other uses.
 We have to think more about the separation between animation and layers to have both working efficiently...
+
+=yr=
+One proposition of UI for the 'layer' buttons, inspired by Artgem and completed with my own experiments with a tile editor which supported layers :
+  * Each "layer" button shows one of 3 possible states : Hidden, Visible, Visible+Current (where you draw)
+  * Only one layer is Current at a given time.
+  * Clicking a non-current layer with RMB: toggles it visible on/off
+  * Clicking a non-current layer with LMB: it becomes (visible and) Current.
+  * Clicking the current layer with LMB:
+    * Not effect. Maybe we can use it to initiate drag-n-drop operation: dropping on another layer button will cause a translation of the current layer to target position.
+  * Clicking the current layer with RMB:
+    * If it's the only visible layer, all layers become visible,
+    * Else, it makes all other layers invisible.
+http://i26.tinypic.com/25ivjbo.gif
+
+Palette animation is something you generally do without changing pixel data... I suggest we implement it like Deluxe Paint, completely independant from image animation.
+
+Remember that almost all effects need to read from the "backup page". For each tool there is always the question if it should read from the last backup of "only current layer (brush grab)", or "current layer and all visible layers below it" (like smear, you smear under the top layers) or "all visible layers".
+
+How do you mean to handle 'clearing' a layer: ie after you've painted something, how do remove it from the layer to see under it? I really recommend the "magic color" idea, it fits very well with current tools...
