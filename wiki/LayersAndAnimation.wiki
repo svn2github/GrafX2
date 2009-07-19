@@ -14,6 +14,19 @@ An animation is a set of frames arranged in a timeline. Each fram can have a dif
 
 There is a thing that i'm not sure: should the spare page be also an animated timeline ? or should just it be a still frame with fixed layers ? or just a single page ?
 
+==Managing layers==
+Yves' proposition of UI for the 'layer' buttons, inspired by Artgem and completed with experiments with a tile editor which supported layers :
+  * Each "layer" button shows one of 3 possible states : Hidden, Visible, Visible+Current (where you draw)
+  * Only one layer is Current at a given time.
+  * Clicking a non-current layer with RMB: toggles it visible on/off
+  * Clicking a non-current layer with LMB: it becomes (visible and) Current.
+  * Clicking the current layer with LMB:
+    * Not effect. Maybe we can use it to initiate drag-n-drop operation: dropping on another layer button will cause a translation of the current layer to target position.
+  * Clicking the current layer with RMB:
+    * If it's the only visible layer, all layers become visible,
+    * Else, it makes all other layers invisible.
+http://i26.tinypic.com/25ivjbo.gif
+
 = Architecture overview =
 
 http://grafx2.googlecode.com/svn/wiki/pictures/devdoc/pages_class_diagram.png
@@ -94,20 +107,30 @@ We have to define the goals for this animation system... for me it's meant to ma
 We have to think more about the separation between animation and layers to have both working efficiently...
 
 =yr=
-One proposition of UI for the 'layer' buttons, inspired by Artgem and completed with my own experiments with a tile editor which supported layers :
-  * Each "layer" button shows one of 3 possible states : Hidden, Visible, Visible+Current (where you draw)
-  * Only one layer is Current at a given time.
-  * Clicking a non-current layer with RMB: toggles it visible on/off
-  * Clicking a non-current layer with LMB: it becomes (visible and) Current.
-  * Clicking the current layer with LMB:
-    * Not effect. Maybe we can use it to initiate drag-n-drop operation: dropping on another layer button will cause a translation of the current layer to target position.
-  * Clicking the current layer with RMB:
-    * If it's the only visible layer, all layers become visible,
-    * Else, it makes all other layers invisible.
-http://i26.tinypic.com/25ivjbo.gif
-
 Palette animation is something you generally do without changing pixel data... I suggest we implement it like Deluxe Paint, completely independant from image animation.
 
 Remember that almost all effects need to read from the "backup page". For each tool there is always the question if it should read from the last backup of "only current layer (brush grab)", or "current layer and all visible layers below it" (like smear, you smear under the top layers) or "all visible layers".
 
 How do you mean to handle 'clearing' a layer: ie after you've painted something, how do remove it from the layer to see under it? I really recommend the "magic color" idea, it fits very well with current tools...
+
+=plk=
+(integrated layer buttons proposal to the main article)
+These buttons seem fine. Some little questions however :
+  * Where do we put them ? Above the menubar ? In a new window ?
+  * I'm not sure it's easy to remember which number is attached to which layer. Maybe a preview system (like the one in the load/save) screen could be useful for that. This could also allow easier palette sorting, maybe (with a list of layers and some move up/down/top/bottom buttons). Button dragging mean we have to write special code for draggable buttons. But could be nice for quickly moving things around.
+  * If the buttons are in a line, they will limit the number of layers we can have to the screen width. I guess this is enough in modt cases.
+
+While i'm on the interface, for animation Ilkke suggested to replace the Hide button with one to switch between multiple toolbars/modes. The default position would be the current one, left click would switch from/to animation mode (timeline, keyframes management, playing speed, looping mode (no loop/loop/pingpong), play, stop buttons, etc.). RMB would switch the menubar off and stay in the current mode (useful in animation mode to watch your work in fullscreen). Maybe the layer part could go either on a third bar or with the animation. However this is unpractical when drawing a still picture if you want to switch quickly between the layers...
+
+Palette animation:
+I saw some quite advanced features in picfmts.doc (don't remember which format), in this one it was possible to have each cycling step stay on screen for a different amount of time, and the cycling going once, in a loop or in "pingpong" mode. So I tought it made sense to use the same timeline system as the other animation features. This is practical for us on the code size, not meaning we enforce people to use both features in their works. If the cycling is independat from the animation, it means it is not possible to change the palette in an animation in any easy way, and it also means we go for a very simple cycling scheme with colors looping in an endless loop and staying each for the same time on screen. I find that a bit sad. Remeber we are trying to be the ultimate 256color painting program ;)
+
+Feedback:
+Indeed this is the most difficult thing to handle. Having it behave differently for each tool seem uneasy to learn, having it as an option is too much buttons (feeture creep as they say), and I think a single setting for all of them will not make sense. One solution could be to take from all visible layers, and let the user swich off the ones he don't want to use. But this means a lot of playing with layers. Maybe a feature to store the current visibility of layer and then restore it afterwards can do the trick. But, it's still not a perfect workflow.
+
+Transparency:
+Actually I was thinking of something more like the "Stencil" system we have, but it would make the selected colors transparent, instead of not allowing you to draw on them.
+But maybe it's overkill, if I want to make part of a drawing appear and disappear in an animation I'll just put these part on a separate layer, and make it invisible as a whole. So let's go for a single transparent index. The only limitation it brings is there are actually only 255 colors availabe on the picture. How many people used the full range of colors, actually ?
+
+Final note :
+I'd like to integrate all the discussion into the page main content. This is a wiki not a forum :). But I'll wait a little more so we can agree on things first.
