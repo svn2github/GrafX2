@@ -57,7 +57,7 @@ Of course playing with animations is nice, but if they can't go out of the progr
 The idea is to provide a piece of code to render and play the animation in any program using SDL. In this context, another program could ask us to render a frame to an SDL screen, either with some content already in it, or just filled with magic pink for blitting later. The frame render should not touch the unused pixels, it should not fill the screen in black. It'd be really nice to be able to control the engine and use it to build simple games (let it load all the layers, but build the timeline in realtime depending on what the player does). But maybe i'm dreaming too much :). Rendering over a 24bit screen could also be a nice feature, in order to have a 24bit background and then simple layers in 256colors over it. Or a 3d game with some animation to make the ingame display. But, let's start with simple things :) 
 
 ----
-_Comments by Yves:_
+=Comments by Yves:=
 
 I've mostly thought about layers, which seem to be the more complicated compared to animation. I've had a long discussion with IlKke about the notion of "lock background", and it has given me ideas on how to handle drawing on top layer.
 
@@ -70,3 +70,25 @@ Independantly from this, the user can still choose a "transparent color for GIF 
 Different palette for each animation step: I don't like it very much, as it's quite painful to keep the palette consistent over the different frames, and I really doubt it's well-supported in GIF format (the specs says yes, but I've seen how web browser and Windows image editors don't support the specs for animation)
 
 The way I see it, most editing actions modify only one layer of the current frame. Some actions DO modify several or all frames, like for example a resize. With a smart system of reference counting, we can point to the same pixel data (T_Page) for the different "editing steps" of layers that couldn't be affected by the operation. I find this idea critically important for performances, because on each action (brush stroke) we need to backup for the undo/redo system, and not having to duplicate a dozen of frames is going to be a lifesaver.
+
+=plk=
+There are two ways to use layers :
+  * In a still picture, the photoshop way : this is what you are describing
+  * In an animation, which is what I was thinking of when writing this page. In this case a layer is used as a sprite and can be stretched, rotated and distorted. But to draw on it, it is important to have an undistorted view. When working on an animation, we want to display only the active layer. When working on a still picture, we want to display all of them. Maybe the two modes are too different and incompatible, or maybe we can find a way to make them work together.
+
+For the drawing, actually, we will have to have 3 things in memory:
+  * A- The current layer
+  * B- The rendering of all the other layers (both top and below)
+  * A mask with 3 possible values : 0 = this pixel on screen is from a layer below (display from B, possible to draw over it), 1 = this pixel is from the current layer (display from A, possible to draw over it), and 2 = this pixel is from a layer above (display from B, not possible to draw over it).
+This way you just have to check this table for <2 to know if you can draw. We can even use the values -1 (below, 0 (current) and 1 (above), which make it even easier to test (<=0 exists as a jump condition in assembly language) and maybe also makes more sense. We can even store the relative position of the layer in this table without any extra overhead.
+
+About colors:
+Again, one transparent color for all the picture makes sense in a still picture, but in an animation you may want to change the transparency of a layer overtime (to make it blink, for example). Actually, having a transparency bit for each color index in the palette would be the most powerful way.
+
+Changing the palette per frame:
+This is the most simple animation you can get. Neochrome and Degas elite have support for it, OCP Art Studio on the Amstrad CPC too. And it is important for creating good animations, I think. Fade in and out, and other palette cycling effects can make great things. The idea is not to change the whole palette at each frame, but to make 4 to 16 colors cycle in a loop to get simple animations. Rotating spiral, waterfalls, and other simple effects can be done with it.
+
+I don't want to feel limited by any existing existing format, be it gif or any other one. We may render to .avi if needed :)
+
+We have to define the goals for this animation system... for me it's meant to make animation sequences in game, providing a packed format and allowing to replay from any program using SDL. In this context there is no need to render to any format for external replaying. But there may be a lot of other uses.
+We have to think more about the separation between animation and layers to have both working efficiently...
