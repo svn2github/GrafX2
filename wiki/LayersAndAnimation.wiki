@@ -172,6 +172,10 @@ These buttons seem fine. Some little questions however :
 
 While i'm on the interface, for animation Ilkke suggested to replace the Hide button with one to switch between multiple toolbars/modes. The default position would be the current one, left click would switch from/to animation mode (timeline, keyframes management, playing speed, looping mode (no loop/loop/pingpong), play, stop buttons, etc.). RMB would switch the menubar off and stay in the current mode (useful in animation mode to watch your work in fullscreen). Maybe the layer part could go either on a third bar or with the animation. However this is unpractical when drawing a still picture if you want to switch quickly between the layers...
 
+Possible alternative: button opens a popup menu to choose which toolbar(s) are visible:
+
+http://i27.tinypic.com/6ptc7o.gif
+
 Palette animation:
 I saw some quite advanced features in picfmts.doc (don't remember which format), in this one it was possible to have each cycling step stay on screen for a different amount of time, and the cycling going once, in a loop or in "pingpong" mode. So I tought it made sense to use the same timeline system as the other animation features. This is practical for us on the code size, not meaning we enforce people to use both features in their works. If the cycling is independat from the animation, it means it is not possible to change the palette in an animation in any easy way, and it also means we go for a very simple cycling scheme with colors looping in an endless loop and staying each for the same time on screen. I find that a bit sad. Remeber we are trying to be the ultimate 256color painting program ;)
 
