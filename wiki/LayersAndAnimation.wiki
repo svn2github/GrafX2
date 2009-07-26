@@ -27,6 +27,31 @@ Yves' proposition of UI for the 'layer' buttons, inspired by Artgem and complete
     * Else, it makes all other layers invisible.
 http://i26.tinypic.com/25ivjbo.gif
 
+The number of layers is limited anyway, because we can't put an infinite number of keyboard shortcuts... "Switch to layer 1", "Toggle layer 4", etc. One very handy keyboard shortcut can be to "Toggle current layer", because it will switch from "all layers" to "only the current layer", just like when you right-click te current layer.
+
+Further experiments with UI:
+
+http://i32.tinypic.com/rhl7vl.jpg
+
+The vertical layouts are the most natural, since the "bottom" layer is the background, and the one over it are piled on top of each other. But the size is VERY limited as it makes tiny buttons,8 layers is really a maximum. The buttons are still bigger than those in ArtGem though, even when the menus are not zoomed.
+
+Horizontal layouts allow more layers, but make the menu bigger (when layer row is displayed).
+
+In any case, a "layer menu" button is not necessary, it can be replaced by double-clicking the active layer.
+
+The "layer menu" can propose:
+    * Set transparent color
+    * Add empty layer
+    * Clone current layer
+    * Delete current layer
+    * Flatten all
+    
+The existing "Copy to spare" menu will behave differently if the spare is a multi-layer image:
+    * The copy of pixels (choices 1,2 and 4) will copy current layer to (replace) spare's current layer, without changing the spare's dimensions.
+    * "Palette and Remap" will remap all the layers of the spare.
+This will be the method to import an image as a new layer: Add new layer, Swap to spare, load image, 'Copy to spare' / 'Pixels'. 
+
+
 = Architecture overview =
 
 http://grafx2.googlecode.com/svn/wiki/pictures/devdoc/pages_class_diagram.png
@@ -60,8 +85,12 @@ This is used in the current backup system. I'm not sure how we should handle und
 If the backup list is a list of frame, then it is possible to undo frame deletion, because we can push the frame back in the main list thanks to its timestamp.
 
 =File format=
-We will probably have to design our own format to store all of this in a convenient form. PKM can be extended for that using more/different chunks, not necessarily keeping compatibility and name, but using the same chunk system.
-We will want to import palette cycling from neochrome and degas elite (maybe others), and to save/load gif animations. Maybe we can find infos on what other animation package such as Autodesk Animator Pro had (features, file format, ...)
+We will have to design our own format to store all of this in a convenient form. PKM can be extended for that using more/different chunks, not necessarily keeping compatibility and name, but using the same chunk system.
+We will want to import palette cycling from neochrome, degas elite, and IFF format, and to save/load gif animations. Maybe we can find infos on what other animation package such as Autodesk Animator Pro had (features, file format, ...)
+
+PNG and GIF allow us to add custom chunks of data that will (should?) be ignored by viewer programs. The files will be quite big, because we basically store all the individual layers in addition to the "visible" flattened image.
+
+For layers, one early/easier method is to use GIF to store layers as individual frames with a delay of 0 and no repetition. In theory it's the ideal file format as it has no size overhead, unfortunately  many GIF viewers impose a minimum delay of 1/10s or 1/20s (Firefox, IE), and some are unable to display a framed GIF without repeating it in a loop.
 
 Maybe vgapaint has some things too ?
 
