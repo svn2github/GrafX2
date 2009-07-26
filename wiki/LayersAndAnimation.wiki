@@ -37,6 +37,27 @@ The vertical layouts are the most natural, since the "bottom" layer is the backg
 
 Horizontal layouts allow more layers, but make the menu bigger (when layer row is displayed).
 
+{{{
+(PulkoMandy's comments on layers interface mockup)
+I don't like the fact that you removed the vertical bars in some of these. They separate "tools", "fx", "settings/management" and "palette". I think layers should be part of fx or management (along with the spare page thing). The separation bars could be made a little thinner to free some space.
+
+You added an "X" button to hide the layerbar. If you do that, the X on the statusbar would hide the menu, which would feel strange.
+
+I tend to prefer the flat design as layers are not buttons, but that's just me. Let them be skinnable anyways.
+
+Numbering the layers is useless and will cause problems once there is more than 10. Also we have to provide some kind of scrolling to see all of them when there are more than what we can display. This looks easier to do with the horizontal view.
+
+I like the idea of having stackable toolbars, each beeing hideable separately. This would work nicely if we had an animation toolbar, and also allow to split the main bar if we ever want to add more tools to it. We could also put an "FX" bar (instead of a window) and each tool could have his own (for example to easily change transparency level). Maybe all this ideas together would not let a lot of space available for drawing, however.
+
+Another problem with the horizontal bar is that your buttons are not aligned with the one of the main toolbar. But this is difficult to solve as long as we have separators, I think.
+
+The layers button should use the same font as KILL and PAL. 
+
+Also note we can remove direct access to the "adjust picture" and move it to "picture effects". Who use it often enough to have it in the main bar ?
+
+I'm still thinking having a simple dropdown for layers could also work. Another idea is to put them in an horizontal strip below or above the palette. But if we go for the stackable strips of menu, the palette could be one of them, too. Maybe we could go for a mixed mode with the main tools available on the left and let the right part being switchable between layers, palette, and settings/load/save. Would that be bad for the workflow ?
+}}}
+
 In any case, a "layer menu" button is not necessary, it can be replaced by double-clicking the active layer.
 
 The "layer menu" can propose:
