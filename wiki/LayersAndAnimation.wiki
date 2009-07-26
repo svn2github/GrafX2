@@ -113,7 +113,9 @@ PNG and GIF allow us to add custom chunks of data that will (should?) be ignored
 
 For layers, one early/easier method is to use GIF to store layers as individual frames with a delay of 0 and no repetition. In theory it's the ideal file format as it has no size overhead, unfortunately  many GIF viewers impose a minimum delay of 1/10s or 1/20s (Firefox, IE), and some are unable to display a framed GIF without repeating it in a loop.
 
-Maybe vgapaint has some things too ?
+== VGAPaint example ==
+
+I launched vgapaint to see what it had. There are no layers. The animation is bitmap-frame based, and the palette is handled a bit like what I did for pixel data, ie a single palette can be shared between multiple frames, but you can also decide to use another one. There is nothing much more to say. The function to import a set of numbered PCX from hard drive looks interesting (load ANIM0001.PCX as first frame, ANIM0002.PCX as second, and so on). There is sound support (well... I think we don't need that), AVI import/export, and a custom format, .VAN, which does not seem very extensible as the program provide options in the menu for loading .VANs from older versions. I'll look at this format details. I've uploaded a wiki page called [VGAaintMenus] if you want to have a look at it (just so it's linked from somewhere :p).
 
 =Use of animations=
 Of course playing with animations is nice, but if they can't go out of the program, it's of little interest. Gif export is already a nice solution, but the ability to play your own format in another program directly would be really nice.
