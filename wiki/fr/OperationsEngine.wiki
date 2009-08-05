@@ -1,17 +1,14 @@
-<h1 align="center">GrafX2 - Le moteur des opérations</h1>
+=GrafX2 - Le moteur des opérations=
+==Explication du principe :==
 
-<hr>
-
-<h2>Explication du principe&nbsp;:</h2>
-
-<p>Qu'appelle-t'on une opération? C'est l'emploi d'un outil de
+Qu'appelle-t'on une opération? C'est l'emploi d'un outil de
 dessin. Par exemple, le tracé libre à la main d'un pinceau (ou
 d'une brosse) est une opération. Plus exactement, c'est tout
 comportement de la souris lorsqu'elle se trouve sur les pixels de
 l'image éditée. De ce fait, la gestion de la pipette se fait
-également au travers des opérations.</p>
+également au travers des opérations.
 
-<p>Le moteur chargé de gérer ces opérations est simplifié
+Le moteur chargé de gérer ces opérations est simplifié
 autant que possible. Son principe est le suivant&nbsp;: lorsque
 la souris est au-dessus de l'image, la boucle principale de
 gestion de GrafX2 (située dans MOTEUR.C) détermine la partie
@@ -28,17 +25,17 @@ qui doivent être exécutées intégralement à chaque itération
 de la boucle principale. Elle se contente de ne faire que ce
 qu'elle doit faire face à la situation qu'implique la
 combinaison (ID_OP,Code souris, Etat pile) pour laquelle elle est
-appelée.</p>
+appelée.
 
-<p>En fait, le moteur doit être aidé pour déterminer les
+En fait, le moteur doit être aidé pour déterminer les
 insctructions à exécuter. Chacune de ces parties atomiques est
 écrite sous la forme d'une fonction contenant tout le code qui
 lui est nécessaire. Ces fonctions sont ce que l'on a appelé des
 &quot;Func_action&quot; (définition dans STRUCT.H), c'est à
 dire une simple fonction qui ne reçoit pas de paramètres et qui
-n'en renvoie pas. Un simple void Ma_fonction(void)...</p>
+n'en renvoie pas. Un simple void Ma_fonction(void)...
 
-<p>Il n'est pas dans mon intention de vous apprendre à écrire
+Il n'est pas dans mon intention de vous apprendre à écrire
 ces fonctions atomiques. Dans le cas des opérations les plus
 simples à implémenter selon ce principe, la conception des
 parties atomiques est assez intuitive, mais il arrive dans
@@ -47,9 +44,9 @@ alors tricher un peu (mais gentiment! - en plaçant des valeurs
 arbitraires dans la pile uniquement pour permettre la transition
 vers une autre combinaison choisie, donc une autre partie
 atomique, par exemple). Vous pourrez trouver tous les exemples
-que vous voudrez dans le fichier OPERATIO.C.</p>
+que vous voudrez dans le fichier OPERATIO.C.
 
-<p>Après avoir écrit les parties atomiques qui vont être
+Après avoir écrit les parties atomiques qui vont être
 nécessaires pour la gestion complète d'une opération (dans le
 fichier OPERATIO.C), et avoir renseigné les prototypes de ces
 fonctions (dans OPERATIO.H), il faut indiquer au moteur dans
@@ -64,9 +61,9 @@ de la combinaison : ID_OP, code souris, état pile) à l'aide de
 l'adresse de la fonction à appeler. Ce tableau va servir au
 moteur à faire un appel direct de la fonction atomique d'après
 la combinaison, sans avoir à faire toute une série de tests
-(swich/case) fastidieux.</p>
+(swich/case) fastidieux.
 
-<p>Comme nous avons pressenti qu'il arriverait fréquemment que
+Comme nous avons pressenti qu'il arriverait fréquemment que
 des fonctions atomiques auraient besoin systématiquement
 d'effacer la souris pour faire des affichages à l'écran ou dans
 l'image, et de la rafficher ensuite, et dans le souci d'éviter
@@ -79,107 +76,47 @@ certain que cela s'est révelé d'une grande utilité, mais je
 vous le signale tout de même pour que vous compreniez
 l'existance du paramètre &quot;Effacer souris&quot; qu'il faut
 indiquer lorsqu'on renseigne une fonction atomique lors de
-l'initialisation.</p>
+l'initialisation.
 
-<p>Il est important de noter qu'une fonction atomique est
+Il est important de noter qu'une fonction atomique est
 appelée en permanence par la boucle principale, indépendamment
 du fait que la souris change d'état ou non. Ces appels
 répétés permettent par exemple d'avoir un spray qui continue
 à agir lorsqu'on presse le bouton de la souris sans la
-déplacer.</p>
+déplacer.
 
-<p>De plus, les fonctions atomiques n'ont pas à se soucier du
+De plus, les fonctions atomiques n'ont pas à se soucier du
 positionnement de la souris car dès que la pile contient des
 données (généralement dès le premier clic), la souris est
 limitée par le moteur afin de ne pas sortir de l'image. Le
 moteur s'assure également que la souris ne franchis pas la barre
 de split en mode &quot;loupe&quot;. Enfin, n'oubliez pas de vider
 complètement la pile en temps voulu, lorsque l'opération peut
-s'achever! ;-)</p>
+s'achever! ;-)
 
-<hr>
+==Informations pour l'implémentation :==
+  * Le renseignement d'une fonction atomique se fait dans INIT.C à l'aide de :
+{{{
+Initialisation_operation(ID_OP, Etat souris, Taille pile,
+    Callback, Effacer souris);
+}}}
 
-<h2>Informations pour l'implémentation&nbsp;:</h2>
+  * La pile à disposition des opérations pour le stockage des paramètres :
+    * Elle contient des mots 16-bits (type word, défini dans STRUCT.H)
+    * Pour y poser une valeur : Operation_push(val)
+    * Pour en retirer une valeur : Operation_pop(&var)
+    * Exemples de valeurs à y mettre : coordonnées de souris, de pinceau... des couleurs... des valeurs bidons pour changer l'état de la pile...
+  * À l'intérieur d'une fonction atomique :
+    * Si la fonction correspond à la première étape d'une opération, appeler Init_start_operation()
+    * Si la fonction correspond à la première étape d'une opération qui peut modifier l'image, appeler Backup() avant modification de l'image ; ce qui permettra à l'utilisateur d'annuler la modification avec "undo" s'il le souhaite.
+    * Pour afficher les coordonnées de la souris, appeler Print_coordinates() sans vous soucier de savoir si la barre d'outils est visible. Si vous avez besoin d'afficher une coordonnée qui doit s'adapter au mode relatif ou absolu (selon le paramétrage effectué par l'utilisateur), utilisez Display_coords_rel_or_abs(RefX,RefY). Si les coordonnées sont configurées pour être relatives, cette fonction affichera la différence entre les coordonnées actuelles du pinceau et les coordonnées de référence passées en paramètres. Dans le cas d'infos spéciales à afficher dans la barre de menu, on pourra se servir de la fonction Print_in_menu(texte,position en caractères).
+    * Si vous avez besoin de vous assurer que les boutons de la souris sont relâchés à un moment de la fonction, utilisez Wait_end_of_click()
+    * Etudiez OPERATIO.C pour avoir des exemples.
+  * Pour démarrer une opération (après avoir cliqué sur un bouton de la barre d'outils par exemple), appeler Start_operation_stack(ID_OP). Note: il faut que le curseur soit caché avant l'appel (et son état n'est pas changé après). (voir exemples dans BOUTONS.C)
+  * On peut connaître l'ID_OP de l'opération en cours grâce à la variable globale Current_operation
+  * La variable globale Operation_stack_size correspond à la taille de la pile d'opérations. Elle peut être consultée et éventuellement modifiée (même s'il est préférable d'utiliser Operation_push et Operation_pop dans ce dernier cas).
 
-<ul>
-    <li>Le renseignement d'une fonction atomique se fait dans
-        INIT.C à l'aide de&nbsp;:</li>
-</ul>
-
-<blockquote>
-    <p>Initialisation_operation(ID_OP, Etat souris, Taille pile,
-    Callback, Effacer souris);</p>
-</blockquote>
-
-<ul>
-    <li>La pile à disposition des opérations pour le stockage
-        des paramètres&nbsp;:<ul>
-            <li>Elle contient des mots 16-bits (type word,
-                définit dans STRUCT.H)</li>
-            <li>Pour y poser une valeur&nbsp;:
-                Operation_push(val)</li>
-            <li>Pour en retirer une valeur&nbsp;:
-                Operation_pop(&amp;var)</li>
-            <li>Exemples de valeurs à y mettre&nbsp;:
-                coordonnées de souris, de pinceau... des
-                couleurs... des valeurs bidons pour changer
-                l'état de la pile...<br>
-                </li>
-        </ul>
-    </li>
-    <li>A l'intérieur d'une fonction atomique&nbsp;:<ul>
-            <li>Si la fonction correspond à la première étape
-                d'une opération, appeler
-                Init_start_operation()</li>
-            <li>Si la fonction correspond à la première étape
-                d'une opération qui peut modifier l'image,
-                appeler Backup() avant modification de l'image ;
-                ce qui permettra à l'utilisateur d'annuler la
-                modification avec &quot;undo&quot; s'il le
-                souhaite.</li>
-            <li>Pour afficher les coordonnées de la souris,
-                appeler Print_coordinates() sans vous soucier de
-                savoir si la barre d'outils est visible. Si vous
-                avez besoin d'afficher une coordonnée qui doit
-                s'adapter au mode relatif ou absolu (selon le
-                paramétrage effectué par l'utilisateur),
-                utilisez Display_coords_rel_or_abs(RefX,RefY). Si les
-                coordonnées sont configurées pour être
-                relatives, cette fonction affichera la
-                différence entre les coordonnées actuelles du
-                pinceau et les coordonnées de référence
-                passées en paramètres. Dans le cas d'infos
-                spéciales à afficher dans la barre de menu, on
-                pourra se servir de la fonction
-                Print_in_menu(texte,position en caractères).</li>
-            <li>Si vous avez besoin de vous assurer que les
-                boutons de la souris sont relâchés à un moment
-                de la fonction, utilisez Wait_end_of_click()</li>
-            <li>Etudiez OPERATIO.C pour avoir des exemples.<br>
-                </li>
-        </ul>
-    </li>
-    <li>Pour démarrer une opération (après avoir cliqué sur
-        un bouton de la barre d'outils par exemple), appeler
-        Start_operation_stack(ID_OP). Note: il faut que le
-        curseur soit caché avant l'appel (et son état n'est pas
-        changé après). (voir exemples dans BOUTONS.C)<br>
-        </li>
-    <li>On peut connaître l'ID_OP de l'opération en cours
-        grâce à la variable globale Current_operation<br>
-        </li>
-    <li>La variable globale Operation_stack_size correspond à
-        la taille de la pile d'opérations. Elle peut être
-        consultée et éventuellement modifiée (même s'il est
-        préférable d'utiliser Operation_push et Operation_pop
-        dans ce dernier cas).</li>
-</ul>
-
-<hr>
-
-<p>Comment rajouter une opération?</p>
-<div align="center"><center>
-
+==Comment rajouter une opération?==
 <table border="1" width="100%">
     <tr>
         <td width="100%">Dans CONST.H&nbsp;:<ul>
@@ -305,4 +242,3 @@ s'achever! ;-)</p>
         </td>
     </tr>
 </table>
-</center></div>
