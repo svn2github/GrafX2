@@ -15,11 +15,18 @@ We plan to add a lot of features in future releases, but we will try to work onl
   * Improved: MacOSX : Configuration is now preserved when upgrading grafx2 (issue 192)
   * New: Support for loading and saving Neochrome image file format (.NEO files)
   
-==GRAFX 2.00.880 bugfix release (04/20/2009)==
-  * Fixed: Out-of-memory errors on machines with more than 4Gb or RAM (issue 182)
+There was some bugs left in the first 2.0 release, so we fixed them while working on new features for 2.1. These versions only include the bugfixes, and not the new features. 2.0 will be supported like that until we get 2.1 out.
 
-==GRAFX 2.00.874 bugfix release (06/16/2009)==
-There was some bugs left in the 2.0 official release, so we fixed them while working on new features for 2.1. These versions only include the bugfixes, and not the new features. 2.0 will be supported like that until we get 2.1 out.
+==GRAFX 2.00.970 bugfix release (08/06/2009)==
+  * Fixed: Crash in Load/Save dialog when directory content has changed. (issue 198)
+
+==GRAFX 2.00.951 bugfix release (07/24/2009)==
+  * Fixed: Crash when using pipette on a software-zoomed video mode from the palette screen (issue 196)
+
+==GRAFX 2.00.880 bugfix release (20/06/2009)==
+  * Fixed: 'Out of memory' message on machines with more than 4Gb free RAM (issue 182)
+
+==GRAFX 2.00.874 bugfix release (16/06/2009)==
   * Fixed: Quicksearch filenames and brush resize shortcuts don't work (issue 180)
 
 ==GRAFX 2.00 final (06/12/2009) - Summer Sunset Edition ==
