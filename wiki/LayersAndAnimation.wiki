@@ -168,6 +168,17 @@ appear and disappear in an animation I'll just put these part on a separate
 layer, and make it invisible as a whole. So let's go for a single transparent
 index.
 
+===Shared layers===
+Optionally, with animation and layers, we could implement Shared layers.
+
+A shared layer is a layer which is present in more than one step of the animation. A classic use is to make your background layer shared, so it is present in every step of animation, and drawing on it will affect all the steps at a time.
+
+This system doesn't allow a layer that scrolls/pans as an animation... It would require a full recomputing of all frames every time you draw something, it's too slow to do it dynamically.
+
+In terms of UI, we have to think a bit. The system can handle a lot of things, but it's not easy to make it clear and user-friendly.
+
+For the implementation, it's rather easy because we'll already have reference-counting in place to handle backup steps. We only have to be careful when saving/loading, because it would automatically separate the layers on saving.
+
 = Architecture overview =
 
 Both layers and animations are part of the code refactoring. Animation things
