@@ -3,9 +3,24 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
-==GRAFX 2.1 (WIP, updated upto r911, not released yet!)==
+==GRAFX 2.1 (WIP, updated upto r1004, not released yet!)==
 We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
-  * Improved: Hold SHIFT while drawing a line new finds the closest multiple of 45° or isometric angle.
+  * Fixed: Moving a very large brush in zoomed view would not refresh fast enough (Issue 183)
+  * Improved: Resizable "circle" paintbrush now proposes all diameters, no longer limited to odd ones.
+  * Improved: Resizable "random" paintbrush has a more even flow.
+  * New: Brush container, in Paintbrush screen. Store and retrieve up to 12 brushes. 
+  * Improved: Slow operations (ex: circle with big brush and Transparency active) now draws some intermediate steps (Issue 183)
+  * Changed: Color reduction when loading 24-bit BMP PCX or PNG no longer applies Floyd-Steinberg dithering. It picks nearest match instead.
+  * Fixed: greyscale PNG loading. 
+  * Improved: PNG 24-bit can now be loaded, with color reduction (Issue 201).
+  * New: Keyboard shortcuts for assigning fixed zoom levels.
+  * Improved: Palette screen remembers if you prefer HSV or RGB.
+  * Fixed: Possible crash in Save/Load screen if directory content was modified (Issue 198)
+  * Improved: You can exit text fields by clicking elsewhere.
+  * Improved: You can now choose a fixed GUI scaling factor (Issue 101) 
+  * New: Hold SHIFT while drawing a line finds the closest multiple of 45° or isometric angle.
+  * New: Hold SHIFT while using any other tool to lock X or Y axis (Issue 193)
+  * Fixed: Dragging sliders and clicking color color ranges no longer activate other parts of windows (Issue 191)
   * Key-combo support to quickly set transparency, ie you can type 3 4 to get 34% transparency (Issue 154)
   * New keyboard shortcut: All effects off (shift-E)
   * Gradient-filled rectangle and Gradient menu are now a single button.
