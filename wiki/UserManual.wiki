@@ -31,6 +31,7 @@ On Linux and similar, they are stored in $(HOME)/.Grafx2
 On Windows, they are stored in %APPDATA%\Grafx2 . Unfortunately the APPDATa varialbe seems to change with every version of Windows :
   * Windows XP: "C:\Documents and Settings\username\Application data"
   * Windows Vista: "C:\Users\username\AppData\Roaming\GrafX2"
+On Mac OsX, the files are in ~/Library/Preferences/com.googlecode.grafx2 .
 On GP2X and Amiga-like systems, the settings are always kept in the same directory as the program. 
 
 == GFX2.INI ==
