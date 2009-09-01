@@ -27,12 +27,18 @@ If you have some comments about the program, just post a comment here in the wik
 = Configuration files =
 
 GrafX2 uses two files to store its configuration: 'GFX2.INI' and 'GFX2.CFG'.
-On Linux and similar, they are stored in $(HOME)/.Grafx2
-On Windows, they are stored in %APPDATA%\Grafx2 . Unfortunately the APPDATa varialbe seems to change with every version of Windows :
-  * Windows XP: "C:\Documents and Settings\username\Application data"
-  * Windows Vista: "C:\Users\username\AppData\Roaming\GrafX2"
+== Where ? ==
+On Linux and similar, they are stored in the hidden directory `$(HOME)/.Grafx2`
+
+On Windows, starting from Windows NT/2000, open an explorer and type in its address bar `%APPDATA%\Grafx2` to reach the directory where they are stored. The actual directory depends on your version of Windows, it can be for example `C:\Documents and Settings\username\Application data\GrafX2` (Windows XP), and `C:\Users\username\AppData\Roaming\GrafX2` (Windows Vista).
+
 On Mac OsX, the files are in ~/Library/Preferences/com.googlecode.grafx2 .
-On GP2X and Amiga-like systems, the settings are always kept in the same directory as the program. 
+
+On GP2X, Windows 98, and Amiga-like systems, the settings are always kept in the same directory as the program.
+
+Note that the standard locations above are for a normal, "user" installation of grafx2. The behavior of the program is to first search the file in its own directory, and use them there (read and write) if it finds them. This allows several cases:
+  * Installing two versions of Grafx2 side-by-side, for example the latest stable and the latest WIP, without sharing the configurations : Install the program in a place where your account is allowed to write, and put a copy of the configuration files there.
+  * (Windows at least) Putting GrafX2 on a USB memory stick, with its configuration files, so you can plug it in any PC and start drawing, without having to install anything or leaving any trace on the PC !
 
 == GFX2.INI ==
 
