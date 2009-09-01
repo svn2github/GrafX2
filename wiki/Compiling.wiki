@@ -22,6 +22,9 @@ The subversion also includes an XCode project for building under Mac OS X. If yo
   * SDL_image library
   * FreeType library (optional)
   * SDL_ttf library (optional)
+
+Note you also need the headers of this libs. Under linux this is usually a separate package, like "libsdl1.2-dev", for example.
+
 === Windows only ===
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
   * the MinGW C compiler (this replaces gcc) Version 3.4.2 is known to work.
