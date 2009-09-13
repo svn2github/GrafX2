@@ -3,8 +3,7 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
-==GRAFX 2.1 (WIP, updated upto r1023, not released yet!)==
-We plan to add a lot of features in future releases, but we will try to work only on a small set of them at a time, so we can release stable versions more often. 2.1 will focus on improving the GUI. No "beta x%" anymore, but a "WIP" (work in progress) label and an svn revision number. Version numbers will increase faster...
+==GRAFX 2.1 (13/09/2009)==
   * New: C64 file formats (Issue 211).
   * Fixed: Crash with gradient-filled rectangle (Issue 212).
   * New: Visible tile grid in zoomed view (alt-shift-G).
