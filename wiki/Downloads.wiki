@@ -15,9 +15,9 @@
 || Windows 95, 98, 2000, NT, XP, Vista || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
 
 = Binary packages =
-|| Arch Linux || [http://aur.archlinux.org/packages.php?ID=27204 AUR (ext) ||
+|| Arch Linux || [http://aur.archlinux.org/packages.php?ID=27204 AUR (ext)] ||
 || Debian || [http://packages.debian.org/search?keywords=grafx2 Debian packages (ext)] ||
-|| FreeBSD || [http://www.freshports.org/graphics/grafx2/ FressPorts (ext) ||
+|| FreeBSD || [http://www.freshports.org/graphics/grafx2/ FreshPorts (ext)] ||
 || SGI IRIX || [ Nekochan repository (ext)] ||
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
 
