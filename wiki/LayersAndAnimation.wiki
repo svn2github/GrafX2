@@ -295,15 +295,25 @@ import palette cycling from neochrome, degas elite, and IFF format, and to
 save/load gif animations. Maybe we can find infos on what other animation
 package such as Autodesk Animator Pro had (features, file format, ...)
 
+== Use extensibility of PNG and GIF ==
 PNG and GIF allow us to add custom chunks of data that will (should?) be ignored
 by viewer programs. The files will be quite big, because we basically store all
 the individual layers in addition to the "visible" flattened image.
 
+== Rely on standard GIF behavior ==
 For layers, one early/easier method is to use GIF to store layers as individual
 frames with a delay of 0 and no repetition. In theory it's the ideal file format
 as it has no size overhead, unfortunately many GIF viewers impose a minimum
 delay of 1/10s or 1/20s (Firefox, IE), and some are unable to display a framed
 GIF without repeating it in a loop. Still we can use it as an internal format.
+
+Here's an example of such image:
+
+http://grafx2.googlecode.com/svn/wiki/pictures/devdoc/layers.gif
+
+Technically it's a 8-frame GIF. Frames are background, characters, GUI, Title, and 4 more unused (empty ones).
+Dispose method is "do not dispose", and time of each frame is 0.05s. The NETSCAPE2.0 extension that requires looping
+is NOT present, so it shouldn't loop.
 
 == VGAPaint example ==
 
