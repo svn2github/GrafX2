@@ -17,8 +17,9 @@
 = Binary packages =
 || Arch Linux || [http://aur.archlinux.org/packages.php?ID=27204 AUR (ext)] ||
 || Debian || [http://packages.debian.org/search?keywords=grafx2 Debian packages (ext)] ||
+|| Exherbo Linux || [http://git.exherbo.org/summer/packages/media-gfx/grafx2/index.html Summer (ext)] ||
 || FreeBSD || [http://www.freshports.org/graphics/grafx2/ FreshPorts (ext)] ||
-|| SGI IRIX || [ Nekochan repository (ext)] ||
+|| SGI IRIX || [http://reality.sgiweb.org/nekochan/beta/neko_grafx2-2.0.970.tardist Nekochan repository (ext)] ||
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
 
 = Which version should I get ? =
