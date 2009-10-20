@@ -3,6 +3,10 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
+
+==GRAFX 2.1.1080 bugfix release (20/09/2009)==
+  * Fixed: High CPU usage even when the program is idle (issue 217).
+
 ==GRAFX 2.1 (13/09/2009)==
   * New: C64 file formats (Issue 211).
   * Fixed: Crash with gradient-filled rectangle (Issue 212).
