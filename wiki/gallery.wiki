@@ -27,3 +27,6 @@ _Grafx2 running under Zeta OS_
 
 http://farm4.static.flickr.com/3250/3147303617_48bef7ace2_o.png
 _Grafx2 running under SkyOS_
+
+http://grafx2.googlecode.com/svn/wiki/pictures/grafx2_dos.jpg
+_Grafx2 running under Dos (using HXExtender)_
