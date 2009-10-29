@@ -19,6 +19,24 @@ If you want to alter an existing brush, it is possible to gather the data using 
 
 There is nothing else possible from a lua script right now. If you think you need more, let us know !
 
+= API Reference =
+
+Here is a list of things you get in lua.
+
+== Parameter stack ==
+ * Width
+ * Height
+
+== Functions ==
+{{{putpixel(x,y,c)}}}
+Set the color of pixel at coords (x,y) to c.
+
+{{{getpixel(x,y)}}}
+Returns the color of pixel at coords (x,y)
+
+{{{setcolor(c,r,g,b)}}}
+Set color index c in palette to (r,g,b)
+
 = Sample script =
 
 Here is a very small sample script that generate a diagonal gradient.
