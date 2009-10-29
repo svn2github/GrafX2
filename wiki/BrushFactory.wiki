@@ -2,39 +2,47 @@
 
 = Introduction =
 
-Grafx2 offers a lot of features, but sometimes you need something really particular, and it's not there. That's why we added the brush factory. It allows you to generate or modify a brush using a lua script. So you can extend Grafx2 capabilities with almost no limit!
+Grafx2 offers a lot of features, but sometimes you need something really
+particular, and it's not there. That's why we added the brush factory.
+It allows you to generate or modify a brush or a picture using a lua script.
+So you can extend Grafx2 capabilities with almost no limit!
 
+We are looking forward to your scripts, please send us them so we can share them
+in the next version of GrafX2!
 
 = How does it work =
 
 Using the brush factory is quite simple : just right click the 'brush effects' button to open it.
 It's a small window allowing you to select the size of the brush you want to generate, and the script you want to run.
 *Important note: you can't select the script name yet ! (this is still work in progress) You have to put it in the current directory and call it test.lua for now*
-Once you press the run button, the script is executed and generates the brush for you. You can now paste it anywhere in your painting.
-
-= Writing scripts =
-
-Grafx2 exposes some of its internals to the lua script, but not everything. For now, your script gets the width and height of the brush to generate as parameters. Then you can generate your data as you want, and you have to call putpixel(x,y,c) to put a pixel.
-If you want to alter an existing brush, it is possible to gather the data using getpixel(x,y). Beware that the things you send using putpixel will erase the preview brush, so you should getpixel over the whole brush before starting to put something.
-
-There is nothing else possible from a lua script right now. If you think you need more, let us know !
+Once you press the run button, the script is executed and generates something. If it's a brush, you can paste it like any other brush. If it's a picture, you should see it.
 
 = API Reference =
 
-Here is a list of things you get in lua.
-
-== Parameter stack ==
- * Width
- * Height
+Here is a list of things you get in lua. If you think we should add more, let us know !
 
 == Functions ==
-{{{putpixel(x,y,c)}}}
-Set the color of pixel at coords (x,y) to c.
+ * {{{putbrushpixel(x, y, c)}}}
+Set the color of pixel at coords (x, y) in the brush to c.
 
-{{{getpixel(x,y)}}}
-Returns the color of pixel at coords (x,y)
+ * {{{getbrushpixel(x, y)}}}
+Returns the color of pixel at coords (x, y) in the brush.
 
-{{{setcolor(c,r,g,b)}}}
+ * {{{getbrushsize()}}} returns the brush size (w, h).
+
+ * {{{setbrushsize(w, h)}}} sets the brush size.
+
+ * {{{putpicturepixel(x, y, c)}}}
+Set the color of pixel at coords (x, y) in the picture to c.
+
+ * {{{getpicturepixel(x, y)}}}
+Returns the color of pixel at coords (x, y) in the picture.
+
+ * {{{getpicturesize()}}} returns the picture size (w, h).
+
+ * {{{setpicturesize(w, h)}}} sets the picture size.
+
+ * {{{setcolor(c,r,g,b)}}}
 Set color index c in palette to (r,g,b)
 
 = Sample script =
@@ -42,14 +50,18 @@ Set color index c in palette to (r,g,b)
 Here is a very small sample script that generate a diagonal gradient.
 
 {{{
--- Get the width and height from grafx2
-local w, h = ...
+-- get the size of the brush
+w, h = getbrushsize()
 
 -- Iterate over each pixel
 for x = 0, w - 1, 1 do
 	for y = 0, h - 1, 1 do
 		-- Send the color for this pixel
-		putpixel(x, y, (x+y)%256);
+		putbrushpixel(x, y, (x+y)%256);
 	end
 end
 }}}
+
+= Known bugs and limitations =
+ * When your script generate a brush, you have to "restore" it afterwards (right click the "brush grab" button) to use it if grafx2 was not in brush mode before.
+ * It is not possible to send custom parameters to a script, which makes the feature not so useful. It is not easy to make that simple with a nice GUI. Suggestions welcome. Or we could add a binding so lua scripts can open and draw windows...
