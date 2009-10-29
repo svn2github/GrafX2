@@ -75,5 +75,6 @@ From version 97.0%, the compatibility is handled directly in the main program, y
   * [AdvancedDrawing Brushes and effects]
   * [KeyboardShortcuts Keyboard shortcuts]
   * [CommandLine Command line parameters]
+  * [BrushFactory The brush factory]
   * [TipsTricks Tips and tricks]
   * [FAQ Frequently asked questions]
