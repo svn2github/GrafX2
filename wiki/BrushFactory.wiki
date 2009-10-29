@@ -1,0 +1,37 @@
+#summary Generate a brush with some lines of code !
+
+= Introduction =
+
+Grafx2 offers a lot of features, but sometimes you need something really particular, and it's not there. That's why we added the brush factory. It allows you to generate or modify a brush using a lua script. So you can extend Grafx2 capabilities with almost no limit!
+
+
+= How does it work =
+
+Using the brush factory is quite simple : just right click the 'brush effects' button to open it.
+It's a small window allowing you to select the size of the brush you want to generate, and the script you want to run.
+*Important note: you can't select the script name yet ! (this is still work in progress) You have to put it in the current directory and call it test.lua for now*
+Once you press the run button, the script is executed and generates the brush for you. You can now paste it anywhere in your painting.
+
+= Writing scripts =
+
+Grafx2 exposes some of its internals to the lua script, but not everything. For now, your script gets the width and height of the brush to generate as parameters. Then you can generate your data as you want, and you have to call putpixel(x,y,c) to put a pixel.
+If you want to alter an existing brush, it is possible to gather the data using getpixel(x,y). Beware that the things you send using putpixel will erase the preview brush, so you should getpixel over the whole brush before starting to put something.
+
+There is nothing else possible from a lua script right now. If you think you need more, let us know !
+
+= Sample script =
+
+Here is a very small sample script that generate a diagonal gradient.
+
+{{{
+-- Get the width and height from grafx2
+local w, h = ...
+
+-- Iterate over each pixel
+for x = 0, w - 1, 1 do
+	for y = 0, h - 1, 1 do
+		-- Send the color for this pixel
+		putpixel(x, y, (x+y)%256);
+	end
+end
+}}}
