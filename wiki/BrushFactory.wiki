@@ -45,6 +45,8 @@ Returns the color of pixel at coords (x, y) in the picture.
  * {{{setcolor(c,r,g,b)}}}
 Set color index c in palette to (r,g,b)
 
+ * {{{brushenable()}}} ensures that the brush you generated is selected. Please call this if your script alters the brush in any way.
+
 = Sample script =
 
 Here is a very small sample script that generate a diagonal gradient.
@@ -63,5 +65,5 @@ end
 }}}
 
 = Known bugs and limitations =
- * When your script generate a brush, you have to "restore" it afterwards (right click the "brush grab" button) to use it if grafx2 was not in brush mode before.
+ * When your script generate a brush, you have to call brushenable to ensure it is displayed. If you don't, the user will not understand what happened as the brush may not be visible.
  * It is not possible to send custom parameters to a script, which makes the feature not so useful. It is not easy to make that simple with a nice GUI. Suggestions welcome. Or we could add a binding so lua scripts can open and draw windows...
