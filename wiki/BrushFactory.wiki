@@ -45,6 +45,9 @@ Returns the color of pixel at coords (x, y) in the picture.
  * {{{setcolor(c,r,g,b)}}}
 Set color index c in palette to (r,g,b)
 
+ * {{{getcolor(c)}}}
+Returns the (r, g, b) value of color at index c.
+
  * {{{brushenable()}}} ensures that the brush you generated is selected. Please call this if your script alters the brush in any way.
 
 = Sample script =
