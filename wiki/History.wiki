@@ -4,6 +4,19 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
+== GRAFX 2.2 (WIP, updated to r1116) ==
+  * Improved help message when running in console with /? or similar switch
+  * Shortcuts with multiple actions
+  * Only show recognized extensions and not all files by default in save/load screen
+  * Load more formats when SDL_image can handle them (jpeg, tga, ...)
+  * Show number of pixels used by colors in the selected range in palette window
+  * Shade window selects the foreground color by default when opened, and if you close it with only one color selected either in the palette or the range filer, this color is selected as foreground
+  * reset quicksearch when entering a directory in load/save dialog
+  * Preview skins in the skin dialog. Move more settings there. Load preferred menu colors from the skin. Fix changing to a screen that use different color indexes for its menu colors.
+
+  * Layers
+  * Lua scripting to generate brushes and pictures
+
 ==GRAFX 2.1.1080 bugfix release (20/09/2009)==
   * Fixed: High CPU usage even when the program is idle (issue 217).
 
