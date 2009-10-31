@@ -13,9 +13,9 @@ in the next version of GrafX2!
 = How does it work =
 
 Using the brush factory is quite simple : just right click the 'brush effects' button to open it.
-It's a small window allowing you to select the size of the brush you want to generate, and the script you want to run.
-*Important note: you can't select the script name yet ! (this is still work in progress) You have to put it in the current directory and call it test.lua for now*
-Once you press the run button, the script is executed and generates something. If it's a brush, you can paste it like any other brush. If it's a picture, you should see it.
+It's a small window allowing you to select the script you want to run.
+Once you press the run button, the script is executed and generates something.
+If it's a brush, you can paste it like any other brush. If it's a picture, you should see it.
 
 = API Reference =
 
