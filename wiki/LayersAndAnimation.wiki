@@ -315,6 +315,8 @@ Technically it's a 8-frame GIF. Frames are background, characters, GUI, Title, a
 Dispose method is "do not dispose", and time of each frame is 0.05s. The NETSCAPE2.0 extension that requires looping
 is NOT present, so it shouldn't loop.
 
+This loads as a layered image in GIMP, so I guess using this format will make everyone happy. However, it does not show properly in geeqie (linux image viewer), only the first frame is there because they don't support animated gif. Opera 10 seems to show it fine.
+
 == VGAPaint example ==
 
 I launched vgapaint to see what it had. There are no layers. The animation is
