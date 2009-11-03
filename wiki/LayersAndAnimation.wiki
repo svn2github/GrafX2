@@ -137,10 +137,73 @@ layers and some move up/down/top/bottom buttons). Button dragging mean we have
 to write special code for draggable buttons. But could be nice for quickly
 moving things around.
 
-= Ilija's mockups =
+= iLKke's mockups =
 http://grafx2.googlecode.com/svn/wiki/pictures/devdoc/layer_mocks.png
 
 We spent some time with Ilija trying to tune up this. The horizontal strip seems more appropriate.
+
+*Note on mockup:*
+In the horizontal strip, some buttons have RMB functions: add+rmb=clone; merge+rmb=flatten (merge all)
+
+= iLKke's ideas & thoughts =
+These are provided here so you can all read them. The text can then be integrated with the rest in a more tidy manner. Excuse the formatting.
+
+LAYER MENU
+
+vertical:
+
+ pros:
+
+ * uses spare space
+ * vertical layer display makes sense
+
+ cons:
+
+ * tiny buttons(1)
+ * clutters the rest of the GUI if separators are removed(2)
+
+horizontal:
+
+ pros:
+
+ * more space for buttons and overview, also for basic functions
+ * would have to be done for animation anyhow
+
+ cons:
+
+ * takes up more screen space(3)
+
+(1)tiny buttons can be countered by having an adaptive button size (as on mockup) 
+ 
+(2)use smaller separators (as on mockup) 
+
+(3)brilliance proved this to not be a real problem as long as you can hide/show all menus via keyboard
+
+All in all, horizontal seems to work better.
+
+THUMBNAIL PREVIEW (for horizontal menu only)
+
+ cons:
+ * takes up a lot of screen space
+ * might prove unreadable most of the time, even at relatively large thumbnail sizes
+
+ possible solutions:
+ * a set of assignable icons/colors for layer buttons instead of thumbnails(1)
+ * thumbnail preview only available in special layer popup/arranger(2)
+
+(1) external data that would need to be saved somehow, also, active/hidden layers would have to be denoted using other means than color. 
+
+(2) will make a quick mockup of it at some point, but this is not ideal since it would be optimal to have all or most parts of layer GUI in one horizontal strip 
+
+ADDITIONAL LAYER OPERATIONS:
+
+-move layer up/down - for arranging layers (already in mockup)
+
+-flash current layer - for quickly identifying layer contents. can be a key shortcut, or optionally when you select a layer it would flash briefly (toggable in prefs). flashing would be changing the colors of the layer contents for a brief period of time, perhaps to black then white. perhaps someone has a less aggressive idea.
+
+-load/save individual layers - quite useful. perhaps add optional merging of palettes, etc
+
+Those last couple of features that haven't been included in the strip can be available by clicking on the 'layers' button on the left of the strip. Or included in the strip, somehow.
 
 = Layer menu =
 
