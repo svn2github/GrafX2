@@ -137,6 +137,13 @@ layers and some move up/down/top/bottom buttons). Button dragging mean we have
 to write special code for draggable buttons. But could be nice for quickly
 moving things around.
 
+= Ilija's mockups =
+http://grafx2.googlecode.com/svn/wiki/pictures/devdoc/pages_class_diagram.png
+
+We spent some time with Ilija trying to tune up this. The horizontal strip seems more appropriate.
+
+= Layer menu =
+
 In any case, a "layer menu" button is not necessary, it can be replaced by double-clicking the active layer.
 
 The "layer menu" can propose:
