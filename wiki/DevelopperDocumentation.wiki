@@ -8,6 +8,7 @@
  * There's some documentation on how to code according to the different [PlatformDependantCode platforms]
 == Work in progress and design proposal drafts ==
  * [LayersAndAnimation Pages, layers and animation features]
+ * [EventDrivenInputSystem]
 == File formats ==
  * Grafx2 uses a custom picture format called [PKMSpec PKM]. Here are some informations about it.
  * Documentation on [http://codebase64.org/doku.php?id=base:c64_grafix_files_specs_list_v0.03 C64 files formats]
