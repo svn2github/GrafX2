@@ -154,4 +154,4 @@ Read_bytes read a number of bytes without any endianness processing. Use that to
 
 Read_byte reads one single byte. No endianness problem.
 
-The *_le functions read and write little-endian as used on x86, while *_be read and write big endian as on 68000. Check your format info to see what you need to use. Note some functions in our current loadsave.c loads and save a lot of things (for example a whole header with read/write_bytes() and then parse it. Please don't do that. It's not clean, it's error prone, and you will encounter struct-packing headaches. Dont use __attribute(__packed__), the linux/sparc version will crash if you do.
+The `*`_le functions read and write little-endian as used on x86, while `*`_be read and write big endian as on 68000. Check your format info to see what you need to use. Note some functions in our current loadsave.c loads and save a lot of things (for example a whole header with read/write_bytes() and then parse it. Please don't do that. It's not clean, it's error prone, and you will encounter struct-packing headaches. Dont use __attribute(__packed__), the linux/sparc version will crash if you do.
