@@ -25,6 +25,12 @@ Other shortcuts may be used to toggle bars independantly (for example shift + F1
 
 In the mockups, bars only expand to the part used by the menu, letting the palette area free. The palette may use this vertical space, or we could put something else in there. Or we could have the bar use full screen width, and the palette included in the drawing bar. This seems to make sense.
 
+Some bars, especially animation bar with timeline, would need all the horizontal space they can possibly get, leading to the idea of full-length bars. The problem this imposes is that the screen/window width is variable. Instead of stretching the interface, causing clumsy button sizes ad skinning issues, a better solution seems to center the bar horizontally, filling the remaining space with a (skinnable) tiling pattern.
+
+Furthermore, if the layers bar used full menu width, more layers could be crammed in, or at least we could have a more ideal button size.
+
+All in all, it seems that full-length makes more sense, even in this early stages.
+
 = On the coding side =
 Miscelaneous notes for implementation...
  * There is no way to have a dropdown button in the statusbar with the current code (buttons in the menu are not the same as button in windows). There is an experimental "popup" code but it does not work perfectly yet.
