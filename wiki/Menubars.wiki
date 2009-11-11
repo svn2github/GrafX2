@@ -32,3 +32,11 @@ Miscelaneous notes for implementation...
  * The F10 key is plugged to the Hide_menu button. It should not be moved to the "Bars" button. The Hide button should be moved inside the popup opened by the bars button (and be labelled "hide all").
  * If we want to get a nice popup like in the mockups, we have to make it skinnable. It uses smaller text and nice icons.
  * We have to keep track of the status of each bar, and also of the global status of the menu (F10). The menu can be handled as a special case : if the statusbar is hidden, don't show any of the other bars.
+ * Have a table of bars. Struct bar may hold infos like
+   * Bar height (this replace MENU_HEIGHT)
+   * Bar status (visible/hidden)
+   * Pixel data of the bar (as loaded from skin)
+ * The bars would be stored in this table in order, from bottom to top. So bar[0] is status bar, bar[1] is layers, bar[2] is menu.
+ * Functions for guessing button number on menuclick need to take the bar status into account.
+ * Menu_Height is a variable and tells the total height of the menu. It is chaged each time you add/remove a bar. It is 0 when everything is hidden, so on showing back it needs to be recomputed (or saved somewhere). This is done so everything else does not have to check for Menu_is_visible.
+ * Menu_Y is a "mirror" of Menu_Height. It is here only for performance puprose (avoids calculation of Screen_Height - Menu_Height). We need it in quite a lot of operations. Keep it in sync each time you touch Menu_Height.
