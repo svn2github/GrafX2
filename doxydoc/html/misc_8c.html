@@ -82,6 +82,13 @@ window.onload = initDynSections;
 <code>#include &quot;<a class="el" href="input_8h.html">input.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="graph_8h.html">graph.h</a>&quot;</code><br/>
 <code>#include &lt;sys/sysinfo.h&gt;</code><br/>
+<div class="dynheader">
+Include dependency graph for misc.c:</div>
+<div class="dynsection">
+<div class="center"><img src="misc_8c__incl.png" border="0" usemap="#misc_8c_map" alt=""/></div>
+<map name="misc_8c_map" id="misc_8c">
+<area shape="rect" href="struct_8h.html" title="Structures that can be used in the whole program." alt="" coords="276,160,340,189"/><area shape="rect" href="sdlscreen_8h.html" title="Screen update (refresh) system, and some SDL&#45;specific graphic functions." alt="" coords="117,83,205,112"/><area shape="rect" href="global_8h.html" title="This file contains all global variables." alt="" coords="27,83,93,112"/><area shape="rect" href="errors_8h.html" title="Functions and macros for tracing and error reporting." alt="" coords="848,83,912,112"/><area shape="rect" href="buttons_8h.html" title="Almost all the editor actions that are called by the menu are here." alt="" coords="384,83,459,112"/><area shape="rect" href="engine_8h.html" title="Utility functions for the menu and all windows." alt="" coords="483,83,552,112"/><area shape="rect" href="misc_8h.html" title="Miscellanous unsorted functions." alt="" coords="936,83,995,112"/><area shape="rect" href="keyboard_8h.html" title="Functions to convert bewteen the SDL key formats and the keycode we use in grafx2..." alt="" coords="1019,83,1104,112"/><area shape="rect" href="windows_8h.html" title="Graphical interface management functions (windows, menu, cursor)." alt="" coords="229,83,309,112"/><area shape="rect" href="palette_8h.html" title="Palette screen, and some palette&#45;related high&#45;level functions." alt="" coords="1128,83,1200,112"/><area shape="rect" href="input_8h.html" title="Functions for mouse, keyboard and joystick input." alt="" coords="1224,83,1283,112"/><area shape="rect" href="graph_8h.html" title="Graphic functions that target the screen and/or image." alt="" coords="1307,83,1371,112"/><area shape="rect" href="const_8h.html" title="Constants (preprocessor defines) and enumerations used anywhere." alt="" coords="320,237,384,267"/></map>
+</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">word&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a0b061f059f73d526f824a61e2b71a178">Count_used_colors</a> (dword *usage)</td></tr>
@@ -133,7 +140,6 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#af88b3d546371f9236790c2927d46bc52">Scroll_picture</a> (byte *main_src, byte *main_dest, short x_offset, short y_offset)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a2afdaf55455ef748515bbf5583e8cb6b">Zoom_a_line</a> (byte *original_line, byte *zoomed_line, word factor, word width)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a16d7c98431a8262fbbe03f5980b52295">Memory_free</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a62a4e071628c8a881694c247113387ca">Num2str</a> (dword number, char *str, byte nb_char)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a970e85eb1c036359ccb2c8d18a2b7f3f">Round</a> (float value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#a97e4609bf93656be1620de7b25df3c6c">Round_div_max</a> (short numerator, short divisor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min</a> (int a, int b)</td></tr>
@@ -1584,41 +1590,6 @@ window.onload = initDynSections;
 
 </div>
 </div>
-<a class="anchor" id="a62a4e071628c8a881694c247113387ca"></a><!-- doxytag: member="misc.c::Num2str" ref="a62a4e071628c8a881694c247113387ca" args="(dword number, char *str, byte nb_char)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Num2str </td>
-          <td>(</td>
-          <td class="paramtype">dword&nbsp;</td>
-          <td class="paramname"> <em>number</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&nbsp;</td>
-          <td class="paramname"> <em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">byte&nbsp;</td>
-          <td class="paramname"> <em>nb_char</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Referenced by <a class="el" href="operatio_8h.html#a42dcc550c44b0bb37a3c11b448ae40b6">Brush_12_5()</a>, <a class="el" href="buttons_8h.html#a75e3bd74223a8e8feba3bc87a2eac4c6">Button_Airbrush_menu()</a>, <a class="el" href="buttons_8h.html#abfe38990e727968fc35258d720663afe">Button_Colorize_menu()</a>, <a class="el" href="buttons_8h.html#a65df0642ea1b2db24d8a6213ab7ea757">Button_Gradients()</a>, <a class="el" href="buttons_8h.html#a0437c216c2e1a46bf571a1e35e421c21">Button_Grid_menu()</a>, <a class="el" href="palette_8h.html#a389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="shade_8h.html#a230618ea7ae142115a320b637342bfca">Button_Quick_shade_menu()</a>, <a class="el" href="buttons_8h.html#ac9b41c19a3b00619fc4f7533681d33cc">Button_Resolution()</a>, <a class="el" href="palette_8h.html#aebea9c95f2dc40b9e58492d8189cf7d0">Button_Secondary_palette()</a>, <a class="el" href="buttons_8h.html#ae2f7310aa79876016d804806de57c1f0">Button_Settings()</a>, <a class="el" href="buttons_8h.html#ad568b79539b7f8ca16dc747494ef8365">Button_Sieve_menu()</a>, <a class="el" href="buttons_8h.html#a51602ce1c400dfbf8eeeb35de35d5ea4">Button_Smooth_menu()</a>, <a class="el" href="buttons_8h.html#a56480557b6d4d4c45a4a2274d62ad53c">Button_Text()</a>, <a class="el" href="buttons_8h.html#a7b1fb17ca2cc61dd9b59a633860332e6">Button_Tiling_menu()</a>, <a class="el" href="transform_8h.html#a97d5d923d54be7bd5ab0f9492ad9dab4">Button_Transform_menu()</a>, <a class="el" href="operatio_8h.html#a93a27febb22697e1644eced1fc707c49">Circle_12_5()</a>, <a class="el" href="operatio_8h.html#ab7d00048924f695c41f868145f2c8a7e">Colorpicker_1_1()</a>, <a class="el" href="operatio_8h.html#ad50b647c3b07309c244e8754a251d9cc">Colorpicker_2_1()</a>, <a class="el" href="operatio_8c.html#a2f11cdcaf0f8322cb471372f62af4f51">Display_coords_rel_or_abs()</a>, <a class="el" href="windows_8h.html#a26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="buttons_8c.html#ab0a07ad2460f68f5bd288920f0cc8fda">Display_modes_list()</a>, <a class="el" href="shade_8c.html#a29919ded44b4b2f2e814f176d11312e9">Display_selected_cell_color()</a>, <a class="el" href="shade_8c.html#a7af43328c696c0299ba295383c42e0f5">Display_selected_color()</a>, <a class="el" href="palette_8c.html#a91ec0ec7e88ef02dfa0c2a830a9fc1b1">Format_componant()</a>, <a class="el" href="operatio_8h.html#ace8198a989f3097751e241b06e71d551">Grad_circle_12_6()</a>, <a class="el" href="operatio_8h.html#a094bf9bcdc406e4acbf91df0f8c07699">Grad_rectangle_12_5()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, <a class="el" href="shade_8c.html#a66d37b393bc8dd6037927082533e37bb">Menu_shade()</a>, <a class="el" href="windows_8h.html#a695f917c7ddc48104eb4e99517430dbc">Print_coordinates()</a>, <a class="el" href="operatio_8h.html#adaf3c3b6fe4278bdf0a4e12ac11b3cdd">Rectangle_12_5()</a>, <a class="el" href="palette_8c.html#ab0be6b008a4ef67410cfe3f6db89b731">Reduce_palette()</a>, <a class="el" href="buttons_8c.html#ae187fd0464b6921737c449964fc86993">Refresh_airbrush_settings()</a>, <a class="el" href="operatio_8h.html#a9b8327c7cfc9566b48b1fa63e6c2408b">Rotate_brush_0_5()</a>, <a class="el" href="operatio_8h.html#a330dbcfe4ef32cea3bdbd88819701448">Rotate_brush_1_5()</a>, <a class="el" href="buttons_8c.html#ab3554a3b098afa507f6c45d07eec0f40">Settings_display_config()</a>, <a class="el" href="operatio_8h.html#a27c4db611ccfb11e3513b40fea98c0bf">Stretch_brush_0_7()</a>, <a class="el" href="operatio_8h.html#a70bc90f345d317900c9ccf3c6786d6cc">Stretch_brush_1_7()</a>, and <a class="el" href="palette_8c.html#a62ea7be165ac1bc414ad91d37fccdb9f">Update_color_count()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a970e85eb1c036359ccb2c8d18a2b7f3f"></a><!-- doxytag: member="misc.c::Round" ref="a970e85eb1c036359ccb2c8d18a2b7f3f" args="(float value)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1771,8 +1742,7 @@ window.onload = initDynSections;
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:22 2009 for GrafX2 by&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+<hr size="1"/><address style="text-align: right;"><small>
+Generated for GrafX2 by&nbsp;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/></a></small></address>
 </body>
 </html>
