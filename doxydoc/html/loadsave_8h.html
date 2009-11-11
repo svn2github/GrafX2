@@ -72,9 +72,13 @@ window.onload = initDynSections;
 <tr><td colspan="2"><h2>Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structT__Format.html">T_Format</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Data for an image file format.  <a href="structT__Format.html#_details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structT__IMG__Header.html">T_IMG_Header</a></td></tr>
 <tr><td colspan="2"><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#ae0e2246af04c94ba2a828ba99acd7556">NB_KNOWN_FORMATS</a>&nbsp;&nbsp;&nbsp;18</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#ae0e2246af04c94ba2a828ba99acd7556">NB_KNOWN_FORMATS</a>&nbsp;&nbsp;&nbsp;19</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Total number of known file formats.  <a href="#ae0e2246af04c94ba2a828ba99acd7556"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#aa2e5eced07b0b98e14aca38cf1a748ee">FORMAT_24B</a>&nbsp;&nbsp;&nbsp;0x100</td></tr>
+<tr><td colspan="2"><h2>Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#adb7c437d32ddf107e2bb7ea3e1981ca5">Func_24b_display</a> )(short, short, byte, byte, byte)</td></tr>
 <tr><td colspan="2"><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a7278d7033537995b71e2d44596c8161c">Pixel_load_in_current_screen</a> (word x_pos, word y_pos, byte color)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a5a5215eb3df1e8bde90334250167dbec">Pixel_load_in_preview</a> (word x_pos, word y_pos, byte color)</td></tr>
@@ -87,11 +91,15 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a6a034f75933aa3c0475665d9262e3c14">Image_emergency_backup</a> (void)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Function which attempts to save backups of the images (main and spare), called in case of SIGSEGV.  <a href="#a6a034f75933aa3c0475665d9262e3c14"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Format.html">T_Format</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a89256b1e9815aec4773ef0f2f1ea6916">Get_fileformat</a> (byte format)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#ad2b26d3c49bf7bb16a0dc273569a01b7">Pixel_load_in_24b_preview</a> (short x_pos, short y_pos, byte r, byte g, byte b)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Format.html">T_Format</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a08f7bb444c183b9d42878b681e1f9d61">File_formats</a> []</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Array of the known file formats.  <a href="#a08f7bb444c183b9d42878b681e1f9d61"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="const_8h.html#a661449b9d26e056652b9b9e9b5c9a924">PIXEL_RATIO</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#a3933c274d0089ec4607e27c432f6c2f0">Ratio_of_loaded_image</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pixel ratio of last loaded image: one of :PIXEL_SIMPLE, :PIXEL_WIDE or :PIXEL_TALL.  <a href="#a3933c274d0089ec4607e27c432f6c2f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#aed60b40a425ee143bc20ae1d6908887f">Image_24b</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Components.html">T_Components</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#add60d67373d10b970e81bdb40fa0ef91">Buffer_image_24b</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="loadsave_8h.html#adb7c437d32ddf107e2bb7ea3e1981ca5">Func_24b_display</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="loadsave_8h.html#ae0114afe519039b20c5d710fc2fc58cd">Pixel_load_24b</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Saving and loading different picture formats. </p>
@@ -102,7 +110,7 @@ window.onload = initDynSections;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NB_KNOWN_FORMATS&nbsp;&nbsp;&nbsp;18</td>
+          <td class="memname">#define NB_KNOWN_FORMATS&nbsp;&nbsp;&nbsp;19</td>
         </tr>
       </table>
 </div>
@@ -111,6 +119,33 @@ window.onload = initDynSections;
 <p>Total number of known file formats. </p>
 
 <p>Referenced by <a class="el" href="filesel_8h.html#a70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="loadsave_8h.html#a89256b1e9815aec4773ef0f2f1ea6916">Get_fileformat()</a>, and <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2e5eced07b0b98e14aca38cf1a748ee"></a><!-- doxytag: member="loadsave.h::FORMAT_24B" ref="aa2e5eced07b0b98e14aca38cf1a748ee" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORMAT_24B&nbsp;&nbsp;&nbsp;0x100</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="adb7c437d32ddf107e2bb7ea3e1981ca5"></a><!-- doxytag: member="loadsave.h::Func_24b_display" ref="adb7c437d32ddf107e2bb7ea3e1981ca5" args=")(short, short, byte, byte, byte)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  <a class="el" href="loadsave_8h.html#adb7c437d32ddf107e2bb7ea3e1981ca5">Func_24b_display</a>)(short, short, byte, byte, byte)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -146,9 +181,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="misc_8c.html#aae7c19dbdf0272e5cac80a8c7647bb13">Pixel_in_current_screen()</a>.</p>
+<p>References <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="graph_8c.html#ae744e031b7f446b5877820113ba41ee4">Pixel_in_current_screen()</a>.</p>
 
-<p>Referenced by <a class="el" href="filesel_8h.html#a70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, and <a class="el" href="buttons_8h.html#ae167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>.</p>
+<p>Referenced by <a class="el" href="filesel_8h.html#a70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, <a class="el" href="loadsave_8c.html#a9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, and <a class="el" href="buttons_8h.html#ae167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +220,7 @@ window.onload = initDynSections;
 
 <p>References <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a6de0580f7e043479e48c0092fb786c31">Pixel</a>, <a class="el" href="global_8h.html#a80e59681385c3246939f77b0e331eaf5">Pixel_ratio</a>, <a class="el" href="const_8h.html#a661449b9d26e056652b9b9e9b5c9a924a0f539454d4329c157660654cbf5f9d5e">PIXEL_TALL</a>, <a class="el" href="const_8h.html#a661449b9d26e056652b9b9e9b5c9a924aefaadafc93b8d963fdf46ec0086a7d63">PIXEL_TALL2</a>, <a class="el" href="const_8h.html#a661449b9d26e056652b9b9e9b5c9a924a3ef3e01c498adcfa76a2b4cc7707b62b">PIXEL_WIDE</a>, <a class="el" href="const_8h.html#a661449b9d26e056652b9b9e9b5c9a924a1f13b5a8c03ee43c9573ce97ef3cda7c">PIXEL_WIDE2</a>, <a class="el" href="loadsave_8c.html#a7f4dce6c0c1cccfa8680beb0d95637ca">Preview_factor_X</a>, <a class="el" href="loadsave_8c.html#a11e931384a8290060b3fa01475e52cda">Preview_factor_Y</a>, <a class="el" href="loadsave_8c.html#a28ee4ac847f2101691cfeeb1c447d011">Preview_pos_X</a>, <a class="el" href="loadsave_8c.html#a2e9bd5dd8df41847a4db09eeca723883">Preview_pos_Y</a>, and <a class="el" href="loadsave_8c.html#a3933c274d0089ec4607e27c432f6c2f0">Ratio_of_loaded_image</a>.</p>
 
-<p>Referenced by <a class="el" href="filesel_8h.html#a70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="loadsave_8c.html#a325376ebc361faeff2ad6228bb5994ed">Draw_palette_preview()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, and <a class="el" href="loadsave_8c.html#a7fce24d7370cba87b48288e92a0bb85b">Remap_fileselector()</a>.</p>
+<p>Referenced by <a class="el" href="filesel_8h.html#a70bc8f5f7c54ad13970497a47c6b2d6a">Button_Load_or_Save()</a>, <a class="el" href="miscfileformats_8c.html#a325376ebc361faeff2ad6228bb5994ed">Draw_palette_preview()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, and <a class="el" href="loadsave_8c.html#a7fce24d7370cba87b48288e92a0bb85b">Remap_fileselector()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +288,7 @@ window.onload = initDynSections;
 
 <p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#af6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="io_8h.html#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>.</p>
 
-<p>Referenced by <a class="el" href="buttons_8c.html#acbc674d3c1c924bfceb8dacf489fde0d">Backup_existing_file()</a>, <a class="el" href="buttons_8h.html#ac4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="buttons_8c.html#ac37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="loadsave_8c.html#a77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#a4f164eb24f6c4d05ba969a684c4f0fd7">Load_C64()</a>, <a class="el" href="loadsave_8c.html#a96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="loadsave_8c.html#a9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#a3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="loadsave_8c.html#a8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#adccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="loadsave_8c.html#a4c6e8d020566b82de7ad89d25cfc4889">Load_NEO()</a>, <a class="el" href="loadsave_8c.html#a6321478625463f5e3c159ee00da2605d">Load_PAL()</a>, <a class="el" href="loadsave_8c.html#a43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#ab9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#a5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="loadsave_8c.html#a9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#ab6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#a42afbce37ae86ab9555f1f4a3a55bdbe">Load_SDL_Image()</a>, <a class="el" href="loadsave_8c.html#ac790c88223468918b79e8027e6536c03">Save_BMP()</a>, <a class="el" href="loadsave_8c.html#a487a2530891407df56b2c201546a7423">Save_C64()</a>, <a class="el" href="loadsave_8c.html#a75f61abc626000008ba0ea59f8d3cab7">Save_CEL()</a>, <a class="el" href="loadsave_8c.html#a19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>, <a class="el" href="loadsave_8c.html#a2029e4410580e927f1cf72531ec11307">Save_IMG()</a>, <a class="el" href="loadsave_8c.html#ab96510908fca8cd40bc4ffa0b8756798">Save_KCF()</a>, <a class="el" href="loadsave_8c.html#abd6a836b450e557ec08985898031db84">Save_LBM()</a>, <a class="el" href="loadsave_8c.html#a773bf7c15967258875fd72f546c397d6">Save_NEO()</a>, <a class="el" href="loadsave_8c.html#afd60117a972fa2d788265c5d32eb1638">Save_PAL()</a>, <a class="el" href="loadsave_8c.html#a726a596e26cfddcd47bdc78882da72db">Save_PC1()</a>, <a class="el" href="loadsave_8c.html#ac8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>, <a class="el" href="loadsave_8c.html#aa73e82a37ccdf52c8ac64afe066beed2">Save_PI1()</a>, <a class="el" href="loadsave_8c.html#af28032474ee12f42045d4196e83953c2">Save_PKM()</a>, <a class="el" href="loadsave_8c.html#a5654585347b1f4351bcfe6e9961b8359">Save_PNG()</a>, <a class="el" href="loadsave_8c.html#ab309c5417991c814314261632f41b81b">Save_SCx()</a>, <a class="el" href="loadsave_8c.html#ac0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="loadsave_8c.html#a56906048908a499b85a5639640ecca3e">Test_C64()</a>, <a class="el" href="loadsave_8c.html#a59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#a422454fbdf259cd46fcb8506d7dbccc6">Test_GIF()</a>, <a class="el" href="loadsave_8c.html#a57cad007f7278fdaf2bab3d60c8cd8cb">Test_IMG()</a>, <a class="el" href="loadsave_8c.html#a3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#a9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, <a class="el" href="loadsave_8c.html#ae2485354f18d3863ad440bf5a4b1b954">Test_NEO()</a>, <a class="el" href="loadsave_8c.html#a36a7ffeba75ec452fb3e044b1be58d0b">Test_PAL()</a>, <a class="el" href="loadsave_8c.html#afd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, <a class="el" href="loadsave_8c.html#aa67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, <a class="el" href="loadsave_8c.html#ad2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>, <a class="el" href="loadsave_8c.html#a58f415efbf2090acdd70dd20030ed643">Test_PKM()</a>, <a class="el" href="loadsave_8c.html#a724eb97c3f79f3d8af0b75f699169867">Test_PNG()</a>, and <a class="el" href="loadsave_8c.html#a20a9fa80c60e1883b72015fe99ea4c04">Test_SCx()</a>.</p>
+<p>Referenced by <a class="el" href="buttons_8c.html#acbc674d3c1c924bfceb8dacf489fde0d">Backup_existing_file()</a>, <a class="el" href="buttons_8h.html#ac4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="buttons_8c.html#ac37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, <a class="el" href="loadsave_8c.html#a77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="miscfileformats_8c.html#a4f164eb24f6c4d05ba969a684c4f0fd7">Load_C64()</a>, <a class="el" href="miscfileformats_8c.html#a96c7db5f772573f4d8245c5d27336807">Load_CEL()</a>, <a class="el" href="loadsave_8c.html#a9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, <a class="el" href="loadsave_8c.html#a3923bddfeb26e2dd6999c8dbd119e242">Load_IMG()</a>, <a class="el" href="miscfileformats_8c.html#a8e2a3331b3288c538013cf2fe1e7291e">Load_KCF()</a>, <a class="el" href="loadsave_8c.html#adccfef42728ab9bdbae56a89c43f4182">Load_LBM()</a>, <a class="el" href="miscfileformats_8c.html#a4c6e8d020566b82de7ad89d25cfc4889">Load_NEO()</a>, <a class="el" href="miscfileformats_8c.html#a6321478625463f5e3c159ee00da2605d">Load_PAL()</a>, <a class="el" href="miscfileformats_8c.html#a43a527b36aa187ae3df3b0c067f2aadc">Load_PC1()</a>, <a class="el" href="loadsave_8c.html#ab9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="miscfileformats_8c.html#a5cc00be9f67302cb0c770999a114eec5">Load_PI1()</a>, <a class="el" href="miscfileformats_8c.html#a9737a868b1afaf9dd7ccbe6c77ea175a">Load_PKM()</a>, <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, <a class="el" href="loadsave_8c.html#ab6c13d9603c5b91f6bf4cbea64798421">Load_SCx()</a>, <a class="el" href="loadsave_8c.html#a42afbce37ae86ab9555f1f4a3a55bdbe">Load_SDL_Image()</a>, <a class="el" href="loadsave_8c.html#ac790c88223468918b79e8027e6536c03">Save_BMP()</a>, <a class="el" href="miscfileformats_8c.html#a487a2530891407df56b2c201546a7423">Save_C64()</a>, <a class="el" href="miscfileformats_8c.html#a75f61abc626000008ba0ea59f8d3cab7">Save_CEL()</a>, <a class="el" href="loadsave_8c.html#a19c4247a6faeff2fc93e69ec134fc48a">Save_GIF()</a>, <a class="el" href="loadsave_8c.html#a2029e4410580e927f1cf72531ec11307">Save_IMG()</a>, <a class="el" href="miscfileformats_8c.html#ab96510908fca8cd40bc4ffa0b8756798">Save_KCF()</a>, <a class="el" href="loadsave_8c.html#abd6a836b450e557ec08985898031db84">Save_LBM()</a>, <a class="el" href="miscfileformats_8c.html#a773bf7c15967258875fd72f546c397d6">Save_NEO()</a>, <a class="el" href="miscfileformats_8c.html#afd60117a972fa2d788265c5d32eb1638">Save_PAL()</a>, <a class="el" href="miscfileformats_8c.html#a726a596e26cfddcd47bdc78882da72db">Save_PC1()</a>, <a class="el" href="loadsave_8c.html#ac8ec99881e5fd58125883ced2b9a777b">Save_PCX()</a>, <a class="el" href="miscfileformats_8c.html#aa73e82a37ccdf52c8ac64afe066beed2">Save_PI1()</a>, <a class="el" href="miscfileformats_8c.html#af28032474ee12f42045d4196e83953c2">Save_PKM()</a>, <a class="el" href="loadsave_8c.html#a5654585347b1f4351bcfe6e9961b8359">Save_PNG()</a>, <a class="el" href="miscfileformats_8c.html#af15669d4223686d7e1aae81436ed1f24">Save_SCR()</a>, <a class="el" href="loadsave_8c.html#ab309c5417991c814314261632f41b81b">Save_SCx()</a>, <a class="el" href="loadsave_8c.html#ac0060fa467f16027c8c5fe6fe32d1a13">Test_BMP()</a>, <a class="el" href="miscfileformats_8c.html#a56906048908a499b85a5639640ecca3e">Test_C64()</a>, <a class="el" href="miscfileformats_8c.html#a59ff6d4591d1c8c3e22f6e4e25e767b8">Test_CEL()</a>, <a class="el" href="loadsave_8c.html#a422454fbdf259cd46fcb8506d7dbccc6">Test_GIF()</a>, <a class="el" href="loadsave_8c.html#a57cad007f7278fdaf2bab3d60c8cd8cb">Test_IMG()</a>, <a class="el" href="miscfileformats_8c.html#a3a70c57da028a38477a2978148dd64d0">Test_KCF()</a>, <a class="el" href="loadsave_8c.html#a9fe2bc0052197375a8d3a4a533a9fe73">Test_LBM()</a>, <a class="el" href="miscfileformats_8c.html#ae2485354f18d3863ad440bf5a4b1b954">Test_NEO()</a>, <a class="el" href="miscfileformats_8c.html#a36a7ffeba75ec452fb3e044b1be58d0b">Test_PAL()</a>, <a class="el" href="miscfileformats_8c.html#afd3e76d9dce1ab9edc3383abfdeb9a9e">Test_PC1()</a>, <a class="el" href="loadsave_8c.html#aa67d3c4ab4b20ff52636a3bbcab117a0">Test_PCX()</a>, <a class="el" href="miscfileformats_8c.html#ad2b81f464777061b8fc2f249e684eff6">Test_PI1()</a>, <a class="el" href="miscfileformats_8c.html#a58f415efbf2090acdd70dd20030ed643">Test_PKM()</a>, <a class="el" href="loadsave_8c.html#a724eb97c3f79f3d8af0b75f699169867">Test_PNG()</a>, and <a class="el" href="loadsave_8c.html#a20a9fa80c60e1883b72015fe99ea4c04">Test_SCx()</a>.</p>
 
 </div>
 </div>
@@ -312,7 +347,7 @@ window.onload = initDynSections;
   </dd>
 </dl>
 
-<p>References <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="global_8h.html#a433e7832dbbc69557fc27103f60667c2">File_error</a>, <a class="el" href="loadsave_8c.html#a89256b1e9815aec4773ef0f2f1ea6916">Get_fileformat()</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="misc_8c.html#a1a6f18444e55ee416e125bc7b38de3d3">Read_pixel_from_brush()</a>, <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="global_8h.html#a32ebcc9b129add907638dbd18b15cdca">Read_pixel_function</a>, and <a class="el" href="structT__Format.html#a8f398572157aa3ac276bf57be739b3b2">T_Format::Save</a>.</p>
+<p>References <a class="el" href="windows_8c.html#a51de6324e22b0322dc78509fcce9e432">Confirmation_box()</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="global_8h.html#a433e7832dbbc69557fc27103f60667c2">File_error</a>, <a class="el" href="loadsave_8c.html#a89256b1e9815aec4773ef0f2f1ea6916">Get_fileformat()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="misc_8c.html#a1a6f18444e55ee416e125bc7b38de3d3">Read_pixel_from_brush()</a>, <a class="el" href="graph_8c.html#a5f60765a6dae037240eda72f60f05b3f">Read_pixel_from_current_layer()</a>, <a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="global_8h.html#a32ebcc9b129add907638dbd18b15cdca">Read_pixel_function</a>, and <a class="el" href="structT__Format.html#a8f398572157aa3ac276bf57be739b3b2">T_Format::Save</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#ac4b57b2919aede8613b5d4fc17be458d">Button_Autosave()</a>, <a class="el" href="buttons_8c.html#ac37bc0428b1cfa7d3f6a3b39a172ed47">Button_Quit_local_function()</a>, and <a class="el" href="buttons_8h.html#a1ca2f285874753b268a52616d88e3fcb">Save_picture()</a>.</p>
 
@@ -364,6 +399,55 @@ window.onload = initDynSections;
 
 </div>
 </div>
+<a class="anchor" id="ad2b26d3c49bf7bb16a0dc273569a01b7"></a><!-- doxytag: member="loadsave.h::Pixel_load_in_24b_preview" ref="ad2b26d3c49bf7bb16a0dc273569a01b7" args="(short x_pos, short y_pos, byte r, byte g, byte b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pixel_load_in_24b_preview </td>
+          <td>(</td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>x_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>y_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>b</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a6de0580f7e043479e48c0092fb786c31">Pixel</a>, <a class="el" href="loadsave_8c.html#a7f4dce6c0c1cccfa8680beb0d95637ca">Preview_factor_X</a>, <a class="el" href="loadsave_8c.html#a11e931384a8290060b3fa01475e52cda">Preview_factor_Y</a>, <a class="el" href="loadsave_8c.html#a28ee4ac847f2101691cfeeb1c447d011">Preview_pos_X</a>, and <a class="el" href="loadsave_8c.html#a2e9bd5dd8df41847a4db09eeca723883">Preview_pos_Y</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, and <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a08f7bb444c183b9d42878b681e1f9d61"></a><!-- doxytag: member="loadsave.h::File_formats" ref="a08f7bb444c183b9d42878b681e1f9d61" args="[]" -->
 <div class="memitem">
@@ -395,12 +479,57 @@ window.onload = initDynSections;
 
 <p>Pixel ratio of last loaded image: one of :PIXEL_SIMPLE, :PIXEL_WIDE or :PIXEL_TALL. </p>
 
-<p>Referenced by <a class="el" href="buttons_8h.html#a50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="loadsave_8c.html#a4f164eb24f6c4d05ba969a684c4f0fd7">Load_C64()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="buttons_8h.html#ae167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>, <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, and <a class="el" href="loadsave_8h.html#a5a5215eb3df1e8bde90334250167dbec">Pixel_load_in_preview()</a>.</p>
+<p>Referenced by <a class="el" href="buttons_8h.html#a50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="miscfileformats_8c.html#a4f164eb24f6c4d05ba969a684c4f0fd7">Load_C64()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="buttons_8h.html#ae167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>, <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, and <a class="el" href="loadsave_8h.html#a5a5215eb3df1e8bde90334250167dbec">Pixel_load_in_preview()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed60b40a425ee143bc20ae1d6908887f"></a><!-- doxytag: member="loadsave.h::Image_24b" ref="aed60b40a425ee143bc20ae1d6908887f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="loadsave_8h.html#aed60b40a425ee143bc20ae1d6908887f">Image_24b</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, and <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add60d67373d10b970e81bdb40fa0ef91"></a><!-- doxytag: member="loadsave.h::Buffer_image_24b" ref="add60d67373d10b970e81bdb40fa0ef91" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structT__Components.html">T_Components</a>* <a class="el" href="loadsave_8h.html#add60d67373d10b970e81bdb40fa0ef91">Buffer_image_24b</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0114afe519039b20c5d710fc2fc58cd"></a><!-- doxytag: member="loadsave.h::Pixel_load_24b" ref="ae0114afe519039b20c5d710fc2fc58cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="loadsave_8h.html#adb7c437d32ddf107e2bb7ea3e1981ca5">Func_24b_display</a> <a class="el" href="loadsave_8h.html#ae0114afe519039b20c5d710fc2fc58cd">Pixel_load_24b</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>, <a class="el" href="loadsave_8c.html#a77b512eefe5ef435044e556a9f24541b">Load_BMP()</a>, <a class="el" href="loadsave_8c.html#ab9bc3adf51e364a4f51ea59db1fbbf2a">Load_PCX()</a>, <a class="el" href="loadsave_8c.html#a6875ebed7d0dec80eb4aec6e47596b3f">Load_PNG()</a>, and <a class="el" href="loadsave_8c.html#a42afbce37ae86ab9555f1f4a3a55bdbe">Load_SDL_Image()</a>.</p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Sat Oct 31 10:39:49 2009 for GrafX2 by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:22 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

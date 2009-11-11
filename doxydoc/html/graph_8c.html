@@ -100,6 +100,7 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a16201962ab33ab52fa760e25be8e13b0">Get_colors_from_brush</a> (void)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get color indexes used by the brush.  <a href="#a16201962ab33ab52fa760e25be8e13b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a0560aaef0254413a4f3f1ce1156f3815">Fill</a> (short *top_reached, short *bottom_reached, short *left_reached, short *right_reached)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a1f0b2b698b7429eee2c064833fe78956">Read_pixel_from_backup_layer</a> (word x, word y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general</a> (byte fill_color)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#aa6ba08853cb9ef6c10d8a5efd66e7706">Init_permanent_draw</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ad0bad9464a887f51f6f92302daeee7d1">Pixel_figure_permanent</a> (word x_pos, word y_pos, byte color)</td></tr>
@@ -157,6 +158,10 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a6d302d4a45d83c9e21e4139da0a64756">Horizontal_grid_line</a> (word x_pos, word y_pos, word width)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a1cbdb64f1f5f8893e50c6c9112baa5f3">Vertical_grid_line</a> (word x_pos, word y_pos, word height)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a3cad56ac23b95cf6d46f0075f477b18a">Redraw_grid</a> (short x, short y, unsigned short w, unsigned short h)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen</a> (word x, word y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#ae744e031b7f446b5877820113ba41ee4">Pixel_in_current_screen</a> (word x, word y, byte color, int with_preview)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#aaded44c71ebe2d636c400d5e879be0f2">Pixel_in_current_layer</a> (word x, word y, byte color)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a5f60765a6dae037240eda72f60f05b3f">Read_pixel_from_current_layer</a> (word x, word y)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_8h.html#a70bb82736f64ac7859d0ccb04cd5e339">Func_pixel</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8c.html#a21924deefaa2c5dc4da75793816b0d27">Pixel_figure</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">All the figure-drawing functions work by calling this function for each pixel to draw.  <a href="#a21924deefaa2c5dc4da75793816b0d27"></a><br/></td></tr>
@@ -330,7 +335,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, <a class="el" href="misc_8c.html#a70d237f8dd3d846068151de6b57d39c9">Copy_part_of_image_to_another()</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="buttons_8c.html#a0276ae70c0fd85e6dde57534cef13766">Message_out_of_memory()</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>, and <a class="el" href="struct_8h.html#a836535f59bf515522a395858a8029d42">word</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>, <a class="el" href="misc_8c.html#a70d237f8dd3d846068151de6b57d39c9">Copy_part_of_image_to_another()</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="buttons_8c.html#a0276ae70c0fd85e6dde57534cef13766">Message_out_of_memory()</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, and <a class="el" href="struct_8h.html#a836535f59bf515522a395858a8029d42">word</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#ac9b41c19a3b00619fc4f7533681d33cc">Button_Resolution()</a>.</p>
 
@@ -378,7 +383,7 @@ window.onload = initDynSections;
 
 <p>Get color indexes used by the brush. </p>
 
-<p>References <a class="el" href="pages_8c.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="global_8h.html#aae33aab7c143902aee060b696f53d7fb">Brush_height</a>, <a class="el" href="global_8h.html#af8dbca2361b1c11545100ffb1836c6c9">Brush_width</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#a2e45affdc94d657e6d44d75dba5bfaea">Compute_optimal_menu_colors()</a>, <a class="el" href="windows_8c.html#a51de6324e22b0322dc78509fcce9e432">Confirmation_box()</a>, <a class="el" href="windows_8c.html#a17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="windows_8c.html#a26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="pages_8c.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="misc_8c.html#a1a6f18444e55ee416e125bc7b38de3d3">Read_pixel_from_brush()</a>, <a class="el" href="misc_8c.html#a7f8562564c597185de8b961ac337144e">Set_palette()</a>, and <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, <a class="el" href="global_8h.html#aae33aab7c143902aee060b696f53d7fb">Brush_height</a>, <a class="el" href="global_8h.html#af8dbca2361b1c11545100ffb1836c6c9">Brush_width</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#a2e45affdc94d657e6d44d75dba5bfaea">Compute_optimal_menu_colors()</a>, <a class="el" href="windows_8c.html#a51de6324e22b0322dc78509fcce9e432">Confirmation_box()</a>, <a class="el" href="windows_8c.html#a17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="windows_8c.html#a26d37fa55117e37d62d28b2e1ccbb148">Display_menu()</a>, <a class="el" href="pages_8c.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="misc_8c.html#a1a6f18444e55ee416e125bc7b38de3d3">Read_pixel_from_brush()</a>, <a class="el" href="misc_8c.html#a7f8562564c597185de8b961ac337144e">Set_palette()</a>, and <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a48a3fd539c3cbe4cd47fc1dcc3e465ee">Button_Brush_FX()</a>, and <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>.</p>
 
@@ -421,7 +426,38 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="misc_8c.html#aae7c19dbdf0272e5cac80a8c7647bb13">Pixel_in_current_screen()</a>, and <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
+<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="graph_8c.html#aaded44c71ebe2d636c400d5e879be0f2">Pixel_in_current_layer()</a>, and <a class="el" href="graph_8c.html#a5f60765a6dae037240eda72f60f05b3f">Read_pixel_from_current_layer()</a>.</p>
+
+<p>Referenced by <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f0b2b698b7429eee2c064833fe78956"></a><!-- doxytag: member="graph.c::Read_pixel_from_backup_layer" ref="a1f0b2b698b7429eee2c064833fe78956" args="(word x, word y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Read_pixel_from_backup_layer </td>
+          <td>(</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
 
 <p>Referenced by <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>.</p>
 
@@ -443,7 +479,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="misc_8c.html#a70d237f8dd3d846068151de6b57d39c9">Copy_part_of_image_to_another()</a>, <a class="el" href="global_8h.html#a5689602469211db841a515f777907f3e">Cursor_shape</a>, <a class="el" href="const_8h.html#a195dc89fc27761def8e31edf71c251aba0943e38fb4fbc8f27496f246798f25f6">CURSOR_SHAPE_HOURGLASS</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="graph_8c.html#a284d3b42d5f7b08aef307575ae2321d7">Display_pixel()</a>, <a class="el" href="pages_8c.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="graph_8c.html#a0560aaef0254413a4f3f1ce1156f3815">Fill()</a>, <a class="el" href="global_8h.html#a8d618eb6d7918aade6d46a914902136a">FX_feedback_screen</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a0ac98f60637f9c38e92f263474f2d436">Main_magnifier_factor</a>, <a class="el" href="global_8h.html#af5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#aa6b06328e5e182dc42d362c303af8413">Main_magnifier_offset_X</a>, <a class="el" href="global_8h.html#a78d86b52fd36da0531498e0d43accdda">Main_magnifier_offset_Y</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="global_8h.html#a8dda2d1401996922c89b47f372f3621f">Main_X_zoom</a>, <a class="el" href="global_8h.html#af2cb57d7b7743519c8ccb6fdfbece176">Menu_Y</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="misc_8c.html#aae7c19dbdf0272e5cac80a8c7647bb13">Pixel_in_current_screen()</a>, <a class="el" href="misc_8c.html#ac595f4a00609cd3666c4a231ab508c26">Read_pixel_from_backup_screen()</a>, <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="graph_8c.html#a3cad56ac23b95cf6d46f0075f477b18a">Redraw_grid()</a>, <a class="el" href="misc_8c.html#a1201b8a34474ba84df2f5f48bf480aa7">Replace_colors_within_limits()</a>, <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>, <a class="el" href="global_8h.html#a57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>, and <a class="el" href="sdlscreen_8c.html#afbd71868d3dbb416813145748148121e">Update_rect()</a>.</p>
+<p>References <a class="el" href="pages_8c.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="misc_8c.html#a70d237f8dd3d846068151de6b57d39c9">Copy_part_of_image_to_another()</a>, <a class="el" href="global_8h.html#a5689602469211db841a515f777907f3e">Cursor_shape</a>, <a class="el" href="const_8h.html#a195dc89fc27761def8e31edf71c251aba0943e38fb4fbc8f27496f246798f25f6">CURSOR_SHAPE_HOURGLASS</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="graph_8c.html#a284d3b42d5f7b08aef307575ae2321d7">Display_pixel()</a>, <a class="el" href="pages_8c.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="graph_8c.html#a0560aaef0254413a4f3f1ce1156f3815">Fill()</a>, <a class="el" href="global_8h.html#a8d618eb6d7918aade6d46a914902136a">FX_feedback_screen</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a0ac98f60637f9c38e92f263474f2d436">Main_magnifier_factor</a>, <a class="el" href="global_8h.html#af5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#aa6b06328e5e182dc42d362c303af8413">Main_magnifier_offset_X</a>, <a class="el" href="global_8h.html#a78d86b52fd36da0531498e0d43accdda">Main_magnifier_offset_Y</a>, <a class="el" href="global_8h.html#a8dda2d1401996922c89b47f372f3621f">Main_X_zoom</a>, <a class="el" href="global_8h.html#af2cb57d7b7743519c8ccb6fdfbece176">Menu_Y</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="graph_8c.html#ae744e031b7f446b5877820113ba41ee4">Pixel_in_current_screen()</a>, <a class="el" href="graph_8c.html#a1f0b2b698b7429eee2c064833fe78956">Read_pixel_from_backup_layer()</a>, <a class="el" href="graph_8c.html#a5f60765a6dae037240eda72f60f05b3f">Read_pixel_from_current_layer()</a>, <a class="el" href="graph_8c.html#a3cad56ac23b95cf6d46f0075f477b18a">Redraw_grid()</a>, <a class="el" href="misc_8c.html#a1201b8a34474ba84df2f5f48bf480aa7">Replace_colors_within_limits()</a>, <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>, <a class="el" href="global_8h.html#a57d7c5e1c8d0cdb6f9c507d182792aa8">Screen_width</a>, and <a class="el" href="sdlscreen_8c.html#afbd71868d3dbb416813145748148121e">Update_rect()</a>.</p>
 
 <p>Referenced by <a class="el" href="operatio_8h.html#a5e7aab059d4708135cfdf0d2132ded3e">Fill_1_0()</a>, and <a class="el" href="operatio_8h.html#af70f127fd7d3374515549b131cdf068e">Fill_2_0()</a>.</p>
 
@@ -607,7 +643,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, and <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
+<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, and <a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
 
 <p>Referenced by <a class="el" href="operatio_8h.html#a51edf512c8722eaa3de4639805a272d0">Centered_lines_12_7()</a>, <a class="el" href="operatio_8h.html#a695f8a2cc6b91f30a47a73dbab067efd">K_line_0_6()</a>, <a class="el" href="operatio_8h.html#a471b207e6bc2fb954317f03b0fdf43aa">K_line_12_7()</a>, <a class="el" href="operatio_8h.html#a0b826f43bf092d563e08d4f9b2cf1753">Line_0_5()</a>, <a class="el" href="operatio_8h.html#a812acd49035c414d1aecf286fba6e59a">Polyform_12_8()</a>, and <a class="el" href="operatio_8h.html#a406241ea0535e9898b08f46d1c3e8fa5">Polygon_12_9()</a>.</p>
 
@@ -718,7 +754,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, and <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
+<p>References <a class="el" href="global_8h.html#a67f794ab9a8dddd887d2dd94599d0c26">Limit_bottom</a>, <a class="el" href="global_8h.html#a2fffdb61896c3d7c81ceea7e38cc28d8">Limit_left</a>, <a class="el" href="global_8h.html#abb1d63406f2fb476c6e4cfe768f3f678">Limit_right</a>, <a class="el" href="global_8h.html#a4d3a100cd820e62eaf2f49c1db643b5b">Limit_top</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, and <a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
 
 <p>Referenced by <a class="el" href="graph_8h.html#ab05787eb0088916e62d3761947bcee6b">Hide_curve_preview()</a>, <a class="el" href="graph_8h.html#a2230150b8623d43c4b98ee928014dfea">Hide_empty_circle_preview()</a>, <a class="el" href="graph_8h.html#a9ef3d7b5ba36b0bc0999d78546a12cdc">Hide_empty_ellipse_preview()</a>, and <a class="el" href="graph_8h.html#a9afb1a5a5cc3c1b9f33ce1c04e8373aa">Hide_line_preview()</a>.</p>
 
@@ -2429,7 +2465,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#a17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="misc_8c.html#ad3c06ac6b5be0d9b45cc055f12a68990">Replace_a_color()</a>, <a class="el" href="global_8h.html#a3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, and <a class="el" href="global_8h.html#a67d14f5d62ef37331be5b17818e44181">Stencil_mode</a>.</p>
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="windows_8c.html#a17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#ad9ca91395abbd4dd37315cad50b03dee">Paintbrush_X</a>, <a class="el" href="global_8h.html#ac6c2de3f1468876d7e28e4ba489f939a">Paintbrush_Y</a>, <a class="el" href="graph_8c.html#a5f60765a6dae037240eda72f60f05b3f">Read_pixel_from_current_layer()</a>, <a class="el" href="misc_8c.html#a9f038799807da574ce9a14456c1b1141">Replace_a_color()</a>, <a class="el" href="global_8h.html#a3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, and <a class="el" href="global_8h.html#a67d14f5d62ef37331be5b17818e44181">Stencil_mode</a>.</p>
 
 <p>Referenced by <a class="el" href="operatio_8h.html#a7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, and <a class="el" href="operatio_8h.html#a47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>.</p>
 
@@ -2515,7 +2551,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a173d06ea0da7ef27f7aa066046727caa">Effect_function</a>, <a class="el" href="misc_8c.html#ab9a4ce00c8b7bd113a0cd2cfcad75540">Effect_sieve()</a>, <a class="el" href="global_8h.html#a2a2b7e1b9afb99f92884e1c175c6968c">Mask_mode</a>, <a class="el" href="global_8h.html#a3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="misc_8c.html#aae7c19dbdf0272e5cac80a8c7647bb13">Pixel_in_current_screen()</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="misc_8c.html#a83e2bac39772cba18e61e166dd09f0df">Read_pixel_from_spare_screen()</a>, <a class="el" href="global_8h.html#a1bbde4ccfca75a089c74dd19b9e11f33">Sieve_mode</a>, <a class="el" href="global_8h.html#a3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, and <a class="el" href="global_8h.html#a67d14f5d62ef37331be5b17818e44181">Stencil_mode</a>.</p>
+<p>References <a class="el" href="global_8h.html#a173d06ea0da7ef27f7aa066046727caa">Effect_function</a>, <a class="el" href="misc_8c.html#ab9a4ce00c8b7bd113a0cd2cfcad75540">Effect_sieve()</a>, <a class="el" href="global_8h.html#a2a2b7e1b9afb99f92884e1c175c6968c">Mask_mode</a>, <a class="el" href="global_8h.html#a3c24508a45759d9d89a498d643f8a2af">Mask_table</a>, <a class="el" href="graph_8c.html#ae744e031b7f446b5877820113ba41ee4">Pixel_in_current_screen()</a>, <a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="misc_8c.html#a83e2bac39772cba18e61e166dd09f0df">Read_pixel_from_spare_screen()</a>, <a class="el" href="global_8h.html#a1bbde4ccfca75a089c74dd19b9e11f33">Sieve_mode</a>, <a class="el" href="global_8h.html#a3867fc3bbdd070a08517890f9aaf4658">Stencil</a>, and <a class="el" href="global_8h.html#a67d14f5d62ef37331be5b17818e44181">Stencil_mode</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a65df0642ea1b2db24d8a6213ab7ea757">Button_Gradients()</a>, <a class="el" href="graph_8h.html#a5212a9ca09cc0dd0c750ff55908febfe">Display_paintbrush()</a>, <a class="el" href="graph_8h.html#aaa6a8e70f9024d0fd9f4ab297358c892">Draw_filled_circle()</a>, <a class="el" href="graph_8h.html#ac8219bea8a41422f889f0698fa6c4cd4">Draw_filled_ellipse()</a>, <a class="el" href="graph_8h.html#adc72ddf3b4f13b4b0faa81a97055e636">Draw_filled_rectangle()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, and <a class="el" href="graph_8c.html#acc6d5a3aa6b6c3d56ee19089b16b8885">Pixel_clipped()</a>.</p>
 
@@ -2698,7 +2734,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="windows_8c.html#ae7576f59078bff4bef02bb06c0ba1463">Best_color()</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="misc_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="misc_8c.html#a6ae91a4996bb0f509a407e4f20efe9cf">Read_pixel_from_feedback_screen()</a>, <a class="el" href="misc_8c.html#a636ce6ab471361819e5fa6c8623bebf4">Round_div()</a>, and <a class="el" href="global_8h.html#a450ef0cef2208772ebc89416e68dc897">Smooth_matrix</a>.</p>
+<p>References <a class="el" href="windows_8c.html#ae7576f59078bff4bef02bb06c0ba1463">Best_color()</a>, <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="graph_8c.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>, <a class="el" href="misc_8c.html#a6ae91a4996bb0f509a407e4f20efe9cf">Read_pixel_from_feedback_screen()</a>, <a class="el" href="misc_8c.html#a636ce6ab471361819e5fa6c8623bebf4">Round_div()</a>, and <a class="el" href="global_8h.html#a450ef0cef2208772ebc89416e68dc897">Smooth_matrix</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a5b07b3b340b5f0f538b1994cfbf05e54">Button_Smooth_mode()</a>.</p>
 
@@ -2821,6 +2857,148 @@ window.onload = initDynSections;
 
 </div>
 </div>
+<a class="anchor" id="aa7dfe7956d07a7151ad34b3c481d7f74"></a><!-- doxytag: member="graph.c::Read_pixel_from_current_screen" ref="aa7dfe7956d07a7151ad34b3c481d7f74" args="(word x, word y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Read_pixel_from_current_screen </td>
+          <td>(</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>, and <a class="el" href="pages_8c.html#a825c46783020b623d70094c556922998">Visible_image_depth_buffer</a>.</p>
+
+<p>Referenced by <a class="el" href="operatio_8h.html#ab7d00048924f695c41f868145f2c8a7e">Colorpicker_1_1()</a>, <a class="el" href="operatio_8h.html#ad50b647c3b07309c244e8754a251d9cc">Colorpicker_2_1()</a>, <a class="el" href="graph_8h.html#a5212a9ca09cc0dd0c750ff55908febfe">Display_paintbrush()</a>, <a class="el" href="graph_8h.html#a284d3b42d5f7b08aef307575ae2321d7">Display_pixel()</a>, <a class="el" href="graph_8h.html#a78c0cdfdcf57a6962b14d75b2bad3286">Effect_smooth()</a>, <a class="el" href="graph_8h.html#a5be6189a548e50c2d30578b13ba4447d">Hide_paintbrush()</a>, <a class="el" href="graph_8c.html#ad3f7c396669e81c16eefa7e4c243cb7f">Pixel_figure_clear_preview()</a>, <a class="el" href="graph_8h.html#ade97c897a5b4ea73918754d8a125b727">Pixel_figure_preview_auto()</a>, <a class="el" href="windows_8h.html#a695f917c7ddc48104eb4e99517430dbc">Print_coordinates()</a>, and <a class="el" href="loadsave_8h.html#a523e417a7f5323a0d373439eb50e3b6d">Save_image()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae744e031b7f446b5877820113ba41ee4"></a><!-- doxytag: member="graph.c::Pixel_in_current_screen" ref="ae744e031b7f446b5877820113ba41ee4" args="(word x, word y, byte color, int with_preview)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pixel_in_current_screen </td>
+          <td>(</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>with_preview</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>, and <a class="el" href="pages_8c.html#a825c46783020b623d70094c556922998">Visible_image_depth_buffer</a>.</p>
+
+<p>Referenced by <a class="el" href="brush_8h.html#abe69e0d7740be98de18e082ec1a4fe9c">Capture_brush()</a>, <a class="el" href="brush_8h.html#a4ac19d0a870f5d5dd3f77f5faba21376">Capture_brush_with_lasso()</a>, <a class="el" href="graph_8h.html#a284d3b42d5f7b08aef307575ae2321d7">Display_pixel()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="loadsave_8h.html#a7278d7033537995b71e2d44596c8161c">Pixel_load_in_current_screen()</a>, and <a class="el" href="misc_8h.html#ad3c06ac6b5be0d9b45cc055f12a68990">Replace_a_color()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaded44c71ebe2d636c400d5e879be0f2"></a><!-- doxytag: member="graph.c::Pixel_in_current_layer" ref="aaded44c71ebe2d636c400d5e879be0f2" args="(word x, word y, byte color)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pixel_in_current_layer </td>
+          <td>(</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>color</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+
+<p>Referenced by <a class="el" href="graph_8c.html#a0560aaef0254413a4f3f1ce1156f3815">Fill()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f60765a6dae037240eda72f60f05b3f"></a><!-- doxytag: member="graph.c::Read_pixel_from_current_layer" ref="a5f60765a6dae037240eda72f60f05b3f" args="(word x, word y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Read_pixel_from_current_layer </td>
+          <td>(</td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">word&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+
+<p>Referenced by <a class="el" href="brush_8h.html#a4ac19d0a870f5d5dd3f77f5faba21376">Capture_brush_with_lasso()</a>, <a class="el" href="graph_8c.html#a0560aaef0254413a4f3f1ce1156f3815">Fill()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="graph_8h.html#a9d9e571a509304be44959cf5719f3269">Replace()</a>, <a class="el" href="misc_8h.html#ad3c06ac6b5be0d9b45cc055f12a68990">Replace_a_color()</a>, and <a class="el" href="loadsave_8h.html#a523e417a7f5323a0d373439eb50e3b6d">Save_image()</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a21924deefaa2c5dc4da75793816b0d27"></a><!-- doxytag: member="graph.c::Pixel_figure" ref="a21924deefaa2c5dc4da75793816b0d27" args="" -->
 <div class="memitem">
@@ -2877,7 +3055,7 @@ window.onload = initDynSections;
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Sat Oct 31 10:39:49 2009 for GrafX2 by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:22 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

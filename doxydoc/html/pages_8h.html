@@ -73,40 +73,54 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">INDIVIDUAL PAGES.  <a href="#a750fd100c1feb158cf59ff018e0d9837"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a233885595bb698e682422366ca7227ff">Init_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">GESTION DES PAGES.  <a href="#a233885595bb698e682422366ca7227ff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#aa226a003781d14b87fad522a47132a85">Add_layer</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list, byte layer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new layer to latest page of a list. Returns 0 on success.  <a href="#aa226a003781d14b87fad522a47132a85"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a991edf7fdef0f387c29ee0cbbe4e178c">Delete_layer</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list, byte layer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Delete a layer from the latest page of a list. Returns 0 on success.  <a href="#a991edf7fdef0f387c29ee0cbbe4e178c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a4f5afb11263cdd409d34d9e756917aa3">Merge_layer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Merges the current layer onto the one below it.  <a href="#a4f5afb11263cdd409d34d9e756917aa3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#aefc8276e5d0f496c89adbc9a30d97197">New_page</a> (byte nb_layers)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allocate and initialize a new page.  <a href="#aefc8276e5d0f496c89adbc9a30d97197"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a5c6a9f5975bff6ef84cbcd04c8fe41f3">Upload_infos_page_spare</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a84da48c7ff14411a1e38c3c7286bdd2c">Free_a_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a71e1a6c3a75cd25737311f739520f6f8">Clear_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *dest, <a class="el" href="structT__Page.html">T_Page</a> *source)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#af4f3d768fef7549611fe6b42d7fbb0f4">Size_of_a_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *page)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#addd276b372ab72f2654193661a3f9ea8">Init_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">LISTS OF PAGES.  <a href="#addd276b372ab72f2654193661a3f9ea8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a43b39aac059657bd09692ea645b365ac">Allocate_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list, int size)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a188b3f001e6a30e6bae76b36cd02d469">Free_a_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#aa92e9246d1685c737fb65b5c52ca073c">Size_of_a_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a12904b6fa6750af37b3aa231a804c5b5">Allocate_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a01c9f623af5544e6b094bb40d1a57fae">Advance_in_list_of_pages</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible</a> (<a class="el" href="structT__Page.html">T_Page</a> *new_page, <a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *current_list, <a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *secondary_list)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *new_page, <a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *current_list, <a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *secondary_list)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a509ec8cfd5af2c4b10824ad11c8af6f7">Create_new_page</a> (<a class="el" href="structT__Page.html">T_Page</a> *new_page, <a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *current_list, dword layer_mask)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a6550b3c3374d5e4e58e67e71f23b178f">Change_page_number_of_list</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list, int number)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list</a> (<a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists</a> (int size, int width, int height)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">BACKUP HIGH-LEVEL FUNCTIONS.  <a href="#ab8223ca00c1c983ee6455dadaa150190"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists</a> (int width, int height)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">BACKUP HIGH-LEVEL FUNCTIONS.  <a href="#a5898b470cc2079e27c87948c8e722e2f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#af49180fb9490431b6dfd12a2b4cd8767">Set_number_of_backups</a> (int nb_backups)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions</a> (int upload, int width, int height)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions</a> (int upload, byte layers, int width, int height)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare</a> (int width, int height)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Backup with a new copy for the working layer, and references for all others.  <a href="#ac3eca820554c479799b9a4cab68b03f6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers</a> (dword layer_mask)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Backup with a new copy of some layers (the others are references).  <a href="#a8919357ad37dfa3e68d846942d687748"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a2e2d5cce3671daf85318635f5710c32e">Borrow_memory_from_page</a> (int size)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">BORROWING MEMORY FROM PAGE.  <a href="#a2e2d5cce3671daf85318635f5710c32e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#adc1e24e09808f3a4a361f1d858ff8fe0">Can_borrow_memory_from_page</a> (int size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a0248117dfbd2d380d9c22ef5f2946930">Update_depth_buffer</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a37e40177f2a59cfdcbfbdbb70285d71d">Redraw_current_layer</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ac845592ced6789ac273887f600e26f49">Update_screen_targets</a> (void)</td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Image.html">T_Image</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#abbceee065c5eb33efe87aff0566e0508">Visible_image</a> [2]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Array of two images, that contains the "flattened" version of the visible layers.  <a href="#abbceee065c5eb33efe87aff0566e0508"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structT__Image.html">T_Image</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a825c46783020b623d70094c556922998">Visible_image_depth_buffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#ab35ed591938cc0910b968c261d1e796f">Stats_pages_number</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">STATISTICS.  <a href="#ab35ed591938cc0910b968c261d1e796f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pages_8h.html#a0e7ac4e0601afa233e4313c792736db4">Stats_pages_memory</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Total memory used by bitmaps (layers, animation frames, backups).  <a href="#a0e7ac4e0601afa233e4313c792736db4"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Handler for the Undo/Redo system. </p>
@@ -129,9 +143,9 @@ window.onload = initDynSections;
 
 <p>INDIVIDUAL PAGES. </p>
 
-<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="windows_8c.html#af65dc6607694211486eb6364e1fda914">Compute_limits()</a>, <a class="el" href="windows_8c.html#a3e0bdd78c9a9ec5f99f072d5abfb2625">Compute_paintbrush_coordinates()</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="global_8h.html#ae9851f1f5270af30bcf938c07cdaecf3">Main_comment</a>, <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#af6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#aa6653939ff9ab9cc95328539950eedb0">Main_offset_X</a>, <a class="el" href="global_8h.html#a3fc43316609cb638481e434bcd4fe7ac">Main_offset_Y</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, <a class="el" href="global_8h.html#a0d6474a18bcab518ac3d35f6ee28385b">Pixel_preview_normal</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="windows_8c.html#af65dc6607694211486eb6364e1fda914">Compute_limits()</a>, <a class="el" href="windows_8c.html#a3e0bdd78c9a9ec5f99f072d5abfb2625">Compute_paintbrush_coordinates()</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="global_8h.html#ae9851f1f5270af30bcf938c07cdaecf3">Main_comment</a>, <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#af6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af5758002bea7d4b2c7eb30b44665ce8a">Main_magnifier_mode</a>, <a class="el" href="global_8h.html#aa6653939ff9ab9cc95328539950eedb0">Main_offset_X</a>, <a class="el" href="global_8h.html#a3fc43316609cb638481e434bcd4fe7ac">Main_offset_Y</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a6c74909ccae3b4c81c5b403e9ed33eca">Pixel_preview</a>, <a class="el" href="global_8h.html#a0d6474a18bcab518ac3d35f6ee28385b">Pixel_preview_normal</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, <a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>, <a class="el" href="loadsave_8h.html#ae0573d517405563ad809a2ac0e3e38e1">Load_image()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
 
 </div>
 </div>
@@ -151,21 +165,86 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="global_8h.html#ae9851f1f5270af30bcf938c07cdaecf3">Main_comment</a>, <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#af6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="global_8h.html#ae9851f1f5270af30bcf938c07cdaecf3">Main_comment</a>, <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">Main_file_directory</a>, <a class="el" href="global_8h.html#aa743d44496e28ac91e98575e26b208f4">Main_fileformat</a>, <a class="el" href="global_8h.html#af6cca03778f1eb1d7e1854dde3fec54b">Main_filename</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, <a class="el" href="buttons_8h.html#ad52c343b6a78df333c7c414b15997ac2">Button_Load()</a>, <a class="el" href="buttons_8h.html#a50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, <a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>, <a class="el" href="buttons_8h.html#ad52c343b6a78df333c7c414b15997ac2">Button_Load()</a>, <a class="el" href="buttons_8h.html#a50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a233885595bb698e682422366ca7227ff"></a><!-- doxytag: member="pages.h::Init_page" ref="a233885595bb698e682422366ca7227ff" args="(T_Page *page)" -->
+<a class="anchor" id="aa226a003781d14b87fad522a47132a85"></a><!-- doxytag: member="pages.h::Add_layer" ref="aa226a003781d14b87fad522a47132a85" args="(T_List_of_pages *list, byte layer)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Init_page </td>
+          <td class="memname">byte Add_layer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td>
-          <td class="paramname"> <em>page</em></td>
+          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
+          <td class="paramname"> <em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>layer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new layer to latest page of a list. Returns 0 on success. </p>
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="struct_8h.html#a55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">Main_layers_visible</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="pages_8c.html#a666cb647fa71fae026c5e21d9bed790b">New_layer()</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>, <a class="el" href="global_8h.html#a5f251df3c5a25c76d0144db33fb9bfd4">Spare_current_layer</a>, <a class="el" href="global_8h.html#ac3d966fe4c9c5cc174fdef31354d8176">Spare_layers_visible</a>, <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+
+<p>Referenced by <a class="el" href="loadsave_8c.html#a9f2629bbd64194d917d883a4b321907c">Load_GIF()</a>, and <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a991edf7fdef0f387c29ee0cbbe4e178c"></a><!-- doxytag: member="pages.h::Delete_layer" ref="a991edf7fdef0f387c29ee0cbbe4e178c" args="(T_List_of_pages *list, byte layer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Delete_layer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
+          <td class="paramname"> <em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>layer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Delete a layer from the latest page of a list. Returns 0 on success. </p>
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="struct_8h.html#a55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="pages_8c.html#a3624b8387cd254f58c37ec24faff57be">Free_layer()</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">Main_layers_visible</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a5f251df3c5a25c76d0144db33fb9bfd4">Spare_current_layer</a>, and <a class="el" href="global_8h.html#ac3d966fe4c9c5cc174fdef31354d8176">Spare_layers_visible</a>.</p>
+
+<p>Referenced by <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, and <a class="el" href="pages_8h.html#a4f5afb11263cdd409d34d9e756917aa3">Merge_layer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f5afb11263cdd409d34d9e756917aa3"></a><!-- doxytag: member="pages.h::Merge_layer" ref="a4f5afb11263cdd409d34d9e756917aa3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Merge_layer </td>
+          <td>(</td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -173,11 +252,35 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>GESTION DES PAGES. </p>
+<p>Merges the current layer onto the one below it. </p>
 
-<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="const_8h.html#a10574a1af9a32dd290975c49d0dcc147">DEFAULT_FILEFORMAT</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="pages_8c.html#a991edf7fdef0f387c29ee0cbbe4e178c">Delete_layer()</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#a01c9f623af5544e6b094bb40d1a57fae">Advance_in_list_of_pages()</a>, <a class="el" href="pages_8h.html#a43b39aac059657bd09692ea645b365ac">Allocate_list_of_pages()</a>, <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, <a class="el" href="pages_8h.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8h.html#a6550b3c3374d5e4e58e67e71f23b178f">Change_page_number_of_list()</a>, and <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>.</p>
+<p>Referenced by <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefc8276e5d0f496c89adbc9a30d97197"></a><!-- doxytag: member="pages.h::New_page" ref="aefc8276e5d0f496c89adbc9a30d97197" args="(byte nb_layers)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structT__Page.html">T_Page</a>* New_page </td>
+          <td>(</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>nb_layers</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Allocate and initialize a new page. </p>
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="const_8h.html#a10574a1af9a32dd290975c49d0dcc147">DEFAULT_FILEFORMAT</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+
+<p>Referenced by <a class="el" href="pages_8h.html#a12904b6fa6750af37b3aa231a804c5b5">Allocate_list_of_pages()</a>, <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, and <a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>.</p>
 
 </div>
 </div>
@@ -197,9 +300,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a81794dded1cf8cdc1e57325945980efe">Spare_comment</a>, <a class="el" href="global_8h.html#ae0fdf9eb7e02b6a4e2abffcaef1c05c4">Spare_file_directory</a>, <a class="el" href="global_8h.html#a8f4a39d11dc59f3e0d30feec9b0f80af">Spare_fileformat</a>, <a class="el" href="global_8h.html#a5f1b1b5e2843333dcf437cf0ef9c7564">Spare_filename</a>, <a class="el" href="global_8h.html#affa891cf388d9877ff0500c801418ed8">Spare_image_height</a>, <a class="el" href="global_8h.html#a8b9a38c767fd49818130b395f74aecce">Spare_image_width</a>, <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>, <a class="el" href="global_8h.html#aa5283f9d13407260e80631224a96f1bc">Spare_screen</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a81794dded1cf8cdc1e57325945980efe">Spare_comment</a>, <a class="el" href="global_8h.html#ae0fdf9eb7e02b6a4e2abffcaef1c05c4">Spare_file_directory</a>, <a class="el" href="global_8h.html#a8f4a39d11dc59f3e0d30feec9b0f80af">Spare_fileformat</a>, <a class="el" href="global_8h.html#a5f1b1b5e2843333dcf437cf0ef9c7564">Spare_filename</a>, <a class="el" href="global_8h.html#affa891cf388d9877ff0500c801418ed8">Spare_image_height</a>, <a class="el" href="global_8h.html#a8b9a38c767fd49818130b395f74aecce">Spare_image_width</a>, <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, and <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, and <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>.</p>
 
 </div>
 </div>
@@ -219,7 +322,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a81794dded1cf8cdc1e57325945980efe">Spare_comment</a>, <a class="el" href="global_8h.html#ae0fdf9eb7e02b6a4e2abffcaef1c05c4">Spare_file_directory</a>, <a class="el" href="global_8h.html#a8f4a39d11dc59f3e0d30feec9b0f80af">Spare_fileformat</a>, <a class="el" href="global_8h.html#a5f1b1b5e2843333dcf437cf0ef9c7564">Spare_filename</a>, <a class="el" href="global_8h.html#affa891cf388d9877ff0500c801418ed8">Spare_image_height</a>, <a class="el" href="global_8h.html#a8b9a38c767fd49818130b395f74aecce">Spare_image_width</a>, <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>, <a class="el" href="global_8h.html#aa5283f9d13407260e80631224a96f1bc">Spare_screen</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a81794dded1cf8cdc1e57325945980efe">Spare_comment</a>, <a class="el" href="global_8h.html#ae0fdf9eb7e02b6a4e2abffcaef1c05c4">Spare_file_directory</a>, <a class="el" href="global_8h.html#a8f4a39d11dc59f3e0d30feec9b0f80af">Spare_fileformat</a>, <a class="el" href="global_8h.html#a5f1b1b5e2843333dcf437cf0ef9c7564">Spare_filename</a>, <a class="el" href="global_8h.html#affa891cf388d9877ff0500c801418ed8">Spare_image_height</a>, <a class="el" href="global_8h.html#a8b9a38c767fd49818130b395f74aecce">Spare_image_width</a>, <a class="el" href="global_8h.html#a0b61ec1ae6b47e29efcaee68ec47d5b5">Spare_palette</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, and <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>.</p>
 
@@ -241,18 +344,18 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#ac89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="structT__Config.html#a4de62052a2daeb87bd085cde5984d445">T_Config::FX_Feedback</a>, <a class="el" href="global_8h.html#a8d618eb6d7918aade6d46a914902136a">FX_feedback_screen</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>.</p>
+<p>References <a class="el" href="global_8h.html#ac89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="structT__Config.html#a4de62052a2daeb87bd085cde5984d445">T_Config::FX_Feedback</a>, <a class="el" href="global_8h.html#a8d618eb6d7918aade6d46a914902136a">FX_feedback_screen</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, <a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>, <a class="el" href="pages_8h.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, <a class="el" href="pages_8h.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>, and <a class="el" href="pages_8h.html#a0248117dfbd2d380d9c22ef5f2946930">Update_depth_buffer()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a84da48c7ff14411a1e38c3c7286bdd2c"></a><!-- doxytag: member="pages.h::Free_a_page" ref="a84da48c7ff14411a1e38c3c7286bdd2c" args="(T_Page *page)" -->
+<a class="anchor" id="a71e1a6c3a75cd25737311f739520f6f8"></a><!-- doxytag: member="pages.h::Clear_page" ref="a71e1a6c3a75cd25737311f739520f6f8" args="(T_Page *page)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Free_a_page </td>
+          <td class="memname">void Clear_page </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td>
           <td class="paramname"> <em>page</em></td>
@@ -263,9 +366,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a3624b8387cd254f58c37ec24faff57be">Free_layer()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#a6550b3c3374d5e4e58e67e71f23b178f">Change_page_number_of_list()</a>, and <a class="el" href="pages_8h.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>.</p>
 
 </div>
 </div>
@@ -294,29 +397,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="pages_8h.html#a01c9f623af5544e6b094bb40d1a57fae">Advance_in_list_of_pages()</a>, <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8h.html#a6550b3c3374d5e4e58e67e71f23b178f">Change_page_number_of_list()</a>, and <a class="el" href="pages_8h.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af4f3d768fef7549611fe6b42d7fbb0f4"></a><!-- doxytag: member="pages.h::Size_of_a_page" ref="af4f3d768fef7549611fe6b42d7fbb0f4" args="(T_Page *page)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Size_of_a_page </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td>
-          <td class="paramname"> <em>page</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
-
-<p>Referenced by <a class="el" href="pages_8h.html#adc1e24e09808f3a4a361f1d858ff8fe0">Can_borrow_memory_from_page()</a>, <a class="el" href="pages_8h.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible()</a>, and <a class="el" href="pages_8h.html#aa92e9246d1685c737fb65b5c52ca073c">Size_of_a_list_of_pages()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>.</p>
 
 </div>
 </div>
@@ -338,13 +419,13 @@ window.onload = initDynSections;
 
 <p>LISTS OF PAGES. </p>
 
-<p>References <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
 
 <p>Referenced by <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a43b39aac059657bd09692ea645b365ac"></a><!-- doxytag: member="pages.h::Allocate_list_of_pages" ref="a43b39aac059657bd09692ea645b365ac" args="(T_List_of_pages *list, int size)" -->
+<a class="anchor" id="a12904b6fa6750af37b3aa231a804c5b5"></a><!-- doxytag: member="pages.h::Allocate_list_of_pages" ref="a12904b6fa6750af37b3aa231a804c5b5" args="(T_List_of_pages *list)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -352,37 +433,6 @@ window.onload = initDynSections;
           <td class="memname">int Allocate_list_of_pages </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
-          <td class="paramname"> <em>list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
-
-<p>Referenced by <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a188b3f001e6a30e6bae76b36cd02d469"></a><!-- doxytag: member="pages.h::Free_a_list_of_pages" ref="a188b3f001e6a30e6bae76b36cd02d469" args="(T_List_of_pages *list)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Free_a_list_of_pages </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
           <td class="paramname"> <em>list</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -391,29 +441,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="const_8h.html#a7f472a13c95c70f1c487edaa792d8aa0">NB_LAYERS</a>, <a class="el" href="pages_8c.html#aefc8276e5d0f496c89adbc9a30d97197">New_page()</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="aa92e9246d1685c737fb65b5c52ca073c"></a><!-- doxytag: member="pages.h::Size_of_a_list_of_pages" ref="aa92e9246d1685c737fb65b5c52ca073c" args="(T_List_of_pages *list)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Size_of_a_list_of_pages </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
-          <td class="paramname"> <em>list</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="pages_8c.html#af4f3d768fef7549611fe6b42d7fbb0f4">Size_of_a_page()</a>.</p>
-
-<p>Referenced by <a class="el" href="pages_8h.html#adc1e24e09808f3a4a361f1d858ff8fe0">Can_borrow_memory_from_page()</a>, and <a class="el" href="pages_8h.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +463,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a85d2b04dbe684b18589014dcae1b1d7d">Last_backed_up_layers</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>.</p>
 
 <p>Referenced by <a class="el" href="pages_8h.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
 
@@ -455,46 +485,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a85d2b04dbe684b18589014dcae1b1d7d">Last_backed_up_layers</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>.</p>
 
 <p>Referenced by <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa9fd52809da4e2ec670d4f3563c20d29"></a><!-- doxytag: member="pages.h::New_page_is_possible" ref="aa9fd52809da4e2ec670d4f3563c20d29" args="(T_Page *new_page, T_List_of_pages *current_list, T_List_of_pages *secondary_list)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int New_page_is_possible </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td>
-          <td class="paramname"> <em>new_page</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
-          <td class="paramname"> <em>current_list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
-          <td class="paramname"> <em>secondary_list</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="misc_8c.html#a16d7c98431a8262fbbe03f5980b52295">Memory_free()</a>, <a class="el" href="const_8h.html#a21ac5e239d5befa9f144f10bb61d35d7">MINIMAL_MEMORY_TO_RESERVE</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#aa92e9246d1685c737fb65b5c52ca073c">Size_of_a_list_of_pages()</a>, and <a class="el" href="pages_8c.html#af4f3d768fef7549611fe6b42d7fbb0f4">Size_of_a_page()</a>.</p>
-
-<p>Referenced by <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, and <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>.</p>
 
 </div>
 </div>
@@ -514,18 +507,18 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a84da48c7ff14411a1e38c3c7286bdd2c">Free_a_page()</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a71e1a6c3a75cd25737311f739520f6f8">Clear_page()</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#a2e2d5cce3671daf85318635f5710c32e">Borrow_memory_from_page()</a>, <a class="el" href="pages_8h.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, and <a class="el" href="pages_8h.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a6550b3c3374d5e4e58e67e71f23b178f">Change_page_number_of_list()</a>, <a class="el" href="pages_8h.html#a509ec8cfd5af2c4b10824ad11c8af6f7">Create_new_page()</a>, and <a class="el" href="pages_8h.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8aef77a8f0f73d5b0f9deeef387815e5"></a><!-- doxytag: member="pages.h::Create_new_page" ref="a8aef77a8f0f73d5b0f9deeef387815e5" args="(T_Page *new_page, T_List_of_pages *current_list, T_List_of_pages *secondary_list)" -->
+<a class="anchor" id="a509ec8cfd5af2c4b10824ad11c8af6f7"></a><!-- doxytag: member="pages.h::Create_new_page" ref="a509ec8cfd5af2c4b10824ad11c8af6f7" args="(T_Page *new_page, T_List_of_pages *current_list, dword layer_mask)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Create_new_page </td>
+          <td class="memname">int Create_new_page </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structT__Page.html">T_Page</a> *&nbsp;</td>
           <td class="paramname"> <em>new_page</em>, </td>
@@ -539,8 +532,8 @@ window.onload = initDynSections;
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structT__List__of__pages.html">T_List_of_pages</a> *&nbsp;</td>
-          <td class="paramname"> <em>secondary_list</em></td><td>&nbsp;</td>
+          <td class="paramtype">dword&nbsp;</td>
+          <td class="paramname"> <em>layer_mask</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -551,9 +544,9 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="const_8h.html#a938a8c46255e5666f6a434ca0eb87f25a5fc1662941766f2fbf63f8a0efac2529">ERROR_SORRY_SORRY_SORRY</a>, <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#a233553136c510d36a4ca99a3e38cedcb">T_Page::Image</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="misc_8c.html#a16d7c98431a8262fbbe03f5980b52295">Memory_free()</a>, <a class="el" href="const_8h.html#a21ac5e239d5befa9f144f10bb61d35d7">MINIMAL_MEMORY_TO_RESERVE</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="global_8h.html#ac89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="pages_8c.html#abf4b5b4417b46af2784625705e0d1901">Dup_layer()</a>, <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="structT__Config.html#a6cf77d4eee419b963e227dc21777dca7">T_Config::Max_undo_pages</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="pages_8c.html#a666cb647fa71fae026c5e21d9bed790b">New_layer()</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="structT__Page.html#a839b2044ff195126dfa3434197e708b2">T_Page::Prev</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#afd4e2aabb7d35f1114df4135e3194d78">Backup_with_new_dimensions()</a>, and <a class="el" href="pages_8h.html#ab8223ca00c1c983ee6455dadaa150190">Init_all_backup_lists()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#a654cf4c7114e626841059e7d365c2873">Backup_and_resize_the_spare()</a>, <a class="el" href="pages_8h.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, and <a class="el" href="pages_8h.html#a046b12456d0a4b983aa62393f0aa7b5a">Backup_with_new_dimensions()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +575,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="pages_8c.html#a84da48c7ff14411a1e38c3c7286bdd2c">Free_a_page()</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">Min()</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, and <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>.</p>
 
 <p>Referenced by <a class="el" href="pages_8h.html#af49180fb9490431b6dfd12a2b4cd8767">Set_number_of_backups()</a>.</p>
 
@@ -604,25 +597,19 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, and <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, <a class="el" href="structT__List__of__pages.html#ab32f0be3bf196f2d00ac88b10eec4995">T_List_of_pages::List_size</a>, and <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>.</p>
+<p>Referenced by <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab8223ca00c1c983ee6455dadaa150190"></a><!-- doxytag: member="pages.h::Init_all_backup_lists" ref="ab8223ca00c1c983ee6455dadaa150190" args="(int size, int width, int height)" -->
+<a class="anchor" id="a5898b470cc2079e27c87948c8e722e2f"></a><!-- doxytag: member="pages.h::Init_all_backup_lists" ref="a5898b470cc2079e27c87948c8e722e2f" args="(int width, int height)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int Init_all_backup_lists </td>
           <td>(</td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&nbsp;</td>
           <td class="paramname"> <em>width</em>, </td>
         </tr>
@@ -643,7 +630,7 @@ window.onload = initDynSections;
 
 <p>BACKUP HIGH-LEVEL FUNCTIONS. </p>
 
-<p>References <a class="el" href="pages_8c.html#a43b39aac059657bd09692ea645b365ac">Allocate_list_of_pages()</a>, <a class="el" href="pages_8c.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="pages_8c.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible()</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="global_8h.html#affa891cf388d9877ff0500c801418ed8">Spare_image_height</a>, <a class="el" href="global_8h.html#a8b9a38c767fd49818130b395f74aecce">Spare_image_width</a>, <a class="el" href="global_8h.html#aa5283f9d13407260e80631224a96f1bc">Spare_screen</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a12904b6fa6750af37b3aa231a804c5b5">Allocate_list_of_pages()</a>, <a class="el" href="structT__Page.html#a5d4eda0e005e2bba0536d50f9bf69729">T_Page::Comment</a>, <a class="el" href="const_8h.html#a10574a1af9a32dd290975c49d0dcc147">DEFAULT_FILEFORMAT</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="pages_8c.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="structT__Page.html#a25a852bbad31b800d7692f2fb1d94bac">T_Page::File_directory</a>, <a class="el" href="structT__Page.html#a0af9100507be7a655e9b4b760011be9b">T_Page::File_format</a>, <a class="el" href="structT__Page.html#a9cc6a4cad77b175ed5bc6754cf20c655">T_Page::Filename</a>, <a class="el" href="structT__Image.html#a5b70d8d97323119421760d39e5139ff4">T_Image::Height</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#af3d925a6dd61cd8993646f4b03aa1ff2">Main_palette</a>, <a class="el" href="const_8h.html#a7f472a13c95c70f1c487edaa792d8aa0">NB_LAYERS</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="pages_8c.html#a666cb647fa71fae026c5e21d9bed790b">New_layer()</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="structT__Page.html#a044754d2b1b01db28ee1ad0f4696a1ad">T_Page::Palette</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="global_8h.html#a2b764e52c50ecd8028457a6acc2879a1">Spare_current_directory</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, <a class="el" href="structT__Image.html#a591e7319e91bc3edd0b31a1a0aac7fc6">T_Image::Width</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
 
@@ -671,7 +658,7 @@ window.onload = initDynSections;
 
 </div>
 </div>
-<a class="anchor" id="afd4e2aabb7d35f1114df4135e3194d78"></a><!-- doxytag: member="pages.h::Backup_with_new_dimensions" ref="afd4e2aabb7d35f1114df4135e3194d78" args="(int upload, int width, int height)" -->
+<a class="anchor" id="a046b12456d0a4b983aa62393f0aa7b5a"></a><!-- doxytag: member="pages.h::Backup_with_new_dimensions" ref="a046b12456d0a4b983aa62393f0aa7b5a" args="(int upload, byte layers, int width, int height)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -680,6 +667,12 @@ window.onload = initDynSections;
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
           <td class="paramname"> <em>upload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>layers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -702,7 +695,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="pages_8c.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible()</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a2e372daf164160d617276d5c0e58b177">Create_new_page()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="pages_8c.html#aefc8276e5d0f496c89adbc9a30d97197">New_page()</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="transform_8h.html#a97d5d923d54be7bd5ab0f9492ad9dab4">Button_Transform_menu()</a>, <a class="el" href="loadsave_8c.html#aeb1147cd6680f9da5dd7932ace004853">Init_preview()</a>, and <a class="el" href="graph_8h.html#a3fd7798bca9d72b7990ed3fc39aab782">Resize_image()</a>.</p>
 
@@ -733,7 +726,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="pages_8c.html#aa9fd52809da4e2ec670d4f3563c20d29">New_page_is_possible()</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="pages_8c.html#a5c6a9f5975bff6ef84cbcd04c8fe41f3">Upload_infos_page_spare()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="pages_8c.html#a2e372daf164160d617276d5c0e58b177">Create_new_page()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="pages_8c.html#aefc8276e5d0f496c89adbc9a30d97197">New_page()</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="pages_8c.html#a5c6a9f5975bff6ef84cbcd04c8fe41f3">Upload_infos_page_spare()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#ac782d629fe3e5ff738631616efc1b81e">Copy_image_only()</a>.</p>
 
@@ -755,9 +748,35 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="pages_8c.html#a8aef77a8f0f73d5b0f9deeef387815e5">Create_new_page()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#a233885595bb698e682422366ca7227ff">Init_page()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, and <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>.</p>
+<p>Backup with a new copy for the working layer, and references for all others. </p>
 
-<p>Referenced by <a class="el" href="operatio_8h.html#a3e04e1c351393fabf15c6b1a93581bfe">Airbrush_1_0()</a>, <a class="el" href="operatio_8h.html#a235425e6eab503ea8d76641008fde102">Airbrush_2_0()</a>, <a class="el" href="operatio_8h.html#a92e5a52893f4e4b046f25aaa6d9bb909">Brush_12_0()</a>, <a class="el" href="buttons_8h.html#a2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="buttons_8h.html#a45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="palette_8h.html#a389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="operatio_8h.html#a635279a361be01171376d11b3f618e03">Centered_lines_12_0()</a>, <a class="el" href="operatio_8h.html#ab7b5f72d11aec83d57dd450b645e2cf9">Circle_12_0()</a>, <a class="el" href="operatio_8h.html#a10ddd7eb931172fd26abfe0f77d813c3">Curve_34_points_1_0()</a>, <a class="el" href="operatio_8h.html#ac063cd71ba885456e9698528619e6a32">Curve_34_points_2_0()</a>, <a class="el" href="operatio_8h.html#a08ff2febd7aeabbaa2d25a1a1fb2399b">Ellipse_12_0()</a>, <a class="el" href="operatio_8h.html#a396edf9e3b92dd32e784af56388964b7">Empty_rectangle_0_5()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="operatio_8h.html#ad93031ef3d1fa248f57e5feb96bb575a">Filled_polyform_12_0()</a>, <a class="el" href="operatio_8h.html#a0e3cbf930c5b6ed8eaa26242f5521121">Filled_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#ab80df96946d02c732d0ca36c789d41f4">Freehand_mode1_1_0()</a>, <a class="el" href="operatio_8h.html#a3cc184cf55337b192971009082df1bec">Freehand_mode1_2_0()</a>, <a class="el" href="operatio_8h.html#a7a727714054e6c398d1876aa95ea6f09">Freehand_mode2_1_0()</a>, <a class="el" href="operatio_8h.html#a8c49d08448bc9288894817ff1788a028">Freehand_mode2_2_0()</a>, <a class="el" href="operatio_8h.html#ac2882732eaa9cfda2e9cfba97301b5c9">Freehand_mode3_1_0()</a>, <a class="el" href="operatio_8h.html#a2e12e275fbd879778a1158e28e99b590">Freehand_Mode3_2_0()</a>, <a class="el" href="graph_8c.html#a16201962ab33ab52fa760e25be8e13b0">Get_colors_from_brush()</a>, <a class="el" href="operatio_8h.html#a45c81a28a644bcb53176a6c6e4cf448b">Grad_circle_12_0()</a>, <a class="el" href="operatio_8h.html#a1aefe07c38c73a08d04760a83890fada">Grad_ellipse_12_0()</a>, <a class="el" href="operatio_8h.html#af016d6448cb1f4d2084b3376ff60abbe">Grad_rectangle_12_0()</a>, <a class="el" href="operatio_8h.html#a1e286c8c896c2e7a8c75074aabba7fdd">K_line_12_0()</a>, <a class="el" href="operatio_8h.html#a7c20d81039a3f90933bff2f7bf1cdfcc">Line_12_0()</a>, <a class="el" href="operatio_8h.html#a0b95c625f2732ba0beee961d4ec7dfbf">Polyfill_12_0()</a>, <a class="el" href="operatio_8h.html#aef74ff3c3a143ec318f083c101741f35">Polyform_12_0()</a>, <a class="el" href="operatio_8h.html#a7c9e28ff30681c149aa4b6928e946c51">Polygon_12_0()</a>, <a class="el" href="operatio_8h.html#a7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, <a class="el" href="operatio_8h.html#a47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>, and <a class="el" href="operatio_8h.html#a7912a57ae0100839cde8d0afc1f87bf9">Scroll_12_0()</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a8919357ad37dfa3e68d846942d687748">Backup_layers()</a>, and <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>.</p>
+
+<p>Referenced by <a class="el" href="operatio_8h.html#a3e04e1c351393fabf15c6b1a93581bfe">Airbrush_1_0()</a>, <a class="el" href="operatio_8h.html#a235425e6eab503ea8d76641008fde102">Airbrush_2_0()</a>, <a class="el" href="operatio_8h.html#a92e5a52893f4e4b046f25aaa6d9bb909">Brush_12_0()</a>, <a class="el" href="buttons_8h.html#a2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="buttons_8h.html#a45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="operatio_8h.html#a635279a361be01171376d11b3f618e03">Centered_lines_12_0()</a>, <a class="el" href="operatio_8h.html#ab7b5f72d11aec83d57dd450b645e2cf9">Circle_12_0()</a>, <a class="el" href="operatio_8h.html#a10ddd7eb931172fd26abfe0f77d813c3">Curve_34_points_1_0()</a>, <a class="el" href="operatio_8h.html#ac063cd71ba885456e9698528619e6a32">Curve_34_points_2_0()</a>, <a class="el" href="operatio_8h.html#a08ff2febd7aeabbaa2d25a1a1fb2399b">Ellipse_12_0()</a>, <a class="el" href="operatio_8h.html#a396edf9e3b92dd32e784af56388964b7">Empty_rectangle_0_5()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="operatio_8h.html#ad93031ef3d1fa248f57e5feb96bb575a">Filled_polyform_12_0()</a>, <a class="el" href="operatio_8h.html#a0e3cbf930c5b6ed8eaa26242f5521121">Filled_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#ab80df96946d02c732d0ca36c789d41f4">Freehand_mode1_1_0()</a>, <a class="el" href="operatio_8h.html#a3cc184cf55337b192971009082df1bec">Freehand_mode1_2_0()</a>, <a class="el" href="operatio_8h.html#a7a727714054e6c398d1876aa95ea6f09">Freehand_mode2_1_0()</a>, <a class="el" href="operatio_8h.html#a8c49d08448bc9288894817ff1788a028">Freehand_mode2_2_0()</a>, <a class="el" href="operatio_8h.html#ac2882732eaa9cfda2e9cfba97301b5c9">Freehand_mode3_1_0()</a>, <a class="el" href="operatio_8h.html#a2e12e275fbd879778a1158e28e99b590">Freehand_Mode3_2_0()</a>, <a class="el" href="operatio_8h.html#a45c81a28a644bcb53176a6c6e4cf448b">Grad_circle_12_0()</a>, <a class="el" href="operatio_8h.html#a1aefe07c38c73a08d04760a83890fada">Grad_ellipse_12_0()</a>, <a class="el" href="operatio_8h.html#af016d6448cb1f4d2084b3376ff60abbe">Grad_rectangle_12_0()</a>, <a class="el" href="operatio_8h.html#a1e286c8c896c2e7a8c75074aabba7fdd">K_line_12_0()</a>, <a class="el" href="operatio_8h.html#a7c20d81039a3f90933bff2f7bf1cdfcc">Line_12_0()</a>, <a class="el" href="operatio_8h.html#a0b95c625f2732ba0beee961d4ec7dfbf">Polyfill_12_0()</a>, <a class="el" href="operatio_8h.html#aef74ff3c3a143ec318f083c101741f35">Polyform_12_0()</a>, <a class="el" href="operatio_8h.html#a7c9e28ff30681c149aa4b6928e946c51">Polygon_12_0()</a>, <a class="el" href="operatio_8h.html#a7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, <a class="el" href="operatio_8h.html#a47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>, and <a class="el" href="operatio_8h.html#a7912a57ae0100839cde8d0afc1f87bf9">Scroll_12_0()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8919357ad37dfa3e68d846942d687748"></a><!-- doxytag: member="pages.h::Backup_layers" ref="a8919357ad37dfa3e68d846942d687748" args="(dword layer_mask)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backup_layers </td>
+          <td>(</td>
+          <td class="paramtype">dword&nbsp;</td>
+          <td class="paramname"> <em>layer_mask</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Backup with a new copy of some layers (the others are references). </p>
+
+<p>References <a class="el" href="pages_8c.html#a1d4110cc06e3f731283fc6e9de8c0cda">Copy_S_page()</a>, <a class="el" href="pages_8c.html#a2e372daf164160d617276d5c0e58b177">Create_new_page()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="errors_8h.html#ae07d69c37041d0c62f4f53427d1bddeb">Error</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#a75a5ae8e85c3c2a768de5d65e6d31e39">Main_image_is_modified</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="pages_8c.html#aefc8276e5d0f496c89adbc9a30d97197">New_page()</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>.</p>
+
+<p>Referenced by <a class="el" href="pages_8h.html#ac3eca820554c479799b9a4cab68b03f6">Backup()</a>, <a class="el" href="palette_8h.html#a389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="graph_8c.html#a16201962ab33ab52fa760e25be8e13b0">Get_colors_from_brush()</a>, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, and <a class="el" href="operatio_8h.html#a7912a57ae0100839cde8d0afc1f87bf9">Scroll_12_0()</a>.</p>
 
 </div>
 </div>
@@ -777,7 +796,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a0959c631e2ca5316bc1a67a086ed9227">Backward_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="pages_8c.html#a85d2b04dbe684b18589014dcae1b1d7d">Last_backed_up_layers</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a501d5f15b744efdbc56f4a7a8142417c">Button_Undo()</a>.</p>
 
@@ -799,7 +818,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#a01c9f623af5544e6b094bb40d1a57fae">Advance_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>.</p>
+<p>References <a class="el" href="pages_8c.html#a01c9f623af5544e6b094bb40d1a57fae">Advance_in_list_of_pages()</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="pages_8c.html#a85d2b04dbe684b18589014dcae1b1d7d">Last_backed_up_layers</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a90ffd981b98eb122748ddb35821e3de9">Button_Redo()</a>.</p>
 
@@ -821,7 +840,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, and <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>.</p>
+<p>References <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#a71af3faed8bfa3c970cc58240e75167c">Free_page_of_a_list()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#a9c521053151926c83470dec7275cd469">Button_Kill()</a>.</p>
 
@@ -843,7 +862,7 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, <a class="el" href="pages_8c.html#a5c6a9f5975bff6ef84cbcd04c8fe41f3">Upload_infos_page_spare()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
+<p>References <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="pages_8c.html#a750fd100c1feb158cf59ff018e0d9837">Download_infos_page_main()</a>, <a class="el" href="pages_8c.html#ac4051c4bfa5e980f6c0d6687e2151473">Download_infos_page_spare()</a>, <a class="el" href="structT__Page.html#a8f373873881087c21a4ba688975854b7">T_Page::Height</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>, <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>, <a class="el" href="pages_8c.html#a42ca8526e896527969ecce20b7ae6740">Upload_infos_page_main()</a>, <a class="el" href="pages_8c.html#a5c6a9f5975bff6ef84cbcd04c8fe41f3">Upload_infos_page_spare()</a>, and <a class="el" href="structT__Page.html#aa6c1cb16fb0edd5459d9c53132446a5c">T_Page::Width</a>.</p>
 
 <p>Referenced by <a class="el" href="buttons_8h.html#aa3281c7fb1160ed32c5a4a97424e1968">Button_Page()</a>.</p>
 
@@ -865,19 +884,21 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="operatio_8h.html#ae036ae140c892d1c495b6ad0927863b4">Airbrush_0_2()</a>, <a class="el" href="operatio_8h.html#a5e0234342deeccaa3d996000f4c16731">Brush_0_5()</a>, <a class="el" href="buttons_8h.html#a2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="buttons_8h.html#a45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="palette_8h.html#a389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="operatio_8h.html#a51edf512c8722eaa3de4639805a272d0">Centered_lines_12_7()</a>, <a class="el" href="operatio_8h.html#a8d998909fbab9fae31e760132b910d86">Curve_3_points_12_11()</a>, <a class="el" href="operatio_8h.html#a72507eb7a3cf24c936b272ce5748bc4f">Curve_4_points_2_9()</a>, <a class="el" href="operatio_8h.html#ad3e6cf616efac87e1b03b9b7e6af9ef0">Empty_circle_0_5()</a>, <a class="el" href="operatio_8h.html#a3ac9e41fe1601812771efbea546d9db9">Empty_ellipse_0_5()</a>, <a class="el" href="operatio_8h.html#a396edf9e3b92dd32e784af56388964b7">Empty_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#a5e7aab059d4708135cfdf0d2132ded3e">Fill_1_0()</a>, <a class="el" href="operatio_8h.html#af70f127fd7d3374515549b131cdf068e">Fill_2_0()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="operatio_8h.html#a861e044b97f00124ba5514185f2eed2e">Filled_circle_0_5()</a>, <a class="el" href="operatio_8h.html#acb498974d84c2012808506e4c09ae4c8">Filled_contour_0_8()</a>, <a class="el" href="operatio_8h.html#a14bad98d6f50d6828ac63f3df02535c5">Filled_ellipse_0_5()</a>, <a class="el" href="operatio_8h.html#adc4585c134d527f590a95b5142d0df84">Filled_polyform_12_8()</a>, <a class="el" href="operatio_8h.html#a0e3cbf930c5b6ed8eaa26242f5521121">Filled_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#a9b23d339fc5af4c97431278ec91851c1">Freehand_mode12_0_2()</a>, <a class="el" href="operatio_8h.html#a2e176dd456727e5fb5c5375b28610281">Freehand_mode3_0_1()</a>, <a class="el" href="graph_8c.html#a16201962ab33ab52fa760e25be8e13b0">Get_colors_from_brush()</a>, <a class="el" href="operatio_8h.html#a1182b57479b30596fdff21acd09c3eb4">Grad_circle_0_6()</a>, <a class="el" href="operatio_8h.html#ac8bfdab931d3f8f00c06c2b5bef391cc">Grad_circle_12_8()</a>, <a class="el" href="operatio_8h.html#a8e458d13a13c5f80a10d5a39bd075a20">Grad_ellipse_0_6()</a>, <a class="el" href="operatio_8h.html#ac778462b34cfec4f50d37d93330877e2">Grad_ellipse_12_8()</a>, <a class="el" href="operatio_8h.html#ac82c55cb83a45f0fef70246ebea74d38">Grad_rectangle_0_9()</a>, <a class="el" href="operatio_8h.html#a471b207e6bc2fb954317f03b0fdf43aa">K_line_12_7()</a>, <a class="el" href="operatio_8h.html#a0b826f43bf092d563e08d4f9b2cf1753">Line_0_5()</a>, <a class="el" href="operatio_8h.html#a96cbc01ad23c75758df8e6c0c98d3df9">Polybrush_12_8()</a>, <a class="el" href="operatio_8h.html#a9bd1c10800e213a552d84f208b62687b">Polyfill_12_9()</a>, <a class="el" href="operatio_8h.html#a812acd49035c414d1aecf286fba6e59a">Polyform_12_8()</a>, <a class="el" href="operatio_8h.html#a406241ea0535e9898b08f46d1c3e8fa5">Polygon_12_9()</a>, <a class="el" href="operatio_8h.html#a7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, <a class="el" href="operatio_8h.html#a47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>, and <a class="el" href="operatio_8h.html#abbbf9a41b8f745c7cd5bdd069d120060">Scroll_0_4()</a>.</p>
+<p>References <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, and <a class="el" href="pages_8c.html#ac845592ced6789ac273887f600e26f49">Update_screen_targets()</a>.</p>
+
+<p>Referenced by <a class="el" href="operatio_8h.html#ae036ae140c892d1c495b6ad0927863b4">Airbrush_0_2()</a>, <a class="el" href="operatio_8h.html#a5e0234342deeccaa3d996000f4c16731">Brush_0_5()</a>, <a class="el" href="buttons_8h.html#a2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="buttons_8h.html#a45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="palette_8h.html#a389f3779da010fc3bea2cd134dc50fb4">Button_Palette()</a>, <a class="el" href="transform_8h.html#a97d5d923d54be7bd5ab0f9492ad9dab4">Button_Transform_menu()</a>, <a class="el" href="operatio_8h.html#a51edf512c8722eaa3de4639805a272d0">Centered_lines_12_7()</a>, <a class="el" href="operatio_8h.html#a8d998909fbab9fae31e760132b910d86">Curve_3_points_12_11()</a>, <a class="el" href="operatio_8h.html#a72507eb7a3cf24c936b272ce5748bc4f">Curve_4_points_2_9()</a>, <a class="el" href="operatio_8h.html#ad3e6cf616efac87e1b03b9b7e6af9ef0">Empty_circle_0_5()</a>, <a class="el" href="operatio_8h.html#a3ac9e41fe1601812771efbea546d9db9">Empty_ellipse_0_5()</a>, <a class="el" href="operatio_8h.html#a396edf9e3b92dd32e784af56388964b7">Empty_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#a5e7aab059d4708135cfdf0d2132ded3e">Fill_1_0()</a>, <a class="el" href="operatio_8h.html#af70f127fd7d3374515549b131cdf068e">Fill_2_0()</a>, <a class="el" href="graph_8h.html#a8ac4f103e74d2de70e2cb5015d53463d">Fill_general()</a>, <a class="el" href="operatio_8h.html#a861e044b97f00124ba5514185f2eed2e">Filled_circle_0_5()</a>, <a class="el" href="operatio_8h.html#acb498974d84c2012808506e4c09ae4c8">Filled_contour_0_8()</a>, <a class="el" href="operatio_8h.html#a14bad98d6f50d6828ac63f3df02535c5">Filled_ellipse_0_5()</a>, <a class="el" href="operatio_8h.html#adc4585c134d527f590a95b5142d0df84">Filled_polyform_12_8()</a>, <a class="el" href="operatio_8h.html#a0e3cbf930c5b6ed8eaa26242f5521121">Filled_rectangle_0_5()</a>, <a class="el" href="operatio_8h.html#a9b23d339fc5af4c97431278ec91851c1">Freehand_mode12_0_2()</a>, <a class="el" href="operatio_8h.html#a2e176dd456727e5fb5c5375b28610281">Freehand_mode3_0_1()</a>, <a class="el" href="graph_8c.html#a16201962ab33ab52fa760e25be8e13b0">Get_colors_from_brush()</a>, <a class="el" href="operatio_8h.html#a1182b57479b30596fdff21acd09c3eb4">Grad_circle_0_6()</a>, <a class="el" href="operatio_8h.html#ac8bfdab931d3f8f00c06c2b5bef391cc">Grad_circle_12_8()</a>, <a class="el" href="operatio_8h.html#a8e458d13a13c5f80a10d5a39bd075a20">Grad_ellipse_0_6()</a>, <a class="el" href="operatio_8h.html#ac778462b34cfec4f50d37d93330877e2">Grad_ellipse_12_8()</a>, <a class="el" href="operatio_8h.html#ac82c55cb83a45f0fef70246ebea74d38">Grad_rectangle_0_9()</a>, <a class="el" href="pages_8h.html#a5898b470cc2079e27c87948c8e722e2f">Init_all_backup_lists()</a>, <a class="el" href="operatio_8h.html#a471b207e6bc2fb954317f03b0fdf43aa">K_line_12_7()</a>, <a class="el" href="operatio_8h.html#a0b826f43bf092d563e08d4f9b2cf1753">Line_0_5()</a>, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="operatio_8h.html#a96cbc01ad23c75758df8e6c0c98d3df9">Polybrush_12_8()</a>, <a class="el" href="operatio_8h.html#a9bd1c10800e213a552d84f208b62687b">Polyfill_12_9()</a>, <a class="el" href="operatio_8h.html#a812acd49035c414d1aecf286fba6e59a">Polyform_12_8()</a>, <a class="el" href="operatio_8h.html#a406241ea0535e9898b08f46d1c3e8fa5">Polygon_12_9()</a>, <a class="el" href="operatio_8h.html#a7ddd9b73965dffa4242d5cb87388d0b1">Replace_1_0()</a>, <a class="el" href="operatio_8h.html#a47ddba2829bd3cdbedfdc618055652c6">Replace_2_0()</a>, and <a class="el" href="operatio_8h.html#a6e69d27d6daa7a273afe3dcfd49b3034">Scroll_0_5()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2e2d5cce3671daf85318635f5710c32e"></a><!-- doxytag: member="pages.h::Borrow_memory_from_page" ref="a2e2d5cce3671daf85318635f5710c32e" args="(int size)" -->
+<a class="anchor" id="a0248117dfbd2d380d9c22ef5f2946930"></a><!-- doxytag: member="pages.h::Update_depth_buffer" ref="a0248117dfbd2d380d9c22ef5f2946930" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* Borrow_memory_from_page </td>
+          <td class="memname">void Update_depth_buffer </td>
           <td>(</td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>size</em></td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -885,23 +906,21 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>BORROWING MEMORY FROM PAGE. </p>
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">Main_layers_visible</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>.</p>
 
-<p>References <a class="el" href="pages_8c.html#adc1e24e09808f3a4a361f1d858ff8fe0">Can_borrow_memory_from_page()</a>, <a class="el" href="pages_8c.html#a2db2254b6d0b58b23f550f9ae0d5a86c">Free_last_page_of_list()</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="misc_8c.html#a16d7c98431a8262fbbe03f5980b52295">Memory_free()</a>, <a class="el" href="const_8h.html#a21ac5e239d5befa9f144f10bb61d35d7">MINIMAL_MEMORY_TO_RESERVE</a>, <a class="el" href="structT__List__of__pages.html#ac6c201c4cda80c685bebd405a04aa35c">T_List_of_pages::Nb_pages_allocated</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>.</p>
-
-<p>Referenced by <a class="el" href="loadsave_8c.html#aa9a5201bb00ef954b1dc2785ae1b1c54">Init_preview_24b()</a>.</p>
+<p>Referenced by <a class="el" href="special_8h.html#aca2e171f1dae3f9745d0c19da74ebf0b">Layer_activate()</a>, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, and <a class="el" href="operatio_8h.html#a6e69d27d6daa7a273afe3dcfd49b3034">Scroll_0_5()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adc1e24e09808f3a4a361f1d858ff8fe0"></a><!-- doxytag: member="pages.h::Can_borrow_memory_from_page" ref="adc1e24e09808f3a4a361f1d858ff8fe0" args="(int size)" -->
+<a class="anchor" id="a31855500ff8ab47d132920a43f4700f1"></a><!-- doxytag: member="pages.h::Redraw_layered_image" ref="a31855500ff8ab47d132920a43f4700f1" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Can_borrow_memory_from_page </td>
+          <td class="memname">void Redraw_layered_image </td>
           <td>(</td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>size</em></td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -909,14 +928,126 @@ window.onload = initDynSections;
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="misc_8c.html#a16d7c98431a8262fbbe03f5980b52295">Memory_free()</a>, <a class="el" href="const_8h.html#a21ac5e239d5befa9f144f10bb61d35d7">MINIMAL_MEMORY_TO_RESERVE</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#aa92e9246d1685c737fb65b5c52ca073c">Size_of_a_list_of_pages()</a>, <a class="el" href="pages_8c.html#af4f3d768fef7549611fe6b42d7fbb0f4">Size_of_a_page()</a>, and <a class="el" href="global_8h.html#a13392777ace8ab608ffb08c305b4f69f">Spare_backups</a>.</p>
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="pages_8c.html#acca7b0482a9bd226207cb97c35dbfbf9">Download_infos_backup()</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">Main_layers_visible</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>, and <a class="el" href="pages_8c.html#ac845592ced6789ac273887f600e26f49">Update_screen_targets()</a>.</p>
 
-<p>Referenced by <a class="el" href="pages_8h.html#a2e2d5cce3671daf85318635f5710c32e">Borrow_memory_from_page()</a>.</p>
+<p>Referenced by <a class="el" href="buttons_8h.html#a2a14eb28c5fb565871b191739efb1d70">Button_Clear()</a>, <a class="el" href="buttons_8h.html#a45209d92e4a6287c3c04dcdcd19a9874">Button_Clear_with_backcolor()</a>, <a class="el" href="buttons_8h.html#a50a748c652f5870fbcd143e349df4ba9">Button_Reload()</a>, <a class="el" href="transform_8h.html#a97d5d923d54be7bd5ab0f9492ad9dab4">Button_Transform_menu()</a>, <a class="el" href="pages_8h.html#ab6c51648cb65ee12d0428bf6ada804b5">Exchange_main_and_spare()</a>, <a class="el" href="pages_8h.html#ac5ad0dab79e741a09b2ba294ff9eee69">Free_current_page()</a>, <a class="el" href="special_8h.html#aca2e171f1dae3f9745d0c19da74ebf0b">Layer_activate()</a>, <a class="el" href="buttons_8h.html#ae167d273a3f5e84a9bf5c1bcd7a60520">Load_picture()</a>, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="pages_8h.html#a1abbcaf2cafb080f3f0e49691066d4bc">Redo()</a>, <a class="el" href="graph_8h.html#a3fd7798bca9d72b7990ed3fc39aab782">Resize_image()</a>, and <a class="el" href="pages_8h.html#a9b5d87b6bf38f53a4367cd4f5da97688">Undo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37e40177f2a59cfdcbfbdbb70285d71d"></a><!-- doxytag: member="pages.h::Redraw_current_layer" ref="a37e40177f2a59cfdcbfbdbb70285d71d" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Redraw_current_layer </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="struct_8h.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">Main_image_height</a>, <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">Main_image_width</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="structT__Page.html#af137a2eadc24652db28c241e3418182e">T_Page::Transparent_color</a>.</p>
+
+<p>Referenced by <a class="el" href="operatio_8h.html#a634b1e03ac2dee27923f7db5086f72e0">Scroll_12_5()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac845592ced6789ac273887f600e26f49"></a><!-- doxytag: member="pages.h::Update_screen_targets" ref="ac845592ced6789ac273887f600e26f49" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Update_screen_targets </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="structT__Page.html#ae7b6f969e55d44c1a043681599f59f67">T_Page::Image</a>, <a class="el" href="structT__Image.html#a49e5bbb4ee8132e7b723c974334e4b4a">T_Image::Image</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a84801d7b065eadfcbd65f71d03a11a56">Main_screen</a>, <a class="el" href="structT__Page.html#ac415d41e6ed6e2659c3b28a2f116d24e">T_Page::Next</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, and <a class="el" href="global_8h.html#a3c3086deedc9679e9f7ee3d73a973510">Screen_backup</a>.</p>
+
+<p>Referenced by <a class="el" href="buttons_8h.html#aa3281c7fb1160ed32c5a4a97424e1968">Button_Page()</a>, <a class="el" href="pages_8h.html#abfd76406a98a74c90fe4e633027e5fff">End_of_modification()</a>, <a class="el" href="special_8h.html#aca2e171f1dae3f9745d0c19da74ebf0b">Layer_activate()</a>, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>, <a class="el" href="pages_8h.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, and <a class="el" href="pages_8c.html#ad0be7aac343133bce049d97c9e40ee95">Update_buffers()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="abbceee065c5eb33efe87aff0566e0508"></a><!-- doxytag: member="pages.h::Visible_image" ref="abbceee065c5eb33efe87aff0566e0508" args="[2]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structT__Image.html">T_Image</a> <a class="el" href="pages_8h.html#abbceee065c5eb33efe87aff0566e0508">Visible_image</a>[2]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Array of two images, that contains the "flattened" version of the visible layers. </p>
+
+<p>Referenced by <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a825c46783020b623d70094c556922998"></a><!-- doxytag: member="pages.h::Visible_image_depth_buffer" ref="a825c46783020b623d70094c556922998" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structT__Image.html">T_Image</a> <a class="el" href="pages_8h.html#a825c46783020b623d70094c556922998">Visible_image_depth_buffer</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="main_8c.html#ad289e8a3991d868778ee6188adbf7b0f">Init_program()</a>, <a class="el" href="graph_8h.html#ae744e031b7f446b5877820113ba41ee4">Pixel_in_current_screen()</a>, and <a class="el" href="graph_8h.html#aa7dfe7956d07a7151ad34b3c481d7f74">Read_pixel_from_current_screen()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab35ed591938cc0910b968c261d1e796f"></a><!-- doxytag: member="pages.h::Stats_pages_number" ref="ab35ed591938cc0910b968c261d1e796f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="pages_8h.html#ab35ed591938cc0910b968c261d1e796f">Stats_pages_number</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>STATISTICS. </p>
+<p>Total number of unique bitmaps (layers, animation frames, backups) </p>
+
+<p>Referenced by <a class="el" href="help_8h.html#a5c93538756ff9f83b2b1de4dbc5f5734">Button_Stats()</a>, <a class="el" href="pages_8c.html#a3624b8387cd254f58c37ec24faff57be">Free_layer()</a>, and <a class="el" href="pages_8c.html#a666cb647fa71fae026c5e21d9bed790b">New_layer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e7ac4e0601afa233e4313c792736db4"></a><!-- doxytag: member="pages.h::Stats_pages_memory" ref="a0e7ac4e0601afa233e4313c792736db4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long <a class="el" href="pages_8h.html#a0e7ac4e0601afa233e4313c792736db4">Stats_pages_memory</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Total memory used by bitmaps (layers, animation frames, backups). </p>
+
+<p>Referenced by <a class="el" href="help_8h.html#a5c93538756ff9f83b2b1de4dbc5f5734">Button_Stats()</a>, <a class="el" href="pages_8c.html#a3624b8387cd254f58c37ec24faff57be">Free_layer()</a>, and <a class="el" href="pages_8c.html#a666cb647fa71fae026c5e21d9bed790b">New_layer()</a>.</p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Sat Oct 31 10:39:49 2009 for GrafX2 by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:22 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -94,6 +94,11 @@ window.onload = initDynSections;
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#ac55ae57505acc18d36852fbe05784379">Display_stored_brush_in_window</a> (word x, word y, int number)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#aa8b49a613a9690414c2e2a594ea7bd04">Store_brush</a> (int index)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">byte&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#a6e6c96d0f36b9a1b120dafc518576321">Restore_brush</a> (int index)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#a56612d099fe50101b49aee2337338492">Transparency_set</a> (byte amount)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Command that sets the transparency level.  <a href="#a56612d099fe50101b49aee2337338492"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#aca2e171f1dae3f9745d0c19da74ebf0b">Layer_activate</a> (short layer, short side)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#ae58fe16057e4e7a21e3177d6b43ffdc6">Special_add_layer</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="special_8h.html#a1cb1d1f1178c9658b0b228639c90aea9">Special_delete_layer</a> (void)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Editor functions that can be hooked to a keyboard shortcut, but don't have a menu button associated to them. </p>
@@ -547,8 +552,99 @@ window.onload = initDynSections;
 
 </div>
 </div>
+<a class="anchor" id="a56612d099fe50101b49aee2337338492"></a><!-- doxytag: member="special.h::Transparency_set" ref="a56612d099fe50101b49aee2337338492" args="(byte amount)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transparency_set </td>
+          <td>(</td>
+          <td class="paramtype">byte&nbsp;</td>
+          <td class="paramname"> <em>amount</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Sat Oct 31 10:39:49 2009 for GrafX2 by&nbsp;
+<div class="memdoc">
+
+<p>Command that sets the transparency level. </p>
+
+<p>References <a class="el" href="global_8h.html#a0ecc6733718ca4c7fab1c97a3a2f6127">Colorize_current_mode</a>, <a class="el" href="global_8h.html#acb08c8aec1001c5f21be14346c7c7d26">Colorize_mode</a>, <a class="el" href="global_8h.html#a2ce1d41fba396065a0f221dee0ec371f">Colorize_opacity</a>, <a class="el" href="buttons_8c.html#a778ac7380a29d90d886db82dd401c467">Compute_colorize_table()</a>, <a class="el" href="global_8h.html#ac89e0a435183cc637988a7f9de82243d">Config</a>, <a class="el" href="structT__Config.html#af0529be1a1e4f76ba5a0dcf652c31a23">T_Config::Double_key_speed</a>, <a class="el" href="misc_8c.html#ae6bfe55981a89a35abcfd555b1f681d4">Effect_additive_colorize()</a>, <a class="el" href="global_8h.html#a173d06ea0da7ef27f7aa066046727caa">Effect_function</a>, <a class="el" href="misc_8c.html#a0ef27825fe52f329535df5159372968b">Effect_interpolated_colorize()</a>, <a class="el" href="misc_8c.html#aea9a62a634de3488b96d6e066430ed20">Effect_substractive_colorize()</a>, <a class="el" href="global_8h.html#a70b610378cf38a8ce70bcd2b44576d1f">Quick_shade_mode</a>, <a class="el" href="global_8h.html#aaf801821cb8c0d4cde83c8222c068746">Shade_mode</a>, <a class="el" href="global_8h.html#a5c583fa6d0b62b878ba2726cf65c3ff1">Smooth_mode</a>, and <a class="el" href="global_8h.html#afe7c7c9f1ba2ef167a06c867d33c10cd">Tiling_mode</a>.</p>
+
+<p>Referenced by <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca2e171f1dae3f9745d0c19da74ebf0b"></a><!-- doxytag: member="special.h::Layer_activate" ref="aca2e171f1dae3f9745d0c19da74ebf0b" args="(short layer, short side)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Layer_activate </td>
+          <td>(</td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&nbsp;</td>
+          <td class="paramname"> <em>side</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="windows_8c.html#a17e3a6d0561e3a5c250d1cf031293fd7">Display_all_screen()</a>, <a class="el" href="windows_8c.html#a40a1e54f61262000b1ef50b42914e378">Display_cursor()</a>, <a class="el" href="struct_8h.html#a55849dc98f28432a4601c29a4a352a97">dword</a>, <a class="el" href="global_8h.html#aa0602b6d3de99d053ef820953cd58613">Hide_cursor</a>, <a class="el" href="const_8h.html#afcef3187c40bbab100f6605e2e92c421">LEFT_SIDE</a>, <a class="el" href="global_8h.html#a88a4c257f2d562a1f74fd407e976e90b">Main_backups</a>, <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">Main_current_layer</a>, <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">Main_layers_visible</a>, <a class="el" href="structT__Page.html#a0568920ce5179ce88d918c6c1a02512f">T_Page::Nb_layers</a>, <a class="el" href="structT__List__of__pages.html#a84a4eb3821ab9c6533e3e4284a8dade2">T_List_of_pages::Pages</a>, <a class="el" href="pages_8c.html#a31855500ff8ab47d132920a43f4700f1">Redraw_layered_image()</a>, <a class="el" href="const_8h.html#ad3956168f0f547d8e524c4654e8648c8">RIGHT_SIDE</a>, <a class="el" href="pages_8c.html#a0248117dfbd2d380d9c22ef5f2946930">Update_depth_buffer()</a>, <a class="el" href="pages_8c.html#ac845592ced6789ac273887f600e26f49">Update_screen_targets()</a>, and <a class="el" href="struct_8h.html#a836535f59bf515522a395858a8029d42">word</a>.</p>
+
+<p>Referenced by <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">Main_handler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae58fe16057e4e7a21e3177d6b43ffdc6"></a><!-- doxytag: member="special.h::Special_add_layer" ref="ae58fe16057e4e7a21e3177d6b43ffdc6" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Special_add_layer </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1cb1d1f1178c9658b0b228639c90aea9"></a><!-- doxytag: member="special.h::Special_delete_layer" ref="a1cb1d1f1178c9658b0b228639c90aea9" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Special_delete_layer </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:22 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -129,6 +129,9 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 <li>Main_current_directory
 : <a class="el" href="global_8h.html#a553bb298b2b4d773b9953a2799b8ab47">global.h</a>
 </li>
+<li>Main_current_layer
+: <a class="el" href="global_8h.html#aa78c910196862a423c3af8f9f79d383a">global.h</a>
+</li>
 <li>Main_file_directory
 : <a class="el" href="global_8h.html#a615a01559721223b9b961036aa6e6acd">global.h</a>
 </li>
@@ -148,8 +151,8 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 : <a class="el" href="global_8h.html#af77c9c03f1f618275d2d19ffb75f2cc2">global.h</a>
 </li>
 <li>Main_handler()
-: <a class="el" href="engine_8c.html#a42728d68a9a0f792b7a328ddbf526a88">engine.c</a>
-, <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">engine.h</a>
+: <a class="el" href="engine_8h.html#a42728d68a9a0f792b7a328ddbf526a88">engine.h</a>
+, <a class="el" href="engine_8c.html#a42728d68a9a0f792b7a328ddbf526a88">engine.c</a>
 </li>
 <li>Main_image_height
 : <a class="el" href="global_8h.html#a3bd99d0d57ef2e3f8564020d08234d3d">global.h</a>
@@ -159,6 +162,9 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 </li>
 <li>Main_image_width
 : <a class="el" href="global_8h.html#aa54e73b05c470585f95a021a7fa94d46">global.h</a>
+</li>
+<li>Main_layers_visible
+: <a class="el" href="global_8h.html#a8bd0780a939f56f358e32dada7996083">global.h</a>
 </li>
 <li>Main_magnifier_factor
 : <a class="el" href="global_8h.html#a0ac98f60637f9c38e92f263474f2d436">global.h</a>
@@ -270,11 +276,11 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 <li>Menu_font
 : <a class="el" href="global_8h.html#ae05de4515bea796801216dfa5645edce">global.h</a>
 </li>
-<li>Menu_height
-: <a class="el" href="global_8h.html#ac6a84d0128c5a17fcfd1a9ef02e5354c">global.h</a>
-</li>
 <li>MENU_HEIGHT
 : <a class="el" href="const_8h.html#aaa3f89d08a9fcf0af415b012b8138ebf">const.h</a>
+</li>
+<li>Menu_height
+: <a class="el" href="global_8h.html#ac6a84d0128c5a17fcfd1a9ef02e5354c">global.h</a>
 </li>
 <li>Menu_is_visible
 : <a class="el" href="global_8h.html#a2fc32ddf0feb46fa148cfddb539378e6">global.h</a>
@@ -313,13 +319,17 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 <li>Menu_Y_before_window
 : <a class="el" href="global_8h.html#a539018a0fc48fbcb317333c4a502312c">global.h</a>
 </li>
+<li>Merge_layer()
+: <a class="el" href="pages_8h.html#a4f5afb11263cdd409d34d9e756917aa3">pages.h</a>
+, <a class="el" href="pages_8c.html#a4f5afb11263cdd409d34d9e756917aa3">pages.c</a>
+</li>
 <li>Message_out_of_memory()
 : <a class="el" href="buttons_8h.html#a0276ae70c0fd85e6dde57534cef13766">buttons.h</a>
 , <a class="el" href="buttons_8c.html#a0276ae70c0fd85e6dde57534cef13766">buttons.c</a>
 </li>
 <li>Min()
-: <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">misc.c</a>
-, <a class="el" href="misc_8h.html#ad653ee667d0fe6d6d5f264c62108777d">misc.h</a>
+: <a class="el" href="misc_8h.html#ad653ee667d0fe6d6d5f264c62108777d">misc.h</a>
+, <a class="el" href="misc_8c.html#ad653ee667d0fe6d6d5f264c62108777d">misc.c</a>
 </li>
 <li>Min4()
 : <a class="el" href="brush_8c.html#a7921ae615dcff2bef2fce57253c6bb78">brush.c</a>
@@ -348,6 +358,18 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 <li>MOD_SHIFT
 : <a class="el" href="global_8h.html#a80466852094a4327279c19227119f908">global.h</a>
 </li>
+<li>mode0interlace()
+: <a class="el" href="libraw2crtc_8c.html#a6efa0b93f2d94f54f1656eac4f5d25d3">libraw2crtc.c</a>
+</li>
+<li>mode1interlace()
+: <a class="el" href="libraw2crtc_8c.html#ad45461929dfb440211036aaa84ff4c8c">libraw2crtc.c</a>
+</li>
+<li>mode2interlace()
+: <a class="el" href="libraw2crtc_8c.html#ae48f2d946a64d270638af1ca1f202942">libraw2crtc.c</a>
+</li>
+<li>mode3interlace()
+: <a class="el" href="libraw2crtc_8c.html#a56145217d8e839dda934e8faa982b9d4">libraw2crtc.c</a>
+</li>
 <li>Mode_label()
 : <a class="el" href="misc_8h.html#a900e604f1e35b3709a094d41b45712b9">misc.h</a>
 , <a class="el" href="misc_8c.html#a900e604f1e35b3709a094d41b45712b9">misc.c</a>
@@ -360,12 +382,6 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 </li>
 <li>MOUNTED_GETMNTENT1
 : <a class="el" href="mountlist_8c.html#a573c756376d414a725f4f7ddb593da31">mountlist.c</a>
-</li>
-<li>Mouse_fix_factor_X
-: <a class="el" href="global_8h.html#acab11260af69a1489d6a57367dfa1f9c">global.h</a>
-</li>
-<li>Mouse_fix_factor_Y
-: <a class="el" href="global_8h.html#a6a815c1250a49977beba85333c97db35">global.h</a>
 </li>
 <li>Mouse_K
 : <a class="el" href="global_8h.html#a2e4ccded4ffa45d9e834ca98bf366e01">global.h</a>
@@ -408,7 +424,7 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 </li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Sat Oct 31 10:39:50 2009 for GrafX2 by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Wed Nov 11 12:14:23 2009 for GrafX2 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
