@@ -1,0 +1,34 @@
+#summary Stackable menubars for layers, animation, and maybe other things
+#labels Developpers
+
+= Introduction =
+
+GrafX2 uses a single menu with all the tools inside. This is great, but we're running out of space and we need to add more features. As we don't want to have a menu that eats up the whole screen, and features that stay hidden if you don't want to hear about it, we need to improve the menu system to have separate bars with different tools inside.
+
+= Bars =
+Planned bars for now :
+ # Status bar : Always at the bottom of the screen. Display the status text and the "bars" button.
+ # Drawing bar : The one you know. Buttons for drawing, for advanced tools, load, save, settings, and all that stuff.
+ # Layer bar : Displayed between drawing and status. Layers and layers operations
+ # Animation bar : Displayed above or below the drawing bar ? or below the layers ? Tools for animation, timeline, and this kind of stuff.
+ # Effects bar : above drawing bar. May replace the effects window. But it may not be worth it, you loose screen space and do you really win something ?
+
+= Handling =
+
+Bars are in a static order. They can't be moved. But you can hide or show them. To do that, the "hide" button in the statusbar will be replaced with a "bars" button, opening a small popup menu ((see mockups in the page about layers and animation for now). The menu allows you to select a bar, then the status of this bar is switched.
+
+F10 still hides everything, or show things in the state they were before you hidden them. It is the only way to hide the status bar.
+
+The drawing bar may or may not be hidden. It may be convenient to switch between "drawing" and "animation", one showing when you hide the other.
+
+Other shortcuts may be used to toggle bars independantly (for example shift + F10 = toggle layerbar, ctrl+F10 = toggle animation/drawing, ...).
+
+In the mockups, bars only expand to the part used by the menu, letting the palette area free. The palette may use this vertical space, or we could put something else in there. Or we could have the bar use full screen width, and the palette included in the drawing bar. This seems to make sense.
+
+= On the coding side =
+Miscelaneous notes for implementation...
+ * There is no way to have a dropdown button in the statusbar with the current code (buttons in the menu are not the same as button in windows). There is an experimental "popup" code but it does not work perfectly yet.
+ * The "hide" button is handled as being part of the menu bar while actually it isn't. meaning if you move the drawing bar up to make space for the layer bar, the hide button will be in the layerbar instead of the statusbar.
+ * The F10 key is plugged to the Hide_menu button. It should not be moved to the "Bars" button. The Hide button should be moved inside the popup opened by the bars button (and be labelled "hide all").
+ * If we want to get a nice popup like in the mockups, we have to make it skinnable. It uses smaller text and nice icons.
+ * We have to keep track of the status of each bar, and also of the global status of the menu (F10). The menu can be handled as a special case : if the statusbar is hidden, don't show any of the other bars.
