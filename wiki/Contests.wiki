@@ -2,10 +2,7 @@
 
 =GrafX2 13th birthday contest=
 This is the first contest we organized !
-Only 2 participants :
 
-Denis Salem: http://grafx2.googlecode.com/svn-history/r999/wiki/pictures/contests/hommedudesert.gif
-Ilkke: http://grafx2.googlecode.com/svn-history/r993/wiki/pictures/contests/happy%20birthday%20guys.png
-Peach: http://grafx2.googlecode.com/svn-history/r993/wiki/pictures/contests/limo-scan-final.gif
-
-Please send your vote to the google group so we can chose the winner !
+ # Ilkke: http://grafx2.googlecode.com/svn-history/r993/wiki/pictures/contests/happy%20birthday%20guys.png
+ # Peach: http://grafx2.googlecode.com/svn-history/r993/wiki/pictures/contests/limo-scan-final.gif
+ # Denis Salem: http://grafx2.googlecode.com/svn-history/r999/wiki/pictures/contests/hommedudesert.gif
