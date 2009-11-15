@@ -200,6 +200,7 @@ ADDITIONAL LAYER OPERATIONS:
 -move layer up/down - for arranging layers (already in mockup)
 
 -flash current layer - for quickly identifying layer contents. can be a key shortcut, or optionally when you select a layer it would flash briefly (toggable in prefs). flashing would be changing the colors of the layer contents for a brief period of time, perhaps to black then white. perhaps someone has a less aggressive idea.
+ UPDATE: optionally the layer could shake very briefly (move by a pixel vertically then back) or blink (go off/on) instead of the epilepsy-inducing flashing.
 
 -load/save individual layers - quite useful. perhaps add optional merging of palettes, etc
 
@@ -215,6 +216,11 @@ The "layer menu" can propose:
     * Clone current layer
     * Delete current layer
     * Flatten all
+
+UPDATE:
+ Functions that have dedicated buttons should be removed from the layer menu (all of the above?). Instead, two important functions could take their place:
+    * Load layer
+    * Save layer
     
 The existing "Copy to spare" menu will behave differently if the spare is a multi-layer image:
     * The copy of pixels (choices 1,2 and 4) will copy current layer to (replace) spare's current layer, without changing the spare's dimensions.
