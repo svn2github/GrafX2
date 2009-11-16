@@ -30,3 +30,6 @@ _Grafx2 running under SkyOS_
 
 http://grafx2.googlecode.com/svn/wiki/pictures/grafx2_dos.jpg
 _Grafx2 running under Dos (using HXExtender)_
+
+http://grafx2.googlecode.com/svn/wiki/pictures/gfx2_morphos.jpg
+_Grafx2 running under MorphOS_
