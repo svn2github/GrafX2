@@ -11,7 +11,7 @@
  * [LayersAndAnimation Pages, layers and animation features]
  * [Menubars Enhanced menu system needed for layers and animation]
  * [EventDrivenInputSystem]
- * [INI Settings List]
+ * [INISettingsList]
 
 == File formats ==
  * Grafx2 uses a custom picture format called [PKMSpec PKM]. Here are some informations about it.
