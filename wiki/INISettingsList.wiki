@@ -1,0 +1,63 @@
+#summary List of ini settings to keep track of which ones are accessible from the GUI, and which are only settable in the ini
+
+The goal is to get a list of settings that can't be changed from the GUI. If we add them all, it is possible to remove comments from the inifile and use a proper ini handling library.
+
+ * OK = Setting is accessible from the GUI
+ * DEL = Setting is unused, drop it
+ * ADD = Setting is not in GUI, add it
+
+=Mouse=
+||Setting||Status||Notes||
+||X_Sensivity||OK||In settings screen||
+||Y_Sensivity||OK||In settings screen||
+||X_correction_factor||DEL||||
+||Y_correction_factor||DEL||||
+||Cursor_aspect||OK||In skin screen||
+
+=Menu=
+||Light_color||DEL||Loaded from skin||
+||Dark_color||DEL||Loaded from skin||
+||Menu_ratio||ADD||||
+
+=File selecor=
+||Show_hidden_files||OK||||
+||Show_hidden_dirs||OK||||
+||Preview_delay||ADD||||
+||Maximize_preview||ADD||||
+||Find_file_fast||ADD||||
+
+=Loading=
+||Auto_set_res||OK||||
+||Set_resolution_according_to||ADD||Might be done as a dropdown replacing auto-set||
+||Clear_palette||ok||
+
+=Misc=
+||Draw_limits||ok||||
+||Adjust brush pick||ok||||
+||coordinates||ok||||
+||backup||ok||||
+||undo_pages||ok||||
+||gauges scrolling speed_left||ADD||||
+||gauges scrolling speed_right||ADD||||
+||auto-save||OK||||
+||Vertices_per_polygon||ADD||||
+||Fast_zoom||ADD||||
+||Separate_colors||OK||||
+||FX_Feedback||OK||||
+||Safety_colors||OK||||
+||Opening_message||ADD||||
+||Clear_with_stencil||ADD||Should be an option in the stencil menu ?||
+||Auto_discontinuous||ADD||||
+||Save_screen_size_in_GIF||ADD||||
+||Auto_nb_colors_used||ADD||Needs to be on for the histogram feature to work||
+||Default_video_mode||OK||||
+||Default_window_size||OK||||
+||Merge_movement||ADD||Should not be needed anymore if we switch to a proper event driven input system||
+||Palette_cells_XY||OK||||
+||Bookmarks||OK||Can't use the same name for all of them. Should switch to bookmark1_*||
+||Palette_vertical||OK||||
+||Windows_position||OK||||
+||Double_click_speed||ADD||||
+||Double_key_speed||ADD||||
+||Skin,Font||OK||||
+||Grid_XOR_Color||ADD||Should be part of the grid setting menu; or in palette settings and used for all XOR ops||
