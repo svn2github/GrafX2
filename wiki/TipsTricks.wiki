@@ -100,3 +100,10 @@ If you don't trust me, then know that it's by looking at Lazur's graphs that I f
 * Switch back to first image (tab)
 * Open the 'copy to spare' menu (shift-tab)
 * Choose 'palette and remap'
+
+== Replacing colors ==
+If you want to change the color mapping in a small part of your picture, you probably noticed that you can't use the 'color replace' tool as it will replace things in the whole picture.
+Here are good ways to do it :
+ * Using the stencil, you can tag all the colors except the one you want to replace. Then you can use any drawing tool to alter the color in one area of the picture without touching other colors
+ * For remapping a full tile in a sprite sheet, it's usually simpler to copy it to the spare page and remap it there with the color replace tool, before copying it back.
+ * To recolor a full sprite (for example if you want red, green and blue versions of the same sprite), you can use the quick-shade feature. If you have shades all of the same size and sorted in the palette, setting Quick Shade step to the shade size will make pixels jump from one shade to the following one when you click on them. Using it with 'feedback' disabled allows to easily recolor a sprite in one operation.
