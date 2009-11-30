@@ -22,6 +22,7 @@ The subversion also includes an XCode project for building under Mac OS X. If yo
   * SDL_image library
   * FreeType library (optional)
   * SDL_ttf library (optional)
+  * liblua5.1 (optional)
 
 Note you also need the headers of this libs. Under linux this is usually a separate package, like "libsdl1.2-dev", for example.
 
@@ -32,7 +33,13 @@ Note you also need the headers of this libs. Under linux this is usually a separ
 == Instructions ==
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* in the current directory. Voilà.
+
+=== Buldtime settings ===
 If you don't have FreeType and SDL_ttf, type `make NOTTF=1` instead. It will build a version without TrueType support : the Text tool will be limited to bitmap fonts, proportional fonts wiht .ttf extension won't be available.
+
+If you don't have lua available, type `make NOLUA=1`. You will not be able to use lua scripts to generate and alter brush and pictures.
+
+These options can be combined, for example for a build without ttf nor lua type `make NOTTF=1 NOLUA=1`.
 
 Under linux, you can then run `make install` to get the files installed in your system, in the /usr/local/ and /usr/share directories (the usual UNIX way). This may or may not work, the installation needs some more testing.
 
