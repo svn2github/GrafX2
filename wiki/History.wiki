@@ -4,7 +4,7 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
-== GRAFX 2.2 (WIP, updated to r1150) ==
+== GRAFX 2.2 (WIP, updated to r1252) ==
 ===New features===
   * Layers
   * Lua binding to generate and alter picture and brush with scripts
@@ -12,15 +12,28 @@
   * Load more formats when SDL_image can handle them (jpeg, tga, ...)
   * Show number of pixels used by colors in the selected range in palette window
   * Preview skins in the skin dialog. Move more settings there. Load preferred menu colors from the skin. Fix changing to a screen that use different color indexes for its menu colors.
+  * Save Amstrad CPC pictures in .SCR format.
 ===Improvements===
   * Changing zoom factor centers the image on the cursor so you can quickly zoom in and out without getting lost
   * Help message when running in console with /? or similar switch show some more options and a readable list of modes
   * Only show recognized extensions and not all files by default in save/load screen
   * Shade window selects the foreground color by default when opened, and if you close it with only one color selected either in the palette or the range filer, this color is selected as foreground
+  * Added more sspace for filename in toolbar when possible
+  * Better command line handling, allowing more options and possibility to load an image for the spare page too.
+  * Menu zoom is now maximum *2 by default. Avoids having a really big menu on modern screens.
+  * Rewrite of the save and load system to avoid a risk of corrupting the picture in some special cases
 ===Fixes===
   * Load and save palettes in "jasc" format and with the full 0..255 range
   * Removed deprecated setting "mouse correction factor"
   * Reset quicksearch when entering a directory in load/save dialog
+  * Rotating a brush 180° was broken if the height was even since r763.
+  * Fix BMP saving again.
+  * Contour fill help add a too long line
+  * Fix potential endianness and packing problem in all file formats.
+  * The homepage address on the splash screen was wrong !
+  * Crash if you enable mask with 2 pictures of different size in main and spare
+  * Mask and Stencil shortcuts were reversed in the FX window
+  * Joystick is now disabled by default to avoid mouse drifting
 
 ==GRAFX 2.1.1080 bugfix release (20/09/2009)==
   * Fixed: High CPU usage even when the program is idle (issue 217).
