@@ -21,6 +21,19 @@ If it's a brush, you can paste it like any other brush. If it's a picture, you s
 
 Here is a list of things you get in lua. If you think we should add more, let us know !
 
+== Conventions ==
+On this page we use the following conventions :
+ * x : horizontal position
+ * y : vertical position
+ * c : color index
+ * w : width
+ * h : height
+ * r : red
+ * g : green
+ * b : blue
+
+Note this is just for the examples below. You are free to name your variables the way you want.
+
 == Functions ==
 === Drawing ===
 This is as simple as it gets. You can just render some things to the brush or to the current layer.
@@ -86,3 +99,10 @@ end
 = Known bugs and limitations =
  * When your script generate a brush, you have to call brushenable to ensure it is displayed. If you don't, the user will not understand what happened as the brush may not be visible.
  * It is not possible to send custom parameters to a script, which makes the feature not so useful. It is not easy to make that simple with a nice GUI. Suggestions welcome. Or we could add a binding so lua scripts can open and draw windows...
+
+= More reading =
+Lua is a well known programming language.
+Here are some pages from the internet you may want to look at for more information :
+ * http://lua-users.org/wiki/MathLibraryTutorial Stuff about math.
+ * http://lua-users.org/wiki/LuaDirectory The Lua wiki with a lot of pointers to informations.
+ * http://code.google.com/p/grafx2/source/browse/#svn/trunk/scripts The subversion holds a set of scripts you may use as a base for yours. You can send us your scripts if you want them to be added to the list.
