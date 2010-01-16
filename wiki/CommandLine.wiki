@@ -11,8 +11,7 @@ There are not many options, but they are quite useful
 
  * /double emulates 2x2 pixels, /triple emulates 3x3 pixels, /quadruple 4x4 pixels. These are useful when the intended display resolution of your picture (eg for 320x240) is much greater than the actual resolution of the display you are editing it on (eg 1280x960), and/or the GUI of Grafx2 is becoming too small / unreadable.
  * /wide and /tall allow to use rectangle pixels (horizontal and vertical). This is useful to edit Amstrad CPC pictures, for example.
- * /wide2 and /tall2 are doubled versions of /wide and /tall. That is, /wide2 
-uses 4x2 pixels, and /tall2 uses 2x4 pixels.
+ * /wide2 and /tall2 are doubled versions of /wide and /tall. That is, /wide2 uses 4x2 pixels, and /tall2 uses 2x4 pixels.
  * /rgb n sets the color depth to n. For example, /rgb 2 will give you a spectrum-style 16-colors palette, /rgb 3 will give the Amstrad CPC 27 colors, /rgb 16 will give a classical Amiga palette, and /rgb 64 will give you a VGA palette, like the DOS version of grafx2 had.
  * picture loads a picture.
 
