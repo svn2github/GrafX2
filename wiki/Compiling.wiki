@@ -30,6 +30,9 @@ Note you also need the headers of this libs. Under linux this is usually a separ
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
   * the MinGW C compiler (this replaces gcc) Version 3.4.2 is known to work.
 
+=== Generic UNIX only (Linux, FreeBSD, ?) ===
+  * pkg-config if you want to include lua support
+
 == Instructions ==
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* in the current directory. Voilà.
