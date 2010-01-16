@@ -22,31 +22,45 @@ If it's a brush, you can paste it like any other brush. If it's a picture, you s
 Here is a list of things you get in lua. If you think we should add more, let us know !
 
 == Functions ==
- * {{{putbrushpixel(x, y, c)}}}
-Set the color of pixel at coords (x, y) in the brush to c.
+=== Drawing ===
+This is as simple as it gets. You can just render some things to the brush or to the current layer.
 
- * {{{getbrushpixel(x, y)}}}
-Returns the color of pixel at coords (x, y) in the brush.
+ * {{{putbrushpixel(x, y, c)}}} set the color of pixel at coords (x, y) in the brush to c.
+
+ * {{{putpicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the picture to c.
+
+=== Reading pixels ===
+These allows you to read existing data, for example to filter it, do batch color replacing, or any other distorsion you could come up with.
+
+ * {{{getbrushpixel(x, y)}}} returns the color of pixel at coords (x, y) in the brush.
+
+ * {{{getpicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the picture.
+
+ * {{{getbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup screen, that is, the picture before your script started to run.
+
+=== Picture infos ===
+Be careful not to write any data out of the picture space ! You may crash GrafX2 doing so...
+
+Note the resize occurs immediately and makes it impossible to read the old data properly without tricks. The backup screen should still be in a readable state.
 
  * {{{getbrushsize()}}} returns the brush size (w, h).
 
  * {{{setbrushsize(w, h)}}} sets the brush size.
 
- * {{{putpicturepixel(x, y, c)}}}
-Set the color of pixel at coords (x, y) in the picture to c.
-
- * {{{getpicturepixel(x, y)}}}
-Returns the color of pixel at coords (x, y) in the picture.
-
  * {{{getpicturesize()}}} returns the picture size (w, h).
 
  * {{{setpicturesize(w, h)}}} sets the picture size.
 
- * {{{setcolor(c,r,g,b)}}}
-Set color index c in palette to (r,g,b)
+=== Palette ===
+You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
 
- * {{{getcolor(c)}}}
-Returns the (r, g, b) value of color at index c.
+ * {{{setcolor(c,r,g,b)}}} set color index c in palette to (r,g,b)
+
+ * {{{getcolor(c)}}} returns the (r, g, b) value of color at index c.
+
+
+=== Misc functions ===
+These are for usability of your script.
 
  * {{{brushenable()}}} ensures that the brush you generated is selected. Please call this if your script alters the brush in any way.
 
