@@ -58,6 +58,8 @@ You can get infos on the palette for selecting your colors when drawing, or you 
 
  * {{{getcolor(c)}}} returns the (r, g, b) value of color at index c.
 
+ * {{{matchcolor(r,g,b)}}} return the index of the nearest color available in the palette.
+
 
 === Misc functions ===
 These are for usability of your script.
