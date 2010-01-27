@@ -52,3 +52,7 @@ Opens a menu from where you have the following options:
    * 4 for MSX2
    * 3 for Amstrad CPC
    * 2 for ZX Spectrum
+
+== Resources ==
+
+Some users sent us their palettes to share with you. Check out this page to download them : http://code.google.com/p/grafx2/source/browse/#svn/branches/pic-samples
