@@ -1,10 +1,10 @@
-#summary Generate a brush with some lines of code !
+#summary Lua scripting
 
 = Introduction =
 
 Grafx2 offers a lot of features, but sometimes you need something really
-particular, and it's not there. That's why we added the brush factory.
-It allows you to generate or modify a brush or a picture using a lua script.
+particular, and it's not there. That's why we added the brush factory, it allows you to generate or modify a brush using a lua script.
+It has been expanded to allow changing the image and palette.
 So you can extend Grafx2 capabilities with almost no limit!
 
 We are looking forward to your scripts, please send us them so we can share them
@@ -16,6 +16,7 @@ Using the brush factory is quite simple : just right click the 'brush effects' b
 It's a small window allowing you to select the script you want to run.
 Once you press the run button, the script is executed and generates something.
 If it's a brush, you can paste it like any other brush. If it's a picture, you should see it.
+If you create your own scripts and place them in _<program directory>/scripts_ they will appear in the list. Scripts are reloaded from disk when you run them, so you can edit them in a text editor and test them without leaving Grafx2.
 
 = API Reference =
 
@@ -42,27 +43,35 @@ This is as simple as it gets. You can just render some things to the brush or to
 
  * {{{putpicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the picture to c.
 
+Drawing out of bounds has no effect.
+
 === Reading pixels ===
 These allows you to read existing data, for example to filter it, do batch color replacing, or any other distorsion you could come up with.
 
  * {{{getbrushpixel(x, y)}}} returns the color of pixel at coords (x, y) in the brush.
 
- * {{{getpicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the picture.
+ * {{{getlayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the picture.
+
+ * {{{getpicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the picture. If there are several layers visible,this will pick "the color that you see".
 
  * {{{getbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup screen, that is, the picture before your script started to run.
 
-=== Picture infos ===
-Be careful not to write any data out of the picture space ! You may crash GrafX2 doing so...
+ * {{{getbrushbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup brush, before any of your changes.
 
-Note the resize occurs immediately and makes it impossible to read the old data properly without tricks. The backup screen should still be in a readable state.
+Reading out of the brush will return the BackGround color, ie. the one that marks transparent pixels in the brush.
+
+Reading out of the picture will return the Transparent color.
+
+=== Picture infos ===
+Note the resize occurs immediately. If you need the original dimensions, to read from the backup, you should query them before the resize and keep them in Lua variables.
 
  * {{{getbrushsize()}}} returns the brush size (w, h).
 
- * {{{setbrushsize(w, h)}}} sets the brush size.
+ * {{{setbrushsize(w, h)}}} sets the brush size. The new brush is initially filled with transparent pixels.
 
  * {{{getpicturesize()}}} returns the picture size (w, h).
 
- * {{{setpicturesize(w, h)}}} sets the picture size.
+ * {{{setpicturesize(w, h)}}} sets the picture size. All layers are clipped accordingly.
 
 === Palette ===
 You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
@@ -73,11 +82,10 @@ You can get infos on the palette for selecting your colors when drawing, or you 
 
  * {{{matchcolor(r,g,b)}}} return the index of the nearest color available in the palette.
 
+All of r,g,b and c are normally in the range 0 to 255. If you provide numbers outside of this range, they will roll over, for example 300 becomes 45 and -2 becomes 254.
 
 === Misc functions ===
 These are for usability of your script.
-
- * {{{brushenable()}}} ensures that the brush you generated is selected. Please call this if your script alters the brush in any way.
 
 = Sample script =
 
@@ -97,7 +105,6 @@ end
 }}}
 
 = Known bugs and limitations =
- * When your script generate a brush, you have to call brushenable to ensure it is displayed. If you don't, the user will not understand what happened as the brush may not be visible.
  * It is not possible to send custom parameters to a script, which makes the feature not so useful. It is not easy to make that simple with a nice GUI. Suggestions welcome. Or we could add a binding so lua scripts can open and draw windows...
 
 = More reading =
