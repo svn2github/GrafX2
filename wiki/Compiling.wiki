@@ -33,6 +33,11 @@ Note you also need the headers of this libs. Under linux this is usually a separ
 === Generic UNIX only (Linux, FreeBSD, ?) ===
   * pkg-config if you want to include lua support
 
+On debian-based distributils you should be able to get all these files by simply running trhe following command from a terminal :
+{{{
+sudo aptitude install gcc make libsdl1.2-dev libsdl-image1.2-dev libsdl-ttf2.0-dev libfreetype6-dev liblua5.1-0-dev lua5.1
+}}}
+
 == Instructions ==
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* in the current directory. Voilà.
