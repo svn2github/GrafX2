@@ -26,5 +26,4 @@ This is the palette repository. It holds palette submitted by some of our users.
 || * Misc. * ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne8.pal Arne's 8 color] || Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne8.png  || 8 color generic palette. ||  ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne16_v20.pal Arne's 16 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne16_v20.png  || 16 color generic palette. ||  ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64_real.pal Arne's 64 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64_real.png  || 64 color generic palette. ||  ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64.pal Another Arne 64 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64.png  || Unfinished work on Arne's 64 color palette. ||  ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64.pal Arne's 64 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64.png  || 64 color generic palette. ||  ||
