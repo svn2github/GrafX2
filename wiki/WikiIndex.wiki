@@ -4,6 +4,7 @@
   * [KeyFeatures Program overview]
   * [History Program history and change list]
   * [gallery Gallery and screenshots]
+  * [PaletteRepository Palette Repository]
 
   * [UserManual User Manual index]
   * [KeyboardShortcuts]
