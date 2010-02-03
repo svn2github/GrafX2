@@ -7,10 +7,7 @@ This is the palette repository. It holds palette submitted by some of our users.
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/apple2.pal Apple 2] || Woz || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/apple2.png  || Apple ][ palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/atari2600.pal Atari 2600] || Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/atari2600.png  || Atari 2600 palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/c64.pal Commodore 64] || Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/c64.png  || Commodore 64 palette. || Converted to grafx2 by Ilkke ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_256.pal Deluxe Paint 4 256colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_256.png  || Deluxe paint 256 color palette. || Converted to grafx2 by nitrofurano ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_32.pal Deluxe Paint 4 32colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_32.png  || Deluxe paint 32 color palette. || Converted to grafx2 by nitrofurano ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dwm.pal  SGI dwm] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dwm.png  || An old unix Window Manager. || Converted to grafx2 by nitrofurano ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/gameboy.pal  Game Boy] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dwm.png  || Game Boy palette. || Converted to grafx2 by Ilkke ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/gameboy.pal  Game Boy] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/gameboy.png  || Game Boy palette. || Converted to grafx2 by Ilkke ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/msx16.pal MSX1] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/msx16.png  || MSX1 palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/msx2_scr8.pal MSX2] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/msx2_scr8.png  || MSX2 palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/nes64.pal NES] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/nes64.png  || NES palette. || Converted to grafx2 by Ilkke ||
@@ -22,7 +19,10 @@ This is the palette repository. It holds palette submitted by some of our users.
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/tango.pal Tango] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/tango.png  || Tango palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/websafe.pal Websafe] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/websafe.png  || Websafe palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64.pal Imac] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64.png  || info needed. ||  ||
-|| * Games * ||
+|| * Games  and software * ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_256.pal Deluxe Paint 4 256colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_256.png  || Deluxe paint 256 color palette. || Converted to grafx2 by nitrofurano ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_32.pal Deluxe Paint 4 32colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_32.png  || Deluxe paint 32 color palette. || Converted to grafx2 by nitrofurano ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dwm.pal  SGI dwm] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dwm.png  || An old unix Window Manager. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/monkey2.pal Monkey Island 2] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/monkey2.png  || Monkey Island 2. || Contributed by RaveyGB ||
 || * Misc. * ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne8.pal Arne's 8 color] || Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne8.png  || 8 color generic palette. ||  ||
