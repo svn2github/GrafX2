@@ -11,14 +11,13 @@ This is the palette repository. It holds palette submitted by some of our users.
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/msx16.pal MSX1] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/msx16.png  || MSX1 palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/msx2_scr8.pal MSX2] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/msx2_scr8.png  || MSX2 palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/nes64.pal NES] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/nes64.png  || NES palette. || Converted to grafx2 by Ilkke ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/samcoupe.pal Sam Coupé] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/samcoupe.png  || SAM Coupé palette. || Converted to grafx2 by nitrofurano ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/samcoupe.pal Sam Coupï¿½] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/samcoupe.png  || SAM Coupï¿½ palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/zxspectrum.pal ZX Spectrum] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/zxspectrum.png  || ZX Spectrum palette. || Converted to grafx2 by nitrofurano ||
 || * Modern computers * ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/hsv256.pal HSV] || nitrofurano || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/hsv256.png  || Flat 256 color palette. || Nothing to see here ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/inkscape.pal Inkscape] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/inkscape.png  || Inkscape palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/tango.pal Tango] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/tango.png  || Tango palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/websafe.pal Websafe] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/websafe.png  || Websafe palette. || Converted to grafx2 by nitrofurano ||
-|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64.pal Imac] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64.png  || info needed. ||  ||
 || * Games  and software * ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_256.pal Deluxe Paint 4 256colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_256.png  || Deluxe paint 256 color palette. || Converted to grafx2 by nitrofurano ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/dp4_32.pal Deluxe Paint 4 32colors] ||Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/dp4_32.png  || Deluxe paint 32 color palette. || Converted to grafx2 by nitrofurano ||
@@ -28,3 +27,4 @@ This is the palette repository. It holds palette submitted by some of our users.
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne8.pal Arne's 8 color] || Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne8.png  || 8 color generic palette. ||  ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne16_v20.pal Arne's 16 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne16_v20.png  || 16 color generic palette. ||  ||
 || [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64_real.pal Arne's 64 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64_real.png  || 64 color generic palette. ||  ||
+|| [http://grafx2.googlecode.com/svn/branches/pic-samples/pal/arne64.pal Another Arne 64 color] ||Arne || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/arne64.png  || Unfinished work on Arne's 64 color palette. ||  ||
