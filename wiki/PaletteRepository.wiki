@@ -1,4 +1,4 @@
 This is the palette repository. It holds palette submitted by some of our users. You are free to use them for your own graphics, but crediting the origin of the palette would be nice.
 
-|| Name 		  || Author  || Preview || Description                                                    || Notes                              ||
-|| Amos 32 colors || Unknown ||         || 32 color palette from the AMOS game and demo editor for Amiga. || Converted to grafx2 by nitrofurano ||
+|| Name 		  || Author  || Preview                                                             || Description                                                    || Notes                              || Download ||
+|| Amos 32 colors || Unknown || http://grafx2.googlecode.com/svn/wiki/pictures/palettes/Amos32c.png || 32 color palette from the AMOS game and demo editor for Amiga. || Converted to grafx2 by nitrofurano || http://grafx2.googlecode.com/svn/branches/pic-samples/pal/Amos32c.pal
