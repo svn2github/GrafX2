@@ -3,7 +3,7 @@
 
 = Pictures =
 <table valign="top" border="0" cellspacing="0">
-<tr><td>
+<tr valign="top"><td>
 == Frost (http://pixeljoint.com/p/10385.htm / http://frosttlu.deviantart.com/) ==
 http://pixeljoint.com/files/icons/full/svampsatan_fin.gif 
 http://pixeljoint.com/files/icons/full/introx_logo.gif 
