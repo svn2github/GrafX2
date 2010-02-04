@@ -4,11 +4,14 @@
 = Pictures =
 <table valign="top" border="1" cellspacing="0">
 <tr><td>
-== Frost (http://pixeljoint.com/p/10385.htm / http://frosttlu.deviantart.com/) ==
+== Frost ==
+(http://pixeljoint.com/p/10385.htm / http://frosttlu.deviantart.com/)
 </td><td>
-== iLKke (http://pixeljoint.com/p/9270.htm / http://ilkke.blogspot.com/) == 
+== iLKke ==
+(http://pixeljoint.com/p/9270.htm / http://ilkke.blogspot.com/)
 </td><td>
-== Peach (http://pixeljoint.com/p/16233.htm |  http://peach.smartart.it) == 
+== Peach ==
+(http://pixeljoint.com/p/16233.htm |  http://peach.smartart.it)
 </td></tr>
 <tr><td valign="top"> 
 http://pixeljoint.com/files/icons/full/svampsatan_fin.gif 
