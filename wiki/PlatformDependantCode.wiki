@@ -86,3 +86,18 @@ To keep everybody happy, running *make depend* should generate an identical file
 #endif
 }}}
 If you have such situation where there is source file that is not needed for all platforms ("gfx2win.c"), include the header always, and _in the header file itself_, enclose all the declarations in a conditional #if.
+
+= 32bit vs 64bit =
+Size of native types for C compiler:
+
+*32bit compiler*
+|| *Type* || *Size* ||
+|| short int || 16bit ||
+|| int || 32bit ||
+|| long || 32bit ||
+
+*64bit compiler*
+|| *Type* || *Size* ||
+|| short || 16bit ||
+|| int || 32bit ||
+|| long || 64bit ||
