@@ -1,4 +1,5 @@
 #summary Downloads index
+#labels Featured
 = Downloads =
 
 [http://code.google.com/p/grafx2/downloads/list Main index]
