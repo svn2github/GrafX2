@@ -89,6 +89,16 @@ All of r,g,b and c are normally in the range 0 to 255. If you provide numbers ou
 === Misc functions ===
 These are for usability of your script.
 
+ * {{{inputbox(window_title,label_1,initial_value_1,min_1,max_1,...)}}} Opens a window that asks the user for one or several setting values. The control only accepts values between the min and max that you provide. If min and max are 0 and 1, it will show a checkbox, otherwise it's a numeric input. You can ask for more than one value by adding arguments: label_2, initial_value_2, min_2, max_2 etc. This function returns one value to tell if the user accepted or cancelled (true or false), and one additional return value by setting. Example:
+{{{
+ok, w, h, xflip, yflip = inputbox("Modify brush",
+  "Width",  w, 1,100,
+  "Height", h, 1,100,
+  "X-Flip", 0, 0, 1,
+  "Y-Flip", 0, 0, 1
+);
+}}}
+
 = Sample script =
 
 Here is a very small sample script that generate a diagonal gradient.
