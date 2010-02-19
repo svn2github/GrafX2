@@ -1,5 +1,10 @@
 #summary This page sums up all the contests we organized over time
 
+=Scripting Contest=
+The purpose of this contest was to stress-test GrafX2 new scripting capabilities.
+Here are the scripts : http://code.google.com/p/grafx2/source/browse/#svn/trunk/scripts
+Try them out and send your vote to the mailing list !
+
 =GrafX2 13th birthday contest=
 This is the first contest we organized !
 
