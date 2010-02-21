@@ -10,9 +10,9 @@ Here is a table showing the status of each format.
 || *Extension* || *Save* || *Load* || *Misc* ||
 || [PKMSpec PKM] || Yes || Yes || Grafx2 own format  ||
 || LBM || Yes || Yes || Electronic arts ||
-|| GIF || Partial || Partial || Compuserve GIF 87a. GrafX2 skips the extended data that records which color is *transparent*, *animation frames*, and tricks to assemble an image from several layers. If you re-save an image that had this kind of information, GrafX2 *removes it*. Saving is always in 8-bit palette (256 colors), and 1-bit files (2 color) cannot be read.||
-|| PNG || Yes || Yes except RGB|| Portable Network Graphics. Reads all forms of paletted images (from 2 to 256 colors), greyscale (any depth, converted to a 256-level greyscale palette from black to white). Additional PNG information, like Alpha channel and Transparency are not preserved. The image description is read and saved as the 'Title' text, limited to 32 characters. Saving is always with 256-color palette.||
-|| BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. ||
+|| GIF || Yes|| Yes except animation || Compuserve GIF 89a. If several images are present (animation...) GrafX2 will load them as layers (up to 16), and discard the timing data. Only one palette is supported, so high-color tricks are not supported. 1-bit files (2 color) cannot be read. Saving is always in 8-bit mode (256 colors). On saving, if several layers are present, Grafx2 will make a non-looping animated GIF. Transparent color is supported in load and save.||
+|| PNG || Yes || Yes || Portable Network Graphics. Reads all forms of paletted images (from 2 to 256 colors), greyscale (any depth, converted to a 256-level greyscale palette from black to white). Additional PNG information, like Alpha channel and Transparency are not preserved. The image description is read and saved as the 'Title' text, limited to 32 characters. Saving is always with 256-color palette. Palette transparency is supported, up to 1 color can be fully transparent. Saving is always in 8-bit mode (256 colors) ||
+|| BMP || Yes || Most || Microsoft Paint. Some variants of Bitmaps cannot be loaded, neither by the original GrafX2 nor by our version. Saving is always in 8-bit mode (256 colors) ||
 || PCX || Yes || Yes || Z-Soft ||
 || IMG || Yes || Yes || Bivas (W. Wiedmann) ||
 || SC? || Yes || Yes || Colorix ||
@@ -21,8 +21,8 @@ Here is a table showing the status of each format.
 || CEL || Yes || Yes || K.O.S. (KISekae Set System) ||
 || KCF || Yes || Yes || K.O.S. (KISekae Set System) ||
 || [AtariFileFormats NEO] || Yes || Yes || Neochrome ||
-|| PAL || Yes || Yes || ||
-
+|| PAL || Yes || Yes || Can load raw 768-bytes RGB palettes, as well as JASC Palette. Saving is always performed as JASC Palette ||
+|| other || No || Yes || JPEG, TGA, truecolor PNG can be loaded thanks to the SDL_image library. This is not always possible on all platforms (ie. on linux if you compile SDL_image without PNG, you lose the PNG format.) Files that can be loaded this way have no preview in the fileselector. ||
 If you find a file that grafx2 can't load, please send it to us so we can fix the broken code.
 = Other file formats =
 
