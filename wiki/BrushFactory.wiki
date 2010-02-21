@@ -75,6 +75,13 @@ Note the resize occurs immediately. If you need the original dimensions, to read
 
  * {{{setpicturesize(w, h)}}} sets the picture size. All layers are clipped accordingly.
 
+ * {{{getforecolor()}}} returns the Foreground pen color (0-255).
+
+ * {{{getbackcolor()}}} returns the Background pen color (0-255).
+
+ * {{{gettranscolor()}}} returns the picture's transparent color (0-255) for layers and GIF transparency.
+
+
 === Palette ===
 You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
 
@@ -88,6 +95,19 @@ You can get infos on the palette for selecting your colors when drawing, or you 
 
 All of r,g,b and c are normally in the range 0 to 255. If you provide numbers outside of this range, they will roll over, for example 300 becomes 45 and -2 becomes 254.
 
+=== Spare ===
+These allow you to get data from the spare image.
+
+ * {{{getsparepicturesize()}}} returns the spare image's size (w, h).
+
+ * {{{getsparecolor(c)}}} returns the (r, g, b) value of color at index c, from the spare's palette.
+
+ * {{{getsparetranscolor()}}} returns the spare picture's transparent color (0-255) for layers and GIF transparency.
+
+ * {{{getsparelayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the spare picture.
+
+ * {{{getsparepicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the spare picture. If there are several layers visible, this will pick "the color that you see".
+
 === Misc functions ===
 These are for usability of your script.
 
@@ -100,6 +120,8 @@ ok, w, h, xflip, yflip = inputbox("Modify brush",
   "Y-Flip",    0, 0, 1,0
 );
 }}}
+
+ * {{{messagebox(message)}}} or {{{messagebox(window_title,message)}}} Displays a multiline message. It performs word-wrapping automatically, but you can also include character \n in message to force some carriage-returns. If you need variables in the message, use Lua's concatenation operator .. (two dots) to assemble the message string.
 
 = Sample script =
 
