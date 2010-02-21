@@ -4,7 +4,7 @@
 = Introduction =
 
 Drawing in Grafx2 can be done with only a mouse. However, you will be much faster if you use the keyboard and the shortcuts from this list.
-Note : these are the default shortcuts, all of them can be changed with the help of the "gfx2cfg" tool, wich is in the software package. You can get the actual shortucts for your config in the helpscreen inside the program.
+Note : These are the default shortcuts. You can modify the actual shortcuts for your config in the helpscreen inside the program.
 
 
 = Details =
