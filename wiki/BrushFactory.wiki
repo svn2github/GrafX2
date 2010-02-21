@@ -43,6 +43,8 @@ This is as simple as it gets. You can just render some things to the brush or to
 
  * {{{putpicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the picture to c.
 
+ * {{{clearpicture(c)}}} clears picture with color c.
+
 Drawing out of bounds has no effect.
 
 === Reading pixels ===
@@ -89,13 +91,13 @@ All of r,g,b and c are normally in the range 0 to 255. If you provide numbers ou
 === Misc functions ===
 These are for usability of your script.
 
- * {{{inputbox(window_title,label_1,initial_value_1,min_1,max_1,...)}}} Opens a window that asks the user for one or several setting values. The control only accepts values between the min and max that you provide. If min and max are 0 and 1, it will show a checkbox, otherwise it's a numeric input. You can ask for more than one value by adding arguments: label_2, initial_value_2, min_2, max_2 etc. This function returns one value to tell if the user accepted or cancelled (true or false), and one additional return value by setting. Example:
+ * {{{inputbox(window_title,label_1,initial_value_1,min_1,max_1,digits_1,...)}}} Opens a window that asks the user for one or several setting values. The control only accepts values between the min and max that you provide, and you can specify how many decimal places of precision it should have with {{{digits}}}. If min and max are 0 and 1, it will show a checkbox, otherwise it's a numeric input. You can ask for more than one value by adding arguments: label_2, initial_value_2, min_2, max_2, digits_2 etc. This function returns one value to tell if the user accepted or cancelled (true or false), and one additional return value by setting. Example:
 {{{
 ok, w, h, xflip, yflip = inputbox("Modify brush",
-  "Width",  w, 1,100,
-  "Height", h, 1,100,
-  "X-Flip", 0, 0, 1,
-  "Y-Flip", 0, 0, 1
+  "Width",     w, 1,100,0,
+  "Height",    h, 1,100,0,
+  "X-Flip",    0, 0, 1,0,
+  "Y-Flip",    0, 0, 1,0
 );
 }}}
 
@@ -117,7 +119,7 @@ end
 }}}
 
 = Known bugs and limitations =
- * It is not possible to send custom parameters to a script, which makes the feature not so useful. It is not easy to make that simple with a nice GUI. Suggestions welcome. Or we could add a binding so lua scripts can open and draw windows...
+ * The inputbox is limited. If you have needs that it can't meet, please contact us, we'll see if there is a way to improve it.
 
 = More reading =
 Lua is a well known programming language.
