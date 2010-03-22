@@ -4,7 +4,7 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
-== GRAFX 2.2 (WIP, updated to r1349) ==
+== GRAFX 2.2 final (22/03/2010) - Dragon's Layers Edition  ==
 ===New features===
   * Layers
   * Lua binding to generate and alter picture and brush with scripts
@@ -16,6 +16,7 @@
   * Save Amstrad CPC pictures in .SCR format.
   * Menu toolbars can be separately shown or hidden
   * Safety backups are made automatically about every minute, and reloaded after a crash or program halt
+  * Save C64 files and helps detecting color clash problems
 ===Improvements===
   * Zoom-on-mouse, also when changing the zoom factor
   * More zoom levels are available for the magnifier (up to x32)
@@ -41,6 +42,7 @@
   * Mask and Stencil shortcuts were reversed in the FX window
   * Joystick is now disabled by default to avoid mouse drifting
   * Text tool: Bitmap fonts painted in "color 0" now work
+  * Fix a wrong shortuc (filled circle) in helpscreen
 
 ==GRAFX 2.1.1080 bugfix release (20/09/2009)==
   * Fixed: High CPU usage even when the program is idle (issue 217).
