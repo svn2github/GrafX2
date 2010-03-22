@@ -4,16 +4,21 @@
 
 [http://code.google.com/p/grafx2/downloads/list Main index]
 
+== Version 2.2 ==
+|| gp2x || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
+|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
+|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
+
+== Version 2.1 ==
+|| MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
+
+== Older ==
 || Amiga OS 3.x 68k || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Amiga68k Downloads] ||
 || Amiga OS 4 PowerPC || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AmigaOS4 Downloads] ||
 || AROS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AROS Downloads] ||
 || BeOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
-|| gp2x || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
 || Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
-|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
 || Mac OS X (both ppc and x86) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-OSX Downloads] ||
-|| MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
-|| Windows 95, 98, 2000, NT, XP, Vista || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
 
 = Binary packages =
 || Arch Linux || [http://aur.archlinux.org/packages.php?ID=27204 AUR (ext)] ||
