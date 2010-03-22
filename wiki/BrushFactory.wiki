@@ -93,8 +93,7 @@ You can get infos on the palette for selecting your colors when drawing, or you 
 
  * {{{getbackupcolor(c)}}} returns the (r, g, b) value of color at index c, from the original palette (before any changes done by your script).
 
-All of r,g,b and c are normally in the range 0 to 255. If you provide numbers outside of this range, they will roll over, for example 300 becomes 45 and -2 becomes 254.
-
+All of r,g,b and c are normally in the range 0 to 255. For c, if you provide a number outside of this range, it will roll over : for example 300 becomes 45 and -2 becomes 254. Color components r,g and b, however, are clipped to the lower or upper limit.
 === Spare ===
 These allow you to get data from the spare image.
 
