@@ -1,0 +1,7 @@
+#summary Contact
+
+There is a [http://code.google.com/p/grafx2/issues/list bug tracker] where you can post bug reports, ask for help, request changes or new features, and also provide your opinion on the topics which are already started.
+
+E-mail: [mailto://grafx2@googlegroups.com]
+
+It's a public mailing-list, so be aware that your message will be visible at the [http://groups.google.com/group/grafx2 Grafx2 google group (ext)]
