@@ -1,7 +1,7 @@
 #summary Downloads index
 #labels Featured
 = Official Grafx2 releases =
-The latest stable version is *Grafx2 2.2*. If you're upgrading from a previous version, see these important [ReleaseNotes2.2 release notes].
+The latest stable version is *Grafx2 2.2*. If you're upgrading from a previous version, see these important [ReleaseNotes22 release notes].
 
 
 || Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux+label%3ARelease-2.2 Downloads] ||
