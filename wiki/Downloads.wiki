@@ -1,35 +1,34 @@
 #summary Downloads index
 #labels Featured
-= Downloads =
+= Official Grafx2 releases =
+The latest stable version is *Grafx2 2.2*. If you're upgrading from a previous version, see these important [ReleaseNotes2.2 release notes].
 
-[http://code.google.com/p/grafx2/downloads/list Main index]
 
-== Version 2.2 ==
-|| gp2x || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
-|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
-|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
+|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux+label%3ARelease-2.2 Downloads] ||
+|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows+label%3ARelease-2.2 Downloads] ||
+|| GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x+label%3ARelease-2.2 Downloads] ||
 
-== Version 2.1 ==
-|| MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
+== All versions ==
+This is a repository of all packages hosted here. This include the latest stable version, older versions, and even (for Linux and Windows) work-in-progress versions that haven't been released yet.
 
-== Older ==
 || Amiga OS 3.x 68k || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Amiga68k Downloads] ||
 || Amiga OS 4 PowerPC || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AmigaOS4 Downloads] ||
 || AROS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AROS Downloads] ||
 || BeOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
+|| GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
 || Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
+|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
 || Mac OS X (both ppc and x86) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-OSX Downloads] ||
+|| MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
+|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
+
+[http://code.google.com/p/grafx2/downloads/list View all files]
 
 = Binary packages =
+
 || Arch Linux || [http://aur.archlinux.org/packages.php?ID=27204 AUR (ext)] ||
 || Debian || [http://packages.debian.org/search?keywords=grafx2 Debian packages (ext)] ||
 || Exherbo Linux || [http://git.exherbo.org/summer/packages/media-gfx/grafx2/index.html Summer (ext)] ||
 || FreeBSD || [http://www.freshports.org/graphics/grafx2/ FreshPorts (ext)] ||
 || SGI IRIX || [http://reality.sgiweb.org/nekochan/beta/neko_grafx2-2.0.970.tardist Nekochan repository (ext)] ||
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
-
-= Which version should I get ? =
-
-If you're trying Grafx2 for the first time, pick the latest stable version for your system. The list in the front page points to the stable versions.
-
-If you want to test the latest changes, fixes and bugs, pick the work-in-progress versions (wip) that we upload regularly. They are available as source code archive (Linux) and Windows executable.
