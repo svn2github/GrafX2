@@ -1,5 +1,6 @@
 #summary Erasing the whole screen
 #labels UserManual
+#sidebar ManualSidebar
 
 =Clear picture=
 

@@ -1,5 +1,6 @@
 #summary How to draw lines
 #labels UserManual
+#sidebar ManualSidebar
 
 = Left click: =
 Selects the current line-drawing mode as the active drawing tool. There are 3 line-drawing modes:

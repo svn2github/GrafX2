@@ -1,5 +1,7 @@
 #summary Undo and redo your changes
 #labels UserManual
+#sidebar ManualSidebar
+
 =Oops (Undo/Redo)=
 
 ==Left click==

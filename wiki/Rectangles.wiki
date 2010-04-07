@@ -1,5 +1,6 @@
 #summary Drawing rectangles
 #labels UserManual
+#sidebar ManualSidebar
 
 =Empty rectangles=
 

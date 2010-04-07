@@ -1,5 +1,6 @@
 #summary The simplest drawing tool
 #labels UserManual
+#sidebar ManualSidebar
 
 = Hand-drawing =
 

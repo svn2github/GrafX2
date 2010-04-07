@@ -1,5 +1,6 @@
 #summary List of the buttons in the menu and description of what you can do with them.
 #labels UserManual
+#sidebar ManualSidebar
 
 = Introduction =
 

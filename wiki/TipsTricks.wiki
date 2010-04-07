@@ -1,5 +1,6 @@
 #summary How to make great pictures
 #labels UserManual
+#sidebar ManualSidebar
 
 =Drawing tips=
 

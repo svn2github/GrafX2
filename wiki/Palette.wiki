@@ -1,5 +1,6 @@
 #summary Palette management
 #labels UserManual
+#sidebar ManualSidebar
 
 =Palette menu=
 

@@ -1,5 +1,6 @@
 #summary Brush modifications
 #labels UserManual
+#sidebar ManualSidebar
 
 =Brush effects=
 

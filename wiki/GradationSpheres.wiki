@@ -1,5 +1,6 @@
 #summary How to draw spheres.
 #labels UserManual
+#sidebar ManualSidebar
 
 =Spheres / Ellipses with gradation=
 

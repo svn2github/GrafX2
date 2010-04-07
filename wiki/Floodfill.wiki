@@ -1,5 +1,6 @@
 #summary Fill an area with a color
 #labels UserManual
+#sidebar ManualSidebar
 
 =Floodfill=
 

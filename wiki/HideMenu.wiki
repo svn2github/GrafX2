@@ -1,5 +1,6 @@
 #summary Hiding the menu to draw fullscreen
 #labels UserManual
+#sidebar ManualSidebar
 
 =Hide menu=
 

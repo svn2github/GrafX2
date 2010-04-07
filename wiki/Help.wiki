@@ -1,5 +1,6 @@
 #summary The Help Screen
 #labels UserManual
+#sidebar ManualSidebar
 
 =Help / Statistics=
 

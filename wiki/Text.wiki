@@ -1,5 +1,6 @@
 #summary Printing text
 #labels UserManual
+#sidebar ManualSidebar
 
 =Text=
 The text menu allows you to enter some text and render it as a brush. The current background and foreground colors are very important, they determine the text color, the transparent color, and also the color range to use for antialiasing. GrafX2 can use 'bitmap' fonts as long as they are in the special layout supported by our version of SFont (see example fonts provided in the fonts/ directory). TrueType fonts can also be used if your version of GrafX2 was compiled with TrueType support (not the case on the gp2x, all other platforms have it by default).

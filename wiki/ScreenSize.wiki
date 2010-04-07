@@ -1,5 +1,6 @@
 #summary Screen modes
 #labels UserManual
+#sidebar ManualSidebar
 
 =Screen size / Safety resolution=
 

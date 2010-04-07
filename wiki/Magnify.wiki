@@ -1,5 +1,6 @@
 #summary Magnify the picture
 #labels UserManual
+#sidebar ManualSidebar
 
 =Magnifier mode / Menu=
 ==Left click==

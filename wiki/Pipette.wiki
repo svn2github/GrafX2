@@ -1,5 +1,6 @@
 #summary Pick colors inside the picture
 #labels UserManual
+#sidebar ManualSidebar
 
 =Pipette / Invert colors=
 

@@ -1,5 +1,6 @@
 #summary Loading and saving pictures
 #labels UserManual
+#sidebar ManualSidebar
 
 =Save picture / Autosave=
 

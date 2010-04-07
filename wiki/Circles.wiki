@@ -1,5 +1,6 @@
 #summary Drawing circles.
 #labels UserManual
+#sidebar ManualSidebar
 
 =Empty circles/ellipses=
 

@@ -1,5 +1,6 @@
 #summary Frequently asked questions
 #labels UserManual
+#sidebar ManualSidebar
 
 <wiki:toc max_depth="2" />
 

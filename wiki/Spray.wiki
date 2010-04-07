@@ -1,5 +1,7 @@
 #summary Use of the spray tool
 #labels UserManual
+#sidebar ManualSidebar
+
 = Spray =
 
 ==Left click==

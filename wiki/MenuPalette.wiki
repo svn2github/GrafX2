@@ -1,5 +1,6 @@
 #summary Selecting colors in the palette
 #labels UserManual
+#sidebar ManualSidebar
 
 =Palette window=
 

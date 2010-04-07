@@ -1,5 +1,6 @@
 #summary Grabbing a custom brush
 #labels UserManual
+#sidebar ManualSidebar
 
 =Brush grabbing / restore=
 

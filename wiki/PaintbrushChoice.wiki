@@ -1,5 +1,6 @@
 #summary Paintbrush selection
 #labels UserManual
+#sidebar ManualSidebar
 
 = Paintbrushes =
 

@@ -1,5 +1,6 @@
 #summary Working with the spare page
 #labels UserManual
+#sidebar ManualSidebar
 
 =Spare page / Copy current to spare=
 

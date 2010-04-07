@@ -1,5 +1,6 @@
 #summary Draw smooth curves
 #labels UserManual
+#sidebar ManualSidebar
 
 = Splines =
 

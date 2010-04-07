@@ -1,5 +1,6 @@
 #summary Drawing polygons and polyforms
 #labels UserManual
+#sidebar ManualSidebar
 
 =Polygons / Polyforms=
 

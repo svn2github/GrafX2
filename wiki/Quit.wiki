@@ -1,5 +1,6 @@
 #summary Quitting the program
 #labels UserManual
+#sidebar ManualSidebar
 
 =Quit program=
 

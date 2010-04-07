@@ -1,5 +1,6 @@
 #summary Gradation rectangle, gradation menu
 #labels UserManual
+#sidebar ManualSidebar
 
 =Rectangles with gradation=
 

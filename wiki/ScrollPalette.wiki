@@ -1,5 +1,6 @@
 #summary Scrolling the palette
 #labels UserManual
+#sidebar ManualSidebar
 
 =Scroll palette left / right=
 

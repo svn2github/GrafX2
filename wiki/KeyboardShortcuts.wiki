@@ -1,5 +1,6 @@
 #summary Default keyboard shortcuts you can use in the program
 #labels UserManual
+#sidebar ManualSidebar
 
 = Introduction =
 

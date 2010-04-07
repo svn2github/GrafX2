@@ -1,5 +1,6 @@
 #summary Killing pages
 #labels UserManual
+#sidebar ManualSidebar
 
 =Kill currenty page=
 

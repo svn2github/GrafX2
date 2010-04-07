@@ -1,5 +1,6 @@
 #summary Some very basic informations about the interface of the program.
 #labels UserManual
+#sidebar ManualSidebar
 
 = Grafx2 user interface =
 
