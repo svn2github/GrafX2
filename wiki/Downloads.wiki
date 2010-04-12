@@ -16,7 +16,7 @@ This is a repository of all packages hosted here. This include the latest stable
 || AROS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AROS Downloads] ||
 || BeOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
 || GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
-|| Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
+|| Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Haiku Downloads] ||
 || Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
 || Mac OS X (both ppc and x86) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-OSX Downloads] ||
 || MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
