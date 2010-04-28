@@ -20,6 +20,7 @@ This is a repository of all packages hosted here. This include the latest stable
 || Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
 || Mac OS X (both ppc and x86) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-OSX Downloads] ||
 || MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
+|| NetBSD || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-NetBSD Downloads] ||
 || Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows Downloads] ||
 
 [http://code.google.com/p/grafx2/downloads/list View all files]
