@@ -10,6 +10,8 @@ Allows you to scroll the picture to re-center your graph for example.
 
 Any part of the picture that goes out of the image by a side comes back by the opposite one.
 
+Left-clicking the picture will scroll only the active layer. Right-clicking will scroll all of them.
+
 It is assimilated to the drawing tools family.
 
 
