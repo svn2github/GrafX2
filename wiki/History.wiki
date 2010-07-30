@@ -3,7 +3,7 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
-== WIP changes - in SVN trunk. Updated till r1484==
+== WIP changes - in SVN trunk. Updated till r1534==
 
 ===Improvements===
   * Paintbrush window can be customized with your own brushes (issue 345). It also highlights the selected one.
@@ -13,6 +13,16 @@
   * Added a color histogram in Palette
   * Redesigned Settings window. Now contains all settings that were only available in gfx2.ini
   * Safety backups (after a crash or power failure) now remember the original file name and directory.
+  * File sorting in file selector is case insensitive
+  * New drawing workflow allowing to use right click as a colorpicker instead of drawing with the secondary color where it makes sense
+  * Allow skins to redefine the "selected" button graphics
+  * Real alpha transparent mode. Allows to properly use antialiased-text on a multicolor background
+  * Copy and paste in the palette using ctrl C/ctrl V or right-click.
+  * Cleanup of the palette screen and added a way toinput colors in hexadecimal.
+  * Palette screen : added a button to tag used colors
+  * New shortcuts for brush resize and calling factory scripts directly
+  * New algorithm for palette sorting
+  * Support fonts in 'bitmap Font Writer' format.
 ===Fixes===
   * Fixed the format of gfx2.ini, which was sometimes causing the loss of the "scroll up" shortcut.
   * Fixed a few typos in Keyboard Shortcuts help.
@@ -25,6 +35,10 @@
   * Lua scripts: Fixed crash when inputbox receives negative number of digits.
   * Lua scripts: Fixed setpicturesize which causes overdraw on menu (issue 334)
   * Fixed compilation problem for Linux (Issue 336)
+  * F1 key in settings screen didn't open the right help files
+  * Better compatibility in the GIF file loader (1bpp GIFs and other things)
+  * Trying to use a font bigger than 99 and some bitmap fileformats would crash the program
+  * Keyboard click emulation was broken since 2.1
 
 == GRAFX 2.2.1430 bugfix release (27/03/2010) ==
   * Fixed Text window which never closes when opened by 'T' (Issue 333)
