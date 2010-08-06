@@ -1,0 +1,25 @@
+#summary List of useful issue tracker queries
+
+= Introduction =
+
+GrafX2 is a big project with a lot of issues. To help you find your way around it, here are some useful lists.
+
+_add some info on how to report bugs here_
+
+= General lists =
+
+  * [http://code.google.com/p/grafx2/issues/list Full list of all issues]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3Aowner Non-assigned issues] 
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3Acomponent Issues without component]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.2 Issues for current release]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.3 Issues for next release]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3AMilestone+OR+Milestone%3DNotPlanned Issues with no schedule]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=-OpSys%3DAll+AND+has%3AOpSys Platform specific issues]
+
+= By component =
+
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Component%3AGUI User Interface]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Component%3ATools Tools]
+
+= For devs =
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=owner%3Ame Issues assigned to me]
