@@ -95,8 +95,8 @@ void Test_EXT(void)
 
 		buffer = malloc(width);
 
-		// Read one line at a time to avoid useless io.
-		// But you van do otherwise if your format isn't friendly enough.
+		// Read one line at a time to avoid useless i/o.
+		// But you can do otherwise if your format isn't friendly enough.
 		for(y=0; y<height; y++)
 		{
 			Read_bytes(file,buffer,width);
