@@ -19,7 +19,7 @@ provide three functions:
   * Save_EXT saves a picture.
 
 You have to register your format in the File_formats table. The fields are:
-  * extension (lowercase, wildcards * and ? allowed)
+  * extension (lowercase, wildcards `*` and ? allowed)
   * Test function
   * Load function
   * Save function
