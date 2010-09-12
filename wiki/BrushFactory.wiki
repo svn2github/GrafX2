@@ -134,6 +134,14 @@ ok, a, b ,c, d = inputbox("Your choice",
 );
 }}}
 
+ * {{{selectbox(caption,label_1,callback_1,label_2,callback_2)}}} Opens a window where the user has to click on one of the buttons. You provide the button labels, and Grafx2 executes the associated callback, which must be a function : a pre-defined function (don't type the parentheses after function name) or an anonymous function that you build on the spot. The user can press Esc to cancel. Example:
+{{{
+selectbox("Menu",
+  "Sub-menu 1", sub_menu1_func,
+  "Sub-menu 2", sub_menu2_func,
+  "Say hello", function() messagebox("Hello"); end
+);
+}}}
  * {{{messagebox(message)}}} or {{{messagebox(window_title,message)}}} Displays a multiline message. It performs word-wrapping automatically, but you can also include character \n in message to force some carriage-returns. If you need variables in the message, use Lua's concatenation operator .. (two dots) to assemble the message string.
 
 = Sample script =
