@@ -3,22 +3,24 @@
 = Help / Documentation =
   * [KeyFeatures Overview of Grafx2]
   * [Requirements]
+  * *[http://docs.google.com/View?id=dcbq959n_4dzgxwp83 Quick start]* (ext)
+  * *[UserManual User manual]*
+  * *[FAQ]*
   * [History Version history and change list]
-  * [http://docs.google.com/View?id=dcbq959n_4dzgxwp83 Quick start (ext)]
-  * [UserManual User manual]
   * [KeyboardShortcuts Keyboard shortcuts]
   * [CommandLine Command-line arguments]
   * [FileFormats File formats supported by GrafX2]
   * [Compiling Compiling the program]
   * [TipsTricks Tips & Tricks]
-  * [FAQ]
   * [DifferencesWithDOSVersion Differences with the DOS version] : Platform-specific information
+  * [BrushFactory Lua scripting]
+  * [Contact Contacting us]
 
 = Media =
 
-  * [gallery Gallery and screenshots]
+  * [gallery Screenshots and picture gallery]
   * [Contests]
-  * [PaletteRepository Palette Repository]
+  * [PaletteRepository Palette repository]
 
 = Development documentation =
 
