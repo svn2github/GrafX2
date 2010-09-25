@@ -21,6 +21,8 @@
   * [gallery Screenshots and picture gallery]
   * [Contests]
   * [PaletteRepository Palette repository]
+  * [http://pixel.scene.org/tutorials/tutorial1.html Tutorial by Sh'ar] (ext)
+  * [http://gfxzone.planet-d.net/articles/gfx2_pixel_tutorial-article.html Tutorial by zTHee] (ext)
 
 = Development documentation =
 
