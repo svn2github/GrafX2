@@ -45,3 +45,6 @@ _Grafx2 running under Dos (using HXExtender)_
 
 http://grafx2.googlecode.com/svn/wiki/pictures/gfx2_morphos.jpg
 _Grafx2 running under MorphOS_
+
+= More =
+If you want to see more work done with GrafX2, have a look at http://artcity.bitfellas.org/index.php?a=tag&id=669 .
