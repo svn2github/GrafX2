@@ -24,6 +24,9 @@ http://www.jam-factory.com/droplet/game/
 http://pixeljoint.com/files/icons/full/hobo_heaven_final.gif
 </td></tr></table>
 
+= More pictures =
+Pictures made with the help of Grafx2 : on [Bitfellas' Artcity http://artcity.bitfellas.org/index.php?a=tag&id=669] - on [http://www.pixeljoint.com/pixels/new_icons.asp?search=grafx2 PixelJoint]
+
 = Screenshots =
 
 <table valign="top" border="1" cellspacing="0">
@@ -46,5 +49,6 @@ _Grafx2 running under Dos (using HXExtender)_
 http://grafx2.googlecode.com/svn/wiki/pictures/gfx2_morphos.jpg
 _Grafx2 running under MorphOS_
 
-= More =
-If you want to see more work done with GrafX2, have a look at http://artcity.bitfellas.org/index.php?a=tag&id=669 .
+
+http://grafx2.googlecode.com/svn/wiki/pictures/grafx2_on_caanoo.jpg
+_Grafx2 running on the Caanoo console (photo credit: PheeL)_
