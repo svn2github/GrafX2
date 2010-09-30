@@ -34,4 +34,4 @@ This is a repository of all packages hosted here. This include the latest stable
 || Gentoo (ebuild) || http://bugs.gentoo.org/show_bug.cgi?id=259896#c6 (ext) ||
 || SGI IRIX || [http://reality.sgiweb.org/nekochan/beta/neko_grafx2-2.0.970.tardist Nekochan repository (ext)] ||
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
-|| Caanoo gaming console || [http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,113,513]
+|| Caanoo gaming console || [http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,113,513 Openhandhelds (ext)]||
