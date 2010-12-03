@@ -81,6 +81,10 @@ Note the resize occurs immediately. If you need the original dimensions, to read
 
  * {{{gettranscolor()}}} returns the picture's transparent color (0-255) for layers and GIF transparency.
 
+ * {{{setforecolor(c)}}} sets the Foreground pen color (0-255).
+
+ * {{{setbackcolor(c)}}} sets the Background pen color (0-255).
+
 
 === Palette ===
 You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
