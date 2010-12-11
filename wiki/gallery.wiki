@@ -29,26 +29,38 @@ Pictures made with the help of Grafx2 : on [http://artcity.bitfellas.org/index.p
 
 = Screenshots =
 
-<table valign="top" border="1" cellspacing="0">
-<tr><td>
-http://grafx2.googlecode.com/svn/wiki/pictures/GrafX2_screen1.gif </td><td>
-http://grafx2.googlecode.com/svn/wiki/pictures/GrafX2_screen2.gif </td></tr></table>
+http://grafx2.googlecode.com/svn/wiki/pictures/GrafX2_screen1.gif http://grafx2.googlecode.com/svn/wiki/pictures/GrafX2_screen2.gif
+
+http://grafx2.googlecode.com/svn/wiki/pictures/sshot_svn1652.gif
+
+_Wide pixels and visible grid helper (sprites by Fano)_
+
 
 http://grafx2.googlecode.com/svn/wiki/pictures/flora.png
+
 _Grafx2 running under Puppy Linux_
 
+
 http://farm4.static.flickr.com/3204/3141523118_561a47d979_o.png
+
 _Grafx2 running under Zeta OS_
 
+
 http://farm4.static.flickr.com/3250/3147303617_48bef7ace2_o.png
+
 _Grafx2 running under SkyOS_
 
+
 http://grafx2.googlecode.com/svn/wiki/pictures/grafx2_dos.jpg
+
 _Grafx2 running under Dos (using HXExtender)_
 
+
 http://grafx2.googlecode.com/svn/wiki/pictures/gfx2_morphos.jpg
+
 _Grafx2 running under MorphOS_
 
 
 http://grafx2.googlecode.com/svn/wiki/pictures/grafx2_on_caanoo.jpg
+
 _Grafx2 running on the Caanoo console (photo credit: PheeL)_
