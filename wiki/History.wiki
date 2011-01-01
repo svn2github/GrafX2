@@ -3,37 +3,56 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
-== WIP changes - in SVN trunk. Updated till r1534==
+== WIP changes - in SVN trunk. Updated till r1669==
 
 ===Improvements===
+  * Added 2 virtual keyboards for portable console ports - one to easily enter filenames or text for text tool, another one for all numeric input.
+  * Magnifier settings for Main page and Spare page are now synchronized, if the images have same dimensions (issue 327)
+  * Many new Lua functions for scripting
+  * Improved the color matching formula used in 'Copy to Spare' and 'Recolorize brush'
+  * Rotating a brush while holding 'Shift' key now snaps to the closest 22.5° multiple)
+  * Added color cycling animation (issue 365). Animation can be active even when drawing.
   * Paintbrush window can be customized with your own brushes (issue 345). It also highlights the selected one.
-  * Sped up the translucency effect
   * The colorpicker cursor, (in zoomed view) no longer displays a preview pixel.
   * Fixed the bottom line of pixels in the magnifier: The bottom row can no longer be too thin.
-  * Added a color histogram in Palette
   * Redesigned Settings window. Now contains all settings that were only available in gfx2.ini
   * Safety backups (after a crash or power failure) now remember the original file name and directory.
   * File sorting in file selector is case insensitive
   * New drawing workflow allowing to use right click as a colorpicker instead of drawing with the secondary color where it makes sense
   * Allow skins to redefine the "selected" button graphics
   * Real alpha transparent mode. Allows to properly use antialiased-text on a multicolor background
-  * Copy and paste in the palette using ctrl C/ctrl V or right-click.
-  * Cleanup of the palette screen and added a way toinput colors in hexadecimal.
-  * Palette screen : added a button to tag used colors
+  * Copy and paste in the palette using ctrl C/ctrl V or right-click sub-menu.
+  * Cleanup of the palette screen and added a way to input colors in hexadecimal.
+  * Palette screen : Added a button to tag used colors
+  * Palette screen : Added a color histogram
+  * Palette screen : Reducing color count now removes duplicates
+  * Palette screen : Added a merge tool
   * New shortcuts for brush resize and calling factory scripts directly
   * New algorithm for palette sorting
   * Support fonts in 'bitmap Font Writer' format.
+  * Drag-and-dropping a file into Grafx2's window now opens it.
+  * Drive list (in Load/Save screen) now has icons for media type: HDD, CD, etc.
 ===Fixes===
+  * Fix the Saturation slider in HSL mode that would make greyscale colors red (issue 396)
+  * Menu size (depending on UI scale) doesn't change when Pixel Scaler changes, when it's possible (issue 338) 
+  * Fix a bug where closing the Magnifier moved the view to random place (issue 380)
+  * Lua : too many fixes to list
+  * Fix important bug where resizing an image or using any transformation resets transparent color to zero
+  * Fix imprecise RGB sliders when RGB scale is lower than 256 (issue 384)
+  * Skin DPaint: Fix the icon 'unslected layer 6'
+  * Skin DPaint: Fixed the hotspot of the standard mouse cursor, it was not in top left corner. 
+  * Skin Modern: Fix the button for palette scroll arrows
+  * The image preview in Load/Save window now uses a web-safe palette, if the previewed image has a low color count.
+  * Fixed the 'Copy to Spare / palette and remap' : It wasn't fully undoable.
+  * Improved mouse handling. Should fix many cases mouse cursor was choppy or lagging for no reason, taking lots of CPU.
+  * Modified the method for picking GUI colors in the current palette. This solves many cases where the menu was difficult to read.
+  * Fix using fullscreen mode with a tablet (issue 317).
   * Fixed the format of gfx2.ini, which was sometimes causing the loss of the "scroll up" shortcut.
   * Fixed a few typos in Keyboard Shortcuts help.
   * Fixed crash on loading PNG24 pictures if they contain transparency data.
   * Fixed inaccurate picking of color in the menu palette and improved its ergonomy (issue 340)
-  * DPaint skin: Fixed the hotspot of the cursor, it was not in top left corner. 
   * The gradient rectangle tool can no longer leave construction lines (issue 339)
   * Fixed the "Zap unused colors" funtion, in some cases it would affect wrong colors.
-  * Lua scripts: Fixed the behavior of radio buttons in inputbox 
-  * Lua scripts: Fixed crash when inputbox receives negative number of digits.
-  * Lua scripts: Fixed setpicturesize which causes overdraw on menu (issue 334)
   * Fixed compilation problem for Linux (Issue 336)
   * F1 key in settings screen didn't open the right help files
   * Better compatibility in the GIF file loader (1bpp GIFs and other things)
