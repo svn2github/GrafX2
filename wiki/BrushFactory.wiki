@@ -181,4 +181,13 @@ Lua is a well known programming language.
 Here are some pages from the internet you may want to look at for more information :
  * http://lua-users.org/wiki/MathLibraryTutorial Stuff about math.
  * http://lua-users.org/wiki/LuaDirectory The Lua wiki with a lot of pointers to informations.
- * http://code.google.com/p/grafx2/source/browse/#svn/trunk/scripts The subversion holds a set of scripts you may use as a base for yours. You can send us your scripts if you want them to be added to the list.
+ * http://code.google.com/p/grafx2/source/browse/#svn/trunk/share/grafx2/scripts The subversion holds a set of scripts you may use as a base for yours. You can send us your scripts if you want them to be added to the list.
+
+= Additional stuff =
+
+It is possible to extend the lua functions with your own ones. There are some examples on how to do that in the 'libs' directory in the link mentioned above.
+
+So far tis includes :
+ * Memory.lua : persistent on-disk storage for your scripts. Use this for storing your own settings or other data.
+
+We welcome any additions you want to make to this set of functions. If something proves too slow when done in lua, we may provide a faster C version, with the same interface whenever possible. This way all scripts can share the enhancements.
