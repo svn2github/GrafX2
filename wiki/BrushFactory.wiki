@@ -156,6 +156,8 @@ selectbox("Menu",
 
  * {{{updatescreen()}}} Redraws the picture on the screen.
 
+ * {{{statusmessage(message)}}} Prints the given message in the status bar. Use this when your script is doing long calculations, so the user knows what is going on. Note the message is reset by waitbreak(), so usually you have to display it again before each call to updatescreen.
+
 = Sample script =
 
 Here is a very small sample script that generate a diagonal gradient.
