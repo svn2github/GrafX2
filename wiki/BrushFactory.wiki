@@ -18,6 +18,12 @@ Once you press the run button, the script is executed and generates something.
 If it's a brush, you can paste it like any other brush. If it's a picture, you should see it.
 If you create your own scripts and place them in _<program directory>/scripts_ they will appear in the list. Scripts are reloaded from disk when you run them, so you can edit them in a text editor and test them without leaving Grafx2.
 
+= Available scripts =
+
+Before you start working on your own script, you may want to have a look at the existing ones. Maybe one of them already does what you need. If you make your own script, you may want to send it to the developpers so other users can enjoy it too. It's possible to go quite far with scripts and do complicated things, from palette manipulation to animating a sprite sheet.
+
+See the LuaScript list.
+
 = API Reference =
 
 Here is a list of things you get in lua. If you think we should add more, let us know !
