@@ -1,0 +1,55 @@
+#summary List of available lua scripts
+
+= Tests and examples =
+These sccripts are either unfinished, or just meant as a way to show you what's possible.
+ * _tst_AAfilter runs an antialiasing filter on the picture. However, it does not look at the actual colors but only the palette indices, so it doesn't give good results.
+ * _tst_GradientBrush replaces an existing brush with a diagonal gradient, keeping the brush size. It is a very simple script to show how a script looks like.
+ * _tst_Settings is a sample of how to draw a window from your script and handle the results.
+
+= Animation =
+It is possible to do some animation while a script is running.
+ * ani_db_Ellipse draws a moving ellipse. It's the simplest script with animation features.
+ * ani_db_spritesheet animates a sprite from a sheet in the spare page. It's quite limited right now, but allows you to draw animated stuff and easily look at the animated result.
+
+= Brushes =
+Some script render their result in the brush, so you can paste it anywhere in the image
+ * bru_db_amigaball draws the well-known amiga boingball. It adapts the ball to the current picture palette.
+ * bru_db_sphere renders a shaded sphere in the current pen color.
+ * bru_db_findaa select the color in the palette that is best suitable for AA between front and back colors. Then it fills the brush with it.
+ * bru_db_fisheye performs fisheye distorsion of the brush.
+ * bru_db_greyscale remap your brush to a greyscale equivalent. There are two versions of it, Desat and Average, using different math.
+ * bru_db_halfsmooth reduce the brush size by half, using some smoothing techniques to make it look better than the default way provided in GrafX2.
+ * bru_db_mandlebrot draws a mandelbrot fractal in the brush. The size can be set as well as other options.
+ * bru_db_waves distorts the brush in waves.
+
+= Palette =
+Palette operations can be automated. This include generating palettes, or modifying the current one. Custom remapping involving the spare page palette may also be done.
+ * pal_db_desaturate desaturates the palette by a given amount. The result is a washed out picture.
+ * pal_db_expandcolors ???
+ * pal_db_FillColorCube creates a color cube palette in a given range of colors. This can serve as a base for building your own palette.
+ * pal_db_invertrgb invert the RGB values of all the colors in the palette. (??? isn't this possible already from the palette screen?)
+ * pal_db_set* generate a palette.
+ * pal_db_shifthue shifts the hue (color) of the palette (??? shouldn't the H slider in the palette window do the same ?)
+
+= Picture =
+More interesting are the scripts that run on the whole picture.
+ * Pic_db_pic2isometric convert part of the picture to an isometric version.
+ * pic_db_rainbow_dark2bright draws a color rainbow. This helps spotting missing colors (rainbow holes) in a work in progress palette.
+ * pic_db_sierpinskicarpet draws a Sierpinski carpet.
+ * pic_db_sierpinskitriangle draws a Sierpinski triangle
+ * pic_ni_cellcolourreducer allows to reduce the colorcount in 8x8 or other size blocks to 2. This is often a constraints on old 8bit microcomputers.
+ * pic_ni_drawgridisometric fills the picture with an isometric grid.
+ * pic_ni_drawgridorthogonal_ind draw an orthogonal grid
+ * pic_ni_drawgridorthogonal_rgb ??? should be merged with the two above.
+ * pic_ni_flippicture ??? does the same as the flip effect in transform menu.
+ * pic_ni_glassgridfilter does a "glass grid" effect on our picture.
+ * pic_ni_palettetopicture is the easiest way to convert a palette to a picture for easier sharing.
+ * pic_ni_xbitcolourspacefrompalette does quite the same as rainbow, but in a different way.
+
+= Scene =
+??? I'm not sure what's the difference with picture ?
+
+ * scn_db_remapimage2rgb remaps the picture to a pure RGB palette (4 colors) with custom dithering in diagonals
+ * scn_db_remapimage2RGB_linedither ??? should be merged with the above. Same, but different dithering method.
+ * scn_db_remapimage3bitpal ??? merge with others ?
+
