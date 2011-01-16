@@ -1,15 +1,12 @@
 #summary List of available lua scripts
 
+The brush factory is still a new feature in GrafX2, and the scripts are bundled more as examples than anything else. We are going to add more useful things in future versions. Feel free to create your own scripts and share them with us.
+
 = Tests and examples =
 These sccripts are either unfinished, or just meant as a way to show you what's possible.
  * _tst_AAfilter runs an antialiasing filter on the picture. However, it does not look at the actual colors but only the palette indices, so it doesn't give good results.
  * _tst_GradientBrush replaces an existing brush with a diagonal gradient, keeping the brush size. It is a very simple script to show how a script looks like.
  * _tst_Settings is a sample of how to draw a window from your script and handle the results.
-
-= Animation =
-It is possible to do some animation while a script is running.
- * ani_db_Ellipse draws a moving ellipse. It's the simplest script with animation features.
- * ani_db_spritesheet animates a sprite from a sheet in the spare page. It's quite limited right now, but allows you to draw animated stuff and easily look at the animated result.
 
 = Brushes =
 Some script render their result in the brush, so you can paste it anywhere in the image
@@ -25,14 +22,15 @@ Some script render their result in the brush, so you can paste it anywhere in th
 = Palette =
 Palette operations can be automated. This include generating palettes, or modifying the current one. Custom remapping involving the spare page palette may also be done.
  * pal_db_desaturate desaturates the palette by a given amount. The result is a washed out picture.
- * pal_db_expandcolors ???
+ * pal_db_expandcolors Continously fill the greatest void in the area of the color-cube enclosed by (or along ramps of) initial colors. This algorithm will create lines of allowed colors (all ranges) in 3d colorspace and the pick new colors from the most void areas (on any line). Almost like a Median-cut in reverse.
  * pal_db_FillColorCube creates a color cube palette in a given range of colors. This can serve as a base for building your own palette.
- * pal_db_invertrgb invert the RGB values of all the colors in the palette. (??? isn't this possible already from the palette screen?)
+ * pal_db_invertrgb Arbitrary name for the function ch1 = (ch2 + ch3) / 2. It produces something close to complimentary colors. Ex. Yellow --> Bright Blue, Blue --> Dark Yellow. Mostly just a nice effect and it shows how you can easily manipulate the palette.
  * pal_db_set* generate a palette.
- * pal_db_shifthue shifts the hue (color) of the palette (??? shouldn't the H slider in the palette window do the same ?)
+ * pal_db_shifthue shifts the hue (color) of the palette.This does the same as the H-slider in the palette screen, but you can use this one as a function in other scripts.
 
 = Picture =
-More interesting are the scripts that run on the whole picture.
+More interesting are the scripts that run on the whole picture. These don't touch the palette. They are either distorting the picture in some way, or rendering something from the palette.
+
  * Pic_db_pic2isometric convert part of the picture to an isometric version.
  * pic_db_rainbow_dark2bright draws a color rainbow. This helps spotting missing colors (rainbow holes) in a work in progress palette.
  * pic_db_sierpinskicarpet draws a Sierpinski carpet.
@@ -47,9 +45,12 @@ More interesting are the scripts that run on the whole picture.
  * pic_ni_xbitcolourspacefrompalette does quite the same as rainbow, but in a different way.
 
 = Scene =
-??? I'm not sure what's the difference with picture ?
+These change both the palette and the picture to render a full scene. They may still use the original picture in some way, such as when doing palette remapping.
 
  * scn_db_remapimage2rgb remaps the picture to a pure RGB palette (4 colors) with custom dithering in diagonals
  * scn_db_remapimage2RGB_linedither ??? should be merged with the above. Same, but different dithering method.
  * scn_db_remapimage3bitpal ??? merge with others ?
-
+== Animation ==
+It is possible to do some animation while a script is running.
+ * ani_db_Ellipse draws a moving ellipse. It's the simplest script with animation features.
+ * ani_db_spritesheet animates a sprite from a sheet in the spare page. It's quite limited right now, but allows you to draw animated stuff and easily look at the animated result.
