@@ -36,3 +36,8 @@ This is a repository of all packages hosted here. This include the latest stable
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
 || Caanoo gaming console || [http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,113,513 Openhandhelds (ext)]||
 || Pandora gaming console || [http://dl.openhandhelds.org/cgi-bin/pandora.cgi?0,0,0,0,115,264 Openhandhelds (ext)]||
+
+= Additional tools and media =
+
+There are some more tools and examples you may wish to use with GrafX2.
+[http://code.google.com/p/grafx2/downloads/list?can=2&q=Category-Misc More files]
