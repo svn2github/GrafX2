@@ -49,6 +49,14 @@ This is as simple as it gets. You can just render some things to the brush or to
 
  * {{{putpicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the picture to c.
 
+ * {{{drawline(x1,y1,x2,y2,c)}}} draws a line in the picture.
+
+ * {{{drawfilledrect(x1,y1,x2,y2,c)}}} draws a filled rectangle in the picture.
+
+ * {{{drawcircle(x1,y1,r,c)}}} draws a circle in the picture. _r_ is radius in pixels.
+
+ * {{{drawdisk(x1,y1,r,c)}}} draws a filled circle in the picture. _r_ is radius in pixels.
+
  * {{{clearpicture(c)}}} clears picture with color c.
 
 Drawing out of bounds has no effect.
@@ -159,6 +167,8 @@ selectbox("Menu",
  * {{{wait(t)}}} Forces a delay, in seconds (floating values are accepted, rounded to 0.01s). During this time, mouse can move, and if color cycling is active, you'll see it updated. If you use a delay of zero, the program only updates the mouse position and immediately continues. For safety, you can't request a delay of more than 10 seconds.
 
  * {{{waitbreak(t)}}} Forces a delay, in seconds. Similar to {{{wait()}}}, except that it returns early with a value of 1 if the user presses ESC, otherwise 0 when the wait is over. {{{waitbreak(0)}}} is very useful, it will only update mouse position (and color cycling if it's active) and return 1 if ESC has been pressed since last call.
+
+ * {{{moved, key, mx, my, mb = waitinput(t)}}} Waits for user input. _moved_ is 1 if the mouse cursor moved, _key_ is set when the user pressed a key, _mx_ and _my_ are the upadated mouse coordinates, and _mb_ is the mouse buttons state, ie 1 while left mouse button is pressed, and 2 while right mouse button is pressed. 
 
  * {{{updatescreen()}}} Redraws the picture on the screen.
 
