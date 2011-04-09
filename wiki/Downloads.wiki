@@ -1,11 +1,10 @@
 #summary Downloads index
 #labels Featured
 = Official Grafx2 releases =
-The latest stable version is *Grafx2 2.2*. If you're upgrading from a previous version, see these important [ReleaseNotes22 release notes].
+The latest stable version is *Grafx2 2.3*.
 
-
-|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux+label%3ARelease-2.2 Downloads] ||
-|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows+label%3ARelease-2.2 Downloads] ||
+|| Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux+label%3ARelease-2.3 Downloads] ||
+|| Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows+label%3ARelease-2.3 Downloads] ||
 || GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x+label%3ARelease-2.2 Downloads] ||
 
 == All versions ==
