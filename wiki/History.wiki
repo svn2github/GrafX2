@@ -3,15 +3,17 @@
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
 
-== WIP changes - in SVN trunk. Updated till r1669==
-
+== GRAFX 2.3 final (09/04/2011) ==
+svn revision: r1770
 ===Improvements===
   * Added 2 virtual keyboards for portable console ports - one to easily enter filenames or text for text tool, another one for all numeric input.
   * Magnifier settings for Main page and Spare page are now synchronized, if the images have same dimensions (issue 327)
   * Many new Lua functions for scripting
+  * Lua scripts can now be located anywhere on your disk (the window allos browsing).
   * Improved the color matching formula used in 'Copy to Spare' and 'Recolorize brush'
   * Rotating a brush while holding 'Shift' key now snaps to the closest 22.5° multiple)
   * Added color cycling animation (issue 365). Animation can be active even when drawing.
+  * Color cycles (or gradients) are now saved in PNG and GIF formats.
   * Paintbrush window can be customized with your own brushes (issue 345). It also highlights the selected one.
   * The colorpicker cursor, (in zoomed view) no longer displays a preview pixel.
   * Fixed the bottom line of pixels in the magnifier: The bottom row can no longer be too thin.
@@ -32,7 +34,15 @@
   * Support fonts in 'bitmap Font Writer' format.
   * Drag-and-dropping a file into Grafx2's window now opens it.
   * Drive list (in Load/Save screen) now has icons for media type: HDD, CD, etc.
+  * Allow saving XPM images
+  * Hold Control and Click to perform a right-click : handy for tablets and similar devices. An option allows you to pick different keys (issue 400)
+  * Text tool : With bitmap fonts, you can now enter carriage returns using Alt+Enter
 ===Fixes===
+  * Keyboard shortcuts are now exclusive by default (you can change option if needed). This avoids the need to unset a shortcut when you need the key for something else.
+  * Fixes aevere image corruption when scrolling image while some layers are hidden (issue 417).
+  * Palette screen: Undo is now much more reliable (issue 354)
+  * Better control of brush palette (issue 362)
+  * Text tool with bitmap font now works much better with colored fonts, especially if you use 'Get brush colors'.
   * Fix the Saturation slider in HSL mode that would make greyscale colors red (issue 396)
   * Menu size (depending on UI scale) doesn't change when Pixel Scaler changes, when it's possible (issue 338) 
   * Fix a bug where closing the Magnifier moved the view to random place (issue 380)
