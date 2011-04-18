@@ -2,7 +2,9 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
-
+== GRAFX 2.3.1781 bugfix release (19/04/2010) ==
+  * Fixed: Mouse cursor deadzones in fullscreen mode, especially if you change the program's mouse sensitivity (issue 428)
+  * Fixed: Removed a source of mouse cursor lag while drawing (issue 269), especially on X11, by speeding up the graphic redraw.
 == GRAFX 2.3.1778 bugfix release (16/04/2010) ==
   * Fixed: Graphical glitch in Options screen (issue 432)
   * Fixed: Menu colors changed on reload, causing very often the cursir lines to be black over black (issue 433)
