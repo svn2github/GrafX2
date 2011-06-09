@@ -20,11 +20,12 @@ The subversion also includes an XCode project for building under Mac OS X. If yo
   * GNU make v3.80 minimum
   * SDL library v1.2
   * SDL_image library
+  * libpng
   * FreeType library (optional)
   * SDL_ttf library (optional)
   * liblua5.1 (optional)
 
-Note you also need the headers of this libs. Under linux this is usually a separate package, like "libsdl1.2-dev", for example.
+Note that some libraries have a package for the runtime, and a different package for the developer tools that are required to compile Grafx2: for example SDL will have "libsdl1.2-dev".
 
 === Windows only ===
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
@@ -42,14 +43,17 @@ sudo aptitude install gcc make libsdl1.2-dev libsdl-image1.2-dev libsdl-ttf2.0-d
 Open a shell/Terminal, cd to the directory where you have the sourcecode, and type `make`.
 If all goes well, it should build *grafx2* in the current directory. Voilà.
 
-=== Buldtime settings ===
+=== Buildtime settings ===
+
 If you don't have FreeType and SDL_ttf, type `make NOTTF=1` instead. It will build a version without TrueType support : the Text tool will be limited to bitmap fonts, proportional fonts wiht .ttf extension won't be available.
 
 If you don't have lua available, type `make NOLUA=1`. You will not be able to use lua scripts to generate and alter brush and pictures.
 
 These options can be combined, for example for a build without ttf nor lua type `make NOTTF=1 NOLUA=1`.
 
-Under linux, you can then run `make install` to get the files installed in your system, in the /usr/local/ and /usr/share directories (the usual UNIX way). This may or may not work, the installation needs some more testing.
+Under linux, you can then run `make install` to get the files installed in your system, in the /usr/local/ and /usr/share directories (the usual UNIX way). This may or may not work, the installation needs some more testing. Since these targets are system directories, it will require root priviledges.
+
+If libpng isn't available for your platform, and you desperately need a version of Grafx2 even without PNG support, you can try compiling grafx2 without it. This requires modifying the makefile:  Locate the line `COPT =` for your platform, and add -D__no_pnglib__ as one of the options. Locate the line `LOPT =` for your platform, and remove `-lpng` so that it no longer attempts to link with the library. When the executable successfully compiles, you'll still have to convert any resource that grafx2 uses at runtime (like the default skin) from PNG format to GIF format. You can still keep the file extensions in ".png", so that that the code that refers to the file doesn't need to be updated.
 
 == Problems ==
 ===If Make complains about a missing `Makefile.dep`===
@@ -79,7 +83,11 @@ You can use `make clean` to remove the intermediate generated files (.o) and bin
 
 You can use `make depend` to rebuild the dependency file Makefile.dep : Don't hesistate to rebuild it whenever you add some #includes "something.h", it will help the Makefile determine very accurately which files need to be recompiled when something.h is modified. And svn is smart enough to see if the file is actually changed or not before increasing the version.
 
-The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants (not for debug builds as it makes gdb get lost), and -ggdb to generate debug information for the GNU debugger.
+The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants, and -ggdb to generate debug information for the GNU debugger.
+As of version 2.3, Grafx2 compiles with normally zero warnings.
+
+You can compile with `make OPTIM=0` to disable otimizations for easier debugging. It controls the -O<n> setting for GCC, where <n> is either blank, 0, 1, 2 or 3. blank has the same effect as 1, so OPTIM= and OPTIM=1 are identical and give the same result as when you don't specify it.
+
 You can use `make release` to strip the debugging information.
 
 You can use `make version` to check the state of the current directory and store the result in a constant string in version.c. This file is used during normal compilation, it's how the program can display a SVN revision number in the About/Stats screen.
