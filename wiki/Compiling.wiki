@@ -86,7 +86,7 @@ You can use `make depend` to rebuild the dependency file Makefile.dep : Don't he
 The current compilation options are -W -Wall that warn of most common mistakes, -O for a basic level of optimization like omitting dead code and collapsing identical constants, and -ggdb to generate debug information for the GNU debugger.
 As of version 2.3, Grafx2 compiles with normally zero warnings.
 
-You can compile with `make OPTIM=0` to disable otimizations for easier debugging. It controls the -O<n> setting for GCC, where <n> is either blank, 0, 1, 2 or 3. blank has the same effect as 1, so OPTIM= and OPTIM=1 are identical and give the same result as when you don't specify it.
+You can compile with `make OPTIM=0` to disable otimizations for easier debugging. It controls the -O`<n>` setting for GCC, where `<n>` is either blank, 0, 1, 2 or 3. blank has the same effect as 1, so OPTIM= and OPTIM=1 are identical and give the same result as when you don't specify it.
 
 You can use `make release` to strip the debugging information.
 
