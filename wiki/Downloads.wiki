@@ -13,6 +13,7 @@ This is a repository of all packages hosted here. This include the latest stable
 || Amiga OS 3.x 68k || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Amiga68k Downloads] ||
 || Amiga OS 4 PowerPC || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AmigaOS4 Downloads] ||
 || AROS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-AROS Downloads] ||
+|| Atari || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Atari Downloads] ||
 || BeOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
 || GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
 || Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Haiku Downloads] ||
