@@ -5,7 +5,7 @@ The latest stable version is *Grafx2 2.3*.
 
 || Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux+label%3ARelease-2.3 Downloads] ||
 || Windows 95, 98, 2000, NT, XP, Vista, 7 || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Windows+label%3ARelease-2.3 Downloads] ||
-|| GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x+label%3ARelease-2.2 Downloads] ||
+|| Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Haiku+label%3ARelease-2.3 Downloads] ||
 
 == All versions ==
 This is a repository of all packages hosted here. This include the latest stable version, older versions, and even (for Linux and Windows) work-in-progress versions that haven't been released yet.
@@ -16,7 +16,6 @@ This is a repository of all packages hosted here. This include the latest stable
 || Atari || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Atari Downloads] ||
 || BeOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-BeOS Downloads] ||
 || GP2X || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-gp2x Downloads] ||
-|| Haiku || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Haiku Downloads] ||
 || Linux, FreeBSD (source code) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-Linux Downloads] ||
 || Mac OS X (both ppc and x86) || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-OSX Downloads] ||
 || MorphOS || [http://code.google.com/p/grafx2/downloads/list?can=2&q=label%3AOpSys-MorphOS Downloads] ||
