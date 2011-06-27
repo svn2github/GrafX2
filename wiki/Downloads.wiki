@@ -35,6 +35,7 @@ This is a repository of all packages hosted here. This include the latest stable
 || Ubuntu || [http://packages.ubuntu.com/search?keywords=grafx2 Ubuntu packages (ext)] ||
 || Caanoo gaming console || [http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,113,513 Openhandhelds (ext)]||
 || Pandora gaming console || [http://dl.openhandhelds.org/cgi-bin/pandora.cgi?0,0,0,0,115,264 Openhandhelds (ext)] v2.2<br> [http://dl.openhandhelds.org/cgi-bin/pandora.cgi?0,0,0,0,115,330 Openhandhelds (ext)] v2.3.1734 (wip)||
+|| Syllable || [https://sites.google.com/site/syllablesoftware/drawing-software/grafx2 SyllableSoftware (ext)||
 
 = Additional tools and media =
 
