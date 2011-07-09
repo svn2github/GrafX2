@@ -23,6 +23,7 @@
   * [PaletteRepository Palette repository]
   * [http://pixel.scene.org/tutorials/tutorial1.html Tutorial by Sh'ar] (ext)
   * [http://gfxzone.planet-d.net/articles/gfx2_pixel_tutorial-article.html Tutorial by zTHee] (ext)
+  * [Users GrafX2 users]
 
 = Development documentation =
 
