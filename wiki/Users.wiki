@@ -1,0 +1,4 @@
+#summary List of projects using GrafX2
+
+= Games =
+  * [http://www.allacrost.org/download Hero of Allacrost]
