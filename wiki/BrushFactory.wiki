@@ -101,6 +101,7 @@ Note the resize occurs immediately. If you need the original dimensions, to read
 
  * {{{finalizepicture()}}} ends your modifications in picture history. The current state of the image (and palette) becomes the "backup", for all functions that read backup state.
 
+ * {{{getfilename()}}} returns the picture (name, path).
 === Palette ===
 You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
 
