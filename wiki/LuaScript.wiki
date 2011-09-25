@@ -2,6 +2,8 @@
 
 The brush factory is still a new feature in GrafX2, and the scripts are bundled more as examples than anything else. We are going to add more useful things in future versions. Feel free to create your own scripts and share them with us.
 
+*WARNING: this list is out of date - need to sync it with the inline help of scripts*
+
 = Tests and examples =
 These sccripts are either unfinished, or just meant as a way to show you what's possible.
  * _tst_AAfilter runs an antialiasing filter on the picture. However, it does not look at the actual colors but only the palette indices, so it doesn't give good results.
