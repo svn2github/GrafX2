@@ -49,6 +49,9 @@ This is as simple as it gets. You can just render some things to the brush or to
 
  * {{{putpicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the picture to c.
 
+  * {{{putsparepicturepixel(x, y, c)}}} set the color of pixel at coords (x, y) in the spare picture to c.
+
+
  * {{{drawline(x1,y1,x2,y2,c)}}} draws a line in the picture.
 
  * {{{drawfilledrect(x1,y1,x2,y2,c)}}} draws a filled rectangle in the picture.
@@ -95,6 +98,9 @@ Note the resize occurs immediately. If you need the original dimensions, to read
  * {{{setpicturesize(w, h)}}} sets the picture size. All layers are clipped accordingly. If you have made changes on the picture, you should call finalizepicture() first.
 
  * {{{getsparepicturesize()}}} returns the spare image's size (w, h).
+
+ * {{{setsparepicturesize(w, h)}}} sets the spare picture size. All layers are clipped accordingly. If you have made changes on the picture, *you don't need to call finalizepicture()* first, this function does it by itself.
+
 
 === Palette and colors ===
  * {{{getforecolor()}}} returns the Foreground pen color (0-255).
@@ -177,6 +183,8 @@ selectbox("Menu",
  * {{{finalizepicture()}}} ends your modifications in picture history. The current state of the image (and palette) becomes the "backup", for all functions that read backup state. This can be called multiple times in a script, but remember the history size may be limited. Don't use all of it.
 
  * {{{(name, path) = getfilename()}}} returns the picture name and the path where it is saved. This is useful for saving data related to the picture near to it, and finding it back later (or exporting it for other uses)
+
+ * {{{selectlayer(l)}}} select the layer to use for pixel access in the main page. If the layer doesn't exist, it throws an error. There is no way to create a layer yet.
 
 = Sample script =
 
