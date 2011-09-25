@@ -66,19 +66,24 @@ These allows you to read existing data, for example to filter it, do batch color
 
  * {{{getbrushpixel(x, y)}}} returns the color of pixel at coords (x, y) in the brush.
 
- * {{{getlayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the picture.
+ * {{{getbrushbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup brush, before any of your changes.
 
  * {{{getpicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the picture. If there are several layers visible,this will pick "the color that you see".
 
+ * {{{getlayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the picture.
+
  * {{{getbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup screen, that is, the picture before your script started to run.
 
- * {{{getbrushbackuppixel(x, y)}}} returns the color of pixel at coords (x, y) in the backup brush, before any of your changes.
+ * {{{getsparelayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the spare picture.
+
+ * {{{getsparepicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the spare picture. If there are several layers visible, this will pick "the color that you see".
+
 
 Reading out of the brush will return the BackGround color, ie. the one that marks transparent pixels in the brush.
 
 Reading out of the picture will return the Transparent color.
 
-=== Picture infos ===
+=== Changing sizes ===
 Note the resize occurs immediately. If you need the original dimensions, to read from the backup, you should query them before the resize and keep them in Lua variables.
 
  * {{{getbrushsize()}}} returns the brush size (w, h).
@@ -89,6 +94,9 @@ Note the resize occurs immediately. If you need the original dimensions, to read
 
  * {{{setpicturesize(w, h)}}} sets the picture size. All layers are clipped accordingly. If you have made changes on the picture, you should call finalizepicture() first.
 
+ * {{{getsparepicturesize()}}} returns the spare image's size (w, h).
+
+=== Palette and colors ===
  * {{{getforecolor()}}} returns the Foreground pen color (0-255).
 
  * {{{getbackcolor()}}} returns the Background pen color (0-255).
@@ -99,33 +107,22 @@ Note the resize occurs immediately. If you need the original dimensions, to read
 
  * {{{setbackcolor(c)}}} sets the Background pen color (0-255).
 
- * {{{finalizepicture()}}} ends your modifications in picture history. The current state of the image (and palette) becomes the "backup", for all functions that read backup state.
-
- * {{{getfilename()}}} returns the picture (name, path).
-=== Palette ===
-You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
-
  * {{{setcolor(c,r,g,b)}}} set color index c in palette to (r,g,b)
 
  * {{{getcolor(c)}}} returns the (r, g, b) value of color at index c.
 
  * {{{matchcolor(r,g,b)}}} return the index of the nearest color available in the palette.
+ * {{{matchcolor2(r,g,b)}}} return the index of the nearest color available in the palette.
 
  * {{{getbackupcolor(c)}}} returns the (r, g, b) value of color at index c, from the original palette (before any changes done by your script).
-
-All of r,g,b and c are normally in the range 0 to 255. For c, if you provide a number outside of this range, it will roll over : for example 300 becomes 45 and -2 becomes 254. Color components r,g and b, however, are clipped to the lower or upper limit.
-=== Spare ===
-These allow you to get data from the spare image.
-
- * {{{getsparepicturesize()}}} returns the spare image's size (w, h).
 
  * {{{getsparecolor(c)}}} returns the (r, g, b) value of color at index c, from the spare's palette.
 
  * {{{getsparetranscolor()}}} returns the spare picture's transparent color (0-255) for layers and GIF transparency.
 
- * {{{getsparelayerpixel(x, y)}}} returns the color of pixel at coords (x, y) in the current layer of the spare picture.
+All of r,g,b and c are normally in the range 0 to 255. For c, if you provide a number outside of this range, it will roll over : for example 300 becomes 45 and -2 becomes 254. Color components r,g and b, however, are clipped to the lower or upper limit.
 
- * {{{getsparepicturepixel(x, y)}}} returns the color of pixel at coords (x, y) in the spare picture. If there are several layers visible, this will pick "the color that you see".
+You can get infos on the palette for selecting your colors when drawing, or you can create scripts that just build a full palette from 2 or 3 colors.
 
 === Windows ===
 
@@ -174,6 +171,12 @@ selectbox("Menu",
  * {{{updatescreen()}}} Redraws the picture on the screen.
 
  * {{{statusmessage(message)}}} Prints the given message in the status bar. Use this when your script is doing long calculations, so the user knows what is going on. Note the message is reset by waitbreak(), so usually you have to display it again before each call to updatescreen.
+
+=== Others ===
+
+ * {{{finalizepicture()}}} ends your modifications in picture history. The current state of the image (and palette) becomes the "backup", for all functions that read backup state. This can be called multiple times in a script, but remember the history size may be limited. Don't use all of it.
+
+ * {{{(name, path) = getfilename()}}} returns the picture name and the path where it is saved. This is useful for saving data related to the picture near to it, and finding it back later (or exporting it for other uses)
 
 = Sample script =
 
