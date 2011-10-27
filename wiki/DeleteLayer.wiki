@@ -1,0 +1,7 @@
+#summary Drop layer
+#labels UserManual
+#sidebar ManualSidebar
+
+=Drop layer=
+
+Deletes the current layer.
