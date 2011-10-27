@@ -4,6 +4,10 @@
 
 =Hide menu=
 
-==Any click==
+==Left click==
 
-Allows you to hide the menu. If you do this, take care to watch before the key to press to show the menu back (the default key is <F10>).
+Allows you to hide all toolbars, leaving only the status bar. Click again to show them again.
+
+==Right click==
+
+Opens a drop-down menu where you can choose which toolbars are going to be visible in the menu.
