@@ -5,15 +5,18 @@
 If you're a linux user who needs to compile the program on his machine to run it, here are the instructions to do it. If you want to contribute to the development of GrafX2, here are more instructions to setup the development/packaging environment.
 
 In either case, the building process uses *make* and the *gcc* C compiler, available under all linux variants and also on Windows (we're using MSYS and Mingw). Other OS or compilers may or may not work, with more or less modifications to the sourcecode. The makefile is able to compile the code on the following platforms :
-  * Amiga OS 4
+  * Amiga OS 3 and 4
   * AROS
+  * MorphOS
+  * Various BSD flavours (NetBSD, OpenBSD, FreeBSD)
   * BeOS and Haiku OS
-  * Linux
+  * Linux (several distros)
   * SkyOS
   * Windows
   * Atari TOS/FreeMiNT
+  * Mac OS X (including universal binary and app bundle support)
 
-The subversion also includes an XCode project for building under Mac OS X. If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM/Deb/... packages for the different linux distributions.
+If you have got GrafX2 built on another system, please send us your patches to the source and project files. We will be happy to integrate them on the main source tree. When the project produces some very stable versions, it will be nice if some people can build RPM/Deb/... packages for the different linux distributions.
 
 = Building GrafX2 =
 == Requirements ==
@@ -28,6 +31,9 @@ The subversion also includes an XCode project for building under Mac OS X. If yo
   * liblua5.1 (optional)
 
 Note that some libraries have a package for the runtime, and a different package for the developer tools that are required to compile Grafx2: for example SDL will have "libsdl1.2-dev".
+
+=== Mac OS X ===
+See [OSXBuildSetup here]
 
 === Windows only ===
   * a POSIX environment: MSYS is fine, maybe Cygwin would work as well.
@@ -210,4 +216,3 @@ It's extremely important to think twice before uploading, because googlecode is 
 
 = Building under Windows with Open Watcom =
 This is no longer supported. Please read an older revision of this Wiki page if you desperately need the info. It may not work with the most current versions of the sourcecode, anyways. The project file is still in the subversion, but it is outdated (missing some new files). You'll probably find that Open Watcom's C compiler will throw errors in some places where gcc doesn't. Good luck with that.
-
