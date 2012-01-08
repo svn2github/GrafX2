@@ -22,6 +22,10 @@ Use your favorite News aggregator to receive just the right level of information
   * [http://code.google.com/feeds/p/grafx2/svnchanges/basic?path=/trunk/ RSS] Changes in source code for the WIP version
   * [http://code.google.com/feeds/p/grafx2/downloads/basic RSS] Downloads : When a new file is uploaded
   * [http://code.google.com/feeds/p/grafx2/updates/basic RSS] All changes on the googlecode site (Very detailed, this is similar to the _News_ tab in the navigation bar)
+
+== IRC channel ==
+
+If you want to chat with us, you can join the #grafx2 channel on [irc://irc.freenode.net/grafx2 Freenode]
   
 == Link to us ==
 
