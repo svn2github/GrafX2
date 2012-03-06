@@ -8,5 +8,5 @@
   * [http://www.photonstorm.com/games/cat-astro-phi Cat Astro Phi]
 
 = Demoscene works =
-  * [http://pouet.net/prod.php?which=58044 ISO] by JAC!
-  * [http://pouet.net/prod.php?which=56880 Beam Racer] by JAC!
+ || [http://pouet.net/prod.php?which=58044 ISO] by JAC!  || [http://pouet.net/prod.php?which=56880 Beam Racer] by JAC! ||
+ || [http://pouet.net/screenshots/58044.gif] || [http://pouet.net/screenshots/56880.png] ||
