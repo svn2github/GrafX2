@@ -19,8 +19,8 @@ If you have a bug to declare, a feature to request, or some trouble using Grafx2
 
   * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3Aowner Non-assigned issues] 
   * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3Acomponent Issues without component]
-  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.2 Issues for current release]
-  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.3 Issues for next release]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.3 Issues for current release]
+  * [http://code.google.com/p/grafx2/issues/list?can=2&q=Milestone%3A2.4 Issues for next release]
   * [http://code.google.com/p/grafx2/issues/list?can=2&q=-has%3AMilestone+OR+Milestone%3DNotPlanned Issues with no schedule]
   * [http://code.google.com/p/grafx2/issues/list?can=2&q=-OpSys%3DAll+AND+has%3AOpSys Platform specific issues]
   * [http://code.google.com/p/grafx2/issues/list?can=2&q=modified-before%3Atoday-365 Old issues]
