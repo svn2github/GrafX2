@@ -10,7 +10,7 @@ How to code in GrafX2 for one platform without breaking the others.
   * gp2x
   * Linux
   * MacOSX
-  * Win9x refers to versions of Windows : 98, NT, 2000, XP, Vista.
+  * Win32 refers to versions of Windows : 98, NT, 2000, XP, Vista.
 
 = Symbols table for detection =
 
