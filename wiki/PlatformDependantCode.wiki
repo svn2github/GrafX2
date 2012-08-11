@@ -14,7 +14,7 @@ How to code in GrafX2 for one platform without breaking the others.
 
 = Symbols table for detection =
 
-||#ifdef||Linux||Win9x (MinGW)||Win9x (Watcom)||MacOSX||Amiga OS4||Beos||Haiku||AROS||MorphOS||FreeBSD||GP2X||Wiz||Caanoo||AmigaOS 3||
+||#ifdef||Linux||Win32 (MinGW)||Win32 (Watcom)||MacOSX||Amiga OS4||Beos||Haiku||AROS||MorphOS||FreeBSD||GP2X||Wiz||Caanoo||AmigaOS 3||
 ||`__WIN32__`   || ||X|| X ||  ||  ||  ||  || ||  || ||   || || || ||
 ||`__MINGW32__` || ||X||   ||  ||  ||  ||  || ||  || ||   || || || ||
 ||`__WATCOMC__` || || || X ||  ||  ||  ||  || ||  || ||   || || || ||
@@ -58,6 +58,8 @@ Drives: An absolute file name begins with a drive name, from "A:" to "Z:". It is
 == Amiga-like systems (AmigaOS 3 and 4, AROS, MorphOS ==
 Drives: AmigaOS filesystem has volume/drive name. It can be a "technical" name like "df0:" for Disk Floppy drive 0, or a user-set name like "games:". The volume or drive is *not* followed by a path separator, ex: "mp3:Switchblade Symphony/Clown.mp3". This means that a directory name can be "something:", with no trailing slash. The parent directory is /, not .. like on other systems.
 
+Compiler: The compiler is VBCC, it doesn't support GNU extensions like __attribute__
+
 = Caanoo specifics =
 
 It seems the build will be little-endian.
@@ -95,7 +97,29 @@ On the Caanoo with its ARM architecture, you can't read a 2-byte number at an ad
 
 Also, you can trigger this problem if you try to cast a void pointer to a `word*` or `dword*` : The address will be rounded, or maybe the bytes will be shuffled (not clear at this moment).
 
-The typical pitfall is trying to read a RGB triplet in a 24bit bitmap as a single dword fetch. *On all platforms, don't do that*. It breaks the aanoo port.
+The typical pitfall is trying to read a RGB triplet in a 24bit bitmap as a single dword fetch. *On all platforms, don't do that*. It breaks the Caanoo port.
+
+= Zero-sized arrays =
+
+Zero-sized array at the end of a struct, in order to support dynamic-allocated array: Use elem[0] on GCC v2 or earlier, elem[] on GCC >= 3 and any other compiler (including VBCC): 
+
+{{{
+#if __GNUC__ < 3
+  // gcc2 doesn't suport [], but supports [0] which does the same thing.
+  T_Image    Image[0];  ///< Pixel data for the (first layer of) image.
+#else
+  T_Image    Image[];  ///< Pixel data for the (first layer of) image.
+#endif
+}}}
+
+= Unused arguments =
+
+The GCC-ism __attribute__((unused)) breaks the compilation on Amiga-like platforms that use the VBCC compiler.
+__attribute__ should only be used when __GNUC__ is defined. For unused arguments, in order to avoid a compilation warning, the following syntax works on all platforms:
+{{{
+  (void)color; // unused
+}}}
+It can be surrounded by #ifdef in order to isolate the specific case when this argument is unused.
 
 = Make dependencies =
 
