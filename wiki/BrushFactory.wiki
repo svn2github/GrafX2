@@ -155,6 +155,7 @@ ok, a, b ,c, d = inputbox("Your choice",
   "D",    0, 0, 1,-1
 );
 }}}
+   * If min and max are 0, the entry is just a label, the user can't input anything on this line.
 
  * {{{selectbox(caption,label_1,callback_1,label_2,callback_2)}}} Opens a window where the user has to click on one of the buttons. You provide the button labels, and Grafx2 executes the associated callback, which must be a function : a pre-defined function (don't type the parentheses after function name) or an anonymous function that you build on the spot. The user can press Esc to cancel. Example:
 {{{
@@ -184,7 +185,12 @@ selectbox("Menu",
 
  * {{{(name, path) = getfilename()}}} returns the picture name and the path where it is saved. This is useful for saving data related to the picture near to it, and finding it back later (or exporting it for other uses)
 
- * {{{selectlayer(l)}}} select the layer to use for pixel access in the main page. If the layer doesn't exist, it throws an error. There is no way to create a layer yet.
+ * {{{selectlayer(1)}}} select the layer or anim frame to use for pixel access in the main page. If the layer doesn't exist, it throws an error. There is no way to create a layer yet.
+
+ * {{{run(scriptname)}}} calls another script. This is a lot like Lua's built-in {{{dofile()}}}, but supports directories, and especially relative paths: The called script will update its current directory before running, and pop back to the original script's directory afterwards. The path uses a common format for all OSes: ".." is understood as the parent directory, and "/" acts a directory separator. This will help write scripts that run equally well on Linux, Windows, and Amiga-based OSes.
+{{{
+run("../libs/dawnbringer_lib.lua")
+}}}
 
 = Sample script =
 
@@ -217,7 +223,7 @@ Here are some pages from the internet you may want to look at for more informati
 
 It is possible to extend the lua functions with your own ones. There are some examples on how to do that in the 'libs' directory in the link mentioned above.
 
-So far tis includes :
+So far this includes :
  * Memory.lua : persistent on-disk storage for your scripts. Use this for storing your own settings or other data.
 
 We welcome any additions you want to make to this set of functions. If something proves too slow when done in lua, we may provide a faster C version, with the same interface whenever possible. This way all scripts can share the enhancements.
