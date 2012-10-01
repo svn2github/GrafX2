@@ -2,6 +2,51 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
+== GRAFX 2.4 (01/10/2012) ==
+svn revision: r2024
+===Improvements===
+  * Support for animation : load, edit and save animated GIFs. (issue 31)
+  * Tilemap effect (issue 195)
+  * Mouse panning when holding 'space' key by default (issue 233)
+  * Preview layers when the image has several layers and you hover the layer buttons
+  * Support for saving actual LBM files for Deluxe Paint 3. The previous format is renamed to PBM. (issue 505)
+  * Improved brush rotation using rotsprite algorithm (r1789)
+  * Lua bindings: matchcolor2(), getfilename(), run()...
+  * Saving a layered image or animation in non-GIF format now prompts the user to save flattened copy or current layer/frame.
+  * Can paste text in any text field (from system clipboard. not available on all OSes at the moment)
+  * Palette reduction: use DawnBringer's improved color selection
+  * Grid size limit is now 999*999 (up from 80x80)
+  * Improved the color reduction algorithm. New one also consumes less memory and has 24 bits of precision instead of 19
+  * Skins window: font preview (issue 450)
+  * Flood-fill icon now has a specific mouse cursor, (issue 457).
+  * Add XOR-line helper when drawing circles and ellipses
+  * Can load RIFF palette file format
+  * Lua script selector displays current directory
+  * Support for Lua 5.2
+  * Specialized editing mode for Amstrad CPC Mode 5 (In Effect menu: 8-bit)
+  * C64 file formats
+  * Virtual keyboard can be enabled on all platforms, useful for Tablet PCs (issue 453)
+  * Right 'Windows' key can be used as a keyboard modifier for shortcuts, unless reserved by your OS.
+===Fixes===
+  * Fix crash when browsing drives that have no 'parent directory' entry (issue 477)
+  * Fix crash when loading 24bit images as brushes
+  * Crash when activating magnifier while hovering layer bar (Issue 480)
+  * Fix a crash that happened in Palette screen when right-clicking near top of screen (r1938)
+  * Fix a memory corruption in Lua's 'setpicturesize' when using multi-layered images.
+  * Fix an error when loading layered image that used a transparent color different from zero ,which resulted in corrupted image.
+  * Fix disappearing cursor when using brush rotation tool (issue 473)
+  * Resizing not precise enough on small pictures/brushes (issue 435)
+  * IFF (ilbm/pbm) loading: fix a slight imprecision in loading the palette (last 2 bits of the RGB channels)
+  * Default 'load' directory was the program's directory instead of the one from loaded image (issue 448)
+  * Lasso-ing a brush with right mouse button wouldn't erase cleanly (visual)
+  * Inconsistent directories in file selectors for image and brush. (issue 462)
+  * Fix a graphical mouse bug that happened when toolbar was hidden and you moved the mouse from layer button to image.
+  * Loading a GIF animation as a brush now loads first frame, instead of all images piled on each others
+  * Previewing a GIF animation now displays first frame instead of all images piled on each others
+  * Fileselectors: 'Parent directory' inserts the parent directory string (slash or ..) in filename (issue 498)
+  * In file selectors, 'parent directory' was sometimes missing in some drives or subdirectories (issue 506)
+  * After rotating a brush with the 180-degree button, following rotations and flips occurred as if the 180-turn never took place (issue 460)
+  * Fix a bug in brush distort that often caused the brush to disappear entirely after distort (all color zero)
 == GRAFX 2.3.1781 bugfix release (19/04/2011) ==
   * Fixed: Mouse cursor deadzones in fullscreen mode, especially if you change the program's mouse sensitivity (issue 428)
   * Fixed: Removed a source of mouse cursor lag while drawing (issue 269), especially on X11, by speeding up the graphic redraw.
