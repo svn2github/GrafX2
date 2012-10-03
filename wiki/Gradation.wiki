@@ -22,3 +22,9 @@ Opens a window where you can define the way gradations are processed. The differ
  * Mix: Mixes the gradation with a more or less random factor.
  * Palette: Select a color range to build a gradation.
  * Index scroller: Defines the current gradation among a set of 16 that will be memorised.
+
+== Color cycling ==
+
+These options allow you to use animation of colors: GrafX2 wil lshift palette entries at real time. Note that only the IFF file formats can record these settings, and very few image viewers will play it back.
+ * Cycling: toggles the cycling of colors when you're in the editor.
+ * Speed: sets the speed for the cycling of the selected range. Zero means the range isn't cycling. 1 means the range is shifted 0.2856 times per second (very slow), 64 means it's shifted 18.56 times per second (quite fast). The cycling is enabled while you hold the slider, so you can preview the current speed easily.
