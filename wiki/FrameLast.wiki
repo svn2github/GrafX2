@@ -1,0 +1,7 @@
+#summary Last frame
+#labels UserManual
+#sidebar ManualSidebar
+
+= Last Frame =
+
+Goes to the last frame of animation.

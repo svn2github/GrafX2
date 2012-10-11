@@ -1,6 +1,6 @@
   * [UserManual Introduction]
   * [Interface User interface]
-  * [MenuBar Menu bar]
+  * Toolbar: Tools
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/SelectBrush.png [PaintbrushChoice]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FreeHand.png [FreeHandDraw]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Lines.png [Lines]
@@ -30,8 +30,8 @@
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Quit.png [Quit]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Palette.png [Palette]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/ScrollPalette.png [ScrollPalette]
-    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/HideMenu.png [HideMenu]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/MenuPal.png [MenuPalette]
+  * Toolbar: Layers
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Layer.png [LayerMenu Layer menu]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Transparent.png [TransparentButton Get/Set Transparency]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/MergeLayer.png [MergeLayer Merge layer]
@@ -40,6 +40,19 @@
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/LowerLayer.png [LowerLayer Lower layer]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/RaiseLayer.png [RaiseLayer Raise layer]
     * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/LayerStrip.png [SelectLayer Select/toggle layer]
+  * Toolbar: Animation
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Layer2.png [LayerMenu Layer menu]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/Delay.png [FrameTime Set frame time]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FrameFirst.png [FrameFirst Go to first frame]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FramePrev.png [FramePrev Previous frame / Play backwards]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FrameNext.png [FrameNext Next frame / Play]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/FrameLast.png [FrameLast Go to last frame]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/AddFrame.png [AddFrame Add layer]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/DropFrame.png [DeleteLayer Delete layer]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/LowerFrame.png [LowerLayer Lower layer]
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/RaiseFrame.png [RaiseLayer Raise layer]
+  * Toolbar: Status
+    * http://grafx2.googlecode.com/svn/wiki/pictures/menu_buttons/HideMenu.png [HideMenu]
   * [KeyboardShortcuts Keyboard shortcuts]
   * [CommandLine Command line parameters]
   * [BrushFactory The brush factory]

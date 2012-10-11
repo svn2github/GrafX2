@@ -1,0 +1,7 @@
+#summary Drop frame
+#labels UserManual
+#sidebar ManualSidebar
+
+=Drop frame=
+
+Deletes the current frame.
