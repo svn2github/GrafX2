@@ -2,6 +2,10 @@
 
 =HISTORY of GRAFX=
 (in reverse chronological order: latest version at the beginning)
+== GRAFX 2.4.2035 bugfix release (19/10/2012) ==
+  * Palette changes that modify the pixels can't be undone (issue 514)
+  * Opening a 24bit image in command-line gives wrong mouse cursor (issue 515)
+  * On some non-x86 platforms, some changes can't be undone on animations > 32 frames (issue 516)
 == GRAFX 2.4 (01/10/2012) ==
 svn revision: r2024
 ===Improvements===
