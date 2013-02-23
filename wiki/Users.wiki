@@ -2,11 +2,15 @@
 
 = Games =
   * [http://www.allacrost.org/download Hero of Allacrost]
-  * [http://www.wayforward.com/MMW/index.htm Mighty Milky Way]
+  * [http://www.wayforward.com/mww Mighty Milky Way]
+== Photon Storm ==
   * [http://www.photonstorm.com/games/droplet Droplet]
+http://www.photonstorm.com/wp-content/uploads/2010/02/sshot-2010-02-06-01-09-28.png
   * [http://www.photonstorm.com/games/quartet Quartet]
+http://www.photonstorm.com/wp-content/uploads/2010/05/SNAG-0000.png
   * [http://www.photonstorm.com/games/cat-astro-phi Cat Astro Phi]
-  * [http://battlemines.com/ Battle Mines]
+http://www.photonstorm.com/wp-content/uploads/2010/12/catastrophi1.png
+== [http://battlemines.com/ Battle Mines] ==
 http://battlemines.com/docgraphics/screens01.png
 = Demoscene works =
 || [http://pouet.net/prod.php?which=58044 ISO] by JAC!  || [http://pouet.net/prod.php?which=56880 Beam Racer] by JAC!  ||
