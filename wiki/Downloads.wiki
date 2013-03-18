@@ -28,7 +28,8 @@ This is a repository of all packages hosted here. This include the latest stable
 = Binary packages =
 
 || Arch Linux (AUR) || [http://aur.archlinux.org/packages.php?ID=27204 stable (ext)], [http://aur.archlinux.org/packages.php?ID=45339 latest svn (ext)] ||
-|| Debian || [http://packages.debian.org/search?keywords=grafx2 Debian packages (ext)] ||
+|| Debian || [http://packages.debian.org/search?keywords=grafx2 Debian packages (ext)] 
+[http://sid.ethz.ch/debian/grafx2/ Experimental versions] ||
 || Exherbo Linux || [http://git.exherbo.org/summer/packages/media-gfx/grafx2/index.html Summer (ext)] ||
 || FreeBSD || [http://www.freshports.org/graphics/grafx2/ FreshPorts (ext)] ||
 || Gentoo (ebuild) || [http://bugs.gentoo.org/show_bug.cgi?id=259896#c6 (ext)] ||
